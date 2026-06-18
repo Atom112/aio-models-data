@@ -72,6 +72,21 @@ interface ModelMeta {
 | `dist/last-sync.md` | 本次同步 diff（人类可读） |
 | `overrides.json` | 人工维护的补丁（aliases、deprecation、replacedBy） |
 
+## Public Download URL
+
+AIO 应用启动时会从这里拉取最新数据，**因此本仓库需设为 public**：
+
+```
+https://raw.githubusercontent.com/Atom112/aio-models-data/main/dist/data/models.json
+```
+
+| 类型 | URL | 用途 |
+|---|---|---|
+| **公开下载端点** | `https://raw.githubusercontent.com/Atom112/aio-models-data/main/dist/data/models.json` | AIO 用户点「检查数据更新」时拉这个 |
+| npm 包 | `@aio/models-data` (GitHub Packages) | AIO build 时拉类型（私有，发布时用） |
+
+切换仓库为 public：`Settings → General → Danger Zone → Change repository visibility → Make public`
+
 ## 字段策略
 
 | 字段 | 来源 | 说明 |
