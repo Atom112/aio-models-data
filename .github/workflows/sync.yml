@@ -1,0 +1,93 @@
+name: sync-models
+
+on:
+  schedule:
+    - cron: '0 4 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  packages: write
+  pull-requests: write
+
+jobs:
+  sync:
+    name: sync from models.dev
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://npm.pkg.github.com/
+          scope: '@aio'
+
+      - name: Install dependencies
+        run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Run sync
+        id: sync
+        run: |
+          mkdir -p data
+          npm run sync
+          echo "changed=$(git status --porcelain | wc -l)" >> "$GITHUB_OUTPUT"
+
+      - name: Type check
+        run: npm run typecheck
+
+      - name: Build
+        run: npm run build
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit and push
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "aio-bot"
+          git config user.email "bot@aio.local"
+          git add -A
+          git commit -m "chore(sync): weekly update $(date -u +%Y-%m-%d)"
+          git push
+
+      - name: Bump version and tag
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          CURRENT=$(node -p "require('./package.json').version")
+          IFS='.' read -r MAJOR MINOR PATCH <<< "$CURRENT"
+          NEW_PATCH=$((PATCH + 1))
+          NEW="${MAJOR}.${MINOR}.${NEW_PATCH}"
+          npm version "$NEW" --no-git-tag-version
+          git add package.json package-lock.json
+          git commit -m "chore(release): bump to v${NEW}" --allow-empty
+          git tag "v${NEW}"
+          git push
+          git push --follow-tags
+
+      - name: Notify on schema break
+        if: failure()
+        run: |
+          echo "::error::models.dev sync or schema check failed. Check the run logs."
+
+      - name: Auto-create GitHub release
+        if: steps.changes.outputs.has_changes == 'true'
+        uses: softprops/action-gh-release@v2
+        with:
+          name: "aio-models-data v${{ steps.bump.outputs.version || 'auto' }}"
+          generate_release_notes: true
+          attach_artifacts: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true

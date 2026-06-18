@@ -1,0 +1,48 @@
+{
+  "name": "@aio/models-data",
+  "version": "0.1.0",
+  "description": "Aggregated LLM model metadata (id, context, capabilities, pricing) auto-synced weekly from models.dev",
+  "private": true,
+  "type": "module",
+  "main": "./dist/bundle/index.cjs",
+  "module": "./dist/bundle/index.js",
+  "types": "./dist/bundle/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/bundle/index.d.ts",
+      "import": "./dist/bundle/index.js",
+      "require": "./dist/bundle/index.cjs"
+    },
+    "./data": {
+      "types": "./dist/bundle/index.d.ts"
+    },
+    "./data/models.json": "./dist/data/models.json",
+    "./data/*": "./dist/data/*"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "sync": "tsx scripts/sync.ts",
+    "build:data": "tsx scripts/sync.ts",
+    "build:bundle": "tsup",
+    "build": "npm run build:data && npm run build:bundle",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "tsup": "^8.0.2",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.5"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "license": "MIT"
+}

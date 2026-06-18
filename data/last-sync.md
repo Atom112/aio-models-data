@@ -1,0 +1,57 @@
+# aio-models-data sync @ 2026-06-18T07:32:42.024Z
+
+- providers: 145
+- models: 5276
+
+## Added (5276)
+- requesty/xai/grok-4
+- requesty/xai/grok-4-fast
+- requesty/google/gemini-2.5-pro
+- requesty/google/gemini-2.5-flash
+- requesty/google/gemini-3-pro-preview
+- requesty/google/gemini-3-flash-preview
+- requesty/openai/gpt-5.2-chat
+- requesty/openai/gpt-5.2-pro
+- requesty/openai/gpt-5
+- requesty/openai/gpt-5-chat
+- requesty/openai/gpt-5-pro
+- requesty/openai/o4-mini
+- requesty/openai/gpt-5.1-chat
+- requesty/openai/gpt-5.1-codex
+- requesty/openai/gpt-5.1-codex-max
+- requesty/openai/gpt-5.2
+- requesty/openai/gpt-5.3-codex
+- requesty/openai/gpt-5.1-codex-mini
+- requesty/openai/gpt-5-image
+- requesty/openai/gpt-5.4
+- requesty/openai/gpt-4.1
+- requesty/openai/gpt-5-mini
+- requesty/openai/gpt-4.1-mini
+- requesty/openai/gpt-5-nano
+- requesty/openai/gpt-5.4-pro
+- requesty/openai/gpt-4o-mini
+- requesty/openai/gpt-5-codex
+- requesty/openai/gpt-5.2-codex
+- requesty/openai/gpt-5.1
+- requesty/anthropic/claude-3-7-sonnet
+- requesty/anthropic/claude-sonnet-4
+- requesty/anthropic/claude-opus-4-5
+- requesty/anthropic/claude-sonnet-4-5
+- requesty/anthropic/claude-opus-4-1
+- requesty/anthropic/claude-haiku-4-5
+- requesty/anthropic/claude-opus-4-6
+- requesty/anthropic/claude-sonnet-4-6
+- requesty/anthropic/claude-opus-4
+- qiniu-ai/deepseek-r1-0528
+- qiniu-ai/doubao-1.5-thinking-pro
+- qiniu-ai/qwen3-vl-30b-a3b-thinking
+- qiniu-ai/claude-3.5-haiku
+- qiniu-ai/deepseek-v3-0324
+- qiniu-ai/qwen3-235b-a22b-instruct-2507
+- qiniu-ai/deepseek-v3
+- qiniu-ai/kimi-k2
+- qiniu-ai/qwen3-32b
+- qiniu-ai/qwen3-max-preview
+- qiniu-ai/claude-3.5-sonnet
+- qiniu-ai/qwen3-next-80b-a3b-instruct
+- ... and 5226 more

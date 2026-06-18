@@ -1,0 +1,47 @@
+{
+  "comments": "人工维护的元数据补丁。CI 在每次 sync 时会把这里的内容 merge 进 models.dev 的输出。",
+  "deprecations": [
+    {
+      "id": "gpt-3.5-turbo",
+      "provider": "openai",
+      "status": "deprecated",
+      "deprecationDate": "2025-09-01",
+      "replacedBy": "gpt-4o-mini",
+      "aliases": ["gpt-3.5-turbo-0613", "gpt-3.5-turbo-16k", "gpt-3.5-turbo-instruct"]
+    },
+    {
+      "id": "gpt-4",
+      "provider": "openai",
+      "status": "deprecated",
+      "deprecationDate": "2025-06-01",
+      "replacedBy": "gpt-4o",
+      "aliases": ["gpt-4-0613", "gpt-4-0314"]
+    },
+    {
+      "id": "claude-3-opus-20240229",
+      "provider": "anthropic",
+      "status": "deprecated",
+      "deprecationDate": "2025-06-30",
+      "replacedBy": "claude-opus-4-1"
+    },
+    {
+      "id": "claude-3-haiku-20240307",
+      "provider": "anthropic",
+      "status": "deprecated",
+      "deprecationDate": "2025-06-30",
+      "replacedBy": "claude-haiku-4-5"
+    }
+  ],
+  "extraAliases": {
+    "openai": {
+      "gpt-4o": ["gpt-4o-2024-08-06", "gpt-4o-2024-05-13", "gpt-4o-2024-02"],
+      "gpt-4o-mini": ["gpt-4o-mini-2024-07-18"],
+      "o3": ["o3-2025-01-31"],
+      "o4-mini": ["o4-mini-2025-04-16"]
+    },
+    "anthropic": {
+      "claude-sonnet-4-5": ["claude-4-sonnet", "claude-4.5-sonnet"],
+      "claude-opus-4-1": ["claude-4-opus", "claude-4.1-opus"]
+    }
+  }
+}
