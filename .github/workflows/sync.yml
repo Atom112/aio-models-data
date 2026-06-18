@@ -4,11 +4,25 @@ on:
   schedule:
     - cron: '0 4 * * 0'
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/sync.yml'
+      - 'scripts/**'
+      - 'src/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'tsconfig.json'
+      - 'tsup.config.ts'
+      - 'overrides.json'
 
 permissions:
   contents: write
   packages: write
-  pull-requests: write
+
+concurrency:
+  group: sync-models
+  cancel-in-progress: true
 
 jobs:
   sync:
@@ -19,6 +33,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: actions/setup-node@v4
         with:
@@ -32,11 +47,9 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run sync
-        id: sync
         run: |
           mkdir -p data
           npm run sync
-          echo "changed=$(git status --porcelain | wc -l)" >> "$GITHUB_OUTPUT"
 
       - name: Type check
         run: npm run typecheck
@@ -44,14 +57,28 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Check for changes
+      - name: Detect changes
         id: changes
         run: |
           if [[ -n "$(git status --porcelain)" ]]; then
             echo "has_changes=true" >> "$GITHUB_OUTPUT"
+            echo "files=$(git status --porcelain | wc -l)" >> "$GITHUB_OUTPUT"
           else
             echo "has_changes=false" >> "$GITHUB_OUTPUT"
+            echo "files=0" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Bump version
+        if: steps.changes.outputs.has_changes == 'true'
+        id: bump
+        run: |
+          CURRENT=$(node -p "require('./package.json').version")
+          IFS='.' read -r MAJOR MINOR PATCH <<< "$CURRENT"
+          NEW_PATCH=$((PATCH + 1))
+          NEW="${MAJOR}.${MINOR}.${NEW_PATCH}"
+          echo "version=${NEW}" >> "$GITHUB_OUTPUT"
+          npm version "${NEW}" --no-git-tag-version
+          echo "::notice::Bumped ${CURRENT} -> ${NEW}"
 
       - name: Commit and push
         if: steps.changes.outputs.has_changes == 'true'
@@ -59,22 +86,14 @@ jobs:
           git config user.name "aio-bot"
           git config user.email "bot@aio.local"
           git add -A
-          git commit -m "chore(sync): weekly update $(date -u +%Y-%m-%d)"
+          git commit -m "chore(sync): weekly update $(date -u +%Y-%m-%d) [v${{ steps.bump.outputs.version }}]"
           git push
 
-      - name: Bump version and tag
+      - name: Create tag
         if: steps.changes.outputs.has_changes == 'true'
         run: |
-          CURRENT=$(node -p "require('./package.json').version")
-          IFS='.' read -r MAJOR MINOR PATCH <<< "$CURRENT"
-          NEW_PATCH=$((PATCH + 1))
-          NEW="${MAJOR}.${MINOR}.${NEW_PATCH}"
-          npm version "$NEW" --no-git-tag-version
-          git add package.json package-lock.json
-          git commit -m "chore(release): bump to v${NEW}" --allow-empty
-          git tag "v${NEW}"
-          git push
-          git push --follow-tags
+          git tag "v${{ steps.bump.outputs.version }}"
+          git push origin "v${{ steps.bump.outputs.version }}"
 
       - name: Notify on schema break
         if: failure()
@@ -85,7 +104,7 @@ jobs:
         if: steps.changes.outputs.has_changes == 'true'
         uses: softprops/action-gh-release@v2
         with:
-          name: "aio-models-data v${{ steps.bump.outputs.version || 'auto' }}"
+          name: "aio-models-data v${{ steps.bump.outputs.version }}"
           generate_release_notes: true
           attach_artifacts: false
         env:
