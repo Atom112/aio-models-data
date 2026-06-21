@@ -144,13 +144,63 @@
     ]
   },
   {
+    "id": "kimi-k2.7-code",
+    "provider": "alibaba-token-plan",
+    "providerName": "Alibaba Token Plan",
+    "displayName": "Kimi K2.7 Code",
+    "family": "kimi-k2",
+    "releaseDate": "2026-06-12",
+    "lastUpdated": "2026-06-12",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "cacheWrite": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "glm-5.1",
     "provider": "alibaba-token-plan",
     "providerName": "Alibaba Token Plan",
     "displayName": "GLM-5.1",
     "family": "glm",
-    "releaseDate": "2026-03-27",
-    "lastUpdated": "2026-03-27",
+    "releaseDate": "2026-04-07",
+    "lastUpdated": "2026-04-07",
     "knowledgeCutoff": null,
     "contextWindow": 202752,
     "maxOutputTokens": 128000,
@@ -272,6 +322,54 @@
     "pricing": {
       "input": 0,
       "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5.2",
+    "provider": "alibaba-token-plan",
+    "providerName": "Alibaba Token Plan",
+    "displayName": "GLM-5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "cacheWrite": 0,
       "currency": "USD",
       "per": 1000000
     },
@@ -626,8 +724,8 @@
     "providerName": "Alibaba Token Plan",
     "displayName": "GLM-5",
     "family": "glm",
-    "releaseDate": "2026-02-11",
-    "lastUpdated": "2026-02-11",
+    "releaseDate": "2026-02-12",
+    "lastUpdated": "2026-02-12",
     "knowledgeCutoff": null,
     "contextWindow": 202752,
     "maxOutputTokens": 16384,

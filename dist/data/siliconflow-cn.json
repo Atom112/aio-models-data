@@ -1,189 +1,5 @@
 [
   {
-    "id": "THUDM/GLM-Z1-9B-0414",
-    "provider": "siliconflow-cn",
-    "providerName": "SiliconFlow (China)",
-    "displayName": "THUDM/GLM-Z1-9B-0414",
-    "family": "glm-z",
-    "releaseDate": "2025-04-18",
-    "lastUpdated": "2025-11-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 131000,
-    "maxOutputTokens": 131000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.086,
-      "output": 0.086,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "THUDM/GLM-4-9B-0414",
-    "provider": "siliconflow-cn",
-    "providerName": "SiliconFlow (China)",
-    "displayName": "THUDM/GLM-4-9B-0414",
-    "family": "glm",
-    "releaseDate": "2025-04-18",
-    "lastUpdated": "2025-11-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 33000,
-    "maxOutputTokens": 33000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.086,
-      "output": 0.086,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "THUDM/GLM-4-32B-0414",
-    "provider": "siliconflow-cn",
-    "providerName": "SiliconFlow (China)",
-    "displayName": "THUDM/GLM-4-32B-0414",
-    "family": "glm",
-    "releaseDate": "2025-04-18",
-    "lastUpdated": "2025-11-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 33000,
-    "maxOutputTokens": 33000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.27,
-      "output": 0.27,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "THUDM/GLM-Z1-32B-0414",
-    "provider": "siliconflow-cn",
-    "providerName": "SiliconFlow (China)",
-    "displayName": "THUDM/GLM-Z1-32B-0414",
-    "family": "glm-z",
-    "releaseDate": "2025-04-18",
-    "lastUpdated": "2025-11-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 131000,
-    "maxOutputTokens": 131000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.14,
-      "output": 0.57,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "moonshotai/Kimi-K2-Instruct-0905",
     "provider": "siliconflow-cn",
     "providerName": "SiliconFlow (China)",
@@ -2898,7 +2714,7 @@
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
@@ -2931,27 +2747,27 @@
     ]
   },
   {
-    "id": "tencent/Hunyuan-MT-7B",
+    "id": "zai-org/GLM-5.2",
     "provider": "siliconflow-cn",
     "providerName": "SiliconFlow (China)",
-    "displayName": "tencent/Hunyuan-MT-7B",
-    "family": "hunyuan",
-    "releaseDate": "2025-09-18",
-    "lastUpdated": "2025-11-25",
+    "displayName": "GLM-5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
     "knowledgeCutoff": null,
-    "contextWindow": 33000,
-    "maxOutputTokens": 33000,
+    "contextWindow": 205000,
+    "maxOutputTokens": 205000,
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -2962,8 +2778,9 @@
       ]
     },
     "pricing": {
-      "input": 0,
-      "output": 0,
+      "input": 1.4,
+      "output": 4.4,
+      "cacheWrite": 0,
       "currency": "USD",
       "per": 1000000
     },

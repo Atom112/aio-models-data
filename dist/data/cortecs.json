@@ -939,40 +939,42 @@
     ]
   },
   {
-    "id": "devstral-small-2512",
+    "id": "kimi-k2.7-code",
     "provider": "cortecs",
     "providerName": "Cortecs",
-    "displayName": "Devstral Small 2 2512",
-    "family": null,
-    "releaseDate": "2025-12-09",
-    "lastUpdated": "2025-12-09",
-    "knowledgeCutoff": "2025-12",
-    "contextWindow": 262000,
-    "maxOutputTokens": 262000,
+    "displayName": "Kimi K2.7 Code",
+    "family": "kimi-k2",
+    "releaseDate": "2026-06-12",
+    "lastUpdated": "2026-06-12",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
       "vision": true,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "video"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0,
-      "output": 0,
+      "input": 1.28,
+      "output": 4.63,
+      "cacheRead": 0.32,
       "currency": "USD",
       "per": 1000000
     },
@@ -1159,6 +1161,53 @@
     "pricing": {
       "input": 0.656,
       "output": 2.731,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5.2",
+    "provider": "cortecs",
+    "providerName": "Cortecs",
+    "displayName": "GLM-5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.44,
+      "output": 4.53,
+      "cacheRead": 0.39,
       "currency": "USD",
       "per": 1000000
     },

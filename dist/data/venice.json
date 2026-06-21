@@ -2313,7 +2313,7 @@
     "lastUpdated": "2026-06-16",
     "knowledgeCutoff": null,
     "contextWindow": 1000000,
-    "maxOutputTokens": 24000,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -2335,9 +2335,9 @@
       ]
     },
     "pricing": {
-      "input": 1.75,
-      "output": 5.5,
-      "cacheRead": 0.325,
+      "input": 1.4,
+      "output": 4.4,
+      "cacheRead": 0.26,
       "currency": "USD",
       "per": 1000000
     },
@@ -3767,53 +3767,6 @@
     "pricing": {
       "input": 0.15,
       "output": 0.6,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "tencent-hy3-preview",
-    "provider": "venice",
-    "providerName": "Venice AI",
-    "displayName": "Hy3 Preview",
-    "family": "hy3",
-    "releaseDate": "2026-06-08",
-    "lastUpdated": "2026-06-11",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.063,
-      "output": 0.21,
-      "cacheRead": 0.021,
       "currency": "USD",
       "per": 1000000
     },

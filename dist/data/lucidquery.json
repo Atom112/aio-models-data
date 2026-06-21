@@ -2,7 +2,7 @@
   {
     "id": "lucidnova-rf1-100b",
     "provider": "lucidquery",
-    "providerName": "LucidQuery AI",
+    "providerName": "LucidQuery",
     "displayName": "LucidNova RF1 100B",
     "family": "nova",
     "releaseDate": "2024-12-28",
@@ -48,7 +48,7 @@
   {
     "id": "lucidquery-nexus-coder",
     "provider": "lucidquery",
-    "providerName": "LucidQuery AI",
+    "providerName": "LucidQuery",
     "displayName": "LucidQuery Nexus Coder",
     "family": "lucid",
     "releaseDate": "2025-09-01",
@@ -79,6 +79,100 @@
     "pricing": {
       "input": 2,
       "output": 5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "lucidquery-agi-01-swift",
+    "provider": "lucidquery",
+    "providerName": "LucidQuery",
+    "displayName": "AGI-01 Swift",
+    "family": "agi",
+    "releaseDate": "2026-06-16",
+    "lastUpdated": "2026-06-16",
+    "knowledgeCutoff": "2026-06-05",
+    "contextWindow": 300000,
+    "maxOutputTokens": 120000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.5,
+      "output": 15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "lucidquery-agi-01-frontier",
+    "provider": "lucidquery",
+    "providerName": "LucidQuery",
+    "displayName": "AGI-01 Frontier",
+    "family": "agi",
+    "releaseDate": "2026-06-16",
+    "lastUpdated": "2026-06-16",
+    "knowledgeCutoff": "2026-06-05",
+    "contextWindow": 300000,
+    "maxOutputTokens": 120000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 4.5,
+      "output": 22,
       "currency": "USD",
       "per": 1000000
     },

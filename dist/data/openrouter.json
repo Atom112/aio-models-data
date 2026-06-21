@@ -280,52 +280,6 @@
     ]
   },
   {
-    "id": "meta-llama/llama-3-70b-instruct",
-    "provider": "openrouter",
-    "providerName": "OpenRouter",
-    "displayName": "Llama 3 70B Instruct",
-    "family": "llama",
-    "releaseDate": "2024-04-18",
-    "lastUpdated": "2024-04-18",
-    "knowledgeCutoff": "2023-12-31",
-    "contextWindow": 8192,
-    "maxOutputTokens": 8000,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.51,
-      "output": 0.74,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "meta-llama/llama-3.1-70b-instruct",
     "provider": "openrouter",
     "providerName": "OpenRouter",
@@ -712,11 +666,11 @@
       "vision": false,
       "reasoning": false,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -1091,7 +1045,7 @@
     "lastUpdated": "2026-06-12",
     "knowledgeCutoff": "2025-01",
     "contextWindow": 262144,
-    "maxOutputTokens": 16384,
+    "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -1114,9 +1068,9 @@
       ]
     },
     "pricing": {
-      "input": 0.74,
-      "output": 3.5,
-      "cacheRead": 0.15,
+      "input": 0.612,
+      "output": 3.069,
+      "cacheRead": 0.1296,
       "currency": "USD",
       "per": 1000000
     },
@@ -1255,9 +1209,9 @@
       ]
     },
     "pricing": {
-      "input": 0.68,
-      "output": 3.41,
-      "cacheRead": 0.34,
+      "input": 0.66,
+      "output": 3.5,
+      "cacheRead": 0.33,
       "currency": "USD",
       "per": 1000000
     },
@@ -1464,6 +1418,54 @@
     ]
   },
   {
+    "id": "google/gemini-3.1-flash-image",
+    "provider": "openrouter",
+    "providerName": "OpenRouter",
+    "displayName": "Nano Banana 2 (Gemini 3.1 Flash Image)",
+    "family": "gemini",
+    "releaseDate": "2026-06-18",
+    "lastUpdated": "2026-06-18",
+    "knowledgeCutoff": null,
+    "contextWindow": 65536,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "image",
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.5,
+      "output": 3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "google/gemma-3n-e4b-it",
     "provider": "openrouter",
     "providerName": "OpenRouter",
@@ -1479,11 +1481,11 @@
       "vision": false,
       "reasoning": false,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -1518,7 +1520,7 @@
     "releaseDate": "2026-04-02",
     "lastUpdated": "2026-04-02",
     "knowledgeCutoff": null,
-    "contextWindow": 262144,
+    "contextWindow": 131072,
     "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
@@ -1986,7 +1988,7 @@
     "lastUpdated": "2025-08-26",
     "knowledgeCutoff": "2025-06",
     "contextWindow": 32768,
-    "maxOutputTokens": 32768,
+    "maxOutputTokens": 8192,
     "capabilities": {
       "tools": false,
       "vision": true,
@@ -2087,8 +2089,8 @@
     "releaseDate": "2026-02-26",
     "lastUpdated": "2026-02-26",
     "knowledgeCutoff": "2025-01",
-    "contextWindow": 65536,
-    "maxOutputTokens": 65536,
+    "contextWindow": 131072,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": false,
       "vision": true,
@@ -2351,7 +2353,7 @@
     "lastUpdated": "2025-12-17",
     "knowledgeCutoff": "2025-01",
     "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
+    "maxOutputTokens": 65535,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -2592,7 +2594,7 @@
     "lastUpdated": "2026-04-02",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 32768,
+    "maxOutputTokens": 8192,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -2677,6 +2679,56 @@
     ]
   },
   {
+    "id": "google/gemini-3-pro-image",
+    "provider": "openrouter",
+    "providerName": "OpenRouter",
+    "displayName": "Nano Banana Pro (Gemini 3 Pro Image)",
+    "family": "gemini",
+    "releaseDate": "2026-06-18",
+    "lastUpdated": "2026-06-18",
+    "knowledgeCutoff": null,
+    "contextWindow": 65536,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "image",
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 12,
+      "cacheRead": 0.2,
+      "cacheWrite": 0.375,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "google/gemini-3.1-flash-lite-preview",
     "provider": "openrouter",
     "providerName": "OpenRouter",
@@ -2740,15 +2792,15 @@
     "contextWindow": 32768,
     "maxOutputTokens": 32768,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -2836,11 +2888,11 @@
       "vision": false,
       "reasoning": false,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -3316,6 +3368,53 @@
     ]
   },
   {
+    "id": "poolside/laguna-xs.2",
+    "provider": "openrouter",
+    "providerName": "OpenRouter",
+    "displayName": "Laguna XS.2",
+    "family": null,
+    "releaseDate": "2026-04-28",
+    "lastUpdated": "2026-04-28",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.2,
+      "cacheRead": 0.05,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "poolside/laguna-xs.2:free",
     "provider": "openrouter",
     "providerName": "OpenRouter",
@@ -3362,6 +3461,53 @@
     ]
   },
   {
+    "id": "poolside/laguna-m.1",
+    "provider": "openrouter",
+    "providerName": "OpenRouter",
+    "displayName": "Laguna M.1",
+    "family": null,
+    "releaseDate": "2026-04-28",
+    "lastUpdated": "2026-04-28",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2,
+      "output": 0.4,
+      "cacheRead": 0.1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "poolside/laguna-m.1:free",
     "provider": "openrouter",
     "providerName": "OpenRouter",
@@ -3382,7 +3528,7 @@
       "temperature": true,
       "attachment": false,
       "structured_output": false,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -3601,11 +3747,11 @@
     "providerName": "OpenRouter",
     "displayName": "GLM-5.1",
     "family": "glm",
-    "releaseDate": "2026-03-27",
-    "lastUpdated": "2026-03-27",
+    "releaseDate": "2026-04-07",
+    "lastUpdated": "2026-04-07",
     "knowledgeCutoff": null,
     "contextWindow": 202752,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 65535,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -3629,7 +3775,7 @@
     "pricing": {
       "input": 0.98,
       "output": 3.08,
-      "cacheRead": 0.182,
+      "cacheRead": 0.49,
       "currency": "USD",
       "per": 1000000
     },
@@ -3698,8 +3844,8 @@
     "releaseDate": "2026-06-13",
     "lastUpdated": "2026-06-13",
     "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -3710,7 +3856,7 @@
       "temperature": true,
       "attachment": false,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -3721,9 +3867,9 @@
       ]
     },
     "pricing": {
-      "input": 1.4,
-      "output": 4.4,
-      "cacheRead": 0.26,
+      "input": 1.2,
+      "output": 4.1,
+      "cacheRead": 0.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -3885,8 +4031,8 @@
     "providerName": "OpenRouter",
     "displayName": "GLM-5",
     "family": "glm",
-    "releaseDate": "2026-02-11",
-    "lastUpdated": "2026-02-11",
+    "releaseDate": "2026-02-12",
+    "lastUpdated": "2026-02-12",
     "knowledgeCutoff": null,
     "contextWindow": 202752,
     "maxOutputTokens": 16384,
@@ -4038,11 +4184,11 @@
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -4056,7 +4202,7 @@
     "pricing": {
       "input": 0.075,
       "output": 0.3,
-      "cacheRead": 0.037,
+      "cacheRead": 0.0375,
       "currency": "USD",
       "per": 1000000
     },
@@ -6823,7 +6969,7 @@
     "lastUpdated": "2025-08-05",
     "knowledgeCutoff": "2024-06-30",
     "contextWindow": 131072,
-    "maxOutputTokens": 8192,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -6973,11 +7119,11 @@
       "vision": false,
       "reasoning": false,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -7020,11 +7166,11 @@
       "vision": false,
       "reasoning": false,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -7159,11 +7305,11 @@
       "vision": true,
       "reasoning": false,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -7207,11 +7353,11 @@
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -8257,11 +8403,11 @@
       "vision": false,
       "reasoning": false,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -8495,11 +8641,11 @@
       "vision": false,
       "reasoning": false,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -9122,53 +9268,6 @@
       "input": 0.14,
       "output": 0.28,
       "cacheRead": 0.0028,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "xiaomi/mimo-v2-flash",
-    "provider": "openrouter",
-    "providerName": "OpenRouter",
-    "displayName": "MiMo-V2-Flash",
-    "family": "mimo",
-    "releaseDate": "2025-12-16",
-    "lastUpdated": "2026-02-04",
-    "knowledgeCutoff": "2024-12-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1,
-      "output": 0.3,
-      "cacheRead": 0.01,
       "currency": "USD",
       "per": 1000000
     },
@@ -10169,9 +10268,9 @@
       ]
     },
     "pricing": {
-      "input": 0.066,
-      "output": 0.26,
-      "cacheRead": 0.029,
+      "input": 0.063,
+      "output": 0.21,
+      "cacheRead": 0.021,
       "currency": "USD",
       "per": 1000000
     },
@@ -10415,6 +10514,52 @@
     ]
   },
   {
+    "id": "cohere/north-mini-code:free",
+    "provider": "openrouter",
+    "providerName": "OpenRouter",
+    "displayName": "North Mini Code (free)",
+    "family": "north",
+    "releaseDate": "2026-06-17",
+    "lastUpdated": "2026-06-17",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "gryphe/mythomax-l2-13b",
     "provider": "openrouter",
     "providerName": "OpenRouter",
@@ -10607,7 +10752,7 @@
     "provider": "openrouter",
     "providerName": "OpenRouter",
     "displayName": "Nex-N2-Pro (free)",
-    "family": null,
+    "family": "agi",
     "releaseDate": "2026-06-08",
     "lastUpdated": "2026-06-08",
     "knowledgeCutoff": null,
@@ -10826,9 +10971,9 @@
       ]
     },
     "pricing": {
-      "input": 0.68,
-      "output": 3.41,
-      "cacheRead": 0.34,
+      "input": 0.66,
+      "output": 3.5,
+      "cacheRead": 0.33,
       "currency": "USD",
       "per": 1000000
     },
@@ -11081,7 +11226,7 @@
     "lastUpdated": "2026-04-01",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 80000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -11103,8 +11248,8 @@
       ]
     },
     "pricing": {
-      "input": 0.22,
-      "output": 0.85,
+      "input": 0.25,
+      "output": 0.8,
       "cacheRead": 0.06,
       "currency": "USD",
       "per": 1000000
@@ -11180,11 +11325,11 @@
       "vision": false,
       "reasoning": false,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -11863,11 +12008,11 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -12005,11 +12150,11 @@
       "vision": false,
       "reasoning": false,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -12305,9 +12450,8 @@
       ]
     },
     "pricing": {
-      "input": 0.15,
+      "input": 0.14,
       "output": 1,
-      "cacheRead": 0.05,
       "currency": "USD",
       "per": 1000000
     },
@@ -12384,11 +12528,11 @@
       "vision": false,
       "reasoning": false,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -12804,11 +12948,11 @@
       "vision": true,
       "reasoning": false,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -12990,15 +13134,15 @@
     "contextWindow": 32768,
     "maxOutputTokens": 32768,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
       "reasoning": false,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -13504,7 +13648,7 @@
     "lastUpdated": "2026-02-23",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 81920,
+    "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -13530,7 +13674,6 @@
     "pricing": {
       "input": 0.14,
       "output": 1,
-      "cacheRead": 0.05,
       "currency": "USD",
       "per": 1000000
     },
@@ -13547,10 +13690,10 @@
     "id": "qwen/qwen3.5-9b",
     "provider": "openrouter",
     "providerName": "OpenRouter",
-    "displayName": "Qwen3.5-9B",
-    "family": "qwen3.5",
-    "releaseDate": "2026-03-10",
-    "lastUpdated": "2026-03-10",
+    "displayName": "Qwen3.5 9B",
+    "family": "qwen",
+    "releaseDate": "2026-02-23",
+    "lastUpdated": "2026-02-23",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
     "maxOutputTokens": 262144,
@@ -14732,11 +14875,11 @@
       "vision": false,
       "reasoning": false,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
