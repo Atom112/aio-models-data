@@ -33,9 +33,9 @@
       ]
     },
     "pricing": {
-      "input": 0.95,
-      "output": 4,
-      "cacheRead": 0.475,
+      "input": 0.66,
+      "output": 3.5,
+      "cacheRead": 0.33,
       "currency": "USD",
       "per": 1000000
     },
@@ -130,9 +130,9 @@
       ]
     },
     "pricing": {
-      "input": 0.13,
-      "output": 0.38,
-      "cacheRead": 0.065,
+      "input": 0.12,
+      "output": 0.37,
+      "cacheRead": 0.06,
       "currency": "USD",
       "per": 1000000
     },
@@ -177,198 +177,9 @@
       ]
     },
     "pricing": {
-      "input": 0.08,
-      "output": 0.24,
-      "cacheRead": 0.04,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen2.5-VL-32B-Instruct",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Qwen2.5 VL 32B Instruct",
-    "family": "qwen",
-    "releaseDate": "2025-12-29",
-    "lastUpdated": "2026-04-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 16384,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.0543,
-      "output": 0.2174,
-      "cacheRead": 0.02715,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3-Next-80B-A3B-Instruct",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Qwen3 Next 80B A3B Instruct",
-    "family": "qwen",
-    "releaseDate": "2025-12-29",
-    "lastUpdated": "2026-04-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1,
-      "output": 0.8,
-      "cacheRead": 0.05,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3-235B-A22B-Instruct-2507-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Qwen3 235B A22B Instruct 2507 TEE",
-    "family": "qwen",
-    "releaseDate": "2025-04",
-    "lastUpdated": "2025-04",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1,
-      "output": 0.6,
-      "cacheRead": 0.05,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3-235B-A22B-Thinking-2507",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Qwen3 235B A22B Thinking 2507",
-    "family": "qwen",
-    "releaseDate": "2025-12-29",
-    "lastUpdated": "2026-04-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.11,
-      "output": 0.6,
-      "cacheRead": 0.055,
+      "input": 0.104,
+      "output": 0.416,
+      "cacheRead": 0.052,
       "currency": "USD",
       "per": 1000000
     },
@@ -414,9 +225,9 @@
       ]
     },
     "pricing": {
-      "input": 0.195,
-      "output": 1.56,
-      "cacheRead": 0.0975,
+      "input": 0.3,
+      "output": 2,
+      "cacheRead": 0.15,
       "currency": "USD",
       "per": 1000000
     },
@@ -430,161 +241,20 @@
     ]
   },
   {
-    "id": "Qwen/Qwen3Guard-Gen-0.6B",
+    "id": "Qwen/Qwen3-235B-A22B-Thinking-2507-TEE",
     "provider": "chutes",
     "providerName": "Chutes",
-    "displayName": "Qwen3Guard Gen 0.6B",
+    "displayName": "Qwen3 235B A22B Thinking 2507 TEE",
     "family": "qwen",
-    "releaseDate": "2025-12-29",
-    "lastUpdated": "2026-04-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 32768,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.01,
-      "output": 0.0109,
-      "cacheRead": 0.005,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3-Coder-Next-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Qwen3 Coder Next TEE",
-    "family": "qwen",
-    "releaseDate": "2026-04-25",
-    "lastUpdated": "2026-04-25",
-    "knowledgeCutoff": null,
+    "releaseDate": "2025-07",
+    "lastUpdated": "2026-06-21",
+    "knowledgeCutoff": "2025-04",
     "contextWindow": 262144,
-    "maxOutputTokens": 65536,
+    "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.12,
-      "output": 0.75,
-      "cacheRead": 0.06,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen2.5-Coder-32B-Instruct",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Qwen2.5 Coder 32B Instruct",
-    "family": "qwen",
-    "releaseDate": "2025-12-29",
-    "lastUpdated": "2026-04-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 32768,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.0272,
-      "output": 0.1087,
-      "cacheRead": 0.0136,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen2.5-72B-Instruct",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Qwen2.5 72B Instruct",
-    "family": "qwen",
-    "releaseDate": "2025-12-29",
-    "lastUpdated": "2026-04-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 32768,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
@@ -650,9 +320,9 @@
       ]
     },
     "pricing": {
-      "input": 0.39,
-      "output": 2.34,
-      "cacheRead": 0.195,
+      "input": 0.45,
+      "output": 3,
+      "cacheRead": 0.225,
       "currency": "USD",
       "per": 1000000
     },
@@ -666,214 +336,26 @@
     ]
   },
   {
-    "id": "Qwen/Qwen3-30B-A3B",
+    "id": "unsloth/Mistral-Nemo-Instruct-2407-TEE",
     "provider": "chutes",
     "providerName": "Chutes",
-    "displayName": "Qwen3 30B A3B",
-    "family": "qwen",
-    "releaseDate": "2025-12-29",
-    "lastUpdated": "2026-04-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 40960,
-    "maxOutputTokens": 40960,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.06,
-      "output": 0.22,
-      "cacheRead": 0.03,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "openai/gpt-oss-120b-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "gpt oss 120b TEE",
-    "family": "gpt-oss",
-    "releaseDate": "2025-12-29",
-    "lastUpdated": "2026-04-25",
-    "knowledgeCutoff": null,
+    "displayName": "Mistral Nemo Instruct 2407 TEE",
+    "family": "mistral-nemo",
+    "releaseDate": "2024-07-01",
+    "lastUpdated": "2024-07-01",
+    "knowledgeCutoff": "2024-07",
     "contextWindow": 131072,
-    "maxOutputTokens": 65536,
+    "maxOutputTokens": 131072,
     "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.09,
-      "output": 0.36,
-      "cacheRead": 0.045,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "XiaomiMiMo/MiMo-V2-Flash-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "MiMo V2 Flash TEE",
-    "family": "mimo",
-    "releaseDate": "2025-12-16",
-    "lastUpdated": "2026-02-04",
-    "knowledgeCutoff": "2024-12-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
+      "tools": false,
       "vision": false,
       "reasoning": false,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.09,
-      "output": 0.29,
-      "cacheRead": 0.045,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "NousResearch/Hermes-4-14B",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Hermes 4 14B",
-    "family": "nousresearch",
-    "releaseDate": "2025-12-29",
-    "lastUpdated": "2026-04-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 40960,
-    "maxOutputTokens": 40960,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.0136,
-      "output": 0.0543,
-      "cacheRead": 0.0068,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "NousResearch/DeepHermes-3-Mistral-24B-Preview",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "DeepHermes 3 Mistral 24B Preview",
-    "family": "nousresearch",
-    "releaseDate": "2025-12-29",
-    "lastUpdated": "2026-04-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 32768,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
@@ -888,385 +370,6 @@
       "input": 0.0245,
       "output": 0.0978,
       "cacheRead": 0.01225,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "unsloth/Llama-3.2-1B-Instruct",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Llama 3.2 1B Instruct",
-    "family": "unsloth",
-    "releaseDate": "2026-01-27",
-    "lastUpdated": "2026-04-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 16384,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.01,
-      "output": 0.0109,
-      "cacheRead": 0.005,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "unsloth/gemma-3-12b-it",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "gemma 3 12b it",
-    "family": "unsloth",
-    "releaseDate": "2025-12-29",
-    "lastUpdated": "2026-04-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.03,
-      "output": 0.1,
-      "cacheRead": 0.015,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "unsloth/gemma-3-4b-it",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "gemma 3 4b it",
-    "family": "unsloth",
-    "releaseDate": "2025-12-29",
-    "lastUpdated": "2026-04-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 96000,
-    "maxOutputTokens": 96000,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.01,
-      "output": 0.0272,
-      "cacheRead": 0.005,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "unsloth/gemma-3-27b-it",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "gemma 3 27b it",
-    "family": "unsloth",
-    "releaseDate": "2025-12-29",
-    "lastUpdated": "2026-04-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.0272,
-      "output": 0.1087,
-      "cacheRead": 0.0136,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "unsloth/Mistral-Nemo-Instruct-2407",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Mistral Nemo Instruct 2407",
-    "family": "unsloth",
-    "releaseDate": "2025-12-29",
-    "lastUpdated": "2026-04-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.02,
-      "output": 0.04,
-      "cacheRead": 0.01,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "unsloth/Llama-3.2-3B-Instruct",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Llama 3.2 3B Instruct",
-    "family": "unsloth",
-    "releaseDate": "2025-02-12",
-    "lastUpdated": "2026-04-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 16384,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.01,
-      "output": 0.0136,
-      "cacheRead": 0.005,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "tngtech/DeepSeek-TNG-R1T2-Chimera-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "DeepSeek TNG R1T2 Chimera TEE",
-    "family": "deepseek",
-    "releaseDate": "2026-04-25",
-    "lastUpdated": "2026-04-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 163840,
-    "maxOutputTokens": 163840,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 1.1,
-      "cacheRead": 0.15,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/GLM-4.7-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "GLM 4.7 TEE",
-    "family": "glm",
-    "releaseDate": "2025-12-22",
-    "lastUpdated": "2025-12-22",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 202752,
-    "maxOutputTokens": 65535,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.39,
-      "output": 1.75,
-      "cacheRead": 0.195,
       "currency": "USD",
       "per": 1000000
     },
@@ -1358,9 +461,9 @@
       ]
     },
     "pricing": {
-      "input": 1.05,
-      "output": 3.5,
-      "cacheRead": 0.525,
+      "input": 0.98,
+      "output": 3.08,
+      "cacheRead": 0.49,
       "currency": "USD",
       "per": 1000000
     },
@@ -1374,63 +477,15 @@
     ]
   },
   {
-    "id": "zai-org/GLM-4.6V",
+    "id": "zai-org/GLM-5.2-TEE",
     "provider": "chutes",
     "providerName": "Chutes",
-    "displayName": "GLM 4.6V",
+    "displayName": "GLM 5.2 TEE",
     "family": "glm",
-    "releaseDate": "2025-12-29",
-    "lastUpdated": "2026-04-25",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
     "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 0.9,
-      "cacheRead": 0.15,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/GLM-5-Turbo",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "GLM 5 Turbo",
-    "family": "glm",
-    "releaseDate": "2026-03-11",
-    "lastUpdated": "2026-04-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 202752,
+    "contextWindow": 1048576,
     "maxOutputTokens": 65535,
     "capabilities": {
       "tools": true,
@@ -1453,56 +508,9 @@
       ]
     },
     "pricing": {
-      "input": 0.4891,
-      "output": 1.9565,
-      "cacheRead": 0.24455,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/GLM-4.7-FP8",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "GLM 4.7 FP8",
-    "family": "glm",
-    "releaseDate": "2026-01-27",
-    "lastUpdated": "2026-04-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 202752,
-    "maxOutputTokens": 65535,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2989,
-      "output": 1.1957,
-      "cacheRead": 0.14945,
+      "input": 1.4,
+      "output": 4.4,
+      "cacheRead": 0.7,
       "currency": "USD",
       "per": 1000000
     },
@@ -1521,8 +529,8 @@
     "providerName": "Chutes",
     "displayName": "DeepSeek V3.2 TEE",
     "family": "deepseek",
-    "releaseDate": "2025-12-29",
-    "lastUpdated": "2026-04-25",
+    "releaseDate": "2025-12",
+    "lastUpdated": "2026-06-21",
     "knowledgeCutoff": null,
     "contextWindow": 131072,
     "maxOutputTokens": 65536,
@@ -1547,197 +555,9 @@
       ]
     },
     "pricing": {
-      "input": 0.28,
-      "output": 0.42,
-      "cacheRead": 0.14,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-V3-0324-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "DeepSeek V3 0324 TEE",
-    "family": "deepseek",
-    "releaseDate": "2025-12-29",
-    "lastUpdated": "2026-04-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 163840,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.25,
+      "input": 1,
       "output": 1,
-      "cacheRead": 0.125,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-V3.1-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "DeepSeek V3.1 TEE",
-    "family": "deepseek",
-    "releaseDate": "2025-12-29",
-    "lastUpdated": "2026-04-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 163840,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.27,
-      "output": 1,
-      "cacheRead": 0.135,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "DeepSeek R1 Distill Llama 70B",
-    "family": "deepseek-thinking",
-    "releaseDate": "2025-12-29",
-    "lastUpdated": "2026-04-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.0272,
-      "output": 0.1087,
-      "cacheRead": 0.0136,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-R1-0528-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "DeepSeek R1 0528 TEE",
-    "family": "deepseek-thinking",
-    "releaseDate": "2025-01-20",
-    "lastUpdated": "2025-05-29",
-    "knowledgeCutoff": "2024-07",
-    "contextWindow": 163840,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.45,
-      "output": 2.15,
-      "cacheRead": 0.225,
+      "cacheRead": 0.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -1785,54 +605,6 @@
       "input": 0.15,
       "output": 1.2,
       "cacheRead": 0.075,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "rednote-hilab/dots.ocr",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "dots.ocr",
-    "family": "rednote",
-    "releaseDate": "2025-12-29",
-    "lastUpdated": "2026-04-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.01,
-      "output": 0.0109,
-      "cacheRead": 0.005,
       "currency": "USD",
       "per": 1000000
     },

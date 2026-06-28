@@ -402,7 +402,7 @@
     "releaseDate": "2026-05-31",
     "lastUpdated": "2026-05-31",
     "knowledgeCutoff": "2025-01",
-    "contextWindow": 512000,
+    "contextWindow": 1000000,
     "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
@@ -431,7 +431,19 @@
       "output": 0.4,
       "cacheRead": 0.02,
       "currency": "USD",
-      "per": 1000000
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.2,
+          "output": 0.8,
+          "contextThreshold": 512000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 0.2,
+        "output": 0.8,
+        "contextThreshold": 200000
+      }
     },
     "status": "active",
     "deprecationDate": null,

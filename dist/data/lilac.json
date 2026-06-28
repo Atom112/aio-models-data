@@ -48,40 +48,42 @@
     ]
   },
   {
-    "id": "minimaxai/minimax-m2.7",
+    "id": "minimaxai/minimax-m3",
     "provider": "lilac",
     "providerName": "Lilac",
-    "displayName": "MiniMax M2.7",
-    "family": "minimax",
-    "releaseDate": "2026-03-18",
-    "lastUpdated": "2026-03-18",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 204800,
-    "maxOutputTokens": 204800,
+    "displayName": "MiniMax M3",
+    "family": "minimax-m3",
+    "releaseDate": "2026-06-01",
+    "lastUpdated": "2026-06-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "video"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.3,
-      "output": 1.2,
-      "cacheRead": 0.055,
+      "input": 0.28,
+      "output": 1.1,
+      "cacheRead": 0.05,
       "currency": "USD",
       "per": 1000000
     },
@@ -143,16 +145,16 @@
     ]
   },
   {
-    "id": "zai-org/glm-5.1",
+    "id": "zai-org/glm-5.2",
     "provider": "lilac",
     "providerName": "Lilac",
-    "displayName": "GLM 5.1",
+    "displayName": "GLM 5.2",
     "family": "glm",
-    "releaseDate": "2026-04-07",
-    "lastUpdated": "2026-04-07",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 202800,
-    "maxOutputTokens": 131072,
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 524288,
+    "maxOutputTokens": 524288,
     "capabilities": {
       "tools": true,
       "vision": false,

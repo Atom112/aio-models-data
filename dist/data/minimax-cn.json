@@ -242,9 +242,9 @@
     "displayName": "MiniMax-M3",
     "family": "minimax",
     "releaseDate": "2026-06-01",
-    "lastUpdated": "2026-06-01",
+    "lastUpdated": "2026-06-25",
     "knowledgeCutoff": null,
-    "contextWindow": 512000,
+    "contextWindow": 1000000,
     "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
@@ -269,11 +269,23 @@
       ]
     },
     "pricing": {
-      "input": 0.6,
-      "output": 2.4,
-      "cacheRead": 0.12,
+      "input": 0.3,
+      "output": 1.2,
+      "cacheRead": 0.06,
       "currency": "USD",
-      "per": 1000000
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.6,
+          "output": 2.4,
+          "contextThreshold": 512000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 0.6,
+        "output": 2.4,
+        "contextThreshold": 200000
+      }
     },
     "status": "active",
     "deprecationDate": null,
