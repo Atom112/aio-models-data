@@ -34,6 +34,7 @@
     "pricing": {
       "input": 0.52,
       "output": 2.59,
+      "cacheRead": 0.13,
       "currency": "USD",
       "per": 1000000
     },
@@ -47,16 +48,64 @@
     ]
   },
   {
-    "id": "glm-5-fast",
+    "id": "kimi-k2.6-flex",
     "provider": "neuralwatt",
     "providerName": "Neuralwatt",
-    "displayName": "GLM 5 Fast",
-    "family": "glm",
-    "releaseDate": "2026-04-07",
-    "lastUpdated": "2026-04-07",
+    "displayName": "Kimi K2.6 Flex",
+    "family": "kimi-k2",
+    "releaseDate": "2026-04-21",
+    "lastUpdated": "2026-04-21",
     "knowledgeCutoff": null,
-    "contextWindow": 202736,
-    "maxOutputTokens": 202736,
+    "contextWindow": 262128,
+    "maxOutputTokens": 262128,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.345,
+      "output": 1.61,
+      "cacheRead": 0.08625,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5.2-short-fast-flex",
+    "provider": "neuralwatt",
+    "providerName": "Neuralwatt",
+    "displayName": "GLM 5.2 Short Fast Flex",
+    "family": "glm",
+    "releaseDate": "2026-06-17",
+    "lastUpdated": "2026-06-17",
+    "knowledgeCutoff": null,
+    "contextWindow": 199984,
+    "maxOutputTokens": 199984,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -78,8 +127,56 @@
       ]
     },
     "pricing": {
-      "input": 1.1,
-      "output": 3.6,
+      "input": 0.725,
+      "output": 2.25,
+      "cacheRead": 0.18125,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5.2-flex",
+    "provider": "neuralwatt",
+    "providerName": "Neuralwatt",
+    "displayName": "GLM 5.2 Flex",
+    "family": "glm",
+    "releaseDate": "2026-06-17",
+    "lastUpdated": "2026-06-17",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048560,
+    "maxOutputTokens": 1048560,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.725,
+      "output": 2.25,
+      "cacheRead": 0.18125,
       "currency": "USD",
       "per": 1000000
     },
@@ -126,6 +223,54 @@
     "pricing": {
       "input": 1.45,
       "output": 4.5,
+      "cacheRead": 0.3625,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5.2-short-fast",
+    "provider": "neuralwatt",
+    "providerName": "Neuralwatt",
+    "displayName": "GLM 5.2 Short Fast",
+    "family": "glm",
+    "releaseDate": "2026-06-17",
+    "lastUpdated": "2026-06-17",
+    "knowledgeCutoff": null,
+    "contextWindow": 199984,
+    "maxOutputTokens": 199984,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.45,
+      "output": 4.5,
+      "cacheRead": 0.3625,
       "currency": "USD",
       "per": 1000000
     },
@@ -172,52 +317,7 @@
     "pricing": {
       "input": 0.69,
       "output": 4.14,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm-5.1-fast",
-    "provider": "neuralwatt",
-    "providerName": "Neuralwatt",
-    "displayName": "GLM 5.1 Fast",
-    "family": "glm",
-    "releaseDate": "2026-04-07",
-    "lastUpdated": "2026-04-07",
-    "knowledgeCutoff": null,
-    "contextWindow": 202736,
-    "maxOutputTokens": 202736,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.1,
-      "output": 3.6,
+      "cacheRead": 0.1725,
       "currency": "USD",
       "per": 1000000
     },
@@ -265,6 +365,7 @@
     "pricing": {
       "input": 0.69,
       "output": 3.22,
+      "cacheRead": 0.1725,
       "currency": "USD",
       "per": 1000000
     },
@@ -312,6 +413,101 @@
     "pricing": {
       "input": 0.29,
       "output": 1.15,
+      "cacheRead": 0.0725,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5.2-short-flex",
+    "provider": "neuralwatt",
+    "providerName": "Neuralwatt",
+    "displayName": "GLM 5.2 Short Flex",
+    "family": "glm",
+    "releaseDate": "2026-06-17",
+    "lastUpdated": "2026-06-17",
+    "knowledgeCutoff": null,
+    "contextWindow": 199984,
+    "maxOutputTokens": 199984,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.725,
+      "output": 2.25,
+      "cacheRead": 0.18125,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5.2-fast",
+    "provider": "neuralwatt",
+    "providerName": "Neuralwatt",
+    "displayName": "GLM 5.2 Fast",
+    "family": "glm",
+    "releaseDate": "2026-06-17",
+    "lastUpdated": "2026-06-17",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048560,
+    "maxOutputTokens": 1048560,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.45,
+      "output": 4.5,
+      "cacheRead": 0.3625,
       "currency": "USD",
       "per": 1000000
     },
@@ -328,13 +524,13 @@
     "id": "glm-5.2-short",
     "provider": "neuralwatt",
     "providerName": "Neuralwatt",
-    "displayName": "GLM 5.2 short",
+    "displayName": "GLM 5.2 Short",
     "family": "glm",
     "releaseDate": "2026-06-17",
     "lastUpdated": "2026-06-17",
     "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 200000,
+    "contextWindow": 199984,
+    "maxOutputTokens": 199984,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -358,6 +554,55 @@
     "pricing": {
       "input": 1.45,
       "output": 4.5,
+      "cacheRead": 0.3625,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k2.7-code-flex",
+    "provider": "neuralwatt",
+    "providerName": "Neuralwatt",
+    "displayName": "Kimi K2.7 Code Flex",
+    "family": "kimi-k2",
+    "releaseDate": "2026-06-12",
+    "lastUpdated": "2026-06-12",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.475,
+      "output": 2,
+      "cacheRead": 0.11875,
       "currency": "USD",
       "per": 1000000
     },
@@ -405,6 +650,7 @@
     "pricing": {
       "input": 0.69,
       "output": 3.22,
+      "cacheRead": 0.1725,
       "currency": "USD",
       "per": 1000000
     },
@@ -452,6 +698,7 @@
     "pricing": {
       "input": 0.52,
       "output": 2.59,
+      "cacheRead": 0.13,
       "currency": "USD",
       "per": 1000000
     },
@@ -499,6 +746,7 @@
     "pricing": {
       "input": 0.95,
       "output": 4,
+      "cacheRead": 0.2375,
       "currency": "USD",
       "per": 1000000
     },
@@ -546,6 +794,7 @@
     "pricing": {
       "input": 0.29,
       "output": 1.15,
+      "cacheRead": 0.0725,
       "currency": "USD",
       "per": 1000000
     },
@@ -592,52 +841,7 @@
     "pricing": {
       "input": 0.69,
       "output": 4.14,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/GLM-5.1-FP8",
-    "provider": "neuralwatt",
-    "providerName": "Neuralwatt",
-    "displayName": "GLM 5.1 FP8",
-    "family": "glm",
-    "releaseDate": "2026-04-07",
-    "lastUpdated": "2026-04-07",
-    "knowledgeCutoff": null,
-    "contextWindow": 202736,
-    "maxOutputTokens": 202736,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.1,
-      "output": 3.6,
+      "cacheRead": 0.1725,
       "currency": "USD",
       "per": 1000000
     },

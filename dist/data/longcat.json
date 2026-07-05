@@ -1,13 +1,13 @@
 [
   {
-    "id": "z-code",
-    "provider": "zeldoc",
-    "providerName": "Zeldoc",
-    "displayName": "Z-Code",
-    "family": null,
-    "releaseDate": "2026-04-15",
-    "lastUpdated": "2026-04-15",
-    "knowledgeCutoff": "2025-01",
+    "id": "LongCat-2.0",
+    "provider": "longcat",
+    "providerName": "LongCat",
+    "displayName": "LongCat-2.0",
+    "family": "longcat",
+    "releaseDate": "2026-06-30",
+    "lastUpdated": "2026-06-30",
+    "knowledgeCutoff": null,
     "contextWindow": 1000000,
     "maxOutputTokens": 131072,
     "capabilities": {
@@ -15,11 +15,11 @@
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": true,
+      "structured_output": false,
       "open_weights": false
     },
     "modalities": {
@@ -31,8 +31,9 @@
       ]
     },
     "pricing": {
-      "input": 0,
-      "output": 0,
+      "input": 0.75,
+      "output": 2.95,
+      "cacheRead": 0.015,
       "currency": "USD",
       "per": 1000000
     },

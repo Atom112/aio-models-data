@@ -143,7 +143,7 @@
     "id": "minimax-m2.5",
     "provider": "opencode",
     "providerName": "OpenCode Zen",
-    "displayName": "MiniMax M2.5",
+    "displayName": "MiniMax-M2.5",
     "family": "minimax",
     "releaseDate": "2026-02-12",
     "lastUpdated": "2026-02-12",
@@ -334,7 +334,7 @@
     "id": "minimax-m2.1",
     "provider": "opencode",
     "providerName": "OpenCode Zen",
-    "displayName": "MiniMax M2.1",
+    "displayName": "MiniMax-M2.1",
     "family": "minimax",
     "releaseDate": "2025-12-23",
     "lastUpdated": "2025-12-23",
@@ -785,7 +785,7 @@
     "id": "minimax-m3-free",
     "provider": "opencode",
     "providerName": "OpenCode Zen",
-    "displayName": "MiniMax M3 Free",
+    "displayName": "MiniMax-M3 Free",
     "family": "minimax-m3-free",
     "releaseDate": "2026-05-31",
     "lastUpdated": "2026-05-31",
@@ -934,6 +934,55 @@
       "per": 1000000
     },
     "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k2.7-code",
+    "provider": "opencode",
+    "providerName": "OpenCode Zen",
+    "displayName": "Kimi K2.7 Code",
+    "family": "kimi-k2",
+    "releaseDate": "2026-06-12",
+    "lastUpdated": "2026-06-12",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.95,
+      "output": 4,
+      "cacheRead": 0.19,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1243,6 +1292,56 @@
     ]
   },
   {
+    "id": "claude-sonnet-5",
+    "provider": "opencode",
+    "providerName": "OpenCode Zen",
+    "displayName": "Claude Sonnet 5",
+    "family": "claude-sonnet",
+    "releaseDate": "2026-06-30",
+    "lastUpdated": "2026-06-30",
+    "knowledgeCutoff": "2026-01-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "gpt-5.4-nano",
     "provider": "opencode",
     "providerName": "OpenCode Zen",
@@ -1423,6 +1522,55 @@
       "per": 1000000
     },
     "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimax-m3",
+    "provider": "opencode",
+    "providerName": "OpenCode Zen",
+    "displayName": "MiniMax-M3",
+    "family": "minimax",
+    "releaseDate": "2026-06-01",
+    "lastUpdated": "2026-06-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 512000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 1.2,
+      "cacheRead": 0.06,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1871,7 +2019,7 @@
     "id": "minimax-m2.7",
     "provider": "opencode",
     "providerName": "OpenCode Zen",
-    "displayName": "MiniMax M2.7",
+    "displayName": "MiniMax-M2.7",
     "family": "minimax",
     "releaseDate": "2026-03-18",
     "lastUpdated": "2026-03-18",
@@ -2196,7 +2344,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "deprecated",
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2369,7 +2517,7 @@
     "id": "minimax-m2.5-free",
     "provider": "opencode",
     "providerName": "OpenCode Zen",
-    "displayName": "MiniMax M2.5 Free",
+    "displayName": "MiniMax-M2.5 Free",
     "family": "minimax-free",
     "releaseDate": "2026-02-12",
     "lastUpdated": "2026-02-12",
@@ -2515,7 +2663,7 @@
     "id": "minimax-m2.1-free",
     "provider": "opencode",
     "providerName": "OpenCode Zen",
-    "displayName": "MiniMax M2.1 Free",
+    "displayName": "MiniMax-M2.1 Free",
     "family": "minimax-free",
     "releaseDate": "2025-12-23",
     "lastUpdated": "2025-12-23",
