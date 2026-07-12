@@ -3558,7 +3558,7 @@
     "provider": "kilo",
     "providerName": "Kilo Gateway",
     "displayName": "Poolside: Laguna XS.2 (free)",
-    "family": null,
+    "family": "laguna",
     "releaseDate": "2026-04-28",
     "lastUpdated": "2026-06-13",
     "knowledgeCutoff": null,
@@ -3574,7 +3574,7 @@
       "temperature": true,
       "attachment": false,
       "structured_output": false,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -3604,7 +3604,7 @@
     "provider": "kilo",
     "providerName": "Kilo Gateway",
     "displayName": "Poolside: Laguna M.1 (free)",
-    "family": null,
+    "family": "laguna",
     "releaseDate": "2026-04-28",
     "lastUpdated": "2026-06-13",
     "knowledgeCutoff": null,
@@ -3620,7 +3620,7 @@
       "temperature": true,
       "attachment": false,
       "structured_output": false,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -15765,6 +15765,55 @@
     "pricing": {
       "input": 0.2,
       "output": 1.1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimax/minimax-m3",
+    "provider": "kilo",
+    "providerName": "Kilo Gateway",
+    "displayName": "MiniMax: MiniMax M3",
+    "family": "minimax",
+    "releaseDate": "2026-06-01",
+    "lastUpdated": "2026-06-30",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 512000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 1.2,
+      "cacheRead": 0.06,
       "currency": "USD",
       "per": 1000000
     },

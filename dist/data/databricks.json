@@ -170,7 +170,7 @@
     "family": "claude-opus",
     "releaseDate": "2025-11-24",
     "lastUpdated": "2025-11-24",
-    "knowledgeCutoff": "2025-03-31",
+    "knowledgeCutoff": "2025-05",
     "contextWindow": 200000,
     "maxOutputTokens": 64000,
     "capabilities": {
@@ -574,6 +574,53 @@
       "output": 15,
       "cacheRead": 0.3,
       "cacheWrite": 3.75,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "databricks-glm-5-2",
+    "provider": "databricks",
+    "providerName": "Databricks",
+    "displayName": "GLM-5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.4,
+      "output": 4.4,
+      "cacheRead": 0.26,
       "currency": "USD",
       "per": 1000000
     },
@@ -1054,6 +1101,55 @@
         "output": 18,
         "contextThreshold": 200000
       }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "databricks-kimi-k2-7-code",
+    "provider": "databricks",
+    "providerName": "Databricks",
+    "displayName": "Kimi K2.7 Code",
+    "family": "kimi-k2",
+    "releaseDate": "2026-06-12",
+    "lastUpdated": "2026-06-12",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.95,
+      "output": 4,
+      "cacheRead": 0.19,
+      "currency": "USD",
+      "per": 1000000
     },
     "status": "active",
     "deprecationDate": null,

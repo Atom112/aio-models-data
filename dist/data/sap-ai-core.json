@@ -1,5 +1,107 @@
 [
   {
+    "id": "anthropic--claude-4.8-opus",
+    "provider": "sap-ai-core",
+    "providerName": "SAP AI Core",
+    "displayName": "anthropic--claude-4.8-opus",
+    "family": "claude-opus",
+    "releaseDate": "2026-05-28",
+    "lastUpdated": "2026-05-28",
+    "knowledgeCutoff": "2026-01",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 25,
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3.1-flash-lite",
+    "provider": "sap-ai-core",
+    "providerName": "SAP AI Core",
+    "displayName": "gemini-3.1-flash-lite",
+    "family": "gemini-flash-lite",
+    "releaseDate": "2026-05-07",
+    "lastUpdated": "2026-05-07",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.25,
+      "output": 1.5,
+      "cacheRead": 0.025,
+      "inputAudio": 0.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "anthropic--claude-4.6-sonnet",
     "provider": "sap-ai-core",
     "providerName": "SAP AI Core",
@@ -288,6 +390,58 @@
       "output": 2.5,
       "cacheRead": 0.03,
       "inputAudio": 1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3.5-flash",
+    "provider": "sap-ai-core",
+    "providerName": "SAP AI Core",
+    "displayName": "gemini-3.5-flash",
+    "family": "gemini-flash",
+    "releaseDate": "2026-05-19",
+    "lastUpdated": "2026-05-19",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.5,
+      "output": 9,
+      "cacheRead": 0.15,
+      "inputAudio": 1.5,
       "currency": "USD",
       "per": 1000000
     },

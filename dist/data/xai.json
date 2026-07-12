@@ -271,6 +271,67 @@
     ]
   },
   {
+    "id": "grok-4.5",
+    "provider": "xai",
+    "providerName": "xAI",
+    "displayName": "Grok 4.5",
+    "family": "grok",
+    "releaseDate": "2026-07-08",
+    "lastUpdated": "2026-07-08",
+    "knowledgeCutoff": null,
+    "contextWindow": 500000,
+    "maxOutputTokens": 500000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 6,
+      "cacheRead": 0.5,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 4,
+          "output": 12,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 4,
+        "output": 12,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "grok-4.20-0309-reasoning",
     "provider": "xai",
     "providerName": "xAI",

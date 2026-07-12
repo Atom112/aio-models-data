@@ -1,460 +1,19 @@
 [
   {
-    "id": "gemini-3-flash",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "Gemini 3 Flash Preview",
-    "family": "gemini-flash",
-    "releaseDate": "2025-12-17",
-    "lastUpdated": "2025-12-17",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "audio",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.5,
-      "output": 3,
-      "cacheRead": 0.05,
-      "inputAudio": 1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-sonnet-4",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "Claude Sonnet 4.5",
-    "family": "claude-sonnet",
-    "releaseDate": "2025-09-29",
-    "lastUpdated": "2025-09-29",
-    "knowledgeCutoff": "2025-07-31",
-    "contextWindow": 200000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 3,
-      "output": 15,
-      "cacheRead": 0.3,
-      "cacheWrite": 3.75,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-next-80b-a3b-instruct",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "Qwen3-Next 80B-A3B Instruct",
-    "family": "qwen",
-    "releaseDate": "2025-09",
-    "lastUpdated": "2025-09",
+    "id": "z-ai/glm-4.7",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "GLM-4.7",
+    "family": "glm",
+    "releaseDate": "2025-12-22",
+    "lastUpdated": "2025-12-22",
     "knowledgeCutoff": "2025-04",
-    "contextWindow": 131072,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.15,
-      "output": 1.2,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "llama-4-maverick",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "Llama 4 Maverick 17B Instruct",
-    "family": "llama",
-    "releaseDate": "2025-04-05",
-    "lastUpdated": "2025-04-05",
-    "knowledgeCutoff": "2024-08",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.5,
-      "output": 1.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-opus-4-5",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "Claude Opus 4.5",
-    "family": "claude-opus",
-    "releaseDate": "2025-11-24",
-    "lastUpdated": "2025-11-24",
-    "knowledgeCutoff": "2025-05",
     "contextWindow": 200000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [
-      "Claude Opus 4.5 (latest)"
-    ],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "GPT-5",
-    "family": "gpt",
-    "releaseDate": "2025-08-07",
-    "lastUpdated": "2025-08-07",
-    "knowledgeCutoff": "2024-09-30",
-    "contextWindow": 400000,
     "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text",
-        "image"
-      ]
-    },
-    "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cacheRead": 0.125,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemma-3-12b",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "Gemma 3 12B",
-    "family": "gemma",
-    "releaseDate": "2025-03-13",
-    "lastUpdated": "2025-03-13",
-    "knowledgeCutoff": "2024-08-31",
-    "contextWindow": 131072,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.15,
-      "output": 0.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5-1-codex-mini",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "GPT-5.1 Codex mini",
-    "family": "gpt-codex",
-    "releaseDate": "2025-11-13",
-    "lastUpdated": "2025-11-13",
-    "knowledgeCutoff": "2024-09-30",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text",
-        "image"
-      ]
-    },
-    "pricing": {
-      "input": 0.25,
-      "output": 2,
-      "cacheRead": 0.025,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5-1",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "GPT-5.1",
-    "family": "gpt",
-    "releaseDate": "2025-11-13",
-    "lastUpdated": "2025-11-13",
-    "knowledgeCutoff": "2024-09-30",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text",
-        "image"
-      ]
-    },
-    "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cacheRead": 0.125,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "meta-llama-3-3-70b-instruct",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "Llama-3.3-70B-Instruct",
-    "family": "llama",
-    "releaseDate": "2024-12-06",
-    "lastUpdated": "2024-12-06",
-    "knowledgeCutoff": "2023-12",
-    "contextWindow": 128000,
-    "maxOutputTokens": 4096,
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
@@ -472,10 +31,19 @@
       ]
     },
     "pricing": {
-      "input": 0.5,
-      "output": 1.5,
+      "input": 0.47,
+      "output": 2.16,
+      "cacheRead": 0.1,
+      "cacheWrite": 0.47,
       "currency": "USD",
-      "per": 1000000
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.62,
+          "output": 2.47,
+          "contextThreshold": 32000
+        }
+      ]
     },
     "status": "active",
     "deprecationDate": null,
@@ -487,58 +55,50 @@
     ]
   },
   {
-    "id": "gemini-3-pro",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "Gemini 3 Pro Preview",
-    "family": "gemini-pro",
-    "releaseDate": "2025-11-18",
-    "lastUpdated": "2025-11-18",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
+    "id": "z-ai/glm-5.1",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "GLM-5.1",
+    "family": "glm",
+    "releaseDate": "2026-04-07",
+    "lastUpdated": "2026-04-07",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "video",
-        "audio",
-        "pdf"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 2,
-      "output": 12,
+      "input": 1,
+      "output": 3.8,
       "cacheRead": 0.2,
+      "cacheWrite": 1,
       "currency": "USD",
       "per": 1000000,
       "tiers": [
         {
-          "input": 4,
-          "output": 18,
-          "contextThreshold": 200000
+          "input": 1.2,
+          "output": 4.4,
+          "contextThreshold": 32000
         }
-      ],
-      "contextOverThreshold": {
-        "input": 4,
-        "output": 18,
-        "contextThreshold": 200000
-      }
+      ]
     },
     "status": "active",
     "deprecationDate": null,
@@ -550,196 +110,41 @@
     ]
   },
   {
-    "id": "gpt-5-2",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "GPT-5.2",
-    "family": "gpt",
-    "releaseDate": "2025-12-11",
-    "lastUpdated": "2025-12-11",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 400000,
+    "id": "z-ai/glm-5.2",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "GLM-5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
     "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text",
-        "image"
-      ]
-    },
-    "pricing": {
-      "input": 1.75,
-      "output": 14,
-      "cacheRead": 0.175,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-3-1-flash-lite",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "Gemini 3.1 Flash Lite Preview",
-    "family": "gemini-flash-lite",
-    "releaseDate": "2026-03-03",
-    "lastUpdated": "2026-03-03",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "video",
-        "audio",
-        "pdf"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.25,
-      "output": 1.5,
-      "cacheRead": 0.025,
-      "inputAudio": 0.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-sonnet-4-5",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "Claude Sonnet 4.5",
-    "family": "claude-sonnet",
-    "releaseDate": "2025-09-29",
-    "lastUpdated": "2025-09-29",
-    "knowledgeCutoff": "2025-07-31",
-    "contextWindow": 200000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 3,
-      "output": 15,
+      "input": 1.2,
+      "output": 4.4,
       "cacheRead": 0.3,
-      "cacheWrite": 3.75,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [
-      "Claude Sonnet 4.5 (latest)"
-    ],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-opus-4-7",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "Claude Opus 4.7",
-    "family": "claude-opus",
-    "releaseDate": "2026-04-16",
-    "lastUpdated": "2026-04-16",
-    "knowledgeCutoff": "2026-01-31",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
+      "cacheWrite": 1.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -753,109 +158,106 @@
     ]
   },
   {
-    "id": "gemini-2-5-pro",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "Gemini 2.5 Pro",
-    "family": "gemini-pro",
-    "releaseDate": "2025-06-17",
-    "lastUpdated": "2025-06-17",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
+    "id": "z-ai/glm-5",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "GLM-5",
+    "family": "glm",
+    "releaseDate": "2026-02-12",
+    "lastUpdated": "2026-02-12",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.6,
+      "output": 3,
+      "cacheRead": 0.16,
+      "cacheWrite": 0.6,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.8,
+          "output": 3.4,
+          "contextThreshold": 32000
+        }
+      ]
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-5-turbo",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "GLM-5-Turbo",
+    "family": "glm",
+    "releaseDate": "2026-03-16",
+    "lastUpdated": "2026-03-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": true,
       "open_weights": false
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "audio",
-        "video",
-        "pdf"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cacheRead": 0.125,
+      "input": 0.9,
+      "output": 3.7,
+      "cacheRead": 0.18,
+      "cacheWrite": 0.9,
       "currency": "USD",
       "per": 1000000,
       "tiers": [
         {
-          "input": 2.5,
-          "output": 15,
-          "contextThreshold": 200000
+          "input": 1.1,
+          "output": 4.3,
+          "contextThreshold": 32000
         }
-      ],
-      "contextOverThreshold": {
-        "input": 2.5,
-        "output": 15,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-opus-4-8",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "Claude Opus 4.8",
-    "family": "claude-opus",
-    "releaseDate": "2026-05-28",
-    "lastUpdated": "2026-05-28",
-    "knowledgeCutoff": "2026-01",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
       ]
     },
-    "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
-      "currency": "USD",
-      "per": 1000000
-    },
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
@@ -866,59 +268,9 @@
     ]
   },
   {
-    "id": "gpt-5-3-codex",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "GPT-5.3 Codex",
-    "family": "gpt-codex",
-    "releaseDate": "2026-02-05",
-    "lastUpdated": "2026-02-05",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text",
-        "image"
-      ]
-    },
-    "pricing": {
-      "input": 1.75,
-      "output": 14,
-      "cacheRead": 0.175,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5-4-nano",
-    "provider": "neon",
-    "providerName": "Neon",
+    "id": "openai/gpt-5.4-nano",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
     "displayName": "GPT-5.4 nano",
     "family": "gpt-nano",
     "releaseDate": "2026-03-17",
@@ -944,14 +296,14 @@
         "image"
       ],
       "output": [
-        "text",
-        "image"
+        "text"
       ]
     },
     "pricing": {
       "input": 0.2,
       "output": 1.25,
       "cacheRead": 0.02,
+      "cacheWrite": 0.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -965,715 +317,9 @@
     ]
   },
   {
-    "id": "claude-opus-4-1",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "Claude Opus 4.1",
-    "family": "claude-opus",
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": "2025-03-31",
-    "contextWindow": 200000,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 15,
-      "output": 75,
-      "cacheRead": 1.5,
-      "cacheWrite": 18.75,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [
-      "Claude Opus 4.1 (latest)"
-    ],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5-4-mini",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "GPT-5.4 mini",
-    "family": "gpt-mini",
-    "releaseDate": "2026-03-17",
-    "lastUpdated": "2026-03-17",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text",
-        "image"
-      ]
-    },
-    "pricing": {
-      "input": 0.75,
-      "output": 4.5,
-      "cacheRead": 0.075,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-2-5-flash",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "Gemini 2.5 Flash",
-    "family": "gemini-flash",
-    "releaseDate": "2025-06-17",
-    "lastUpdated": "2025-06-17",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 2.5,
-      "cacheRead": 0.03,
-      "inputAudio": 1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5-2-codex",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "GPT-5.2 Codex",
-    "family": "gpt-codex",
-    "releaseDate": "2025-12-11",
-    "lastUpdated": "2025-12-11",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text",
-        "image"
-      ]
-    },
-    "pricing": {
-      "input": 1.75,
-      "output": 14,
-      "cacheRead": 0.175,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-oss-120b",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "GPT OSS 120B",
-    "family": "gpt-oss",
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.072,
-      "output": 0.28,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-3-5-flash",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "Gemini 3.5 Flash",
-    "family": "gemini-flash",
-    "releaseDate": "2026-05-19",
-    "lastUpdated": "2026-05-19",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "audio",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.5,
-      "output": 9,
-      "cacheRead": 0.15,
-      "inputAudio": 1.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-3-1-pro",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "Gemini 3.1 Pro Preview Custom Tools",
-    "family": "gemini-pro",
-    "releaseDate": "2026-02-19",
-    "lastUpdated": "2026-02-19",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "audio",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2,
-      "output": 12,
-      "cacheRead": 0.2,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 4,
-          "output": 18,
-          "contextThreshold": 200000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 4,
-        "output": 18,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-haiku-4-5",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "Claude Haiku 4.5",
-    "family": "claude-haiku",
-    "releaseDate": "2025-10-15",
-    "lastUpdated": "2025-10-15",
-    "knowledgeCutoff": "2025-02-28",
-    "contextWindow": 200000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1,
-      "output": 5,
-      "cacheRead": 0.1,
-      "cacheWrite": 1.25,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [
-      "Claude Haiku 4.5 (latest)"
-    ],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-opus-4-6",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "Claude Opus 4.6",
-    "family": "claude-opus",
-    "releaseDate": "2026-02-05",
-    "lastUpdated": "2026-03-13",
-    "knowledgeCutoff": "2025-05-31",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen35-122b-a10b",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "Qwen3.5 122B-A10B",
-    "family": "qwen",
-    "releaseDate": "2026-02-23",
-    "lastUpdated": "2026-02-23",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 8000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.22,
-      "output": 2.2,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "meta-llama-3-1-8b-instruct",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "Llama 3.1 8B Instruct",
-    "family": "llama",
-    "releaseDate": "2024-07-23",
-    "lastUpdated": "2024-07-23",
-    "knowledgeCutoff": "2023-12-31",
-    "contextWindow": 131072,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.15,
-      "output": 0.45,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5-mini",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "GPT-5 Mini",
-    "family": "gpt-mini",
-    "releaseDate": "2025-08-07",
-    "lastUpdated": "2025-08-07",
-    "knowledgeCutoff": "2024-05-30",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text",
-        "image"
-      ]
-    },
-    "pricing": {
-      "input": 0.25,
-      "output": 2,
-      "cacheRead": 0.025,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5-nano",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "GPT-5 Nano",
-    "family": "gpt-nano",
-    "releaseDate": "2025-08-07",
-    "lastUpdated": "2025-08-07",
-    "knowledgeCutoff": "2024-05-30",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text",
-        "image"
-      ]
-    },
-    "pricing": {
-      "input": 0.05,
-      "output": 0.4,
-      "cacheRead": 0.005,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-sonnet-4-6",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "Claude Sonnet 4.6",
-    "family": "claude-sonnet",
-    "releaseDate": "2026-02-17",
-    "lastUpdated": "2026-03-13",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 3,
-      "output": 15,
-      "cacheRead": 0.3,
-      "cacheWrite": 3.75,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5-4",
-    "provider": "neon",
-    "providerName": "Neon",
+    "id": "openai/gpt-5.4",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
     "displayName": "GPT-5.4",
     "family": "gpt",
     "releaseDate": "2026-03-05",
@@ -1696,18 +342,17 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
       ],
       "output": [
-        "text",
-        "image"
+        "text"
       ]
     },
     "pricing": {
       "input": 2.5,
       "output": 15,
       "cacheRead": 0.25,
+      "cacheWrite": 2.5,
       "currency": "USD",
       "per": 1000000,
       "tiers": [
@@ -1733,14 +378,14 @@
     ]
   },
   {
-    "id": "gpt-5-1-codex-max",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "GPT-5.1 Codex Max",
-    "family": "gpt-codex",
-    "releaseDate": "2025-11-13",
-    "lastUpdated": "2025-11-13",
-    "knowledgeCutoff": "2024-09-30",
+    "id": "openai/gpt-5.4-mini",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "GPT-5.4 mini",
+    "family": "gpt-mini",
+    "releaseDate": "2026-03-17",
+    "lastUpdated": "2026-03-17",
+    "knowledgeCutoff": "2025-08-31",
     "contextWindow": 400000,
     "maxOutputTokens": 128000,
     "capabilities": {
@@ -1761,14 +406,14 @@
         "image"
       ],
       "output": [
-        "text",
-        "image"
+        "text"
       ]
     },
     "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cacheRead": 0.125,
+      "input": 0.75,
+      "output": 4.5,
+      "cacheRead": 0.075,
+      "cacheWrite": 0.75,
       "currency": "USD",
       "per": 1000000
     },
@@ -1782,16 +427,1349 @@
     ]
   },
   {
-    "id": "gpt-oss-20b",
-    "provider": "neon",
-    "providerName": "Neon",
-    "displayName": "GPT OSS 20B",
-    "family": "gpt-oss",
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
+    "id": "openai/gpt-5.5-pro",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "GPT-5.5 Pro",
+    "family": "gpt-pro",
+    "releaseDate": "2026-04-23",
+    "lastUpdated": "2026-04-23",
+    "knowledgeCutoff": "2025-12-01",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 30,
+      "output": 180,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 60,
+          "output": 270,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 60,
+        "output": 270,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "openai/gpt-4o-mini",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "GPT-4o mini",
+    "family": "gpt-mini",
+    "releaseDate": "2024-07-18",
+    "lastUpdated": "2024-07-18",
+    "knowledgeCutoff": "2023-09",
+    "contextWindow": 128000,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.6,
+      "cacheRead": 0.075,
+      "cacheWrite": 0.15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "openai/gpt-5.5",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "GPT-5.5",
+    "family": "gpt",
+    "releaseDate": "2026-04-23",
+    "lastUpdated": "2026-04-23",
+    "knowledgeCutoff": "2025-12-01",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 30,
+      "cacheRead": 0.5,
+      "cacheWrite": 5,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 10,
+          "output": 45,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 10,
+        "output": 45,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "xiaomi/mimo-v2.5",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "MiMo-V2.5",
+    "family": "mimo",
+    "releaseDate": "2026-04-22",
+    "lastUpdated": "2026-04-22",
+    "knowledgeCutoff": "2024-12",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.16,
+      "output": 0.32,
+      "cacheRead": 0.004,
+      "cacheWrite": 0.16,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "xiaomi/mimo-v2.5-pro",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "MiMo-V2.5-Pro",
+    "family": "mimo",
+    "releaseDate": "2026-04-22",
+    "lastUpdated": "2026-04-22",
+    "knowledgeCutoff": "2024-12",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.47,
+      "output": 0.94,
+      "cacheRead": 0.005,
+      "cacheWrite": 0.47,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "anthropic/claude-opus-4-7",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "Claude Opus 4.7",
+    "family": "claude-opus",
+    "releaseDate": "2026-04-16",
+    "lastUpdated": "2026-04-16",
+    "knowledgeCutoff": "2026-01-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 25,
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "anthropic/claude-sonnet-5",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "Claude Sonnet 5",
+    "family": "claude-sonnet",
+    "releaseDate": "2026-06-30",
+    "lastUpdated": "2026-06-30",
+    "knowledgeCutoff": "2026-01-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "anthropic/claude-opus-4-8",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "Claude Opus 4.8",
+    "family": "claude-opus",
+    "releaseDate": "2026-05-28",
+    "lastUpdated": "2026-05-28",
+    "knowledgeCutoff": "2026-01",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 25,
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "anthropic/claude-fable-5",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "Claude Fable 5",
+    "family": "claude-fable",
+    "releaseDate": "2026-06-09",
+    "lastUpdated": "2026-06-09",
+    "knowledgeCutoff": "2026-01-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 10,
+      "output": 50,
+      "cacheRead": 1,
+      "cacheWrite": 12.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "anthropic/claude-haiku-4-5",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "Claude Haiku 4.5",
+    "family": "claude-haiku",
+    "releaseDate": "2025-10-15",
+    "lastUpdated": "2025-10-15",
+    "knowledgeCutoff": "2025-02-28",
+    "contextWindow": 200000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1,
+      "output": 5,
+      "cacheRead": 0.1,
+      "cacheWrite": 1.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [
+      "Claude Haiku 4.5 (latest)"
+    ],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "anthropic/claude-sonnet-4-6",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "Claude Sonnet 4.6",
+    "family": "claude-sonnet",
+    "releaseDate": "2026-02-17",
+    "lastUpdated": "2026-03-13",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 15,
+      "cacheRead": 0.3,
+      "cacheWrite": 3.75,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "tencent/hy3-preview",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "Hy3 preview",
+    "family": "Hy",
+    "releaseDate": "2026-04-20",
+    "lastUpdated": "2026-04-20",
     "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 32768,
+    "contextWindow": 256000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.19,
+      "output": 0.63,
+      "cacheRead": 0.063,
+      "cacheWrite": 0.19,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.25,
+          "output": 1,
+          "contextThreshold": 16000
+        },
+        {
+          "input": 0.32,
+          "output": 1.25,
+          "contextThreshold": 32000
+        }
+      ]
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "moonshot/kimi-k2.7-code",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "Kimi K2.7 Code",
+    "family": "kimi-k2",
+    "releaseDate": "2026-06-12",
+    "lastUpdated": "2026-06-12",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262000,
+    "maxOutputTokens": 262000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1,
+      "output": 4.16,
+      "cacheRead": 0.18,
+      "cacheWrite": 1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "moonshot/kimi-k2.5",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "Kimi K2.5",
+    "family": "kimi-k2",
+    "releaseDate": "2026-01",
+    "lastUpdated": "2026-01",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262000,
+    "maxOutputTokens": 262000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.62,
+      "output": 3.3,
+      "cacheRead": 0.11,
+      "cacheWrite": 0.62,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "moonshot/kimi-k2.6",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "Kimi K2.6",
+    "family": "kimi-k2",
+    "releaseDate": "2026-04-21",
+    "lastUpdated": "2026-04-21",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262000,
+    "maxOutputTokens": 262000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1,
+      "output": 4.16,
+      "cacheRead": 0.18,
+      "cacheWrite": 1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini/gemini-2.5-pro",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "Gemini 2.5 Pro",
+    "family": "gemini-pro",
+    "releaseDate": "2025-06-17",
+    "lastUpdated": "2025-06-17",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 10,
+      "cacheRead": 0.125,
+      "cacheWrite": 1.25,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 2.5,
+          "output": 15,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 2.5,
+        "output": 15,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini/gemini-2.5-flash",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "Gemini 2.5 Flash",
+    "family": "gemini-flash",
+    "releaseDate": "2025-06-17",
+    "lastUpdated": "2025-06-17",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 2.5,
+      "cacheRead": 0.03,
+      "cacheWrite": 0.3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini/gemini-3.5-flash",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "Gemini 3.5 Flash",
+    "family": "gemini-flash",
+    "releaseDate": "2026-05-19",
+    "lastUpdated": "2026-05-19",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.5,
+      "output": 9,
+      "cacheRead": 0.15,
+      "cacheWrite": 1.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini/gemini-2.5-flash-lite",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "Gemini 2.5 Flash-Lite",
+    "family": "gemini-flash-lite",
+    "releaseDate": "2025-06-17",
+    "lastUpdated": "2025-06-17",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.4,
+      "cacheRead": 0.01,
+      "cacheWrite": 0.1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini/gemini-3.1-pro-preview",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "Gemini 3.1 Pro Preview",
+    "family": "gemini-pro",
+    "releaseDate": "2026-02-19",
+    "lastUpdated": "2026-02-19",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 12,
+      "cacheRead": 0.2,
+      "cacheWrite": 2,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 4,
+          "output": 18,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 4,
+        "output": 18,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini/gemini-3-flash-preview",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "Gemini 3 Flash Preview",
+    "family": "gemini-flash",
+    "releaseDate": "2025-12-17",
+    "lastUpdated": "2025-12-17",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.5,
+      "output": 3,
+      "cacheRead": 0.05,
+      "cacheWrite": 0.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.7-plus",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "Qwen3.7 Plus",
+    "family": "qwen",
+    "releaseDate": "2026-06-02",
+    "lastUpdated": "2026-06-02",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.32,
+      "output": 1.25,
+      "cacheRead": 0.032,
+      "cacheWrite": 0.4,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.96,
+          "output": 3.75,
+          "contextThreshold": 256000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 0.96,
+        "output": 3.75,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.7-max",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "Qwen3.7 Max",
+    "family": "qwen",
+    "releaseDate": "2026-05-21",
+    "lastUpdated": "2026-05-21",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.88,
+      "output": 5.63,
+      "cacheRead": 0.375,
+      "cacheWrite": 2.35,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.6-flash",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "Qwen3.6 Flash",
+    "family": "qwen3.6",
+    "releaseDate": "2026-04-27",
+    "lastUpdated": "2026-04-27",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.19,
+      "output": 1.13,
+      "cacheRead": 0.019,
+      "cacheWrite": 0.24,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.75,
+          "output": 4.5,
+          "contextThreshold": 256000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 0.75,
+        "output": 4.5,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.6-plus",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "Qwen3.6 Plus",
+    "family": "qwen",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.32,
+      "output": 1.88,
+      "cacheRead": 0.032,
+      "cacheWrite": 0.4,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 1.25,
+          "output": 7.5,
+          "contextThreshold": 256000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 1.25,
+        "output": 7.5,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek/deepseek-v4-flash",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "DeepSeek V4 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 65000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -1813,8 +1791,168 @@
       ]
     },
     "pricing": {
-      "input": 0.05,
-      "output": 0.2,
+      "input": 0.16,
+      "output": 0.32,
+      "cacheRead": 0.004,
+      "cacheWrite": 0.16,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek/deepseek-v4-pro",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "DeepSeek V4 Pro",
+    "family": "deepseek-thinking",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 65000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.47,
+      "output": 0.94,
+      "cacheRead": 0.005,
+      "cacheWrite": 0.47,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimax/minimax-m3",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "MiniMax-M3",
+    "family": "minimax",
+    "releaseDate": "2026-06-01",
+    "lastUpdated": "2026-06-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 1024000,
+    "maxOutputTokens": 512000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.33,
+      "output": 1.32,
+      "cacheRead": 0.066,
+      "cacheWrite": 0.33,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.66,
+          "output": 2.63,
+          "contextThreshold": 512000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 0.66,
+        "output": 2.63,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimax/minimax-m2.7",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "MiniMax-M2.7",
+    "family": "minimax",
+    "releaseDate": "2026-03-18",
+    "lastUpdated": "2026-03-18",
+    "knowledgeCutoff": null,
+    "contextWindow": 204800,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.33,
+      "output": 1.32,
+      "cacheRead": 0.066,
+      "cacheWrite": 0.42,
       "currency": "USD",
       "per": 1000000
     },
