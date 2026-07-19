@@ -1,13 +1,13 @@
 [
   {
-    "id": "moonshotai/Kimi-K2.6",
+    "id": "evroc/roc",
     "provider": "evroc",
     "providerName": "evroc",
-    "displayName": "Kimi K2.6",
-    "family": "kimi-k2",
-    "releaseDate": "2026-04-21",
-    "lastUpdated": "2026-04-21",
-    "knowledgeCutoff": "2025-01",
+    "displayName": "roc",
+    "family": null,
+    "releaseDate": "2026-06-06",
+    "lastUpdated": "2026-06-06",
+    "knowledgeCutoff": "2026-01",
     "contextWindow": 262144,
     "maxOutputTokens": 262144,
     "capabilities": {
@@ -20,6 +20,54 @@
       "temperature": true,
       "attachment": true,
       "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.875,
+      "output": 11.516,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+    "provider": "evroc",
+    "providerName": "evroc",
+    "displayName": "Qwen3 VL 30B",
+    "family": "qwen",
+    "releaseDate": "2025-07-30",
+    "lastUpdated": "2025-07-30",
+    "knowledgeCutoff": null,
+    "contextWindow": 100000,
+    "maxOutputTokens": 100000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
@@ -33,101 +81,8 @@
       ]
     },
     "pricing": {
-      "input": 1.4375,
-      "output": 5.75,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "google/gemma-4-26B-A4B-it",
-    "provider": "evroc",
-    "providerName": "evroc",
-    "displayName": "Gemma 4 26B A4B IT",
-    "family": "gemma",
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-04-02",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.144,
-      "output": 0.575,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3-Embedding-8B",
-    "provider": "evroc",
-    "providerName": "evroc",
-    "displayName": "Qwen3 Embedding 8B",
-    "family": "text-embedding",
-    "releaseDate": "2025-07-30",
-    "lastUpdated": "2025-07-30",
-    "knowledgeCutoff": null,
-    "contextWindow": 40960,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.115,
-      "output": 0.115,
+      "input": 0.23,
+      "output": 0.92,
       "currency": "USD",
       "per": 1000000
     },
@@ -174,6 +129,52 @@
     "pricing": {
       "input": 0.0575,
       "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen/Qwen3-Embedding-8B",
+    "provider": "evroc",
+    "providerName": "evroc",
+    "displayName": "Qwen3 Embedding 8B",
+    "family": "text-embedding",
+    "releaseDate": "2025-07-30",
+    "lastUpdated": "2025-07-30",
+    "knowledgeCutoff": null,
+    "contextWindow": 40960,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.115,
+      "output": 0.115,
       "currency": "USD",
       "per": 1000000
     },
@@ -236,16 +237,16 @@
     ]
   },
   {
-    "id": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+    "id": "nvidia/Llama-3.3-70B-Instruct-FP8",
     "provider": "evroc",
     "providerName": "evroc",
-    "displayName": "Qwen3 VL 30B",
-    "family": "qwen",
-    "releaseDate": "2025-07-30",
-    "lastUpdated": "2025-07-30",
-    "knowledgeCutoff": null,
-    "contextWindow": 100000,
-    "maxOutputTokens": 100000,
+    "displayName": "Llama-3.3-70B-Instruct",
+    "family": "llama",
+    "releaseDate": "2024-12-06",
+    "lastUpdated": "2024-12-06",
+    "knowledgeCutoff": "2023-12",
+    "contextWindow": 128000,
+    "maxOutputTokens": 4096,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -254,23 +255,21 @@
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "video"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.23,
-      "output": 0.92,
+      "input": 1.15,
+      "output": 1.15,
       "currency": "USD",
       "per": 1000000
     },
@@ -284,56 +283,10 @@
     ]
   },
   {
-    "id": "openai/gpt-oss-120b",
+    "id": "KBLab/kb-whisper-large",
     "provider": "evroc",
     "providerName": "evroc",
-    "displayName": "GPT OSS 120B",
-    "family": "gpt-oss",
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 65536,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.23,
-      "output": 0.92,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "openai/whisper-large-v3-turbo",
-    "provider": "evroc",
-    "providerName": "evroc",
-    "displayName": "Whisper Large v3 Turbo",
+    "displayName": "KB Whisper",
     "family": "whisper",
     "releaseDate": "2024-10-01",
     "lastUpdated": "2024-10-01",
@@ -376,39 +329,39 @@
     ]
   },
   {
-    "id": "openai/whisper-large-v3",
+    "id": "zai-org/GLM-5.2",
     "provider": "evroc",
     "providerName": "evroc",
-    "displayName": "Whisper 3 Large",
-    "family": "whisper",
-    "releaseDate": "2024-10-01",
-    "lastUpdated": "2024-10-01",
+    "displayName": "GLM-5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
     "knowledgeCutoff": null,
-    "contextWindow": 448,
-    "maxOutputTokens": 4096,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "audio"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.0023,
-      "output": 0.0023,
+      "input": 1.4375,
+      "output": 5.75,
       "currency": "USD",
       "per": 1000000
     },
@@ -516,60 +469,14 @@
     ]
   },
   {
-    "id": "nvidia/Llama-3.3-70B-Instruct-FP8",
+    "id": "moonshotai/Kimi-K2.6",
     "provider": "evroc",
     "providerName": "evroc",
-    "displayName": "Llama-3.3-70B-Instruct",
-    "family": "llama",
-    "releaseDate": "2024-12-06",
-    "lastUpdated": "2024-12-06",
-    "knowledgeCutoff": "2023-12",
-    "contextWindow": 128000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.15,
-      "output": 1.15,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "evroc/roc",
-    "provider": "evroc",
-    "providerName": "evroc",
-    "displayName": "roc",
-    "family": null,
-    "releaseDate": "2026-06-06",
-    "lastUpdated": "2026-06-06",
-    "knowledgeCutoff": "2026-01",
+    "displayName": "Kimi K2.6",
+    "family": "kimi-k2",
+    "releaseDate": "2026-04-21",
+    "lastUpdated": "2026-04-21",
+    "knowledgeCutoff": "2025-01",
     "contextWindow": 262144,
     "maxOutputTokens": 262144,
     "capabilities": {
@@ -582,7 +489,7 @@
       "temperature": true,
       "attachment": true,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -595,8 +502,8 @@
       ]
     },
     "pricing": {
-      "input": 2.875,
-      "output": 11.516,
+      "input": 1.4375,
+      "output": 5.75,
       "currency": "USD",
       "per": 1000000
     },
@@ -610,10 +517,57 @@
     ]
   },
   {
-    "id": "KBLab/kb-whisper-large",
+    "id": "google/gemma-4-26B-A4B-it",
     "provider": "evroc",
     "providerName": "evroc",
-    "displayName": "KB Whisper",
+    "displayName": "Gemma 4 26B A4B IT",
+    "family": "gemma",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.144,
+      "output": 0.575,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "openai/whisper-large-v3-turbo",
+    "provider": "evroc",
+    "providerName": "evroc",
+    "displayName": "Whisper Large v3 Turbo",
     "family": "whisper",
     "releaseDate": "2024-10-01",
     "lastUpdated": "2024-10-01",
@@ -643,6 +597,98 @@
     "pricing": {
       "input": 0.0023,
       "output": 0.0023,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "openai/whisper-large-v3",
+    "provider": "evroc",
+    "providerName": "evroc",
+    "displayName": "Whisper 3 Large",
+    "family": "whisper",
+    "releaseDate": "2024-10-01",
+    "lastUpdated": "2024-10-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 448,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.0023,
+      "output": 0.0023,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "openai/gpt-oss-120b",
+    "provider": "evroc",
+    "providerName": "evroc",
+    "displayName": "GPT OSS 120B",
+    "family": "gpt-oss",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": null,
+    "contextWindow": 65536,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.23,
+      "output": 0.92,
       "currency": "USD",
       "per": 1000000
     },

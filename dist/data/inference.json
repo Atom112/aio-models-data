@@ -46,53 +46,6 @@
     ]
   },
   {
-    "id": "google/gemma-3",
-    "provider": "inference",
-    "providerName": "Inference",
-    "displayName": "Google Gemma 3",
-    "family": "gemma",
-    "releaseDate": "2025-01-01",
-    "lastUpdated": "2025-01-01",
-    "knowledgeCutoff": "2024-12",
-    "contextWindow": 125000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.15,
-      "output": 0.3,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "osmosis/osmosis-structure-0.6b",
     "provider": "inference",
     "providerName": "Inference",
@@ -126,99 +79,6 @@
     "pricing": {
       "input": 0.1,
       "output": 0.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen/qwen3-embedding-4b",
-    "provider": "inference",
-    "providerName": "Inference",
-    "displayName": "Qwen 3 Embedding 4B",
-    "family": "qwen",
-    "releaseDate": "2025-01-01",
-    "lastUpdated": "2025-01-01",
-    "knowledgeCutoff": "2024-12",
-    "contextWindow": 32000,
-    "maxOutputTokens": 2048,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.01,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen/qwen-2.5-7b-vision-instruct",
-    "provider": "inference",
-    "providerName": "Inference",
-    "displayName": "Qwen 2.5 7B Vision Instruct",
-    "family": "qwen",
-    "releaseDate": "2025-01-01",
-    "lastUpdated": "2025-01-01",
-    "knowledgeCutoff": "2024-12",
-    "contextWindow": 125000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2,
-      "output": 0.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -404,6 +264,146 @@
     "pricing": {
       "input": 0.02,
       "output": 0.02,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen-2.5-7b-vision-instruct",
+    "provider": "inference",
+    "providerName": "Inference",
+    "displayName": "Qwen 2.5 7B Vision Instruct",
+    "family": "qwen",
+    "releaseDate": "2025-01-01",
+    "lastUpdated": "2025-01-01",
+    "knowledgeCutoff": "2024-12",
+    "contextWindow": 125000,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2,
+      "output": 0.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3-embedding-4b",
+    "provider": "inference",
+    "providerName": "Inference",
+    "displayName": "Qwen 3 Embedding 4B",
+    "family": "qwen",
+    "releaseDate": "2025-01-01",
+    "lastUpdated": "2025-01-01",
+    "knowledgeCutoff": "2024-12",
+    "contextWindow": 32000,
+    "maxOutputTokens": 2048,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.01,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "google/gemma-3",
+    "provider": "inference",
+    "providerName": "Inference",
+    "displayName": "Google Gemma 3",
+    "family": "gemma",
+    "releaseDate": "2025-01-01",
+    "lastUpdated": "2025-01-01",
+    "knowledgeCutoff": "2024-12",
+    "contextWindow": 125000,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.3,
       "currency": "USD",
       "per": 1000000
     },

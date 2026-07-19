@@ -1,15 +1,15 @@
 [
   {
-    "id": "google/gemma-4-31b-it-fp8",
+    "id": "qwen/qwen3.6-27b-fp8",
     "provider": "inferx",
     "providerName": "InferX",
-    "displayName": "Gemma 4 31B IT FP8",
-    "family": "gemma",
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-04-02",
+    "displayName": "Qwen3.6 27B FP8",
+    "family": "qwen",
+    "releaseDate": "2026-04-22",
+    "lastUpdated": "2026-04-22",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 32768,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -25,53 +25,9 @@
     "modalities": {
       "input": [
         "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen/qwen3-coder-next-fp8-1m",
-    "provider": "inferx",
-    "providerName": "InferX",
-    "displayName": "Qwen3 Coder Next FP8 1M",
-    "family": "qwen",
-    "releaseDate": "2026-02-03",
-    "lastUpdated": "2026-02-03",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 1024000,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
+        "image",
+        "video",
+        "audio"
       ],
       "output": [
         "text"
@@ -237,16 +193,62 @@
     ]
   },
   {
-    "id": "qwen/qwen3.6-27b-fp8",
+    "id": "qwen/qwen3-coder-next-fp8-1m",
     "provider": "inferx",
     "providerName": "InferX",
-    "displayName": "Qwen3.6 27B FP8",
+    "displayName": "Qwen3 Coder Next FP8 1M",
     "family": "qwen",
-    "releaseDate": "2026-04-22",
-    "lastUpdated": "2026-04-22",
+    "releaseDate": "2026-02-03",
+    "lastUpdated": "2026-02-03",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 1024000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "google/gemma-4-31b-it-fp8",
+    "provider": "inferx",
+    "providerName": "InferX",
+    "displayName": "Gemma 4 31B IT FP8",
+    "family": "gemma",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 65536,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -262,9 +264,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "video",
-        "audio"
+        "image"
       ],
       "output": [
         "text"

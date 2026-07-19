@@ -1,44 +1,41 @@
 [
   {
-    "id": "gemini-3.1-flash-lite",
+    "id": "gemini-2.5-flash-image",
     "provider": "google",
     "providerName": "Google",
-    "displayName": "Gemini 3.1 Flash Lite",
-    "family": "gemini-flash-lite",
-    "releaseDate": "2026-05-07",
-    "lastUpdated": "2026-05-07",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
+    "displayName": "Nano Banana",
+    "family": "gemini-flash",
+    "releaseDate": "2025-08-26",
+    "lastUpdated": "2025-08-26",
+    "knowledgeCutoff": "2024-06",
+    "contextWindow": 32768,
+    "maxOutputTokens": 32768,
     "capabilities": {
-      "tools": true,
+      "tools": false,
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": true,
+      "structured_output": false,
       "open_weights": false
     },
     "modalities": {
       "input": [
         "text",
-        "image",
-        "video",
-        "audio",
-        "pdf"
+        "image"
       ],
       "output": [
-        "text"
+        "text",
+        "image"
       ]
     },
     "pricing": {
-      "input": 0.25,
-      "output": 1.5,
-      "cacheRead": 0.025,
-      "inputAudio": 0.5,
+      "input": 0.3,
+      "output": 30,
+      "cacheRead": 0.075,
       "currency": "USD",
       "per": 1000000
     },
@@ -98,13 +95,13 @@
     ]
   },
   {
-    "id": "gemini-2.5-pro",
+    "id": "gemini-3.1-flash-lite",
     "provider": "google",
     "providerName": "Google",
-    "displayName": "Gemini 2.5 Pro",
-    "family": "gemini-pro",
-    "releaseDate": "2025-06-17",
-    "lastUpdated": "2025-06-17",
+    "displayName": "Gemini 3.1 Flash Lite",
+    "family": "gemini-flash-lite",
+    "releaseDate": "2026-05-07",
+    "lastUpdated": "2026-05-07",
     "knowledgeCutoff": "2025-01",
     "contextWindow": 1048576,
     "maxOutputTokens": 65536,
@@ -124,8 +121,8 @@
       "input": [
         "text",
         "image",
-        "audio",
         "video",
+        "audio",
         "pdf"
       ],
       "output": [
@@ -133,73 +130,10 @@
       ]
     },
     "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cacheRead": 0.125,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 2.5,
-          "output": 15,
-          "contextThreshold": 200000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 2.5,
-        "output": 15,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-2.5-flash",
-    "provider": "google",
-    "providerName": "Google",
-    "displayName": "Gemini 2.5 Flash",
-    "family": "gemini-flash",
-    "releaseDate": "2025-06-17",
-    "lastUpdated": "2025-06-17",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 2.5,
-      "cacheRead": 0.03,
-      "inputAudio": 1,
+      "input": 0.25,
+      "output": 1.5,
+      "cacheRead": 0.025,
+      "inputAudio": 0.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -265,10 +199,10 @@
     ]
   },
   {
-    "id": "gemma-4-31b-it",
+    "id": "gemma-4-26b-a4b-it",
     "provider": "google",
     "providerName": "Google",
-    "displayName": "Gemma 4 31B IT",
+    "displayName": "Gemma 4 26B A4B IT",
     "family": "gemma",
     "releaseDate": "2026-04-02",
     "lastUpdated": "2026-04-02",
@@ -358,59 +292,13 @@
     ]
   },
   {
-    "id": "gemini-embedding-001",
+    "id": "gemini-3-pro-preview",
     "provider": "google",
     "providerName": "Google",
-    "displayName": "Gemini Embedding 001",
-    "family": "gemini",
-    "releaseDate": "2025-05-20",
-    "lastUpdated": "2025-05-20",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 2048,
-    "maxOutputTokens": 1,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.15,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-3.1-pro-preview-customtools",
-    "provider": "google",
-    "providerName": "Google",
-    "displayName": "Gemini 3.1 Pro Preview Custom Tools",
+    "displayName": "Gemini 3 Pro Preview",
     "family": "gemini-pro",
-    "releaseDate": "2026-02-19",
-    "lastUpdated": "2026-02-19",
+    "releaseDate": "2025-11-18",
+    "lastUpdated": "2025-11-18",
     "knowledgeCutoff": "2025-01",
     "contextWindow": 1048576,
     "maxOutputTokens": 65536,
@@ -457,7 +345,7 @@
         "contextThreshold": 200000
       }
     },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -467,13 +355,13 @@
     ]
   },
   {
-    "id": "gemini-flash-lite-latest",
+    "id": "gemini-3.1-flash-lite-preview",
     "provider": "google",
     "providerName": "Google",
-    "displayName": "Gemini Flash-Lite Latest",
+    "displayName": "Gemini 3.1 Flash Lite Preview",
     "family": "gemini-flash-lite",
-    "releaseDate": "2025-09-25",
-    "lastUpdated": "2025-09-25",
+    "releaseDate": "2026-03-03",
+    "lastUpdated": "2026-03-03",
     "knowledgeCutoff": "2025-01",
     "contextWindow": 1048576,
     "maxOutputTokens": 65536,
@@ -493,8 +381,8 @@
       "input": [
         "text",
         "image",
-        "audio",
         "video",
+        "audio",
         "pdf"
       ],
       "output": [
@@ -502,12 +390,55 @@
       ]
     },
     "pricing": {
-      "input": 0.1,
-      "output": 0.4,
+      "input": 0.25,
+      "output": 1.5,
       "cacheRead": 0.025,
+      "inputAudio": 0.5,
       "currency": "USD",
       "per": 1000000
     },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemma-4-31b-it",
+    "provider": "google",
+    "providerName": "Google",
+    "displayName": "Gemma 4 31B IT",
+    "family": "gemma",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
@@ -566,42 +497,135 @@
     ]
   },
   {
-    "id": "gemini-2.5-flash-image",
+    "id": "gemini-embedding-001",
     "provider": "google",
     "providerName": "Google",
-    "displayName": "Nano Banana",
-    "family": "gemini-flash",
-    "releaseDate": "2025-08-26",
-    "lastUpdated": "2025-08-26",
-    "knowledgeCutoff": "2025-06",
-    "contextWindow": 32768,
-    "maxOutputTokens": 32768,
+    "displayName": "Gemini Embedding 001",
+    "family": "gemini",
+    "releaseDate": "2025-05-20",
+    "lastUpdated": "2025-05-20",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 2048,
+    "maxOutputTokens": 1,
     "capabilities": {
       "tools": false,
-      "vision": true,
-      "reasoning": true,
+      "vision": false,
+      "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
+      "temperature": false,
+      "attachment": false,
       "structured_output": false,
       "open_weights": false
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
-        "text",
-        "image"
+        "text"
       ]
     },
     "pricing": {
-      "input": 0.3,
-      "output": 30,
-      "cacheRead": 0.075,
+      "input": 0.15,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-2.0-flash-lite",
+    "provider": "google",
+    "providerName": "Google",
+    "displayName": "Gemini 2.0 Flash-Lite",
+    "family": "gemini-flash-lite",
+    "releaseDate": "2024-12-11",
+    "lastUpdated": "2024-12-11",
+    "knowledgeCutoff": "2024-06",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.075,
+      "output": 0.3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-2.5-pro-preview-tts",
+    "provider": "google",
+    "providerName": "Google",
+    "displayName": "Gemini 2.5 Pro Preview TTS",
+    "family": "gemini-flash",
+    "releaseDate": "2025-05-01",
+    "lastUpdated": "2025-05-01",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 8192,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "audio"
+      ]
+    },
+    "pricing": {
+      "input": 1,
+      "output": 20,
       "currency": "USD",
       "per": 1000000
     },
@@ -656,6 +680,69 @@
       "inputAudio": 0.3,
       "currency": "USD",
       "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-2.5-pro",
+    "provider": "google",
+    "providerName": "Google",
+    "displayName": "Gemini 2.5 Pro",
+    "family": "gemini-pro",
+    "releaseDate": "2025-06-17",
+    "lastUpdated": "2025-06-17",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 10,
+      "cacheRead": 0.125,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 2.5,
+          "output": 15,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 2.5,
+        "output": 15,
+        "contextThreshold": 200000
+      }
     },
     "status": "active",
     "deprecationDate": null,
@@ -764,10 +851,62 @@
     ]
   },
   {
-    "id": "gemini-3.1-pro-preview",
+    "id": "gemini-3-flash-preview",
     "provider": "google",
     "providerName": "Google",
-    "displayName": "Gemini 3.1 Pro Preview",
+    "displayName": "Gemini 3 Flash Preview",
+    "family": "gemini-flash",
+    "releaseDate": "2025-12-17",
+    "lastUpdated": "2025-12-17",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.5,
+      "output": 3,
+      "cacheRead": 0.05,
+      "inputAudio": 1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3.1-pro-preview-customtools",
+    "provider": "google",
+    "providerName": "Google",
+    "displayName": "Gemini 3.1 Pro Preview Custom Tools",
     "family": "gemini-pro",
     "releaseDate": "2026-02-19",
     "lastUpdated": "2026-02-19",
@@ -827,16 +966,16 @@
     ]
   },
   {
-    "id": "gemma-4-26b-a4b-it",
+    "id": "gemini-flash-latest",
     "provider": "google",
     "providerName": "Google",
-    "displayName": "Gemma 4 26B A4B IT",
-    "family": "gemma",
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-04-02",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 32768,
+    "displayName": "Gemini Flash Latest",
+    "family": "gemini-flash",
+    "releaseDate": "2026-05-19",
+    "lastUpdated": "2026-05-19",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -847,18 +986,28 @@
       "temperature": true,
       "attachment": true,
       "structured_output": true,
-      "open_weights": true
+      "open_weights": false
     },
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "video",
+        "audio",
+        "pdf"
       ],
       "output": [
         "text"
       ]
     },
-    "pricing": null,
+    "pricing": {
+      "input": 1.5,
+      "output": 9,
+      "cacheRead": 0.15,
+      "inputAudio": 1.5,
+      "currency": "USD",
+      "per": 1000000
+    },
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
@@ -869,13 +1018,117 @@
     ]
   },
   {
-    "id": "gemini-3-pro-preview",
+    "id": "gemini-2.5-flash",
     "provider": "google",
     "providerName": "Google",
-    "displayName": "Gemini 3 Pro Preview",
+    "displayName": "Gemini 2.5 Flash",
+    "family": "gemini-flash",
+    "releaseDate": "2025-06-17",
+    "lastUpdated": "2025-06-17",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 2.5,
+      "cacheRead": 0.03,
+      "inputAudio": 1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-flash-lite-latest",
+    "provider": "google",
+    "providerName": "Google",
+    "displayName": "Gemini Flash-Lite Latest",
+    "family": "gemini-flash-lite",
+    "releaseDate": "2026-05-07",
+    "lastUpdated": "2026-05-07",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.25,
+      "output": 1.5,
+      "cacheRead": 0.025,
+      "inputAudio": 0.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3.1-pro-preview",
+    "provider": "google",
+    "providerName": "Google",
+    "displayName": "Gemini 3.1 Pro Preview",
     "family": "gemini-pro",
-    "releaseDate": "2025-11-18",
-    "lastUpdated": "2025-11-18",
+    "releaseDate": "2026-02-19",
+    "lastUpdated": "2026-02-19",
     "knowledgeCutoff": "2025-01",
     "contextWindow": 1048576,
     "maxOutputTokens": 65536,
@@ -922,259 +1175,7 @@
         "contextThreshold": 200000
       }
     },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-3-flash-preview",
-    "provider": "google",
-    "providerName": "Google",
-    "displayName": "Gemini 3 Flash Preview",
-    "family": "gemini-flash",
-    "releaseDate": "2025-12-17",
-    "lastUpdated": "2025-12-17",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "audio",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.5,
-      "output": 3,
-      "cacheRead": 0.05,
-      "inputAudio": 1,
-      "currency": "USD",
-      "per": 1000000
-    },
     "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-2.5-pro-preview-tts",
-    "provider": "google",
-    "providerName": "Google",
-    "displayName": "Gemini 2.5 Pro Preview TTS",
-    "family": "gemini-flash",
-    "releaseDate": "2025-05-01",
-    "lastUpdated": "2025-05-01",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 8192,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "audio"
-      ]
-    },
-    "pricing": {
-      "input": 1,
-      "output": 20,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-flash-latest",
-    "provider": "google",
-    "providerName": "Google",
-    "displayName": "Gemini Flash Latest",
-    "family": "gemini-flash",
-    "releaseDate": "2025-09-25",
-    "lastUpdated": "2025-09-25",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 2.5,
-      "cacheRead": 0.075,
-      "inputAudio": 1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-3.1-flash-lite-preview",
-    "provider": "google",
-    "providerName": "Google",
-    "displayName": "Gemini 3.1 Flash Lite Preview",
-    "family": "gemini-flash-lite",
-    "releaseDate": "2026-03-03",
-    "lastUpdated": "2026-03-03",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "audio",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.25,
-      "output": 1.5,
-      "cacheRead": 0.025,
-      "inputAudio": 0.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-2.0-flash-lite",
-    "provider": "google",
-    "providerName": "Google",
-    "displayName": "Gemini 2.0 Flash-Lite",
-    "family": "gemini-flash-lite",
-    "releaseDate": "2024-12-11",
-    "lastUpdated": "2024-12-11",
-    "knowledgeCutoff": "2024-06",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.075,
-      "output": 0.3,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],

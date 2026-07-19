@@ -1,143 +1,8 @@
 [
   {
-    "id": "step-2-16k",
-    "provider": "stepfun-ai",
-    "providerName": "StepFun AI",
-    "displayName": "Step 2 (16K)",
-    "family": null,
-    "releaseDate": "2025-01-01",
-    "lastUpdated": "2026-02-13",
-    "knowledgeCutoff": "2024-06",
-    "contextWindow": 16384,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 5.21,
-      "output": 16.44,
-      "cacheRead": 1.04,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "step-tts-2",
-    "provider": "stepfun-ai",
-    "providerName": "StepFun AI",
-    "displayName": "Step TTS 2",
-    "family": "step",
-    "releaseDate": "2026-03-01",
-    "lastUpdated": "2026-07-02",
-    "knowledgeCutoff": null,
-    "contextWindow": 0,
-    "maxOutputTokens": 0,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "audio"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "step-3.5-flash",
-    "provider": "stepfun-ai",
-    "providerName": "StepFun AI",
-    "displayName": "Step 3.5 Flash",
-    "family": null,
-    "releaseDate": "2026-01-29",
-    "lastUpdated": "2026-06-15",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 256000,
-    "maxOutputTokens": 256000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1,
-      "output": 0.3,
-      "cacheRead": 0.02,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "stepaudio-2.5-asr",
     "provider": "stepfun-ai",
-    "providerName": "StepFun AI",
+    "providerName": "StepFun (Global)",
     "displayName": "StepAudio 2.5 ASR",
     "family": "step",
     "releaseDate": "2026-04-24",
@@ -176,24 +41,24 @@
     ]
   },
   {
-    "id": "stepaudio-2.5-tts",
+    "id": "step-2-16k",
     "provider": "stepfun-ai",
-    "providerName": "StepFun AI",
-    "displayName": "StepAudio 2.5 TTS",
-    "family": "step",
-    "releaseDate": "2026-04-16",
-    "lastUpdated": "2026-07-02",
-    "knowledgeCutoff": null,
-    "contextWindow": 0,
-    "maxOutputTokens": 0,
+    "providerName": "StepFun (Global)",
+    "displayName": "Step 2 (16K)",
+    "family": null,
+    "releaseDate": "2025-01-01",
+    "lastUpdated": "2026-02-13",
+    "knowledgeCutoff": "2024-06",
+    "contextWindow": 16384,
+    "maxOutputTokens": 8192,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
       "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": false,
       "structured_output": false,
       "open_weights": false
@@ -203,10 +68,16 @@
         "text"
       ],
       "output": [
-        "audio"
+        "text"
       ]
     },
-    "pricing": null,
+    "pricing": {
+      "input": 5.21,
+      "output": 16.44,
+      "cacheRead": 1.04,
+      "currency": "USD",
+      "per": 1000000
+    },
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
@@ -219,7 +90,7 @@
   {
     "id": "step-3.5-flash-2603",
     "provider": "stepfun-ai",
-    "providerName": "StepFun AI",
+    "providerName": "StepFun (Global)",
     "displayName": "Step 3.5 Flash 2603",
     "family": null,
     "releaseDate": "2026-04-02",
@@ -264,57 +135,9 @@
     ]
   },
   {
-    "id": "step-3.7-flash",
-    "provider": "stepfun-ai",
-    "providerName": "StepFun AI",
-    "displayName": "Step 3.7 Flash",
-    "family": null,
-    "releaseDate": "2026-05-29",
-    "lastUpdated": "2026-06-29",
-    "knowledgeCutoff": "2026-01-01",
-    "contextWindow": 256000,
-    "maxOutputTokens": 256000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2,
-      "output": 1.15,
-      "cacheRead": 0.04,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "step-1-32k",
     "provider": "stepfun-ai",
-    "providerName": "StepFun AI",
+    "providerName": "StepFun (Global)",
     "displayName": "Step 1 (32K)",
     "family": null,
     "releaseDate": "2025-01-01",
@@ -325,7 +148,7 @@
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": true,
+      "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
@@ -349,6 +172,184 @@
       "currency": "USD",
       "per": 1000000
     },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "step-3.5-flash",
+    "provider": "stepfun-ai",
+    "providerName": "StepFun (Global)",
+    "displayName": "Step 3.5 Flash",
+    "family": null,
+    "releaseDate": "2026-01-29",
+    "lastUpdated": "2026-06-15",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.3,
+      "cacheRead": 0.02,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "step-3.7-flash",
+    "provider": "stepfun-ai",
+    "providerName": "StepFun (Global)",
+    "displayName": "Step 3.7 Flash",
+    "family": null,
+    "releaseDate": "2026-05-29",
+    "lastUpdated": "2026-06-29",
+    "knowledgeCutoff": "2026-03-01",
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.185,
+      "output": 1.11,
+      "cacheRead": 0.037,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "stepaudio-2.5-tts",
+    "provider": "stepfun-ai",
+    "providerName": "StepFun (Global)",
+    "displayName": "StepAudio 2.5 TTS",
+    "family": "step",
+    "releaseDate": "2026-04-16",
+    "lastUpdated": "2026-07-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 0,
+    "maxOutputTokens": 0,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "audio"
+      ]
+    },
+    "pricing": null,
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "step-tts-2",
+    "provider": "stepfun-ai",
+    "providerName": "StepFun (Global)",
+    "displayName": "Step TTS 2",
+    "family": "step",
+    "releaseDate": "2026-03-01",
+    "lastUpdated": "2026-07-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 0,
+    "maxOutputTokens": 0,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "audio"
+      ]
+    },
+    "pricing": null,
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,

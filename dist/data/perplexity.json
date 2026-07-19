@@ -47,24 +47,24 @@
     ]
   },
   {
-    "id": "sonar",
+    "id": "sonar-deep-research",
     "provider": "perplexity",
     "providerName": "Perplexity",
-    "displayName": "Sonar",
-    "family": "sonar",
-    "releaseDate": "2024-01-01",
+    "displayName": "Perplexity Sonar Deep Research",
+    "family": null,
+    "releaseDate": "2025-02-01",
     "lastUpdated": "2025-09-01",
-    "knowledgeCutoff": "2025-09-01",
+    "knowledgeCutoff": "2025-01",
     "contextWindow": 128000,
-    "maxOutputTokens": 4096,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": false,
       "vision": false,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
-      "temperature": true,
+      "temperature": false,
       "attachment": false,
       "structured_output": false,
       "open_weights": false
@@ -78,8 +78,8 @@
       ]
     },
     "pricing": {
-      "input": 1,
-      "output": 1,
+      "input": 2,
+      "output": 8,
       "currency": "USD",
       "per": 1000000
     },
@@ -140,24 +140,24 @@
     ]
   },
   {
-    "id": "sonar-deep-research",
+    "id": "sonar",
     "provider": "perplexity",
     "providerName": "Perplexity",
-    "displayName": "Perplexity Sonar Deep Research",
-    "family": null,
-    "releaseDate": "2025-02-01",
+    "displayName": "Sonar",
+    "family": "sonar",
+    "releaseDate": "2024-01-01",
     "lastUpdated": "2025-09-01",
-    "knowledgeCutoff": "2025-01",
+    "knowledgeCutoff": "2025-09-01",
     "contextWindow": 128000,
-    "maxOutputTokens": 32768,
+    "maxOutputTokens": 4096,
     "capabilities": {
       "tools": false,
       "vision": false,
-      "reasoning": true,
+      "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": false,
       "structured_output": false,
       "open_weights": false
@@ -171,8 +171,8 @@
       ]
     },
     "pricing": {
-      "input": 2,
-      "output": 8,
+      "input": 1,
+      "output": 1,
       "currency": "USD",
       "per": 1000000
     },
