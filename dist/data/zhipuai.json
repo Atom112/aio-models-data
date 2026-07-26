@@ -1,5 +1,101 @@
 [
   {
+    "id": "glm-5",
+    "provider": "zhipuai",
+    "providerName": "Zhipu AI",
+    "displayName": "GLM-5",
+    "family": "glm",
+    "releaseDate": "2026-02-11",
+    "lastUpdated": "2026-02-11",
+    "knowledgeCutoff": null,
+    "contextWindow": 204800,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1,
+      "output": 3.2,
+      "cacheRead": 0.2,
+      "cacheWrite": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5.1",
+    "provider": "zhipuai",
+    "providerName": "Zhipu AI",
+    "displayName": "GLM-5.1",
+    "family": "glm",
+    "releaseDate": "2026-03-27",
+    "lastUpdated": "2026-03-27",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.4,
+      "output": 4.4,
+      "cacheRead": 0.26,
+      "cacheWrite": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "glm-5.2",
     "provider": "zhipuai",
     "providerName": "Zhipu AI",
@@ -99,16 +195,16 @@
     ]
   },
   {
-    "id": "glm-5",
+    "id": "glm-4.5-flash",
     "provider": "zhipuai",
     "providerName": "Zhipu AI",
-    "displayName": "GLM-5",
-    "family": "glm",
-    "releaseDate": "2026-02-11",
-    "lastUpdated": "2026-02-11",
-    "knowledgeCutoff": null,
-    "contextWindow": 204800,
-    "maxOutputTokens": 131072,
+    "displayName": "GLM-4.5-Flash",
+    "family": "glm-flash",
+    "releaseDate": "2025-07-28",
+    "lastUpdated": "2025-07-28",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 131072,
+    "maxOutputTokens": 98304,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -130,9 +226,9 @@
       ]
     },
     "pricing": {
-      "input": 1,
-      "output": 3.2,
-      "cacheRead": 0.2,
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
       "cacheWrite": 0,
       "currency": "USD",
       "per": 1000000
@@ -147,61 +243,13 @@
     ]
   },
   {
-    "id": "glm-5.1",
+    "id": "glm-4.7",
     "provider": "zhipuai",
     "providerName": "Zhipu AI",
-    "displayName": "GLM-5.1",
+    "displayName": "GLM-4.7",
     "family": "glm",
-    "releaseDate": "2026-03-27",
-    "lastUpdated": "2026-03-27",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.4,
-      "output": 4.4,
-      "cacheRead": 0.26,
-      "cacheWrite": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm-4.6",
-    "provider": "zhipuai",
-    "providerName": "Zhipu AI",
-    "displayName": "GLM-4.6",
-    "family": "glm",
-    "releaseDate": "2025-09-30",
-    "lastUpdated": "2025-09-30",
+    "releaseDate": "2025-12-22",
+    "lastUpdated": "2025-12-22",
     "knowledgeCutoff": "2025-04",
     "contextWindow": 204800,
     "maxOutputTokens": 131072,
@@ -229,54 +277,6 @@
       "input": 0.6,
       "output": 2.2,
       "cacheRead": 0.11,
-      "cacheWrite": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm-4.7-flash",
-    "provider": "zhipuai",
-    "providerName": "Zhipu AI",
-    "displayName": "GLM-4.7-Flash",
-    "family": "glm-flash",
-    "releaseDate": "2026-01-19",
-    "lastUpdated": "2026-01-19",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 200000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
       "cacheWrite": 0,
       "currency": "USD",
       "per": 1000000
@@ -339,41 +339,41 @@
     ]
   },
   {
-    "id": "glm-4.6v",
+    "id": "glm-4.5",
     "provider": "zhipuai",
     "providerName": "Zhipu AI",
-    "displayName": "GLM-4.6V",
+    "displayName": "GLM-4.5",
     "family": "glm",
-    "releaseDate": "2025-12-08",
-    "lastUpdated": "2025-12-08",
+    "releaseDate": "2025-07-28",
+    "lastUpdated": "2025-07-28",
     "knowledgeCutoff": "2025-04",
-    "contextWindow": 128000,
-    "maxOutputTokens": 32768,
+    "contextWindow": 131072,
+    "maxOutputTokens": 98304,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "video"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.3,
-      "output": 0.9,
+      "input": 0.6,
+      "output": 2.2,
+      "cacheRead": 0.11,
+      "cacheWrite": 0,
       "currency": "USD",
       "per": 1000000
     },
@@ -387,16 +387,112 @@
     ]
   },
   {
-    "id": "glm-4.5-flash",
+    "id": "glm-4.6",
     "provider": "zhipuai",
     "providerName": "Zhipu AI",
-    "displayName": "GLM-4.5-Flash",
-    "family": "glm-flash",
-    "releaseDate": "2025-07-28",
-    "lastUpdated": "2025-07-28",
+    "displayName": "GLM-4.6",
+    "family": "glm",
+    "releaseDate": "2025-09-30",
+    "lastUpdated": "2025-09-30",
     "knowledgeCutoff": "2025-04",
-    "contextWindow": 131072,
-    "maxOutputTokens": 98304,
+    "contextWindow": 204800,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.6,
+      "output": 2.2,
+      "cacheRead": 0.11,
+      "cacheWrite": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-4.7-flashx",
+    "provider": "zhipuai",
+    "providerName": "Zhipu AI",
+    "displayName": "GLM-4.7-FlashX",
+    "family": "glm-flash",
+    "releaseDate": "2026-01-19",
+    "lastUpdated": "2026-01-19",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 200000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.07,
+      "output": 0.4,
+      "cacheRead": 0.01,
+      "cacheWrite": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-4.7-flash",
+    "provider": "zhipuai",
+    "providerName": "Zhipu AI",
+    "displayName": "GLM-4.7-Flash",
+    "family": "glm-flash",
+    "releaseDate": "2026-01-19",
+    "lastUpdated": "2026-01-19",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 200000,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -483,137 +579,41 @@
     ]
   },
   {
-    "id": "glm-4.7-flashx",
+    "id": "glm-4.6v",
     "provider": "zhipuai",
     "providerName": "Zhipu AI",
-    "displayName": "GLM-4.7-FlashX",
-    "family": "glm-flash",
-    "releaseDate": "2026-01-19",
-    "lastUpdated": "2026-01-19",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 200000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.07,
-      "output": 0.4,
-      "cacheRead": 0.01,
-      "cacheWrite": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm-4.5",
-    "provider": "zhipuai",
-    "providerName": "Zhipu AI",
-    "displayName": "GLM-4.5",
+    "displayName": "GLM-4.6V",
     "family": "glm",
-    "releaseDate": "2025-07-28",
-    "lastUpdated": "2025-07-28",
+    "releaseDate": "2025-12-08",
+    "lastUpdated": "2025-12-08",
     "knowledgeCutoff": "2025-04",
-    "contextWindow": 131072,
-    "maxOutputTokens": 98304,
+    "contextWindow": 128000,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "video"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.6,
-      "output": 2.2,
-      "cacheRead": 0.11,
-      "cacheWrite": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm-4.7",
-    "provider": "zhipuai",
-    "providerName": "Zhipu AI",
-    "displayName": "GLM-4.7",
-    "family": "glm",
-    "releaseDate": "2025-12-22",
-    "lastUpdated": "2025-12-22",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 204800,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.6,
-      "output": 2.2,
-      "cacheRead": 0.11,
-      "cacheWrite": 0,
+      "input": 0.3,
+      "output": 0.9,
       "currency": "USD",
       "per": 1000000
     },

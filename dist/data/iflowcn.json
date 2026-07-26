@@ -1,30 +1,31 @@
 [
   {
-    "id": "deepseek-v3.2",
+    "id": "qwen3-vl-plus",
     "provider": "iflowcn",
     "providerName": "iFlow",
-    "displayName": "DeepSeek-V3.2-Exp",
-    "family": "deepseek",
+    "displayName": "Qwen3-VL-Plus",
+    "family": "qwen",
     "releaseDate": "2025-01-01",
     "lastUpdated": "2025-01-01",
     "knowledgeCutoff": "2024-12",
-    "contextWindow": 128000,
-    "maxOutputTokens": 64000,
+    "contextWindow": 256000,
+    "maxOutputTokens": 32000,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": false,
-      "open_weights": true
+      "open_weights": false
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
@@ -92,32 +93,31 @@
     ]
   },
   {
-    "id": "qwen3-vl-plus",
+    "id": "qwen3-235b-a22b-thinking-2507",
     "provider": "iflowcn",
     "providerName": "iFlow",
-    "displayName": "Qwen3-VL-Plus",
+    "displayName": "Qwen3-235B-A22B-Thinking",
     "family": "qwen",
-    "releaseDate": "2025-01-01",
-    "lastUpdated": "2025-01-01",
-    "knowledgeCutoff": "2024-12",
+    "releaseDate": "2025-07-01",
+    "lastUpdated": "2025-07-01",
+    "knowledgeCutoff": "2025-04",
     "contextWindow": 256000,
-    "maxOutputTokens": 32000,
+    "maxOutputTokens": 64000,
     "capabilities": {
       "tools": true,
-      "vision": true,
-      "reasoning": false,
+      "vision": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": false,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
@@ -139,16 +139,62 @@
     ]
   },
   {
-    "id": "qwen3-coder-plus",
+    "id": "qwen3-235b",
     "provider": "iflowcn",
     "providerName": "iFlow",
-    "displayName": "Qwen3-Coder-Plus",
+    "displayName": "Qwen3-235B-A22B",
     "family": "qwen",
-    "releaseDate": "2025-07-01",
-    "lastUpdated": "2025-07-01",
-    "knowledgeCutoff": "2025-04",
+    "releaseDate": "2024-12-01",
+    "lastUpdated": "2024-12-01",
+    "knowledgeCutoff": "2024-10",
+    "contextWindow": 128000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3-max-preview",
+    "provider": "iflowcn",
+    "providerName": "iFlow",
+    "displayName": "Qwen3-Max-Preview",
+    "family": "qwen",
+    "releaseDate": "2025-01-01",
+    "lastUpdated": "2025-01-01",
+    "knowledgeCutoff": "2024-12",
     "contextWindow": 256000,
-    "maxOutputTokens": 64000,
+    "maxOutputTokens": 32000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -159,7 +205,7 @@
       "temperature": true,
       "attachment": false,
       "structured_output": false,
-      "open_weights": true
+      "open_weights": false
     },
     "modalities": {
       "input": [
@@ -231,20 +277,20 @@
     ]
   },
   {
-    "id": "kimi-k2",
+    "id": "glm-4.6",
     "provider": "iflowcn",
     "providerName": "iFlow",
-    "displayName": "Kimi-K2",
-    "family": "kimi-k2",
+    "displayName": "GLM-4.6",
+    "family": "glm",
     "releaseDate": "2024-12-01",
-    "lastUpdated": "2024-12-01",
+    "lastUpdated": "2025-11-13",
     "knowledgeCutoff": "2024-10",
-    "contextWindow": 128000,
-    "maxOutputTokens": 64000,
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
@@ -277,10 +323,10 @@
     ]
   },
   {
-    "id": "qwen3-235b-a22b-thinking-2507",
+    "id": "qwen3-coder-plus",
     "provider": "iflowcn",
     "providerName": "iFlow",
-    "displayName": "Qwen3-235B-A22B-Thinking",
+    "displayName": "Qwen3-Coder-Plus",
     "family": "qwen",
     "releaseDate": "2025-07-01",
     "lastUpdated": "2025-07-01",
@@ -290,7 +336,99 @@
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v3",
+    "provider": "iflowcn",
+    "providerName": "iFlow",
+    "displayName": "DeepSeek-V3",
+    "family": "deepseek",
+    "releaseDate": "2024-12-26",
+    "lastUpdated": "2024-12-26",
+    "knowledgeCutoff": "2024-10",
+    "contextWindow": 128000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v3.2",
+    "provider": "iflowcn",
+    "providerName": "iFlow",
+    "displayName": "DeepSeek-V3.2-Exp",
+    "family": "deepseek",
+    "releaseDate": "2025-01-01",
+    "lastUpdated": "2025-01-01",
+    "knowledgeCutoff": "2024-12",
+    "contextWindow": 128000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
@@ -369,27 +507,27 @@
     ]
   },
   {
-    "id": "qwen3-235b",
+    "id": "kimi-k2",
     "provider": "iflowcn",
     "providerName": "iFlow",
-    "displayName": "Qwen3-235B-A22B",
-    "family": "qwen",
+    "displayName": "Kimi-K2",
+    "family": "kimi-k2",
     "releaseDate": "2024-12-01",
     "lastUpdated": "2024-12-01",
     "knowledgeCutoff": "2024-10",
     "contextWindow": 128000,
-    "maxOutputTokens": 32000,
+    "maxOutputTokens": 64000,
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": true,
+      "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
       "structured_output": false,
-      "open_weights": true
+      "open_weights": false
     },
     "modalities": {
       "input": [
@@ -475,144 +613,6 @@
       "tools": true,
       "vision": false,
       "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-v3",
-    "provider": "iflowcn",
-    "providerName": "iFlow",
-    "displayName": "DeepSeek-V3",
-    "family": "deepseek",
-    "releaseDate": "2024-12-26",
-    "lastUpdated": "2024-12-26",
-    "knowledgeCutoff": "2024-10",
-    "contextWindow": 128000,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-max-preview",
-    "provider": "iflowcn",
-    "providerName": "iFlow",
-    "displayName": "Qwen3-Max-Preview",
-    "family": "qwen",
-    "releaseDate": "2025-01-01",
-    "lastUpdated": "2025-01-01",
-    "knowledgeCutoff": "2024-12",
-    "contextWindow": 256000,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm-4.6",
-    "provider": "iflowcn",
-    "providerName": "iFlow",
-    "displayName": "GLM-4.6",
-    "family": "glm",
-    "releaseDate": "2024-12-01",
-    "lastUpdated": "2025-11-13",
-    "knowledgeCutoff": "2024-10",
-    "contextWindow": 200000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,

@@ -1,25 +1,25 @@
 [
   {
-    "id": "umans-flash",
-    "provider": "umans-ai-coding-plan",
-    "providerName": "Umans AI Coding Plan",
-    "displayName": "Umans Flash",
-    "family": "qwen",
-    "releaseDate": "2026-04-17",
-    "lastUpdated": "2026-04-17",
-    "knowledgeCutoff": null,
+    "id": "mistral4-119b",
+    "provider": "aki-io",
+    "providerName": "AKI.IO",
+    "displayName": "Mistral Small 4",
+    "family": "mistral-small",
+    "releaseDate": "2026-03-16",
+    "lastUpdated": "2026-03-16",
+    "knowledgeCutoff": "2025-06",
     "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 81920,
     "capabilities": {
       "tools": true,
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
@@ -32,10 +32,8 @@
       ]
     },
     "pricing": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "cacheWrite": 0,
+      "input": 0.2,
+      "output": 0.6,
       "currency": "USD",
       "per": 1000000
     },
@@ -49,42 +47,39 @@
     ]
   },
   {
-    "id": "umans-coder",
-    "provider": "umans-ai-coding-plan",
-    "providerName": "Umans AI Coding Plan",
-    "displayName": "Umans Coder",
-    "family": "kimi-k2",
-    "releaseDate": "2026-06-12",
-    "lastUpdated": "2026-06-12",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "id": "minimax-m2.5-230b",
+    "provider": "aki-io",
+    "providerName": "AKI.IO",
+    "displayName": "MiniMax-M2.5",
+    "family": "minimax",
+    "releaseDate": "2026-02-12",
+    "lastUpdated": "2026-02-12",
+    "knowledgeCutoff": null,
+    "contextWindow": 196608,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "cacheWrite": 0,
+      "input": 0.25,
+      "output": 1.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -98,16 +93,62 @@
     ]
   },
   {
-    "id": "umans-glm-5.2",
-    "provider": "umans-ai-coding-plan",
-    "providerName": "Umans AI Coding Plan",
-    "displayName": "GLM 5.2",
-    "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
+    "id": "gpt-oss-120b",
+    "provider": "aki-io",
+    "providerName": "AKI.IO",
+    "displayName": "GPT OSS 120B",
+    "family": "gpt-oss",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
     "knowledgeCutoff": null,
-    "contextWindow": 405504,
-    "maxOutputTokens": 131072,
+    "contextWindow": 128000,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.55,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemma4-26b",
+    "provider": "aki-io",
+    "providerName": "AKI.IO",
+    "displayName": "Gemma 4 26B A4B IT",
+    "family": "gemma",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -130,10 +171,8 @@
       ]
     },
     "pricing": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "cacheWrite": 0,
+      "input": 0.1,
+      "output": 0.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -147,16 +186,16 @@
     ]
   },
   {
-    "id": "umans-kimi-k2.7",
-    "provider": "umans-ai-coding-plan",
-    "providerName": "Umans AI Coding Plan",
+    "id": "kimi-k2.7-code-1100b",
+    "provider": "aki-io",
+    "providerName": "AKI.IO",
     "displayName": "Kimi K2.7 Code",
     "family": "kimi-k2",
     "releaseDate": "2026-06-12",
     "lastUpdated": "2026-06-12",
     "knowledgeCutoff": "2025-01",
     "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 81920,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -165,57 +204,7 @@
       "json_mode": true,
       "system_prompt": true,
       "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "cacheWrite": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "umans-qwen3.6-35b-a3b",
-    "provider": "umans-ai-coding-plan",
-    "providerName": "Umans AI Coding Plan",
-    "displayName": "Qwen3.6 35B A3B",
-    "family": "qwen",
-    "releaseDate": "2026-04-17",
-    "lastUpdated": "2026-04-17",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
+      "attachment": false,
       "structured_output": true,
       "open_weights": true
     },
@@ -229,10 +218,8 @@
       ]
     },
     "pricing": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "cacheWrite": 0,
+      "input": 0.86,
+      "output": 3,
       "currency": "USD",
       "per": 1000000
     },
@@ -246,16 +233,16 @@
     ]
   },
   {
-    "id": "umans-glm-5.1",
-    "provider": "umans-ai-coding-plan",
-    "providerName": "Umans AI Coding Plan",
-    "displayName": "GLM 5.1",
-    "family": "glm",
-    "releaseDate": "2026-04-07",
-    "lastUpdated": "2026-04-07",
+    "id": "qwen3.6-35b",
+    "provider": "aki-io",
+    "providerName": "AKI.IO",
+    "displayName": "Qwen3.6 35B-A3B",
+    "family": "qwen",
+    "releaseDate": "2026-04-17",
+    "lastUpdated": "2026-04-17",
     "knowledgeCutoff": null,
-    "contextWindow": 204800,
-    "maxOutputTokens": 131072,
+    "contextWindow": 256000,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -278,10 +265,8 @@
       ]
     },
     "pricing": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "cacheWrite": 0,
+      "input": 0.15,
+      "output": 0.5,
       "currency": "USD",
       "per": 1000000
     },

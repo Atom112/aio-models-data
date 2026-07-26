@@ -1,15 +1,62 @@
 [
   {
-    "id": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+    "id": "zai-org/GLM-5.2",
     "provider": "siliconflow-cn",
     "providerName": "SiliconFlow (China)",
-    "displayName": "ByteDance-Seed/Seed-OSS-36B-Instruct",
-    "family": "seed",
-    "releaseDate": "2025-09-04",
+    "displayName": "GLM-5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 1049000,
+    "maxOutputTokens": 262000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.4,
+      "output": 4.4,
+      "cacheWrite": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "zai-org/GLM-4.5-Air",
+    "provider": "siliconflow-cn",
+    "providerName": "SiliconFlow (China)",
+    "displayName": "zai-org/GLM-4.5-Air",
+    "family": "glm-air",
+    "releaseDate": "2025-07-28",
     "lastUpdated": "2025-11-25",
     "knowledgeCutoff": null,
-    "contextWindow": 262000,
-    "maxOutputTokens": 262000,
+    "contextWindow": 131000,
+    "maxOutputTokens": 131000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -31,8 +78,8 @@
       ]
     },
     "pricing": {
-      "input": 0.21,
-      "output": 0.57,
+      "input": 0.14,
+      "output": 0.86,
       "currency": "USD",
       "per": 1000000
     },
@@ -46,16 +93,63 @@
     ]
   },
   {
-    "id": "Pro/deepseek-ai/DeepSeek-V3.1-Terminus",
+    "id": "PaddlePaddle/PaddleOCR-VL-1.5",
     "provider": "siliconflow-cn",
     "providerName": "SiliconFlow (China)",
-    "displayName": "Pro/deepseek-ai/DeepSeek-V3.1-Terminus",
-    "family": "deepseek",
-    "releaseDate": "2025-09-29",
+    "displayName": "PaddlePaddle/PaddleOCR-VL-1.5",
+    "family": null,
+    "releaseDate": "2026-01-29",
+    "lastUpdated": "2026-01-29",
+    "knowledgeCutoff": null,
+    "contextWindow": 16384,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "tencent/Hunyuan-A13B-Instruct",
+    "provider": "siliconflow-cn",
+    "providerName": "SiliconFlow (China)",
+    "displayName": "tencent/Hunyuan-A13B-Instruct",
+    "family": "hunyuan",
+    "releaseDate": "2025-06-30",
     "lastUpdated": "2025-11-25",
     "knowledgeCutoff": null,
-    "contextWindow": 164000,
-    "maxOutputTokens": 164000,
+    "contextWindow": 131000,
+    "maxOutputTokens": 131000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -77,7 +171,192 @@
       ]
     },
     "pricing": {
-      "input": 0.27,
+      "input": 0.14,
+      "output": 0.57,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Pro/zai-org/GLM-5",
+    "provider": "siliconflow-cn",
+    "providerName": "SiliconFlow (China)",
+    "displayName": "Pro/zai-org/GLM-5",
+    "family": "glm",
+    "releaseDate": "2026-02-12",
+    "lastUpdated": "2026-02-12",
+    "knowledgeCutoff": null,
+    "contextWindow": 205000,
+    "maxOutputTokens": 205000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1,
+      "output": 3.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Pro/zai-org/GLM-5.1",
+    "provider": "siliconflow-cn",
+    "providerName": "SiliconFlow (China)",
+    "displayName": "Pro/zai-org/GLM-5.1",
+    "family": "glm",
+    "releaseDate": "2026-04-08",
+    "lastUpdated": "2026-04-08",
+    "knowledgeCutoff": null,
+    "contextWindow": 205000,
+    "maxOutputTokens": 205000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.4,
+      "output": 4.4,
+      "cacheWrite": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Pro/MiniMaxAI/MiniMax-M2.5",
+    "provider": "siliconflow-cn",
+    "providerName": "SiliconFlow (China)",
+    "displayName": "Pro/MiniMaxAI/MiniMax-M2.5",
+    "family": "minimax",
+    "releaseDate": "2026-02-13",
+    "lastUpdated": "2026-02-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 192000,
+    "maxOutputTokens": 131000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 1.22,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Pro/deepseek-ai/DeepSeek-V3",
+    "provider": "siliconflow-cn",
+    "providerName": "SiliconFlow (China)",
+    "displayName": "Pro/deepseek-ai/DeepSeek-V3",
+    "family": "deepseek",
+    "releaseDate": "2024-12-26",
+    "lastUpdated": "2025-11-25",
+    "knowledgeCutoff": null,
+    "contextWindow": 164000,
+    "maxOutputTokens": 164000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.25,
       "output": 1,
       "currency": "USD",
       "per": 1000000
@@ -184,12 +463,12 @@
     ]
   },
   {
-    "id": "Pro/deepseek-ai/DeepSeek-V3",
+    "id": "Pro/deepseek-ai/DeepSeek-V3.1-Terminus",
     "provider": "siliconflow-cn",
     "providerName": "SiliconFlow (China)",
-    "displayName": "Pro/deepseek-ai/DeepSeek-V3",
+    "displayName": "Pro/deepseek-ai/DeepSeek-V3.1-Terminus",
     "family": "deepseek",
-    "releaseDate": "2024-12-26",
+    "releaseDate": "2025-09-29",
     "lastUpdated": "2025-11-25",
     "knowledgeCutoff": null,
     "contextWindow": 164000,
@@ -197,7 +476,7 @@
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
@@ -215,147 +494,8 @@
       ]
     },
     "pricing": {
-      "input": 0.25,
+      "input": 0.27,
       "output": 1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Pro/MiniMaxAI/MiniMax-M2.5",
-    "provider": "siliconflow-cn",
-    "providerName": "SiliconFlow (China)",
-    "displayName": "Pro/MiniMaxAI/MiniMax-M2.5",
-    "family": "minimax",
-    "releaseDate": "2026-02-13",
-    "lastUpdated": "2026-02-13",
-    "knowledgeCutoff": null,
-    "contextWindow": 192000,
-    "maxOutputTokens": 131000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 1.22,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Pro/zai-org/GLM-5",
-    "provider": "siliconflow-cn",
-    "providerName": "SiliconFlow (China)",
-    "displayName": "Pro/zai-org/GLM-5",
-    "family": "glm",
-    "releaseDate": "2026-02-12",
-    "lastUpdated": "2026-02-12",
-    "knowledgeCutoff": null,
-    "contextWindow": 205000,
-    "maxOutputTokens": 205000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1,
-      "output": 3.2,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Pro/zai-org/GLM-5.1",
-    "provider": "siliconflow-cn",
-    "providerName": "SiliconFlow (China)",
-    "displayName": "Pro/zai-org/GLM-5.1",
-    "family": "glm",
-    "releaseDate": "2026-04-08",
-    "lastUpdated": "2026-04-08",
-    "knowledgeCutoff": null,
-    "contextWindow": 205000,
-    "maxOutputTokens": 205000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.4,
-      "output": 4.4,
-      "cacheWrite": 0,
       "currency": "USD",
       "per": 1000000
     },
@@ -464,6 +604,54 @@
     ]
   },
   {
+    "id": "Qwen/Qwen3.5-27B",
+    "provider": "siliconflow-cn",
+    "providerName": "SiliconFlow (China)",
+    "displayName": "Qwen/Qwen3.5-27B",
+    "family": "qwen",
+    "releaseDate": "2026-02-25",
+    "lastUpdated": "2026-02-25",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.26,
+      "output": 2.09,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "Qwen/Qwen3.5-9B",
     "provider": "siliconflow-cn",
     "providerName": "SiliconFlow (China)",
@@ -499,54 +687,6 @@
     "pricing": {
       "input": 0.22,
       "output": 1.74,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3.5-35B-A3B",
-    "provider": "siliconflow-cn",
-    "providerName": "SiliconFlow (China)",
-    "displayName": "Qwen/Qwen3.5-35B-A3B",
-    "family": "qwen",
-    "releaseDate": "2026-02-25",
-    "lastUpdated": "2026-02-25",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.23,
-      "output": 1.86,
       "currency": "USD",
       "per": 1000000
     },
@@ -606,148 +746,6 @@
     ]
   },
   {
-    "id": "Qwen/Qwen3-32B",
-    "provider": "siliconflow-cn",
-    "providerName": "SiliconFlow (China)",
-    "displayName": "Qwen/Qwen3-32B",
-    "family": "qwen",
-    "releaseDate": "2025-04-30",
-    "lastUpdated": "2025-11-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 131000,
-    "maxOutputTokens": 131000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.14,
-      "output": 0.57,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3.5-397B-A17B",
-    "provider": "siliconflow-cn",
-    "providerName": "SiliconFlow (China)",
-    "displayName": "Qwen/Qwen3.5-397B-A17B",
-    "family": "qwen",
-    "releaseDate": "2026-02-16",
-    "lastUpdated": "2026-02-16",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.29,
-      "output": 1.74,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3.5-27B",
-    "provider": "siliconflow-cn",
-    "providerName": "SiliconFlow (China)",
-    "displayName": "Qwen/Qwen3.5-27B",
-    "family": "qwen",
-    "releaseDate": "2026-02-25",
-    "lastUpdated": "2026-02-25",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.26,
-      "output": 2.09,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "Qwen/Qwen3.5-122B-A10B",
     "provider": "siliconflow-cn",
     "providerName": "SiliconFlow (China)",
@@ -783,52 +781,6 @@
     "pricing": {
       "input": 0.29,
       "output": 2.32,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3-235B-A22B-Thinking-2507",
-    "provider": "siliconflow-cn",
-    "providerName": "SiliconFlow (China)",
-    "displayName": "Qwen/Qwen3-235B-A22B-Thinking-2507",
-    "family": "qwen",
-    "releaseDate": "2025-07-28",
-    "lastUpdated": "2025-11-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 262000,
-    "maxOutputTokens": 262000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.13,
-      "output": 0.6,
       "currency": "USD",
       "per": 1000000
     },
@@ -936,6 +888,102 @@
     ]
   },
   {
+    "id": "Qwen/Qwen3.5-35B-A3B",
+    "provider": "siliconflow-cn",
+    "providerName": "SiliconFlow (China)",
+    "displayName": "Qwen/Qwen3.5-35B-A3B",
+    "family": "qwen",
+    "releaseDate": "2026-02-25",
+    "lastUpdated": "2026-02-25",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.23,
+      "output": 1.86,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen/Qwen3.5-397B-A17B",
+    "provider": "siliconflow-cn",
+    "providerName": "SiliconFlow (China)",
+    "displayName": "Qwen/Qwen3.5-397B-A17B",
+    "family": "qwen",
+    "releaseDate": "2026-02-16",
+    "lastUpdated": "2026-02-16",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.29,
+      "output": 1.74,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "Qwen/Qwen3.6-35B-A3B",
     "provider": "siliconflow-cn",
     "providerName": "SiliconFlow (China)",
@@ -984,20 +1032,20 @@
     ]
   },
   {
-    "id": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
+    "id": "Qwen/Qwen3-32B",
     "provider": "siliconflow-cn",
     "providerName": "SiliconFlow (China)",
-    "displayName": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
+    "displayName": "Qwen/Qwen3-32B",
     "family": "qwen",
-    "releaseDate": "2025-07-31",
+    "releaseDate": "2025-04-30",
     "lastUpdated": "2025-11-25",
     "knowledgeCutoff": null,
-    "contextWindow": 262000,
-    "maxOutputTokens": 262000,
+    "contextWindow": 131000,
+    "maxOutputTokens": 131000,
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
@@ -1015,7 +1063,147 @@
       ]
     },
     "pricing": {
-      "input": 0.25,
+      "input": 0.14,
+      "output": 0.57,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+    "provider": "siliconflow-cn",
+    "providerName": "SiliconFlow (China)",
+    "displayName": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+    "family": "qwen",
+    "releaseDate": "2025-07-28",
+    "lastUpdated": "2025-11-25",
+    "knowledgeCutoff": null,
+    "contextWindow": 262000,
+    "maxOutputTokens": 262000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.13,
+      "output": 0.6,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen/Qwen3-VL-32B-Thinking",
+    "provider": "siliconflow-cn",
+    "providerName": "SiliconFlow (China)",
+    "displayName": "Qwen/Qwen3-VL-32B-Thinking",
+    "family": "qwen",
+    "releaseDate": "2025-10-21",
+    "lastUpdated": "2025-11-25",
+    "knowledgeCutoff": null,
+    "contextWindow": 262000,
+    "maxOutputTokens": 262000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2,
+      "output": 1.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+    "provider": "siliconflow-cn",
+    "providerName": "SiliconFlow (China)",
+    "displayName": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+    "family": "qwen",
+    "releaseDate": "2025-10-05",
+    "lastUpdated": "2025-11-25",
+    "knowledgeCutoff": null,
+    "contextWindow": 262000,
+    "maxOutputTokens": 262000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.29,
       "output": 1,
       "currency": "USD",
       "per": 1000000
@@ -1077,6 +1265,52 @@
     ]
   },
   {
+    "id": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
+    "provider": "siliconflow-cn",
+    "providerName": "SiliconFlow (China)",
+    "displayName": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
+    "family": "qwen",
+    "releaseDate": "2025-07-31",
+    "lastUpdated": "2025-11-25",
+    "knowledgeCutoff": null,
+    "contextWindow": 262000,
+    "maxOutputTokens": 262000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.25,
+      "output": 1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
     "provider": "siliconflow-cn",
     "providerName": "SiliconFlow (China)",
@@ -1110,379 +1344,6 @@
     "pricing": {
       "input": 0.09,
       "output": 0.3,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3-VL-235B-A22B-Instruct",
-    "provider": "siliconflow-cn",
-    "providerName": "SiliconFlow (China)",
-    "displayName": "Qwen/Qwen3-VL-235B-A22B-Instruct",
-    "family": "qwen",
-    "releaseDate": "2025-10-04",
-    "lastUpdated": "2025-11-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 262000,
-    "maxOutputTokens": 262000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 1.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3-VL-30B-A3B-Thinking",
-    "provider": "siliconflow-cn",
-    "providerName": "SiliconFlow (China)",
-    "displayName": "Qwen/Qwen3-VL-30B-A3B-Thinking",
-    "family": "qwen",
-    "releaseDate": "2025-10-11",
-    "lastUpdated": "2025-11-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 262000,
-    "maxOutputTokens": 262000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.29,
-      "output": 1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen2.5-7B-Instruct",
-    "provider": "siliconflow-cn",
-    "providerName": "SiliconFlow (China)",
-    "displayName": "Qwen/Qwen2.5-7B-Instruct",
-    "family": "qwen",
-    "releaseDate": "2024-09-18",
-    "lastUpdated": "2025-11-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 33000,
-    "maxOutputTokens": 4000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.05,
-      "output": 0.05,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3-VL-30B-A3B-Instruct",
-    "provider": "siliconflow-cn",
-    "providerName": "SiliconFlow (China)",
-    "displayName": "Qwen/Qwen3-VL-30B-A3B-Instruct",
-    "family": "qwen",
-    "releaseDate": "2025-10-05",
-    "lastUpdated": "2025-11-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 262000,
-    "maxOutputTokens": 262000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.29,
-      "output": 1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
-    "provider": "siliconflow-cn",
-    "providerName": "SiliconFlow (China)",
-    "displayName": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
-    "family": "qwen",
-    "releaseDate": "2025-08-01",
-    "lastUpdated": "2025-11-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 262000,
-    "maxOutputTokens": 262000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.07,
-      "output": 0.28,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3-VL-235B-A22B-Thinking",
-    "provider": "siliconflow-cn",
-    "providerName": "SiliconFlow (China)",
-    "displayName": "Qwen/Qwen3-VL-235B-A22B-Thinking",
-    "family": "qwen",
-    "releaseDate": "2025-10-04",
-    "lastUpdated": "2025-11-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 262000,
-    "maxOutputTokens": 262000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.45,
-      "output": 3.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3-VL-32B-Thinking",
-    "provider": "siliconflow-cn",
-    "providerName": "SiliconFlow (China)",
-    "displayName": "Qwen/Qwen3-VL-32B-Thinking",
-    "family": "qwen",
-    "releaseDate": "2025-10-21",
-    "lastUpdated": "2025-11-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 262000,
-    "maxOutputTokens": 262000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2,
-      "output": 1.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen2.5-72B-Instruct",
-    "provider": "siliconflow-cn",
-    "providerName": "SiliconFlow (China)",
-    "displayName": "Qwen/Qwen2.5-72B-Instruct",
-    "family": "qwen",
-    "releaseDate": "2024-09-18",
-    "lastUpdated": "2025-11-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 33000,
-    "maxOutputTokens": 4000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.59,
-      "output": 0.59,
       "currency": "USD",
       "per": 1000000
     },
@@ -1543,12 +1404,291 @@
     ]
   },
   {
-    "id": "baidu/ERNIE-4.5-300B-A47B",
+    "id": "Qwen/Qwen3-VL-30B-A3B-Thinking",
     "provider": "siliconflow-cn",
     "providerName": "SiliconFlow (China)",
-    "displayName": "baidu/ERNIE-4.5-300B-A47B",
-    "family": "ernie",
-    "releaseDate": "2025-07-02",
+    "displayName": "Qwen/Qwen3-VL-30B-A3B-Thinking",
+    "family": "qwen",
+    "releaseDate": "2025-10-11",
+    "lastUpdated": "2025-11-25",
+    "knowledgeCutoff": null,
+    "contextWindow": 262000,
+    "maxOutputTokens": 262000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.29,
+      "output": 1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen/Qwen3-VL-235B-A22B-Thinking",
+    "provider": "siliconflow-cn",
+    "providerName": "SiliconFlow (China)",
+    "displayName": "Qwen/Qwen3-VL-235B-A22B-Thinking",
+    "family": "qwen",
+    "releaseDate": "2025-10-04",
+    "lastUpdated": "2025-11-25",
+    "knowledgeCutoff": null,
+    "contextWindow": 262000,
+    "maxOutputTokens": 262000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.45,
+      "output": 3.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen/Qwen3-VL-235B-A22B-Instruct",
+    "provider": "siliconflow-cn",
+    "providerName": "SiliconFlow (China)",
+    "displayName": "Qwen/Qwen3-VL-235B-A22B-Instruct",
+    "family": "qwen",
+    "releaseDate": "2025-10-04",
+    "lastUpdated": "2025-11-25",
+    "knowledgeCutoff": null,
+    "contextWindow": 262000,
+    "maxOutputTokens": 262000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 1.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "provider": "siliconflow-cn",
+    "providerName": "SiliconFlow (China)",
+    "displayName": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "family": "qwen",
+    "releaseDate": "2025-08-01",
+    "lastUpdated": "2025-11-25",
+    "knowledgeCutoff": null,
+    "contextWindow": 262000,
+    "maxOutputTokens": 262000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.07,
+      "output": 0.28,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen/Qwen2.5-72B-Instruct",
+    "provider": "siliconflow-cn",
+    "providerName": "SiliconFlow (China)",
+    "displayName": "Qwen/Qwen2.5-72B-Instruct",
+    "family": "qwen",
+    "releaseDate": "2024-09-18",
+    "lastUpdated": "2025-11-25",
+    "knowledgeCutoff": null,
+    "contextWindow": 33000,
+    "maxOutputTokens": 4000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.59,
+      "output": 0.59,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen/Qwen2.5-7B-Instruct",
+    "provider": "siliconflow-cn",
+    "providerName": "SiliconFlow (China)",
+    "displayName": "Qwen/Qwen2.5-7B-Instruct",
+    "family": "qwen",
+    "releaseDate": "2024-09-18",
+    "lastUpdated": "2025-11-25",
+    "knowledgeCutoff": null,
+    "contextWindow": 33000,
+    "maxOutputTokens": 4000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.05,
+      "output": 0.05,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "inclusionAI/Ling-flash-2.0",
+    "provider": "siliconflow-cn",
+    "providerName": "SiliconFlow (China)",
+    "displayName": "inclusionAI/Ling-flash-2.0",
+    "family": "ling",
+    "releaseDate": "2025-09-18",
     "lastUpdated": "2025-11-25",
     "knowledgeCutoff": null,
     "contextWindow": 131000,
@@ -1574,8 +1714,8 @@
       ]
     },
     "pricing": {
-      "input": 0.28,
-      "output": 1.1,
+      "input": 0.14,
+      "output": 0.57,
       "currency": "USD",
       "per": 1000000
     },
@@ -1589,20 +1729,20 @@
     ]
   },
   {
-    "id": "stepfun-ai/Step-3.5-Flash",
+    "id": "ByteDance-Seed/Seed-OSS-36B-Instruct",
     "provider": "siliconflow-cn",
     "providerName": "SiliconFlow (China)",
-    "displayName": "stepfun-ai/Step-3.5-Flash",
-    "family": "step",
-    "releaseDate": "2026-02-11",
-    "lastUpdated": "2026-02-11",
+    "displayName": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+    "family": "seed",
+    "releaseDate": "2025-09-04",
+    "lastUpdated": "2025-11-25",
     "knowledgeCutoff": null,
     "contextWindow": 262000,
     "maxOutputTokens": 262000,
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": true,
+      "reasoning": false,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
@@ -1620,242 +1760,8 @@
       ]
     },
     "pricing": {
-      "input": 0.1,
-      "output": 0.3,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "PaddlePaddle/PaddleOCR-VL-1.5",
-    "provider": "siliconflow-cn",
-    "providerName": "SiliconFlow (China)",
-    "displayName": "PaddlePaddle/PaddleOCR-VL-1.5",
-    "family": null,
-    "releaseDate": "2026-01-29",
-    "lastUpdated": "2026-01-29",
-    "knowledgeCutoff": null,
-    "contextWindow": 16384,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-V3.1-Terminus",
-    "provider": "siliconflow-cn",
-    "providerName": "SiliconFlow (China)",
-    "displayName": "deepseek-ai/DeepSeek-V3.1-Terminus",
-    "family": "deepseek",
-    "releaseDate": "2025-09-29",
-    "lastUpdated": "2025-11-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 164000,
-    "maxOutputTokens": 164000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.27,
-      "output": 1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-OCR",
-    "provider": "siliconflow-cn",
-    "providerName": "SiliconFlow (China)",
-    "displayName": "deepseek-ai/DeepSeek-OCR",
-    "family": null,
-    "releaseDate": "2025-10-20",
-    "lastUpdated": "2025-10-20",
-    "knowledgeCutoff": null,
-    "contextWindow": 8192,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-V4-Pro",
-    "provider": "siliconflow-cn",
-    "providerName": "SiliconFlow (China)",
-    "displayName": "deepseek-ai/DeepSeek-V4-Pro",
-    "family": "deepseek-thinking",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
-    "knowledgeCutoff": null,
-    "contextWindow": 1049000,
-    "maxOutputTokens": 393000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.74,
-      "output": 3.48,
-      "cacheRead": 0.145,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-V4-Flash",
-    "provider": "siliconflow-cn",
-    "providerName": "SiliconFlow (China)",
-    "displayName": "DeepSeek V4 Flash",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.14,
-      "output": 0.28,
-      "cacheRead": 0.003,
+      "input": 0.21,
+      "output": 0.57,
       "currency": "USD",
       "per": 1000000
     },
@@ -1961,6 +1867,193 @@
     ]
   },
   {
+    "id": "deepseek-ai/DeepSeek-OCR",
+    "provider": "siliconflow-cn",
+    "providerName": "SiliconFlow (China)",
+    "displayName": "deepseek-ai/DeepSeek-OCR",
+    "family": null,
+    "releaseDate": "2025-10-20",
+    "lastUpdated": "2025-10-20",
+    "knowledgeCutoff": null,
+    "contextWindow": 8192,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V4-Flash",
+    "provider": "siliconflow-cn",
+    "providerName": "SiliconFlow (China)",
+    "displayName": "DeepSeek V4 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.14,
+      "output": 0.28,
+      "cacheRead": 0.003,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V4-Pro",
+    "provider": "siliconflow-cn",
+    "providerName": "SiliconFlow (China)",
+    "displayName": "deepseek-ai/DeepSeek-V4-Pro",
+    "family": "deepseek-thinking",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": null,
+    "contextWindow": 1049000,
+    "maxOutputTokens": 393000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.74,
+      "output": 3.48,
+      "cacheRead": 0.145,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V3.1-Terminus",
+    "provider": "siliconflow-cn",
+    "providerName": "SiliconFlow (China)",
+    "displayName": "deepseek-ai/DeepSeek-V3.1-Terminus",
+    "family": "deepseek",
+    "releaseDate": "2025-09-29",
+    "lastUpdated": "2025-11-25",
+    "knowledgeCutoff": null,
+    "contextWindow": 164000,
+    "maxOutputTokens": 164000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.27,
+      "output": 1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "deepseek-ai/DeepSeek-V3",
     "provider": "siliconflow-cn",
     "providerName": "SiliconFlow (China)",
@@ -2007,15 +2100,15 @@
     ]
   },
   {
-    "id": "zai-org/GLM-5.2",
+    "id": "stepfun-ai/Step-3.5-Flash",
     "provider": "siliconflow-cn",
     "providerName": "SiliconFlow (China)",
-    "displayName": "GLM-5.2",
-    "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
+    "displayName": "stepfun-ai/Step-3.5-Flash",
+    "family": "step",
+    "releaseDate": "2026-02-11",
+    "lastUpdated": "2026-02-11",
     "knowledgeCutoff": null,
-    "contextWindow": 1049000,
+    "contextWindow": 262000,
     "maxOutputTokens": 262000,
     "capabilities": {
       "tools": true,
@@ -2027,7 +2120,7 @@
       "temperature": true,
       "attachment": false,
       "structured_output": true,
-      "open_weights": true
+      "open_weights": false
     },
     "modalities": {
       "input": [
@@ -2038,9 +2131,8 @@
       ]
     },
     "pricing": {
-      "input": 1.4,
-      "output": 4.4,
-      "cacheWrite": 0,
+      "input": 0.1,
+      "output": 0.3,
       "currency": "USD",
       "per": 1000000
     },
@@ -2054,12 +2146,12 @@
     ]
   },
   {
-    "id": "zai-org/GLM-4.5-Air",
+    "id": "baidu/ERNIE-4.5-300B-A47B",
     "provider": "siliconflow-cn",
     "providerName": "SiliconFlow (China)",
-    "displayName": "zai-org/GLM-4.5-Air",
-    "family": "glm-air",
-    "releaseDate": "2025-07-28",
+    "displayName": "baidu/ERNIE-4.5-300B-A47B",
+    "family": "ernie",
+    "releaseDate": "2025-07-02",
     "lastUpdated": "2025-11-25",
     "knowledgeCutoff": null,
     "contextWindow": 131000,
@@ -2085,100 +2177,8 @@
       ]
     },
     "pricing": {
-      "input": 0.14,
-      "output": 0.86,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "tencent/Hunyuan-A13B-Instruct",
-    "provider": "siliconflow-cn",
-    "providerName": "SiliconFlow (China)",
-    "displayName": "tencent/Hunyuan-A13B-Instruct",
-    "family": "hunyuan",
-    "releaseDate": "2025-06-30",
-    "lastUpdated": "2025-11-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 131000,
-    "maxOutputTokens": 131000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.14,
-      "output": 0.57,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "inclusionAI/Ling-flash-2.0",
-    "provider": "siliconflow-cn",
-    "providerName": "SiliconFlow (China)",
-    "displayName": "inclusionAI/Ling-flash-2.0",
-    "family": "ling",
-    "releaseDate": "2025-09-18",
-    "lastUpdated": "2025-11-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 131000,
-    "maxOutputTokens": 131000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.14,
-      "output": 0.57,
+      "input": 0.28,
+      "output": 1.1,
       "currency": "USD",
       "per": 1000000
     },
