@@ -259,7 +259,7 @@
     "id": "deepseek-v4-flash",
     "provider": "opencode-go",
     "providerName": "OpenCode Go",
-    "displayName": "DeepSeek V4 Flash",
+    "displayName": "DeepSeek V4 Flash (New)",
     "family": "deepseek-flash",
     "releaseDate": "2026-04-24",
     "lastUpdated": "2026-04-24",
@@ -854,6 +854,68 @@
     ]
   },
   {
+    "id": "gpt-5.6-luna",
+    "provider": "opencode-go",
+    "providerName": "OpenCode Go",
+    "displayName": "GPT-5.6 Luna (2x usage)",
+    "family": "gpt-luna",
+    "releaseDate": "2026-07-09",
+    "lastUpdated": "2026-07-09",
+    "knowledgeCutoff": "2026-02-16",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.6,
+      "cacheRead": 0.01,
+      "cacheWrite": 0.125,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.2,
+          "output": 0.9,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 0.2,
+        "output": 0.9,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "grok-4.5",
     "provider": "opencode-go",
     "providerName": "OpenCode Go",
@@ -966,7 +1028,7 @@
     "id": "kimi-k3",
     "provider": "opencode-go",
     "providerName": "OpenCode Go",
-    "displayName": "Kimi K3 (2x usage)",
+    "displayName": "Kimi K3",
     "family": "kimi-k3",
     "releaseDate": "2026-07-16",
     "lastUpdated": "2026-07-16",

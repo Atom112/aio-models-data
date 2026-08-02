@@ -94,6 +94,54 @@
     ]
   },
   {
+    "id": "thinkingmachines/inkling-small",
+    "provider": "baseten",
+    "providerName": "Baseten",
+    "displayName": "Inkling Small",
+    "family": "ling",
+    "releaseDate": "2026-07-30",
+    "lastUpdated": "2026-07-30",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.5,
+      "output": 1.2,
+      "cacheRead": 0.1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "thinkingmachines/inkling",
     "provider": "baseten",
     "providerName": "Baseten",
@@ -197,7 +245,7 @@
     "lastUpdated": "2026-06-13",
     "knowledgeCutoff": null,
     "contextWindow": 524288,
-    "maxOutputTokens": 524288,
+    "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -243,8 +291,8 @@
     "releaseDate": "2026-06-13",
     "lastUpdated": "2026-06-13",
     "knowledgeCutoff": null,
-    "contextWindow": 524288,
-    "maxOutputTokens": 524288,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -413,6 +461,53 @@
       "per": 1000000
     },
     "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V4-Flash-0731",
+    "provider": "baseten",
+    "providerName": "Baseten",
+    "displayName": "DeepSeek V4 Flash 0731",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.13,
+      "output": 0.26,
+      "cacheRead": 0.028,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -646,6 +741,53 @@
       "input": 0.95,
       "output": 4,
       "cacheRead": 0.16,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "moonshotai/Kimi-K3",
+    "provider": "baseten",
+    "providerName": "Baseten",
+    "displayName": "Kimi K3",
+    "family": "kimi-k3",
+    "releaseDate": "2026-07-16",
+    "lastUpdated": "2026-07-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 15,
       "currency": "USD",
       "per": 1000000
     },

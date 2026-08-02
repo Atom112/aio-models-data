@@ -248,19 +248,21 @@
     "maxOutputTokens": 32000,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "video"
       ],
       "output": [
         "text"

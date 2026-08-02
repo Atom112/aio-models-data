@@ -1,4 +1,4 @@
-# aio-models-data sync @ 2026-07-26T06:31:07.935Z
+# aio-models-data sync @ 2026-08-02T06:28:15.756Z
 
-- providers: 172
-- models: 5755
+- providers: 178
+- models: 5949

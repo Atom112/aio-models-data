@@ -1,15 +1,63 @@
 [
   {
-    "id": "google/gemma-4-31b-it",
-    "provider": "aiand",
-    "providerName": "ai&",
-    "displayName": "Gemma 4 31B IT",
-    "family": "gemma",
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-04-02",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 32768,
+    "id": "claude-sonnet-4-6",
+    "provider": "modelis",
+    "providerName": "Modelis",
+    "displayName": "Claude Sonnet 4.6",
+    "family": "claude-sonnet",
+    "releaseDate": "2026-02-17",
+    "lastUpdated": "2026-03-13",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash",
+    "provider": "modelis",
+    "providerName": "Modelis",
+    "displayName": "Gemini 2.5 Flash",
+    "family": "gemini-flash",
+    "releaseDate": "2025-06-17",
+    "lastUpdated": "2025-06-17",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -20,12 +68,13 @@
       "temperature": true,
       "attachment": true,
       "structured_output": true,
-      "open_weights": true
+      "open_weights": false
     },
     "modalities": {
       "input": [
         "text",
         "image",
+        "audio",
         "video",
         "pdf"
       ],
@@ -34,191 +83,7 @@
       ]
     },
     "pricing": {
-      "input": 0.2,
-      "output": 0.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/glm-5.2",
-    "provider": "aiand",
-    "providerName": "ai&",
-    "displayName": "GLM-5.2",
-    "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1,
-      "output": 4,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen/qwen3.6-27b",
-    "provider": "aiand",
-    "providerName": "ai&",
-    "displayName": "Qwen3.6 27B",
-    "family": "qwen",
-    "releaseDate": "2026-04-22",
-    "lastUpdated": "2026-04-22",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/deepseek-v4-flash",
-    "provider": "aiand",
-    "providerName": "ai&",
-    "displayName": "DeepSeek V4 Flash",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.15,
-      "output": 0.25,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/deepseek-v4-pro",
-    "provider": "aiand",
-    "providerName": "ai&",
-    "displayName": "DeepSeek V4 Pro",
-    "family": "deepseek-thinking",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1,
+      "input": 0.3,
       "output": 2.5,
       "currency": "USD",
       "per": 1000000
@@ -233,27 +98,27 @@
     ]
   },
   {
-    "id": "moonshotai/kimi-k2.7-code",
-    "provider": "aiand",
-    "providerName": "ai&",
-    "displayName": "Kimi K2.7 Code",
-    "family": "kimi-k2",
-    "releaseDate": "2026-06-12",
-    "lastUpdated": "2026-06-12",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "id": "claude-fable-5",
+    "provider": "modelis",
+    "providerName": "Modelis",
+    "displayName": "Claude Fable 5",
+    "family": "claude-fable",
+    "releaseDate": "2026-06-09",
+    "lastUpdated": "2026-06-09",
+    "knowledgeCutoff": "2026-01-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": false,
       "attachment": true,
-      "structured_output": true,
-      "open_weights": true
+      "structured_output": false,
+      "open_weights": false
     },
     "modalities": {
       "input": [
@@ -266,8 +131,8 @@
       ]
     },
     "pricing": {
-      "input": 0.75,
-      "output": 3.5,
+      "input": 10,
+      "output": 50,
       "currency": "USD",
       "per": 1000000
     },
@@ -281,65 +146,16 @@
     ]
   },
   {
-    "id": "moonshotai/kimi-k3",
-    "provider": "aiand",
-    "providerName": "ai&",
-    "displayName": "Kimi K3",
-    "family": "kimi-k3",
-    "releaseDate": "2026-07-16",
-    "lastUpdated": "2026-07-16",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 3,
-      "output": 12.5,
-      "cacheRead": 0.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "openai/gpt-oss-120b",
-    "provider": "aiand",
-    "providerName": "ai&",
-    "displayName": "GPT OSS 120B",
-    "family": "gpt-oss",
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 32768,
+    "id": "deepseek-v4-flash",
+    "provider": "modelis",
+    "providerName": "Modelis",
+    "displayName": "DeepSeek V4 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -361,8 +177,246 @@
       ]
     },
     "pricing": {
-      "input": 0.15,
-      "output": 0.6,
+      "input": 0.0983,
+      "output": 0.1966,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-opus-4-8",
+    "provider": "modelis",
+    "providerName": "Modelis",
+    "displayName": "Claude Opus 4.8",
+    "family": "claude-opus",
+    "releaseDate": "2026-05-28",
+    "lastUpdated": "2026-05-28",
+    "knowledgeCutoff": "2026-01",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v4-pro",
+    "provider": "modelis",
+    "providerName": "Modelis",
+    "displayName": "DeepSeek V4 Pro",
+    "family": "deepseek-thinking",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.435,
+      "output": 0.87,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-2.5-pro",
+    "provider": "modelis",
+    "providerName": "Modelis",
+    "displayName": "Gemini 2.5 Pro",
+    "family": "gemini-pro",
+    "releaseDate": "2025-06-17",
+    "lastUpdated": "2025-06-17",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 10,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.7-plus",
+    "provider": "modelis",
+    "providerName": "Modelis",
+    "displayName": "Qwen3.7 Plus",
+    "family": "qwen",
+    "releaseDate": "2026-06-02",
+    "lastUpdated": "2026-06-02",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.768,
+      "output": 3.072,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.7-max",
+    "provider": "modelis",
+    "providerName": "Modelis",
+    "displayName": "Qwen3.7 Max",
+    "family": "qwen",
+    "releaseDate": "2026-05-21",
+    "lastUpdated": "2026-05-21",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 9,
       "currency": "USD",
       "per": 1000000
     },
