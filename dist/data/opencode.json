@@ -959,8 +959,8 @@
     "providerName": "OpenCode Zen",
     "displayName": "DeepSeek V4 Flash",
     "family": "deepseek-flash",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
+    "releaseDate": "2026-07-31",
+    "lastUpdated": "2026-07-31",
     "knowledgeCutoff": "2025-05",
     "contextWindow": 1000000,
     "maxOutputTokens": 384000,
@@ -1193,6 +1193,53 @@
     ]
   },
   {
+    "id": "longcat-2.0-free",
+    "provider": "opencode",
+    "providerName": "OpenCode Zen",
+    "displayName": "LongCat-2.0 Free",
+    "family": "longcat",
+    "releaseDate": "2026-06-30",
+    "lastUpdated": "2026-06-30",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "qwen3.6-plus-free",
     "provider": "opencode",
     "providerName": "OpenCode Zen",
@@ -1326,7 +1373,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1386,10 +1433,10 @@
     "id": "deepseek-v4-flash-free",
     "provider": "opencode",
     "providerName": "OpenCode Zen",
-    "displayName": "DeepSeek V4 Flash Free (New)",
+    "displayName": "DeepSeek V4 Flash Free",
     "family": "deepseek-flash",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
+    "releaseDate": "2026-07-31",
+    "lastUpdated": "2026-07-31",
     "knowledgeCutoff": "2025-05",
     "contextWindow": 200000,
     "maxOutputTokens": 128000,
@@ -1728,7 +1775,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2234,6 +2281,52 @@
       "per": 1000000
     },
     "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "ling-3.0-tiny-free",
+    "provider": "opencode",
+    "providerName": "OpenCode Zen",
+    "displayName": "Ling-3.0-tiny Free",
+    "family": "ling",
+    "releaseDate": "2026-08-06",
+    "lastUpdated": "2026-08-06",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -3363,8 +3456,8 @@
     "providerName": "OpenCode Zen",
     "displayName": "Grok Build 0.1",
     "family": "grok-build",
-    "releaseDate": "2026-05-20",
-    "lastUpdated": "2026-05-20",
+    "releaseDate": "2026-04-16",
+    "lastUpdated": "2026-04-16",
     "knowledgeCutoff": null,
     "contextWindow": 256000,
     "maxOutputTokens": 256000,
@@ -3383,7 +3476,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"

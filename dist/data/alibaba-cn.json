@@ -46,6 +46,68 @@
     ]
   },
   {
+    "id": "qwen3.7-flash",
+    "provider": "alibaba-cn",
+    "providerName": "Alibaba (China)",
+    "displayName": "Qwen3.7 Flash",
+    "family": "qwen",
+    "releaseDate": "2026-07-15",
+    "lastUpdated": "2026-07-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.02962,
+      "output": 0.1185,
+      "cacheRead": 0.002962,
+      "cacheWrite": 0.03703,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.08887,
+          "output": 0.35549,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 0.17774,
+          "output": 0.71098,
+          "contextThreshold": 256000
+        }
+      ]
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "qwen3.7-plus",
     "provider": "alibaba-cn",
     "providerName": "Alibaba (China)",
@@ -2191,6 +2253,57 @@
     "pricing": {
       "input": 0.087,
       "output": 0.144,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.8-max",
+    "provider": "alibaba-cn",
+    "providerName": "Alibaba (China)",
+    "displayName": "Qwen3.8 Max",
+    "family": "qwen",
+    "releaseDate": "2026-08-03",
+    "lastUpdated": "2026-08-03",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.77744,
+      "output": 5.33231,
+      "cacheRead": 0.22218,
+      "cacheWrite": 2.22179,
       "currency": "USD",
       "per": 1000000
     },

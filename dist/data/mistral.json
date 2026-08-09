@@ -377,6 +377,49 @@
     ]
   },
   {
+    "id": "voxtral-mini-tts-latest",
+    "provider": "mistral",
+    "providerName": "Mistral",
+    "displayName": "Voxtral Mini TTS",
+    "family": "voxtral",
+    "releaseDate": "2026-03-01",
+    "lastUpdated": "2026-03-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 0,
+    "maxOutputTokens": 0,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "audio"
+      ]
+    },
+    "pricing": null,
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [
+      "Voxtral Mini TTS (latest)"
+    ],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "mistral-medium-latest",
     "provider": "mistral",
     "providerName": "Mistral",
@@ -842,6 +885,98 @@
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "voxtral-mini-latest",
+    "provider": "mistral",
+    "providerName": "Mistral",
+    "displayName": "Voxtral Mini",
+    "family": "voxtral",
+    "releaseDate": "2026-02-01",
+    "lastUpdated": "2026-02-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 0,
+    "maxOutputTokens": 0,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [
+      "Voxtral Mini (latest)"
+    ],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "voxtral-small-latest",
+    "provider": "mistral",
+    "providerName": "Mistral",
+    "displayName": "Voxtral Small",
+    "family": "voxtral",
+    "releaseDate": "2025-07-15",
+    "lastUpdated": "2025-07-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 32000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [
+      "Voxtral Small (latest)"
+    ],
     "isAggregator": false,
     "sources": [
       "models.dev"

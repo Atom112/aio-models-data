@@ -723,6 +723,54 @@
     ]
   },
   {
+    "id": "glm-5.2",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "GLM-5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.4,
+      "output": 4.4,
+      "cacheRead": 0.28,
+      "cacheWrite": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "qwen3.7-max",
     "provider": "alibaba",
     "providerName": "Alibaba",
@@ -1521,6 +1569,57 @@
     ]
   },
   {
+    "id": "qwen3.8-max",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen3.8 Max",
+    "family": "qwen",
+    "releaseDate": "2026-08-03",
+    "lastUpdated": "2026-08-03",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 6,
+      "cacheRead": 0.25,
+      "cacheWrite": 2.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "qwen3-coder-flash",
     "provider": "alibaba",
     "providerName": "Alibaba",
@@ -1554,6 +1653,53 @@
     "pricing": {
       "input": 0.3,
       "output": 1.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v4-flash-0731",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "DeepSeek V4 Flash 0731",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-07-31",
+    "lastUpdated": "2026-07-31",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2,
+      "output": 0.4,
+      "cacheRead": 0.04,
       "currency": "USD",
       "per": 1000000
     },

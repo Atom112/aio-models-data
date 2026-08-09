@@ -432,6 +432,68 @@
     ]
   },
   {
+    "id": "qwen/qwen3.7-flash",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "Qwen3.7 Flash",
+    "family": "qwen",
+    "releaseDate": "2026-07-15",
+    "lastUpdated": "2026-07-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.04,
+      "output": 0.13,
+      "cacheRead": 0.01,
+      "cacheWrite": 0.04,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.1,
+          "output": 0.37,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 0.19,
+          "output": 0.74,
+          "contextThreshold": 256000
+        }
+      ]
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "qwen/qwen3.7-plus",
     "provider": "crossmodel",
     "providerName": "CrossModel",
@@ -447,11 +509,11 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -509,11 +571,11 @@
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -529,6 +591,56 @@
       "output": 4.504,
       "cacheRead": 0.3,
       "cacheWrite": 1.88,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.8-max",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "Qwen3.8 Max",
+    "family": "qwen",
+    "releaseDate": "2026-08-03",
+    "lastUpdated": "2026-08-03",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.88,
+      "output": 5.63,
+      "cacheRead": 0.23,
+      "cacheWrite": 2.35,
       "currency": "USD",
       "per": 1000000
     },
@@ -619,11 +731,11 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -681,11 +793,11 @@
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -729,11 +841,11 @@
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -986,11 +1098,11 @@
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -1034,11 +1146,11 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -1375,11 +1487,11 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -1424,11 +1536,11 @@
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -1472,11 +1584,11 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -1521,11 +1633,11 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -1572,11 +1684,11 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": false,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -1621,11 +1733,11 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": false,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -1670,11 +1782,11 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": false,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -1719,11 +1831,11 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": false,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -1768,11 +1880,11 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": false,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -1817,11 +1929,11 @@
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -1975,11 +2087,11 @@
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {

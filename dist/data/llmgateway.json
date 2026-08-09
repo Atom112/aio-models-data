@@ -2486,9 +2486,9 @@
       ]
     },
     "pricing": {
-      "input": 0.8,
-      "output": 2.55,
-      "cacheRead": 0.16,
+      "input": 0.55,
+      "output": 1.9255,
+      "cacheRead": 0.1375,
       "cacheWrite": 0,
       "currency": "USD",
       "per": 1000000
@@ -4306,56 +4306,6 @@
     ]
   },
   {
-    "id": "gpt-5-chat-latest",
-    "provider": "llmgateway",
-    "providerName": "LLM Gateway",
-    "displayName": "GPT-5 Chat",
-    "family": "gpt-codex",
-    "releaseDate": "2025-08-07",
-    "lastUpdated": "2025-08-07",
-    "knowledgeCutoff": "2024-09-30",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cacheRead": 0.125,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [
-      "GPT-5 Chat (latest)"
-    ],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "gpt-4o-search-preview",
     "provider": "llmgateway",
     "providerName": "LLM Gateway",
@@ -4632,6 +4582,55 @@
       "output": 2.4,
       "cacheRead": 0.03,
       "cacheWrite": 0.375,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.8-max",
+    "provider": "llmgateway",
+    "providerName": "LLM Gateway",
+    "displayName": "Qwen3.8 Max Preview",
+    "family": "qwen",
+    "releaseDate": "2026-07-19",
+    "lastUpdated": "2026-07-19",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 1000000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.815,
+      "output": 5.4461,
+      "cacheRead": 0.21,
+      "cacheWrite": 2.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -5687,6 +5686,57 @@
       "output": 7.5,
       "cacheRead": 0.15,
       "cacheWrite": 0.08333,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "muse-spark-1.2",
+    "provider": "llmgateway",
+    "providerName": "LLM Gateway",
+    "displayName": "Muse Spark 1.2",
+    "family": "muse",
+    "releaseDate": "2026-08-05",
+    "lastUpdated": "2026-08-05",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 4.25,
+      "cacheRead": 0.15,
       "currency": "USD",
       "per": 1000000
     },
@@ -7933,7 +7983,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": true,
+      "temperature": false,
       "attachment": true,
       "structured_output": true,
       "open_weights": false

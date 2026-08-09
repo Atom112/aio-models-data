@@ -94,6 +94,53 @@
     ]
   },
   {
+    "id": "thinkingmachines/Inkling-Small",
+    "provider": "huggingface",
+    "providerName": "Hugging Face",
+    "displayName": "Inkling Small",
+    "family": "ling",
+    "releaseDate": "2026-07-30",
+    "lastUpdated": "2026-07-30",
+    "knowledgeCutoff": null,
+    "contextWindow": 524288,
+    "maxOutputTokens": 1048576,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.5,
+      "output": 1.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "thinkingmachines/Inkling",
     "provider": "huggingface",
     "providerName": "Hugging Face",
@@ -686,6 +733,52 @@
     "pricing": {
       "input": 0.17,
       "output": 0.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+    "provider": "huggingface",
+    "providerName": "Hugging Face",
+    "displayName": "Qwen3 235B-A22B Instruct 2507",
+    "family": "qwen",
+    "releaseDate": "2025-07-21",
+    "lastUpdated": "2025-07-21",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.855,
+      "output": 2.565,
       "currency": "USD",
       "per": 1000000
     },
@@ -1627,6 +1720,98 @@
     ]
   },
   {
+    "id": "deepseek-ai/DeepSeek-V3",
+    "provider": "huggingface",
+    "providerName": "Hugging Face",
+    "displayName": "DeepSeek-V3",
+    "family": "deepseek",
+    "releaseDate": "2024-12-26",
+    "lastUpdated": "2024-12-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 64000,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.4,
+      "output": 1.3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V4-Flash-0731",
+    "provider": "huggingface",
+    "providerName": "Hugging Face",
+    "displayName": "DeepSeek V4 Flash 0731",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-07-31",
+    "lastUpdated": "2026-07-31",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.14,
+      "output": 0.28,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "deepseek-ai/DeepSeek-R1-0528",
     "provider": "huggingface",
     "providerName": "Hugging Face",
@@ -1752,6 +1937,52 @@
     "pricing": {
       "input": 0.28,
       "output": 0.4,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V3.1",
+    "provider": "huggingface",
+    "providerName": "Hugging Face",
+    "displayName": "DeepSeek-V3.1",
+    "family": "deepseek",
+    "releaseDate": "2025-08-21",
+    "lastUpdated": "2025-08-21",
+    "knowledgeCutoff": null,
+    "contextWindow": 131072,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.27,
+      "output": 1,
       "currency": "USD",
       "per": 1000000
     },

@@ -133,6 +133,52 @@
     ]
   },
   {
+    "id": "allam-2-7b",
+    "provider": "groq",
+    "providerName": "Groq",
+    "displayName": "ALLaM-2-7b",
+    "family": null,
+    "releaseDate": "2025-01-23",
+    "lastUpdated": "2025-01-23",
+    "knowledgeCutoff": null,
+    "contextWindow": 4096,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "whisper-large-v3-turbo",
     "provider": "groq",
     "providerName": "Groq",
@@ -174,43 +220,45 @@
     ]
   },
   {
-    "id": "qwen/qwen3-32b",
+    "id": "qwen/qwen3.6-27b",
     "provider": "groq",
     "providerName": "Groq",
-    "displayName": "Qwen3-32B",
+    "displayName": "Qwen3.6 27B",
     "family": "qwen",
-    "releaseDate": "2025-06-11",
-    "lastUpdated": "2025-06-12",
+    "releaseDate": "2026-04-22",
+    "lastUpdated": "2026-04-22",
     "knowledgeCutoff": null,
     "contextWindow": 131072,
-    "maxOutputTokens": 40960,
+    "maxOutputTokens": 16384,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
-      "structured_output": false,
+      "attachment": true,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.29,
-      "output": 0.59,
+      "input": 0.6,
+      "output": 3,
+      "cacheRead": 0.3,
       "currency": "USD",
       "per": 1000000
     },
-    "status": "beta",
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -603,53 +651,6 @@
     "pricing": {
       "input": 0.04,
       "output": 0.04,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "beta",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "meta-llama/llama-4-scout-17b-16e-instruct",
-    "provider": "groq",
-    "providerName": "Groq",
-    "displayName": "Llama 4 Scout 17B 16E",
-    "family": "llama",
-    "releaseDate": "2025-04-05",
-    "lastUpdated": "2025-04-05",
-    "knowledgeCutoff": "2024-08",
-    "contextWindow": 131072,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.11,
-      "output": 0.34,
       "currency": "USD",
       "per": 1000000
     },

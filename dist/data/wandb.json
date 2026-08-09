@@ -1,52 +1,5 @@
 [
   {
-    "id": "microsoft/Phi-4-mini-instruct",
-    "provider": "wandb",
-    "providerName": "Weights & Biases",
-    "displayName": "Phi 4 Mini 3.8B",
-    "family": "phi",
-    "releaseDate": "2025-02-01",
-    "lastUpdated": "2025-02-01",
-    "knowledgeCutoff": "2023-10",
-    "contextWindow": 128000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.08,
-      "output": 0.35,
-      "cacheRead": 0.08,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
     "provider": "wandb",
     "providerName": "Weights & Biases",
@@ -330,101 +283,6 @@
     ]
   },
   {
-    "id": "Qwen/Qwen3.5-27B",
-    "provider": "wandb",
-    "providerName": "Weights & Biases",
-    "displayName": "Qwen3.5-27B",
-    "family": "qwen3.5",
-    "releaseDate": "2026-02-24",
-    "lastUpdated": "2026-02-24",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.39,
-      "output": 3.12,
-      "cacheRead": 0.08,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
-    "provider": "wandb",
-    "providerName": "Weights & Biases",
-    "displayName": "Qwen3 235B A22B-2507",
-    "family": "qwen",
-    "releaseDate": "2025-07-22",
-    "lastUpdated": "2025-07-22",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1,
-      "output": 0.1,
-      "cacheRead": 0.1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "Qwen/Qwen3.5-35B-A3B",
     "provider": "wandb",
     "providerName": "Weights & Biases",
@@ -663,53 +521,6 @@
     ]
   },
   {
-    "id": "Qwen/Qwen3-235B-A22B-Thinking-2507",
-    "provider": "wandb",
-    "providerName": "Weights & Biases",
-    "displayName": "Qwen3 235B A22B Thinking-2507",
-    "family": "qwen",
-    "releaseDate": "2025-07-25",
-    "lastUpdated": "2025-07-25",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1,
-      "output": 0.1,
-      "cacheRead": 0.1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "MiniMaxAI/MiniMax-M2.5",
     "provider": "wandb",
     "providerName": "Weights & Biases",
@@ -852,6 +663,53 @@
     ]
   },
   {
+    "id": "deepseek-ai/DeepSeek-V4-Flash-0731",
+    "provider": "wandb",
+    "providerName": "Weights & Biases",
+    "displayName": "DeepSeek V4 Flash 0731",
+    "family": "deepseek",
+    "releaseDate": "2026-07-31",
+    "lastUpdated": "2026-07-31",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.13,
+      "output": 0.28,
+      "cacheRead": 0.07,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "deepseek-ai/DeepSeek-V3.1",
     "provider": "wandb",
     "providerName": "Weights & Biases",
@@ -977,9 +835,9 @@
       ]
     },
     "pricing": {
-      "input": 1.74,
-      "output": 3.48,
-      "cacheRead": 0.14,
+      "input": 1.15,
+      "output": 2.55,
+      "cacheRead": 0.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -1075,54 +933,6 @@
       "input": 0.65,
       "output": 3.41,
       "cacheRead": 0.15,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "moonshotai/Kimi-K2.5",
-    "provider": "wandb",
-    "providerName": "Weights & Biases",
-    "displayName": "Kimi K2.5",
-    "family": "kimi-k2",
-    "releaseDate": "2026-02-02",
-    "lastUpdated": "2026-02-02",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.6,
-      "output": 3,
-      "cacheRead": 0.1,
       "currency": "USD",
       "per": 1000000
     },

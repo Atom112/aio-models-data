@@ -535,6 +535,53 @@
     ]
   },
   {
+    "id": "deepseek/deepseek-v4-flash-0731",
+    "provider": "tensorx",
+    "providerName": "TensorX",
+    "displayName": "DeepSeek V4 Flash 0731",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-07-31",
+    "lastUpdated": "2026-07-31",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.25,
+      "output": 0.3,
+      "cacheRead": 0.06,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "deepseek/deepseek-v3.2",
     "provider": "tensorx",
     "providerName": "TensorX",
@@ -1058,6 +1105,55 @@
       "input": 1.25,
       "output": 4.5,
       "cacheRead": 0.3125,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "moonshotai/kimi-k3",
+    "provider": "tensorx",
+    "providerName": "TensorX",
+    "displayName": "Kimi K3",
+    "family": "kimi-k3",
+    "releaseDate": "2026-07-16",
+    "lastUpdated": "2026-07-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 15,
+      "cacheRead": 0.75,
       "currency": "USD",
       "per": 1000000
     },

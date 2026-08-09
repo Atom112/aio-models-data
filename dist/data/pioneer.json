@@ -162,7 +162,7 @@
     "capabilities": {
       "tools": true,
       "vision": true,
-      "reasoning": true,
+      "reasoning": false,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
@@ -212,7 +212,7 @@
     "capabilities": {
       "tools": true,
       "vision": true,
-      "reasoning": true,
+      "reasoning": false,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
@@ -353,6 +353,108 @@
     ]
   },
   {
+    "id": "gpt-5.6-sol",
+    "provider": "pioneer",
+    "providerName": "Pioneer",
+    "displayName": "GPT-5.6 Sol",
+    "family": "gpt-sol",
+    "releaseDate": "2026-07-09",
+    "lastUpdated": "2026-07-09",
+    "knowledgeCutoff": "2026-02-16",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 30,
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3.5-flash-lite",
+    "provider": "pioneer",
+    "providerName": "Pioneer",
+    "displayName": "Gemini 3.5 Flash Lite",
+    "family": "gemini-flash-lite",
+    "releaseDate": "2026-07-21",
+    "lastUpdated": "2026-07-21",
+    "knowledgeCutoff": "2026-03",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 65000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 2.5,
+      "cacheRead": 0.03,
+      "cacheWrite": 0.3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "claude-opus-4-6",
     "provider": "pioneer",
     "providerName": "Pioneer",
@@ -390,6 +492,56 @@
       "output": 25,
       "cacheRead": 0.5,
       "cacheWrite": 6.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-fable-5",
+    "provider": "pioneer",
+    "providerName": "Pioneer",
+    "displayName": "Claude Fable 5",
+    "family": "claude-fable",
+    "releaseDate": "2026-06-09",
+    "lastUpdated": "2026-06-09",
+    "knowledgeCutoff": "2026-01-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 11,
+      "output": 55,
+      "cacheRead": 1.1,
+      "cacheWrite": 13.75,
       "currency": "USD",
       "per": 1000000
     },
@@ -442,6 +594,56 @@
       "output": 12,
       "cacheRead": 0.2,
       "cacheWrite": 0.375,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-3-7-sonnet-latest",
+    "provider": "pioneer",
+    "providerName": "Pioneer",
+    "displayName": "Claude Sonnet 3.7",
+    "family": "claude-sonnet",
+    "releaseDate": "2025-02-19",
+    "lastUpdated": "2025-02-19",
+    "knowledgeCutoff": "2024-10-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 15,
+      "cacheRead": 0.3,
+      "cacheWrite": 3.75,
       "currency": "USD",
       "per": 1000000
     },
@@ -518,7 +720,7 @@
     "capabilities": {
       "tools": true,
       "vision": true,
-      "reasoning": true,
+      "reasoning": false,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
@@ -769,7 +971,7 @@
     "capabilities": {
       "tools": true,
       "vision": true,
-      "reasoning": true,
+      "reasoning": false,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
@@ -852,6 +1054,55 @@
     "aliases": [
       "Claude Sonnet 4.5 (latest)"
     ],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mistral-large-3",
+    "provider": "pioneer",
+    "providerName": "Pioneer",
+    "displayName": "Mistral Large 3",
+    "family": "mistral-large",
+    "releaseDate": "2024-11-01",
+    "lastUpdated": "2025-12-02",
+    "knowledgeCutoff": "2024-11",
+    "contextWindow": 256000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.5,
+      "output": 1.5,
+      "cacheRead": 0.5,
+      "cacheWrite": 0.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
     "isAggregator": true,
     "sources": [
       "models.dev"
@@ -957,6 +1208,58 @@
     ]
   },
   {
+    "id": "gemini-3.6-flash",
+    "provider": "pioneer",
+    "providerName": "Pioneer",
+    "displayName": "Gemini 3.6 Flash",
+    "family": "gemini-flash",
+    "releaseDate": "2026-07-21",
+    "lastUpdated": "2026-07-21",
+    "knowledgeCutoff": "2026-03",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.5,
+      "output": 7.5,
+      "cacheRead": 0.15,
+      "cacheWrite": 1.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "gpt-5.4-mini",
     "provider": "pioneer",
     "providerName": "Pioneer",
@@ -993,6 +1296,108 @@
       "output": 4.5,
       "cacheRead": 0.075,
       "cacheWrite": 0.75,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3.1-flash-lite",
+    "provider": "pioneer",
+    "providerName": "Pioneer",
+    "displayName": "Gemini 3.1 Flash Lite",
+    "family": "gemini-flash-lite",
+    "releaseDate": "2026-05-07",
+    "lastUpdated": "2026-05-07",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 65000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.25,
+      "output": 1.5,
+      "cacheRead": 0.03,
+      "cacheWrite": 0.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.6-luna",
+    "provider": "pioneer",
+    "providerName": "Pioneer",
+    "displayName": "GPT-5.6 Luna",
+    "family": "gpt-luna",
+    "releaseDate": "2026-07-09",
+    "lastUpdated": "2026-07-09",
+    "knowledgeCutoff": "2026-02-16",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1,
+      "output": 6,
+      "cacheRead": 0.1,
+      "cacheWrite": 1.25,
       "currency": "USD",
       "per": 1000000
     },
@@ -1092,6 +1497,55 @@
       "output": 2,
       "cacheRead": 0.025,
       "cacheWrite": 0.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "grok-4.5",
+    "provider": "pioneer",
+    "providerName": "Pioneer",
+    "displayName": "Grok 4.5",
+    "family": "grok",
+    "releaseDate": "2026-07-08",
+    "lastUpdated": "2026-07-08",
+    "knowledgeCutoff": null,
+    "contextWindow": 500000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 6,
+      "cacheRead": 0.5,
+      "cacheWrite": 2,
       "currency": "USD",
       "per": 1000000
     },
@@ -1303,6 +1757,56 @@
     ]
   },
   {
+    "id": "gpt-5.6-terra",
+    "provider": "pioneer",
+    "providerName": "Pioneer",
+    "displayName": "GPT-5.6 Terra",
+    "family": "gpt-terra",
+    "releaseDate": "2026-07-09",
+    "lastUpdated": "2026-07-09",
+    "knowledgeCutoff": "2026-02-16",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.5,
+      "output": 15,
+      "cacheRead": 0.25,
+      "cacheWrite": 3.125,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "claude-opus-4-5",
     "provider": "pioneer",
     "providerName": "Pioneer",
@@ -1349,6 +1853,56 @@
     "aliases": [
       "Claude Opus 4.5 (latest)"
     ],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-sonnet-5",
+    "provider": "pioneer",
+    "providerName": "Pioneer",
+    "displayName": "Claude Sonnet 5",
+    "family": "claude-sonnet",
+    "releaseDate": "2026-06-30",
+    "lastUpdated": "2026-06-30",
+    "knowledgeCutoff": "2026-01-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
     "isAggregator": true,
     "sources": [
       "models.dev"
@@ -1403,6 +1957,54 @@
     ]
   },
   {
+    "id": "devstral-2",
+    "provider": "pioneer",
+    "providerName": "Pioneer",
+    "displayName": "Devstral 2",
+    "family": "devstral",
+    "releaseDate": "2025-12-09",
+    "lastUpdated": "2025-12-09",
+    "knowledgeCutoff": "2025-12",
+    "contextWindow": 256000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.4,
+      "output": 2,
+      "cacheRead": 0.4,
+      "cacheWrite": 0.4,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "gpt-4.1",
     "provider": "pioneer",
     "providerName": "Pioneer",
@@ -1416,7 +2018,7 @@
     "capabilities": {
       "tools": true,
       "vision": true,
-      "reasoning": true,
+      "reasoning": false,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
@@ -1440,6 +2042,56 @@
       "output": 8,
       "cacheRead": 1,
       "cacheWrite": 2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-opus-5",
+    "provider": "pioneer",
+    "providerName": "Pioneer",
+    "displayName": "Claude Opus 5",
+    "family": "claude-opus",
+    "releaseDate": "2026-07-24",
+    "lastUpdated": "2026-07-24",
+    "knowledgeCutoff": "2026-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 25,
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
       "currency": "USD",
       "per": 1000000
     },
@@ -2386,7 +3038,7 @@
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": true,
+      "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
@@ -2470,6 +3122,102 @@
     ]
   },
   {
+    "id": "mistralai/Codestral-22B-v0.1",
+    "provider": "pioneer",
+    "providerName": "Pioneer",
+    "displayName": "Codestral-22B-v0.1",
+    "family": "codestral",
+    "releaseDate": "2024-05-29",
+    "lastUpdated": "2024-05-29",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 4000,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 0.9,
+      "cacheRead": 0.3,
+      "cacheWrite": 0.3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mistralai/Magistral-Small-2506",
+    "provider": "pioneer",
+    "providerName": "Pioneer",
+    "displayName": "Magistral Small",
+    "family": "magistral",
+    "releaseDate": "2025-06-10",
+    "lastUpdated": "2025-06-10",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.5,
+      "output": 1.5,
+      "cacheRead": 0.5,
+      "cacheWrite": 0.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "mistralai/Mistral-7B-Instruct-v0.3",
     "provider": "pioneer",
     "providerName": "Pioneer",
@@ -2505,6 +3253,103 @@
       "output": 0.2,
       "cacheRead": 0.2,
       "cacheWrite": 0.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mistralai/Ministral-8B-Instruct-2410",
+    "provider": "pioneer",
+    "providerName": "Pioneer",
+    "displayName": "Ministral 8B Instruct",
+    "family": "ministral",
+    "releaseDate": "2024-10-16",
+    "lastUpdated": "2024-10-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 4000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.15,
+      "cacheRead": 0.15,
+      "cacheWrite": 0.15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mistralai/Pixtral-12B-2409",
+    "provider": "pioneer",
+    "providerName": "Pioneer",
+    "displayName": "Pixtral 12B",
+    "family": "pixtral",
+    "releaseDate": "2024-09-01",
+    "lastUpdated": "2024-09-01",
+    "knowledgeCutoff": "2024-09",
+    "contextWindow": 128000,
+    "maxOutputTokens": 4000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.15,
+      "cacheRead": 0.15,
+      "cacheWrite": 0.15,
       "currency": "USD",
       "per": 1000000
     },
@@ -2561,6 +3406,57 @@
     ]
   },
   {
+    "id": "meta/muse-spark-1.1",
+    "provider": "pioneer",
+    "providerName": "Pioneer",
+    "displayName": "Muse Spark 1.1",
+    "family": "muse",
+    "releaseDate": "2026-04-08",
+    "lastUpdated": "2026-07-09",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 4.25,
+      "cacheRead": 0.15,
+      "cacheWrite": 1.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "Qwen/Qwen3.5-9B",
     "provider": "pioneer",
     "providerName": "Pioneer",
@@ -2598,6 +3494,54 @@
       "output": 0.3,
       "cacheRead": 0.3,
       "cacheWrite": 0.3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+    "provider": "pioneer",
+    "providerName": "Pioneer",
+    "displayName": "Qwen3 235B-A22B Instruct 2507",
+    "family": "qwen",
+    "releaseDate": "2025-07-21",
+    "lastUpdated": "2025-07-21",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.2,
+      "output": 1.2,
+      "cacheRead": 1.2,
+      "cacheWrite": 1.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -2796,6 +3740,54 @@
       "output": 1,
       "cacheRead": 0.028,
       "cacheWrite": 0.175,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen/Qwen2.5-Coder-0.5B",
+    "provider": "pioneer",
+    "providerName": "Pioneer",
+    "displayName": "Qwen2.5-Coder-0.5B",
+    "family": "qwen",
+    "releaseDate": "2024-11-12",
+    "lastUpdated": "2024-11-12",
+    "knowledgeCutoff": null,
+    "contextWindow": 32768,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.1,
+      "cacheRead": 0.1,
+      "cacheWrite": 0.1,
       "currency": "USD",
       "per": 1000000
     },
@@ -3147,6 +4139,150 @@
     ]
   },
   {
+    "id": "poolside/laguna-s-2.1",
+    "provider": "pioneer",
+    "providerName": "Pioneer",
+    "displayName": "Laguna S 2.1",
+    "family": "laguna",
+    "releaseDate": "2026-07-21",
+    "lastUpdated": "2026-07-21",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.2,
+      "cacheRead": 0.01,
+      "cacheWrite": 0.1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V3",
+    "provider": "pioneer",
+    "providerName": "Pioneer",
+    "displayName": "DeepSeek-V3",
+    "family": "deepseek",
+    "releaseDate": "2024-12-26",
+    "lastUpdated": "2024-12-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 163840,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.27,
+      "output": 1.12,
+      "cacheRead": 0.135,
+      "cacheWrite": 0.27,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V3.1",
+    "provider": "pioneer",
+    "providerName": "Pioneer",
+    "displayName": "DeepSeek-V3.1",
+    "family": "deepseek",
+    "releaseDate": "2025-08-21",
+    "lastUpdated": "2025-08-21",
+    "knowledgeCutoff": null,
+    "contextWindow": 163840,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.56,
+      "output": 1.68,
+      "cacheRead": 0.56,
+      "cacheWrite": 0.56,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "deepseek-ai/DeepSeek-V4-Flash",
     "provider": "pioneer",
     "providerName": "Pioneer",
@@ -3343,6 +4479,56 @@
     ]
   },
   {
+    "id": "moonshotai/Kimi-K3",
+    "provider": "pioneer",
+    "providerName": "Pioneer",
+    "displayName": "Kimi K3",
+    "family": "kimi-k3",
+    "releaseDate": "2026-07-16",
+    "lastUpdated": "2026-07-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 15,
+      "cacheRead": 0.3,
+      "cacheWrite": 3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "openai/gpt-oss-20b",
     "provider": "pioneer",
     "providerName": "Pioneer",
@@ -3452,7 +4638,7 @@
     "capabilities": {
       "tools": true,
       "vision": true,
-      "reasoning": true,
+      "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
@@ -3568,6 +4754,102 @@
     "pricing": {
       "input": 0.1,
       "output": 0.201,
+      "cacheRead": 0.1,
+      "cacheWrite": 0.1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "meta-llama/Llama-3.2-1B",
+    "provider": "pioneer",
+    "providerName": "Pioneer",
+    "displayName": "Llama-3.2-1B",
+    "family": "llama",
+    "releaseDate": "2024-09-25",
+    "lastUpdated": "2024-09-25",
+    "knowledgeCutoff": "2023-12",
+    "contextWindow": 131072,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.1,
+      "cacheRead": 0.1,
+      "cacheWrite": 0.1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "meta-llama/Llama-3.2-3B",
+    "provider": "pioneer",
+    "providerName": "Pioneer",
+    "displayName": "Llama-3.2-3B",
+    "family": "llama",
+    "releaseDate": "2024-09-25",
+    "lastUpdated": "2024-09-25",
+    "knowledgeCutoff": "2023-12",
+    "contextWindow": 131072,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.1,
       "cacheRead": 0.1,
       "cacheWrite": 0.1,
       "currency": "USD",

@@ -230,6 +230,53 @@
     ]
   },
   {
+    "id": "google/gemini-2.5-computer-use-preview-10-2025",
+    "provider": "merge-gateway",
+    "providerName": "Merge Gateway",
+    "displayName": "Gemini 2.5 Computer Use Preview (10-2025)",
+    "family": "gemini-pro",
+    "releaseDate": "2025-10-07",
+    "lastUpdated": "2025-10-07",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 128000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 10,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "google/gemini-flash-latest",
     "provider": "merge-gateway",
     "providerName": "Merge Gateway",
@@ -371,6 +418,57 @@
       "output": 2.5,
       "cacheRead": 0.03,
       "inputAudio": 1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "google/gemini-3.5-flash-lite",
+    "provider": "merge-gateway",
+    "providerName": "Merge Gateway",
+    "displayName": "Gemini 3.5 Flash-Lite",
+    "family": "gemini-flash-lite",
+    "releaseDate": "2026-07-21",
+    "lastUpdated": "2026-07-21",
+    "knowledgeCutoff": "2026-03",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 2.5,
+      "cacheRead": 0.03,
       "currency": "USD",
       "per": 1000000
     },
@@ -550,7 +648,7 @@
     "id": "google/gemma-4-26b-a4b-it",
     "provider": "merge-gateway",
     "providerName": "Merge Gateway",
-    "displayName": "Gemma 4 26B-A4B",
+    "displayName": "Gemma 4 26B A4B",
     "family": "gemma",
     "releaseDate": "2026-04-02",
     "lastUpdated": "2026-04-02",
@@ -639,6 +737,57 @@
     ]
   },
   {
+    "id": "google/gemini-3.6-flash",
+    "provider": "merge-gateway",
+    "providerName": "Merge Gateway",
+    "displayName": "Gemini 3.6 Flash",
+    "family": "gemini-flash",
+    "releaseDate": "2026-07-21",
+    "lastUpdated": "2026-07-21",
+    "knowledgeCutoff": "2026-03",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.5,
+      "output": 7.5,
+      "cacheRead": 0.15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "google/gemini-3.1-flash-lite",
     "provider": "merge-gateway",
     "providerName": "Merge Gateway",
@@ -693,7 +842,7 @@
     "id": "google/gemma-4-31b-it",
     "provider": "merge-gateway",
     "providerName": "Merge Gateway",
-    "displayName": "Gemma 4 31B IT",
+    "displayName": "Gemma 4 31B It",
     "family": "gemma",
     "releaseDate": "2026-04-02",
     "lastUpdated": "2026-04-02",
@@ -736,6 +885,150 @@
     ]
   },
   {
+    "id": "google/gemini-3.1-flash-image",
+    "provider": "merge-gateway",
+    "providerName": "Merge Gateway",
+    "displayName": "Gemini 3.1 Flash Image",
+    "family": "gemini-flash",
+    "releaseDate": "2026-05-28",
+    "lastUpdated": "2026-05-28",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 32768,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text",
+        "image"
+      ]
+    },
+    "pricing": {
+      "input": 0.5,
+      "output": 3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "google/gemini-2.5-flash-image",
+    "provider": "merge-gateway",
+    "providerName": "Merge Gateway",
+    "displayName": "Gemini 2.5 Flash Image",
+    "family": "gemini-flash",
+    "releaseDate": "2025-08-26",
+    "lastUpdated": "2025-08-26",
+    "knowledgeCutoff": "2024-06",
+    "contextWindow": 32768,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text",
+        "image"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 2.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "google/gemini-3-pro-image",
+    "provider": "merge-gateway",
+    "providerName": "Merge Gateway",
+    "displayName": "Gemini 3 Pro Image",
+    "family": "gemini-pro",
+    "releaseDate": "2026-05-28",
+    "lastUpdated": "2026-05-28",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 65536,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text",
+        "image"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 12,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "google/gemini-3.1-pro-preview",
     "provider": "merge-gateway",
     "providerName": "Merge Gateway",
@@ -762,6 +1055,7 @@
       "input": [
         "text",
         "image",
+        "video",
         "audio",
         "pdf"
       ],
@@ -1026,6 +1320,53 @@
     ]
   },
   {
+    "id": "thinkingmachines/inkling",
+    "provider": "merge-gateway",
+    "providerName": "Merge Gateway",
+    "displayName": "Inkling",
+    "family": "ling",
+    "releaseDate": "2026-07-15",
+    "lastUpdated": "2026-07-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1,
+      "output": 4.05,
+      "cacheRead": 0.17,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "sakana/fugu-ultra",
     "provider": "merge-gateway",
     "providerName": "Merge Gateway",
@@ -1060,6 +1401,7 @@
     "pricing": {
       "input": 5,
       "output": 30,
+      "cacheRead": 0.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -1130,7 +1472,7 @@
     "contextWindow": 1000000,
     "maxOutputTokens": 65536,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": true,
       "reasoning": true,
       "streaming": true,
@@ -1144,8 +1486,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "video"
+        "image"
       ],
       "output": [
         "text"
@@ -1178,7 +1519,7 @@
     "contextWindow": 262144,
     "maxOutputTokens": 65536,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": true,
       "reasoning": true,
       "streaming": true,
@@ -1272,7 +1613,7 @@
     "contextWindow": 262144,
     "maxOutputTokens": 65536,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
@@ -1319,7 +1660,7 @@
     "contextWindow": 1000000,
     "maxOutputTokens": 250000,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
@@ -1363,24 +1704,23 @@
     "releaseDate": "2026-02-23",
     "lastUpdated": "2026-02-23",
     "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 64000,
+    "contextWindow": 131072,
+    "maxOutputTokens": 32768,
     "capabilities": {
-      "tools": false,
-      "vision": true,
+      "tools": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
@@ -1414,7 +1754,7 @@
     "contextWindow": 1000000,
     "maxOutputTokens": 250000,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
@@ -1551,32 +1891,31 @@
     "releaseDate": "2026-04-22",
     "lastUpdated": "2026-04-22",
     "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 64000,
+    "contextWindow": 131072,
+    "maxOutputTokens": 32768,
     "capabilities": {
-      "tools": false,
-      "vision": true,
+      "tools": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
-      "structured_output": false,
+      "attachment": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.4126,
-      "output": 2.4754,
+      "input": 0.289,
+      "output": 2.4,
       "currency": "USD",
       "per": 1000000
     },
@@ -1598,23 +1937,24 @@
     "releaseDate": "2026-02-23",
     "lastUpdated": "2026-02-23",
     "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 32768,
+    "contextWindow": 256000,
+    "maxOutputTokens": 64000,
     "capabilities": {
-      "tools": false,
-      "vision": false,
+      "tools": true,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
@@ -1648,7 +1988,7 @@
     "contextWindow": 131072,
     "maxOutputTokens": 32768,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
@@ -1695,7 +2035,7 @@
     "contextWindow": 262144,
     "maxOutputTokens": 65536,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
       "reasoning": false,
       "streaming": true,
@@ -1742,7 +2082,7 @@
     "contextWindow": 1000000,
     "maxOutputTokens": 250000,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
       "reasoning": false,
       "streaming": true,
@@ -1778,6 +2118,54 @@
     ]
   },
   {
+    "id": "qwen/qwen3.8-max",
+    "provider": "merge-gateway",
+    "providerName": "Merge Gateway",
+    "displayName": "Qwen3.8 Max",
+    "family": "qwen",
+    "releaseDate": "2026-08-03",
+    "lastUpdated": "2026-08-03",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 6,
+      "cacheRead": 0.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "qwen/qwen3-coder-flash",
     "provider": "merge-gateway",
     "providerName": "Merge Gateway",
@@ -1789,7 +2177,7 @@
     "contextWindow": 1000000,
     "maxOutputTokens": 250000,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
       "reasoning": false,
       "streaming": true,
@@ -1836,7 +2224,7 @@
     "contextWindow": 1000000,
     "maxOutputTokens": 250000,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
@@ -1883,7 +2271,7 @@
     "contextWindow": 1000000,
     "maxOutputTokens": 250000,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
@@ -1930,7 +2318,7 @@
     "contextWindow": 1000000,
     "maxOutputTokens": 250000,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
@@ -1977,7 +2365,7 @@
     "contextWindow": 131072,
     "maxOutputTokens": 32768,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
@@ -2024,7 +2412,7 @@
     "contextWindow": 256000,
     "maxOutputTokens": 65536,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
@@ -2070,14 +2458,14 @@
     "contextWindow": 1000000,
     "maxOutputTokens": 250000,
     "capabilities": {
-      "tools": false,
-      "vision": true,
+      "tools": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": false,
       "open_weights": false
     },
@@ -2109,7 +2497,7 @@
     "id": "qwen/qwen3.5-122b-a10b",
     "provider": "merge-gateway",
     "providerName": "Merge Gateway",
-    "displayName": "Qwen3.5 122B-A10B",
+    "displayName": "Qwen3.5 122B A10B",
     "family": "qwen",
     "releaseDate": "2026-02-23",
     "lastUpdated": "2026-02-23",
@@ -2117,7 +2505,7 @@
     "contextWindow": 131072,
     "maxOutputTokens": 32768,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
@@ -2156,7 +2544,7 @@
     "id": "qwen/qwen3-next-80b-a3b-instruct",
     "provider": "merge-gateway",
     "providerName": "Merge Gateway",
-    "displayName": "Qwen3 Next 80B A3B Instruct",
+    "displayName": "Qwen3-Next 80B-A3B Instruct",
     "family": "qwen",
     "releaseDate": "2025-09",
     "lastUpdated": "2025-09",
@@ -2164,7 +2552,7 @@
     "contextWindow": 131072,
     "maxOutputTokens": 32768,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
       "reasoning": false,
       "streaming": true,
@@ -2610,6 +2998,54 @@
       "input": 0.95,
       "output": 4,
       "cacheRead": 0.19,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "moonshot/kimi-k3",
+    "provider": "merge-gateway",
+    "providerName": "Merge Gateway",
+    "displayName": "Kimi K3",
+    "family": "kimi-k3",
+    "releaseDate": "2026-07-16",
+    "lastUpdated": "2026-07-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 15,
+      "cacheRead": 0.3,
       "currency": "USD",
       "per": 1000000
     },
@@ -3846,7 +4282,7 @@
     "id": "minimax/minimax-m2",
     "provider": "merge-gateway",
     "providerName": "Merge Gateway",
-    "displayName": "MiniMax-M2",
+    "displayName": "MiniMax M2",
     "family": "minimax",
     "releaseDate": "2025-10-27",
     "lastUpdated": "2025-10-27",
@@ -4137,20 +4573,19 @@
     "maxOutputTokens": 250000,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": false,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
-      "structured_output": true,
+      "attachment": false,
+      "structured_output": false,
       "open_weights": false
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
@@ -4181,7 +4616,7 @@
     "lastUpdated": "2026-03-13",
     "knowledgeCutoff": "2025-08-31",
     "contextWindow": 1000000,
-    "maxOutputTokens": 64000,
+    "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -4771,6 +5206,56 @@
     ]
   },
   {
+    "id": "anthropic/claude-opus-5",
+    "provider": "merge-gateway",
+    "providerName": "Merge Gateway",
+    "displayName": "Claude Opus 5",
+    "family": "claude-opus",
+    "releaseDate": "2026-07-24",
+    "lastUpdated": "2026-07-24",
+    "knowledgeCutoff": "2026-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 25,
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "anthropic/claude-opus-4-1-20250805",
     "provider": "merge-gateway",
     "providerName": "Merge Gateway",
@@ -4998,9 +5483,9 @@
       ]
     },
     "pricing": {
-      "input": 3.75,
-      "output": 22.5,
-      "cacheRead": 0.375,
+      "input": 5,
+      "output": 30,
+      "cacheRead": 0.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -5939,9 +6424,9 @@
       ]
     },
     "pricing": {
-      "input": 0.75,
-      "output": 4.5,
-      "cacheRead": 0.075,
+      "input": 0.2,
+      "output": 1.2,
+      "cacheRead": 0.02,
       "currency": "USD",
       "per": 1000000
     },
@@ -6330,9 +6815,9 @@
       ]
     },
     "pricing": {
-      "input": 1.875,
-      "output": 11.25,
-      "cacheRead": 0.1875,
+      "input": 2,
+      "output": 12,
+      "cacheRead": 0.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -6638,7 +7123,7 @@
     "id": "zai/glm-5.1",
     "provider": "merge-gateway",
     "providerName": "Merge Gateway",
-    "displayName": "GLM 5.1",
+    "displayName": "GLM-5.1",
     "family": "glm",
     "releaseDate": "2026-04-07",
     "lastUpdated": "2026-04-07",

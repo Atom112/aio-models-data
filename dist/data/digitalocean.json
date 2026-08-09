@@ -3,7 +3,7 @@
     "id": "anthropic-claude-opus-4.8",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "Claude Opus 4.8",
+    "displayName": "Anthropic Claude Opus 4.8",
     "family": "claude-opus",
     "releaseDate": "2026-05-28",
     "lastUpdated": "2026-05-29",
@@ -146,6 +146,66 @@
     ]
   },
   {
+    "id": "openai-gpt-5.6-terra",
+    "provider": "digitalocean",
+    "providerName": "DigitalOcean",
+    "displayName": "OpenAI GPT-5.6 Terra",
+    "family": "gpt-terra",
+    "releaseDate": "2026-07-09",
+    "lastUpdated": "2026-07-09",
+    "knowledgeCutoff": "2026-02-16",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 12,
+      "cacheRead": 0.2,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 4,
+          "output": 18,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 4,
+        "output": 18,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "glm-5",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
@@ -154,8 +214,8 @@
     "releaseDate": "2026-02-11",
     "lastUpdated": "2026-04-16",
     "knowledgeCutoff": null,
-    "contextWindow": 202752,
-    "maxOutputTokens": 128000,
+    "contextWindow": 64000,
+    "maxOutputTokens": 12800,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -177,8 +237,9 @@
       ]
     },
     "pricing": {
-      "input": 1,
-      "output": 3.2,
+      "input": 0.75,
+      "output": 2.4,
+      "cacheRead": 0.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -195,7 +256,7 @@
     "id": "openai-gpt-4.1",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "GPT-4.1",
+    "displayName": "OpenAI GPT-4.1",
     "family": "gpt",
     "releaseDate": "2025-04-14",
     "lastUpdated": "2025-04-14",
@@ -217,8 +278,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
       ],
       "output": [
         "text"
@@ -287,10 +347,59 @@
     ]
   },
   {
+    "id": "anthropic-claude-opus-5",
+    "provider": "digitalocean",
+    "providerName": "DigitalOcean",
+    "displayName": "Anthropic Claude Opus 5",
+    "family": "claude-opus",
+    "releaseDate": "2026-07-24",
+    "lastUpdated": "2026-07-24",
+    "knowledgeCutoff": "2026-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 25,
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "mistral-3-14B",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "Ministral 3 14B Instruct",
+    "displayName": "Ministral 3 14B",
     "family": "ministral",
     "releaseDate": "2025-12-15",
     "lastUpdated": "2026-04-30",
@@ -336,12 +445,12 @@
     "id": "openai-gpt-5.4-pro",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "GPT-5.4 pro",
+    "displayName": "OpenAI GPT-5.4 Pro",
     "family": "gpt-pro",
     "releaseDate": "2026-03-05",
     "lastUpdated": "2026-03-05",
     "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 400000,
+    "contextWindow": 1050000,
     "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
@@ -368,7 +477,19 @@
       "input": 30,
       "output": 180,
       "currency": "USD",
-      "per": 1000000
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 60,
+          "output": 270,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 60,
+        "output": 270,
+        "contextThreshold": 200000
+      }
     },
     "status": "active",
     "deprecationDate": null,
@@ -425,13 +546,13 @@
     "id": "openai-gpt-oss-20b",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "gpt-oss-20b",
+    "displayName": "OpenAI GPT-oss-20b",
     "family": "gpt-oss",
     "releaseDate": "2025-08-05",
     "lastUpdated": "2026-04-16",
     "knowledgeCutoff": "2024-06",
-    "contextWindow": 131072,
-    "maxOutputTokens": 131072,
+    "contextWindow": 128000,
+    "maxOutputTokens": 4096,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -476,8 +597,8 @@
     "releaseDate": "2026-04-07",
     "lastUpdated": "2026-04-07",
     "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 131072,
+    "contextWindow": 163840,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -518,11 +639,11 @@
     "id": "nemotron-nano-12b-v2-vl",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "Nemotron Nano 12B v2 VL",
+    "displayName": "Nemotron-nano 12b v2-vl",
     "family": "nemotron",
-    "releaseDate": "2025-12-01",
-    "lastUpdated": "2026-04-30",
-    "knowledgeCutoff": "2024-10",
+    "releaseDate": "2025-10-28",
+    "lastUpdated": "2025-10-28",
+    "knowledgeCutoff": null,
     "contextWindow": 128000,
     "maxOutputTokens": 16384,
     "capabilities": {
@@ -540,7 +661,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "video"
       ],
       "output": [
         "text"
@@ -565,12 +687,12 @@
     "id": "anthropic-claude-4.5-sonnet",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "Claude Sonnet 4.5",
+    "displayName": "Anthropic Claude 4.5 Sonnet",
     "family": "claude-sonnet",
     "releaseDate": "2025-09-29",
     "lastUpdated": "2025-09-29",
     "knowledgeCutoff": "2025-07-31",
-    "contextWindow": 1000000,
+    "contextWindow": 200000,
     "maxOutputTokens": 64000,
     "capabilities": {
       "tools": true,
@@ -587,8 +709,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
       ],
       "output": [
         "text"
@@ -627,12 +748,12 @@
     "id": "nvidia-nemotron-3-super-120b",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "Nemotron-3-Super-120B",
+    "displayName": "NVIDIA Nemotron 3 Super 120B  (Public Preview)",
     "family": "nemotron",
     "releaseDate": "2026-03-11",
-    "lastUpdated": "2026-04-16",
-    "knowledgeCutoff": "2026-02",
-    "contextWindow": 256000,
+    "lastUpdated": "2026-03-11",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
     "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
@@ -655,12 +776,13 @@
       ]
     },
     "pricing": {
-      "input": 0.3,
-      "output": 0.65,
+      "input": 0.165,
+      "output": 0.3575,
+      "cacheRead": 0.06,
       "currency": "USD",
       "per": 1000000
     },
-    "status": "beta",
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -673,13 +795,13 @@
     "id": "anthropic-claude-opus-4.5",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "Claude Opus 4.5",
+    "displayName": "Anthropic Claude Opus 4.5",
     "family": "claude-opus",
     "releaseDate": "2025-11-24",
     "lastUpdated": "2025-11-24",
     "knowledgeCutoff": "2025-03-31",
     "contextWindow": 200000,
-    "maxOutputTokens": 64000,
+    "maxOutputTokens": 8192,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -695,8 +817,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
       ],
       "output": [
         "text"
@@ -729,30 +850,32 @@
     "lastUpdated": "2026-04-16",
     "knowledgeCutoff": "2025-01",
     "contextWindow": 262144,
-    "maxOutputTokens": 32768,
+    "maxOutputTokens": 52429,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": false,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.5,
-      "output": 2.7,
+      "input": 0.375,
+      "output": 2.025,
+      "cacheRead": 0.203,
       "currency": "USD",
       "per": 1000000
     },
@@ -861,7 +984,7 @@
     "id": "openai-gpt-5.3-codex",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "GPT-5.3 Codex",
+    "displayName": "OpenAI GPT-5.3 Codex",
     "family": "gpt-codex",
     "releaseDate": "2026-02-05",
     "lastUpdated": "2026-02-05",
@@ -883,8 +1006,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
       ],
       "output": [
         "text"
@@ -915,8 +1037,8 @@
     "releaseDate": "2026-06-13",
     "lastUpdated": "2026-06-13",
     "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
+    "contextWindow": 262144,
+    "maxOutputTokens": 52429,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -938,7 +1060,7 @@
       ]
     },
     "pricing": {
-      "input": 1.05,
+      "input": 1.4,
       "output": 4.4,
       "cacheRead": 0.21,
       "currency": "USD",
@@ -957,7 +1079,7 @@
     "id": "openai-gpt-4o",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "GPT-4o",
+    "displayName": "OpenAI GPT-4o",
     "family": "gpt",
     "releaseDate": "2024-05-13",
     "lastUpdated": "2024-08-06",
@@ -979,8 +1101,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
       ],
       "output": [
         "text"
@@ -1006,13 +1127,13 @@
     "id": "anthropic-claude-haiku-4.5",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "Claude Haiku 4.5",
+    "displayName": "Anthropic Claude Haiku 4.5",
     "family": "claude-haiku",
     "releaseDate": "2025-10-15",
     "lastUpdated": "2025-10-15",
     "knowledgeCutoff": "2025-02-28",
     "contextWindow": 200000,
-    "maxOutputTokens": 64000,
+    "maxOutputTokens": 8192,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -1028,8 +1149,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
       ],
       "output": [
         "text"
@@ -1038,7 +1158,7 @@
     "pricing": {
       "input": 1,
       "output": 5,
-      "cacheRead": 1,
+      "cacheRead": 0.1,
       "cacheWrite": 1.25,
       "currency": "USD",
       "per": 1000000
@@ -1062,7 +1182,7 @@
     "lastUpdated": "2026-04-21",
     "knowledgeCutoff": "2025-01",
     "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 52429,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -1085,8 +1205,9 @@
       ]
     },
     "pricing": {
-      "input": 0.95,
-      "output": 4,
+      "input": 0.76,
+      "output": 3.2,
+      "cacheRead": 0.19,
       "currency": "USD",
       "per": 1000000
     },
@@ -1117,7 +1238,7 @@
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
-      "temperature": true,
+      "temperature": false,
       "attachment": true,
       "structured_output": false,
       "open_weights": false
@@ -1131,7 +1252,14 @@
         "text"
       ]
     },
-    "pricing": null,
+    "pricing": {
+      "input": 10,
+      "output": 50,
+      "cacheRead": 1,
+      "cacheWrite": 12.5,
+      "currency": "USD",
+      "per": 1000000
+    },
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
@@ -1191,8 +1319,8 @@
     "releaseDate": "2025-01-30",
     "lastUpdated": "2025-01-30",
     "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 32768,
+    "contextWindow": 32678,
+    "maxOutputTokens": 8192,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -1281,13 +1409,13 @@
     "id": "nemotron-3-nano-omni",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "Nemotron Nano 3 Omni",
+    "displayName": "Nemotron 3 Nano Omni",
     "family": "nemotron",
     "releaseDate": "2026-04-28",
-    "lastUpdated": "2026-04-30",
+    "lastUpdated": "2026-04-28",
     "knowledgeCutoff": null,
     "contextWindow": 65536,
-    "maxOutputTokens": 65536,
+    "maxOutputTokens": 13107,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -1304,8 +1432,7 @@
       "input": [
         "text",
         "image",
-        "video",
-        "audio"
+        "video"
       ],
       "output": [
         "text"
@@ -1381,8 +1508,8 @@
     "releaseDate": "2026-05-27",
     "lastUpdated": "2026-05-29",
     "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 8192,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 384000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -1403,7 +1530,13 @@
         "text"
       ]
     },
-    "pricing": null,
+    "pricing": {
+      "input": 0.084,
+      "output": 0.168,
+      "cacheRead": 0.0168,
+      "currency": "USD",
+      "per": 1000000
+    },
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
@@ -1417,12 +1550,12 @@
     "id": "openai-gpt-5.4",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "GPT-5.4",
+    "displayName": "OpenAI GPT-5.4",
     "family": "gpt",
     "releaseDate": "2026-03-05",
     "lastUpdated": "2026-03-05",
     "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 1000000,
+    "contextWindow": 400000,
     "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
@@ -1439,8 +1572,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
       ],
       "output": [
         "text"
@@ -1451,7 +1583,19 @@
       "output": 15,
       "cacheRead": 0.25,
       "currency": "USD",
-      "per": 1000000
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 5,
+          "output": 22.5,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 5,
+        "output": 22.5,
+        "contextThreshold": 200000
+      }
     },
     "status": "active",
     "deprecationDate": null,
@@ -1466,13 +1610,13 @@
     "id": "anthropic-claude-4.1-opus",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "Claude Opus 4.1",
+    "displayName": "Anthropic Claude 4.1 Opus",
     "family": "claude-opus",
     "releaseDate": "2025-08-05",
     "lastUpdated": "2025-08-05",
     "knowledgeCutoff": "2025-03-31",
     "contextWindow": 200000,
-    "maxOutputTokens": 32000,
+    "maxOutputTokens": 8192,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -1488,8 +1632,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
       ],
       "output": [
         "text"
@@ -1564,13 +1707,13 @@
     "id": "deepseek-v4-pro",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "DeepSeek V4 Pro",
+    "displayName": "Deepseek V4 Pro",
     "family": "deepseek-thinking",
     "releaseDate": "2026-04-24",
     "lastUpdated": "2026-04-24",
     "knowledgeCutoff": "2025-05",
     "contextWindow": 1048576,
-    "maxOutputTokens": 393216,
+    "maxOutputTokens": 384000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -1592,8 +1735,9 @@
       ]
     },
     "pricing": {
-      "input": 1.74,
-      "output": 3.48,
+      "input": 0.87,
+      "output": 1.74,
+      "cacheRead": 0.174,
       "currency": "USD",
       "per": 1000000
     },
@@ -1672,7 +1816,7 @@
     "id": "openai-gpt-5-mini",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "GPT-5 mini",
+    "displayName": "OpenAI GPT-5 Mini",
     "family": "gpt-mini",
     "releaseDate": "2025-08-07",
     "lastUpdated": "2025-08-07",
@@ -1720,7 +1864,7 @@
     "id": "openai-gpt-5.5",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "GPT-5.5",
+    "displayName": "OpenAI GPT-5.5",
     "family": "gpt",
     "releaseDate": "2026-04-23",
     "lastUpdated": "2026-04-30",
@@ -1742,8 +1886,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
       ],
       "output": [
         "text"
@@ -1787,7 +1930,7 @@
     "lastUpdated": "2026-04-30",
     "knowledgeCutoff": "2025-04",
     "contextWindow": 262144,
-    "maxOutputTokens": 65536,
+    "maxOutputTokens": 52429,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -1811,6 +1954,54 @@
     "pricing": {
       "input": 0.45,
       "output": 1.7,
+      "cacheRead": 0.09,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v4-flash-0731",
+    "provider": "digitalocean",
+    "providerName": "DigitalOcean",
+    "displayName": "DeepSeek V4 Flash 0731",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-07-31",
+    "lastUpdated": "2026-07-31",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 209715,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.08,
+      "output": 0.252,
+      "cacheRead": 0.0252,
       "currency": "USD",
       "per": 1000000
     },
@@ -1868,13 +2059,13 @@
     "id": "alibaba-qwen3-32b",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "Qwen3-32B",
+    "displayName": "Qwen3 32B",
     "family": "qwen",
     "releaseDate": "2025-04-30",
     "lastUpdated": "2026-04-16",
     "knowledgeCutoff": null,
-    "contextWindow": 131000,
-    "maxOutputTokens": 40960,
+    "contextWindow": 32768,
+    "maxOutputTokens": 6554,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -1914,13 +2105,13 @@
     "id": "openai-gpt-image-1.5",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "GPT Image 1.5",
+    "displayName": "OpenAI GPT Image 1.5",
     "family": "gpt-image",
     "releaseDate": "2025-11-25",
     "lastUpdated": "2025-11-25",
     "knowledgeCutoff": null,
     "contextWindow": 0,
-    "maxOutputTokens": 0,
+    "maxOutputTokens": 16384,
     "capabilities": {
       "tools": false,
       "vision": true,
@@ -1939,7 +2130,8 @@
         "image"
       ],
       "output": [
-        "image"
+        "image",
+        "text"
       ]
     },
     "pricing": {
@@ -1962,12 +2154,12 @@
     "id": "llama-4-maverick",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "Llama 4 Maverick 17B 128E Instruct",
+    "displayName": "Llama 4 Maverick",
     "family": "llama",
     "releaseDate": "2025-04-05",
     "lastUpdated": "2026-04-30",
     "knowledgeCutoff": "2024-08",
-    "contextWindow": 1000000,
+    "contextWindow": 128000,
     "maxOutputTokens": 16384,
     "capabilities": {
       "tools": true,
@@ -1991,8 +2183,8 @@
       ]
     },
     "pricing": {
-      "input": 0.25,
-      "output": 0.87,
+      "input": 0.2,
+      "output": 0.696,
       "currency": "USD",
       "per": 1000000
     },
@@ -2009,7 +2201,7 @@
     "id": "openai-gpt-5.2-pro",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "GPT-5.2 pro",
+    "displayName": "OpenAI GPT-5.2 Pro",
     "family": "gpt-pro",
     "releaseDate": "2025-12-11",
     "lastUpdated": "2025-12-11",
@@ -2105,7 +2297,7 @@
     "id": "openai-gpt-5.4-mini",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "GPT-5.4 mini",
+    "displayName": "OpenAI GPT-5.4 Mini",
     "family": "gpt-mini",
     "releaseDate": "2026-03-17",
     "lastUpdated": "2026-03-17",
@@ -2153,40 +2345,42 @@
     "id": "minimax-m2.5",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "MiniMax M2.5",
+    "displayName": "MiniMax M2.5 (Public Preview)",
     "family": "minimax-m2.5",
     "releaseDate": "2026-02-12",
     "lastUpdated": "2026-04-16",
     "knowledgeCutoff": "2025-08",
-    "contextWindow": 204800,
-    "maxOutputTokens": 128000,
+    "contextWindow": 65536,
+    "maxOutputTokens": 13107,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.3,
-      "output": 1.2,
+      "input": 0.225,
+      "output": 0.9,
+      "cacheRead": 0.06,
       "currency": "USD",
       "per": 1000000
     },
-    "status": "beta",
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2199,13 +2393,13 @@
     "id": "arcee-trinity-large-thinking",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "Trinity Large Thinking",
+    "displayName": "Arcee Trinity Large Thinking (Public Preview)",
     "family": "trinity",
     "releaseDate": "2026-04-02",
     "lastUpdated": "2026-04-16",
     "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 128000,
+    "contextWindow": 128000,
+    "maxOutputTokens": 32000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -2233,7 +2427,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "beta",
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2294,7 +2488,7 @@
     "id": "openai-o1",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "o1",
+    "displayName": "OpenAI o1",
     "family": "o",
     "releaseDate": "2024-12-05",
     "lastUpdated": "2024-12-05",
@@ -2316,8 +2510,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
       ],
       "output": [
         "text"
@@ -2343,7 +2536,7 @@
     "id": "openai-gpt-5-nano",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "GPT-5 nano",
+    "displayName": "OpenAI GPT-5 Nano",
     "family": "gpt-nano",
     "releaseDate": "2025-08-07",
     "lastUpdated": "2025-08-07",
@@ -2391,13 +2584,13 @@
     "id": "anthropic-claude-opus-4.6",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "Claude Opus 4.6",
+    "displayName": "Anthropic Claude Opus 4.6",
     "family": "claude-opus",
     "releaseDate": "2026-02-05",
     "lastUpdated": "2026-03-13",
     "knowledgeCutoff": "2025-05-31",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
+    "contextWindow": 200000,
+    "maxOutputTokens": 8192,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -2413,8 +2606,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
       ],
       "output": [
         "text"
@@ -2453,13 +2645,13 @@
     "id": "anthropic-claude-4.6-sonnet",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "Claude Sonnet 4.6",
+    "displayName": "Anthropic Claude Sonnet 4.6",
     "family": "claude-sonnet",
     "releaseDate": "2026-02-17",
     "lastUpdated": "2026-03-13",
     "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 64000,
+    "contextWindow": 200000,
+    "maxOutputTokens": 8192,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -2475,8 +2667,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
       ],
       "output": [
         "text"
@@ -2515,13 +2706,13 @@
     "id": "llama3.3-70b-instruct",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "Llama 3.3 Instruct 70B",
+    "displayName": "Llama 3.3 Instruct (70B)",
     "family": "llama",
     "releaseDate": "2024-12-06",
     "lastUpdated": "2024-12-06",
     "knowledgeCutoff": "2023-12",
     "contextWindow": 128000,
-    "maxOutputTokens": 128000,
+    "maxOutputTokens": 4096,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -2561,7 +2752,7 @@
     "id": "openai-gpt-4o-mini",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "GPT-4o mini",
+    "displayName": "OpenAI GPT-4o mini",
     "family": "gpt-mini",
     "releaseDate": "2024-07-18",
     "lastUpdated": "2024-07-18",
@@ -2571,7 +2762,7 @@
     "capabilities": {
       "tools": true,
       "vision": true,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
@@ -2583,8 +2774,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
       ],
       "output": [
         "text"
@@ -2610,13 +2800,13 @@
     "id": "openai-gpt-image-2",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "GPT Image 2",
+    "displayName": "OpenAI GPT Image 2",
     "family": "gpt-image",
     "releaseDate": "2025-04-24",
     "lastUpdated": "2025-04-24",
     "knowledgeCutoff": null,
     "contextWindow": 0,
-    "maxOutputTokens": 0,
+    "maxOutputTokens": 16384,
     "capabilities": {
       "tools": false,
       "vision": true,
@@ -2635,10 +2825,16 @@
         "image"
       ],
       "output": [
-        "image"
+        "image",
+        "text"
       ]
     },
-    "pricing": null,
+    "pricing": {
+      "input": 8,
+      "output": 30,
+      "currency": "USD",
+      "per": 1000000
+    },
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
@@ -2695,26 +2891,134 @@
     ]
   },
   {
-    "id": "qwen3.5-397b-a17b",
+    "id": "openai-gpt-5.6-sol",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "Qwen 3.5 397B A17B",
-    "family": "qwen3.5",
-    "releaseDate": "2026-02-15",
-    "lastUpdated": "2026-04-30",
+    "displayName": "OpenAI GPT-5.6 Sol",
+    "family": "gpt-sol",
+    "releaseDate": "2026-07-09",
+    "lastUpdated": "2026-07-09",
+    "knowledgeCutoff": "2026-02-16",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 30,
+      "cacheRead": 0.5,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 10,
+          "output": 45,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 10,
+        "output": 45,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k3",
+    "provider": "digitalocean",
+    "providerName": "DigitalOcean",
+    "displayName": "Kimi K3",
+    "family": "kimi-k3",
+    "releaseDate": "2026-07-16",
+    "lastUpdated": "2026-07-16",
     "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.85,
+      "output": 14.25,
+      "cacheRead": 0.285,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mimo-v2.5-pro",
+    "provider": "digitalocean",
+    "providerName": "DigitalOcean",
+    "displayName": "MiMo V2.5 Pro",
+    "family": "mimo",
+    "releaseDate": "2026-04-22",
+    "lastUpdated": "2026-04-22",
+    "knowledgeCutoff": "2024-12",
     "contextWindow": 262144,
-    "maxOutputTokens": 81920,
+    "maxOutputTokens": 52429,
     "capabilities": {
       "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": true,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
@@ -2726,8 +3030,58 @@
       ]
     },
     "pricing": {
-      "input": 0.55,
-      "output": 3.5,
+      "input": 0.4,
+      "output": 1.5,
+      "cacheRead": 0.08,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.5-397b-a17b",
+    "provider": "digitalocean",
+    "providerName": "DigitalOcean",
+    "displayName": "Qwen 3.5 397B A17B",
+    "family": "qwen3.5",
+    "releaseDate": "2026-02-15",
+    "lastUpdated": "2026-04-30",
+    "knowledgeCutoff": null,
+    "contextWindow": 131072,
+    "maxOutputTokens": 26214,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3025,
+      "output": 1.925,
+      "cacheRead": 0.111,
       "currency": "USD",
       "per": 1000000
     },
@@ -2833,6 +3187,114 @@
     ]
   },
   {
+    "id": "openai-gpt-5.6-luna",
+    "provider": "digitalocean",
+    "providerName": "DigitalOcean",
+    "displayName": "OpenAI GPT-5.6 Luna",
+    "family": "gpt-luna",
+    "releaseDate": "2026-07-09",
+    "lastUpdated": "2026-07-09",
+    "knowledgeCutoff": "2026-02-16",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2,
+      "output": 1.2,
+      "cacheRead": 0.02,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.4,
+          "output": 1.8,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 0.4,
+        "output": 1.8,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "anthropic-claude-5-sonnet",
+    "provider": "digitalocean",
+    "providerName": "DigitalOcean",
+    "displayName": "Anthropic Claude Sonnet 5",
+    "family": "claude-sonnet",
+    "releaseDate": "2026-06-30",
+    "lastUpdated": "2026-06-30",
+    "knowledgeCutoff": "2026-01-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "nemotron-3-ultra-550b",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
@@ -2842,7 +3304,7 @@
     "lastUpdated": "2026-06-12",
     "knowledgeCutoff": null,
     "contextWindow": 131072,
-    "maxOutputTokens": 8192,
+    "maxOutputTokens": 26214,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -2863,7 +3325,12 @@
         "text"
       ]
     },
-    "pricing": null,
+    "pricing": {
+      "input": 0.9,
+      "output": 1.7,
+      "currency": "USD",
+      "per": 1000000
+    },
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
@@ -2877,7 +3344,7 @@
     "id": "openai-o3",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "o3",
+    "displayName": "OpenAI o3",
     "family": "o",
     "releaseDate": "2025-04-16",
     "lastUpdated": "2025-04-16",
@@ -2899,8 +3366,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
       ],
       "output": [
         "text"
@@ -3158,13 +3624,13 @@
     "id": "openai-gpt-oss-120b",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "gpt-oss-120b",
+    "displayName": "OpenAI GPT-oss-120b",
     "family": "gpt-oss",
     "releaseDate": "2025-08-05",
     "lastUpdated": "2026-04-16",
     "knowledgeCutoff": "2024-06",
-    "contextWindow": 131072,
-    "maxOutputTokens": 131072,
+    "contextWindow": 128000,
+    "maxOutputTokens": 4096,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -3186,8 +3652,9 @@
       ]
     },
     "pricing": {
-      "input": 0.1,
-      "output": 0.7,
+      "input": 0.055,
+      "output": 0.385,
+      "cacheRead": 0.02,
       "currency": "USD",
       "per": 1000000
     },
@@ -3204,13 +3671,13 @@
     "id": "anthropic-claude-opus-4.7",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "Claude Opus 4.7",
+    "displayName": "Anthropic Claude Opus 4.7",
     "family": "claude-opus",
     "releaseDate": "2026-04-16",
     "lastUpdated": "2026-04-16",
     "knowledgeCutoff": "2026-01-31",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
+    "contextWindow": 200000,
+    "maxOutputTokens": 8192,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -3226,8 +3693,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
       ],
       "output": [
         "text"
@@ -3254,7 +3720,7 @@
     "id": "openai-gpt-5",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "GPT-5",
+    "displayName": "OpenAI GPT-5",
     "family": "gpt",
     "releaseDate": "2025-08-07",
     "lastUpdated": "2025-08-07",
@@ -3302,7 +3768,7 @@
     "id": "gemma-4-31B-it",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "Gemma 4 31B",
+    "displayName": "Gemma 4",
     "family": "gemma",
     "releaseDate": "2026-04-22",
     "lastUpdated": "2026-04-30",
@@ -3324,7 +3790,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "video"
       ],
       "output": [
         "text"
@@ -3333,6 +3800,7 @@
     "pricing": {
       "input": 0.18,
       "output": 0.5,
+      "cacheRead": 0.036,
       "currency": "USD",
       "per": 1000000
     },
@@ -3349,7 +3817,7 @@
     "id": "openai-o3-mini",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "o3-mini",
+    "displayName": "OpenAI o3 mini",
     "family": "o-mini",
     "releaseDate": "2024-12-20",
     "lastUpdated": "2025-01-29",
@@ -3358,19 +3826,20 @@
     "maxOutputTokens": 100000,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": false,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": false
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
@@ -3524,13 +3993,13 @@
     "id": "deepseek-3.2",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "DeepSeek V3.2",
+    "displayName": "Deepseek 3.2",
     "family": "deepseek",
     "releaseDate": "2025-12-02",
     "lastUpdated": "2026-04-30",
     "knowledgeCutoff": "2024-12",
-    "contextWindow": 128000,
-    "maxOutputTokens": 64000,
+    "contextWindow": 163840,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -3552,8 +4021,9 @@
       ]
     },
     "pricing": {
-      "input": 0.5,
-      "output": 1.6,
+      "input": 0.25,
+      "output": 0.8,
+      "cacheRead": 0.075,
       "currency": "USD",
       "per": 1000000
     },
@@ -3616,7 +4086,7 @@
     "id": "openai-gpt-5.2",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "GPT-5.2",
+    "displayName": "OpenAI GPT-5.2",
     "family": "gpt",
     "releaseDate": "2025-12-11",
     "lastUpdated": "2025-12-11",
@@ -3664,7 +4134,7 @@
     "id": "openai-gpt-5.4-nano",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
-    "displayName": "GPT-5.4 nano",
+    "displayName": "OpenAI GPT-5.4 Nano",
     "family": "gpt-nano",
     "releaseDate": "2026-03-17",
     "lastUpdated": "2026-03-17",

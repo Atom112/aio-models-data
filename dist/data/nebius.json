@@ -1048,6 +1048,53 @@
     ]
   },
   {
+    "id": "deepseek-ai/DeepSeek-V4-Flash",
+    "provider": "nebius",
+    "providerName": "Nebius Token Factory",
+    "displayName": "DeepSeek V4 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 131072,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.14,
+      "output": 0.28,
+      "cacheRead": 0.14,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "deepseek-ai/DeepSeek-V4-Pro",
     "provider": "nebius",
     "providerName": "Nebius Token Factory",
@@ -1416,6 +1463,7 @@
     "pricing": {
       "input": 3,
       "output": 15,
+      "cacheRead": 3,
       "currency": "USD",
       "per": 1000000
     },
