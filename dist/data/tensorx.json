@@ -48,91 +48,44 @@
     ]
   },
   {
-    "id": "qwen/qwen3-coder-30b-a3b-instruct",
+    "id": "z-ai/glm-5v-turbo",
     "provider": "tensorx",
     "providerName": "TensorX",
-    "displayName": "Qwen3-Coder 30B-A3B Instruct",
-    "family": "qwen",
-    "releaseDate": "2025-04",
-    "lastUpdated": "2025-04",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 262000,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.06,
-      "output": 0.25,
-      "cacheRead": 0.015,
-      "cacheWrite": 0.075,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen/qwen3.5-9b",
-    "provider": "tensorx",
-    "providerName": "TensorX",
-    "displayName": "Qwen3.5 9B",
-    "family": "qwen",
-    "releaseDate": "2026-02-23",
-    "lastUpdated": "2026-02-23",
+    "displayName": "GLM-5V-Turbo",
+    "family": "glm",
+    "releaseDate": "2026-04-01",
+    "lastUpdated": "2026-04-01",
     "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
+    "contextWindow": 202752,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": true,
-      "open_weights": true
+      "structured_output": false,
+      "open_weights": false
     },
     "modalities": {
       "input": [
         "text",
         "image",
-        "video"
+        "video",
+        "pdf"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.15,
-      "output": 0.2,
-      "cacheRead": 0.0375,
-      "cacheWrite": 0.1875,
+      "input": 1.2,
+      "output": 4,
+      "cacheRead": 0.3,
+      "cacheWrite": 1.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -146,25 +99,25 @@
     ]
   },
   {
-    "id": "qwen/qwen3-vl-235b-a22b-instruct",
+    "id": "z-ai/glm-4.7",
     "provider": "tensorx",
     "providerName": "TensorX",
-    "displayName": "Qwen3 VL 235B-A22B Instruct",
-    "family": "qwen",
-    "releaseDate": "2025-09-23",
-    "lastUpdated": "2025-09-23",
-    "knowledgeCutoff": "2025-03-31",
-    "contextWindow": 131000,
-    "maxOutputTokens": 131072,
+    "displayName": "GLM-4.7",
+    "family": "glm",
+    "releaseDate": "2025-12-22",
+    "lastUpdated": "2025-12-22",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 200000,
+    "maxOutputTokens": 200000,
     "capabilities": {
       "tools": true,
       "vision": true,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": false,
       "open_weights": true
     },
@@ -178,10 +131,10 @@
       ]
     },
     "pricing": {
-      "input": 0.21,
-      "output": 1.9,
-      "cacheRead": 0.0525,
-      "cacheWrite": 0.2625,
+      "input": 0.6,
+      "output": 2.2,
+      "cacheRead": 0.15,
+      "cacheWrite": 0.75,
       "currency": "USD",
       "per": 1000000
     },
@@ -195,20 +148,20 @@
     ]
   },
   {
-    "id": "qwen/qwen3-235b-a22b-2507",
+    "id": "z-ai/glm-5",
     "provider": "tensorx",
     "providerName": "TensorX",
-    "displayName": "Qwen3 235B-A22B-2507",
-    "family": "qwen",
-    "releaseDate": "2025-07-21",
-    "lastUpdated": "2025-07-21",
-    "knowledgeCutoff": "2025-06-30",
-    "contextWindow": 131000,
-    "maxOutputTokens": 262144,
+    "displayName": "GLM-5",
+    "family": "glm",
+    "releaseDate": "2026-02-12",
+    "lastUpdated": "2026-02-12",
+    "knowledgeCutoff": null,
+    "contextWindow": 202752,
+    "maxOutputTokens": 202752,
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
@@ -226,10 +179,10 @@
       ]
     },
     "pricing": {
-      "input": 0.072,
-      "output": 0.464,
-      "cacheRead": 0.018,
-      "cacheWrite": 0.09,
+      "input": 1,
+      "output": 3.2,
+      "cacheRead": 0.25,
+      "cacheWrite": 1.25,
       "currency": "USD",
       "per": 1000000
     },
@@ -243,44 +196,41 @@
     ]
   },
   {
-    "id": "qwen/qwen3.5-122b-a10b",
+    "id": "z-ai/glm-5-turbo",
     "provider": "tensorx",
     "providerName": "TensorX",
-    "displayName": "Qwen3.5 122B-A10B",
-    "family": "qwen",
-    "releaseDate": "2026-02-23",
-    "lastUpdated": "2026-02-23",
+    "displayName": "GLM-5-Turbo",
+    "family": "glm",
+    "releaseDate": "2026-03-16",
+    "lastUpdated": "2026-03-16",
     "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "contextWindow": 202752,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": true,
-      "open_weights": true
+      "open_weights": false
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "video",
-        "audio"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.5,
-      "output": 3.5,
-      "cacheRead": 0.125,
-      "cacheWrite": 0.625,
+      "input": 1.2,
+      "output": 4,
+      "cacheRead": 0.3,
+      "cacheWrite": 1.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -294,42 +244,40 @@
     ]
   },
   {
-    "id": "minimax/minimax-m3",
+    "id": "z-ai/glm-5.2",
     "provider": "tensorx",
     "providerName": "TensorX",
-    "displayName": "MiniMax-M3",
-    "family": "minimax",
-    "releaseDate": "2026-06-01",
-    "lastUpdated": "2026-06-01",
+    "displayName": "GLM-5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
     "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
-      "structured_output": false,
+      "attachment": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "video"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.4,
-      "output": 2,
-      "cacheRead": 0.1,
+      "input": 1.5,
+      "output": 4.5,
+      "cacheRead": 0.375,
       "currency": "USD",
       "per": 1000000
     },
@@ -343,26 +291,26 @@
     ]
   },
   {
-    "id": "minimax/minimax-m2.5",
+    "id": "z-ai/glm-5.1",
     "provider": "tensorx",
     "providerName": "TensorX",
-    "displayName": "MiniMax-M2.5",
-    "family": "minimax",
-    "releaseDate": "2026-02-12",
-    "lastUpdated": "2026-02-12",
+    "displayName": "GLM-5.1",
+    "family": "glm",
+    "releaseDate": "2026-04-07",
+    "lastUpdated": "2026-04-07",
     "knowledgeCutoff": null,
-    "contextWindow": 196608,
-    "maxOutputTokens": 65536,
+    "contextWindow": 202752,
+    "maxOutputTokens": 202752,
     "capabilities": {
       "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -374,10 +322,10 @@
       ]
     },
     "pricing": {
-      "input": 0.3,
-      "output": 1.2,
-      "cacheRead": 0.075,
-      "cacheWrite": 0.375,
+      "input": 1.4,
+      "output": 4.4,
+      "cacheRead": 0.35,
+      "cacheWrite": 1.75,
       "currency": "USD",
       "per": 1000000
     },
@@ -487,101 +435,6 @@
     ]
   },
   {
-    "id": "deepseek/deepseek-r1-0528",
-    "provider": "tensorx",
-    "providerName": "TensorX",
-    "displayName": "DeepSeek R1-0528",
-    "family": "deepseek-thinking",
-    "releaseDate": "2025-05-28",
-    "lastUpdated": "2025-05-28",
-    "knowledgeCutoff": "2024-07",
-    "contextWindow": 164000,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.66,
-      "output": 2.6,
-      "cacheRead": 0.165,
-      "cacheWrite": 0.825,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek/deepseek-v4-flash-0731",
-    "provider": "tensorx",
-    "providerName": "TensorX",
-    "displayName": "DeepSeek V4 Flash 0731",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-07-31",
-    "lastUpdated": "2026-07-31",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.25,
-      "output": 0.3,
-      "cacheRead": 0.06,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "deepseek/deepseek-v3.2",
     "provider": "tensorx",
     "providerName": "TensorX",
@@ -678,16 +531,16 @@
     ]
   },
   {
-    "id": "z-ai/glm-5",
+    "id": "deepseek/deepseek-r1-0528",
     "provider": "tensorx",
     "providerName": "TensorX",
-    "displayName": "GLM-5",
-    "family": "glm",
-    "releaseDate": "2026-02-12",
-    "lastUpdated": "2026-02-12",
-    "knowledgeCutoff": null,
-    "contextWindow": 202752,
-    "maxOutputTokens": 202752,
+    "displayName": "DeepSeek R1-0528",
+    "family": "deepseek-thinking",
+    "releaseDate": "2025-05-28",
+    "lastUpdated": "2025-05-28",
+    "knowledgeCutoff": "2024-07",
+    "contextWindow": 164000,
+    "maxOutputTokens": 8192,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -709,10 +562,10 @@
       ]
     },
     "pricing": {
-      "input": 1,
-      "output": 3.2,
-      "cacheRead": 0.25,
-      "cacheWrite": 1.25,
+      "input": 0.66,
+      "output": 2.6,
+      "cacheRead": 0.165,
+      "cacheWrite": 0.825,
       "currency": "USD",
       "per": 1000000
     },
@@ -726,64 +579,16 @@
     ]
   },
   {
-    "id": "z-ai/glm-5.1",
+    "id": "deepseek/deepseek-v4-flash-0731",
     "provider": "tensorx",
     "providerName": "TensorX",
-    "displayName": "GLM-5.1",
-    "family": "glm",
-    "releaseDate": "2026-04-07",
-    "lastUpdated": "2026-04-07",
-    "knowledgeCutoff": null,
-    "contextWindow": 202752,
-    "maxOutputTokens": 202752,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.4,
-      "output": 4.4,
-      "cacheRead": 0.35,
-      "cacheWrite": 1.75,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "z-ai/glm-5.2",
-    "provider": "tensorx",
-    "providerName": "TensorX",
-    "displayName": "GLM-5.2",
-    "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
-    "knowledgeCutoff": null,
+    "displayName": "DeepSeek V4 Flash 0731",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-07-31",
+    "lastUpdated": "2026-07-31",
+    "knowledgeCutoff": "2025-05",
     "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 384000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -805,9 +610,9 @@
       ]
     },
     "pricing": {
-      "input": 1.5,
-      "output": 4.5,
-      "cacheRead": 0.375,
+      "input": 0.25,
+      "output": 0.3,
+      "cacheRead": 0.06,
       "currency": "USD",
       "per": 1000000
     },
@@ -821,141 +626,91 @@
     ]
   },
   {
-    "id": "z-ai/glm-4.7",
+    "id": "moonshotai/kimi-k2.7-code",
     "provider": "tensorx",
     "providerName": "TensorX",
-    "displayName": "GLM-4.7",
-    "family": "glm",
-    "releaseDate": "2025-12-22",
-    "lastUpdated": "2025-12-22",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 200000,
-    "maxOutputTokens": 200000,
+    "displayName": "Kimi K2.7 Code",
+    "family": "kimi-k2",
+    "releaseDate": "2026-06-12",
+    "lastUpdated": "2026-06-12",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
       "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.6,
-      "output": 2.2,
-      "cacheRead": 0.15,
-      "cacheWrite": 0.75,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "z-ai/glm-5-turbo",
-    "provider": "tensorx",
-    "providerName": "TensorX",
-    "displayName": "GLM-5-Turbo",
-    "family": "glm",
-    "releaseDate": "2026-03-16",
-    "lastUpdated": "2026-03-16",
-    "knowledgeCutoff": null,
-    "contextWindow": 202752,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.2,
-      "output": 4,
-      "cacheRead": 0.3,
-      "cacheWrite": 1.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "z-ai/glm-5v-turbo",
-    "provider": "tensorx",
-    "providerName": "TensorX",
-    "displayName": "GLM-5V-Turbo",
-    "family": "glm",
-    "releaseDate": "2026-04-01",
-    "lastUpdated": "2026-04-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 202752,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
+      "temperature": false,
       "attachment": true,
-      "structured_output": false,
-      "open_weights": false
+      "structured_output": true,
+      "open_weights": true
     },
     "modalities": {
       "input": [
         "text",
         "image",
-        "video",
-        "pdf"
+        "video"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 1.2,
-      "output": 4,
-      "cacheRead": 0.3,
-      "cacheWrite": 1.5,
+      "input": 1.25,
+      "output": 4.5,
+      "cacheRead": 0.3125,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "moonshotai/kimi-k3",
+    "provider": "tensorx",
+    "providerName": "TensorX",
+    "displayName": "Kimi K3",
+    "family": "kimi-k3",
+    "releaseDate": "2026-07-16",
+    "lastUpdated": "2026-07-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 15,
+      "cacheRead": 0.75,
       "currency": "USD",
       "per": 1000000
     },
@@ -1069,104 +824,6 @@
     ]
   },
   {
-    "id": "moonshotai/kimi-k2.7-code",
-    "provider": "tensorx",
-    "providerName": "TensorX",
-    "displayName": "Kimi K2.7 Code",
-    "family": "kimi-k2",
-    "releaseDate": "2026-06-12",
-    "lastUpdated": "2026-06-12",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.25,
-      "output": 4.5,
-      "cacheRead": 0.3125,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "moonshotai/kimi-k3",
-    "provider": "tensorx",
-    "providerName": "TensorX",
-    "displayName": "Kimi K3",
-    "family": "kimi-k3",
-    "releaseDate": "2026-07-16",
-    "lastUpdated": "2026-07-16",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 3,
-      "output": 15,
-      "cacheRead": 0.75,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "openai/gpt-oss-120b",
     "provider": "tensorx",
     "providerName": "TensorX",
@@ -1202,6 +859,349 @@
       "output": 0.2,
       "cacheRead": 0.01,
       "cacheWrite": 0.05,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3-coder-30b-a3b-instruct",
+    "provider": "tensorx",
+    "providerName": "TensorX",
+    "displayName": "Qwen3-Coder 30B-A3B Instruct",
+    "family": "qwen",
+    "releaseDate": "2025-04",
+    "lastUpdated": "2025-04",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 262000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.06,
+      "output": 0.25,
+      "cacheRead": 0.015,
+      "cacheWrite": 0.075,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3-235b-a22b-2507",
+    "provider": "tensorx",
+    "providerName": "TensorX",
+    "displayName": "Qwen3 235B-A22B-2507",
+    "family": "qwen",
+    "releaseDate": "2025-07-21",
+    "lastUpdated": "2025-07-21",
+    "knowledgeCutoff": "2025-06-30",
+    "contextWindow": 131000,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.072,
+      "output": 0.464,
+      "cacheRead": 0.018,
+      "cacheWrite": 0.09,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.5-9b",
+    "provider": "tensorx",
+    "providerName": "TensorX",
+    "displayName": "Qwen3.5 9B",
+    "family": "qwen",
+    "releaseDate": "2026-02-23",
+    "lastUpdated": "2026-02-23",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.2,
+      "cacheRead": 0.0375,
+      "cacheWrite": 0.1875,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.5-122b-a10b",
+    "provider": "tensorx",
+    "providerName": "TensorX",
+    "displayName": "Qwen3.5 122B-A10B",
+    "family": "qwen",
+    "releaseDate": "2026-02-23",
+    "lastUpdated": "2026-02-23",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.5,
+      "output": 3.5,
+      "cacheRead": 0.125,
+      "cacheWrite": 0.625,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3-vl-235b-a22b-instruct",
+    "provider": "tensorx",
+    "providerName": "TensorX",
+    "displayName": "Qwen3 VL 235B-A22B Instruct",
+    "family": "qwen",
+    "releaseDate": "2025-09-23",
+    "lastUpdated": "2025-09-23",
+    "knowledgeCutoff": "2025-03-31",
+    "contextWindow": 131000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.21,
+      "output": 1.9,
+      "cacheRead": 0.0525,
+      "cacheWrite": 0.2625,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimax/minimax-m3",
+    "provider": "tensorx",
+    "providerName": "TensorX",
+    "displayName": "MiniMax-M3",
+    "family": "minimax",
+    "releaseDate": "2026-06-01",
+    "lastUpdated": "2026-06-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.4,
+      "output": 2,
+      "cacheRead": 0.1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimax/minimax-m2.5",
+    "provider": "tensorx",
+    "providerName": "TensorX",
+    "displayName": "MiniMax-M2.5",
+    "family": "minimax",
+    "releaseDate": "2026-02-12",
+    "lastUpdated": "2026-02-12",
+    "knowledgeCutoff": null,
+    "contextWindow": 196608,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 1.2,
+      "cacheRead": 0.075,
+      "cacheWrite": 0.375,
       "currency": "USD",
       "per": 1000000
     },

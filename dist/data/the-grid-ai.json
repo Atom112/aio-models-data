@@ -1,15 +1,15 @@
 [
   {
-    "id": "agent-standard",
+    "id": "code-prime",
     "provider": "the-grid-ai",
     "providerName": "The Grid AI",
-    "displayName": "Agent Standard",
+    "displayName": "Code Prime",
     "family": null,
     "releaseDate": "2026-05-04",
     "lastUpdated": "2026-07-15",
     "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 16000,
+    "contextWindow": 196608,
+    "maxOutputTokens": 30000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -82,53 +82,12 @@
     ]
   },
   {
-    "id": "agent-prime",
+    "id": "text-standard",
     "provider": "the-grid-ai",
     "providerName": "The Grid AI",
-    "displayName": "Agent Prime",
+    "displayName": "Text Standard",
     "family": null,
-    "releaseDate": "2026-05-04",
-    "lastUpdated": "2026-07-15",
-    "knowledgeCutoff": null,
-    "contextWindow": 196608,
-    "maxOutputTokens": 30000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "beta",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "code-standard",
-    "provider": "the-grid-ai",
-    "providerName": "The Grid AI",
-    "displayName": "Code Standard",
-    "family": null,
-    "releaseDate": "2026-05-04",
+    "releaseDate": "2026-02-26",
     "lastUpdated": "2026-07-15",
     "knowledgeCutoff": null,
     "contextWindow": 128000,
@@ -154,7 +113,7 @@
       ]
     },
     "pricing": null,
-    "status": "beta",
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -164,32 +123,31 @@
     ]
   },
   {
-    "id": "code-max",
+    "id": "agent-prime",
     "provider": "the-grid-ai",
     "providerName": "The Grid AI",
-    "displayName": "Code Max",
+    "displayName": "Agent Prime",
     "family": null,
     "releaseDate": "2026-05-04",
-    "lastUpdated": "2026-07-24",
+    "lastUpdated": "2026-07-15",
     "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
+    "contextWindow": 196608,
+    "maxOutputTokens": 30000,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
+      "temperature": true,
+      "attachment": false,
       "structured_output": true,
       "open_weights": false
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
@@ -248,6 +206,47 @@
     ]
   },
   {
+    "id": "code-standard",
+    "provider": "the-grid-ai",
+    "providerName": "The Grid AI",
+    "displayName": "Code Standard",
+    "family": null,
+    "releaseDate": "2026-05-04",
+    "lastUpdated": "2026-07-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 16000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "beta",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "text-max",
     "provider": "the-grid-ai",
     "providerName": "The Grid AI",
@@ -290,38 +289,39 @@
     ]
   },
   {
-    "id": "text-standard",
+    "id": "code-max",
     "provider": "the-grid-ai",
     "providerName": "The Grid AI",
-    "displayName": "Text Standard",
+    "displayName": "Code Max",
     "family": null,
-    "releaseDate": "2026-02-26",
-    "lastUpdated": "2026-07-15",
+    "releaseDate": "2026-05-04",
+    "lastUpdated": "2026-07-24",
     "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 16000,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
+      "temperature": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": false
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": null,
-    "status": "active",
+    "status": "beta",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -331,16 +331,16 @@
     ]
   },
   {
-    "id": "code-prime",
+    "id": "agent-standard",
     "provider": "the-grid-ai",
     "providerName": "The Grid AI",
-    "displayName": "Code Prime",
+    "displayName": "Agent Standard",
     "family": null,
     "releaseDate": "2026-05-04",
     "lastUpdated": "2026-07-15",
     "knowledgeCutoff": null,
-    "contextWindow": 196608,
-    "maxOutputTokens": 30000,
+    "contextWindow": 128000,
+    "maxOutputTokens": 16000,
     "capabilities": {
       "tools": true,
       "vision": false,

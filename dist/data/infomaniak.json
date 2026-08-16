@@ -184,67 +184,20 @@
     ]
   },
   {
-    "id": "mistralai/Mistral-Small-4-119B-2603",
+    "id": "moonshotai/Kimi-K2.6",
     "provider": "infomaniak",
     "providerName": "Infomaniak",
-    "displayName": "Mistral Small 4",
-    "family": "mistral-small",
-    "releaseDate": "2026-03-16",
+    "displayName": "Kimi K2.6",
+    "family": "kimi-k2",
+    "releaseDate": "2026-04-21",
     "lastUpdated": "2026-08-01",
-    "knowledgeCutoff": "2025-06",
+    "knowledgeCutoff": "2025-01",
     "contextWindow": 256000,
     "maxOutputTokens": 256000,
     "capabilities": {
       "tools": true,
       "vision": true,
       "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.25,
-      "output": 0.93,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "mistralai/Ministral-3-14B-Instruct-2512",
-    "provider": "infomaniak",
-    "providerName": "Infomaniak",
-    "displayName": "Ministral 3 14B Instruct",
-    "family": "ministral",
-    "releaseDate": "2025-12-02",
-    "lastUpdated": "2026-08-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 100000,
-    "maxOutputTokens": 25600,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
@@ -263,8 +216,8 @@
       ]
     },
     "pricing": {
-      "input": 0.37,
-      "output": 0.5,
+      "input": 0.74,
+      "output": 3.72,
       "currency": "USD",
       "per": 1000000
     },
@@ -326,53 +279,6 @@
     ]
   },
   {
-    "id": "Qwen/Qwen3.5-397B-A17B-FP8",
-    "provider": "infomaniak",
-    "providerName": "Infomaniak",
-    "displayName": "Qwen3.5 397B-A17B FP8",
-    "family": "qwen",
-    "releaseDate": "2026-02-15",
-    "lastUpdated": "2026-08-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.99,
-      "output": 4.46,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "beta",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "Qwen/Qwen3.5-122B-A10B-FP8",
     "provider": "infomaniak",
     "providerName": "Infomaniak",
@@ -420,16 +326,16 @@
     ]
   },
   {
-    "id": "moonshotai/Kimi-K2.6",
+    "id": "Qwen/Qwen3.5-397B-A17B-FP8",
     "provider": "infomaniak",
     "providerName": "Infomaniak",
-    "displayName": "Kimi K2.6",
-    "family": "kimi-k2",
-    "releaseDate": "2026-04-21",
+    "displayName": "Qwen3.5 397B-A17B FP8",
+    "family": "qwen",
+    "releaseDate": "2026-02-15",
     "lastUpdated": "2026-08-01",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 256000,
-    "maxOutputTokens": 256000,
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -452,12 +358,106 @@
       ]
     },
     "pricing": {
-      "input": 0.74,
-      "output": 3.72,
+      "input": 0.99,
+      "output": 4.46,
       "currency": "USD",
       "per": 1000000
     },
     "status": "beta",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mistralai/Ministral-3-14B-Instruct-2512",
+    "provider": "infomaniak",
+    "providerName": "Infomaniak",
+    "displayName": "Ministral 3 14B Instruct",
+    "family": "ministral",
+    "releaseDate": "2025-12-02",
+    "lastUpdated": "2026-08-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 100000,
+    "maxOutputTokens": 25600,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.37,
+      "output": 0.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "beta",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mistralai/Mistral-Small-4-119B-2603",
+    "provider": "infomaniak",
+    "providerName": "Infomaniak",
+    "displayName": "Mistral Small 4",
+    "family": "mistral-small",
+    "releaseDate": "2026-03-16",
+    "lastUpdated": "2026-08-01",
+    "knowledgeCutoff": "2025-06",
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.25,
+      "output": 0.93,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],

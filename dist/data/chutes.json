@@ -95,40 +95,42 @@
     ]
   },
   {
-    "id": "zai-org/GLM-5.1-TEE",
+    "id": "moonshotai/Kimi-K2.6-TEE",
     "provider": "chutes",
     "providerName": "Chutes",
-    "displayName": "GLM 5.1 TEE",
-    "family": "glm",
-    "releaseDate": "2026-04-07",
-    "lastUpdated": "2026-04-07",
-    "knowledgeCutoff": null,
-    "contextWindow": 202752,
+    "displayName": "Kimi K2.6 TEE",
+    "family": "kimi-k2",
+    "releaseDate": "2026-04-21",
+    "lastUpdated": "2026-04-21",
+    "knowledgeCutoff": "2025-12",
+    "contextWindow": 262144,
     "maxOutputTokens": 65535,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "video"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.98,
-      "output": 3.08,
-      "cacheRead": 0.09799999999999998,
+      "input": 0.58,
+      "output": 3.4,
+      "cacheRead": 0.05799999999999998,
       "currency": "USD",
       "per": 1000000
     },
@@ -142,40 +144,42 @@
     ]
   },
   {
-    "id": "zai-org/GLM-5.2-TEE",
+    "id": "moonshotai/Kimi-K3-TEE",
     "provider": "chutes",
     "providerName": "Chutes",
-    "displayName": "GLM 5.2 TEE",
-    "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
+    "displayName": "Kimi K3 TEE",
+    "family": "kimi-k3",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-07-29",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
     "maxOutputTokens": 65535,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "video"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 1.25,
-      "output": 3.95,
-      "cacheRead": 0.12499999999999997,
+      "input": 3,
+      "output": 15,
+      "cacheRead": 0.29999999999999993,
       "currency": "USD",
       "per": 1000000
     },
@@ -236,16 +240,16 @@
     ]
   },
   {
-    "id": "Qwen/Qwen3-235B-A22B-Thinking-2507-TEE",
+    "id": "deepseek-ai/DeepSeek-V4-Flash-0731-TEE",
     "provider": "chutes",
     "providerName": "Chutes",
-    "displayName": "Qwen3 235B A22B Thinking 2507 TEE",
-    "family": "qwen",
-    "releaseDate": "2025-07",
-    "lastUpdated": "2026-06-21",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "displayName": "DeepSeek V4 Flash 0731 TEE",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-07-31",
+    "lastUpdated": "2026-08-02",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -267,9 +271,9 @@
       ]
     },
     "pricing": {
-      "input": 0.2989,
-      "output": 1.1957,
-      "cacheRead": 0.029889999999999993,
+      "input": 0.14,
+      "output": 0.28,
+      "cacheRead": 0.013999999999999999,
       "currency": "USD",
       "per": 1000000
     },
@@ -283,16 +287,16 @@
     ]
   },
   {
-    "id": "Qwen/Qwen3-32B-TEE",
+    "id": "deepseek-ai/DeepSeek-V3.2-TEE",
     "provider": "chutes",
     "providerName": "Chutes",
-    "displayName": "Qwen3 32B TEE",
-    "family": "qwen",
-    "releaseDate": "2025-04",
-    "lastUpdated": "2025-04",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 40960,
-    "maxOutputTokens": 40960,
+    "displayName": "DeepSeek V3.2 TEE",
+    "family": "deepseek",
+    "releaseDate": "2025-12",
+    "lastUpdated": "2026-06-21",
+    "knowledgeCutoff": "2024-07",
+    "contextWindow": 131072,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -314,9 +318,9 @@
       ]
     },
     "pricing": {
-      "input": 0.104,
-      "output": 0.416,
-      "cacheRead": 0.010399999999999998,
+      "input": 1,
+      "output": 1,
+      "cacheRead": 0.09999999999999998,
       "currency": "USD",
       "per": 1000000
     },
@@ -426,136 +430,40 @@
     ]
   },
   {
-    "id": "deepseek-ai/DeepSeek-V3.2-TEE",
+    "id": "Qwen/Qwen3-235B-A22B-Thinking-2507-TEE",
     "provider": "chutes",
     "providerName": "Chutes",
-    "displayName": "DeepSeek V3.2 TEE",
-    "family": "deepseek",
-    "releaseDate": "2025-12",
+    "displayName": "Qwen3 235B A22B Thinking 2507 TEE",
+    "family": "qwen",
+    "releaseDate": "2025-07",
     "lastUpdated": "2026-06-21",
-    "knowledgeCutoff": "2024-07",
-    "contextWindow": 131072,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1,
-      "output": 1,
-      "cacheRead": 0.09999999999999998,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-V4-Flash-0731-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "DeepSeek V4 Flash 0731 TEE",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-07-31",
-    "lastUpdated": "2026-08-02",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.14,
-      "output": 0.28,
-      "cacheRead": 0.013999999999999999,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "moonshotai/Kimi-K2.6-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Kimi K2.6 TEE",
-    "family": "kimi-k2",
-    "releaseDate": "2026-04-21",
-    "lastUpdated": "2026-04-21",
-    "knowledgeCutoff": "2025-12",
+    "knowledgeCutoff": "2025-04",
     "contextWindow": 262144,
-    "maxOutputTokens": 65535,
+    "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "video"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.58,
-      "output": 3.4,
-      "cacheRead": 0.05799999999999998,
+      "input": 0.2989,
+      "output": 1.1957,
+      "cacheRead": 0.029889999999999993,
       "currency": "USD",
       "per": 1000000
     },
@@ -569,42 +477,134 @@
     ]
   },
   {
-    "id": "moonshotai/Kimi-K3-TEE",
+    "id": "Qwen/Qwen3-32B-TEE",
     "provider": "chutes",
     "providerName": "Chutes",
-    "displayName": "Kimi K3 TEE",
-    "family": "kimi-k3",
-    "releaseDate": "2026-07-29",
-    "lastUpdated": "2026-07-29",
+    "displayName": "Qwen3 32B TEE",
+    "family": "qwen",
+    "releaseDate": "2025-04",
+    "lastUpdated": "2025-04",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 40960,
+    "maxOutputTokens": 40960,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.104,
+      "output": 0.416,
+      "cacheRead": 0.010399999999999998,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "zai-org/GLM-5.2-TEE",
+    "provider": "chutes",
+    "providerName": "Chutes",
+    "displayName": "GLM 5.2 TEE",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
     "maxOutputTokens": 65535,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "video"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 3,
-      "output": 15,
-      "cacheRead": 0.29999999999999993,
+      "input": 1.25,
+      "output": 3.95,
+      "cacheRead": 0.12499999999999997,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "zai-org/GLM-5.1-TEE",
+    "provider": "chutes",
+    "providerName": "Chutes",
+    "displayName": "GLM 5.1 TEE",
+    "family": "glm",
+    "releaseDate": "2026-04-07",
+    "lastUpdated": "2026-04-07",
+    "knowledgeCutoff": null,
+    "contextWindow": 202752,
+    "maxOutputTokens": 65535,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.98,
+      "output": 3.08,
+      "cacheRead": 0.09799999999999998,
       "currency": "USD",
       "per": 1000000
     },

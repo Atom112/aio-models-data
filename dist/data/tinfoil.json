@@ -1,15 +1,15 @@
 [
   {
-    "id": "gemma4-31b",
+    "id": "kimi-k3",
     "provider": "tinfoil",
     "providerName": "Tinfoil",
-    "displayName": "Gemma 4 31B IT",
-    "family": "gemma",
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-04-02",
+    "displayName": "Kimi K3",
+    "family": "kimi-k3",
+    "releaseDate": "2026-07-16",
+    "lastUpdated": "2026-07-16",
     "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 32768,
+    "contextWindow": 262144,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -17,54 +17,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.4,
-      "output": 1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "kimi-k2-6",
-    "provider": "tinfoil",
-    "providerName": "Tinfoil",
-    "displayName": "Kimi K2.6",
-    "family": "kimi-k2",
-    "releaseDate": "2026-04-21",
-    "lastUpdated": "2026-04-21",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 256000,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
+      "temperature": false,
       "attachment": true,
       "structured_output": true,
       "open_weights": true
@@ -80,8 +33,8 @@
       ]
     },
     "pricing": {
-      "input": 1.5,
-      "output": 5.25,
+      "input": 4,
+      "output": 20,
       "currency": "USD",
       "per": 1000000
     },
@@ -95,16 +48,16 @@
     ]
   },
   {
-    "id": "gpt-oss-safeguard-120b",
+    "id": "deepseek-v4-flash",
     "provider": "tinfoil",
     "providerName": "Tinfoil",
-    "displayName": "gpt-oss-safeguard-120b",
-    "family": "gpt-oss",
-    "releaseDate": "2025-10-29",
-    "lastUpdated": "2025-10-29",
-    "knowledgeCutoff": "2024-06",
-    "contextWindow": 131000,
-    "maxOutputTokens": 32768,
+    "displayName": "DeepSeek V4 Flash 0731",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-07-31",
+    "lastUpdated": "2026-07-31",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 384000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -126,8 +79,9 @@
       ]
     },
     "pricing": {
-      "input": 0.15,
-      "output": 0.6,
+      "input": 0.7,
+      "output": 1.9,
+      "cacheRead": 0.125,
       "currency": "USD",
       "per": 1000000
     },
@@ -149,7 +103,7 @@
     "releaseDate": "2024-12-06",
     "lastUpdated": "2024-12-06",
     "knowledgeCutoff": "2023-12",
-    "contextWindow": 128000,
+    "contextWindow": 131072,
     "maxOutputTokens": 4096,
     "capabilities": {
       "tools": true,
@@ -187,40 +141,40 @@
     ]
   },
   {
-    "id": "glm-5-2",
+    "id": "gemma4-31b",
     "provider": "tinfoil",
     "providerName": "Tinfoil",
-    "displayName": "GLM-5.2",
-    "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
+    "displayName": "Gemma 4 31B IT",
+    "family": "gemma",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
     "knowledgeCutoff": null,
-    "contextWindow": 384000,
-    "maxOutputTokens": 131072,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 1.5,
-      "output": 5.25,
-      "cacheRead": 0.375,
+      "input": 0.4,
+      "output": 1,
       "currency": "USD",
       "per": 1000000
     },
@@ -280,6 +234,53 @@
     ]
   },
   {
+    "id": "glm-5-2",
+    "provider": "tinfoil",
+    "providerName": "Tinfoil",
+    "displayName": "GLM-5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 393216,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.5,
+      "output": 5.25,
+      "cacheRead": 0.375,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "gpt-oss-120b",
     "provider": "tinfoil",
     "providerName": "Tinfoil",
@@ -288,7 +289,7 @@
     "releaseDate": "2025-08-05",
     "lastUpdated": "2025-08-05",
     "knowledgeCutoff": "2024-06",
-    "contextWindow": 131000,
+    "contextWindow": 131072,
     "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
@@ -326,41 +327,39 @@
     ]
   },
   {
-    "id": "kimi-k3",
+    "id": "gpt-oss-safeguard-120b",
     "provider": "tinfoil",
     "providerName": "Tinfoil",
-    "displayName": "Kimi K3",
-    "family": "kimi-k3",
-    "releaseDate": "2026-07-16",
-    "lastUpdated": "2026-07-16",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 131072,
+    "displayName": "gpt-oss-safeguard-120b",
+    "family": "gpt-oss",
+    "releaseDate": "2025-10-29",
+    "lastUpdated": "2025-10-29",
+    "knowledgeCutoff": "2024-06",
+    "contextWindow": 131072,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
+      "temperature": true,
+      "attachment": false,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "video"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 2,
-      "output": 6,
+      "input": 0.15,
+      "output": 0.6,
       "currency": "USD",
       "per": 1000000
     },

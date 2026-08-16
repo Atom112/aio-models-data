@@ -1,51 +1,5 @@
 [
   {
-    "id": "@cf/aisingapore/gemma-sea-lion-v4-27b-it",
-    "provider": "cloudflare-workers-ai",
-    "providerName": "Cloudflare Workers AI",
-    "displayName": "Gemma Sea Lion V4 27B It",
-    "family": "gemma",
-    "releaseDate": "2025-09-23",
-    "lastUpdated": "2025-09-23",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.351,
-      "output": 0.555,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "@cf/nvidia/nemotron-3-120b-a12b",
     "provider": "cloudflare-workers-ai",
     "providerName": "Cloudflare Workers AI",
@@ -79,6 +33,52 @@
     "pricing": {
       "input": 0.5,
       "output": 1.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "@cf/aisingapore/gemma-sea-lion-v4-27b-it",
+    "provider": "cloudflare-workers-ai",
+    "providerName": "Cloudflare Workers AI",
+    "displayName": "Gemma Sea Lion V4 27B It",
+    "family": "gemma",
+    "releaseDate": "2025-09-23",
+    "lastUpdated": "2025-09-23",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.351,
+      "output": 0.555,
       "currency": "USD",
       "per": 1000000
     },
@@ -139,293 +139,16 @@
     ]
   },
   {
-    "id": "@cf/zai-org/glm-4.7-flash",
+    "id": "@cf/meta/llama-3.1-8b-instruct-fp8",
     "provider": "cloudflare-workers-ai",
     "providerName": "Cloudflare Workers AI",
-    "displayName": "GLM-4.7-Flash",
-    "family": "glm-flash",
-    "releaseDate": "2026-01-19",
-    "lastUpdated": "2026-01-19",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 131072,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.0605,
-      "output": 0.4,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "@cf/zai-org/glm-5.2",
-    "provider": "cloudflare-workers-ai",
-    "providerName": "Cloudflare Workers AI",
-    "displayName": "Glm 5.2",
-    "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.4,
-      "output": 4.4,
-      "cacheRead": 0.26,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "@cf/qwen/qwen3-30b-a3b-fp8",
-    "provider": "cloudflare-workers-ai",
-    "providerName": "Cloudflare Workers AI",
-    "displayName": "Qwen3 30B A3b fp8",
-    "family": "qwen",
-    "releaseDate": "2025-04-30",
-    "lastUpdated": "2025-04-30",
-    "knowledgeCutoff": null,
-    "contextWindow": 32768,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.0509,
-      "output": 0.335,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "@cf/qwen/qwq-32b",
-    "provider": "cloudflare-workers-ai",
-    "providerName": "Cloudflare Workers AI",
-    "displayName": "Qwq 32B",
-    "family": "qwen",
-    "releaseDate": "2025-03-05",
-    "lastUpdated": "2025-03-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 24000,
-    "maxOutputTokens": 24000,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.66,
-      "output": 1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "@cf/qwen/qwen2.5-coder-32b-instruct",
-    "provider": "cloudflare-workers-ai",
-    "providerName": "Cloudflare Workers AI",
-    "displayName": "Qwen2.5 Coder 32B Instruct",
-    "family": "qwen",
-    "releaseDate": "2025-02-27",
-    "lastUpdated": "2025-02-27",
-    "knowledgeCutoff": null,
-    "contextWindow": 32768,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.66,
-      "output": 1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "provider": "cloudflare-workers-ai",
-    "providerName": "Cloudflare Workers AI",
-    "displayName": "Mistral Small 3.1 24B Instruct",
-    "family": "mistral-small",
-    "releaseDate": "2025-03-18",
-    "lastUpdated": "2025-03-18",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.351,
-      "output": 0.555,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "@cf/meta/llama-3.2-1b-instruct",
-    "provider": "cloudflare-workers-ai",
-    "providerName": "Cloudflare Workers AI",
-    "displayName": "Llama 3.2 1B Instruct",
+    "displayName": "Llama 3.1 8B Instruct fp8",
     "family": "llama",
-    "releaseDate": "2024-09-25",
-    "lastUpdated": "2024-09-25",
+    "releaseDate": "2024-07-23",
+    "lastUpdated": "2024-07-23",
     "knowledgeCutoff": "2023-12",
-    "contextWindow": 60000,
-    "maxOutputTokens": 60000,
+    "contextWindow": 32000,
+    "maxOutputTokens": 32000,
     "capabilities": {
       "tools": false,
       "vision": false,
@@ -447,54 +170,8 @@
       ]
     },
     "pricing": {
-      "input": 0.027,
-      "output": 0.201,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "@cf/meta/llama-3.2-3b-instruct",
-    "provider": "cloudflare-workers-ai",
-    "providerName": "Cloudflare Workers AI",
-    "displayName": "Llama 3.2 3B Instruct",
-    "family": "llama",
-    "releaseDate": "2024-09-25",
-    "lastUpdated": "2024-09-25",
-    "knowledgeCutoff": "2023-12",
-    "contextWindow": 80000,
-    "maxOutputTokens": 80000,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.0509,
-      "output": 0.335,
+      "input": 0.152,
+      "output": 0.287,
       "currency": "USD",
       "per": 1000000
     },
@@ -554,14 +231,60 @@
     ]
   },
   {
+    "id": "@cf/meta/llama-3.2-3b-instruct",
+    "provider": "cloudflare-workers-ai",
+    "providerName": "Cloudflare Workers AI",
+    "displayName": "Llama 3.2 3B Instruct",
+    "family": "llama",
+    "releaseDate": "2024-09-25",
+    "lastUpdated": "2024-09-25",
+    "knowledgeCutoff": "2023-12",
+    "contextWindow": 80000,
+    "maxOutputTokens": 80000,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.0509,
+      "output": 0.335,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "@cf/meta/llama-guard-3-8b",
     "provider": "cloudflare-workers-ai",
     "providerName": "Cloudflare Workers AI",
     "displayName": "Llama Guard 3 8B",
     "family": "llama",
-    "releaseDate": "2025-01-22",
-    "lastUpdated": "2025-01-22",
-    "knowledgeCutoff": null,
+    "releaseDate": "2024-07-23",
+    "lastUpdated": "2024-07-23",
+    "knowledgeCutoff": "2023-12",
     "contextWindow": 131072,
     "maxOutputTokens": 131072,
     "capabilities": {
@@ -600,63 +323,16 @@
     ]
   },
   {
-    "id": "@cf/meta/llama-3.2-11b-vision-instruct",
+    "id": "@cf/meta/llama-3.2-1b-instruct",
     "provider": "cloudflare-workers-ai",
     "providerName": "Cloudflare Workers AI",
-    "displayName": "Llama 3.2 11B Vision Instruct",
+    "displayName": "Llama 3.2 1B Instruct",
     "family": "llama",
     "releaseDate": "2024-09-25",
     "lastUpdated": "2024-09-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.0485,
-      "output": 0.676,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "@cf/meta/llama-3.1-8b-instruct-fp8",
-    "provider": "cloudflare-workers-ai",
-    "providerName": "Cloudflare Workers AI",
-    "displayName": "Llama 3.1 8B Instruct fp8",
-    "family": "llama",
-    "releaseDate": "2024-07-25",
-    "lastUpdated": "2024-07-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 32000,
-    "maxOutputTokens": 32000,
+    "knowledgeCutoff": "2023-12",
+    "contextWindow": 60000,
+    "maxOutputTokens": 60000,
     "capabilities": {
       "tools": false,
       "vision": false,
@@ -678,8 +354,8 @@
       ]
     },
     "pricing": {
-      "input": 0.152,
-      "output": 0.287,
+      "input": 0.027,
+      "output": 0.201,
       "currency": "USD",
       "per": 1000000
     },
@@ -740,118 +416,26 @@
     ]
   },
   {
-    "id": "@cf/ibm-granite/granite-4.0-h-micro",
+    "id": "@cf/meta/llama-3.2-11b-vision-instruct",
     "provider": "cloudflare-workers-ai",
     "providerName": "Cloudflare Workers AI",
-    "displayName": "Granite 4.0 H Micro",
-    "family": "granite",
-    "releaseDate": "2025-10-07",
-    "lastUpdated": "2025-10-07",
-    "knowledgeCutoff": null,
-    "contextWindow": 131000,
-    "maxOutputTokens": 131000,
+    "displayName": "Llama 3.2 11B Vision Instruct",
+    "family": "llama",
+    "releaseDate": "2024-09-25",
+    "lastUpdated": "2024-09-25",
+    "knowledgeCutoff": "2023-12",
+    "contextWindow": 128000,
+    "maxOutputTokens": 128000,
     "capabilities": {
-      "tools": true,
-      "vision": false,
+      "tools": false,
+      "vision": true,
       "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.017,
-      "output": 0.112,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
-    "provider": "cloudflare-workers-ai",
-    "providerName": "Cloudflare Workers AI",
-    "displayName": "Deepseek R1 Distill Qwen 32B",
-    "family": "deepseek-thinking",
-    "releaseDate": "2025-01-20",
-    "lastUpdated": "2025-05-29",
-    "knowledgeCutoff": "2024-07",
-    "contextWindow": 80000,
-    "maxOutputTokens": 80000,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.497,
-      "output": 4.881,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "@cf/moonshotai/kimi-k2.6",
-    "provider": "cloudflare-workers-ai",
-    "providerName": "Cloudflare Workers AI",
-    "displayName": "Kimi K2.6",
-    "family": "kimi-k2",
-    "releaseDate": "2026-04-21",
-    "lastUpdated": "2026-04-21",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 256000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
       "attachment": true,
-      "structured_output": true,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
@@ -864,9 +448,8 @@
       ]
     },
     "pricing": {
-      "input": 0.95,
-      "output": 4,
-      "cacheRead": 0.16,
+      "input": 0.0485,
+      "output": 0.676,
       "currency": "USD",
       "per": 1000000
     },
@@ -928,39 +511,41 @@
     ]
   },
   {
-    "id": "@cf/openai/gpt-oss-20b",
+    "id": "@cf/moonshotai/kimi-k2.6",
     "provider": "cloudflare-workers-ai",
     "providerName": "Cloudflare Workers AI",
-    "displayName": "GPT OSS 20B",
-    "family": "gpt-oss",
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 16384,
+    "displayName": "Kimi K2.6",
+    "family": "kimi-k2",
+    "releaseDate": "2026-04-21",
+    "lastUpdated": "2026-04-21",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 256000,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.2,
-      "output": 0.3,
+      "input": 0.95,
+      "output": 4,
+      "cacheRead": 0.16,
       "currency": "USD",
       "per": 1000000
     },
@@ -1007,6 +592,515 @@
     "pricing": {
       "input": 0.35,
       "output": 0.75,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "@cf/openai/gpt-oss-20b",
+    "provider": "cloudflare-workers-ai",
+    "providerName": "Cloudflare Workers AI",
+    "displayName": "GPT OSS 20B",
+    "family": "gpt-oss",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2,
+      "output": 0.3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
+    "provider": "cloudflare-workers-ai",
+    "providerName": "Cloudflare Workers AI",
+    "displayName": "Deepseek R1 Distill Qwen 32B",
+    "family": "deepseek-thinking",
+    "releaseDate": "2025-01-20",
+    "lastUpdated": "2025-05-29",
+    "knowledgeCutoff": "2024-07",
+    "contextWindow": 80000,
+    "maxOutputTokens": 80000,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.497,
+      "output": 4.881,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "@cf/deepseek-ai/deepseek-v4-pro-0813",
+    "provider": "cloudflare-workers-ai",
+    "providerName": "Cloudflare Workers AI",
+    "displayName": "DeepSeek V4 Pro 0813",
+    "family": "deepseek-thinking",
+    "releaseDate": "2026-08-12",
+    "lastUpdated": "2026-08-12",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.32,
+      "output": 3.96,
+      "cacheRead": 0.044,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "@cf/deepseek-ai/deepseek-v4-flash-0731",
+    "provider": "cloudflare-workers-ai",
+    "providerName": "Cloudflare Workers AI",
+    "displayName": "DeepSeek V4 Flash 0731",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-07-31",
+    "lastUpdated": "2026-07-31",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.44,
+      "output": 1.32,
+      "cacheRead": 0.014,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "@cf/qwen/qwen3-30b-a3b-fp8",
+    "provider": "cloudflare-workers-ai",
+    "providerName": "Cloudflare Workers AI",
+    "displayName": "Qwen3 30B A3b fp8",
+    "family": "qwen",
+    "releaseDate": "2025-04-28",
+    "lastUpdated": "2025-04-28",
+    "knowledgeCutoff": null,
+    "contextWindow": 32768,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.0509,
+      "output": 0.335,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "@cf/qwen/qwq-32b",
+    "provider": "cloudflare-workers-ai",
+    "providerName": "Cloudflare Workers AI",
+    "displayName": "Qwq 32B",
+    "family": "qwen",
+    "releaseDate": "2025-03-05",
+    "lastUpdated": "2025-03-05",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 24000,
+    "maxOutputTokens": 24000,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.66,
+      "output": 1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "@cf/qwen/qwen2.5-coder-32b-instruct",
+    "provider": "cloudflare-workers-ai",
+    "providerName": "Cloudflare Workers AI",
+    "displayName": "Qwen2.5 Coder 32B Instruct",
+    "family": "qwen",
+    "releaseDate": "2024-11-12",
+    "lastUpdated": "2024-11-12",
+    "knowledgeCutoff": null,
+    "contextWindow": 32768,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.66,
+      "output": 1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "@cf/zai-org/glm-5.2",
+    "provider": "cloudflare-workers-ai",
+    "providerName": "Cloudflare Workers AI",
+    "displayName": "Glm 5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.4,
+      "output": 4.4,
+      "cacheRead": 0.26,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "@cf/zai-org/glm-4.7-flash",
+    "provider": "cloudflare-workers-ai",
+    "providerName": "Cloudflare Workers AI",
+    "displayName": "GLM-4.7-Flash",
+    "family": "glm-flash",
+    "releaseDate": "2026-01-19",
+    "lastUpdated": "2026-01-19",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 131072,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.0605,
+      "output": 0.4,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "provider": "cloudflare-workers-ai",
+    "providerName": "Cloudflare Workers AI",
+    "displayName": "Mistral Small 3.1 24B Instruct",
+    "family": "mistral-small",
+    "releaseDate": "2025-03-18",
+    "lastUpdated": "2025-03-18",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.351,
+      "output": 0.555,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "@cf/ibm-granite/granite-4.0-h-micro",
+    "provider": "cloudflare-workers-ai",
+    "providerName": "Cloudflare Workers AI",
+    "displayName": "Granite 4.0 H Micro",
+    "family": "granite",
+    "releaseDate": "2025-10-07",
+    "lastUpdated": "2025-10-07",
+    "knowledgeCutoff": null,
+    "contextWindow": 131000,
+    "maxOutputTokens": 131000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.017,
+      "output": 0.112,
       "currency": "USD",
       "per": 1000000
     },

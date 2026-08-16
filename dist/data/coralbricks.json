@@ -1,88 +1,41 @@
 [
   {
-    "id": "poolside/laguna-m.1",
-    "provider": "poolside",
-    "providerName": "Poolside",
-    "displayName": "Laguna M.1",
-    "family": "laguna",
-    "releaseDate": "2026-04-28",
-    "lastUpdated": "2026-06-13",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "cacheWrite": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "poolside/laguna-s-2.1",
-    "provider": "poolside",
-    "providerName": "Poolside",
-    "displayName": "Laguna S 2.1",
-    "family": "laguna",
-    "releaseDate": "2026-07-21",
-    "lastUpdated": "2026-07-21",
+    "id": "kimi-k3",
+    "provider": "coralbricks",
+    "providerName": "CoralBricks",
+    "displayName": "Kimi K3",
+    "family": "kimi-k3",
+    "releaseDate": "2026-07-16",
+    "lastUpdated": "2026-07-16",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
-    "maxOutputTokens": 32768,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "video"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0,
-      "output": 0,
+      "input": 3,
+      "output": 15,
       "cacheRead": 0,
-      "cacheWrite": 0,
       "currency": "USD",
       "per": 1000000
     },
@@ -96,26 +49,26 @@
     ]
   },
   {
-    "id": "poolside/laguna-xs-2.1",
-    "provider": "poolside",
-    "providerName": "Poolside",
-    "displayName": "Laguna XS 2.1",
-    "family": "laguna",
-    "releaseDate": "2026-07-02",
-    "lastUpdated": "2026-07-02",
+    "id": "gpt-oss-120b",
+    "provider": "coralbricks",
+    "providerName": "CoralBricks",
+    "displayName": "GPT OSS 120B",
+    "family": "gpt-oss",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
     "knowledgeCutoff": null,
-    "contextWindow": 262144,
+    "contextWindow": 131072,
     "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -127,10 +80,56 @@
       ]
     },
     "pricing": {
-      "input": 0,
-      "output": 0,
+      "input": 0.12,
+      "output": 0.6,
       "cacheRead": 0,
-      "cacheWrite": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5.2-fp4",
+    "provider": "coralbricks",
+    "providerName": "CoralBricks",
+    "displayName": "GLM 5.2 FP4",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.12,
+      "output": 4.4,
+      "cacheRead": 0,
       "currency": "USD",
       "per": 1000000
     },

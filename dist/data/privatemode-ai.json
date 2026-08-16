@@ -1,14 +1,60 @@
 [
   {
-    "id": "kimi-k2.6",
+    "id": "whisper-large-v3",
     "provider": "privatemode-ai",
     "providerName": "Privatemode AI",
-    "displayName": "Kimi K2.6",
+    "displayName": "Whisper large-v3",
+    "family": "whisper",
+    "releaseDate": "2024-10-01",
+    "lastUpdated": "2024-10-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 448,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.01618,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-latest",
+    "provider": "privatemode-ai",
+    "providerName": "Privatemode AI",
+    "displayName": "Kimi",
     "family": "kimi-k2",
     "releaseDate": "2026-04-21",
     "lastUpdated": "2026-04-21",
     "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
+    "contextWindow": 256000,
     "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
@@ -32,61 +78,18 @@
       ]
     },
     "pricing": {
-      "input": 0,
-      "output": 0,
+      "input": 1.791,
+      "output": 8.9436,
+      "cacheRead": 0.1733,
       "currency": "USD",
       "per": 1000000
     },
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "whisper-large-v3",
-    "provider": "privatemode-ai",
-    "providerName": "Privatemode AI",
-    "displayName": "Whisper large-v3",
-    "family": "whisper",
-    "releaseDate": "2023-09-01",
-    "lastUpdated": "2023-09-01",
-    "knowledgeCutoff": "2023-09",
-    "contextWindow": 0,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "audio"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
+    "aliases": [
+      "Kimi (latest)"
+    ],
     "isAggregator": true,
     "sources": [
       "models.dev"
@@ -124,7 +127,7 @@
       ]
     },
     "pricing": {
-      "input": 0,
+      "input": 0.00462,
       "output": 0,
       "currency": "USD",
       "per": 1000000
@@ -144,11 +147,11 @@
     "providerName": "Privatemode AI",
     "displayName": "gpt-oss-120b",
     "family": "gpt-oss",
-    "releaseDate": "2025-08-04",
-    "lastUpdated": "2025-08-14",
-    "knowledgeCutoff": "2025-08",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": null,
     "contextWindow": 128000,
-    "maxOutputTokens": 128000,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -170,8 +173,9 @@
       ]
     },
     "pricing": {
-      "input": 0,
-      "output": 0,
+      "input": 0.4969,
+      "output": 1.9644,
+      "cacheRead": 0.0462,
       "currency": "USD",
       "per": 1000000
     },
@@ -216,8 +220,104 @@
       ]
     },
     "pricing": {
-      "input": 0,
+      "input": 0.1502,
       "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ocr-2",
+    "provider": "privatemode-ai",
+    "providerName": "Privatemode AI",
+    "displayName": "DeepSeek OCR 2",
+    "family": null,
+    "releaseDate": "2026-01-27",
+    "lastUpdated": "2026-01-27",
+    "knowledgeCutoff": null,
+    "contextWindow": 8192,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.8897,
+      "output": 1.4675,
+      "cacheRead": 0.0924,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "beta",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k2.6",
+    "provider": "privatemode-ai",
+    "providerName": "Privatemode AI",
+    "displayName": "Kimi K2.6",
+    "family": "kimi-k2",
+    "releaseDate": "2026-04-21",
+    "lastUpdated": "2026-04-21",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 256000,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.791,
+      "output": 8.9436,
+      "cacheRead": 0.1733,
       "currency": "USD",
       "per": 1000000
     },

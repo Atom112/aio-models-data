@@ -1,51 +1,5 @@
 [
   {
-    "id": "intfloat/multilingual-e5-large-instruct",
-    "provider": "evroc",
-    "providerName": "evroc",
-    "displayName": "E5 Multi-Lingual Large Embeddings 0.6B",
-    "family": "text-embedding",
-    "releaseDate": "2024-06-01",
-    "lastUpdated": "2024-06-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 512,
-    "maxOutputTokens": 512,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.114,
-      "output": 0.114,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "nvidia/Llama-3.3-70B-Instruct-FP8",
     "provider": "evroc",
     "providerName": "evroc",
@@ -79,6 +33,52 @@
     "pricing": {
       "input": 1.15,
       "output": 1.15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "KBLab/kb-whisper-large",
+    "provider": "evroc",
+    "providerName": "evroc",
+    "displayName": "KB Whisper",
+    "family": "whisper",
+    "releaseDate": "2024-10-01",
+    "lastUpdated": "2024-10-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 448,
+    "maxOutputTokens": 448,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.0023,
+      "output": 0.0023,
       "currency": "USD",
       "per": 1000000
     },
@@ -139,204 +139,16 @@
     ]
   },
   {
-    "id": "zai-org/GLM-5.2",
+    "id": "intfloat/multilingual-e5-large-instruct",
     "provider": "evroc",
     "providerName": "evroc",
-    "displayName": "GLM-5.2",
-    "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.4375,
-      "output": 5.75,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "mistralai/Mistral-Medium-3.5-128B",
-    "provider": "evroc",
-    "providerName": "evroc",
-    "displayName": "Mistral Medium 3.5",
-    "family": "mistral-medium",
-    "releaseDate": "2026-04-29",
-    "lastUpdated": "2026-04-29",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.725,
-      "output": 6.9,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "mistralai/Voxtral-Small-24B-2507",
-    "provider": "evroc",
-    "providerName": "evroc",
-    "displayName": "Voxtral Small 24B",
-    "family": "voxtral",
-    "releaseDate": "2025-03-01",
-    "lastUpdated": "2025-03-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 32000,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "audio",
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.0023,
-      "output": 0.0023,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "evroc/roc",
-    "provider": "evroc",
-    "providerName": "evroc",
-    "displayName": "roc",
-    "family": null,
-    "releaseDate": "2026-06-06",
-    "lastUpdated": "2026-06-06",
-    "knowledgeCutoff": "2026-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2.875,
-      "output": 11.516,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3-Embedding-8B",
-    "provider": "evroc",
-    "providerName": "evroc",
-    "displayName": "Qwen3 Embedding 8B",
+    "displayName": "E5 Multi-Lingual Large Embeddings 0.6B",
     "family": "text-embedding",
-    "releaseDate": "2025-07-30",
-    "lastUpdated": "2025-07-30",
+    "releaseDate": "2024-06-01",
+    "lastUpdated": "2024-06-01",
     "knowledgeCutoff": null,
-    "contextWindow": 40960,
-    "maxOutputTokens": 4096,
+    "contextWindow": 512,
+    "maxOutputTokens": 512,
     "capabilities": {
       "tools": false,
       "vision": false,
@@ -358,197 +170,8 @@
       ]
     },
     "pricing": {
-      "input": 0.115,
-      "output": 0.115,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3.6-35B-A3B-FP8",
-    "provider": "evroc",
-    "providerName": "evroc",
-    "displayName": "Qwen3.6 35B-A3B",
-    "family": "qwen",
-    "releaseDate": "2026-04-17",
-    "lastUpdated": "2026-04-17",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "audio"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.345,
-      "output": 1.38,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3-Reranker-4B",
-    "provider": "evroc",
-    "providerName": "evroc",
-    "displayName": "Qwen3 Reranker 4B",
-    "family": "qwen",
-    "releaseDate": "2025-07-30",
-    "lastUpdated": "2025-07-30",
-    "knowledgeCutoff": null,
-    "contextWindow": 32000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.0575,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3-VL-30B-A3B-Instruct",
-    "provider": "evroc",
-    "providerName": "evroc",
-    "displayName": "Qwen3 VL 30B",
-    "family": "qwen",
-    "releaseDate": "2025-07-30",
-    "lastUpdated": "2025-07-30",
-    "knowledgeCutoff": null,
-    "contextWindow": 100000,
-    "maxOutputTokens": 100000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.23,
-      "output": 0.92,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "KBLab/kb-whisper-large",
-    "provider": "evroc",
-    "providerName": "evroc",
-    "displayName": "KB Whisper",
-    "family": "whisper",
-    "releaseDate": "2024-10-01",
-    "lastUpdated": "2024-10-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 448,
-    "maxOutputTokens": 448,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "audio"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.0023,
-      "output": 0.0023,
+      "input": 0.114,
+      "output": 0.114,
       "currency": "USD",
       "per": 1000000
     },
@@ -656,6 +279,52 @@
     ]
   },
   {
+    "id": "openai/gpt-oss-120b",
+    "provider": "evroc",
+    "providerName": "evroc",
+    "displayName": "GPT OSS 120B",
+    "family": "gpt-oss",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": null,
+    "contextWindow": 65536,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.23,
+      "output": 0.92,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "openai/whisper-large-v3-turbo",
     "provider": "evroc",
     "providerName": "evroc",
@@ -702,20 +371,20 @@
     ]
   },
   {
-    "id": "openai/gpt-oss-120b",
+    "id": "Qwen/Qwen3-Reranker-4B",
     "provider": "evroc",
     "providerName": "evroc",
-    "displayName": "GPT OSS 120B",
-    "family": "gpt-oss",
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
+    "displayName": "Qwen3 Reranker 4B",
+    "family": "qwen",
+    "releaseDate": "2025-07-30",
+    "lastUpdated": "2025-07-30",
     "knowledgeCutoff": null,
-    "contextWindow": 65536,
-    "maxOutputTokens": 65536,
+    "contextWindow": 32000,
+    "maxOutputTokens": 4096,
     "capabilities": {
-      "tools": true,
+      "tools": false,
       "vision": false,
-      "reasoning": true,
+      "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
@@ -733,8 +402,291 @@
       ]
     },
     "pricing": {
-      "input": 0.23,
-      "output": 0.92,
+      "input": 0.0575,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen/Qwen3.6-35B-A3B-FP8",
+    "provider": "evroc",
+    "providerName": "evroc",
+    "displayName": "Qwen3.6 35B-A3B",
+    "family": "qwen",
+    "releaseDate": "2026-04-17",
+    "lastUpdated": "2026-04-17",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.345,
+      "output": 1.38,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen/Qwen3-Embedding-8B",
+    "provider": "evroc",
+    "providerName": "evroc",
+    "displayName": "Qwen3 Embedding 8B",
+    "family": "text-embedding",
+    "releaseDate": "2025-07-30",
+    "lastUpdated": "2025-07-30",
+    "knowledgeCutoff": null,
+    "contextWindow": 40960,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.115,
+      "output": 0.115,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "zai-org/GLM-5.2",
+    "provider": "evroc",
+    "providerName": "evroc",
+    "displayName": "GLM-5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 524288,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.4375,
+      "output": 5.75,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "evroc/roc",
+    "provider": "evroc",
+    "providerName": "evroc",
+    "displayName": "roc",
+    "family": null,
+    "releaseDate": "2026-06-06",
+    "lastUpdated": "2026-06-06",
+    "knowledgeCutoff": "2026-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.875,
+      "output": 11.516,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mistralai/Voxtral-Small-24B-2507",
+    "provider": "evroc",
+    "providerName": "evroc",
+    "displayName": "Voxtral Small 24B",
+    "family": "voxtral",
+    "releaseDate": "2025-03-01",
+    "lastUpdated": "2025-03-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 32000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "audio",
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.0023,
+      "output": 0.0023,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mistralai/Mistral-Medium-3.5-128B",
+    "provider": "evroc",
+    "providerName": "evroc",
+    "displayName": "Mistral Medium 3.5",
+    "family": "mistral-medium",
+    "releaseDate": "2026-04-29",
+    "lastUpdated": "2026-04-29",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.725,
+      "output": 6.9,
       "currency": "USD",
       "per": 1000000
     },

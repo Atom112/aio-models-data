@@ -1,15 +1,15 @@
 [
   {
-    "id": "gpt-chat-latest",
+    "id": "claude-mythos-5",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
-    "displayName": "GPT Chat Latest",
-    "family": null,
-    "releaseDate": "2026-05-05",
-    "lastUpdated": "2026-05-28",
-    "knowledgeCutoff": "2025-12-01",
-    "contextWindow": 128000,
-    "maxOutputTokens": 16384,
+    "displayName": "Claude Mythos 5",
+    "family": "claude-mythos",
+    "releaseDate": "2026-06-09",
+    "lastUpdated": "2026-06-09",
+    "knowledgeCutoff": "2026-01-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -33,9 +33,10 @@
       ]
     },
     "pricing": {
-      "input": 5,
-      "output": 30,
-      "cacheRead": 0.5,
+      "input": 10,
+      "output": 50,
+      "cacheRead": 1,
+      "cacheWrite": 12.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -49,65 +50,15 @@
     ]
   },
   {
-    "id": "claude-haiku-4-5",
+    "id": "claude-opus-4-8",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
-    "displayName": "Claude Haiku 4.5",
-    "family": "claude-haiku",
-    "releaseDate": "2025-11-18",
-    "lastUpdated": "2025-11-18",
-    "knowledgeCutoff": "2025-02-28",
-    "contextWindow": 200000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1,
-      "output": 5,
-      "cacheRead": 0.1,
-      "cacheWrite": 1.25,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5.4-pro",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "GPT-5.4 Pro",
-    "family": "gpt-pro",
-    "releaseDate": "2026-03-05",
-    "lastUpdated": "2026-03-05",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 1050000,
+    "displayName": "Claude Opus 4.8",
+    "family": "claude-opus",
+    "releaseDate": "2026-05-28",
+    "lastUpdated": "2026-05-28",
+    "knowledgeCutoff": "2025-12-31",
+    "contextWindow": 1000000,
     "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
@@ -124,27 +75,30 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 30,
-      "output": 180,
+      "input": 5,
+      "output": 25,
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
       "currency": "USD",
       "per": 1000000,
       "tiers": [
         {
-          "input": 60,
-          "output": 270,
-          "contextThreshold": 272000
+          "input": 10,
+          "output": 37.5,
+          "contextThreshold": 200000
         }
       ],
       "contextOverThreshold": {
-        "input": 60,
-        "output": 270,
+        "input": 10,
+        "output": 37.5,
         "contextThreshold": 200000
       }
     },
@@ -219,124 +173,15 @@
     ]
   },
   {
-    "id": "claude-opus-4-6",
+    "id": "gpt-5.4-pro",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
-    "displayName": "Claude Opus 4.6",
-    "family": "claude-opus",
-    "releaseDate": "2026-02-05",
-    "lastUpdated": "2026-07-17",
-    "knowledgeCutoff": "2025-05-31",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 10,
-          "output": 37.5,
-          "contextThreshold": 200000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 10,
-        "output": 37.5,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "kimi-k2.5",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "Kimi K2.5",
-    "family": "kimi-k2",
-    "releaseDate": "2026-01",
-    "lastUpdated": "2026-01",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.6,
-      "output": 3,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-opus-4-8",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "Claude Opus 4.8",
-    "family": "claude-opus",
-    "releaseDate": "2026-05-28",
-    "lastUpdated": "2026-05-28",
-    "knowledgeCutoff": "2025-12-31",
-    "contextWindow": 1000000,
+    "displayName": "GPT-5.4 Pro",
+    "family": "gpt-pro",
+    "releaseDate": "2026-03-05",
+    "lastUpdated": "2026-03-05",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 1050000,
     "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
@@ -353,68 +198,6 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 10,
-          "output": 37.5,
-          "contextThreshold": 200000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 10,
-        "output": 37.5,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "kimi-k2.6",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "Kimi K2.6",
-    "family": "kimi-k2",
-    "releaseDate": "2026-04-21",
-    "lastUpdated": "2026-04-21",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
         "image"
       ],
       "output": [
@@ -422,10 +205,22 @@
       ]
     },
     "pricing": {
-      "input": 0.95,
-      "output": 4,
+      "input": 30,
+      "output": 180,
       "currency": "USD",
-      "per": 1000000
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 60,
+          "output": 270,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 60,
+        "output": 270,
+        "contextThreshold": 200000
+      }
     },
     "status": "active",
     "deprecationDate": null,
@@ -487,65 +282,15 @@
     ]
   },
   {
-    "id": "claude-sonnet-4-5",
+    "id": "claude-sonnet-5",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
-    "displayName": "Claude Sonnet 4.5",
+    "displayName": "Claude Sonnet 5",
     "family": "claude-sonnet",
-    "releaseDate": "2025-11-18",
-    "lastUpdated": "2025-11-18",
-    "knowledgeCutoff": "2025-07-31",
-    "contextWindow": 200000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 3,
-      "output": 15,
-      "cacheRead": 0.3,
-      "cacheWrite": 3.75,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5.4",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "GPT-5.4",
-    "family": "gpt",
-    "releaseDate": "2026-03-05",
-    "lastUpdated": "2026-03-05",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 1050000,
+    "releaseDate": "2026-06-30",
+    "lastUpdated": "2026-06-30",
+    "knowledgeCutoff": "2026-01-31",
+    "contextWindow": 1000000,
     "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
@@ -570,123 +315,14 @@
       ]
     },
     "pricing": {
-      "input": 2.5,
-      "output": 15,
-      "cacheRead": 0.25,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 5,
-          "output": 22.5,
-          "contextThreshold": 272000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 5,
-        "output": 22.5,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5.4-nano",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "GPT-5.4 Nano",
-    "family": "gpt-nano",
-    "releaseDate": "2026-03-17",
-    "lastUpdated": "2026-03-17",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2,
-      "output": 1.25,
-      "cacheRead": 0.02,
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5.4-mini",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "GPT-5.4 Mini",
-    "family": "gpt-mini",
-    "releaseDate": "2026-03-17",
-    "lastUpdated": "2026-03-17",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.75,
-      "output": 4.5,
-      "cacheRead": 0.075,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
+    "status": "beta",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -758,6 +394,301 @@
     ]
   },
   {
+    "id": "claude-opus-4-5",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "Claude Opus 4.5",
+    "family": "claude-opus",
+    "releaseDate": "2025-11-24",
+    "lastUpdated": "2025-08-01",
+    "knowledgeCutoff": "2025-03-31",
+    "contextWindow": 200000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 25,
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.4-mini",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "GPT-5.4 Mini",
+    "family": "gpt-mini",
+    "releaseDate": "2026-03-17",
+    "lastUpdated": "2026-03-17",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.75,
+      "output": 4.5,
+      "cacheRead": 0.075,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-sonnet-4-6",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "Claude Sonnet 4.6",
+    "family": "claude-sonnet",
+    "releaseDate": "2026-02-17",
+    "lastUpdated": "2026-03-13",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 15,
+      "cacheRead": 0.3,
+      "cacheWrite": 3.75,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-chat-latest",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "GPT Chat Latest",
+    "family": null,
+    "releaseDate": "2026-05-05",
+    "lastUpdated": "2026-05-28",
+    "knowledgeCutoff": "2025-12-01",
+    "contextWindow": 128000,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 30,
+      "cacheRead": 0.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "beta",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k2.5",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "Kimi K2.5",
+    "family": "kimi-k2",
+    "releaseDate": "2026-01",
+    "lastUpdated": "2026-01",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.6,
+      "output": 3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-sonnet-4-5",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "Claude Sonnet 4.5",
+    "family": "claude-sonnet",
+    "releaseDate": "2025-11-18",
+    "lastUpdated": "2025-11-18",
+    "knowledgeCutoff": "2025-07-31",
+    "contextWindow": 200000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 15,
+      "cacheRead": 0.3,
+      "cacheWrite": 3.75,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "gpt-5.6-terra",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
@@ -820,16 +751,177 @@
     ]
   },
   {
-    "id": "claude-opus-4-5",
+    "id": "gpt-5.4",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
-    "displayName": "Claude Opus 4.5",
-    "family": "claude-opus",
-    "releaseDate": "2025-11-24",
-    "lastUpdated": "2025-08-01",
-    "knowledgeCutoff": "2025-03-31",
+    "displayName": "GPT-5.4",
+    "family": "gpt",
+    "releaseDate": "2026-03-05",
+    "lastUpdated": "2026-03-05",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.5,
+      "output": 15,
+      "cacheRead": 0.25,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 5,
+          "output": 22.5,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 5,
+        "output": 22.5,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-fable-5",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "Claude Fable 5",
+    "family": "claude-fable",
+    "releaseDate": "2026-06-09",
+    "lastUpdated": "2026-06-09",
+    "knowledgeCutoff": "2026-01-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 10,
+      "output": 50,
+      "cacheRead": 1,
+      "cacheWrite": 12.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "beta",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-haiku-4-5",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "Claude Haiku 4.5",
+    "family": "claude-haiku",
+    "releaseDate": "2025-11-18",
+    "lastUpdated": "2025-11-18",
+    "knowledgeCutoff": "2025-02-28",
     "contextWindow": 200000,
     "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1,
+      "output": 5,
+      "cacheRead": 0.1,
+      "cacheWrite": 1.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-opus-4-6",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "Claude Opus 4.6",
+    "family": "claude-opus",
+    "releaseDate": "2026-02-05",
+    "lastUpdated": "2026-07-17",
+    "knowledgeCutoff": "2025-05-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -858,7 +950,19 @@
       "cacheRead": 0.5,
       "cacheWrite": 6.25,
       "currency": "USD",
-      "per": 1000000
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 10,
+          "output": 37.5,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 10,
+        "output": 37.5,
+        "contextThreshold": 200000
+      }
     },
     "status": "active",
     "deprecationDate": null,
@@ -920,124 +1024,33 @@
     ]
   },
   {
-    "id": "text-embedding-3-small",
+    "id": "gpt-5.4-nano",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
-    "displayName": "text-embedding-3-small",
-    "family": "text-embedding",
-    "releaseDate": "2024-01-25",
-    "lastUpdated": "2024-01-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 8191,
-    "maxOutputTokens": 1536,
+    "displayName": "GPT-5.4 Nano",
+    "family": "gpt-nano",
+    "releaseDate": "2026-03-17",
+    "lastUpdated": "2026-03-17",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
     "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
       "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.02,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "cohere-embed-v3-english",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "Embed v3 English",
-    "family": "cohere-embed",
-    "releaseDate": "2023-11-07",
-    "lastUpdated": "2023-11-07",
-    "knowledgeCutoff": null,
-    "contextWindow": 512,
-    "maxOutputTokens": 1024,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "llama-4-scout-17b-16e-instruct",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "Llama 4 Scout 17B 16E Instruct",
-    "family": "llama",
-    "releaseDate": "2025-04-05",
-    "lastUpdated": "2025-04-05",
-    "knowledgeCutoff": "2024-08",
-    "contextWindow": 128000,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
@@ -1045,7 +1058,8 @@
     },
     "pricing": {
       "input": 0.2,
-      "output": 0.78,
+      "output": 1.25,
+      "cacheRead": 0.02,
       "currency": "USD",
       "per": 1000000
     },
@@ -1059,119 +1073,27 @@
     ]
   },
   {
-    "id": "text-embedding-3-large",
+    "id": "kimi-k2.6",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
-    "displayName": "text-embedding-3-large",
-    "family": "text-embedding",
-    "releaseDate": "2024-01-25",
-    "lastUpdated": "2024-01-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 8191,
-    "maxOutputTokens": 3072,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.13,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "cohere-command-a",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "Command A",
-    "family": "command-a",
-    "releaseDate": "2025-03-13",
-    "lastUpdated": "2025-03-13",
-    "knowledgeCutoff": "2024-06-01",
-    "contextWindow": 131072,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2.5,
-      "output": 10,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "o4-mini",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "o4-mini",
-    "family": "o-mini",
-    "releaseDate": "2025-04-16",
-    "lastUpdated": "2025-04-16",
-    "knowledgeCutoff": "2024-05",
-    "contextWindow": 200000,
-    "maxOutputTokens": 100000,
+    "displayName": "Kimi K2.6",
+    "family": "kimi-k2",
+    "releaseDate": "2026-04-21",
+    "lastUpdated": "2026-04-21",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -1183,13 +1105,12 @@
       ]
     },
     "pricing": {
-      "input": 1.1,
-      "output": 4.4,
-      "cacheRead": 0.275,
+      "input": 0.95,
+      "output": 4,
       "currency": "USD",
       "per": 1000000
     },
-    "status": "deprecated",
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1199,11 +1120,62 @@
     ]
   },
   {
-    "id": "gpt-4.1",
+    "id": "gpt-5.1",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
-    "displayName": "GPT-4.1",
+    "displayName": "GPT-5.1",
     "family": "gpt",
+    "releaseDate": "2025-11-14",
+    "lastUpdated": "2025-11-14",
+    "knowledgeCutoff": "2024-09-30",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio"
+      ],
+      "output": [
+        "text",
+        "image",
+        "audio"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 10,
+      "cacheRead": 0.125,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-4.1-mini",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "GPT-4.1 mini",
+    "family": "gpt-mini",
     "releaseDate": "2025-04-14",
     "lastUpdated": "2025-04-14",
     "knowledgeCutoff": "2024-04",
@@ -1231,9 +1203,9 @@
       ]
     },
     "pricing": {
-      "input": 2,
-      "output": 8,
-      "cacheRead": 0.5,
+      "input": 0.4,
+      "output": 1.6,
+      "cacheRead": 0.1,
       "currency": "USD",
       "per": 1000000
     },
@@ -1247,31 +1219,32 @@
     ]
   },
   {
-    "id": "cohere-embed-v3-multilingual",
+    "id": "mistral-small-2503",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
-    "displayName": "Embed v3 Multilingual",
-    "family": "cohere-embed",
-    "releaseDate": "2023-11-07",
-    "lastUpdated": "2023-11-07",
-    "knowledgeCutoff": null,
-    "contextWindow": 512,
-    "maxOutputTokens": 1024,
+    "displayName": "Mistral Small 3.1",
+    "family": "mistral-small",
+    "releaseDate": "2025-03-01",
+    "lastUpdated": "2025-03-01",
+    "knowledgeCutoff": "2024-09",
+    "contextWindow": 128000,
+    "maxOutputTokens": 32768,
     "capabilities": {
-      "tools": false,
-      "vision": false,
+      "tools": true,
+      "vision": true,
       "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
+      "temperature": true,
+      "attachment": true,
       "structured_output": false,
-      "open_weights": true
+      "open_weights": false
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
@@ -1279,241 +1252,7 @@
     },
     "pricing": {
       "input": 0.1,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "codestral-2501",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "Codestral 25.01",
-    "family": "codestral",
-    "releaseDate": "2025-01-01",
-    "lastUpdated": "2025-01-01",
-    "knowledgeCutoff": "2024-03",
-    "contextWindow": 256000,
-    "maxOutputTokens": 256000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 0.9,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-3.5-turbo-0125",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "GPT-3.5 Turbo 0125",
-    "family": "gpt",
-    "releaseDate": "2024-01-25",
-    "lastUpdated": "2024-01-25",
-    "knowledgeCutoff": "2021-08",
-    "contextWindow": 16384,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.5,
-      "output": 1.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-3.5-turbo-instruct",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "GPT-3.5 Turbo Instruct",
-    "family": "gpt",
-    "releaseDate": "2023-09-21",
-    "lastUpdated": "2023-09-21",
-    "knowledgeCutoff": "2021-08",
-    "contextWindow": 4096,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.5,
-      "output": 2,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "o3",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "o3",
-    "family": "o",
-    "releaseDate": "2025-04-16",
-    "lastUpdated": "2025-04-16",
-    "knowledgeCutoff": "2024-05",
-    "contextWindow": 200000,
-    "maxOutputTokens": 100000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2,
-      "output": 8,
-      "cacheRead": 0.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5-nano",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "GPT-5 Nano",
-    "family": "gpt-nano",
-    "releaseDate": "2025-08-07",
-    "lastUpdated": "2025-08-07",
-    "knowledgeCutoff": "2024-05-30",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.05,
-      "output": 0.4,
-      "cacheRead": 0.01,
+      "output": 0.3,
       "currency": "USD",
       "per": 1000000
     },
@@ -1578,20 +1317,20 @@
     ]
   },
   {
-    "id": "phi-4-mini",
+    "id": "cohere-command-a",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
-    "displayName": "Phi-4-mini",
-    "family": "phi",
-    "releaseDate": "2024-12-11",
-    "lastUpdated": "2024-12-11",
-    "knowledgeCutoff": "2023-10",
-    "contextWindow": 128000,
-    "maxOutputTokens": 4096,
+    "displayName": "Command A",
+    "family": "command-a",
+    "releaseDate": "2025-03-13",
+    "lastUpdated": "2025-03-13",
+    "knowledgeCutoff": "2024-06-01",
+    "contextWindow": 131072,
+    "maxOutputTokens": 8192,
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
@@ -1609,8 +1348,8 @@
       ]
     },
     "pricing": {
-      "input": 0.075,
-      "output": 0.3,
+      "input": 2.5,
+      "output": 10,
       "currency": "USD",
       "per": 1000000
     },
@@ -1624,14 +1363,14 @@
     ]
   },
   {
-    "id": "gpt-4-turbo",
+    "id": "gpt-4-turbo-vision",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
-    "displayName": "GPT-4 Turbo",
+    "displayName": "GPT-4 Turbo Vision",
     "family": "gpt",
     "releaseDate": "2023-11-06",
     "lastUpdated": "2024-04-09",
-    "knowledgeCutoff": "2023-12",
+    "knowledgeCutoff": "2023-11",
     "contextWindow": 128000,
     "maxOutputTokens": 4096,
     "capabilities": {
@@ -1671,27 +1410,27 @@
     ]
   },
   {
-    "id": "gpt-5.1",
+    "id": "phi-4-multimodal",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
-    "displayName": "GPT-5.1",
-    "family": "gpt",
-    "releaseDate": "2025-11-14",
-    "lastUpdated": "2025-11-14",
-    "knowledgeCutoff": "2024-09-30",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
+    "displayName": "Phi-4-multimodal",
+    "family": "phi",
+    "releaseDate": "2024-12-11",
+    "lastUpdated": "2024-12-11",
+    "knowledgeCutoff": "2023-10",
+    "contextWindow": 128000,
+    "maxOutputTokens": 4096,
     "capabilities": {
-      "tools": true,
+      "tools": false,
       "vision": true,
-      "reasoning": true,
+      "reasoning": false,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
-      "structured_output": true,
-      "open_weights": false
+      "structured_output": false,
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -1700,15 +1439,13 @@
         "audio"
       ],
       "output": [
-        "text",
-        "image",
-        "audio"
+        "text"
       ]
     },
     "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cacheRead": 0.125,
+      "input": 0.08,
+      "output": 0.32,
+      "inputAudio": 4,
       "currency": "USD",
       "per": 1000000
     },
@@ -1722,16 +1459,156 @@
     ]
   },
   {
-    "id": "gpt-5-mini",
+    "id": "text-embedding-3-large",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
-    "displayName": "GPT-5 Mini",
-    "family": "gpt-mini",
-    "releaseDate": "2025-08-07",
-    "lastUpdated": "2025-08-07",
-    "knowledgeCutoff": "2024-05-30",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
+    "displayName": "text-embedding-3-large",
+    "family": "text-embedding",
+    "releaseDate": "2024-01-25",
+    "lastUpdated": "2024-01-25",
+    "knowledgeCutoff": null,
+    "contextWindow": 8191,
+    "maxOutputTokens": 3072,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.13,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "o3-mini",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "o3-mini",
+    "family": "o-mini",
+    "releaseDate": "2024-12-20",
+    "lastUpdated": "2025-01-29",
+    "knowledgeCutoff": "2024-05",
+    "contextWindow": 200000,
+    "maxOutputTokens": 100000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.1,
+      "output": 4.4,
+      "cacheRead": 0.55,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "llama-4-scout-17b-16e-instruct",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "Llama 4 Scout 17B 16E Instruct",
+    "family": "llama",
+    "releaseDate": "2025-04-05",
+    "lastUpdated": "2025-04-05",
+    "knowledgeCutoff": "2024-08",
+    "contextWindow": 128000,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2,
+      "output": 0.78,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "o4-mini",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "o4-mini",
+    "family": "o-mini",
+    "releaseDate": "2025-04-16",
+    "lastUpdated": "2025-04-16",
+    "knowledgeCutoff": "2024-05",
+    "contextWindow": 200000,
+    "maxOutputTokens": 100000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -1754,9 +1631,55 @@
       ]
     },
     "pricing": {
-      "input": 0.25,
-      "output": 2,
-      "cacheRead": 0.03,
+      "input": 1.1,
+      "output": 4.4,
+      "cacheRead": 0.275,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "cohere-embed-v3-multilingual",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "Embed v3 Multilingual",
+    "family": "cohere-embed",
+    "releaseDate": "2023-11-07",
+    "lastUpdated": "2023-11-07",
+    "knowledgeCutoff": null,
+    "contextWindow": 512,
+    "maxOutputTokens": 1024,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0,
       "currency": "USD",
       "per": 1000000
     },
@@ -1770,10 +1693,200 @@
     ]
   },
   {
-    "id": "phi-4-reasoning-plus",
+    "id": "gpt-4.1",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
-    "displayName": "Phi-4-reasoning-plus",
+    "displayName": "GPT-4.1",
+    "family": "gpt",
+    "releaseDate": "2025-04-14",
+    "lastUpdated": "2025-04-14",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 1047576,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 8,
+      "cacheRead": 0.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "model-router",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "Model Router",
+    "family": "model-router",
+    "releaseDate": "2025-05-19",
+    "lastUpdated": "2025-11-18",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.14,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mistral-medium-2505",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "Mistral Medium 3",
+    "family": "mistral-medium",
+    "releaseDate": "2025-05-07",
+    "lastUpdated": "2025-05-07",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 128000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.4,
+      "output": 2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.2-codex",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "GPT-5.2 Codex",
+    "family": "gpt-codex",
+    "releaseDate": "2026-01-14",
+    "lastUpdated": "2026-01-14",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.75,
+      "output": 14,
+      "cacheRead": 0.175,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "phi-4-reasoning",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "Phi-4-reasoning",
     "family": "phi",
     "releaseDate": "2024-12-11",
     "lastUpdated": "2024-12-11",
@@ -1816,15 +1929,15 @@
     ]
   },
   {
-    "id": "gpt-5.3-codex",
+    "id": "gpt-5.5",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
-    "displayName": "GPT-5.3 Codex",
-    "family": "gpt-codex",
-    "releaseDate": "2026-02-24",
-    "lastUpdated": "2026-02-24",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 400000,
+    "displayName": "GPT-5.5",
+    "family": "gpt",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-12-01",
+    "contextWindow": 1050000,
     "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
@@ -1834,7 +1947,68 @@
       "json_mode": true,
       "system_prompt": true,
       "temperature": false,
-      "attachment": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 30,
+      "cacheRead": 0.5,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 10,
+          "output": 45,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 10,
+        "output": 45,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5-pro",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "GPT-5 Pro",
+    "family": "gpt-pro",
+    "releaseDate": "2025-10-06",
+    "lastUpdated": "2025-10-06",
+    "knowledgeCutoff": "2024-09-30",
+    "contextWindow": 400000,
+    "maxOutputTokens": 272000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": false
     },
@@ -1848,9 +2022,8 @@
       ]
     },
     "pricing": {
-      "input": 1.75,
-      "output": 14,
-      "cacheRead": 0.175,
+      "input": 15,
+      "output": 120,
       "currency": "USD",
       "per": 1000000
     },
@@ -1864,18 +2037,18 @@
     ]
   },
   {
-    "id": "deepseek-r1",
+    "id": "phi-4-mini-reasoning",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
-    "displayName": "DeepSeek-R1",
-    "family": "deepseek-thinking",
-    "releaseDate": "2025-01-20",
-    "lastUpdated": "2025-01-20",
-    "knowledgeCutoff": "2024-07",
-    "contextWindow": 163840,
-    "maxOutputTokens": 163840,
+    "displayName": "Phi-4-mini-reasoning",
+    "family": "phi",
+    "releaseDate": "2024-12-11",
+    "lastUpdated": "2024-12-11",
+    "knowledgeCutoff": "2023-10",
+    "contextWindow": 128000,
+    "maxOutputTokens": 4096,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
@@ -1895,8 +2068,287 @@
       ]
     },
     "pricing": {
-      "input": 1.35,
-      "output": 5.4,
+      "input": 0.075,
+      "output": 0.3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "text-embedding-3-small",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "text-embedding-3-small",
+    "family": "text-embedding",
+    "releaseDate": "2024-01-25",
+    "lastUpdated": "2024-01-25",
+    "knowledgeCutoff": null,
+    "contextWindow": 8191,
+    "maxOutputTokens": 1536,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.02,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "llama-4-maverick-17b-128e-instruct-fp8",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "Llama 4 Maverick 17B 128E Instruct FP8",
+    "family": "llama",
+    "releaseDate": "2025-04-05",
+    "lastUpdated": "2025-04-05",
+    "knowledgeCutoff": "2024-08",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.25,
+      "output": 1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "cohere-embed-v3-english",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "Embed v3 English",
+    "family": "cohere-embed",
+    "releaseDate": "2023-11-07",
+    "lastUpdated": "2023-11-07",
+    "knowledgeCutoff": null,
+    "contextWindow": 512,
+    "maxOutputTokens": 1024,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "o3",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "o3",
+    "family": "o",
+    "releaseDate": "2025-04-16",
+    "lastUpdated": "2025-04-16",
+    "knowledgeCutoff": "2024-05",
+    "contextWindow": 200000,
+    "maxOutputTokens": 100000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 8,
+      "cacheRead": 0.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "phi-4",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "Phi-4",
+    "family": "phi",
+    "releaseDate": "2024-12-11",
+    "lastUpdated": "2024-12-11",
+    "knowledgeCutoff": "2023-10",
+    "contextWindow": 128000,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.125,
+      "output": 0.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-3.5-turbo-0125",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "GPT-3.5 Turbo 0125",
+    "family": "gpt",
+    "releaseDate": "2024-01-25",
+    "lastUpdated": "2024-01-25",
+    "knowledgeCutoff": "2021-08",
+    "contextWindow": 16384,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.5,
+      "output": 1.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -2006,15 +2458,15 @@
     ]
   },
   {
-    "id": "mistral-small-2503",
+    "id": "gpt-4.1-nano",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
-    "displayName": "Mistral Small 3.1",
-    "family": "mistral-small",
-    "releaseDate": "2025-03-01",
-    "lastUpdated": "2025-03-01",
-    "knowledgeCutoff": "2024-09",
-    "contextWindow": 128000,
+    "displayName": "GPT-4.1 nano",
+    "family": "gpt-nano",
+    "releaseDate": "2025-04-14",
+    "lastUpdated": "2025-04-14",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 1047576,
     "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
@@ -2039,11 +2491,12 @@
     },
     "pricing": {
       "input": 0.1,
-      "output": 0.3,
+      "output": 0.4,
+      "cacheRead": 0.025,
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2053,153 +2506,13 @@
     ]
   },
   {
-    "id": "cohere-embed-v-4-0",
+    "id": "gpt-5.3-codex",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
-    "displayName": "Embed v4",
-    "family": "cohere-embed",
-    "releaseDate": "2025-04-15",
-    "lastUpdated": "2025-04-15",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 1536,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.12,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-v3.2",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "DeepSeek-V3.2",
-    "family": "deepseek",
-    "releaseDate": "2025-12-01",
-    "lastUpdated": "2025-12-01",
-    "knowledgeCutoff": "2024-07",
-    "contextWindow": 128000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.58,
-      "output": 1.68,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5-pro",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "GPT-5 Pro",
-    "family": "gpt-pro",
-    "releaseDate": "2025-10-06",
-    "lastUpdated": "2025-10-06",
-    "knowledgeCutoff": "2024-09-30",
-    "contextWindow": 400000,
-    "maxOutputTokens": 272000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 15,
-      "output": 120,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5.2-codex",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "GPT-5.2 Codex",
+    "displayName": "GPT-5.3 Codex",
     "family": "gpt-codex",
-    "releaseDate": "2026-01-14",
-    "lastUpdated": "2026-01-14",
+    "releaseDate": "2026-02-24",
+    "lastUpdated": "2026-02-24",
     "knowledgeCutoff": "2025-08-31",
     "contextWindow": 400000,
     "maxOutputTokens": 128000,
@@ -2241,20 +2554,20 @@
     ]
   },
   {
-    "id": "phi-4-mini-reasoning",
+    "id": "ministral-3b",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
-    "displayName": "Phi-4-mini-reasoning",
-    "family": "phi",
-    "releaseDate": "2024-12-11",
-    "lastUpdated": "2024-12-11",
-    "knowledgeCutoff": "2023-10",
+    "displayName": "Ministral 3B",
+    "family": "ministral",
+    "releaseDate": "2024-10-22",
+    "lastUpdated": "2024-10-22",
+    "knowledgeCutoff": "2024-03",
     "contextWindow": 128000,
-    "maxOutputTokens": 4096,
+    "maxOutputTokens": 8192,
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": true,
+      "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
@@ -2272,8 +2585,8 @@
       ]
     },
     "pricing": {
-      "input": 0.075,
-      "output": 0.3,
+      "input": 0.04,
+      "output": 0.04,
       "currency": "USD",
       "per": 1000000
     },
@@ -2287,24 +2600,117 @@
     ]
   },
   {
-    "id": "gpt-4-turbo-vision",
+    "id": "text-embedding-ada-002",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
-    "displayName": "GPT-4 Turbo Vision",
-    "family": "gpt",
-    "releaseDate": "2023-11-06",
-    "lastUpdated": "2024-04-09",
-    "knowledgeCutoff": "2023-11",
-    "contextWindow": 128000,
-    "maxOutputTokens": 4096,
+    "displayName": "text-embedding-ada-002",
+    "family": "text-embedding",
+    "releaseDate": "2022-12-15",
+    "lastUpdated": "2022-12-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 8192,
+    "maxOutputTokens": 1536,
     "capabilities": {
-      "tools": true,
-      "vision": true,
+      "tools": false,
+      "vision": false,
       "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "codex-mini",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "Codex Mini",
+    "family": "gpt-codex-mini",
+    "releaseDate": "2025-05-16",
+    "lastUpdated": "2025-05-16",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 200000,
+    "maxOutputTokens": 100000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.5,
+      "output": 6,
+      "cacheRead": 0.375,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5-mini",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "GPT-5 Mini",
+    "family": "gpt-mini",
+    "releaseDate": "2025-08-07",
+    "lastUpdated": "2025-08-07",
+    "knowledgeCutoff": "2024-05-30",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
       "attachment": true,
       "structured_output": false,
       "open_weights": false
@@ -2319,54 +2725,9 @@
       ]
     },
     "pricing": {
-      "input": 10,
-      "output": 30,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "llama-3.3-70b-instruct",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "Llama-3.3-70B-Instruct",
-    "family": "llama",
-    "releaseDate": "2024-12-06",
-    "lastUpdated": "2024-12-06",
-    "knowledgeCutoff": "2023-12",
-    "contextWindow": 128000,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.71,
-      "output": 0.71,
+      "input": 0.25,
+      "output": 2,
+      "cacheRead": 0.03,
       "currency": "USD",
       "per": 1000000
     },
@@ -2428,106 +2789,13 @@
     ]
   },
   {
-    "id": "phi-4-reasoning",
+    "id": "gpt-5.1-codex-mini",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
-    "displayName": "Phi-4-reasoning",
-    "family": "phi",
-    "releaseDate": "2024-12-11",
-    "lastUpdated": "2024-12-11",
-    "knowledgeCutoff": "2023-10",
-    "contextWindow": 32000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.125,
-      "output": 0.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "mistral-medium-2505",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "Mistral Medium 3",
-    "family": "mistral-medium",
-    "releaseDate": "2025-05-07",
-    "lastUpdated": "2025-05-07",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 128000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.4,
-      "output": 2,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "GPT-5",
-    "family": "gpt",
-    "releaseDate": "2025-08-07",
-    "lastUpdated": "2025-08-07",
+    "displayName": "GPT-5.1 Codex Mini",
+    "family": "gpt-codex",
+    "releaseDate": "2025-11-14",
+    "lastUpdated": "2025-11-14",
     "knowledgeCutoff": "2024-09-30",
     "contextWindow": 400000,
     "maxOutputTokens": 128000,
@@ -2536,60 +2804,12 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": false,
-      "attachment": true,
-      "structured_output": false,
+      "attachment": false,
+      "structured_output": true,
       "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cacheRead": 0.13,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "llama-4-maverick-17b-128e-instruct-fp8",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "Llama 4 Maverick 17B 128E Instruct FP8",
-    "family": "llama",
-    "releaseDate": "2025-04-05",
-    "lastUpdated": "2025-04-05",
-    "knowledgeCutoff": "2024-08",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -2602,7 +2822,8 @@
     },
     "pricing": {
       "input": 0.25,
-      "output": 1,
+      "output": 2,
+      "cacheRead": 0.025,
       "currency": "USD",
       "per": 1000000
     },
@@ -2616,305 +2837,10 @@
     ]
   },
   {
-    "id": "gpt-4o-mini",
+    "id": "deepseek-v3.2",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
-    "displayName": "GPT-4o mini",
-    "family": "gpt-mini",
-    "releaseDate": "2024-07-18",
-    "lastUpdated": "2024-07-18",
-    "knowledgeCutoff": "2023-09",
-    "contextWindow": 128000,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.15,
-      "output": 0.6,
-      "cacheRead": 0.075,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5.5",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "GPT-5.5",
-    "family": "gpt",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
-    "knowledgeCutoff": "2025-12-01",
-    "contextWindow": 1050000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 5,
-      "output": 30,
-      "cacheRead": 0.5,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 10,
-          "output": 45,
-          "contextThreshold": 272000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 10,
-        "output": 45,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "ministral-3b",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "Ministral 3B",
-    "family": "ministral",
-    "releaseDate": "2024-10-22",
-    "lastUpdated": "2024-10-22",
-    "knowledgeCutoff": "2024-03",
-    "contextWindow": 128000,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.04,
-      "output": 0.04,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "o3-mini",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "o3-mini",
-    "family": "o-mini",
-    "releaseDate": "2024-12-20",
-    "lastUpdated": "2025-01-29",
-    "knowledgeCutoff": "2024-05",
-    "contextWindow": 200000,
-    "maxOutputTokens": 100000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.1,
-      "output": 4.4,
-      "cacheRead": 0.55,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "model-router",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "Model Router",
-    "family": "model-router",
-    "releaseDate": "2025-05-19",
-    "lastUpdated": "2025-11-18",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.14,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "phi-4",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "Phi-4",
-    "family": "phi",
-    "releaseDate": "2024-12-11",
-    "lastUpdated": "2024-12-11",
-    "knowledgeCutoff": "2023-10",
-    "contextWindow": 128000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.125,
-      "output": 0.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-v3.2-speciale",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "DeepSeek-V3.2-Speciale",
+    "displayName": "DeepSeek-V3.2",
     "family": "deepseek",
     "releaseDate": "2025-12-01",
     "lastUpdated": "2025-12-01",
@@ -2922,7 +2848,7 @@
     "contextWindow": 128000,
     "maxOutputTokens": 128000,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
@@ -3003,16 +2929,249 @@
     ]
   },
   {
-    "id": "gpt-4.1-nano",
+    "id": "cohere-embed-v-4-0",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
-    "displayName": "GPT-4.1 nano",
-    "family": "gpt-nano",
-    "releaseDate": "2025-04-14",
-    "lastUpdated": "2025-04-14",
-    "knowledgeCutoff": "2024-04",
-    "contextWindow": 1047576,
+    "displayName": "Embed v4",
+    "family": "cohere-embed",
+    "releaseDate": "2025-04-15",
+    "lastUpdated": "2025-04-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 1536,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.12,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "GPT-5",
+    "family": "gpt",
+    "releaseDate": "2025-08-07",
+    "lastUpdated": "2025-08-07",
+    "knowledgeCutoff": "2024-09-30",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 10,
+      "cacheRead": 0.13,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "llama-3.3-70b-instruct",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "Llama-3.3-70B-Instruct",
+    "family": "llama",
+    "releaseDate": "2024-12-06",
+    "lastUpdated": "2024-12-06",
+    "knowledgeCutoff": "2023-12",
+    "contextWindow": 128000,
     "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.71,
+      "output": 0.71,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-3.5-turbo-instruct",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "GPT-3.5 Turbo Instruct",
+    "family": "gpt",
+    "releaseDate": "2023-09-21",
+    "lastUpdated": "2023-09-21",
+    "knowledgeCutoff": "2021-08",
+    "contextWindow": 4096,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.5,
+      "output": 2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "phi-4-mini",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "Phi-4-mini",
+    "family": "phi",
+    "releaseDate": "2024-12-11",
+    "lastUpdated": "2024-12-11",
+    "knowledgeCutoff": "2023-10",
+    "contextWindow": 128000,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.075,
+      "output": 0.3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-4-turbo",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "GPT-4 Turbo",
+    "family": "gpt",
+    "releaseDate": "2023-11-06",
+    "lastUpdated": "2024-04-09",
+    "knowledgeCutoff": "2023-12",
+    "contextWindow": 128000,
+    "maxOutputTokens": 4096,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -3035,9 +3194,8 @@
       ]
     },
     "pricing": {
-      "input": 0.1,
-      "output": 0.4,
-      "cacheRead": 0.025,
+      "input": 10,
+      "output": 30,
       "currency": "USD",
       "per": 1000000
     },
@@ -3051,18 +3209,114 @@
     ]
   },
   {
-    "id": "text-embedding-ada-002",
+    "id": "gpt-4o-mini",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
-    "displayName": "text-embedding-ada-002",
-    "family": "text-embedding",
-    "releaseDate": "2022-12-15",
-    "lastUpdated": "2022-12-15",
-    "knowledgeCutoff": null,
-    "contextWindow": 8192,
-    "maxOutputTokens": 1536,
+    "displayName": "GPT-4o mini",
+    "family": "gpt-mini",
+    "releaseDate": "2024-07-18",
+    "lastUpdated": "2024-07-18",
+    "knowledgeCutoff": "2023-09",
+    "contextWindow": 128000,
+    "maxOutputTokens": 16384,
     "capabilities": {
-      "tools": false,
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.6,
+      "cacheRead": 0.075,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5-nano",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "GPT-5 Nano",
+    "family": "gpt-nano",
+    "releaseDate": "2025-08-07",
+    "lastUpdated": "2025-08-07",
+    "knowledgeCutoff": "2024-05-30",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.05,
+      "output": 0.4,
+      "cacheRead": 0.01,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "codestral-2501",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "Codestral 25.01",
+    "family": "codestral",
+    "releaseDate": "2025-01-01",
+    "lastUpdated": "2025-01-01",
+    "knowledgeCutoff": "2024-03",
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
       "vision": false,
       "reasoning": false,
       "streaming": true,
@@ -3082,8 +3336,8 @@
       ]
     },
     "pricing": {
-      "input": 0.1,
-      "output": 0,
+      "input": 0.3,
+      "output": 0.9,
       "currency": "USD",
       "per": 1000000
     },
@@ -3097,79 +3351,30 @@
     ]
   },
   {
-    "id": "phi-4-multimodal",
+    "id": "deepseek-r1",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
-    "displayName": "Phi-4-multimodal",
-    "family": "phi",
-    "releaseDate": "2024-12-11",
-    "lastUpdated": "2024-12-11",
-    "knowledgeCutoff": "2023-10",
-    "contextWindow": 128000,
-    "maxOutputTokens": 4096,
+    "displayName": "DeepSeek-R1",
+    "family": "deepseek-thinking",
+    "releaseDate": "2025-01-20",
+    "lastUpdated": "2025-01-20",
+    "knowledgeCutoff": "2024-07",
+    "contextWindow": 163840,
+    "maxOutputTokens": 163840,
     "capabilities": {
       "tools": false,
-      "vision": true,
-      "reasoning": false,
+      "vision": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "audio"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.08,
-      "output": 0.32,
-      "inputAudio": 4,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "codex-mini",
-    "provider": "azure-cognitive-services",
-    "providerName": "Azure Cognitive Services",
-    "displayName": "Codex Mini",
-    "family": "gpt-codex-mini",
-    "releaseDate": "2025-05-16",
-    "lastUpdated": "2025-05-16",
-    "knowledgeCutoff": "2024-04",
-    "contextWindow": 200000,
-    "maxOutputTokens": 100000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
         "text"
       ],
       "output": [
@@ -3177,9 +3382,8 @@
       ]
     },
     "pricing": {
-      "input": 1.5,
-      "output": 6,
-      "cacheRead": 0.375,
+      "input": 1.35,
+      "output": 5.4,
       "currency": "USD",
       "per": 1000000
     },
@@ -3241,45 +3445,43 @@
     ]
   },
   {
-    "id": "gpt-4.1-mini",
+    "id": "deepseek-v3.2-speciale",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
-    "displayName": "GPT-4.1 mini",
-    "family": "gpt-mini",
-    "releaseDate": "2025-04-14",
-    "lastUpdated": "2025-04-14",
-    "knowledgeCutoff": "2024-04",
-    "contextWindow": 1047576,
-    "maxOutputTokens": 32768,
+    "displayName": "DeepSeek-V3.2-Speciale",
+    "family": "deepseek",
+    "releaseDate": "2025-12-01",
+    "lastUpdated": "2025-12-01",
+    "knowledgeCutoff": "2024-07",
+    "contextWindow": 128000,
+    "maxOutputTokens": 128000,
     "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
+      "tools": false,
+      "vision": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": false,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.4,
-      "output": 1.6,
-      "cacheRead": 0.1,
+      "input": 0.58,
+      "output": 1.68,
       "currency": "USD",
       "per": 1000000
     },
-    "status": "deprecated",
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -3289,41 +3491,39 @@
     ]
   },
   {
-    "id": "gpt-5.1-codex-mini",
+    "id": "phi-4-reasoning-plus",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
-    "displayName": "GPT-5.1 Codex Mini",
-    "family": "gpt-codex",
-    "releaseDate": "2025-11-14",
-    "lastUpdated": "2025-11-14",
-    "knowledgeCutoff": "2024-09-30",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
+    "displayName": "Phi-4-reasoning-plus",
+    "family": "phi",
+    "releaseDate": "2024-12-11",
+    "lastUpdated": "2024-12-11",
+    "knowledgeCutoff": "2023-10",
+    "contextWindow": 32000,
+    "maxOutputTokens": 4096,
     "capabilities": {
-      "tools": true,
-      "vision": true,
+      "tools": false,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": false,
-      "structured_output": true,
-      "open_weights": false
+      "structured_output": false,
+      "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.25,
-      "output": 2,
-      "cacheRead": 0.025,
+      "input": 0.125,
+      "output": 0.5,
       "currency": "USD",
       "per": 1000000
     },

@@ -1,5 +1,46 @@
 [
   {
+    "id": "whisper-large-v3",
+    "provider": "groq",
+    "providerName": "Groq",
+    "displayName": "Whisper",
+    "family": "whisper",
+    "releaseDate": "2023-09-01",
+    "lastUpdated": "2025-09-05",
+    "knowledgeCutoff": null,
+    "contextWindow": 0,
+    "maxOutputTokens": 0,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "llama-3.3-70b-versatile",
     "provider": "groq",
     "providerName": "Groq",
@@ -33,6 +74,52 @@
     "pricing": {
       "input": 0.59,
       "output": 0.79,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "allam-2-7b",
+    "provider": "groq",
+    "providerName": "Groq",
+    "displayName": "ALLaM-2-7b",
+    "family": null,
+    "releaseDate": "2025-01-23",
+    "lastUpdated": "2025-01-23",
+    "knowledgeCutoff": null,
+    "contextWindow": 4096,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
       "currency": "USD",
       "per": 1000000
     },
@@ -92,93 +179,6 @@
     ]
   },
   {
-    "id": "whisper-large-v3",
-    "provider": "groq",
-    "providerName": "Groq",
-    "displayName": "Whisper",
-    "family": "whisper",
-    "releaseDate": "2023-09-01",
-    "lastUpdated": "2025-09-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 0,
-    "maxOutputTokens": 0,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "audio"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "allam-2-7b",
-    "provider": "groq",
-    "providerName": "Groq",
-    "displayName": "ALLaM-2-7b",
-    "family": null,
-    "releaseDate": "2025-01-23",
-    "lastUpdated": "2025-01-23",
-    "knowledgeCutoff": null,
-    "contextWindow": 4096,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "whisper-large-v3-turbo",
     "provider": "groq",
     "providerName": "Groq",
@@ -210,6 +210,146 @@
       ]
     },
     "pricing": null,
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "providerName": "Groq",
+    "displayName": "GPT OSS 120B",
+    "family": "gpt-oss",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-10-21",
+    "knowledgeCutoff": null,
+    "contextWindow": 131072,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.6,
+      "cacheRead": 0.075,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "openai/gpt-oss-safeguard-20b",
+    "provider": "groq",
+    "providerName": "Groq",
+    "displayName": "Safety GPT OSS 20B",
+    "family": "gpt-oss",
+    "releaseDate": "2025-10-29",
+    "lastUpdated": "2026-06-29",
+    "knowledgeCutoff": null,
+    "contextWindow": 131072,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.075,
+      "output": 0.3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "beta",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "openai/gpt-oss-20b",
+    "provider": "groq",
+    "providerName": "Groq",
+    "displayName": "GPT OSS 20B",
+    "family": "gpt-oss",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-09-25",
+    "knowledgeCutoff": null,
+    "contextWindow": 131072,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.075,
+      "output": 0.3,
+      "cacheRead": 0.0375,
+      "currency": "USD",
+      "per": 1000000
+    },
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
@@ -268,16 +408,16 @@
     ]
   },
   {
-    "id": "canopylabs/orpheus-arabic-saudi",
+    "id": "meta-llama/llama-prompt-guard-2-86m",
     "provider": "groq",
     "providerName": "Groq",
-    "displayName": "Canopy Labs Orpheus Arabic Saudi",
-    "family": "canopylabs",
-    "releaseDate": "2025-12-16",
-    "lastUpdated": "2025-12-16",
+    "displayName": "Prompt Guard 2 86M",
+    "family": "llama",
+    "releaseDate": "2025-05-29",
+    "lastUpdated": "2025-05-29",
     "knowledgeCutoff": null,
-    "contextWindow": 4000,
-    "maxOutputTokens": 50000,
+    "contextWindow": 512,
+    "maxOutputTokens": 512,
     "capabilities": {
       "tools": false,
       "vision": false,
@@ -288,17 +428,22 @@
       "temperature": false,
       "attachment": false,
       "structured_output": false,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
         "text"
       ],
       "output": [
-        "audio"
+        "text"
       ]
     },
-    "pricing": null,
+    "pricing": {
+      "input": 0.04,
+      "output": 0.04,
+      "currency": "USD",
+      "per": 1000000
+    },
     "status": "beta",
     "deprecationDate": null,
     "replacedBy": null,
@@ -309,16 +454,16 @@
     ]
   },
   {
-    "id": "canopylabs/orpheus-v1-english",
+    "id": "meta-llama/llama-prompt-guard-2-22m",
     "provider": "groq",
     "providerName": "Groq",
-    "displayName": "Canopy Labs Orpheus V1 English",
-    "family": "canopylabs",
-    "releaseDate": "2025-12-19",
-    "lastUpdated": "2025-12-19",
+    "displayName": "Llama Prompt Guard 2 22M",
+    "family": "llama",
+    "releaseDate": "2025-05-29",
+    "lastUpdated": "2025-05-29",
     "knowledgeCutoff": null,
-    "contextWindow": 4000,
-    "maxOutputTokens": 50000,
+    "contextWindow": 512,
+    "maxOutputTokens": 512,
     "capabilities": {
       "tools": false,
       "vision": false,
@@ -329,17 +474,22 @@
       "temperature": false,
       "attachment": false,
       "structured_output": false,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
         "text"
       ],
       "output": [
-        "audio"
+        "text"
       ]
     },
-    "pricing": null,
+    "pricing": {
+      "input": 0.03,
+      "output": 0.03,
+      "currency": "USD",
+      "per": 1000000
+    },
     "status": "beta",
     "deprecationDate": null,
     "replacedBy": null,
@@ -432,156 +582,16 @@
     ]
   },
   {
-    "id": "openai/gpt-oss-20b",
+    "id": "canopylabs/orpheus-arabic-saudi",
     "provider": "groq",
     "providerName": "Groq",
-    "displayName": "GPT OSS 20B",
-    "family": "gpt-oss",
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-09-25",
+    "displayName": "Canopy Labs Orpheus Arabic Saudi",
+    "family": "canopylabs",
+    "releaseDate": "2025-12-16",
+    "lastUpdated": "2025-12-16",
     "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.075,
-      "output": 0.3,
-      "cacheRead": 0.0375,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "openai/gpt-oss-safeguard-20b",
-    "provider": "groq",
-    "providerName": "Groq",
-    "displayName": "Safety GPT OSS 20B",
-    "family": "gpt-oss",
-    "releaseDate": "2025-10-29",
-    "lastUpdated": "2026-06-29",
-    "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.075,
-      "output": 0.3,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "beta",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "openai/gpt-oss-120b",
-    "provider": "groq",
-    "providerName": "Groq",
-    "displayName": "GPT OSS 120B",
-    "family": "gpt-oss",
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-10-21",
-    "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.15,
-      "output": 0.6,
-      "cacheRead": 0.075,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "meta-llama/llama-prompt-guard-2-22m",
-    "provider": "groq",
-    "providerName": "Groq",
-    "displayName": "Llama Prompt Guard 2 22M",
-    "family": "llama",
-    "releaseDate": "2025-05-29",
-    "lastUpdated": "2025-05-29",
-    "knowledgeCutoff": null,
-    "contextWindow": 512,
-    "maxOutputTokens": 512,
+    "contextWindow": 4000,
+    "maxOutputTokens": 50000,
     "capabilities": {
       "tools": false,
       "vision": false,
@@ -592,22 +602,17 @@
       "temperature": false,
       "attachment": false,
       "structured_output": false,
-      "open_weights": true
+      "open_weights": false
     },
     "modalities": {
       "input": [
         "text"
       ],
       "output": [
-        "text"
+        "audio"
       ]
     },
-    "pricing": {
-      "input": 0.03,
-      "output": 0.03,
-      "currency": "USD",
-      "per": 1000000
-    },
+    "pricing": null,
     "status": "beta",
     "deprecationDate": null,
     "replacedBy": null,
@@ -618,16 +623,16 @@
     ]
   },
   {
-    "id": "meta-llama/llama-prompt-guard-2-86m",
+    "id": "canopylabs/orpheus-v1-english",
     "provider": "groq",
     "providerName": "Groq",
-    "displayName": "Prompt Guard 2 86M",
-    "family": "llama",
-    "releaseDate": "2025-05-29",
-    "lastUpdated": "2025-05-29",
+    "displayName": "Canopy Labs Orpheus V1 English",
+    "family": "canopylabs",
+    "releaseDate": "2025-12-19",
+    "lastUpdated": "2025-12-19",
     "knowledgeCutoff": null,
-    "contextWindow": 512,
-    "maxOutputTokens": 512,
+    "contextWindow": 4000,
+    "maxOutputTokens": 50000,
     "capabilities": {
       "tools": false,
       "vision": false,
@@ -638,22 +643,17 @@
       "temperature": false,
       "attachment": false,
       "structured_output": false,
-      "open_weights": true
+      "open_weights": false
     },
     "modalities": {
       "input": [
         "text"
       ],
       "output": [
-        "text"
+        "audio"
       ]
     },
-    "pricing": {
-      "input": 0.04,
-      "output": 0.04,
-      "currency": "USD",
-      "per": 1000000
-    },
+    "pricing": null,
     "status": "beta",
     "deprecationDate": null,
     "replacedBy": null,

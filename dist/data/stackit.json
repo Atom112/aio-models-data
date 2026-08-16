@@ -1,23 +1,23 @@
 [
   {
-    "id": "intfloat/e5-mistral-7b-instruct",
+    "id": "cortecs/Llama-3.3-70B-Instruct-FP8-Dynamic",
     "provider": "stackit",
     "providerName": "STACKIT",
-    "displayName": "E5 Mistral 7B",
-    "family": "mistral",
-    "releaseDate": "2023-12-11",
-    "lastUpdated": "2023-12-11",
+    "displayName": "Llama 3.3 70B",
+    "family": "llama",
+    "releaseDate": "2024-12-05",
+    "lastUpdated": "2024-12-05",
     "knowledgeCutoff": null,
-    "contextWindow": 4096,
+    "contextWindow": 128000,
     "maxOutputTokens": 4096,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
       "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": false,
       "structured_output": false,
       "open_weights": true
@@ -31,8 +31,8 @@
       ]
     },
     "pricing": {
-      "input": 0.02,
-      "output": 0.02,
+      "input": 0.53,
+      "output": 0.76,
       "currency": "USD",
       "per": 1000000
     },
@@ -93,40 +93,131 @@
     ]
   },
   {
-    "id": "Qwen/Qwen3-VL-Embedding-8B",
+    "id": "intfloat/e5-mistral-7b-instruct",
     "provider": "stackit",
     "providerName": "STACKIT",
-    "displayName": "Qwen3-VL Embedding 8B",
-    "family": "qwen",
-    "releaseDate": "2026-02-05",
-    "lastUpdated": "2026-02-05",
+    "displayName": "E5 Mistral 7B",
+    "family": "mistral",
+    "releaseDate": "2023-12-11",
+    "lastUpdated": "2023-12-11",
     "knowledgeCutoff": null,
-    "contextWindow": 32000,
+    "contextWindow": 4096,
     "maxOutputTokens": 4096,
     "capabilities": {
       "tools": false,
-      "vision": true,
+      "vision": false,
       "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": false,
-      "attachment": true,
+      "attachment": false,
       "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.09,
-      "output": 0.09,
+      "input": 0.02,
+      "output": 0.02,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "openai/gpt-oss-120b",
+    "provider": "stackit",
+    "providerName": "STACKIT",
+    "displayName": "GPT OSS 120B",
+    "family": "gpt-oss",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": null,
+    "contextWindow": 131000,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.53,
+      "output": 0.76,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "openai/gpt-oss-20b",
+    "provider": "stackit",
+    "providerName": "STACKIT",
+    "displayName": "GPT OSS 20B",
+    "family": "gpt-oss",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": null,
+    "contextWindow": 131072,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.18,
+      "output": 0.29,
       "currency": "USD",
       "per": 1000000
     },
@@ -233,131 +324,40 @@
     ]
   },
   {
-    "id": "openai/gpt-oss-20b",
+    "id": "Qwen/Qwen3-VL-Embedding-8B",
     "provider": "stackit",
     "providerName": "STACKIT",
-    "displayName": "GPT OSS 20B",
-    "family": "gpt-oss",
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
+    "displayName": "Qwen3-VL Embedding 8B",
+    "family": "qwen",
+    "releaseDate": "2026-02-05",
+    "lastUpdated": "2026-02-05",
     "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.18,
-      "output": 0.29,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "openai/gpt-oss-120b",
-    "provider": "stackit",
-    "providerName": "STACKIT",
-    "displayName": "GPT OSS 120B",
-    "family": "gpt-oss",
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 131000,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.53,
-      "output": 0.76,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "cortecs/Llama-3.3-70B-Instruct-FP8-Dynamic",
-    "provider": "stackit",
-    "providerName": "STACKIT",
-    "displayName": "Llama 3.3 70B",
-    "family": "llama",
-    "releaseDate": "2024-12-05",
-    "lastUpdated": "2024-12-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
+    "contextWindow": 32000,
     "maxOutputTokens": 4096,
     "capabilities": {
-      "tools": true,
-      "vision": false,
+      "tools": false,
+      "vision": true,
       "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
+      "temperature": false,
+      "attachment": true,
       "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.53,
-      "output": 0.76,
+      "input": 0.09,
+      "output": 0.09,
       "currency": "USD",
       "per": 1000000
     },
