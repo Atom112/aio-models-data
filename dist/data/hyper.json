@@ -32,9 +32,9 @@
       ]
     },
     "pricing": {
-      "input": 0.95,
-      "output": 4,
-      "cacheRead": 0.19,
+      "input": 1.03436,
+      "output": 4.3552,
+      "cacheRead": 0.206872,
       "currency": "USD",
       "per": 1000000
     },
@@ -79,9 +79,9 @@
       ]
     },
     "pricing": {
-      "input": 0.124,
-      "output": 0.42,
-      "cacheWrite": 0.062,
+      "input": 0.11,
+      "output": 0.408,
+      "cacheWrite": 0.055,
       "currency": "USD",
       "per": 1000000
     },
@@ -151,7 +151,7 @@
     "lastUpdated": "2026-07-30",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 16000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -268,9 +268,9 @@
       ]
     },
     "pricing": {
-      "input": 0.608,
-      "output": 0.838,
-      "cacheWrite": 0.304,
+      "input": 0.638,
+      "output": 0.768,
+      "cacheWrite": 0.319,
       "currency": "USD",
       "per": 1000000
     },
@@ -304,7 +304,7 @@
       "temperature": true,
       "attachment": false,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -426,6 +426,53 @@
     ]
   },
   {
+    "id": "glm-5",
+    "provider": "hyper",
+    "providerName": "Charm Hyper",
+    "displayName": "GLM-5",
+    "family": "glm",
+    "releaseDate": "2026-04-13",
+    "lastUpdated": "2026-08-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 202752,
+    "maxOutputTokens": 20275,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.91,
+      "output": 2.934,
+      "cacheWrite": 0.455,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "minimax-m3",
     "provider": "hyper",
     "providerName": "Charm Hyper",
@@ -505,9 +552,9 @@
       ]
     },
     "pricing": {
-      "input": 0.426,
-      "output": 1.62,
-      "cacheWrite": 0.213,
+      "input": 0.408,
+      "output": 1.512,
+      "cacheWrite": 0.204,
       "currency": "USD",
       "per": 1000000
     },
@@ -648,9 +695,9 @@
       ]
     },
     "pricing": {
-      "input": 0.16332,
-      "output": 0.65328,
-      "cacheRead": 0.015243,
+      "input": 0.188,
+      "output": 0.7,
+      "cacheWrite": 0.094,
       "currency": "USD",
       "per": 1000000
     },
@@ -790,9 +837,9 @@
       ]
     },
     "pricing": {
-      "input": 0.558,
-      "output": 2.94,
-      "cacheWrite": 0.279,
+      "input": 0.5444,
+      "output": 2.855,
+      "cacheWrite": 0.2722,
       "currency": "USD",
       "per": 1000000
     },
@@ -814,32 +861,33 @@
     "releaseDate": "2026-06-30",
     "lastUpdated": "2026-07-22",
     "knowledgeCutoff": null,
-    "contextWindow": 1000000,
+    "contextWindow": 1048576,
     "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 1.4,
-      "output": 4.4,
-      "cacheRead": 0.28,
+      "input": 1.52432,
+      "output": 4.79072,
+      "cacheRead": 0.152432,
       "currency": "USD",
       "per": 1000000
     },
@@ -1004,7 +1052,7 @@
     "releaseDate": "2026-06-04",
     "lastUpdated": "2026-07-22",
     "knowledgeCutoff": null,
-    "contextWindow": 202800,
+    "contextWindow": 202750,
     "maxOutputTokens": 3276,
     "capabilities": {
       "tools": true,
@@ -1027,9 +1075,9 @@
       ]
     },
     "pricing": {
-      "input": 1.52432,
-      "output": 4.79072,
-      "cacheRead": 0.283088,
+      "input": 1.36,
+      "output": 4.4,
+      "cacheWrite": 0.68,
       "currency": "USD",
       "per": 1000000
     },
@@ -1074,9 +1122,9 @@
       ]
     },
     "pricing": {
-      "input": 0.152432,
-      "output": 0.304864,
-      "cacheRead": 0.032664,
+      "input": 0.479072,
+      "output": 1.437216,
+      "cacheRead": 0.015243,
       "currency": "USD",
       "per": 1000000
     },
@@ -1171,9 +1219,9 @@
       ]
     },
     "pricing": {
-      "input": 0.95,
-      "output": 4,
-      "cacheWrite": 0.16,
+      "input": 1.03436,
+      "output": 4.3552,
+      "cacheRead": 0.174208,
       "currency": "USD",
       "per": 1000000
     },

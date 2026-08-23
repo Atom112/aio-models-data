@@ -147,6 +147,7 @@
     "pricing": {
       "input": 2,
       "output": 120,
+      "cacheRead": 0.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -165,9 +166,9 @@
     "providerName": "Vertex",
     "displayName": "Gemini Flash-Lite Latest",
     "family": "gemini-flash-lite",
-    "releaseDate": "2026-05-07",
-    "lastUpdated": "2026-05-07",
-    "knowledgeCutoff": "2025-01",
+    "releaseDate": "2026-07-21",
+    "lastUpdated": "2026-07-21",
+    "knowledgeCutoff": "2026-03",
     "contextWindow": 1048576,
     "maxOutputTokens": 65536,
     "capabilities": {
@@ -824,9 +825,9 @@
     "providerName": "Vertex",
     "displayName": "Gemini Flash Latest",
     "family": "gemini-flash",
-    "releaseDate": "2026-05-19",
-    "lastUpdated": "2026-05-19",
-    "knowledgeCutoff": "2025-01",
+    "releaseDate": "2026-08-13",
+    "lastUpdated": "2026-08-13",
+    "knowledgeCutoff": "2026-03",
     "contextWindow": 1048576,
     "maxOutputTokens": 65536,
     "capabilities": {
@@ -1012,8 +1013,8 @@
     "pricing": {
       "input": 0.3,
       "output": 2.5,
-      "cacheRead": 0.075,
-      "cacheWrite": 0.383,
+      "cacheRead": 0.03,
+      "inputAudio": 1,
       "currency": "USD",
       "per": 1000000
     },
@@ -1208,10 +1209,10 @@
       ]
     },
     "pricing": {
-      "input": 1.5,
-      "output": 7.5,
-      "cacheRead": 0.15,
-      "inputAudio": 1.5,
+      "input": 0.75,
+      "output": 3.75,
+      "cacheRead": 0.075,
+      "inputAudio": 0.75,
       "currency": "USD",
       "per": 1000000
     },
@@ -1262,6 +1263,7 @@
     "pricing": {
       "input": 0.5,
       "output": 60,
+      "cacheRead": 0.05,
       "currency": "USD",
       "per": 1000000
     },
@@ -1368,6 +1370,56 @@
       "per": 1000000
     },
     "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-fable-5@default",
+    "provider": "google-vertex",
+    "providerName": "Vertex",
+    "displayName": "Claude Fable 5",
+    "family": "claude-fable",
+    "releaseDate": "2026-06-09",
+    "lastUpdated": "2026-06-09",
+    "knowledgeCutoff": "2026-01-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 10,
+      "output": 50,
+      "cacheRead": 1,
+      "cacheWrite": 12.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1818,6 +1870,7 @@
     "pricing": {
       "input": 0.6,
       "output": 2.5,
+      "cacheRead": 0.06,
       "currency": "USD",
       "per": 1000000
     },
@@ -1864,6 +1917,7 @@
     "pricing": {
       "input": 0.07,
       "output": 0.25,
+      "cacheRead": 0.007,
       "currency": "USD",
       "per": 1000000
     },
@@ -2005,6 +2059,7 @@
     "pricing": {
       "input": 0.6,
       "output": 1.7,
+      "cacheRead": 0.06,
       "currency": "USD",
       "per": 1000000
     },
@@ -2098,6 +2153,7 @@
     "pricing": {
       "input": 0.6,
       "output": 2.2,
+      "cacheRead": 0.06,
       "currency": "USD",
       "per": 1000000
     },

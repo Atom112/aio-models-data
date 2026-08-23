@@ -108,8 +108,8 @@
     "releaseDate": "2026-05-21",
     "lastUpdated": "2026-05-21",
     "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 65536,
+    "contextWindow": 991000,
+    "maxOutputTokens": 64000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -357,8 +357,8 @@
     "releaseDate": "2026-02-19",
     "lastUpdated": "2026-02-19",
     "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 64000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -758,8 +758,8 @@
     "releaseDate": "2026-04-20",
     "lastUpdated": "2026-04-20",
     "knowledgeCutoff": "2025-04",
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
+    "contextWindow": 240000,
+    "maxOutputTokens": 64000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -857,7 +857,7 @@
     "lastUpdated": "2026-06-02",
     "knowledgeCutoff": "2025-04",
     "contextWindow": 1000000,
-    "maxOutputTokens": 65536,
+    "maxOutputTokens": 64000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -955,8 +955,8 @@
     "releaseDate": "2026-05-19",
     "lastUpdated": "2026-05-19",
     "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 64000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -1514,8 +1514,8 @@
     "releaseDate": "2025-12-17",
     "lastUpdated": "2025-12-17",
     "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65535,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 65000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -1665,7 +1665,7 @@
     "lastUpdated": "2026-04-02",
     "knowledgeCutoff": "2025-04",
     "contextWindow": 1000000,
-    "maxOutputTokens": 65536,
+    "maxOutputTokens": 64000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -1816,7 +1816,7 @@
     "releaseDate": "2026-04-29",
     "lastUpdated": "2026-04-29",
     "knowledgeCutoff": null,
-    "contextWindow": 262144,
+    "contextWindow": 256000,
     "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
@@ -2115,7 +2115,7 @@
     "lastUpdated": "2025-11-13",
     "knowledgeCutoff": "2024-09-30",
     "contextWindow": 400000,
-    "maxOutputTokens": 128000,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -2215,7 +2215,7 @@
     "lastUpdated": "2026-04-22",
     "knowledgeCutoff": "2024-12",
     "contextWindow": 1050000,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 131000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -2263,7 +2263,7 @@
     "lastUpdated": "2026-03-18",
     "knowledgeCutoff": null,
     "contextWindow": 204800,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 131000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -2400,6 +2400,54 @@
     ]
   },
   {
+    "id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "provider": "pioneer",
+    "providerName": "Pioneer",
+    "displayName": "Nemotron 3.5 Lightning 30B A3B",
+    "family": "nemotron",
+    "releaseDate": "2026-08-11",
+    "lastUpdated": "2026-08-11",
+    "knowledgeCutoff": null,
+    "contextWindow": 8192,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.5,
+      "output": 0.5,
+      "cacheRead": 0.5,
+      "cacheWrite": 0.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
     "provider": "pioneer",
     "providerName": "Pioneer",
@@ -2504,7 +2552,7 @@
     "releaseDate": "2026-03-11",
     "lastUpdated": "2026-03-11",
     "knowledgeCutoff": null,
-    "contextWindow": 1000000,
+    "contextWindow": 256000,
     "maxOutputTokens": 32000,
     "capabilities": {
       "tools": true,
@@ -2944,7 +2992,7 @@
     "releaseDate": "2026-06-12",
     "lastUpdated": "2026-06-12",
     "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
+    "contextWindow": 256000,
     "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
@@ -3044,7 +3092,7 @@
     "releaseDate": "2026-04-21",
     "lastUpdated": "2026-04-21",
     "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
+    "contextWindow": 262000,
     "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
@@ -3532,7 +3580,7 @@
     "lastUpdated": "2025-04",
     "knowledgeCutoff": "2025-04",
     "contextWindow": 131072,
-    "maxOutputTokens": 16384,
+    "maxOutputTokens": 8192,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -3675,8 +3723,8 @@
     "releaseDate": "2025-03-31",
     "lastUpdated": "2025-04-28",
     "knowledgeCutoff": "2025-03-31",
-    "contextWindow": 131072,
-    "maxOutputTokens": 131072,
+    "contextWindow": 40960,
+    "maxOutputTokens": 40960,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -3771,8 +3819,8 @@
     "releaseDate": "2025-07-31",
     "lastUpdated": "2025-07-31",
     "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 131072,
+    "contextWindow": 32768,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -4207,7 +4255,7 @@
     "releaseDate": "2026-04-07",
     "lastUpdated": "2026-04-07",
     "knowledgeCutoff": null,
-    "contextWindow": 202752,
+    "contextWindow": 202000,
     "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
@@ -4255,7 +4303,7 @@
     "releaseDate": "2026-06-13",
     "lastUpdated": "2026-06-13",
     "knowledgeCutoff": null,
-    "contextWindow": 1048576,
+    "contextWindow": 1040000,
     "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
@@ -4447,8 +4495,8 @@
     "releaseDate": "2024-12-06",
     "lastUpdated": "2024-12-06",
     "knowledgeCutoff": "2023-12",
-    "contextWindow": 131072,
-    "maxOutputTokens": 131072,
+    "contextWindow": 16384,
+    "maxOutputTokens": 16384,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -4543,8 +4591,8 @@
     "releaseDate": "2024-06-30",
     "lastUpdated": "2024-07-23",
     "knowledgeCutoff": "2023-12-31",
-    "contextWindow": 131072,
-    "maxOutputTokens": 16384,
+    "contextWindow": 128000,
+    "maxOutputTokens": 8192,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -4784,7 +4832,7 @@
     "releaseDate": "2024-07-01",
     "lastUpdated": "2024-07-01",
     "knowledgeCutoff": "2024-07",
-    "contextWindow": 131072,
+    "contextWindow": 128000,
     "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
@@ -4880,8 +4928,8 @@
     "releaseDate": "2026-03-16",
     "lastUpdated": "2026-03-16",
     "knowledgeCutoff": "2025-06",
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
+    "contextWindow": 32000,
+    "maxOutputTokens": 32000,
     "capabilities": {
       "tools": true,
       "vision": true,

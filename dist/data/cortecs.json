@@ -25,7 +25,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
@@ -74,7 +75,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
@@ -121,7 +123,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
@@ -170,7 +173,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
@@ -265,7 +269,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
@@ -501,7 +506,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
@@ -596,7 +602,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
@@ -930,7 +937,8 @@
       "input": [
         "text",
         "image",
-        "audio"
+        "audio",
+        "pdf"
       ],
       "output": [
         "text"
@@ -1026,7 +1034,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
@@ -1402,7 +1411,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
@@ -1451,7 +1461,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
@@ -1687,17 +1698,18 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 1.1,
-      "output": 6.599,
-      "cacheRead": 0.11,
-      "cacheWrite": 1.38,
+      "input": 0.219,
+      "output": 1.32,
+      "cacheRead": 0.022,
+      "cacheWrite": 0.275,
       "currency": "USD",
       "per": 1000000
     },
@@ -2109,7 +2121,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
@@ -2300,7 +2313,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
@@ -2633,7 +2647,8 @@
       "input": [
         "text",
         "image",
-        "audio"
+        "audio",
+        "pdf"
       ],
       "output": [
         "text"
@@ -2824,7 +2839,8 @@
       "input": [
         "text",
         "image",
-        "audio"
+        "audio",
+        "pdf"
       ],
       "output": [
         "text"
@@ -3154,7 +3170,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
@@ -3249,7 +3266,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
@@ -3304,8 +3322,8 @@
     },
     "pricing": {
       "input": 0.296,
-      "output": 1.087,
-      "cacheRead": 0.03,
+      "output": 1.186,
+      "cacheRead": 0.075,
       "currency": "USD",
       "per": 1000000
     },
@@ -3394,17 +3412,18 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 2.749,
-      "output": 16.498,
-      "cacheRead": 0.275,
-      "cacheWrite": 3.437,
+      "input": 2.2,
+      "output": 13.199,
+      "cacheRead": 0.219,
+      "cacheWrite": 2.749,
       "currency": "USD",
       "per": 1000000
     },
@@ -3491,7 +3510,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
@@ -3683,7 +3703,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
@@ -3693,6 +3714,54 @@
       "input": 2.898,
       "output": 15.453,
       "cacheRead": 0.242,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.8-27b",
+    "provider": "cortecs",
+    "providerName": "Cortecs",
+    "displayName": "Qwen3.8 27B",
+    "family": "qwen",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.334,
+      "output": 2.451,
+      "cacheRead": 0.111,
       "currency": "USD",
       "per": 1000000
     },
@@ -3777,7 +3846,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
@@ -3873,7 +3943,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
@@ -4002,19 +4073,20 @@
     "maxOutputTokens": 32000,
     "capabilities": {
       "tools": false,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "pdf"
       ],
       "output": [
         "text"
@@ -4108,7 +4180,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
@@ -4334,19 +4407,20 @@
     "maxOutputTokens": 32000,
     "capabilities": {
       "tools": false,
-      "vision": false,
+      "vision": true,
       "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": false,
-      "attachment": false,
+      "attachment": true,
       "structured_output": false,
       "open_weights": false
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "pdf"
       ],
       "output": [
         "text"
@@ -4393,7 +4467,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
@@ -4492,7 +4567,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
@@ -4526,19 +4602,20 @@
     "maxOutputTokens": 32000,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": false,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": false
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "pdf"
       ],
       "output": [
         "text"
@@ -4725,7 +4802,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
@@ -4912,7 +4990,8 @@
       "input": [
         "text",
         "image",
-        "audio"
+        "audio",
+        "pdf"
       ],
       "output": [
         "text"
@@ -4961,7 +5040,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
@@ -4987,10 +5067,10 @@
     "id": "qwen3.8-2.4t-a95b",
     "provider": "cortecs",
     "providerName": "Cortecs",
-    "displayName": "qwen3.8-2.4t-a95b",
-    "family": null,
-    "releaseDate": "2026-08-14",
-    "lastUpdated": "2026-08-14",
+    "displayName": "Qwen3.8 2.4T A95B",
+    "family": "qwen",
+    "releaseDate": "2026-08-12",
+    "lastUpdated": "2026-08-12",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
     "maxOutputTokens": 262144,
@@ -5001,10 +5081,10 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": false,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -5056,7 +5136,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"

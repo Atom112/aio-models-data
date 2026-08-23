@@ -1,5 +1,54 @@
 [
   {
+    "id": "seed-2.0-code",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Seed 2.0 Code",
+    "family": "seed",
+    "releaseDate": "2026-02-14",
+    "lastUpdated": "2026-02-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.45,
+      "output": 2.7,
+      "cacheRead": 0.09,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "claude-sonnet-4-5@eu",
     "provider": "requesty",
     "providerName": "Requesty",
@@ -33,22 +82,22 @@
       ]
     },
     "pricing": {
-      "input": 3.3,
-      "output": 16.5,
-      "cacheRead": 0.3,
-      "cacheWrite": 4.125,
+      "input": 2.97,
+      "output": 14.85,
+      "cacheRead": 0.27,
+      "cacheWrite": 3.7125,
       "currency": "USD",
       "per": 1000000,
       "tiers": [
         {
-          "input": 6.6,
-          "output": 24.75,
+          "input": 5.94,
+          "output": 22.275,
           "contextThreshold": 200000
         }
       ],
       "contextOverThreshold": {
-        "input": 6.6,
-        "output": 24.75,
+        "input": 5.94,
+        "output": 22.275,
         "contextThreshold": 200000
       }
     },
@@ -95,10 +144,58 @@
       ]
     },
     "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
+      "input": 4.5,
+      "output": 22.5,
+      "cacheRead": 0.45,
+      "cacheWrite": 5.625,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimax-m2.7-highspeed",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "MiniMax-M2.7-highspeed",
+    "family": "minimax",
+    "releaseDate": "2026-03-18",
+    "lastUpdated": "2026-03-18",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.54,
+      "output": 2.16,
+      "cacheRead": 0.054,
+      "cacheWrite": 1.08,
       "currency": "USD",
       "per": 1000000
     },
@@ -144,9 +241,9 @@
       ]
     },
     "pricing": {
-      "input": 1.375,
-      "output": 11,
-      "cacheRead": 0.1375,
+      "input": 1.2375,
+      "output": 9.9,
+      "cacheRead": 0.12375,
       "currency": "USD",
       "per": 1000000
     },
@@ -192,9 +289,9 @@
       ]
     },
     "pricing": {
-      "input": 0.11,
-      "output": 0.44,
-      "cacheRead": 0.0275,
+      "input": 0.099,
+      "output": 0.396,
+      "cacheRead": 0.02475,
       "currency": "USD",
       "per": 1000000
     },
@@ -243,10 +340,407 @@
       ]
     },
     "pricing": {
-      "input": 0.3,
-      "output": 2.5,
-      "cacheRead": 0.075,
-      "cacheWrite": 0.55,
+      "input": 0.27,
+      "output": 2.25,
+      "cacheRead": 0.0675,
+      "cacheWrite": 0.495,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "nemotron-3.5-content-safety",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Nemotron 3.5 Content Safety",
+    "family": "nemotron",
+    "releaseDate": "2026-06-04",
+    "lastUpdated": "2026-06-04",
+    "knowledgeCutoff": null,
+    "contextWindow": 131072,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k2.7-code",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Kimi K2.7 Code",
+    "family": "kimi-k2",
+    "releaseDate": "2026-06-12",
+    "lastUpdated": "2026-06-12",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.855,
+      "output": 3.6,
+      "cacheRead": 0.171,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemma-4-26b-a4b-it",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Gemma 4 26B A4B IT",
+    "family": "gemma",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.063,
+      "output": 0.306,
+      "cacheRead": 0.063,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3-pro-image",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Nano Banana Pro",
+    "family": "gemini-pro",
+    "releaseDate": "2026-05-28",
+    "lastUpdated": "2026-05-28",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text",
+        "image"
+      ]
+    },
+    "pricing": {
+      "input": 1.8,
+      "output": 10.8,
+      "cacheRead": 0.18,
+      "cacheWrite": 4.05,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 3.6,
+          "output": 16.2,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 3.6,
+        "output": 16.2,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.7-max",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Qwen3.7 Max",
+    "family": "qwen",
+    "releaseDate": "2026-05-21",
+    "lastUpdated": "2026-05-21",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.25,
+      "output": 6.75,
+      "cacheRead": 0.225,
+      "cacheWrite": 2.8125,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "thinkingcap-qwen3.6-27b@eu",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "thinkingcap-qwen3.6-27b@eu",
+    "family": "qwen3.6",
+    "releaseDate": "2026-07-13",
+    "lastUpdated": "2026-07-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.36,
+      "output": 2.7,
+      "cacheRead": 0.234,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "seed-1.8",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "seed-1.8",
+    "family": "seed",
+    "releaseDate": "2026-05-27",
+    "lastUpdated": "2026-05-27",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.225,
+      "output": 1.8,
+      "cacheRead": 0.045,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mistral-medium-latest@eu",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Mistral Medium (latest) (EU)",
+    "family": "mistral-medium",
+    "releaseDate": "2026-04-29",
+    "lastUpdated": "2026-04-29",
+    "knowledgeCutoff": null,
+    "contextWindow": 131072,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.396,
+      "output": 1.98,
+      "cacheRead": 0.396,
       "currency": "USD",
       "per": 1000000
     },
@@ -293,9 +787,9 @@
       ]
     },
     "pricing": {
-      "input": 2.25,
-      "output": 11.25,
-      "cacheRead": 0.225,
+      "input": 2.025,
+      "output": 10.125,
+      "cacheRead": 0.2025,
       "currency": "USD",
       "per": 1000000
     },
@@ -340,9 +834,198 @@
       ]
     },
     "pricing": {
-      "input": 1.2,
-      "output": 4.2,
-      "cacheRead": 0.26,
+      "input": 1.08,
+      "output": 3.78,
+      "cacheRead": 0.234,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.5-pro",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "GPT-5.5 Pro",
+    "family": "gpt-pro",
+    "releaseDate": "2026-04-23",
+    "lastUpdated": "2026-04-23",
+    "knowledgeCutoff": "2025-12-01",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 27,
+      "output": 162,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.3-chat",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "gpt-5.3-chat",
+    "family": "gpt",
+    "releaseDate": "2026-03-18",
+    "lastUpdated": "2026-03-18",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.575,
+      "output": 12.6,
+      "cacheRead": 0.1575,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v4-flash",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "DeepSeek V4 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.396,
+      "output": 1.188,
+      "cacheRead": 0.0126,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "ring-2.6-1t",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "ring-2.6-1t",
+    "family": "ring",
+    "releaseDate": "2026-05-08",
+    "lastUpdated": "2026-05-08",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.27,
+      "output": 2.25,
       "currency": "USD",
       "per": 1000000
     },
@@ -389,10 +1072,10 @@
       ]
     },
     "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
+      "input": 4.5,
+      "output": 22.5,
+      "cacheRead": 0.45,
+      "cacheWrite": 5.625,
       "currency": "USD",
       "per": 1000000
     },
@@ -441,9 +1124,9 @@
       ]
     },
     "pricing": {
-      "input": 0.3,
-      "output": 2.5,
-      "cacheRead": 0.03,
+      "input": 0.27,
+      "output": 2.25,
+      "cacheRead": 0.027,
       "currency": "USD",
       "per": 1000000
     },
@@ -490,9 +1173,9 @@
       ]
     },
     "pricing": {
-      "input": 5.5,
-      "output": 33,
-      "cacheRead": 0.55,
+      "input": 4.95,
+      "output": 29.7,
+      "cacheRead": 0.495,
       "currency": "USD",
       "per": 1000000
     },
@@ -538,9 +1221,152 @@
       ]
     },
     "pricing": {
-      "input": 0.275,
-      "output": 2.2,
-      "cacheRead": 0.0275,
+      "input": 0.2475,
+      "output": 1.98,
+      "cacheRead": 0.02475,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v4-pro@eu",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "DeepSeek V4 Pro (EU)",
+    "family": "deepseek-thinking",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.575,
+      "output": 3.15,
+      "cacheRead": 0.396,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "leanstral-1-5@eu",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "leanstral-1-5@eu",
+    "family": null,
+    "releaseDate": "2026-05-27",
+    "lastUpdated": "2026-05-27",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mimo-v2.5",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "MiMo-V2.5",
+    "family": "mimo",
+    "releaseDate": "2026-04-22",
+    "lastUpdated": "2026-04-22",
+    "knowledgeCutoff": "2024-12",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.126,
+      "output": 0.252,
+      "cacheRead": 0.00252,
       "currency": "USD",
       "per": 1000000
     },
@@ -589,22 +1415,83 @@
       ]
     },
     "pricing": {
-      "input": 0.275,
-      "output": 1.65,
-      "cacheRead": 0.0275,
-      "cacheWrite": 0.091663,
+      "input": 0.2475,
+      "output": 1.485,
+      "cacheRead": 0.02475,
+      "cacheWrite": 0.082497,
       "currency": "USD",
       "per": 1000000,
       "tiers": [
         {
-          "input": 0.55,
-          "output": 2.475,
+          "input": 0.495,
+          "output": 2.2275,
           "contextThreshold": 200000
         }
       ],
       "contextOverThreshold": {
-        "input": 0.55,
-        "output": 2.475,
+        "input": 0.495,
+        "output": 2.2275,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.6-sol",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "GPT-5.6 Sol",
+    "family": "gpt-sol",
+    "releaseDate": "2026-07-09",
+    "lastUpdated": "2026-07-09",
+    "knowledgeCutoff": "2026-02-16",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 4.5,
+      "output": 27,
+      "cacheRead": 0.45,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 9,
+          "output": 40.5,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 9,
+        "output": 40.5,
         "contextThreshold": 200000
       }
     },
@@ -650,11 +1537,72 @@
       ]
     },
     "pricing": {
-      "input": 1.375,
-      "output": 11,
-      "cacheRead": 0.1375,
+      "input": 1.2375,
+      "output": 9.9,
+      "cacheRead": 0.12375,
       "currency": "USD",
       "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "grok-4.6",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Grok 4.6",
+    "family": "grok",
+    "releaseDate": "2026-08-12",
+    "lastUpdated": "2026-08-12",
+    "knowledgeCutoff": "2026-02-01",
+    "contextWindow": 500000,
+    "maxOutputTokens": 500000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.8,
+      "output": 5.4,
+      "cacheRead": 0.45,
+      "cacheWrite": 1.8,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 3.6,
+          "output": 10.8,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 3.6,
+        "output": 10.8,
+        "contextThreshold": 200000
+      }
     },
     "status": "active",
     "deprecationDate": null,
@@ -699,23 +1647,170 @@
       ]
     },
     "pricing": {
-      "input": 5,
-      "output": 30,
-      "cacheRead": 0.5,
+      "input": 4.5,
+      "output": 27,
+      "cacheRead": 0.45,
       "currency": "USD",
       "per": 1000000,
       "tiers": [
         {
-          "input": 10,
-          "output": 45,
+          "input": 9,
+          "output": 40.5,
           "contextThreshold": 272000
         }
       ],
       "contextOverThreshold": {
-        "input": 10,
-        "output": 45,
+        "input": 9,
+        "output": 40.5,
         "contextThreshold": 200000
       }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k2.6@eu",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Kimi K2.6 (EU)",
+    "family": "kimi-k2",
+    "releaseDate": "2026-04-21",
+    "lastUpdated": "2026-04-21",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 256000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.855,
+      "output": 3.6,
+      "cacheRead": 0.855,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.4-pro",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "GPT-5.4 Pro",
+    "family": "gpt-pro",
+    "releaseDate": "2026-03-05",
+    "lastUpdated": "2026-03-05",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 27,
+      "output": 162,
+      "cacheRead": 27,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.5-35b-a3b",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Qwen3.5 35B-A3B",
+    "family": "qwen",
+    "releaseDate": "2026-02-23",
+    "lastUpdated": "2026-02-23",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.126,
+      "output": 0.9,
+      "cacheRead": 0.045,
+      "currency": "USD",
+      "per": 1000000
     },
     "status": "active",
     "deprecationDate": null,
@@ -760,9 +1855,120 @@
       ]
     },
     "pricing": {
-      "input": 0.22,
-      "output": 1.32,
-      "cacheRead": 0.022,
+      "input": 0.198,
+      "output": 1.188,
+      "cacheRead": 0.0198,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3.1-pro-preview",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Gemini 3.1 Pro Preview",
+    "family": "gemini-pro",
+    "releaseDate": "2026-02-19",
+    "lastUpdated": "2026-02-19",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65535,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.8,
+      "output": 10.8,
+      "cacheRead": 0.18,
+      "cacheWrite": 4.05,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 3.6,
+          "output": 16.2,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 3.6,
+        "output": 16.2,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "nemotron-3-ultra-nvfp4",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "nemotron-3-ultra-nvfp4",
+    "family": "nemotron",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.54,
+      "output": 2.16,
+      "cacheRead": 0.108,
       "currency": "USD",
       "per": 1000000
     },
@@ -808,22 +2014,22 @@
       ]
     },
     "pricing": {
-      "input": 2,
-      "output": 6,
-      "cacheRead": 0.5,
-      "cacheWrite": 2,
+      "input": 1.8,
+      "output": 5.4,
+      "cacheRead": 0.45,
+      "cacheWrite": 1.8,
       "currency": "USD",
       "per": 1000000,
       "tiers": [
         {
-          "input": 4,
-          "output": 12,
+          "input": 3.6,
+          "output": 10.8,
           "contextThreshold": 200000
         }
       ],
       "contextOverThreshold": {
-        "input": 4,
-        "output": 12,
+        "input": 3.6,
+        "output": 10.8,
         "contextThreshold": 200000
       }
     },
@@ -869,9 +2075,9 @@
       ]
     },
     "pricing": {
-      "input": 0.055,
-      "output": 0.44,
-      "cacheRead": 0.0055,
+      "input": 0.0495,
+      "output": 0.396,
+      "cacheRead": 0.00495,
       "currency": "USD",
       "per": 1000000
     },
@@ -918,10 +2124,10 @@
       ]
     },
     "pricing": {
-      "input": 15,
-      "output": 75,
-      "cacheRead": 1.5,
-      "cacheWrite": 18.75,
+      "input": 13.5,
+      "output": 67.5,
+      "cacheRead": 1.35,
+      "cacheWrite": 16.875,
       "currency": "USD",
       "per": 1000000
     },
@@ -931,6 +2137,192 @@
     "aliases": [
       "Claude Opus 4.1 (latest)"
     ],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v4-pro-0813",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "DeepSeek V4 Pro 0813",
+    "family": "deepseek-thinking",
+    "releaseDate": "2026-08-12",
+    "lastUpdated": "2026-08-22",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.188,
+      "output": 3.564,
+      "cacheRead": 0.0396,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v4-pro",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "DeepSeek V4 Pro",
+    "family": "deepseek-thinking",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.188,
+      "output": 3.564,
+      "cacheRead": 0.0396,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "nemotron-3-super-120b-a12b",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Nemotron 3 Super 120B A12B",
+    "family": "nemotron",
+    "releaseDate": "2026-03-11",
+    "lastUpdated": "2026-03-11",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "laguna-m.1",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Laguna M.1",
+    "family": "laguna",
+    "releaseDate": "2026-04-28",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 32768,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
     "isAggregator": true,
     "sources": [
       "models.dev"
@@ -970,10 +2362,57 @@
       ]
     },
     "pricing": {
-      "input": 2,
-      "output": 10,
-      "cacheRead": 0.2,
-      "cacheWrite": 2.5,
+      "input": 1.8,
+      "output": 9,
+      "cacheRead": 0.18,
+      "cacheWrite": 2.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5.2-fast",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "glm-5.2-fast",
+    "family": "glm",
+    "releaseDate": "2026-07-13",
+    "lastUpdated": "2026-07-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.89,
+      "output": 5.94,
+      "cacheRead": 0.189,
       "currency": "USD",
       "per": 1000000
     },
@@ -1020,9 +2459,9 @@
       ]
     },
     "pricing": {
-      "input": 0.44,
-      "output": 1.76,
-      "cacheRead": 0.11,
+      "input": 0.396,
+      "output": 1.584,
+      "cacheRead": 0.099,
       "currency": "USD",
       "per": 1000000
     },
@@ -1068,9 +2507,9 @@
       ]
     },
     "pricing": {
-      "input": 1.21,
-      "output": 4.84,
-      "cacheRead": 0.3025,
+      "input": 1.089,
+      "output": 4.356,
+      "cacheRead": 0.27225,
       "currency": "USD",
       "per": 1000000
     },
@@ -1117,9 +2556,307 @@
       ]
     },
     "pricing": {
-      "input": 2.25,
-      "output": 11.25,
-      "cacheRead": 0.225,
+      "input": 2.025,
+      "output": 10.125,
+      "cacheRead": 0.2025,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "ling-2.6-1t",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "ling-2.6-1t",
+    "family": "ling",
+    "releaseDate": "2026-04-23",
+    "lastUpdated": "2026-04-23",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.27,
+      "output": 2.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.6-luna",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "GPT-5.6 Luna",
+    "family": "gpt-luna",
+    "releaseDate": "2026-07-09",
+    "lastUpdated": "2026-07-09",
+    "knowledgeCutoff": "2026-02-16",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.18,
+      "output": 1.08,
+      "cacheRead": 0.018,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.36,
+          "output": 1.62,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 0.36,
+        "output": 1.62,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemma-4-31b-it",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Gemma 4 31B IT",
+    "family": "gemma",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "devstral-latest",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "devstral-latest",
+    "family": "devstral",
+    "releaseDate": "2026-05-27",
+    "lastUpdated": "2026-05-27",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.396,
+      "output": 1.98,
+      "cacheRead": 0.396,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mistral-medium-3-5",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "mistral-medium-3-5",
+    "family": "mistral-medium",
+    "releaseDate": "2026-04-30",
+    "lastUpdated": "2026-04-30",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.485,
+      "output": 7.425,
+      "cacheRead": 1.485,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "nemotron-3-nano-omni-30b-a3b-reasoning",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Nemotron 3 Nano Omni 30B A3B Reasoning",
+    "family": "nemotron",
+    "releaseDate": "2026-04-28",
+    "lastUpdated": "2026-04-28",
+    "knowledgeCutoff": null,
+    "contextWindow": 131072,
+    "maxOutputTokens": 20480,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
       "currency": "USD",
       "per": 1000000
     },
@@ -1166,10 +2903,251 @@
       ]
     },
     "pricing": {
-      "input": 3.3,
-      "output": 16.5,
-      "cacheRead": 0.3,
-      "cacheWrite": 4.125,
+      "input": 2.97,
+      "output": 14.85,
+      "cacheRead": 0.27,
+      "cacheWrite": 3.7125,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "nemotron-lightning-3.5-30b-a3b",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "nemotron-lightning-3.5-30b-a3b",
+    "family": "nemotron",
+    "releaseDate": "2026-08-15",
+    "lastUpdated": "2026-08-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.045,
+      "output": 0.18,
+      "cacheRead": 0.009,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimax-m3",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "MiniMax-M3",
+    "family": "minimax",
+    "releaseDate": "2026-06-01",
+    "lastUpdated": "2026-06-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.24,
+      "output": 0.96,
+      "cacheRead": 0.048,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimax-m2.7",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "MiniMax-M2.7",
+    "family": "minimax",
+    "releaseDate": "2026-03-18",
+    "lastUpdated": "2026-03-18",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.27,
+      "output": 1.08,
+      "cacheRead": 0.054,
+      "cacheWrite": 1.08,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "inkling-256k",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "inkling-256k",
+    "family": null,
+    "releaseDate": "2026-07-16",
+    "lastUpdated": "2026-07-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.496,
+      "output": 3.744,
+      "cacheRead": 0.2992,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k2.7-code@eu",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Kimi K2.7 Code (EU)",
+    "family": "kimi-k2",
+    "releaseDate": "2026-06-12",
+    "lastUpdated": "2026-06-12",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.125,
+      "output": 4.05,
+      "cacheRead": 0.279,
       "currency": "USD",
       "per": 1000000
     },
@@ -1216,10 +3194,157 @@
       ]
     },
     "pricing": {
-      "input": 5.5,
-      "output": 27.5,
-      "cacheRead": 0.55,
-      "cacheWrite": 6.875,
+      "input": 4.95,
+      "output": 24.75,
+      "cacheRead": 0.495,
+      "cacheWrite": 6.1875,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.5-2b",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "qwen3.5-2b",
+    "family": "qwen3.5",
+    "releaseDate": "2026-03-10",
+    "lastUpdated": "2026-03-10",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.018,
+      "output": 0.09,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.3-codex",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "GPT-5.3 Codex",
+    "family": "gpt-codex",
+    "releaseDate": "2026-02-05",
+    "lastUpdated": "2026-02-05",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.575,
+      "output": 12.6,
+      "cacheRead": 0.1575,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.8-max",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Qwen3.8 Max",
+    "family": "qwen",
+    "releaseDate": "2026-08-03",
+    "lastUpdated": "2026-08-03",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.8,
+      "output": 5.4,
+      "cacheRead": 0.225,
+      "cacheWrite": 2.25,
       "currency": "USD",
       "per": 1000000
     },
@@ -1268,10 +3393,324 @@
       ]
     },
     "pricing": {
-      "input": 1.65,
-      "output": 9.9,
-      "cacheRead": 0.165,
-      "cacheWrite": 1.7413,
+      "input": 1.485,
+      "output": 8.91,
+      "cacheRead": 0.1485,
+      "cacheWrite": 1.56717,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "muse-glimmer-30b",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Muse Glimmer 30B",
+    "family": "muse",
+    "releaseDate": "2026-08-10",
+    "lastUpdated": "2026-08-10",
+    "knowledgeCutoff": "2026-01-04",
+    "contextWindow": 131072,
+    "maxOutputTokens": 20480,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.7-plus",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Qwen3.7 Plus",
+    "family": "qwen",
+    "releaseDate": "2026-06-02",
+    "lastUpdated": "2026-06-02",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.28,
+      "output": 1.12,
+      "cacheRead": 0.028,
+      "cacheWrite": 0.35,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "grok-4.2-beta",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "grok-4.2-beta",
+    "family": "grok",
+    "releaseDate": "2026-03-19",
+    "lastUpdated": "2026-03-19",
+    "knowledgeCutoff": null,
+    "contextWindow": 2000000,
+    "maxOutputTokens": 2000000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.8,
+      "output": 5.4,
+      "cacheRead": 0.18,
+      "cacheWrite": 1.8,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 3.6,
+          "output": 10.8,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 3.6,
+        "output": 10.8,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "fugu-ultra",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Fugu Ultra",
+    "family": "fugu",
+    "releaseDate": "2026-06-15",
+    "lastUpdated": "2026-06-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 4.5,
+      "output": 27,
+      "cacheRead": 0.45,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 9,
+          "output": 40.5,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 9,
+        "output": 40.5,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mistral-small-2603",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Mistral Small 4",
+    "family": "mistral-small",
+    "releaseDate": "2026-03-16",
+    "lastUpdated": "2026-03-16",
+    "knowledgeCutoff": "2025-06",
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1485,
+      "output": 0.594,
+      "cacheRead": 0.1485,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mistral-small-2603@eu",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Mistral Small 4 (EU)",
+    "family": "mistral-small",
+    "releaseDate": "2026-03-16",
+    "lastUpdated": "2026-03-16",
+    "knowledgeCutoff": "2025-06",
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1485,
+      "output": 0.594,
+      "cacheRead": 0.1485,
       "currency": "USD",
       "per": 1000000
     },
@@ -1318,10 +3757,62 @@
       ]
     },
     "pricing": {
-      "input": 2.2,
-      "output": 11,
-      "cacheRead": 0.22,
-      "cacheWrite": 2.75,
+      "input": 1.98,
+      "output": 9.9,
+      "cacheRead": 0.198,
+      "cacheWrite": 2.475,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3.5-flash",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Gemini 3.5 Flash",
+    "family": "gemini-flash",
+    "releaseDate": "2026-05-19",
+    "lastUpdated": "2026-05-19",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65535,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.35,
+      "output": 8.1,
+      "cacheRead": 0.135,
+      "cacheWrite": 1.4247,
       "currency": "USD",
       "per": 1000000
     },
@@ -1368,10 +3859,10 @@
       ]
     },
     "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
+      "input": 4.5,
+      "output": 22.5,
+      "cacheRead": 0.45,
+      "cacheWrite": 5.625,
       "currency": "USD",
       "per": 1000000
     },
@@ -1381,6 +3872,150 @@
     "aliases": [
       "Claude Opus 4.5 (latest)"
     ],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.4-mini",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "GPT-5.4 mini",
+    "family": "gpt-mini",
+    "releaseDate": "2026-03-17",
+    "lastUpdated": "2026-03-17",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.675,
+      "output": 4.05,
+      "cacheRead": 0.0675,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "nemotron-3-ultra-550b-a55b",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Nemotron 3 Ultra 550B A55B",
+    "family": "nemotron",
+    "releaseDate": "2026-06-04",
+    "lastUpdated": "2026-06-04",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-fable-5@eu",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Claude Fable 5 (EU)",
+    "family": "claude-fable",
+    "releaseDate": "2026-06-09",
+    "lastUpdated": "2026-06-09",
+    "knowledgeCutoff": "2026-01-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 9.9,
+      "output": 49.5,
+      "cacheRead": 0.99,
+      "cacheWrite": 12.375,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
     "isAggregator": true,
     "sources": [
       "models.dev"
@@ -1420,10 +4055,10 @@
       ]
     },
     "pricing": {
-      "input": 5.5,
-      "output": 27.5,
-      "cacheRead": 0.55,
-      "cacheWrite": 6.875,
+      "input": 4.95,
+      "output": 24.75,
+      "cacheRead": 0.495,
+      "cacheWrite": 6.1875,
       "currency": "USD",
       "per": 1000000
     },
@@ -1470,10 +4105,10 @@
       ]
     },
     "pricing": {
-      "input": 5.5,
-      "output": 27.5,
-      "cacheRead": 0.55,
-      "cacheWrite": 6.875,
+      "input": 4.95,
+      "output": 24.75,
+      "cacheRead": 0.495,
+      "cacheWrite": 6.1875,
       "currency": "USD",
       "per": 1000000
     },
@@ -1520,10 +4155,409 @@
       ]
     },
     "pricing": {
-      "input": 3,
-      "output": 15,
-      "cacheRead": 0.3,
-      "cacheWrite": 3.75,
+      "input": 2.7,
+      "output": 13.5,
+      "cacheRead": 0.27,
+      "cacheWrite": 3.375,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3.1-flash-lite",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Gemini 3.1 Flash Lite",
+    "family": "gemini-flash-lite",
+    "releaseDate": "2026-05-07",
+    "lastUpdated": "2026-05-07",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65535,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.225,
+      "output": 1.35,
+      "cacheRead": 0.0225,
+      "cacheWrite": 0.074997,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.45,
+          "output": 2.025,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 0.45,
+        "output": 2.025,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "inkling",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Inkling",
+    "family": "ling",
+    "releaseDate": "2026-07-15",
+    "lastUpdated": "2026-07-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 65536,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.683,
+      "output": 4.212,
+      "cacheRead": 0.3366,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.5",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "GPT-5.5",
+    "family": "gpt",
+    "releaseDate": "2026-04-23",
+    "lastUpdated": "2026-04-23",
+    "knowledgeCutoff": "2025-12-01",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 4.95,
+      "output": 29.7,
+      "cacheRead": 0.495,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5.3",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "GLM-5.3",
+    "family": "glm",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.26,
+      "output": 3.96,
+      "cacheRead": 0.234,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "seed-2.0-pro",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Seed 2.0 Pro",
+    "family": "seed",
+    "releaseDate": "2026-02-14",
+    "lastUpdated": "2026-02-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.45,
+      "output": 2.7,
+      "cacheRead": 0.09,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "step-3.7-flash",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Step 3.7 Flash",
+    "family": null,
+    "releaseDate": "2026-05-29",
+    "lastUpdated": "2026-05-29",
+    "knowledgeCutoff": "2026-03-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.18,
+      "output": 1.035,
+      "cacheRead": 0.036,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "nemotron-3.5-lightning-30b-a3b",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "nemotron-3.5-lightning-30b-a3b",
+    "family": "nemotron",
+    "releaseDate": "2026-08-11",
+    "lastUpdated": "2026-08-11",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kat-coder-pro",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "kat-coder-pro",
+    "family": "kat-coder",
+    "releaseDate": "2026-03-27",
+    "lastUpdated": "2026-03-27",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.27,
+      "output": 1.08,
       "currency": "USD",
       "per": 1000000
     },
@@ -1570,22 +4604,22 @@
       ]
     },
     "pricing": {
-      "input": 3,
-      "output": 15,
-      "cacheRead": 0.3,
-      "cacheWrite": 3.75,
+      "input": 2.7,
+      "output": 13.5,
+      "cacheRead": 0.27,
+      "cacheWrite": 3.375,
       "currency": "USD",
       "per": 1000000,
       "tiers": [
         {
-          "input": 6,
-          "output": 22.5,
+          "input": 5.4,
+          "output": 20.25,
           "contextThreshold": 200000
         }
       ],
       "contextOverThreshold": {
-        "input": 6,
-        "output": 22.5,
+        "input": 5.4,
+        "output": 20.25,
         "contextThreshold": 200000
       }
     },
@@ -1632,9 +4666,58 @@
       ]
     },
     "pricing": {
-      "input": 1.2,
-      "output": 4.2,
-      "cacheRead": 0.26,
+      "input": 1.08,
+      "output": 3.78,
+      "cacheRead": 0.234,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimax-m3@eu",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "MiniMax-M3 (EU)",
+    "family": "minimax",
+    "releaseDate": "2026-06-01",
+    "lastUpdated": "2026-06-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.36,
+      "output": 1.8,
+      "cacheRead": 0.09,
       "currency": "USD",
       "per": 1000000
     },
@@ -1683,9 +4766,227 @@
       ]
     },
     "pricing": {
-      "input": 1.5,
-      "output": 7,
-      "cacheRead": 0.15,
+      "input": 1.35,
+      "output": 6.3,
+      "cacheRead": 0.135,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.6-terra",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "GPT-5.6 Terra",
+    "family": "gpt-terra",
+    "releaseDate": "2026-07-09",
+    "lastUpdated": "2026-07-09",
+    "knowledgeCutoff": "2026-02-16",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.8,
+      "output": 10.8,
+      "cacheRead": 0.18,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 3.6,
+          "output": 16.2,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 3.6,
+        "output": 16.2,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3.1-flash-image",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Nano Banana 2",
+    "family": "gemini-flash",
+    "releaseDate": "2026-05-28",
+    "lastUpdated": "2026-05-28",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 131072,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text",
+        "image"
+      ]
+    },
+    "pricing": {
+      "input": 0.45,
+      "output": 1.8,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.45,
+          "output": 1.8,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 0.45,
+        "output": 1.8,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "nvidia-nemotron-3-super-120b-a12b",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "nvidia-nemotron-3-super-120b-a12b",
+    "family": "nemotron",
+    "releaseDate": "2026-03-11",
+    "lastUpdated": "2026-03-11",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.09,
+      "output": 0.45,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.4",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "GPT-5.4",
+    "family": "gpt",
+    "releaseDate": "2026-03-05",
+    "lastUpdated": "2026-03-05",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.475,
+      "output": 14.85,
+      "cacheRead": 0.2475,
       "currency": "USD",
       "per": 1000000
     },
@@ -1732,9 +5033,153 @@
       ]
     },
     "pricing": {
-      "input": 2.2,
-      "output": 8.8,
-      "cacheRead": 0.55,
+      "input": 1.98,
+      "output": 7.92,
+      "cacheRead": 0.495,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "nemotron-3-nano-omni@eu",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "nemotron-3-nano-omni@eu",
+    "family": "nemotron",
+    "releaseDate": "2026-05-20",
+    "lastUpdated": "2026-05-20",
+    "knowledgeCutoff": null,
+    "contextWindow": 300000,
+    "maxOutputTokens": 300000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.054,
+      "output": 0.216,
+      "cacheRead": 0.054,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "nemotron-3-nano-omni",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "nemotron-3-nano-omni",
+    "family": "nemotron",
+    "releaseDate": "2026-05-20",
+    "lastUpdated": "2026-05-20",
+    "knowledgeCutoff": null,
+    "contextWindow": 300000,
+    "maxOutputTokens": 300000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.054,
+      "output": 0.216,
+      "cacheRead": 0.054,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.6-plus",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Qwen3.6 Plus",
+    "family": "qwen",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.45,
+      "output": 2.7,
+      "cacheRead": 0.045,
+      "cacheWrite": 0.5625,
       "currency": "USD",
       "per": 1000000
     },
@@ -1779,9 +5224,56 @@
       ]
     },
     "pricing": {
-      "input": 0.14,
-      "output": 0.28,
-      "cacheRead": 0.07,
+      "input": 0.126,
+      "output": 0.252,
+      "cacheRead": 0.063,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.8-2.4T-A95B",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Qwen3.8 2.4T A95B",
+    "family": "qwen",
+    "releaseDate": "2026-08-12",
+    "lastUpdated": "2026-08-12",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.8,
+      "output": 5.4,
+      "cacheRead": 0.18,
       "currency": "USD",
       "per": 1000000
     },
@@ -1828,10 +5320,56 @@
       ]
     },
     "pricing": {
-      "input": 1.1,
-      "output": 5.5,
-      "cacheRead": 0.11,
-      "cacheWrite": 1.375,
+      "input": 0.99,
+      "output": 4.95,
+      "cacheRead": 0.099,
+      "cacheWrite": 1.2375,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "ling-3.0-tiny",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "ling-3.0-tiny",
+    "family": "ling",
+    "releaseDate": "2026-08-05",
+    "lastUpdated": "2026-08-05",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
       "currency": "USD",
       "per": 1000000
     },
@@ -1878,10 +5416,247 @@
       ]
     },
     "pricing": {
-      "input": 10,
-      "output": 50,
-      "cacheRead": 1,
-      "cacheWrite": 12.5,
+      "input": 9,
+      "output": 45,
+      "cacheRead": 0.9,
+      "cacheWrite": 11.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "devstral-latest@eu",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "devstral-latest@eu",
+    "family": "devstral",
+    "releaseDate": "2026-05-27",
+    "lastUpdated": "2026-05-27",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.396,
+      "output": 1.98,
+      "cacheRead": 0.396,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.5-27b",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Qwen3.5 27B",
+    "family": "qwen",
+    "releaseDate": "2026-02-23",
+    "lastUpdated": "2026-02-23",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.234,
+      "output": 2.34,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "ling-2.6-flash",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "ling-2.6-flash",
+    "family": "ling",
+    "releaseDate": "2026-04-21",
+    "lastUpdated": "2026-04-21",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.09,
+      "output": 0.27,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "seed-2.0-mini",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Seed 2.0 Mini",
+    "family": "seed",
+    "releaseDate": "2026-02-14",
+    "lastUpdated": "2026-02-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.09,
+      "output": 0.36,
+      "cacheRead": 0.018,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "nvidia-nemotron-3-ultra",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "nvidia-nemotron-3-ultra",
+    "family": "nemotron",
+    "releaseDate": "2026-06-23",
+    "lastUpdated": "2026-06-23",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.45,
+      "output": 2.25,
       "currency": "USD",
       "per": 1000000
     },
@@ -1928,10 +5703,57 @@
       ]
     },
     "pricing": {
-      "input": 5.5,
-      "output": 27.5,
-      "cacheRead": 0.55,
-      "cacheWrite": 6.875,
+      "input": 4.95,
+      "output": 24.75,
+      "cacheRead": 0.495,
+      "cacheWrite": 6.1875,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5.1",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "GLM-5.1",
+    "family": "glm",
+    "releaseDate": "2026-04-07",
+    "lastUpdated": "2026-04-07",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.26,
+      "output": 3.96,
+      "cacheRead": 0.234,
       "currency": "USD",
       "per": 1000000
     },
@@ -1978,9 +5800,9 @@
       ]
     },
     "pricing": {
-      "input": 0.165,
-      "output": 0.66,
-      "cacheRead": 0.0825,
+      "input": 0.1485,
+      "output": 0.594,
+      "cacheRead": 0.07425,
       "currency": "USD",
       "per": 1000000
     },
@@ -2029,9 +5851,9 @@
       ]
     },
     "pricing": {
-      "input": 0.825,
-      "output": 4.125,
-      "cacheRead": 0.0825,
+      "input": 0.66,
+      "output": 3.3,
+      "cacheRead": 0.066,
       "currency": "USD",
       "per": 1000000
     },
@@ -2078,21 +5900,21 @@
       ]
     },
     "pricing": {
-      "input": 2.5,
-      "output": 15,
-      "cacheRead": 0.25,
+      "input": 2.25,
+      "output": 13.5,
+      "cacheRead": 0.225,
       "currency": "USD",
       "per": 1000000,
       "tiers": [
         {
-          "input": 5,
-          "output": 22.5,
+          "input": 4.5,
+          "output": 20.25,
           "contextThreshold": 272000
         }
       ],
       "contextOverThreshold": {
-        "input": 5,
-        "output": 22.5,
+        "input": 4.5,
+        "output": 20.25,
         "contextThreshold": 200000
       }
     },
@@ -2139,22 +5961,22 @@
       ]
     },
     "pricing": {
-      "input": 3,
-      "output": 15,
-      "cacheRead": 0.3,
-      "cacheWrite": 3.75,
+      "input": 2.7,
+      "output": 13.5,
+      "cacheRead": 0.27,
+      "cacheWrite": 3.375,
       "currency": "USD",
       "per": 1000000,
       "tiers": [
         {
-          "input": 6,
-          "output": 22.5,
+          "input": 5.4,
+          "output": 20.25,
           "contextThreshold": 200000
         }
       ],
       "contextOverThreshold": {
-        "input": 6,
-        "output": 22.5,
+        "input": 5.4,
+        "output": 20.25,
         "contextThreshold": 200000
       }
     },
@@ -2201,10 +6023,10 @@
       ]
     },
     "pricing": {
-      "input": 1,
-      "output": 5,
-      "cacheRead": 0.1,
-      "cacheWrite": 1.25,
+      "input": 0.9,
+      "output": 4.5,
+      "cacheRead": 0.09,
+      "cacheWrite": 1.125,
       "currency": "USD",
       "per": 1000000
     },
@@ -2253,9 +6075,201 @@
       ]
     },
     "pricing": {
-      "input": 2.2,
-      "output": 13.2,
-      "cacheRead": 0.22,
+      "input": 1.98,
+      "output": 11.88,
+      "cacheRead": 0.198,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mimo-v2.5-pro",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "MiMo-V2.5-Pro",
+    "family": "mimo",
+    "releaseDate": "2026-04-22",
+    "lastUpdated": "2026-04-22",
+    "knowledgeCutoff": "2024-12",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3915,
+      "output": 0.783,
+      "cacheRead": 0.00324,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "thinkingcap-qwen3.6-27b",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "thinkingcap-qwen3.6-27b",
+    "family": "qwen3.6",
+    "releaseDate": "2026-07-13",
+    "lastUpdated": "2026-07-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.36,
+      "output": 2.7,
+      "cacheRead": 0.234,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "hy3",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Hy3",
+    "family": "Hy",
+    "releaseDate": "2026-07-06",
+    "lastUpdated": "2026-07-06",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.126,
+      "output": 0.522,
+      "cacheRead": 0.0315,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3.5-flash-lite@eu",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Gemini 3.5 Flash Lite (EU)",
+    "family": "gemini-flash-lite",
+    "releaseDate": "2026-07-21",
+    "lastUpdated": "2026-07-21",
+    "knowledgeCutoff": "2026-03",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65535,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.297,
+      "output": 2.475,
+      "cacheRead": 0.0297,
       "currency": "USD",
       "per": 1000000
     },
@@ -2302,10 +6316,10 @@
       ]
     },
     "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
+      "input": 4.5,
+      "output": 22.5,
+      "cacheRead": 0.45,
+      "cacheWrite": 5.625,
       "currency": "USD",
       "per": 1000000
     },
@@ -2352,10 +6366,56 @@
       ]
     },
     "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
+      "input": 4.5,
+      "output": 22.5,
+      "cacheRead": 0.45,
+      "cacheWrite": 5.625,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "leanstral-1-5",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "leanstral-1-5",
+    "family": null,
+    "releaseDate": "2026-05-27",
+    "lastUpdated": "2026-05-27",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
       "currency": "USD",
       "per": 1000000
     },
@@ -2402,10 +6462,10 @@
       ]
     },
     "pricing": {
-      "input": 5.5,
-      "output": 27.5,
-      "cacheRead": 0.55,
-      "cacheWrite": 6.875,
+      "input": 4.95,
+      "output": 24.75,
+      "cacheRead": 0.495,
+      "cacheWrite": 6.1875,
       "currency": "USD",
       "per": 1000000
     },
@@ -2413,6 +6473,56 @@
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mistral-medium-latest",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Mistral Medium",
+    "family": "mistral-medium",
+    "releaseDate": "2026-04-29",
+    "lastUpdated": "2026-04-29",
+    "knowledgeCutoff": null,
+    "contextWindow": 131072,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.396,
+      "output": 1.98,
+      "cacheRead": 0.396,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [
+      "Mistral Medium (latest)"
+    ],
     "isAggregator": true,
     "sources": [
       "models.dev"
@@ -2450,9 +6560,104 @@
       ]
     },
     "pricing": {
-      "input": 0.14,
-      "output": 0.28,
-      "cacheRead": 0.07,
+      "input": 0.126,
+      "output": 0.252,
+      "cacheRead": 0.063,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "grok-build-0.1",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Grok Build 0.1",
+    "family": "grok-build",
+    "releaseDate": "2026-04-16",
+    "lastUpdated": "2026-04-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.9,
+      "output": 1.8,
+      "cacheRead": 0.09,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "laguna-xs.2",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Laguna XS.2",
+    "family": "laguna",
+    "releaseDate": "2026-04-28",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 32768,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
       "currency": "USD",
       "per": 1000000
     },
@@ -2501,9 +6706,263 @@
       ]
     },
     "pricing": {
-      "input": 0.75,
-      "output": 3.75,
-      "cacheRead": 0.075,
+      "input": 0.6,
+      "output": 3,
+      "cacheRead": 0.06,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.4-nano",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "GPT-5.4 nano",
+    "family": "gpt-nano",
+    "releaseDate": "2026-03-17",
+    "lastUpdated": "2026-03-17",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.18,
+      "output": 1.125,
+      "cacheRead": 0.018,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "grok-4.3",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Grok 4.3",
+    "family": "grok",
+    "releaseDate": "2026-04-17",
+    "lastUpdated": "2026-04-17",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 1000000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.125,
+      "output": 2.25,
+      "cacheRead": 0.18,
+      "cacheWrite": 1.125,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 2.25,
+          "output": 4.5,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 2.25,
+        "output": 4.5,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5.1@eu",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "GLM-5.1 (EU)",
+    "family": "glm",
+    "releaseDate": "2026-04-07",
+    "lastUpdated": "2026-04-07",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 200000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.26,
+      "output": 3.96,
+      "cacheRead": 1.26,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k2.6",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Kimi K2.6",
+    "family": "kimi-k2",
+    "releaseDate": "2026-04-21",
+    "lastUpdated": "2026-04-21",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.855,
+      "output": 3.6,
+      "cacheRead": 0.144,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mistral-medium-3-5@eu",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "mistral-medium-3-5@eu",
+    "family": "mistral-medium",
+    "releaseDate": "2026-04-30",
+    "lastUpdated": "2026-04-30",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.485,
+      "output": 7.425,
+      "cacheRead": 1.485,
       "currency": "USD",
       "per": 1000000
     },

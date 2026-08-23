@@ -563,7 +563,7 @@
     "displayName": "DeepSeek V4 Pro 0813",
     "family": "deepseek-thinking",
     "releaseDate": "2026-08-12",
-    "lastUpdated": "2026-08-12",
+    "lastUpdated": "2026-08-22",
     "knowledgeCutoff": null,
     "contextWindow": 1000000,
     "maxOutputTokens": 393216,
@@ -577,7 +577,7 @@
       "temperature": true,
       "attachment": false,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -685,6 +685,55 @@
       "input": 1.4,
       "output": 4.4,
       "cacheRead": 1.4,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-4-6v-flash",
+    "provider": "empiriolabs",
+    "providerName": "EmpirioLabs AI",
+    "displayName": "GLM 4.6V Flash",
+    "family": "glm",
+    "releaseDate": "2025-12-08",
+    "lastUpdated": "2025-12-08",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
       "currency": "USD",
       "per": 1000000
     },
@@ -1164,6 +1213,53 @@
       "input": 0.2,
       "output": 0.8,
       "cacheRead": 0.05,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5-3",
+    "provider": "empiriolabs",
+    "providerName": "EmpirioLabs AI",
+    "displayName": "GLM 5.3",
+    "family": "glm",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.4,
+      "output": 4.4,
+      "cacheRead": 1.4,
       "currency": "USD",
       "per": 1000000
     },
@@ -2566,9 +2662,9 @@
       ]
     },
     "pricing": {
-      "input": 0.14,
-      "output": 0.28,
-      "cacheRead": 0.14,
+      "input": 0.424,
+      "output": 1.272,
+      "cacheRead": 0.424,
       "currency": "USD",
       "per": 1000000
     },

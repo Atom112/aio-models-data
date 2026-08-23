@@ -1,25 +1,25 @@
 [
   {
-    "id": "Nemotron-3-Nano-Omni-30B-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Nemotron 3 Nano Omni 30B TEE",
-    "family": "nemotron",
-    "releaseDate": "2026-07-23",
-    "lastUpdated": "2026-07-23",
-    "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 0,
+    "id": "DeepSeek-V4-Pro",
+    "provider": "jalapeno",
+    "providerName": "Jalapeno Cloud",
+    "displayName": "DeepSeek V4 Pro",
+    "family": "deepseek-thinking",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 384000,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -31,9 +31,8 @@
       ]
     },
     "pricing": {
-      "input": 0.0245,
-      "output": 0.0978,
-      "cacheRead": 0.0024499999999999995,
+      "input": 1.6,
+      "output": 3.38,
       "currency": "USD",
       "per": 1000000
     },
@@ -47,16 +46,64 @@
     ]
   },
   {
-    "id": "google/gemma-4-31B-turbo-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "gemma 4 31B turbo TEE",
-    "family": "gemma",
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-04-02",
-    "knowledgeCutoff": null,
+    "id": "Kimi-K2.5",
+    "provider": "jalapeno",
+    "providerName": "Jalapeno Cloud",
+    "displayName": "Kimi K2.5",
+    "family": "kimi-k2",
+    "releaseDate": "2026-01",
+    "lastUpdated": "2026-01",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 180224,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.6,
+      "output": 3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen3-VL-235B-A22B-Thinking",
+    "provider": "jalapeno",
+    "providerName": "Jalapeno Cloud",
+    "displayName": "Qwen3 VL 235B A22B Thinking",
+    "family": "qwen",
+    "releaseDate": "2025-09-23",
+    "lastUpdated": "2025-09-23",
+    "knowledgeCutoff": "2025-03-31",
     "contextWindow": 131072,
-    "maxOutputTokens": 65536,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -79,9 +126,8 @@
       ]
     },
     "pricing": {
-      "input": 0.12,
-      "output": 0.37,
-      "cacheRead": 0.011999999999999997,
+      "input": 0.98,
+      "output": 3.95,
       "currency": "USD",
       "per": 1000000
     },
@@ -95,16 +141,112 @@
     ]
   },
   {
-    "id": "moonshotai/Kimi-K2.6-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Kimi K2.6 TEE",
-    "family": "kimi-k2",
-    "releaseDate": "2026-04-21",
-    "lastUpdated": "2026-04-21",
-    "knowledgeCutoff": "2025-12",
+    "id": "Qwen3-VL-235B-A22B-Instruct",
+    "provider": "jalapeno",
+    "providerName": "Jalapeno Cloud",
+    "displayName": "Qwen3 VL 235B A22B Instruct",
+    "family": "qwen",
+    "releaseDate": "2025-09-23",
+    "lastUpdated": "2025-09-23",
+    "knowledgeCutoff": "2025-03-31",
+    "contextWindow": 129024,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 1.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen3.5-122B-A10B",
+    "provider": "jalapeno",
+    "providerName": "Jalapeno Cloud",
+    "displayName": "Qwen3.5 122B-A10B",
+    "family": "qwen",
+    "releaseDate": "2026-02-23",
+    "lastUpdated": "2026-02-23",
+    "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 65535,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.4,
+      "output": 3.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "MiniMax-M3",
+    "provider": "jalapeno",
+    "providerName": "Jalapeno Cloud",
+    "displayName": "MiniMax-M3",
+    "family": "minimax",
+    "releaseDate": "2026-06-01",
+    "lastUpdated": "2026-06-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 524288,
+    "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -128,9 +270,8 @@
       ]
     },
     "pricing": {
-      "input": 0.58,
-      "output": 3.4,
-      "cacheRead": 0.05799999999999998,
+      "input": 0.3,
+      "output": 1.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -144,16 +285,110 @@
     ]
   },
   {
-    "id": "moonshotai/Kimi-K3-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Kimi K3 TEE",
-    "family": "kimi-k3",
-    "releaseDate": "2026-07-29",
-    "lastUpdated": "2026-07-29",
+    "id": "GLM-5.1",
+    "provider": "jalapeno",
+    "providerName": "Jalapeno Cloud",
+    "displayName": "GLM-5.1",
+    "family": "glm",
+    "releaseDate": "2026-04-07",
+    "lastUpdated": "2026-04-07",
     "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65535,
+    "contextWindow": 202752,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.38,
+      "output": 4.4,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Kimi-K2.7-Code",
+    "provider": "jalapeno",
+    "providerName": "Jalapeno Cloud",
+    "displayName": "Kimi K2.7 Code",
+    "family": "kimi-k2",
+    "releaseDate": "2026-06-12",
+    "lastUpdated": "2026-06-12",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 271360,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.95,
+      "output": 4,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen3.5-27B",
+    "provider": "jalapeno",
+    "providerName": "Jalapeno Cloud",
+    "displayName": "Qwen3.5 27B",
+    "family": "qwen",
+    "releaseDate": "2026-02-23",
+    "lastUpdated": "2026-02-23",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -162,6 +397,199 @@
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 2.4,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen3.5-35B-A3B",
+    "provider": "jalapeno",
+    "providerName": "Jalapeno Cloud",
+    "displayName": "Qwen3.5 35B-A3B",
+    "family": "qwen",
+    "releaseDate": "2026-02-23",
+    "lastUpdated": "2026-02-23",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.25,
+      "output": 2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen3-Next-80B-A3B-Thinking",
+    "provider": "jalapeno",
+    "providerName": "Jalapeno Cloud",
+    "displayName": "Qwen3-Next 80B-A3B (Thinking)",
+    "family": "qwen",
+    "releaseDate": "2025-09",
+    "lastUpdated": "2025-09",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 131072,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 1.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen3.5-397B-A17B",
+    "provider": "jalapeno",
+    "providerName": "Jalapeno Cloud",
+    "displayName": "Qwen3.5 397B-A17B",
+    "family": "qwen",
+    "releaseDate": "2026-02-15",
+    "lastUpdated": "2026-02-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.6,
+      "output": 3.6,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Kimi-K3",
+    "provider": "jalapeno",
+    "providerName": "Jalapeno Cloud",
+    "displayName": "Kimi K3",
+    "family": "kimi-k3",
+    "releaseDate": "2026-07-16",
+    "lastUpdated": "2026-07-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
       "attachment": true,
       "structured_output": true,
       "open_weights": true
@@ -179,7 +607,6 @@
     "pricing": {
       "input": 3,
       "output": 15,
-      "cacheRead": 0.29999999999999993,
       "currency": "USD",
       "per": 1000000
     },
@@ -193,26 +620,26 @@
     ]
   },
   {
-    "id": "unsloth/Mistral-Nemo-Instruct-2407-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Mistral Nemo Instruct 2407 TEE",
-    "family": "mistral-nemo",
-    "releaseDate": "2024-07-01",
-    "lastUpdated": "2024-07-01",
-    "knowledgeCutoff": "2024-07",
-    "contextWindow": 131072,
-    "maxOutputTokens": 131072,
+    "id": "Hy3",
+    "provider": "jalapeno",
+    "providerName": "Jalapeno Cloud",
+    "displayName": "Hy3",
+    "family": "Hy",
+    "releaseDate": "2026-07-06",
+    "lastUpdated": "2026-07-06",
+    "knowledgeCutoff": null,
+    "contextWindow": 202752,
+    "maxOutputTokens": 64000,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -224,9 +651,8 @@
       ]
     },
     "pricing": {
-      "input": 0.0245,
-      "output": 0.0978,
-      "cacheRead": 0.0024499999999999995,
+      "input": 0.14,
+      "output": 0.58,
       "currency": "USD",
       "per": 1000000
     },
@@ -240,16 +666,62 @@
     ]
   },
   {
-    "id": "deepseek-ai/DeepSeek-V4-Flash-0731-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "DeepSeek V4 Flash 0731 TEE",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-07-31",
-    "lastUpdated": "2026-08-02",
-    "knowledgeCutoff": "2025-05",
+    "id": "GLM-5.2",
+    "provider": "jalapeno",
+    "providerName": "Jalapeno Cloud",
+    "displayName": "GLM-5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
     "contextWindow": 1048576,
     "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.4,
+      "output": 4.4,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "DeepSeek-V4-Flash",
+    "provider": "jalapeno",
+    "providerName": "Jalapeno Cloud",
+    "displayName": "DeepSeek V4 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 384000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -273,7 +745,6 @@
     "pricing": {
       "input": 0.14,
       "output": 0.28,
-      "cacheRead": 0.013999999999999999,
       "currency": "USD",
       "per": 1000000
     },
@@ -287,163 +758,20 @@
     ]
   },
   {
-    "id": "deepseek-ai/DeepSeek-V3.2-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "DeepSeek V3.2 TEE",
-    "family": "deepseek",
-    "releaseDate": "2025-12",
-    "lastUpdated": "2026-06-21",
-    "knowledgeCutoff": "2024-07",
-    "contextWindow": 131072,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1,
-      "output": 1,
-      "cacheRead": 0.09999999999999998,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3.6-27B-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Qwen3.6 27B TEE",
+    "id": "Qwen3-Next-80B-A3B-Instruct",
+    "provider": "jalapeno",
+    "providerName": "Jalapeno Cloud",
+    "displayName": "Qwen3-Next 80B-A3B Instruct",
     "family": "qwen",
-    "releaseDate": "2026-04-22",
-    "lastUpdated": "2026-04-22",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 2,
-      "cacheRead": 0.029999999999999992,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3.5-397B-A17B-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Qwen3.5 397B A17B TEE",
-    "family": "qwen",
-    "releaseDate": "2026-02-15",
-    "lastUpdated": "2026-02-15",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.45,
-      "output": 3,
-      "cacheRead": 0.04499999999999999,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3-235B-A22B-Thinking-2507-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Qwen3 235B A22B Thinking 2507 TEE",
-    "family": "qwen",
-    "releaseDate": "2025-07",
-    "lastUpdated": "2026-06-21",
+    "releaseDate": "2025-09",
+    "lastUpdated": "2025-09",
     "knowledgeCutoff": "2025-04",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "contextWindow": 129024,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": true,
+      "reasoning": false,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
@@ -461,198 +789,8 @@
       ]
     },
     "pricing": {
-      "input": 0.2989,
-      "output": 1.1957,
-      "cacheRead": 0.029889999999999993,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3-32B-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Qwen3 32B TEE",
-    "family": "qwen",
-    "releaseDate": "2025-04",
-    "lastUpdated": "2025-04",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 40960,
-    "maxOutputTokens": 40960,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.104,
-      "output": 0.416,
-      "cacheRead": 0.010399999999999998,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3.8-27B-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Qwen3.8 27B TEE",
-    "family": "qwen",
-    "releaseDate": "2026-08-16",
-    "lastUpdated": "2026-08-16",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.4,
-      "output": 3,
-      "cacheRead": 0.039999999999999994,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/GLM-5.2-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "GLM 5.2 TEE",
-    "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65535,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.25,
-      "output": 3.95,
-      "cacheRead": 0.12499999999999997,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/GLM-5.1-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "GLM 5.1 TEE",
-    "family": "glm",
-    "releaseDate": "2026-04-07",
-    "lastUpdated": "2026-04-07",
-    "knowledgeCutoff": null,
-    "contextWindow": 202752,
-    "maxOutputTokens": 65535,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.98,
-      "output": 3.08,
-      "cacheRead": 0.09799999999999998,
+      "input": 0.15,
+      "output": 1.5,
       "currency": "USD",
       "per": 1000000
     },

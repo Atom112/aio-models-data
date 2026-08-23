@@ -703,7 +703,7 @@
     "displayName": "DeepSeek V4 Pro 0813",
     "family": "deepseek-thinking",
     "releaseDate": "2026-08-12",
-    "lastUpdated": "2026-08-12",
+    "lastUpdated": "2026-08-22",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
     "maxOutputTokens": 1048576,
@@ -717,7 +717,7 @@
       "temperature": true,
       "attachment": false,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -752,7 +752,7 @@
     "releaseDate": "2026-07-31",
     "lastUpdated": "2026-07-31",
     "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
+    "contextWindow": 1310720,
     "maxOutputTokens": 1048576,
     "capabilities": {
       "tools": true,
@@ -916,6 +916,54 @@
     "pricing": {
       "input": 0.66,
       "output": 1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "@cf/qwen/qwen3.8-27b",
+    "provider": "cloudflare-workers-ai",
+    "providerName": "Cloudflare Workers AI",
+    "displayName": "Qwen3.8 27B",
+    "family": "qwen",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.45,
+      "output": 3.2,
+      "cacheRead": 0.05,
       "currency": "USD",
       "per": 1000000
     },
