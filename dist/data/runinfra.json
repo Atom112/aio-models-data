@@ -33,6 +33,7 @@
     "pricing": {
       "input": 0.05,
       "output": 0.15,
+      "cacheRead": 0.01,
       "currency": "USD",
       "per": 1000000
     },
@@ -140,6 +141,54 @@
     ]
   },
   {
+    "id": "ornith-ai/Ornith-1.5-35B-A3B",
+    "provider": "runinfra",
+    "providerName": "RunInfra",
+    "displayName": "Ornith 1.5 35B A3B",
+    "family": "ornith",
+    "releaseDate": "2026-08-18",
+    "lastUpdated": "2026-08-23",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.4,
+      "cacheRead": 0.01,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "Inferact/Qwen3.8-2.4T-A95B-NVFP4",
     "provider": "runinfra",
     "providerName": "RunInfra",
@@ -199,19 +248,68 @@
     "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
+        "text",
+        "image"
+      ],
+      "output": [
         "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.4,
+      "cacheRead": 0.01,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "zai-org/GLM-5.3-Flash",
+    "provider": "runinfra",
+    "providerName": "RunInfra",
+    "displayName": "GLM-5.3-Flash",
+    "family": "glm",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
       ],
       "output": [
         "text"

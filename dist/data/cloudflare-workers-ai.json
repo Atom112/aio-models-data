@@ -977,6 +977,53 @@
     ]
   },
   {
+    "id": "@cf/zai-org/glm-5.3",
+    "provider": "cloudflare-workers-ai",
+    "providerName": "Cloudflare Workers AI",
+    "displayName": "Glm 5.3",
+    "family": "glm",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 1310720,
+    "maxOutputTokens": 1310720,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.4,
+      "output": 4.4,
+      "cacheRead": 0.26,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "@cf/zai-org/glm-5.2",
     "provider": "cloudflare-workers-ai",
     "providerName": "Cloudflare Workers AI",
@@ -1057,6 +1104,54 @@
     "pricing": {
       "input": 0.0605,
       "output": 0.4,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "@cf/zai-org/glm-5.3-flash",
+    "provider": "cloudflare-workers-ai",
+    "providerName": "Cloudflare Workers AI",
+    "displayName": "Glm 5.3 Flash",
+    "family": "glm",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1310720,
+    "maxOutputTokens": 1048576,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.5,
+      "cacheRead": 0.03,
       "currency": "USD",
       "per": 1000000
     },

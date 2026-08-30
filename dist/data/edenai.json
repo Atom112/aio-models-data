@@ -141,53 +141,6 @@
     ]
   },
   {
-    "id": "deepseek/deepseek-reasoner",
-    "provider": "edenai",
-    "providerName": "Eden AI",
-    "displayName": "DeepSeek Reasoner",
-    "family": "deepseek-thinking",
-    "releaseDate": "2025-12-01",
-    "lastUpdated": "2026-02-28",
-    "knowledgeCutoff": "2025-09",
-    "contextWindow": 131072,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.28,
-      "output": 0.42,
-      "cacheRead": 0.028,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "deepseek/deepseek-v4-flash-vision-exp",
     "provider": "edenai",
     "providerName": "Eden AI",
@@ -558,54 +511,6 @@
         "output": 18,
         "contextThreshold": 200000
       }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "google/lyria-3-clip-preview",
-    "provider": "edenai",
-    "providerName": "Eden AI",
-    "displayName": "Lyria 3 Clip Preview",
-    "family": "lyria",
-    "releaseDate": "2026-03-25",
-    "lastUpdated": "2026-03-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text",
-        "audio"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
     },
     "status": "active",
     "deprecationDate": null,
@@ -1249,6 +1154,53 @@
     ]
   },
   {
+    "id": "deepinfra/tencent/Hy3",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Hy3",
+    "family": "Hy",
+    "releaseDate": "2026-07-06",
+    "lastUpdated": "2026-07-06",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.14,
+      "output": 0.58,
+      "cacheRead": 0.035,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "deepinfra/nvidia/Nemotron-3-Nano-30B-A3B",
     "provider": "edenai",
     "providerName": "Eden AI",
@@ -1353,15 +1305,15 @@
     "contextWindow": 256000,
     "maxOutputTokens": 131072,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -1401,15 +1353,15 @@
     "contextWindow": 256000,
     "maxOutputTokens": 32000,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -1729,15 +1681,15 @@
     "contextWindow": 1048576,
     "maxOutputTokens": 384000,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -3452,6 +3404,103 @@
     ]
   },
   {
+    "id": "zai/glm-5.3-flash",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "GLM-5.3-Flash",
+    "family": "glm",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.5,
+      "cacheRead": 0.03,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "databricks/databricks-gpt-oss-120b@eu",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "GPT OSS 120B (EU)",
+    "family": "gpt-oss",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": null,
+    "contextWindow": 131072,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15001,
+      "output": 0.59997,
+      "cacheRead": 0.15001,
+      "cacheWrite": 0.15001,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "databricks/databricks-gpt-oss-20b",
     "provider": "edenai",
     "providerName": "Eden AI",
@@ -3485,6 +3534,8 @@
     "pricing": {
       "input": 0.07,
       "output": 0.30002,
+      "cacheRead": 0.07,
+      "cacheWrite": 0.07,
       "currency": "USD",
       "per": 1000000
     },
@@ -3531,6 +3582,8 @@
     "pricing": {
       "input": 0.15001,
       "output": 0.59997,
+      "cacheRead": 0.15001,
+      "cacheWrite": 0.15001,
       "currency": "USD",
       "per": 1000000
     },
@@ -3544,26 +3597,26 @@
     ]
   },
   {
-    "id": "together_ai/nvidia/nemotron-3-ultra-550b-a55b",
+    "id": "databricks/databricks-gpt-oss-20b@eu",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Nemotron 3 Ultra 550B A55B",
-    "family": "nemotron",
-    "releaseDate": "2026-06-04",
-    "lastUpdated": "2026-06-04",
+    "displayName": "GPT OSS 20B (EU)",
+    "family": "gpt-oss",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
     "knowledgeCutoff": null,
-    "contextWindow": 512288,
-    "maxOutputTokens": 128000,
+    "contextWindow": 131072,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": true,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
@@ -3575,9 +3628,10 @@
       ]
     },
     "pricing": {
-      "input": 0.6,
-      "output": 3.6,
-      "cacheRead": 0.2,
+      "input": 0.07,
+      "output": 0.30002,
+      "cacheRead": 0.07,
+      "cacheWrite": 0.07,
       "currency": "USD",
       "per": 1000000
     },
@@ -3792,11 +3846,11 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -4667,7 +4721,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
       "open_weights": false
@@ -4814,7 +4868,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
       "open_weights": false
@@ -4863,7 +4917,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
       "open_weights": false
@@ -5230,7 +5284,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
       "open_weights": false
@@ -5390,7 +5444,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
       "open_weights": false
@@ -5706,7 +5760,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
       "open_weights": false
@@ -5755,7 +5809,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
       "open_weights": false
@@ -6361,7 +6415,7 @@
     "releaseDate": "2026-07-31",
     "lastUpdated": "2026-07-31",
     "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
+    "contextWindow": 1024000,
     "maxOutputTokens": 384000,
     "capabilities": {
       "tools": true,
@@ -6538,6 +6592,59 @@
       "cacheRead": 0.03,
       "cacheWrite": 0.083333,
       "inputAudio": 0.3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "vertex/gemini-3.1-flash-lite@eu",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Gemini 3.1 Flash Lite (EU)",
+    "family": "gemini-flash-lite",
+    "releaseDate": "2026-05-07",
+    "lastUpdated": "2026-05-07",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.25,
+      "output": 1.5,
+      "cacheRead": 0.025,
+      "cacheWrite": 0.083333,
+      "inputAudio": 0.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -6876,6 +6983,59 @@
     ]
   },
   {
+    "id": "vertex/gemini-3.1-flash-lite",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Gemini 3.1 Flash Lite",
+    "family": "gemini-flash-lite",
+    "releaseDate": "2026-05-07",
+    "lastUpdated": "2026-05-07",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.25,
+      "output": 1.5,
+      "cacheRead": 0.025,
+      "cacheWrite": 0.083333,
+      "inputAudio": 0.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "vertex/gemini-3.6-flash@eu",
     "provider": "edenai",
     "providerName": "Eden AI",
@@ -6916,6 +7076,59 @@
       "cacheRead": 0.075,
       "cacheWrite": 0.041667,
       "inputAudio": 0.75,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "vertex/gemini-3.1-flash-lite@us",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Gemini 3.1 Flash Lite (US)",
+    "family": "gemini-flash-lite",
+    "releaseDate": "2026-05-07",
+    "lastUpdated": "2026-05-07",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.25,
+      "output": 1.5,
+      "cacheRead": 0.025,
+      "cacheWrite": 0.083333,
+      "inputAudio": 0.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -7830,8 +8043,8 @@
       ]
     },
     "pricing": {
-      "input": 0.627,
-      "output": 1.881,
+      "input": 0.5808,
+      "output": 1.7424,
       "currency": "USD",
       "per": 1000000
     },
@@ -7939,6 +8152,52 @@
     ]
   },
   {
+    "id": "qwen/qwen3-coder-next@eu",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Qwen3 Coder Next (EU)",
+    "family": "qwen",
+    "releaseDate": "2026-02-03",
+    "lastUpdated": "2026-02-03",
+    "knowledgeCutoff": "2025-09",
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 1.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "qwen/qwen3.8-max",
     "provider": "edenai",
     "providerName": "Eden AI",
@@ -7976,6 +8235,104 @@
       "output": 6,
       "cacheRead": 0.25,
       "cacheWrite": 2.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3-max@eu",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Qwen3 Max (EU)",
+    "family": "qwen",
+    "releaseDate": "2025-09-23",
+    "lastUpdated": "2025-09-23",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.2,
+      "output": 6,
+      "cacheRead": 0.24,
+      "cacheWrite": 1.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.8-flash",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Qwen3.8 Flash",
+    "family": "qwen",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.16,
+      "output": 0.47,
+      "cacheRead": 0.016,
+      "cacheWrite": 0.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -8928,8 +9285,8 @@
       ]
     },
     "pricing": {
-      "input": 0.175485,
-      "output": 0.760435,
+      "input": 0.174645,
+      "output": 0.756795,
       "currency": "USD",
       "per": 1000000
     },
@@ -8974,8 +9331,8 @@
       ]
     },
     "pricing": {
-      "input": 0.760435,
-      "output": 0.760435,
+      "input": 0.756795,
+      "output": 0.756795,
       "currency": "USD",
       "per": 1000000
     },
@@ -9020,8 +9377,8 @@
       ]
     },
     "pricing": {
-      "input": 1.05291,
-      "output": 1.05291,
+      "input": 1.04787,
+      "output": 1.04787,
       "currency": "USD",
       "per": 1000000
     },
@@ -9066,8 +9423,8 @@
       ]
     },
     "pricing": {
-      "input": 0.175485,
-      "output": 0.70194,
+      "input": 0.174645,
+      "output": 0.69858,
       "currency": "USD",
       "per": 1000000
     },
@@ -9112,8 +9469,8 @@
       ]
     },
     "pricing": {
-      "input": 0.46796,
-      "output": 0.93592,
+      "input": 0.46572,
+      "output": 0.93144,
       "currency": "USD",
       "per": 1000000
     },
@@ -9161,6 +9518,7 @@
     "pricing": {
       "input": 0.15,
       "output": 0.6,
+      "cacheRead": 0.015,
       "currency": "USD",
       "per": 1000000
     },
@@ -9259,8 +9617,9 @@
       ]
     },
     "pricing": {
-      "input": 0.4,
-      "output": 2,
+      "input": 0.44,
+      "output": 2.2,
+      "cacheRead": 0.044,
       "currency": "USD",
       "per": 1000000
     },
@@ -9405,6 +9764,7 @@
     "pricing": {
       "input": 1.5,
       "output": 7.5,
+      "cacheRead": 0.15,
       "currency": "USD",
       "per": 1000000
     },
@@ -9513,6 +9873,55 @@
     ]
   },
   {
+    "id": "mistral/voxtral-small-latest",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Voxtral Small",
+    "family": "voxtral",
+    "releaseDate": "2025-07-15",
+    "lastUpdated": "2025-07-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 32768,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.4,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [
+      "Voxtral Small (latest)"
+    ],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "mistral/codestral-latest",
     "provider": "edenai",
     "providerName": "Eden AI",
@@ -9546,6 +9955,7 @@
     "pricing": {
       "input": 0.3,
       "output": 0.9,
+      "cacheRead": 0.03,
       "currency": "USD",
       "per": 1000000
     },
@@ -9644,6 +10054,7 @@
     "pricing": {
       "input": 1.5,
       "output": 7.5,
+      "cacheRead": 0.15,
       "currency": "USD",
       "per": 1000000
     },
@@ -9831,98 +10242,6 @@
     "pricing": {
       "input": 0.07,
       "output": 0.4,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "amazon/nvidia.nemotron-nano-9b-v2",
-    "provider": "edenai",
-    "providerName": "Eden AI",
-    "displayName": "Nemotron Nano 9B v2",
-    "family": "nemotron",
-    "releaseDate": "2025-08-18",
-    "lastUpdated": "2025-08-18",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.06,
-      "output": 0.23,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "amazon/nvidia.nemotron-nano-9b-v2@us",
-    "provider": "edenai",
-    "providerName": "Eden AI",
-    "displayName": "Nemotron Nano 9B v2 (US)",
-    "family": "nemotron",
-    "releaseDate": "2025-08-18",
-    "lastUpdated": "2025-08-18",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.06,
-      "output": 0.23,
       "currency": "USD",
       "per": 1000000
     },
@@ -10400,53 +10719,6 @@
     ]
   },
   {
-    "id": "fireworks_ai/gpt-oss-20b",
-    "provider": "edenai",
-    "providerName": "Eden AI",
-    "displayName": "GPT OSS 20B",
-    "family": "gpt-oss",
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.07,
-      "output": 0.3,
-      "cacheRead": 0.035,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "fireworks_ai/accounts/fireworks/models/deepseek-v4-pro-0813",
     "provider": "edenai",
     "providerName": "Eden AI",
@@ -10623,53 +10895,6 @@
       "input": 0.22,
       "output": 0.66,
       "cacheRead": 0.007,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "fireworks_ai/accounts/fireworks/models/gpt-oss-20b",
-    "provider": "edenai",
-    "providerName": "Eden AI",
-    "displayName": "GPT OSS 20B",
-    "family": "gpt-oss",
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.07,
-      "output": 0.3,
-      "cacheRead": 0.035,
       "currency": "USD",
       "per": 1000000
     },
@@ -10964,6 +11189,53 @@
     ]
   },
   {
+    "id": "tensorx/deepseek/deepseek-v4-pro-0813",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "DeepSeek V4 Pro 0813",
+    "family": "deepseek-thinking",
+    "releaseDate": "2026-08-12",
+    "lastUpdated": "2026-08-22",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 4,
+      "cacheRead": 0.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "tensorx/deepseek/deepseek-v4-flash-0731",
     "provider": "edenai",
     "providerName": "Eden AI",
@@ -11092,53 +11364,7 @@
     },
     "pricing": {
       "input": 0.3,
-      "output": 1.2,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "flexai/DeepSeek-V4-Flash-0731",
-    "provider": "edenai",
-    "providerName": "Eden AI",
-    "displayName": "DeepSeek V4 Flash 0731",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-07-31",
-    "lastUpdated": "2026-07-31",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.08,
-      "output": 0.18,
+      "output": 1.1,
       "currency": "USD",
       "per": 1000000
     },
@@ -11252,7 +11478,7 @@
     "releaseDate": "2026-07-31",
     "lastUpdated": "2026-07-31",
     "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
+    "contextWindow": 786432,
     "maxOutputTokens": 384000,
     "capabilities": {
       "tools": false,
@@ -11321,8 +11547,8 @@
       ]
     },
     "pricing": {
-      "input": 0.03,
-      "output": 0.13,
+      "input": 0.02,
+      "output": 0.1,
       "currency": "USD",
       "per": 1000000
     },
@@ -11439,7 +11665,7 @@
     "lastUpdated": "2025-10-27",
     "knowledgeCutoff": null,
     "contextWindow": 204800,
-    "maxOutputTokens": 128000,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -11485,7 +11711,7 @@
     "lastUpdated": "2026-06-01",
     "knowledgeCutoff": null,
     "contextWindow": 524288,
-    "maxOutputTokens": 128000,
+    "maxOutputTokens": 512000,
     "capabilities": {
       "tools": true,
       "vision": true,

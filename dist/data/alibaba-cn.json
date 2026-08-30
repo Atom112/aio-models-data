@@ -174,7 +174,19 @@
       "input": 0.216,
       "output": 0.861,
       "currency": "USD",
-      "per": 1000000
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.323,
+          "output": 1.291,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 0.538,
+          "output": 2.151,
+          "contextThreshold": 128000
+        }
+      ]
     },
     "status": "active",
     "deprecationDate": null,
@@ -965,10 +977,17 @@
       ]
     },
     "pricing": {
-      "input": 0.43,
-      "output": 2.58,
+      "input": 0.172,
+      "output": 1.032,
       "currency": "USD",
-      "per": 1000000
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.43,
+          "output": 2.58,
+          "contextThreshold": 128000
+        }
+      ]
     },
     "status": "active",
     "deprecationDate": null,
@@ -1061,6 +1080,8 @@
     "pricing": {
       "input": 0.115,
       "output": 0.287,
+      "cacheRead": 0.012,
+      "cacheWrite": 0.144,
       "currency": "USD",
       "per": 1000000
     },
@@ -1431,10 +1452,17 @@
       ]
     },
     "pricing": {
-      "input": 0.86,
-      "output": 3.15,
+      "input": 0.573,
+      "output": 2.58,
       "currency": "USD",
-      "per": 1000000
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.86,
+          "output": 3.154,
+          "contextThreshold": 32000
+        }
+      ]
     },
     "status": "active",
     "deprecationDate": null,
@@ -2033,6 +2061,56 @@
     ]
   },
   {
+    "id": "qwen3.8-flash",
+    "provider": "alibaba-cn",
+    "providerName": "Alibaba (China)",
+    "displayName": "Qwen3.8 Flash",
+    "family": "qwen",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.11875,
+      "output": 0.40073,
+      "cacheRead": 0.01187,
+      "cacheWrite": 0.14844,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "qwen-mt-turbo",
     "provider": "alibaba-cn",
     "providerName": "Alibaba (China)",
@@ -2159,7 +2237,19 @@
       "input": 0.861,
       "output": 3.441,
       "currency": "USD",
-      "per": 1000000
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 1.291,
+          "output": 5.161,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 2.151,
+          "output": 8.602,
+          "contextThreshold": 128000
+        }
+      ]
     },
     "status": "active",
     "deprecationDate": null,
@@ -3249,11 +3339,18 @@
       ]
     },
     "pricing": {
-      "input": 0.87,
-      "output": 3.48,
+      "input": 0.825,
+      "output": 3.301,
       "cacheRead": 0.17,
       "currency": "USD",
-      "per": 1000000
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 1.1,
+          "output": 3.851,
+          "contextThreshold": 32000
+        }
+      ]
     },
     "status": "active",
     "deprecationDate": null,

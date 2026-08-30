@@ -300,34 +300,31 @@
     "lastUpdated": "2026-05-11",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": true,
       "open_weights": false
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "video",
-        "pdf"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.25,
-      "output": 1.5,
-      "cacheRead": 0.025,
+      "input": 1,
+      "output": 3.2,
+      "cacheRead": 0.2,
       "cacheWrite": 0.08333,
       "currency": "USD",
       "per": 1000000
@@ -376,53 +373,6 @@
       "input": 0.782,
       "output": 3.876,
       "cacheRead": 0.391,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "jamba-large-1.6",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "Jamba Large 1.6",
-    "family": "jamba",
-    "releaseDate": "2025-03-12",
-    "lastUpdated": "2025-03-12",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.989,
-      "output": 7.99,
-      "cacheRead": 0.9945,
       "currency": "USD",
       "per": 1000000
     },
@@ -866,6 +816,54 @@
     ]
   },
   {
+    "id": "Gemma-4-31B-MeroMero-v2",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Gemma 4 31B MeroMero v2",
+    "family": "gemma",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-08-23",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.08,
+      "output": 0.33,
+      "cacheRead": 0.04,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "gemini-3-pro-image-preview",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
@@ -914,6 +912,54 @@
     ]
   },
   {
+    "id": "gemma-4-26b-a4b-it-moonlight",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Moonlight Dusk",
+    "family": "gemma",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-07-29",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.08,
+      "output": 0.33,
+      "cacheRead": 0.04,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "Gemma-4-31B-Queen",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
@@ -949,6 +995,54 @@
       "input": 0.306,
       "output": 0.306,
       "cacheRead": 0.153,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemma-4-26b-a4b-it-luminous",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Luminous Mirror",
+    "family": "gemma",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-07-29",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.08,
+      "output": 0.33,
+      "cacheRead": 0.04,
       "currency": "USD",
       "per": 1000000
     },
@@ -1188,53 +1282,6 @@
       "input": 0.2,
       "output": 0.77,
       "cacheRead": 0.135,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm-4-airx",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM-4 AirX",
-    "family": "glm",
-    "releaseDate": "2024-01-01",
-    "lastUpdated": "2024-06-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 8000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2.006,
-      "output": 2.006,
-      "cacheRead": 1.003,
       "currency": "USD",
       "per": 1000000
     },
@@ -1634,53 +1681,6 @@
     ]
   },
   {
-    "id": "jamba-mini-1.7",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "Jamba Mini 1.7",
-    "family": "jamba",
-    "releaseDate": "2025-07-09",
-    "lastUpdated": "2025-07-09",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1989,
-      "output": 0.408,
-      "cacheRead": 0.09945,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "sonar-deep-research",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
@@ -1862,53 +1862,6 @@
       "output": 6,
       "cacheRead": 0.25,
       "cacheWrite": 2.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "learnlm-1.5-pro-experimental",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "Gemini LearnLM Experimental",
-    "family": "gemini",
-    "releaseDate": "2024-01-01",
-    "lastUpdated": "2024-05-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 32767,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 3.502,
-      "output": 10.506,
-      "cacheRead": 1.751,
       "currency": "USD",
       "per": 1000000
     },
@@ -2637,6 +2590,54 @@
     ]
   },
   {
+    "id": "gemma-4-31b-it-isometry",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Isometry",
+    "family": "gemma",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-07-29",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.08,
+      "output": 0.33,
+      "cacheRead": 0.04,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "qwen3.5-flash",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
@@ -2686,53 +2687,6 @@
     ]
   },
   {
-    "id": "glm-zero-preview",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM Zero Preview",
-    "family": "glm",
-    "releaseDate": "2024-12-20",
-    "lastUpdated": "2024-12-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 8000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.802,
-      "output": 1.802,
-      "cacheRead": 0.901,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "gemini-2.5-pro-preview-03-25",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
@@ -2769,100 +2723,6 @@
       "input": 2.5,
       "output": 10,
       "cacheRead": 0.25,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "jamba-mini",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "Jamba Mini",
-    "family": "jamba",
-    "releaseDate": "2025-07-09",
-    "lastUpdated": "2025-07-09",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1989,
-      "output": 0.408,
-      "cacheRead": 0.09945,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "yi-lightning",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "Yi Lightning",
-    "family": "yi",
-    "releaseDate": "2025-06-15",
-    "lastUpdated": "2024-10-16",
-    "knowledgeCutoff": null,
-    "contextWindow": 12000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2006,
-      "output": 0.2006,
-      "cacheRead": 0.1003,
       "currency": "USD",
       "per": 1000000
     },
@@ -3055,53 +2915,6 @@
       "input": 0.25,
       "output": 1,
       "cacheRead": 0.125,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "jamba-large-1.7",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "Jamba Large 1.7",
-    "family": "jamba",
-    "releaseDate": "2025-07-09",
-    "lastUpdated": "2025-07-09",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.989,
-      "output": 7.99,
-      "cacheRead": 0.9945,
       "currency": "USD",
       "per": 1000000
     },
@@ -3876,6 +3689,54 @@
     ]
   },
   {
+    "id": "gemma-4-26b-a4b-it-musica",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Musica",
+    "family": "gemma",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-07-29",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.08,
+      "output": 0.33,
+      "cacheRead": 0.04,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "deepclaude",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
@@ -3911,53 +3772,6 @@
       "input": 3,
       "output": 15,
       "cacheRead": 0.3,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm-4-air",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM-4 Air",
-    "family": "glm",
-    "releaseDate": "2024-01-01",
-    "lastUpdated": "2024-06-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2006,
-      "output": 0.2006,
-      "cacheRead": 0.1003,
       "currency": "USD",
       "per": 1000000
     },
@@ -4102,6 +3916,54 @@
       "input": 1.04,
       "output": 6.24,
       "cacheRead": 0.52,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemma-4-26b-a4b-it-opusdistill",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Opus Distill",
+    "family": "gemma",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-07-29",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.08,
+      "output": 0.33,
+      "cacheRead": 0.04,
       "currency": "USD",
       "per": 1000000
     },
@@ -4692,6 +4554,54 @@
     ]
   },
   {
+    "id": "gemma-4-31b-it-darkidol",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "DarkIdol",
+    "family": "gemma",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-07-29",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.08,
+      "output": 0.33,
+      "cacheRead": 0.04,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "qwen3.7-max:thinking",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
@@ -4788,6 +4698,102 @@
     ]
   },
   {
+    "id": "gemma-4-26b-a4b-uncensored:thinking",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Gemma 4 26B A4B Uncensored Thinking",
+    "family": "gemma",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-07-29",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.08,
+      "output": 0.33,
+      "cacheRead": 0.04,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemma-4-26b-a4b-it-shadowsiren",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Shadow Siren",
+    "family": "gemma",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-07-29",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.08,
+      "output": 0.33,
+      "cacheRead": 0.04,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "claude-opus-4-1-thinking:32000",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
@@ -4837,53 +4843,6 @@
     ]
   },
   {
-    "id": "jamba-large",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "Jamba Large",
-    "family": "jamba",
-    "releaseDate": "2025-07-09",
-    "lastUpdated": "2025-07-09",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.989,
-      "output": 7.99,
-      "cacheRead": 0.9945,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "claude-sonnet-4-thinking:64000",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
@@ -4920,6 +4879,54 @@
       "input": 3,
       "output": 15,
       "cacheRead": 0.3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemma-4-31b-it-novelist",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Novelist",
+    "family": "gemma",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-07-29",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.08,
+      "output": 0.33,
+      "cacheRead": 0.04,
       "currency": "USD",
       "per": 1000000
     },
@@ -5314,53 +5321,6 @@
     ]
   },
   {
-    "id": "step-r1-v-mini",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "Step R1 V Mini",
-    "family": "step",
-    "releaseDate": "2024-01-01",
-    "lastUpdated": "2025-04-08",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2.5,
-      "output": 11,
-      "cacheRead": 1.25,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "azure-gpt-4o-mini",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
@@ -5465,34 +5425,32 @@
     "releaseDate": "2026-05-11",
     "lastUpdated": "2026-05-11",
     "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": true,
       "open_weights": false
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "pdf"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 2.5,
+      "input": 1,
+      "output": 3.2,
+      "cacheRead": 0.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -5779,8 +5737,8 @@
       ]
     },
     "pricing": {
-      "input": 0.2,
-      "output": 1.4,
+      "input": 0.15,
+      "output": 0.7,
       "cacheRead": 0.04,
       "currency": "USD",
       "per": 1000000
@@ -5831,100 +5789,6 @@
       "input": 0.3,
       "output": 2.5,
       "cacheRead": 0.03,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm-4-plus",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM-4 Plus",
-    "family": "glm",
-    "releaseDate": "2024-09-20",
-    "lastUpdated": "2024-08-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 7.497,
-      "output": 7.497,
-      "cacheRead": 3.7485,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "hunyuan-turbos-20250226",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "Hunyuan Turbo S",
-    "family": "hunyuan",
-    "releaseDate": "2025-02-27",
-    "lastUpdated": "2025-02-27",
-    "knowledgeCutoff": null,
-    "contextWindow": 24000,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.187,
-      "output": 0.374,
-      "cacheRead": 0.0935,
       "currency": "USD",
       "per": 1000000
     },
@@ -5994,34 +5858,31 @@
     "lastUpdated": "2026-05-11",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": true,
       "open_weights": false
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "video",
-        "pdf"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.25,
-      "output": 1.5,
-      "cacheRead": 0.025,
+      "input": 1,
+      "output": 3.2,
+      "cacheRead": 0.2,
       "cacheWrite": 0.08333,
       "currency": "USD",
       "per": 1000000
@@ -6333,7 +6194,7 @@
     "releaseDate": "2026-05-11",
     "lastUpdated": "2026-05-11",
     "knowledgeCutoff": null,
-    "contextWindow": 204800,
+    "contextWindow": 1048576,
     "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
@@ -6356,9 +6217,9 @@
       ]
     },
     "pricing": {
-      "input": 0.315,
-      "output": 1.26,
-      "cacheRead": 0.1575,
+      "input": 1,
+      "output": 3.2,
+      "cacheRead": 0.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -6430,7 +6291,7 @@
     "releaseDate": "2026-05-11",
     "lastUpdated": "2026-05-11",
     "knowledgeCutoff": null,
-    "contextWindow": 204800,
+    "contextWindow": 1048576,
     "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
@@ -6453,9 +6314,9 @@
       ]
     },
     "pricing": {
-      "input": 0.315,
-      "output": 1.26,
-      "cacheRead": 0.1575,
+      "input": 1,
+      "output": 3.2,
+      "cacheRead": 0.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -6806,40 +6667,89 @@
     ]
   },
   {
-    "id": "Baichuan-M2",
+    "id": "gemma-4-26b-a4b-it-chimerax",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
-    "displayName": "Baichuan M2 32B Medical",
-    "family": "baichuan",
-    "releaseDate": "2025-08-19",
-    "lastUpdated": "2025-08-19",
+    "displayName": "Chimera X",
+    "family": "gemma",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-07-29",
     "knowledgeCutoff": null,
-    "contextWindow": 32768,
+    "contextWindow": 262144,
     "maxOutputTokens": 32768,
     "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": false,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 15.73,
-      "output": 15.73,
-      "cacheRead": 7.865,
+      "input": 0.08,
+      "output": 0.33,
+      "cacheRead": 0.04,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Gemma-4-31B-MeroMero-v2:thinking",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Gemma 4 31B MeroMero v2 Thinking",
+    "family": "gemma",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-08-24",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.08,
+      "output": 0.33,
+      "cacheRead": 0.04,
       "currency": "USD",
       "per": 1000000
     },
@@ -7186,6 +7096,54 @@
     ]
   },
   {
+    "id": "gemma-4-26b-a4b-uncensored",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Gemma 4 26B A4B Uncensored",
+    "family": "gemma",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-07-29",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.08,
+      "output": 0.33,
+      "cacheRead": 0.04,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "qwen3.8-27b",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
@@ -7218,8 +7176,8 @@
       ]
     },
     "pricing": {
-      "input": 0.2,
-      "output": 1.4,
+      "input": 0.15,
+      "output": 0.7,
       "cacheRead": 0.04,
       "currency": "USD",
       "per": 1000000
@@ -7364,53 +7322,6 @@
       "input": 0.1,
       "output": 0.4,
       "cacheRead": 0.05,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm-4-flash",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM-4 Flash",
-    "family": "glm",
-    "releaseDate": "2024-01-01",
-    "lastUpdated": "2024-08-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1003,
-      "output": 0.1003,
-      "cacheRead": 0.05015,
       "currency": "USD",
       "per": 1000000
     },
@@ -7715,53 +7626,6 @@
     ]
   },
   {
-    "id": "jamba-mini-1.6",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "Jamba Mini 1.6",
-    "family": "jamba",
-    "releaseDate": "2024-01-01",
-    "lastUpdated": "2025-03-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1989,
-      "output": 0.408,
-      "cacheRead": 0.09945,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "claude-opus-4-thinking:8192",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
@@ -7798,6 +7662,54 @@
       "input": 15,
       "output": 75,
       "cacheRead": 1.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemma-4-31b-it-fabled",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Fabled",
+    "family": "gemma",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-07-29",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.08,
+      "output": 0.33,
+      "cacheRead": 0.04,
       "currency": "USD",
       "per": 1000000
     },
@@ -8101,6 +8013,54 @@
     ]
   },
   {
+    "id": "gemma-4-31b-it-gemsicle",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Gemsicle",
+    "family": "gemma",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-07-29",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.08,
+      "output": 0.33,
+      "cacheRead": 0.04,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "qwen3-max-2026-01-23",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
@@ -8156,34 +8116,32 @@
     "releaseDate": "2026-05-11",
     "lastUpdated": "2026-05-11",
     "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": true,
       "open_weights": false
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "pdf"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 2.5,
+      "input": 1,
+      "output": 3.2,
+      "cacheRead": 0.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -8279,6 +8237,54 @@
       "input": 0.15,
       "output": 0.6,
       "cacheRead": 0.075,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemma-4-31b-it-garnet",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Garnet",
+    "family": "gemma",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-07-29",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.08,
+      "output": 0.33,
+      "cacheRead": 0.04,
       "currency": "USD",
       "per": 1000000
     },
@@ -8489,6 +8495,54 @@
     ]
   },
   {
+    "id": "Gemma-4-26B-A4B-MeroMero",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Gemma 4 26B A4B MeroMero",
+    "family": "gemma",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.08,
+      "output": 0.33,
+      "cacheRead": 0.04,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "gemini-2.5-flash-preview-04-17",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
@@ -8585,53 +8639,6 @@
     ]
   },
   {
-    "id": "glm-4",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM-4",
-    "family": "glm",
-    "releaseDate": "2024-01-01",
-    "lastUpdated": "2024-01-16",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 14.994,
-      "output": 14.994,
-      "cacheRead": 7.497,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "gemma-4-e4b-it",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
@@ -8669,6 +8676,102 @@
       "input": 0.04,
       "output": 0.2,
       "cacheRead": 0.02,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Gemma-4-26B-A4B-MeroMero:thinking",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Gemma 4 26B A4B MeroMero Thinking",
+    "family": "gemma",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.08,
+      "output": 0.33,
+      "cacheRead": 0.04,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemma-4-26b-a4b-it-darksoul",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Dark Soul",
+    "family": "gemma",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-07-29",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.08,
+      "output": 0.33,
+      "cacheRead": 0.04,
       "currency": "USD",
       "per": 1000000
     },
@@ -8905,6 +9008,54 @@
       "input": 0.15,
       "output": 1,
       "cacheRead": 0.075,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemma-4-31b-it-gembrain",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Gembrain",
+    "family": "gemma",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-07-29",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.08,
+      "output": 0.33,
+      "cacheRead": 0.04,
       "currency": "USD",
       "per": 1000000
     },
@@ -9236,6 +9387,53 @@
       "input": 10,
       "output": 20,
       "cacheRead": 5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "tencent/hy4-preview",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Tencent Hy4 Preview",
+    "family": "Hy",
+    "releaseDate": "2026-08-28",
+    "lastUpdated": "2026-08-28",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.834,
+      "output": 2.501,
+      "cacheRead": 0.042,
       "currency": "USD",
       "per": 1000000
     },
@@ -10473,6 +10671,101 @@
     ]
   },
   {
+    "id": "abliteration-ai/abliterated-model-large",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Abliterated Model Large",
+    "family": null,
+    "releaseDate": "2026-08-27",
+    "lastUpdated": "2026-08-27",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 999990,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 5,
+      "cacheRead": 0.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "abliteration-ai/abliterated-model",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Abliterated Model",
+    "family": null,
+    "releaseDate": "2026-08-27",
+    "lastUpdated": "2026-08-27",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262134,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 3,
+      "cacheRead": 0.3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "microsoft/wizardlm-2-8x22b",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
@@ -10568,6 +10861,241 @@
     ]
   },
   {
+    "id": "z-ai/glm-5.3:thinking",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 5.3 Thinking",
+    "family": "glm",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1,
+      "output": 3.2,
+      "cacheRead": 0.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-5-original:thinking",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 5 Original Thinking",
+    "family": "glm",
+    "releaseDate": "2026-02-11",
+    "lastUpdated": "2026-02-11",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1,
+      "output": 3.2,
+      "cacheRead": 0.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-4.7-flash:thinking",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 4.7 Flash Thinking",
+    "family": "glm-flash",
+    "releaseDate": "2026-01-19",
+    "lastUpdated": "2026-01-19",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.07,
+      "output": 0.4,
+      "cacheRead": 0.035,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/GLM-4.5-Air:thinking",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 4.5 Air (Thinking)",
+    "family": "glm-air",
+    "releaseDate": "2025-07-28",
+    "lastUpdated": "2025-07-28",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 128000,
+    "maxOutputTokens": 98304,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.12,
+      "output": 0.8,
+      "cacheRead": 0.06,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-5.1:thinking",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 5.1 Thinking",
+    "family": "glm",
+    "releaseDate": "2026-04-07",
+    "lastUpdated": "2026-04-07",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.75,
+      "output": 2.6,
+      "cacheRead": 0.15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "z-ai/glm-5v-turbo",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
@@ -10603,6 +11131,53 @@
       "input": 1.2,
       "output": 4,
       "cacheRead": 0.24,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-4.7",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 4.7",
+    "family": "glm",
+    "releaseDate": "2025-12-22",
+    "lastUpdated": "2025-12-22",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 200000,
+    "maxOutputTokens": 65535,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2,
+      "output": 0.8,
+      "cacheRead": 0.1,
       "currency": "USD",
       "per": 1000000
     },
@@ -10664,6 +11239,54 @@
     ]
   },
   {
+    "id": "z-ai/glm-4.6v-original",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 4.6V Original",
+    "family": "glm",
+    "releaseDate": "2025-12-08",
+    "lastUpdated": "2025-12-08",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 24000,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.6,
+      "output": 0.9,
+      "cacheRead": 0.3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "z-ai/glm-4.6:thinking",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
@@ -10698,6 +11321,148 @@
       "input": 0.35,
       "output": 1.4,
       "cacheRead": 0.175,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/GLM-4.6-turbo",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 4.6 Turbo",
+    "family": "glm",
+    "releaseDate": "2025-10-02",
+    "lastUpdated": "2025-10-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 204800,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1,
+      "output": 3,
+      "cacheRead": 0.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-5:thinking",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 5 Thinking",
+    "family": "glm",
+    "releaseDate": "2026-02-12",
+    "lastUpdated": "2026-02-12",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.5,
+      "output": 2.55,
+      "cacheRead": 0.13,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-4.6v-flash-original",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 4.6V Flash",
+    "family": "glm",
+    "releaseDate": "2025-12-08",
+    "lastUpdated": "2025-12-08",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 24000,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.4,
+      "cacheRead": 0.05,
       "currency": "USD",
       "per": 1000000
     },
@@ -10759,6 +11524,241 @@
     ]
   },
   {
+    "id": "z-ai/glm-4.7:thinking",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 4.7 Thinking",
+    "family": "glm",
+    "releaseDate": "2025-12-22",
+    "lastUpdated": "2025-12-22",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 200000,
+    "maxOutputTokens": 65535,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2,
+      "output": 0.8,
+      "cacheRead": 0.1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/GLM-4.5-Air",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 4.5 Air",
+    "family": "glm-air",
+    "releaseDate": "2025-07-28",
+    "lastUpdated": "2025-07-28",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 128000,
+    "maxOutputTokens": 98304,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.12,
+      "output": 0.8,
+      "cacheRead": 0.06,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-5",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 5",
+    "family": "glm",
+    "releaseDate": "2026-02-12",
+    "lastUpdated": "2026-02-12",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.5,
+      "output": 2.55,
+      "cacheRead": 0.13,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-4.7-flash-original",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 4.7 Flash Original",
+    "family": "glm",
+    "releaseDate": "2026-01-19",
+    "lastUpdated": "2026-01-19",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.07,
+      "output": 0.4,
+      "cacheRead": 0.035,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-latest",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM Latest",
+    "family": "glm",
+    "releaseDate": "2026-05-03",
+    "lastUpdated": "2026-05-03",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.42,
+      "output": 1.32,
+      "cacheRead": 0.078,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "z-ai/glm-5-turbo",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
@@ -10793,6 +11793,525 @@
       "input": 1.2,
       "output": 4,
       "cacheRead": 0.24,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-5.3",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 5.3",
+    "family": "glm",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1,
+      "output": 3.2,
+      "cacheRead": 0.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-4.7-flash-original:thinking",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 4.7 Flash Original Thinking",
+    "family": "glm",
+    "releaseDate": "2026-01-19",
+    "lastUpdated": "2026-01-19",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.07,
+      "output": 0.4,
+      "cacheRead": 0.035,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-5.2",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.42,
+      "output": 1.32,
+      "cacheRead": 0.078,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-4.6v",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 4.6V",
+    "family": "glm",
+    "releaseDate": "2025-12-08",
+    "lastUpdated": "2025-12-08",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 128000,
+    "maxOutputTokens": 24000,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 0.9,
+      "cacheRead": 0.15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/GLM-4.5:thinking",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 4.5 (Thinking)",
+    "family": "glm",
+    "releaseDate": "2025-07-28",
+    "lastUpdated": "2025-07-28",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 128000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 1.3,
+      "cacheRead": 0.15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-4.6-original",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 4.6 Original",
+    "family": "glm",
+    "releaseDate": "2025-12-11",
+    "lastUpdated": "2025-12-11",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 65535,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.35,
+      "output": 1.4,
+      "cacheRead": 0.175,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-5-original",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 5 Original",
+    "family": "glm",
+    "releaseDate": "2026-02-11",
+    "lastUpdated": "2026-02-11",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1,
+      "output": 3.2,
+      "cacheRead": 0.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-5.3-flash-uncensored",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 5.3 Flash Uncensored",
+    "family": "glm",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-08-27",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.125,
+      "output": 0.5,
+      "cacheRead": 0.0625,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/GLM-4.6-turbo:thinking",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 4.6 Turbo (Thinking)",
+    "family": "glm",
+    "releaseDate": "2025-10-02",
+    "lastUpdated": "2025-10-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 204800,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1,
+      "output": 3,
+      "cacheRead": 0.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-5.1",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 5.1",
+    "family": "glm",
+    "releaseDate": "2026-04-07",
+    "lastUpdated": "2026-04-07",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.75,
+      "output": 2.6,
+      "cacheRead": 0.15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-5.2:thinking",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 5.2 Thinking",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.42,
+      "output": 1.32,
+      "cacheRead": 0.078,
       "currency": "USD",
       "per": 1000000
     },
@@ -10841,6 +12360,243 @@
       "input": 1.2,
       "output": 4,
       "cacheRead": 0.24,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-4.7-original",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 4.7 Original",
+    "family": "glm",
+    "releaseDate": "2025-12-22",
+    "lastUpdated": "2025-12-22",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 65535,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.6,
+      "output": 2.2,
+      "cacheRead": 0.11,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-4.7-flash",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 4.7 Flash",
+    "family": "glm-flash",
+    "releaseDate": "2026-01-19",
+    "lastUpdated": "2026-01-19",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.07,
+      "output": 0.4,
+      "cacheRead": 0.035,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-4.7-original:thinking",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 4.7 Original Thinking",
+    "family": "glm",
+    "releaseDate": "2025-12-22",
+    "lastUpdated": "2025-12-22",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 65535,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.6,
+      "output": 2.2,
+      "cacheRead": 0.11,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-4.5",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 4.5",
+    "family": "glm",
+    "releaseDate": "2025-07-28",
+    "lastUpdated": "2025-07-28",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 128000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 1.3,
+      "cacheRead": 0.15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-5.3-flash",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 5.3 Flash",
+    "family": "glm",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.075,
+      "output": 0.25,
+      "cacheRead": 0.015,
       "currency": "USD",
       "per": 1000000
     },
@@ -11452,9 +13208,9 @@
       ]
     },
     "pricing": {
-      "input": 0.22,
-      "output": 0.66,
-      "cacheRead": 0.007,
+      "input": 0.44,
+      "output": 1.32,
+      "cacheRead": 0.014,
       "currency": "USD",
       "per": 1000000
     },
@@ -12315,54 +14071,6 @@
     ]
   },
   {
-    "id": "google/gemma-4-26b-a4b-uncensored",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "Gemma 4 26B A4B Uncensored",
-    "family": "gemma",
-    "releaseDate": "2026-08-22",
-    "lastUpdated": "2026-08-22",
-    "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.08,
-      "output": 0.33,
-      "cacheRead": 0.04,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "google/gemma-4-31b-it:thinking",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
@@ -12935,53 +14643,6 @@
       "input": 0.1,
       "output": 0.2,
       "cacheRead": 0.01,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "poolside/laguna-m.1",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "Laguna M.1",
-    "family": "laguna",
-    "releaseDate": "2026-04-28",
-    "lastUpdated": "2026-06-13",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2,
-      "output": 0.4,
-      "cacheRead": 0.1,
       "currency": "USD",
       "per": 1000000
     },
@@ -13653,9 +15314,9 @@
       ]
     },
     "pricing": {
-      "input": 2.5,
-      "output": 13.5,
-      "cacheRead": 0.25,
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -13702,9 +15363,9 @@
       ]
     },
     "pricing": {
-      "input": 2.5,
-      "output": 13.5,
-      "cacheRead": 0.25,
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -16866,10 +18527,10 @@
       ]
     },
     "pricing": {
-      "input": 2.5,
-      "output": 15,
-      "cacheRead": 0.25,
-      "cacheWrite": 3.125,
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -17202,10 +18863,10 @@
       ]
     },
     "pricing": {
-      "input": 0.1,
-      "output": 0.6,
-      "cacheRead": 0.01,
-      "cacheWrite": 0.125,
+      "input": 0.2,
+      "output": 1.2,
+      "cacheRead": 0.02,
+      "cacheWrite": 0.25,
       "currency": "USD",
       "per": 1000000
     },
@@ -17252,10 +18913,10 @@
       ]
     },
     "pricing": {
-      "input": 0.1,
-      "output": 0.6,
-      "cacheRead": 0.01,
-      "cacheWrite": 0.125,
+      "input": 0.2,
+      "output": 1.2,
+      "cacheRead": 0.02,
+      "cacheWrite": 0.25,
       "currency": "USD",
       "per": 1000000
     },
@@ -17286,7 +18947,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
       "open_weights": false
@@ -17477,7 +19138,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
       "open_weights": false
@@ -17526,7 +19187,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
       "open_weights": false
@@ -17638,10 +19299,10 @@
       ]
     },
     "pricing": {
-      "input": 2.5,
-      "output": 15,
-      "cacheRead": 0.25,
-      "cacheWrite": 3.125,
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -18023,10 +19684,10 @@
       ]
     },
     "pricing": {
-      "input": 2.5,
-      "output": 15,
-      "cacheRead": 0.25,
-      "cacheWrite": 3.125,
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -18217,10 +19878,10 @@
       ]
     },
     "pricing": {
-      "input": 1,
-      "output": 6,
-      "cacheRead": 0.1,
-      "cacheWrite": 1.25,
+      "input": 2,
+      "output": 12,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -18267,10 +19928,10 @@
       ]
     },
     "pricing": {
-      "input": 1,
-      "output": 6,
-      "cacheRead": 0.1,
-      "cacheWrite": 1.25,
+      "input": 2,
+      "output": 12,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -18348,7 +20009,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
       "open_weights": false
@@ -18508,10 +20169,10 @@
       ]
     },
     "pricing": {
-      "input": 2.5,
-      "output": 15,
-      "cacheRead": 0.25,
-      "cacheWrite": 3.125,
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -18873,7 +20534,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
       "open_weights": false
@@ -18922,7 +20583,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
       "open_weights": false
@@ -19707,59 +21368,12 @@
     ]
   },
   {
-    "id": "dmind/dmind-1-mini",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "DMind-1-Mini",
-    "family": "gpt",
-    "releaseDate": "2024-01-01",
-    "lastUpdated": "2025-06-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 32768,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2,
-      "output": 0.4,
-      "cacheRead": 0.1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "ornith-ai/ornith-1.5-35b-a3b",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
     "displayName": "Ornith 1.5 35B",
     "family": "ornith",
-    "releaseDate": "2026-08-20",
+    "releaseDate": "2026-07-29",
     "lastUpdated": "2026-08-20",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
@@ -19788,7 +21402,7 @@
     "pricing": {
       "input": 0.1,
       "output": 0.4,
-      "cacheRead": 0.01,
+      "cacheRead": 0.05,
       "currency": "USD",
       "per": 1000000
     },
@@ -19807,7 +21421,7 @@
     "providerName": "NanoGPT",
     "displayName": "Ornith 1.5 35B Thinking",
     "family": "ornith",
-    "releaseDate": "2026-08-20",
+    "releaseDate": "2026-07-29",
     "lastUpdated": "2026-08-20",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
@@ -19836,7 +21450,103 @@
     "pricing": {
       "input": 0.1,
       "output": 0.4,
-      "cacheRead": 0.01,
+      "cacheRead": 0.05,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "ornith-ai/ornith-1.5-9b:thinking",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Ornith 1.5 9B Thinking",
+    "family": "ornith",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-08-24",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.05,
+      "output": 0.1,
+      "cacheRead": 0.025,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "ornith-ai/ornith-1.5-9b",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Ornith 1.5 9B",
+    "family": "ornith",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-08-23",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.05,
+      "output": 0.1,
+      "cacheRead": 0.025,
       "currency": "USD",
       "per": 1000000
     },
@@ -20510,6 +22220,54 @@
     ]
   },
   {
+    "id": "qwen/qwen3.8-27b-obliterated",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Qwen 3.8 27B Obliterated",
+    "family": "qwen",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-08-24",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.18,
+      "output": 0.5,
+      "cacheRead": 0.075,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "qwen/Qwen3-VL-235B-A22B-Instruct",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
@@ -20545,6 +22303,54 @@
       "input": 0.3,
       "output": 1.2,
       "cacheRead": 0.15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.8-27b-fable",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Qwen 3.8 27B Fable",
+    "family": "qwen",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-08-28",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2,
+      "output": 1.4,
+      "cacheRead": 0.04,
       "currency": "USD",
       "per": 1000000
     },
@@ -20895,6 +22701,54 @@
     ]
   },
   {
+    "id": "qwen/qwen3.8-27b-uncensored:thinking",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Qwen 3.8 27B Uncensored Thinking",
+    "family": "qwen",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-08-25",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.18,
+      "output": 0.5,
+      "cacheRead": 0.075,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "qwen/qwen3-coder-flash",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
@@ -20994,15 +22848,15 @@
     "providerName": "NanoGPT",
     "displayName": "Qwen 3.8 27B Uncensored",
     "family": "qwen",
-    "releaseDate": "2026-08-21",
+    "releaseDate": "2026-07-29",
     "lastUpdated": "2026-08-21",
     "knowledgeCutoff": null,
-    "contextWindow": 131072,
+    "contextWindow": 262144,
     "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
       "vision": true,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
@@ -21470,15 +23324,15 @@
     "providerName": "NanoGPT",
     "displayName": "Qwen 3.6 35B A3B Uncensored",
     "family": "qwen3.6",
-    "releaseDate": "2026-08-21",
+    "releaseDate": "2026-07-29",
     "lastUpdated": "2026-08-21",
     "knowledgeCutoff": null,
-    "contextWindow": 65536,
+    "contextWindow": 262144,
     "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
       "vision": true,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
@@ -21549,6 +23403,102 @@
       "input": 0.112,
       "output": 0.8,
       "cacheRead": 0.056,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.6-35b-a3b-uncensored:thinking",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Qwen 3.6 35B A3B Uncensored Thinking",
+    "family": "qwen3.6",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-08-24",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.5,
+      "cacheRead": 0.075,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.8-27b-obliterated:thinking",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Qwen 3.8 27B Obliterated Thinking",
+    "family": "qwen",
+    "releaseDate": "2026-07-29",
+    "lastUpdated": "2026-08-24",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.18,
+      "output": 0.5,
+      "cacheRead": 0.075,
       "currency": "USD",
       "per": 1000000
     },
@@ -21643,6 +23593,57 @@
       "input": 0.357,
       "output": 0.408,
       "cacheRead": 0.1785,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.8-2.4t-a95b",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Qwen3.8 2.4T A95B (Max)",
+    "family": "qwen",
+    "releaseDate": "2026-08-12",
+    "lastUpdated": "2026-08-12",
+    "knowledgeCutoff": null,
+    "contextWindow": 991000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 6,
+      "cacheRead": 0.25,
+      "cacheWrite": 2.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -22074,6 +24075,56 @@
       "output": 0.87,
       "cacheRead": 0.0036,
       "cacheWrite": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "alibaba/qwen3.8-flash",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Qwen3.8 Flash",
+    "family": "qwen",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 991808,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.16,
+      "output": 0.47,
+      "cacheRead": 0.016,
+      "cacheWrite": 0.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -22707,1420 +24758,6 @@
     ]
   },
   {
-    "id": "stealth/ox-alpha",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "Ox Alpha",
-    "family": "alpha",
-    "releaseDate": "2026-08-21",
-    "lastUpdated": "2026-08-21",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.05,
-      "output": 0.05,
-      "cacheRead": 0.025,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/glm-5.3:thinking",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM 5.3 Preview Thinking",
-    "family": "glm",
-    "releaseDate": "2026-08-14",
-    "lastUpdated": "2026-08-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.4,
-      "output": 4.4,
-      "cacheRead": 0.26,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/glm-5-original:thinking",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM 5 Original Thinking",
-    "family": "glm",
-    "releaseDate": "2026-02-11",
-    "lastUpdated": "2026-02-11",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1,
-      "output": 3.2,
-      "cacheRead": 0.2,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/glm-4.7-flash:thinking",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM 4.7 Flash Thinking",
-    "family": "glm-flash",
-    "releaseDate": "2026-01-19",
-    "lastUpdated": "2026-01-19",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 200000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.07,
-      "output": 0.4,
-      "cacheRead": 0.035,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/GLM-4.5-Air:thinking",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM 4.5 Air (Thinking)",
-    "family": "glm-air",
-    "releaseDate": "2025-07-28",
-    "lastUpdated": "2025-07-28",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 128000,
-    "maxOutputTokens": 98304,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.12,
-      "output": 0.8,
-      "cacheRead": 0.06,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/glm-5.1:thinking",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM 5.1 Thinking",
-    "family": "glm",
-    "releaseDate": "2026-04-07",
-    "lastUpdated": "2026-04-07",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.75,
-      "output": 2.6,
-      "cacheRead": 0.15,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/glm-4.7",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM 4.7",
-    "family": "glm",
-    "releaseDate": "2025-12-22",
-    "lastUpdated": "2025-12-22",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 200000,
-    "maxOutputTokens": 65535,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2,
-      "output": 0.8,
-      "cacheRead": 0.1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/glm-4.6v-original",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM 4.6V Original",
-    "family": "glm",
-    "releaseDate": "2025-12-08",
-    "lastUpdated": "2025-12-08",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 24000,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.6,
-      "output": 0.9,
-      "cacheRead": 0.3,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/GLM-4.6-turbo",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM 4.6 Turbo",
-    "family": "glm",
-    "releaseDate": "2025-10-02",
-    "lastUpdated": "2025-10-02",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 204800,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1,
-      "output": 3,
-      "cacheRead": 0.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/glm-5:thinking",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM 5 Thinking",
-    "family": "glm",
-    "releaseDate": "2026-02-12",
-    "lastUpdated": "2026-02-12",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.5,
-      "output": 2.55,
-      "cacheRead": 0.13,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/glm-4.6v-flash-original",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM 4.6V Flash",
-    "family": "glm",
-    "releaseDate": "2025-12-08",
-    "lastUpdated": "2025-12-08",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 24000,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1,
-      "output": 0.4,
-      "cacheRead": 0.05,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/glm-4.7:thinking",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM 4.7 Thinking",
-    "family": "glm",
-    "releaseDate": "2025-12-22",
-    "lastUpdated": "2025-12-22",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 200000,
-    "maxOutputTokens": 65535,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2,
-      "output": 0.8,
-      "cacheRead": 0.1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/GLM-4.5-Air",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM 4.5 Air",
-    "family": "glm-air",
-    "releaseDate": "2025-07-28",
-    "lastUpdated": "2025-07-28",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 128000,
-    "maxOutputTokens": 98304,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.12,
-      "output": 0.8,
-      "cacheRead": 0.06,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/glm-5",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM 5",
-    "family": "glm",
-    "releaseDate": "2026-02-12",
-    "lastUpdated": "2026-02-12",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.5,
-      "output": 2.55,
-      "cacheRead": 0.13,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/glm-4.7-flash-original",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM 4.7 Flash Original",
-    "family": "glm",
-    "releaseDate": "2026-01-19",
-    "lastUpdated": "2026-01-19",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.07,
-      "output": 0.4,
-      "cacheRead": 0.035,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/glm-latest",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM Latest",
-    "family": "glm",
-    "releaseDate": "2026-05-03",
-    "lastUpdated": "2026-05-03",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.42,
-      "output": 1.32,
-      "cacheRead": 0.078,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/glm-5.3",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM 5.3 Preview",
-    "family": "glm",
-    "releaseDate": "2026-08-14",
-    "lastUpdated": "2026-08-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.4,
-      "output": 4.4,
-      "cacheRead": 0.26,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/glm-4.7-flash-original:thinking",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM 4.7 Flash Original Thinking",
-    "family": "glm",
-    "releaseDate": "2026-01-19",
-    "lastUpdated": "2026-01-19",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.07,
-      "output": 0.4,
-      "cacheRead": 0.035,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/glm-5.2",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM 5.2",
-    "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.42,
-      "output": 1.32,
-      "cacheRead": 0.078,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/glm-4.6v",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM 4.6V",
-    "family": "glm",
-    "releaseDate": "2025-12-08",
-    "lastUpdated": "2025-12-08",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 128000,
-    "maxOutputTokens": 24000,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 0.9,
-      "cacheRead": 0.15,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/GLM-4.5:thinking",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM 4.5 (Thinking)",
-    "family": "glm",
-    "releaseDate": "2025-07-28",
-    "lastUpdated": "2025-07-28",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 128000,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 1.3,
-      "cacheRead": 0.15,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/glm-4.6-original",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM 4.6 Original",
-    "family": "glm",
-    "releaseDate": "2025-12-11",
-    "lastUpdated": "2025-12-11",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 65535,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.35,
-      "output": 1.4,
-      "cacheRead": 0.175,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/glm-5-original",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM 5 Original",
-    "family": "glm",
-    "releaseDate": "2026-02-11",
-    "lastUpdated": "2026-02-11",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1,
-      "output": 3.2,
-      "cacheRead": 0.2,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/GLM-4.6-turbo:thinking",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM 4.6 Turbo (Thinking)",
-    "family": "glm",
-    "releaseDate": "2025-10-02",
-    "lastUpdated": "2025-10-02",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 204800,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1,
-      "output": 3,
-      "cacheRead": 0.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/glm-5.1",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM 5.1",
-    "family": "glm",
-    "releaseDate": "2026-04-07",
-    "lastUpdated": "2026-04-07",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.75,
-      "output": 2.6,
-      "cacheRead": 0.15,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/glm-5.2:thinking",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM 5.2 Thinking",
-    "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.42,
-      "output": 1.32,
-      "cacheRead": 0.078,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/glm-4.7-original",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM 4.7 Original",
-    "family": "glm",
-    "releaseDate": "2025-12-22",
-    "lastUpdated": "2025-12-22",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 65535,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.6,
-      "output": 2.2,
-      "cacheRead": 0.11,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/glm-4.7-flash",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM 4.7 Flash",
-    "family": "glm-flash",
-    "releaseDate": "2026-01-19",
-    "lastUpdated": "2026-01-19",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 200000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.07,
-      "output": 0.4,
-      "cacheRead": 0.035,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/glm-4.7-original:thinking",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM 4.7 Original Thinking",
-    "family": "glm",
-    "releaseDate": "2025-12-22",
-    "lastUpdated": "2025-12-22",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 65535,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.6,
-      "output": 2.2,
-      "cacheRead": 0.11,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/glm-4.5",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "GLM 4.5",
-    "family": "glm",
-    "releaseDate": "2025-07-28",
-    "lastUpdated": "2025-07-28",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 128000,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 1.3,
-      "cacheRead": 0.15,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "Gryphe/MythoMax-L2-13b",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
@@ -24456,147 +25093,6 @@
     ]
   },
   {
-    "id": "inflection/inflection-3-pi",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "Inflection 3 Pi",
-    "family": "gpt",
-    "releaseDate": "2025-11-21",
-    "lastUpdated": "2024-10-11",
-    "knowledgeCutoff": null,
-    "contextWindow": 8000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2.499,
-      "output": 9.996,
-      "cacheRead": 1.2495,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "inflection/inflection-3-productivity",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "Inflection 3 Productivity",
-    "family": "gpt",
-    "releaseDate": "2025-11-21",
-    "lastUpdated": "2024-10-11",
-    "knowledgeCutoff": null,
-    "contextWindow": 8000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2.499,
-      "output": 9.996,
-      "cacheRead": 1.2495,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "inclusionai/ring-2.6-1t",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "Ring 2.6 1T",
-    "family": "ring",
-    "releaseDate": "2026-05-08",
-    "lastUpdated": "2026-05-08",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 2.5,
-      "cacheRead": 0.06,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "inclusionai/ling-3.0-flash",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
@@ -24644,53 +25140,6 @@
     ]
   },
   {
-    "id": "inclusionai/ling-2.6-1t",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "Ling 2.6 1T",
-    "family": "ling",
-    "releaseDate": "2026-04-23",
-    "lastUpdated": "2026-04-23",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 2.5,
-      "cacheRead": 0.06,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "inclusionai/ling-3.0-flash:thinking",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
@@ -24725,53 +25174,6 @@
       "input": 0.075,
       "output": 0.22,
       "cacheRead": 0.015,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "inclusionai/ling-2.6-flash",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "Ling 2.6 Flash",
-    "family": "ling",
-    "releaseDate": "2026-04-21",
-    "lastUpdated": "2026-04-21",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1,
-      "output": 0.3,
-      "cacheRead": 0.02,
       "currency": "USD",
       "per": 1000000
     },
@@ -26051,53 +26453,6 @@
       "input": 0.51,
       "output": 4.25,
       "cacheRead": 0.255,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "amazon/nova-micro-v1",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "Amazon Nova Micro 1.0",
-    "family": "nova-micro",
-    "releaseDate": "2024-01-01",
-    "lastUpdated": "2024-12-03",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 5120,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.0357,
-      "output": 0.1394,
-      "cacheRead": 0.01785,
       "currency": "USD",
       "per": 1000000
     },
@@ -27576,53 +27931,6 @@
     ]
   },
   {
-    "id": "TEE/gemma-3-27b-it",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "Gemma 3 27B TEE",
-    "family": "gemma",
-    "releaseDate": "2024-01-01",
-    "lastUpdated": "2025-03-10",
-    "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2,
-      "output": 0.8,
-      "cacheRead": 0.1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "TEE/glm-5.2",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
@@ -27825,8 +28133,55 @@
     "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.7,
+      "cacheRead": 0.075,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "TEE/qwen3.8-27b",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "Qwen3.8 27B TEE",
+    "family": "qwen",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
@@ -27838,16 +28193,17 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "video"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.15,
-      "output": 0.7,
-      "cacheRead": 0.075,
+      "input": 0.4,
+      "output": 3,
+      "cacheRead": 0.15,
       "currency": "USD",
       "per": 1000000
     },
@@ -28052,53 +28408,6 @@
     ]
   },
   {
-    "id": "TEE/qwen3.5-122b-a10b",
-    "provider": "nano-gpt",
-    "providerName": "NanoGPT",
-    "displayName": "Qwen3.5 122B A10B TEE",
-    "family": "qwen",
-    "releaseDate": "2026-02-23",
-    "lastUpdated": "2026-02-23",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.46,
-      "output": 3.68,
-      "cacheRead": 0.23,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "TEE/gpt-oss-20b",
     "provider": "nano-gpt",
     "providerName": "NanoGPT",
@@ -28181,6 +28490,54 @@
       "input": 1.5,
       "output": 5.25,
       "cacheRead": 0.375,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "TEE/glm-5.3-flash",
+    "provider": "nano-gpt",
+    "providerName": "NanoGPT",
+    "displayName": "GLM 5.3 Flash TEE",
+    "family": "glm",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.5,
+      "cacheRead": 0.03,
       "currency": "USD",
       "per": 1000000
     },

@@ -3342,6 +3342,56 @@
     ]
   },
   {
+    "id": "zai/glm-5.3-flash",
+    "provider": "merge-gateway",
+    "providerName": "Merge Gateway",
+    "displayName": "GLM-5.3 Flash",
+    "family": "glm",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.015,
+      "output": 0.05,
+      "cacheRead": 0.003,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "bytedance/dola-seed-2.0-pro",
     "provider": "merge-gateway",
     "providerName": "Merge Gateway",
@@ -3926,7 +3976,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": true,
+      "temperature": false,
       "attachment": true,
       "structured_output": true,
       "open_weights": false
@@ -3991,8 +4041,8 @@
       ]
     },
     "pricing": {
-      "input": 4,
-      "output": 24,
+      "input": 5,
+      "output": 30,
       "cacheRead": 0.5,
       "currency": "USD",
       "per": 1000000
@@ -4315,7 +4365,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
       "open_weights": false
@@ -4364,7 +4414,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
       "open_weights": false
@@ -4767,7 +4817,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
       "open_weights": false
@@ -5164,7 +5214,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
       "open_weights": false
@@ -5213,7 +5263,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
       "open_weights": false
@@ -5753,24 +5803,23 @@
     "releaseDate": "2026-02-23",
     "lastUpdated": "2026-02-23",
     "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 64000,
+    "contextWindow": 131072,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
@@ -6315,7 +6364,7 @@
     "id": "qwen/qwen3-next-80b-a3b-thinking",
     "provider": "merge-gateway",
     "providerName": "Merge Gateway",
-    "displayName": "Qwen3 Next 80B A3B Thinking",
+    "displayName": "Qwen3-Next 80B-A3B (Thinking)",
     "family": "qwen",
     "releaseDate": "2025-09",
     "lastUpdated": "2025-09",
@@ -6641,7 +6690,7 @@
     "id": "qwen/qwen3-next-80b-a3b-instruct",
     "provider": "merge-gateway",
     "providerName": "Merge Gateway",
-    "displayName": "Qwen3 Next 80B A3B Instruct",
+    "displayName": "Qwen3-Next 80B-A3B Instruct",
     "family": "qwen",
     "releaseDate": "2025-09",
     "lastUpdated": "2025-09",

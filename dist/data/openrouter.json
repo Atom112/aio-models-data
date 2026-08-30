@@ -101,7 +101,7 @@
     "lastUpdated": "2026-04-20",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 235929,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -139,6 +139,53 @@
     ]
   },
   {
+    "id": "tencent/hy4-preview",
+    "provider": "openrouter",
+    "providerName": "OpenRouter",
+    "displayName": "Hy4 preview",
+    "family": "Hy",
+    "releaseDate": "2026-08-28",
+    "lastUpdated": "2026-08-28",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.834,
+      "output": 2.501,
+      "cacheRead": 0.042,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "tencent/hunyuan-a13b-instruct",
     "provider": "openrouter",
     "providerName": "OpenRouter",
@@ -148,7 +195,7 @@
     "lastUpdated": "2025-07-08",
     "knowledgeCutoff": "2025-03-31",
     "contextWindow": 131072,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 117964,
     "capabilities": {
       "tools": false,
       "vision": false,
@@ -487,7 +534,7 @@
     "lastUpdated": "2026-07-08",
     "knowledgeCutoff": null,
     "contextWindow": 500000,
-    "maxOutputTokens": 1000000,
+    "maxOutputTokens": 450000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -548,7 +595,7 @@
     "lastUpdated": "2026-03-11",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 235929,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -594,7 +641,7 @@
     "lastUpdated": "2025-12-15",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 228000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -618,7 +665,7 @@
     "pricing": {
       "input": 0.05,
       "output": 0.2,
-      "cacheRead": 0.03,
+      "cacheRead": 0.025,
       "currency": "USD",
       "per": 1000000
     },
@@ -725,54 +772,6 @@
     ]
   },
   {
-    "id": "nvidia/nemotron-nano-12b-v2-vl:free",
-    "provider": "openrouter",
-    "providerName": "OpenRouter",
-    "displayName": "Nemotron Nano 12B 2 VL (free)",
-    "family": "nemotron",
-    "releaseDate": "2025-10-28",
-    "lastUpdated": "2025-10-28",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "nvidia/nemotron-3-ultra-550b-a55b",
     "provider": "openrouter",
     "providerName": "OpenRouter",
@@ -781,7 +780,7 @@
     "releaseDate": "2026-06-04",
     "lastUpdated": "2026-06-04",
     "knowledgeCutoff": null,
-    "contextWindow": 512288,
+    "contextWindow": 262144,
     "maxOutputTokens": 16384,
     "capabilities": {
       "tools": true,
@@ -804,9 +803,9 @@
       ]
     },
     "pricing": {
-      "input": 0.6,
-      "output": 3.6,
-      "cacheRead": 0.2,
+      "input": 0.5,
+      "output": 2.2,
+      "cacheRead": 0.1,
       "currency": "USD",
       "per": 1000000
     },
@@ -1008,98 +1007,6 @@
     ]
   },
   {
-    "id": "nvidia/nemotron-3-nano-30b-a3b:free",
-    "provider": "openrouter",
-    "providerName": "OpenRouter",
-    "displayName": "Nemotron 3 Nano 30B A3B (free)",
-    "family": "nemotron",
-    "releaseDate": "2025-12-15",
-    "lastUpdated": "2025-12-15",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 256000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "nvidia/nemotron-nano-9b-v2:free",
-    "provider": "openrouter",
-    "providerName": "OpenRouter",
-    "displayName": "Nemotron Nano 9B V2 (free)",
-    "family": "nemotron",
-    "releaseDate": "2025-08-18",
-    "lastUpdated": "2025-08-18",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "~openai/gpt-latest",
     "provider": "openrouter",
     "providerName": "OpenRouter",
@@ -1267,7 +1174,7 @@
     "lastUpdated": "2025-02-04",
     "knowledgeCutoff": "2023-12-31",
     "contextWindow": 32768,
-    "maxOutputTokens": 32768,
+    "maxOutputTokens": 29491,
     "capabilities": {
       "tools": false,
       "vision": false,
@@ -1407,7 +1314,7 @@
     "lastUpdated": "2023-07-22",
     "knowledgeCutoff": "2023-06-30",
     "contextWindow": 6144,
-    "maxOutputTokens": 6144,
+    "maxOutputTokens": 4096,
     "capabilities": {
       "tools": false,
       "vision": false,
@@ -1499,7 +1406,7 @@
     "lastUpdated": "2025-01-10",
     "knowledgeCutoff": "2024-06-30",
     "contextWindow": 16384,
-    "maxOutputTokens": 16384,
+    "maxOutputTokens": 14745,
     "capabilities": {
       "tools": false,
       "vision": false,
@@ -1545,7 +1452,7 @@
     "lastUpdated": "2025-09-30",
     "knowledgeCutoff": "2025-04",
     "contextWindow": 204800,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 16384,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -1567,9 +1474,9 @@
       ]
     },
     "pricing": {
-      "input": 0.5,
-      "output": 2,
-      "cacheRead": 0.1,
+      "input": 0.43,
+      "output": 1.75,
+      "cacheRead": 0.08,
       "currency": "USD",
       "per": 1000000
     },
@@ -1736,7 +1643,7 @@
     "lastUpdated": "2026-06-13",
     "knowledgeCutoff": null,
     "contextWindow": 256000,
-    "maxOutputTokens": 256000,
+    "maxOutputTokens": 230400,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -1875,18 +1782,18 @@
     "releaseDate": "2026-08-14",
     "lastUpdated": "2026-08-14",
     "knowledgeCutoff": null,
-    "contextWindow": 1048576,
+    "contextWindow": 1310720,
     "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -1923,7 +1830,7 @@
     "lastUpdated": "2026-06-13",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -1945,9 +1852,9 @@
       ]
     },
     "pricing": {
-      "input": 0.966,
-      "output": 3.036,
-      "cacheRead": 0.1932,
+      "input": 1.19,
+      "output": 3.74,
+      "cacheRead": 0.221,
       "currency": "USD",
       "per": 1000000
     },
@@ -2198,6 +2105,55 @@
     ]
   },
   {
+    "id": "z-ai/glm-5.3-flash",
+    "provider": "openrouter",
+    "providerName": "OpenRouter",
+    "displayName": "GLM-5.3-Flash",
+    "family": "glm",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1310720,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.075,
+      "output": 0.25,
+      "cacheRead": 0.015,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "deepseek/deepseek-v3.1-terminus",
     "provider": "openrouter",
     "providerName": "OpenRouter",
@@ -2322,9 +2278,9 @@
       ]
     },
     "pricing": {
-      "input": 0.05306,
-      "output": 0.10612,
-      "cacheRead": 0.010612,
+      "input": 0.08036,
+      "output": 0.16072,
+      "cacheRead": 0.016072,
       "currency": "USD",
       "per": 1000000
     },
@@ -2369,9 +2325,9 @@
       ]
     },
     "pricing": {
-      "input": 1.122,
-      "output": 3.366,
-      "cacheRead": 0.0374,
+      "input": 0.66,
+      "output": 1.98,
+      "cacheRead": 0.022,
       "currency": "USD",
       "per": 1000000
     },
@@ -2416,9 +2372,9 @@
       ]
     },
     "pricing": {
-      "input": 0.413772,
-      "output": 0.827544,
-      "cacheRead": 0.034481,
+      "input": 0.447528,
+      "output": 0.895056,
+      "cacheRead": 0.037294,
       "currency": "USD",
       "per": 1000000
     },
@@ -2441,7 +2397,7 @@
     "lastUpdated": "2025-12-01",
     "knowledgeCutoff": "2024-07",
     "contextWindow": 163840,
-    "maxOutputTokens": 163840,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -2463,9 +2419,9 @@
       ]
     },
     "pricing": {
-      "input": 0.26,
-      "output": 0.38,
-      "cacheRead": 0.13,
+      "input": 0.269,
+      "output": 0.4,
+      "cacheRead": 0.1345,
       "currency": "USD",
       "per": 1000000
     },
@@ -2488,7 +2444,7 @@
     "lastUpdated": "2025-08-21",
     "knowledgeCutoff": "2025-03-31",
     "contextWindow": 163840,
-    "maxOutputTokens": 161000,
+    "maxOutputTokens": 144900,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -2628,7 +2584,7 @@
     "lastUpdated": "2025-03-24",
     "knowledgeCutoff": "2024-07-31",
     "contextWindow": 163840,
-    "maxOutputTokens": 163840,
+    "maxOutputTokens": 147456,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -2674,7 +2630,7 @@
     "lastUpdated": "2025-01-23",
     "knowledgeCutoff": "2024-07-31",
     "contextWindow": 8192,
-    "maxOutputTokens": 8192,
+    "maxOutputTokens": 7372,
     "capabilities": {
       "tools": false,
       "vision": false,
@@ -2766,7 +2722,7 @@
     "lastUpdated": "2026-07-31",
     "knowledgeCutoff": "2025-05",
     "contextWindow": 1310720,
-    "maxOutputTokens": 384000,
+    "maxOutputTokens": 943718,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -2788,7 +2744,7 @@
       ]
     },
     "pricing": {
-      "input": 0.08,
+      "input": 0.065,
       "output": 0.18,
       "cacheRead": 0.016,
       "currency": "USD",
@@ -2861,7 +2817,7 @@
     "lastUpdated": "2026-05-28",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 80000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -2883,55 +2839,9 @@
       ]
     },
     "pricing": {
-      "input": 0.22,
-      "output": 0.85,
+      "input": 0.25,
+      "output": 0.8,
       "cacheRead": 0.06,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "arcee-ai/virtuoso-large",
-    "provider": "openrouter",
-    "providerName": "OpenRouter",
-    "displayName": "Virtuoso Large",
-    "family": null,
-    "releaseDate": "2025-05-05",
-    "lastUpdated": "2025-05-05",
-    "knowledgeCutoff": "2025-03-31",
-    "contextWindow": 131072,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.75,
-      "output": 1.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -3264,7 +3174,7 @@
     "lastUpdated": "2026-06-30",
     "knowledgeCutoff": "2025-01",
     "contextWindow": 65536,
-    "maxOutputTokens": 65536,
+    "maxOutputTokens": 58982,
     "capabilities": {
       "tools": false,
       "vision": true,
@@ -3539,7 +3449,7 @@
     "lastUpdated": "2026-04-02",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 16384,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -3563,55 +3473,9 @@
       ]
     },
     "pricing": {
-      "input": 0.1,
+      "input": 0.09,
       "output": 0.34,
-      "cacheRead": 0.1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "google/gemma-3n-e4b-it",
-    "provider": "openrouter",
-    "providerName": "OpenRouter",
-    "displayName": "Gemma 3n 4B",
-    "family": "gemma",
-    "releaseDate": "2025-05-20",
-    "lastUpdated": "2025-05-20",
-    "knowledgeCutoff": "2024-08-31",
-    "contextWindow": 32768,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.06,
-      "output": 0.12,
+      "cacheRead": 0.05,
       "currency": "USD",
       "per": 1000000
     },
@@ -3785,8 +3649,8 @@
     "releaseDate": "2025-03-12",
     "lastUpdated": "2025-03-12",
     "knowledgeCutoff": "2024-08-31",
-    "contextWindow": 262144,
-    "maxOutputTokens": 131072,
+    "contextWindow": 131072,
+    "maxOutputTokens": 117964,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -4192,7 +4056,7 @@
     "lastUpdated": "2026-02-26",
     "knowledgeCutoff": "2025-01",
     "contextWindow": 65536,
-    "maxOutputTokens": 65536,
+    "maxOutputTokens": 58982,
     "capabilities": {
       "tools": false,
       "vision": true,
@@ -4532,10 +4396,10 @@
       ]
     },
     "pricing": {
-      "input": 0.375,
-      "output": 1.875,
-      "cacheRead": 0.0375,
-      "cacheWrite": 0.020833,
+      "input": 0.75,
+      "output": 3.75,
+      "cacheRead": 0.075,
+      "cacheWrite": 0.041667,
       "currency": "USD",
       "per": 1000000
     },
@@ -4558,7 +4422,7 @@
     "lastUpdated": "2026-08-10",
     "knowledgeCutoff": "2026-01-04",
     "contextWindow": 131072,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 16384,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -4581,8 +4445,8 @@
       ]
     },
     "pricing": {
-      "input": 0.35,
-      "output": 1.5,
+      "input": 0.3,
+      "output": 1.2,
       "cacheRead": 0.04,
       "currency": "USD",
       "per": 1000000
@@ -4606,7 +4470,7 @@
     "lastUpdated": "2026-08-05",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
+    "maxOutputTokens": 943718,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -4657,7 +4521,7 @@
     "lastUpdated": "2026-07-09",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
+    "maxOutputTokens": 943718,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -4708,7 +4572,7 @@
     "lastUpdated": "2026-08-21",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
+    "maxOutputTokens": 943718,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -4805,7 +4669,7 @@
     "lastUpdated": "2023-07-02",
     "knowledgeCutoff": "2023-06-30",
     "contextWindow": 8192,
-    "maxOutputTokens": 4096,
+    "maxOutputTokens": 3686,
     "capabilities": {
       "tools": false,
       "vision": false,
@@ -5300,7 +5164,7 @@
     "lastUpdated": "2026-03-31",
     "knowledgeCutoff": "2025-09-01",
     "contextWindow": 2000000,
-    "maxOutputTokens": 2000000,
+    "maxOutputTokens": 1800000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -5361,7 +5225,7 @@
     "lastUpdated": "2026-08-12",
     "knowledgeCutoff": "2026-02-01",
     "contextWindow": 500000,
-    "maxOutputTokens": 500000,
+    "maxOutputTokens": 450000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -5422,7 +5286,7 @@
     "lastUpdated": "2026-07-08",
     "knowledgeCutoff": null,
     "contextWindow": 500000,
-    "maxOutputTokens": 500000,
+    "maxOutputTokens": 450000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -5483,7 +5347,7 @@
     "lastUpdated": "2026-03-31",
     "knowledgeCutoff": "2025-09-01",
     "contextWindow": 2000000,
-    "maxOutputTokens": 2000000,
+    "maxOutputTokens": 1800000,
     "capabilities": {
       "tools": false,
       "vision": true,
@@ -5544,7 +5408,7 @@
     "lastUpdated": "2026-04-16",
     "knowledgeCutoff": null,
     "contextWindow": 256000,
-    "maxOutputTokens": 256000,
+    "maxOutputTokens": 230400,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -5605,7 +5469,7 @@
     "lastUpdated": "2026-04-17",
     "knowledgeCutoff": null,
     "contextWindow": 1000000,
-    "maxOutputTokens": 1000000,
+    "maxOutputTokens": 900000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -5989,7 +5853,7 @@
     "lastUpdated": "2026-08-12",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 235929,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -6037,7 +5901,7 @@
     "lastUpdated": "2026-06-12",
     "knowledgeCutoff": "2025-01",
     "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 235929,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -6060,9 +5924,9 @@
       ]
     },
     "pricing": {
-      "input": 0.67,
+      "input": 0.66,
       "output": 3.4,
-      "cacheRead": 0.17,
+      "cacheRead": 0.18,
       "currency": "USD",
       "per": 1000000
     },
@@ -6085,7 +5949,7 @@
     "lastUpdated": "2026-07-16",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
+    "maxOutputTokens": 943718,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -6180,7 +6044,7 @@
     "lastUpdated": "2026-01",
     "knowledgeCutoff": "2025-01",
     "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 235929,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -6203,9 +6067,9 @@
       ]
     },
     "pricing": {
-      "input": 0.45,
-      "output": 2.25,
-      "cacheRead": 0.07,
+      "input": 0.6,
+      "output": 3,
+      "cacheRead": 0.1,
       "currency": "USD",
       "per": 1000000
     },
@@ -6321,7 +6185,7 @@
     "lastUpdated": "2026-04-21",
     "knowledgeCutoff": "2025-01",
     "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 235929,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -7590,10 +7454,10 @@
       ]
     },
     "pricing": {
-      "input": 0.375,
-      "output": 1.875,
-      "cacheRead": 0.0375,
-      "cacheWrite": 0.020833,
+      "input": 0.75,
+      "output": 3.75,
+      "cacheRead": 0.075,
+      "cacheWrite": 0.041667,
       "currency": "USD",
       "per": 1000000
     },
@@ -8214,7 +8078,7 @@
     "lastUpdated": "2023-09-28",
     "knowledgeCutoff": "2021-09-30",
     "contextWindow": 4095,
-    "maxOutputTokens": 4096,
+    "maxOutputTokens": 3685,
     "capabilities": {
       "tools": false,
       "vision": false,
@@ -8947,7 +8811,7 @@
     "lastUpdated": "2025-08-05",
     "knowledgeCutoff": null,
     "contextWindow": 131072,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 117964,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -8993,7 +8857,7 @@
     "lastUpdated": "2025-04-14",
     "knowledgeCutoff": "2024-04",
     "contextWindow": 1047576,
-    "maxOutputTokens": 32768,
+    "maxOutputTokens": 942818,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -9019,7 +8883,7 @@
     "pricing": {
       "input": 0.1,
       "output": 0.4,
-      "cacheRead": 0.025,
+      "cacheRead": 0.03,
       "currency": "USD",
       "per": 1000000
     },
@@ -9748,7 +9612,7 @@
     "lastUpdated": "2024-01-25",
     "knowledgeCutoff": "2021-09-30",
     "contextWindow": 4095,
-    "maxOutputTokens": 4096,
+    "maxOutputTokens": 3685,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -10414,7 +10278,7 @@
     "lastUpdated": "2025-08-05",
     "knowledgeCutoff": null,
     "contextWindow": 131072,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 117964,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -10748,7 +10612,7 @@
     "lastUpdated": "2025-08-26",
     "knowledgeCutoff": "2024-08-31",
     "contextWindow": 131072,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 117964,
     "capabilities": {
       "tools": false,
       "vision": false,
@@ -10794,7 +10658,7 @@
     "lastUpdated": "2025-08-26",
     "knowledgeCutoff": "2024-08-31",
     "contextWindow": 131072,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 117964,
     "capabilities": {
       "tools": false,
       "vision": false,
@@ -10886,7 +10750,7 @@
     "lastUpdated": "2026-05-29",
     "knowledgeCutoff": "2026-03-01",
     "contextWindow": 262144,
-    "maxOutputTokens": 256000,
+    "maxOutputTokens": 230400,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -10935,7 +10799,7 @@
     "lastUpdated": "2025-02-01",
     "knowledgeCutoff": "2024-06-30",
     "contextWindow": 128000,
-    "maxOutputTokens": 128000,
+    "maxOutputTokens": 28800,
     "capabilities": {
       "tools": false,
       "vision": true,
@@ -10958,9 +10822,8 @@
       ]
     },
     "pricing": {
-      "input": 0.8,
-      "output": 1,
-      "cacheRead": 0.4,
+      "input": 0.25,
+      "output": 0.75,
       "currency": "USD",
       "per": 1000000
     },
@@ -11044,7 +10907,7 @@
     "lastUpdated": "2025-04",
     "knowledgeCutoff": "2025-04",
     "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 235929,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -11223,64 +11086,6 @@
     ]
   },
   {
-    "id": "qwen/qwen-plus-2025-07-28:thinking",
-    "provider": "openrouter",
-    "providerName": "OpenRouter",
-    "displayName": "Qwen Plus 0728 (thinking)",
-    "family": "qwen",
-    "releaseDate": "2025-09-08",
-    "lastUpdated": "2025-09-08",
-    "knowledgeCutoff": "2025-03-31",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.26,
-      "output": 0.78,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.78,
-          "output": 2.34,
-          "contextThreshold": 256000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 0.78,
-        "output": 2.34,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "qwen/qwen3-235b-a22b-thinking-2507",
     "provider": "openrouter",
     "providerName": "OpenRouter",
@@ -11289,8 +11094,8 @@
     "releaseDate": "2025-07-25",
     "lastUpdated": "2025-07-25",
     "knowledgeCutoff": "2025-06-30",
-    "contextWindow": 262144,
-    "maxOutputTokens": 32768,
+    "contextWindow": 131072,
+    "maxOutputTokens": 117964,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -11429,7 +11234,7 @@
     "lastUpdated": "2026-02-23",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 235929,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -11679,7 +11484,7 @@
     "lastUpdated": "2026-02-03",
     "knowledgeCutoff": "2025-09",
     "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 235929,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -11786,7 +11591,7 @@
     "lastUpdated": "2025-07-21",
     "knowledgeCutoff": "2025-06-30",
     "contextWindow": 262144,
-    "maxOutputTokens": 16384,
+    "maxOutputTokens": 235929,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -11808,8 +11613,9 @@
       ]
     },
     "pricing": {
-      "input": 0.09,
-      "output": 0.55,
+      "input": 0.0875,
+      "output": 0.35,
+      "cacheRead": 0.0175,
       "currency": "USD",
       "per": 1000000
     },
@@ -12212,7 +12018,7 @@
     "lastUpdated": "2024-10-16",
     "knowledgeCutoff": "2024-06-30",
     "contextWindow": 32768,
-    "maxOutputTokens": 32768,
+    "maxOutputTokens": 29491,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -12387,6 +12193,56 @@
     "pricing": {
       "input": 0.117,
       "output": 0.455,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.8-flash",
+    "provider": "openrouter",
+    "providerName": "OpenRouter",
+    "displayName": "Qwen3.8 Flash",
+    "family": "qwen",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.47,
+      "cacheRead": 0.016,
+      "cacheWrite": 0.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -12619,7 +12475,7 @@
     "lastUpdated": "2024-11-11",
     "knowledgeCutoff": "2024-06-30",
     "contextWindow": 32768,
-    "maxOutputTokens": 32768,
+    "maxOutputTokens": 29491,
     "capabilities": {
       "tools": false,
       "vision": false,
@@ -12665,7 +12521,7 @@
     "lastUpdated": "2026-04-17",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 235929,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -12689,8 +12545,8 @@
       ]
     },
     "pricing": {
-      "input": 0.14,
-      "output": 1,
+      "input": 0.1,
+      "output": 0.9,
       "cacheRead": 0.05,
       "currency": "USD",
       "per": 1000000
@@ -12714,7 +12570,7 @@
     "lastUpdated": "2026-04-22",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 235929,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -12763,7 +12619,7 @@
     "lastUpdated": "2025-09",
     "knowledgeCutoff": "2025-04",
     "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 16384,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -12785,9 +12641,8 @@
       ]
     },
     "pricing": {
-      "input": 0.1,
+      "input": 0.09,
       "output": 1.1,
-      "cacheRead": 0.07,
       "currency": "USD",
       "per": 1000000
     },
@@ -12834,9 +12689,10 @@
       ]
     },
     "pricing": {
-      "input": 0.4,
-      "output": 3,
-      "cacheRead": 0.05,
+      "input": 0.425,
+      "output": 2.55,
+      "cacheRead": 0.085,
+      "cacheWrite": 0.53125,
       "currency": "USD",
       "per": 1000000
     },
@@ -12966,7 +12822,7 @@
     "lastUpdated": "2026-02-23",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 235929,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -13109,7 +12965,7 @@
     "lastUpdated": "2026-02-23",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 81920,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -13133,8 +12989,8 @@
       ]
     },
     "pricing": {
-      "input": 0.26,
-      "output": 2.08,
+      "input": 0.29,
+      "output": 2.4,
       "currency": "USD",
       "per": 1000000
     },
@@ -13217,7 +13073,7 @@
     "lastUpdated": "2025-10-06",
     "knowledgeCutoff": "2025-03-31",
     "contextWindow": 262144,
-    "maxOutputTokens": 32768,
+    "maxOutputTokens": 16384,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -13240,8 +13096,8 @@
       ]
     },
     "pricing": {
-      "input": 0.13,
-      "output": 0.52,
+      "input": 0.15,
+      "output": 0.6,
       "currency": "USD",
       "per": 1000000
     },
@@ -13466,7 +13322,7 @@
     "lastUpdated": "2026-08-12",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -13537,52 +13393,6 @@
     "pricing": {
       "input": 0,
       "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "allenai/olmo-3-32b-think",
-    "provider": "openrouter",
-    "providerName": "OpenRouter",
-    "displayName": "Olmo 3 32B Think",
-    "family": "allenai",
-    "releaseDate": "2025-11-21",
-    "lastUpdated": "2025-11-21",
-    "knowledgeCutoff": null,
-    "contextWindow": 65536,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.15,
-      "output": 0.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -13811,7 +13621,7 @@
     "lastUpdated": "2025-03-07",
     "knowledgeCutoff": null,
     "contextWindow": 128000,
-    "maxOutputTokens": 128000,
+    "maxOutputTokens": 115200,
     "capabilities": {
       "tools": false,
       "vision": false,
@@ -13857,7 +13667,7 @@
     "lastUpdated": "2025-01-27",
     "knowledgeCutoff": null,
     "contextWindow": 127072,
-    "maxOutputTokens": 127072,
+    "maxOutputTokens": 114364,
     "capabilities": {
       "tools": false,
       "vision": true,
@@ -13904,7 +13714,7 @@
     "lastUpdated": "2025-03-07",
     "knowledgeCutoff": null,
     "contextWindow": 128000,
-    "maxOutputTokens": 128000,
+    "maxOutputTokens": 115200,
     "capabilities": {
       "tools": false,
       "vision": true,
@@ -14045,7 +13855,7 @@
     "lastUpdated": "2025-09-27",
     "knowledgeCutoff": "2024-04-30",
     "contextWindow": 131072,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 117964,
     "capabilities": {
       "tools": false,
       "vision": false,
@@ -14092,7 +13902,7 @@
     "lastUpdated": "2025-03-10",
     "knowledgeCutoff": "2024-06-30",
     "contextWindow": 32768,
-    "maxOutputTokens": 32768,
+    "maxOutputTokens": 29491,
     "capabilities": {
       "tools": false,
       "vision": false,
@@ -14130,52 +13940,6 @@
     ]
   },
   {
-    "id": "thedrummer/rocinante-12b",
-    "provider": "openrouter",
-    "providerName": "OpenRouter",
-    "displayName": "Rocinante 12B",
-    "family": null,
-    "releaseDate": "2024-09-30",
-    "lastUpdated": "2024-09-30",
-    "knowledgeCutoff": "2024-04-30",
-    "contextWindow": 65536,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.25,
-      "output": 0.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "thedrummer/unslopnemo-12b",
     "provider": "openrouter",
     "providerName": "OpenRouter",
@@ -14185,7 +13949,7 @@
     "lastUpdated": "2024-11-08",
     "knowledgeCutoff": "2024-04-30",
     "contextWindow": 1024000,
-    "maxOutputTokens": 1024000,
+    "maxOutputTokens": 26214,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -14231,7 +13995,7 @@
     "lastUpdated": "2026-03-20",
     "knowledgeCutoff": null,
     "contextWindow": 16384,
-    "maxOutputTokens": 16384,
+    "maxOutputTokens": 14745,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -14279,7 +14043,7 @@
     "lastUpdated": "2025-03-12",
     "knowledgeCutoff": "2025-01-31",
     "contextWindow": 65536,
-    "maxOutputTokens": 65536,
+    "maxOutputTokens": 58982,
     "capabilities": {
       "tools": false,
       "vision": false,
@@ -14316,54 +14080,6 @@
     ]
   },
   {
-    "id": "stealth/ox-alpha",
-    "provider": "openrouter",
-    "providerName": "OpenRouter",
-    "displayName": "Ox Alpha",
-    "family": "alpha",
-    "releaseDate": "2026-08-20",
-    "lastUpdated": "2026-08-20",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "thinkingmachines/inkling-small",
     "provider": "openrouter",
     "providerName": "OpenRouter",
@@ -14379,11 +14095,11 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": true,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
@@ -14421,7 +14137,7 @@
     "releaseDate": "2026-07-15",
     "lastUpdated": "2026-07-15",
     "knowledgeCutoff": null,
-    "contextWindow": 262144,
+    "contextWindow": 1048576,
     "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
@@ -14470,7 +14186,7 @@
     "lastUpdated": "2026-07-15",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 471859,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -14518,7 +14234,7 @@
     "releaseDate": "2026-07-30",
     "lastUpdated": "2026-07-30",
     "knowledgeCutoff": null,
-    "contextWindow": 262144,
+    "contextWindow": 1048576,
     "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
@@ -14613,7 +14329,7 @@
     "lastUpdated": "2026-08-01",
     "knowledgeCutoff": null,
     "contextWindow": 1310720,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 393216,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -14635,8 +14351,8 @@
       ]
     },
     "pricing": {
-      "input": 0.055,
-      "output": 0.14,
+      "input": 0.03,
+      "output": 0.16,
       "cacheRead": 0.01,
       "currency": "USD",
       "per": 1000000
@@ -14651,16 +14367,16 @@
     ]
   },
   {
-    "id": "inclusionai/ring-2.6-1t",
+    "id": "inclusionai/ling-3.0-flash-fin:free",
     "provider": "openrouter",
     "providerName": "OpenRouter",
-    "displayName": "Ring-2.6-1T",
-    "family": "ring",
-    "releaseDate": "2026-05-08",
-    "lastUpdated": "2026-05-08",
+    "displayName": "Ling 3.0 Flash Fin (free)",
+    "family": "ling",
+    "releaseDate": "2026-08-27",
+    "lastUpdated": "2026-08-27",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 65536,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -14682,9 +14398,8 @@
       ]
     },
     "pricing": {
-      "input": 0.075,
-      "output": 0.625,
-      "cacheRead": 0.015,
+      "input": 0,
+      "output": 0,
       "currency": "USD",
       "per": 1000000
     },
@@ -14745,100 +14460,6 @@
     ]
   },
   {
-    "id": "inclusionai/ling-2.6-1t",
-    "provider": "openrouter",
-    "providerName": "OpenRouter",
-    "displayName": "Ling-2.6-1T",
-    "family": "ling",
-    "releaseDate": "2026-04-23",
-    "lastUpdated": "2026-04-23",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.075,
-      "output": 0.625,
-      "cacheRead": 0.015,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "inclusionai/ling-2.6-flash",
-    "provider": "openrouter",
-    "providerName": "OpenRouter",
-    "displayName": "Ling-2.6-flash",
-    "family": "ling",
-    "releaseDate": "2026-04-21",
-    "lastUpdated": "2026-04-21",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.01,
-      "output": 0.03,
-      "cacheRead": 0.002,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "meta-llama/llama-3.2-3b-instruct",
     "provider": "openrouter",
     "providerName": "OpenRouter",
@@ -14848,7 +14469,7 @@
     "lastUpdated": "2024-09-25",
     "knowledgeCutoff": "2023-12-31",
     "contextWindow": 131072,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 117964,
     "capabilities": {
       "tools": false,
       "vision": false,
@@ -14894,7 +14515,7 @@
     "lastUpdated": "2024-12-06",
     "knowledgeCutoff": "2023-12",
     "contextWindow": 131072,
-    "maxOutputTokens": 16384,
+    "maxOutputTokens": 115200,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -14916,8 +14537,9 @@
       ]
     },
     "pricing": {
-      "input": 0.1,
-      "output": 0.32,
+      "input": 0.71,
+      "output": 0.71,
+      "cacheRead": 0.71,
       "currency": "USD",
       "per": 1000000
     },
@@ -14939,7 +14561,7 @@
     "releaseDate": "2025-04-30",
     "lastUpdated": "2025-04-30",
     "knowledgeCutoff": "2024-08-31",
-    "contextWindow": 1048576,
+    "contextWindow": 163840,
     "maxOutputTokens": 16384,
     "capabilities": {
       "tools": false,
@@ -14987,7 +14609,7 @@
     "lastUpdated": "2024-09-25",
     "knowledgeCutoff": "2023-12-31",
     "contextWindow": 60000,
-    "maxOutputTokens": 60000,
+    "maxOutputTokens": 54000,
     "capabilities": {
       "tools": false,
       "vision": false,
@@ -15033,7 +14655,7 @@
     "lastUpdated": "2024-07-23",
     "knowledgeCutoff": "2023-12",
     "contextWindow": 131072,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 117964,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -15173,7 +14795,7 @@
     "lastUpdated": "2025-04-05",
     "knowledgeCutoff": "2024-08-31",
     "contextWindow": 1310720,
-    "maxOutputTokens": 16384,
+    "maxOutputTokens": 8192,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -15196,8 +14818,9 @@
       ]
     },
     "pricing": {
-      "input": 0.1,
-      "output": 0.3,
+      "input": 0.11,
+      "output": 0.34,
+      "cacheRead": 0.055,
       "currency": "USD",
       "per": 1000000
     },
@@ -15220,7 +14843,7 @@
     "lastUpdated": "2025-12-02",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 209715,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -15268,7 +14891,7 @@
     "lastUpdated": "2025-08-13",
     "knowledgeCutoff": "2025-06-30",
     "contextWindow": 131072,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 104857,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -15363,7 +14986,7 @@
     "lastUpdated": "2026-04-30",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 209715,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -15402,39 +15025,41 @@
     ]
   },
   {
-    "id": "mistralai/ministral-8b",
+    "id": "mistralai/devstral-2512",
     "provider": "openrouter",
     "providerName": "OpenRouter",
-    "displayName": "Ministral 8B",
-    "family": "ministral",
-    "releaseDate": "2024-10-17",
-    "lastUpdated": "2024-10-17",
-    "knowledgeCutoff": "2024-09-30",
-    "contextWindow": 128000,
-    "maxOutputTokens": 128000,
+    "displayName": "Devstral 2",
+    "family": "devstral",
+    "releaseDate": "2025-12-09",
+    "lastUpdated": "2025-12-09",
+    "knowledgeCutoff": "2025-12",
+    "contextWindow": 262144,
+    "maxOutputTokens": 209715,
     "capabilities": {
-      "tools": false,
-      "vision": false,
+      "tools": true,
+      "vision": true,
       "reasoning": false,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "pdf"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.11,
-      "output": 0.11,
+      "input": 0.44,
+      "output": 2.2,
+      "cacheRead": 0.044,
       "currency": "USD",
       "per": 1000000
     },
@@ -15457,7 +15082,7 @@
     "lastUpdated": "2026-03-16",
     "knowledgeCutoff": "2025-06",
     "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 209715,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -15598,7 +15223,7 @@
     "lastUpdated": "2025-12-02",
     "knowledgeCutoff": "2024-11",
     "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 209715,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -15646,8 +15271,8 @@
     "releaseDate": "2025-10-30",
     "lastUpdated": "2025-10-30",
     "knowledgeCutoff": null,
-    "contextWindow": 32000,
-    "maxOutputTokens": 32000,
+    "contextWindow": 32768,
+    "maxOutputTokens": 26214,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -15696,7 +15321,7 @@
     "lastUpdated": "2025-12-02",
     "knowledgeCutoff": null,
     "contextWindow": 131072,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 104857,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -15744,7 +15369,7 @@
     "lastUpdated": "2025-05-07",
     "knowledgeCutoff": "2025-03-31",
     "contextWindow": 131072,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 104857,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -15793,7 +15418,7 @@
     "lastUpdated": "2024-11-19",
     "knowledgeCutoff": "2024-03-31",
     "contextWindow": 131072,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 104857,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -15841,7 +15466,7 @@
     "lastUpdated": "2024-02-26",
     "knowledgeCutoff": "2024-11-30",
     "contextWindow": 128000,
-    "maxOutputTokens": 128000,
+    "maxOutputTokens": 102400,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -15889,7 +15514,7 @@
     "lastUpdated": "2024-04-17",
     "knowledgeCutoff": "2024-01-31",
     "contextWindow": 65536,
-    "maxOutputTokens": 65536,
+    "maxOutputTokens": 52428,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -15937,7 +15562,7 @@
     "lastUpdated": "2025-12-02",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 209715,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -15985,7 +15610,7 @@
     "lastUpdated": "2025-08-01",
     "knowledgeCutoff": "2025-03-31",
     "contextWindow": 256000,
-    "maxOutputTokens": 256000,
+    "maxOutputTokens": 204800,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -16033,7 +15658,7 @@
     "lastUpdated": "2025-02-17",
     "knowledgeCutoff": "2024-09-30",
     "contextWindow": 32768,
-    "maxOutputTokens": 32768,
+    "maxOutputTokens": 26214,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -16081,7 +15706,7 @@
     "lastUpdated": "2025-03-17",
     "knowledgeCutoff": "2023-10-31",
     "contextWindow": 128000,
-    "maxOutputTokens": 128000,
+    "maxOutputTokens": 102400,
     "capabilities": {
       "tools": false,
       "vision": true,
@@ -16502,18 +16127,18 @@
     "releaseDate": "2026-08-19",
     "lastUpdated": "2026-08-19",
     "knowledgeCutoff": null,
-    "contextWindow": 1048576,
+    "contextWindow": 1310720,
     "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -16525,9 +16150,9 @@
       ]
     },
     "pricing": {
-      "input": 1.4,
-      "output": 4.4,
-      "cacheRead": 0.26,
+      "input": 1.1875,
+      "output": 4.18,
+      "cacheRead": 0.247,
       "currency": "USD",
       "per": 1000000
     },
@@ -16550,7 +16175,7 @@
     "lastUpdated": "2026-06-24",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 235929,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -16598,7 +16223,7 @@
     "lastUpdated": "2026-06-08",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "maxOutputTokens": 235929,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -16646,7 +16271,7 @@
     "lastUpdated": "2026-01-27",
     "knowledgeCutoff": null,
     "contextWindow": 131072,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 117964,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -16925,7 +16550,7 @@
     "lastUpdated": "2024-08-13",
     "knowledgeCutoff": "2023-12-31",
     "contextWindow": 8192,
-    "maxOutputTokens": 16384,
+    "maxOutputTokens": 7372,
     "capabilities": {
       "tools": false,
       "vision": false,
@@ -16971,7 +16596,7 @@
     "lastUpdated": "2026-04-27",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
-    "maxOutputTokens": 974842,
+    "maxOutputTokens": 943718,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -16995,9 +16620,9 @@
       ]
     },
     "pricing": {
-      "input": 2.6,
-      "output": 13,
-      "cacheRead": 0.29,
+      "input": 2.55,
+      "output": 12.75,
+      "cacheRead": 0.256,
       "currency": "USD",
       "per": 1000000
     },
@@ -17019,7 +16644,7 @@
     "releaseDate": "2026-07-10",
     "lastUpdated": "2026-07-10",
     "knowledgeCutoff": null,
-    "contextWindow": 256000,
+    "contextWindow": 262144,
     "maxOutputTokens": 80000,
     "capabilities": {
       "tools": true,
@@ -17161,7 +16786,7 @@
     "lastUpdated": "2025-10-20",
     "knowledgeCutoff": null,
     "contextWindow": 131000,
-    "maxOutputTokens": 131000,
+    "maxOutputTokens": 117900,
     "capabilities": {
       "tools": false,
       "vision": false,
@@ -17207,7 +16832,7 @@
     "lastUpdated": "2026-04-30",
     "knowledgeCutoff": null,
     "contextWindow": 131072,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 117964,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -17254,7 +16879,7 @@
     "lastUpdated": "2026-08-14",
     "knowledgeCutoff": null,
     "contextWindow": 512000,
-    "maxOutputTokens": 512000,
+    "maxOutputTokens": 460800,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -17301,7 +16926,7 @@
     "lastUpdated": "2025-01-15",
     "knowledgeCutoff": "2024-03-31",
     "contextWindow": 1000192,
-    "maxOutputTokens": 1000192,
+    "maxOutputTokens": 900172,
     "capabilities": {
       "tools": false,
       "vision": true,
@@ -17608,6 +17233,100 @@
       "input": 0.27,
       "output": 1.08,
       "cacheRead": 0.027,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimax/minimax-m3:free",
+    "provider": "openrouter",
+    "providerName": "OpenRouter",
+    "displayName": "MiniMax M3 (free)",
+    "family": "minimax",
+    "releaseDate": "2026-06-01",
+    "lastUpdated": "2026-06-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 943718,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimax/minimax-m2.7:free",
+    "provider": "openrouter",
+    "providerName": "OpenRouter",
+    "displayName": "MiniMax M2.7 (free)",
+    "family": "minimax",
+    "releaseDate": "2026-03-18",
+    "lastUpdated": "2026-03-18",
+    "knowledgeCutoff": null,
+    "contextWindow": 196608,
+    "maxOutputTokens": 176947,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
       "currency": "USD",
       "per": 1000000
     },
