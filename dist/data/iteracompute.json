@@ -8,8 +8,8 @@
     "releaseDate": "2026-08-14",
     "lastUpdated": "2026-08-14",
     "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 32768,
+    "contextWindow": 327680,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -25,17 +25,61 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "video"
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.35,
+      "input": 0.3,
+      "output": 2.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "iteracompute/ornith-1.5-35b-a3b",
+    "provider": "iteracompute",
+    "providerName": "IteraCompute",
+    "displayName": "Ornith 1.5 35B A3B",
+    "family": "ornith",
+    "releaseDate": "2026-08-18",
+    "lastUpdated": "2026-08-23",
+    "knowledgeCutoff": null,
+    "contextWindow": 327680,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
       "output": 3,
-      "cacheRead": 0.1,
       "currency": "USD",
       "per": 1000000
     },

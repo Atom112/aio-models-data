@@ -1,5 +1,53 @@
 [
   {
+    "id": "deepseek-v4-flash-vision-exp",
+    "provider": "deepseek",
+    "providerName": "DeepSeek",
+    "displayName": "DeepSeek V4 Flash Vision Exp",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-08-21",
+    "lastUpdated": "2026-08-21",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.14,
+      "output": 0.28,
+      "cacheRead": 0.0028,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "beta",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "deepseek-v4-flash",
     "provider": "deepseek",
     "providerName": "DeepSeek",
@@ -85,54 +133,6 @@
       "per": 1000000
     },
     "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-v4-flash-vision-exp",
-    "provider": "deepseek",
-    "providerName": "DeepSeek",
-    "displayName": "DeepSeek V4 Flash Vision Exp",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-08-21",
-    "lastUpdated": "2026-08-21",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.14,
-      "output": 0.28,
-      "cacheRead": 0.0028,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "beta",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],

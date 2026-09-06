@@ -1,66 +1,5 @@
 [
   {
-    "id": "MiniMax-M3",
-    "provider": "wafer.ai",
-    "providerName": "Wafer",
-    "displayName": "MiniMax-M3",
-    "family": "minimax",
-    "releaseDate": "2026-06-01",
-    "lastUpdated": "2026-06-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 512000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.33,
-      "output": 1.32,
-      "cacheRead": 0.07,
-      "cacheWrite": 0,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.66,
-          "output": 2.64,
-          "contextThreshold": 512000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 0.66,
-        "output": 2.64,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "GLM-5.1",
     "provider": "wafer.ai",
     "providerName": "Wafer",
@@ -244,6 +183,67 @@
       "cacheWrite": 0,
       "currency": "USD",
       "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "MiniMax-M3",
+    "provider": "wafer.ai",
+    "providerName": "Wafer",
+    "displayName": "MiniMax-M3",
+    "family": "minimax",
+    "releaseDate": "2026-06-01",
+    "lastUpdated": "2026-06-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 512000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.33,
+      "output": 1.32,
+      "cacheRead": 0.07,
+      "cacheWrite": 0,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.66,
+          "output": 2.64,
+          "contextThreshold": 512000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 0.66,
+        "output": 2.64,
+        "contextThreshold": 200000
+      }
     },
     "status": "active",
     "deprecationDate": null,

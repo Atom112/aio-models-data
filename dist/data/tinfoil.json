@@ -1,120 +1,24 @@
 [
   {
-    "id": "kimi-k3",
+    "id": "nomic-embed-text",
     "provider": "tinfoil",
     "providerName": "Tinfoil",
-    "displayName": "Kimi K3",
-    "family": "kimi-k3",
-    "releaseDate": "2026-07-16",
-    "lastUpdated": "2026-07-16",
+    "displayName": "Nomic Embed Text v1.5",
+    "family": null,
+    "releaseDate": "2024-02",
+    "lastUpdated": "2024-02",
     "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 131072,
+    "contextWindow": 8192,
+    "maxOutputTokens": 768,
     "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 4,
-      "output": 20,
-      "cacheRead": 0.8,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-v4-flash",
-    "provider": "tinfoil",
-    "providerName": "Tinfoil",
-    "displayName": "DeepSeek V4 Flash 0731",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-07-31",
-    "lastUpdated": "2026-07-31",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
+      "tools": false,
       "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 0.7,
-      "cacheRead": 0.06,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "llama3-3-70b",
-    "provider": "tinfoil",
-    "providerName": "Tinfoil",
-    "displayName": "Llama-3.3-70B-Instruct",
-    "family": "llama",
-    "releaseDate": "2024-12-06",
-    "lastUpdated": "2024-12-06",
-    "knowledgeCutoff": "2023-12",
-    "contextWindow": 131072,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
       "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
+      "temperature": false,
+      "attachment": false,
       "structured_output": false,
       "open_weights": true
     },
@@ -127,8 +31,8 @@
       ]
     },
     "pricing": {
-      "input": 1.75,
-      "output": 2.75,
+      "input": 0.05,
+      "output": 0,
       "currency": "USD",
       "per": 1000000
     },
@@ -189,62 +93,16 @@
     ]
   },
   {
-    "id": "nomic-embed-text",
+    "id": "deepseek-v4-flash",
     "provider": "tinfoil",
     "providerName": "Tinfoil",
-    "displayName": "Nomic Embed Text v1.5",
-    "family": null,
-    "releaseDate": "2024-02",
-    "lastUpdated": "2024-02",
-    "knowledgeCutoff": null,
-    "contextWindow": 8192,
-    "maxOutputTokens": 768,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.05,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm-5-2",
-    "provider": "tinfoil",
-    "providerName": "Tinfoil",
-    "displayName": "GLM-5.2",
-    "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
-    "knowledgeCutoff": null,
-    "contextWindow": 393216,
-    "maxOutputTokens": 131072,
+    "displayName": "DeepSeek V4 Flash 0731",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-07-31",
+    "lastUpdated": "2026-07-31",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 384000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -266,9 +124,154 @@
       ]
     },
     "pricing": {
-      "input": 1.5,
-      "output": 5.25,
-      "cacheRead": 0.375,
+      "input": 0.3,
+      "output": 0.7,
+      "cacheRead": 0.06,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-oss-safeguard-120b",
+    "provider": "tinfoil",
+    "providerName": "Tinfoil",
+    "displayName": "gpt-oss-safeguard-120b",
+    "family": "gpt-oss",
+    "releaseDate": "2025-10-29",
+    "lastUpdated": "2025-10-29",
+    "knowledgeCutoff": "2024-06",
+    "contextWindow": 131072,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.6,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k3",
+    "provider": "tinfoil",
+    "providerName": "Tinfoil",
+    "displayName": "Kimi K3",
+    "family": "kimi-k3",
+    "releaseDate": "2026-07-16",
+    "lastUpdated": "2026-07-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 4,
+      "output": 20,
+      "cacheRead": 0.8,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5-3-flash",
+    "provider": "tinfoil",
+    "providerName": "Tinfoil",
+    "displayName": "GLM-5.3-Flash",
+    "family": "glm",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.4,
+      "output": 1.25,
+      "cacheRead": 0.1,
       "currency": "USD",
       "per": 1000000
     },
@@ -328,26 +331,26 @@
     ]
   },
   {
-    "id": "gpt-oss-safeguard-120b",
+    "id": "llama3-3-70b",
     "provider": "tinfoil",
     "providerName": "Tinfoil",
-    "displayName": "gpt-oss-safeguard-120b",
-    "family": "gpt-oss",
-    "releaseDate": "2025-10-29",
-    "lastUpdated": "2025-10-29",
-    "knowledgeCutoff": "2024-06",
+    "displayName": "Llama-3.3-70B-Instruct",
+    "family": "llama",
+    "releaseDate": "2024-12-06",
+    "lastUpdated": "2024-12-06",
+    "knowledgeCutoff": "2023-12",
     "contextWindow": 131072,
-    "maxOutputTokens": 32768,
+    "maxOutputTokens": 4096,
     "capabilities": {
       "tools": true,
-      "vision": false,
-      "reasoning": true,
+      "vision": true,
+      "reasoning": false,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
-      "structured_output": true,
+      "attachment": true,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
@@ -359,8 +362,8 @@
       ]
     },
     "pricing": {
-      "input": 0.15,
-      "output": 0.6,
+      "input": 1.75,
+      "output": 2.75,
       "currency": "USD",
       "per": 1000000
     },

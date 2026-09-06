@@ -1,5 +1,53 @@
 [
   {
+    "id": "Qwen3.8-Flash-Next",
+    "provider": "amd",
+    "providerName": "AMD",
+    "displayName": "Qwen3.8 Flash Next",
+    "family": "qwen",
+    "releaseDate": "2026-08-27",
+    "lastUpdated": "2026-08-27",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.47,
+      "cacheRead": 0.016,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "DeepSeek-V4-Flash",
     "provider": "amd",
     "providerName": "AMD",
@@ -47,26 +95,74 @@
     ]
   },
   {
-    "id": "Qwen3.8-Flash-Next",
+    "id": "DeepSeek-V4-Flash-Vision-Exp",
     "provider": "amd",
     "providerName": "AMD",
-    "displayName": "Qwen3.8 Flash Next",
-    "family": "qwen",
-    "releaseDate": "2026-08-27",
-    "lastUpdated": "2026-08-27",
+    "displayName": "DeepSeek V4 Flash Vision Exp",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-08-21",
+    "lastUpdated": "2026-08-21",
     "knowledgeCutoff": null,
-    "contextWindow": 262144,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.14,
+      "output": 0.28,
+      "cacheRead": 0.0028,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "MiniCPM5-1B",
+    "provider": "amd",
+    "providerName": "AMD",
+    "displayName": "MiniCPM5-1B",
+    "family": null,
+    "releaseDate": "2026-05-19",
+    "lastUpdated": "2026-05-19",
+    "knowledgeCutoff": null,
+    "contextWindow": 131072,
     "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": true,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
@@ -78,9 +174,9 @@
       ]
     },
     "pricing": {
-      "input": 0.15,
-      "output": 0.47,
-      "cacheRead": 0.016,
+      "input": 0.124,
+      "output": 0.7425,
+      "cacheRead": 0.124,
       "currency": "USD",
       "per": 1000000
     },

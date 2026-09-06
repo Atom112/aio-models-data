@@ -1,5 +1,100 @@
 [
   {
+    "id": "medgemma-4b",
+    "provider": "llmtr",
+    "providerName": "LLMTR",
+    "displayName": "MedGemma 4B",
+    "family": null,
+    "releaseDate": "2026-04-26",
+    "lastUpdated": "2026-08-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 8192,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "muse-glimmer-30b-tr",
+    "provider": "llmtr",
+    "providerName": "LLMTR",
+    "displayName": "Muse Glimmer 30B (TR)",
+    "family": "muse",
+    "releaseDate": "2026-08-10",
+    "lastUpdated": "2026-08-10",
+    "knowledgeCutoff": "2026-01-04",
+    "contextWindow": 131072,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 5,
+      "cacheRead": 0.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "gemma-4",
     "provider": "llmtr",
     "providerName": "LLMTR",
@@ -48,79 +143,31 @@
     ]
   },
   {
-    "id": "medgemma-4b",
+    "id": "magibu-11b-v8",
     "provider": "llmtr",
     "providerName": "LLMTR",
-    "displayName": "MedGemma 4B",
+    "displayName": "Magibu 11B v8",
     "family": null,
-    "releaseDate": "2026-04-26",
+    "releaseDate": "2026-06-05",
     "lastUpdated": "2026-08-16",
     "knowledgeCutoff": null,
     "contextWindow": 8192,
     "maxOutputTokens": 8192,
     "capabilities": {
       "tools": false,
-      "vision": true,
+      "vision": false,
       "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": false,
-      "open_weights": true
+      "open_weights": false
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
-      ],
-      "output": [
         "text"
-      ]
-    },
-    "pricing": {
-      "input": 3,
-      "output": 5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "trendyol-asure-12b",
-    "provider": "llmtr",
-    "providerName": "LLMTR",
-    "displayName": "Trendyol Asure 12B",
-    "family": "gemma",
-    "releaseDate": "2026-02-19",
-    "lastUpdated": "2026-02-20",
-    "knowledgeCutoff": null,
-    "contextWindow": 40960,
-    "maxOutputTokens": 40960,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
       ],
       "output": [
         "text"
@@ -129,55 +176,6 @@
     "pricing": {
       "input": 0.1,
       "output": 0.5,
-      "cacheRead": 0.025,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "muse-glimmer-30b-tr",
-    "provider": "llmtr",
-    "providerName": "LLMTR",
-    "displayName": "Muse Glimmer 30B (TR)",
-    "family": "muse",
-    "releaseDate": "2026-08-10",
-    "lastUpdated": "2026-08-10",
-    "knowledgeCutoff": "2026-01-04",
-    "contextWindow": 131072,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2,
-      "output": 5,
-      "cacheRead": 0.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -240,18 +238,66 @@
     ]
   },
   {
-    "id": "magibu-11b-v8",
+    "id": "trendyol-asure-12b",
     "provider": "llmtr",
     "providerName": "LLMTR",
-    "displayName": "Magibu 11B v8",
-    "family": null,
-    "releaseDate": "2026-06-05",
-    "lastUpdated": "2026-08-16",
+    "displayName": "Trendyol Asure 12B",
+    "family": "gemma",
+    "releaseDate": "2026-02-19",
+    "lastUpdated": "2026-02-20",
     "knowledgeCutoff": null,
-    "contextWindow": 8192,
-    "maxOutputTokens": 8192,
+    "contextWindow": 40960,
+    "maxOutputTokens": 40960,
     "capabilities": {
       "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.5,
+      "cacheRead": 0.025,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3-coder-plus",
+    "provider": "llmtr",
+    "providerName": "LLMTR",
+    "displayName": "Qwen3 Coder Plus",
+    "family": "qwen",
+    "releaseDate": "2025-07-23",
+    "lastUpdated": "2025-07-23",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
       "vision": false,
       "reasoning": false,
       "streaming": true,
@@ -271,8 +317,8 @@
       ]
     },
     "pricing": {
-      "input": 0.1,
-      "output": 0.5,
+      "input": 1,
+      "output": 5,
       "currency": "USD",
       "per": 1000000
     },
@@ -286,43 +332,87 @@
     ]
   },
   {
-    "id": "google/gemini-2.5-flash-lite",
+    "id": "qwen/qwen3-coder-flash",
     "provider": "llmtr",
     "providerName": "LLMTR",
-    "displayName": "Gemini 2.5 Flash-Lite",
-    "family": "gemini-flash-lite",
-    "releaseDate": "2025-06-17",
-    "lastUpdated": "2025-06-17",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
+    "displayName": "Qwen3 Coder Flash",
+    "family": "qwen",
+    "releaseDate": "2025-07-28",
+    "lastUpdated": "2025-07-28",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 1.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.6-plus",
+    "provider": "llmtr",
+    "providerName": "LLMTR",
+    "displayName": "Qwen3.6 Plus",
+    "family": "qwen",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 1000000,
     "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": true,
+      "structured_output": false,
       "open_weights": false
     },
     "modalities": {
       "input": [
         "text",
         "image",
-        "audio",
-        "video",
-        "pdf"
+        "video"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.1,
-      "output": 0.1,
+      "input": 0.5,
+      "output": 3,
       "currency": "USD",
       "per": 1000000
     },
@@ -336,65 +426,15 @@
     ]
   },
   {
-    "id": "meta/muse-spark-1.2-contributor",
+    "id": "qwen/qwen-flash",
     "provider": "llmtr",
     "providerName": "LLMTR",
-    "displayName": "Muse Spark 1.2 Contributor",
-    "family": "muse",
-    "releaseDate": "2026-08-05",
-    "lastUpdated": "2026-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "pdf",
-        "audio"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1,
-      "output": 0.2,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "poolside/laguna-xs-2.1",
-    "provider": "llmtr",
-    "providerName": "LLMTR",
-    "displayName": "Laguna XS 2.1",
-    "family": "laguna",
-    "releaseDate": "2026-07-02",
-    "lastUpdated": "2026-07-02",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
+    "displayName": "Qwen Flash",
+    "family": "qwen",
+    "releaseDate": "2025-07-28",
+    "lastUpdated": "2025-07-28",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 1000000,
     "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
@@ -406,7 +446,7 @@
       "temperature": true,
       "attachment": false,
       "structured_output": false,
-      "open_weights": true
+      "open_weights": false
     },
     "modalities": {
       "input": [
@@ -417,8 +457,8 @@
       ]
     },
     "pricing": {
-      "input": 0,
-      "output": 0,
+      "input": 0.05,
+      "output": 0.4,
       "currency": "USD",
       "per": 1000000
     },
@@ -528,6 +568,52 @@
     ]
   },
   {
+    "id": "qwen/qwen3-max",
+    "provider": "llmtr",
+    "providerName": "LLMTR",
+    "displayName": "Qwen3 Max",
+    "family": "qwen",
+    "releaseDate": "2025-09-23",
+    "lastUpdated": "2025-09-23",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 256000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.2,
+      "output": 6,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "qwen/qwen-plus",
     "provider": "llmtr",
     "providerName": "LLMTR",
@@ -574,14 +660,14 @@
     ]
   },
   {
-    "id": "qwen/qwen3.5-plus",
+    "id": "qwen/qwen3.6-flash",
     "provider": "llmtr",
     "providerName": "LLMTR",
-    "displayName": "Qwen3.5 Plus",
-    "family": "qwen",
-    "releaseDate": "2026-02-16",
-    "lastUpdated": "2026-02-16",
-    "knowledgeCutoff": "2025-04",
+    "displayName": "Qwen3.6 Flash",
+    "family": "qwen3.6",
+    "releaseDate": "2026-04-27",
+    "lastUpdated": "2026-04-27",
+    "knowledgeCutoff": null,
     "contextWindow": 1000000,
     "maxOutputTokens": 65536,
     "capabilities": {
@@ -589,11 +675,11 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
-      "structured_output": false,
+      "attachment": true,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -607,53 +693,7 @@
       ]
     },
     "pricing": {
-      "input": 0.4,
-      "output": 2.4,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen/qwen3-coder-flash",
-    "provider": "llmtr",
-    "providerName": "LLMTR",
-    "displayName": "Qwen3 Coder Flash",
-    "family": "qwen",
-    "releaseDate": "2025-07-28",
-    "lastUpdated": "2025-07-28",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
+      "input": 0.25,
       "output": 1.5,
       "currency": "USD",
       "per": 1000000
@@ -716,15 +756,63 @@
     ]
   },
   {
-    "id": "qwen/qwen-flash",
+    "id": "qwen/qwen3.5-plus",
     "provider": "llmtr",
     "providerName": "LLMTR",
-    "displayName": "Qwen Flash",
+    "displayName": "Qwen3.5 Plus",
     "family": "qwen",
-    "releaseDate": "2025-07-28",
-    "lastUpdated": "2025-07-28",
-    "knowledgeCutoff": "2024-04",
+    "releaseDate": "2026-02-16",
+    "lastUpdated": "2026-02-16",
+    "knowledgeCutoff": "2025-04",
     "contextWindow": 1000000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.4,
+      "output": 2.4,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "poolside/laguna-xs-2.1",
+    "provider": "llmtr",
+    "providerName": "LLMTR",
+    "displayName": "Laguna XS 2.1",
+    "family": "laguna",
+    "releaseDate": "2026-07-02",
+    "lastUpdated": "2026-07-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
     "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
@@ -736,7 +824,7 @@
       "temperature": true,
       "attachment": false,
       "structured_output": false,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -747,8 +835,8 @@
       ]
     },
     "pricing": {
-      "input": 0.05,
-      "output": 0.4,
+      "input": 0,
+      "output": 0,
       "currency": "USD",
       "per": 1000000
     },
@@ -762,16 +850,65 @@
     ]
   },
   {
-    "id": "qwen/qwen3-max",
+    "id": "mimo/mimo-v2.5",
     "provider": "llmtr",
     "providerName": "LLMTR",
-    "displayName": "Qwen3 Max",
-    "family": "qwen",
-    "releaseDate": "2025-09-23",
-    "lastUpdated": "2025-09-23",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 256000,
-    "maxOutputTokens": 65536,
+    "displayName": "MiMo-V2.5",
+    "family": "mimo",
+    "releaseDate": "2026-04-22",
+    "lastUpdated": "2026-04-22",
+    "knowledgeCutoff": "2024-12",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.14,
+      "output": 0.28,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mimo/mimo-v2.5-pro",
+    "provider": "llmtr",
+    "providerName": "LLMTR",
+    "displayName": "MiMo-V2.5-Pro",
+    "family": "mimo",
+    "releaseDate": "2026-04-22",
+    "lastUpdated": "2026-04-22",
+    "knowledgeCutoff": "2024-12",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -782,7 +919,7 @@
       "temperature": true,
       "attachment": false,
       "structured_output": false,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -793,8 +930,8 @@
       ]
     },
     "pricing": {
-      "input": 1.2,
-      "output": 6,
+      "input": 0.435,
+      "output": 0.87,
       "currency": "USD",
       "per": 1000000
     },
@@ -808,228 +945,43 @@
     ]
   },
   {
-    "id": "qwen/qwen3.6-plus",
+    "id": "google/gemini-2.5-flash-lite",
     "provider": "llmtr",
     "providerName": "LLMTR",
-    "displayName": "Qwen3.6 Plus",
-    "family": "qwen",
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-04-02",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.5,
-      "output": 3,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen/qwen3-coder-plus",
-    "provider": "llmtr",
-    "providerName": "LLMTR",
-    "displayName": "Qwen3 Coder Plus",
-    "family": "qwen",
-    "releaseDate": "2025-07-23",
-    "lastUpdated": "2025-07-23",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1,
-      "output": 5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen/qwen3.6-flash",
-    "provider": "llmtr",
-    "providerName": "LLMTR",
-    "displayName": "Qwen3.6 Flash",
-    "family": "qwen3.6",
-    "releaseDate": "2026-04-27",
-    "lastUpdated": "2026-04-27",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.25,
-      "output": 1.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "sakana/fugu-ultra",
-    "provider": "llmtr",
-    "providerName": "LLMTR",
-    "displayName": "Fugu Ultra",
-    "family": "fugu",
-    "releaseDate": "2026-06-15",
-    "lastUpdated": "2026-06-15",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 1000000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 5,
-      "output": 30,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "perplexity/sonar-deep-research",
-    "provider": "llmtr",
-    "providerName": "LLMTR",
-    "displayName": "Sonar Deep Research",
-    "family": "sonar",
-    "releaseDate": "2025-02-01",
-    "lastUpdated": "2025-09-01",
+    "displayName": "Gemini 2.5 Flash-Lite",
+    "family": "gemini-flash-lite",
+    "releaseDate": "2025-06-17",
+    "lastUpdated": "2025-06-17",
     "knowledgeCutoff": "2025-01",
-    "contextWindow": 128000,
-    "maxOutputTokens": 32768,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
     "capabilities": {
-      "tools": false,
-      "vision": false,
+      "tools": true,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": false,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "audio",
+        "video",
+        "pdf"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 2,
-      "output": 8,
+      "input": 0.1,
+      "output": 0.1,
       "currency": "USD",
       "per": 1000000
     },
@@ -1139,31 +1091,34 @@
     ]
   },
   {
-    "id": "mistral/voxtral-small-latest",
+    "id": "meta/muse-spark-1.2-contributor",
     "provider": "llmtr",
     "providerName": "LLMTR",
-    "displayName": "Voxtral Small",
-    "family": "voxtral",
-    "releaseDate": "2025-07-15",
-    "lastUpdated": "2025-07-15",
+    "displayName": "Muse Spark 1.2 Contributor",
+    "family": "muse",
+    "releaseDate": "2026-08-05",
+    "lastUpdated": "2026-08-05",
     "knowledgeCutoff": null,
-    "contextWindow": 32000,
-    "maxOutputTokens": 32000,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": true,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": false,
-      "open_weights": true
+      "structured_output": true,
+      "open_weights": false
     },
     "modalities": {
       "input": [
         "text",
+        "image",
+        "video",
+        "pdf",
         "audio"
       ],
       "output": [
@@ -1172,16 +1127,14 @@
     },
     "pricing": {
       "input": 0.1,
-      "output": 0.3,
+      "output": 0.2,
       "currency": "USD",
       "per": 1000000
     },
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
-    "aliases": [
-      "Voxtral Small (latest)"
-    ],
+    "aliases": [],
     "isAggregator": true,
     "sources": [
       "models.dev"
@@ -1280,39 +1233,40 @@
     ]
   },
   {
-    "id": "upstage/solar-pro2",
+    "id": "sakana/fugu-ultra",
     "provider": "llmtr",
     "providerName": "LLMTR",
-    "displayName": "Solar Pro 2",
-    "family": "solar-pro",
-    "releaseDate": "2025-05-20",
-    "lastUpdated": "2025-05-20",
-    "knowledgeCutoff": "2025-03",
-    "contextWindow": 65536,
-    "maxOutputTokens": 8192,
+    "displayName": "Fugu Ultra",
+    "family": "fugu",
+    "releaseDate": "2026-06-15",
+    "lastUpdated": "2026-06-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 1000000,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.15,
-      "output": 0.6,
+      "input": 5,
+      "output": 30,
       "currency": "USD",
       "per": 1000000
     },
@@ -1418,42 +1372,39 @@
     ]
   },
   {
-    "id": "mimo/mimo-v2.5",
+    "id": "upstage/solar-pro2",
     "provider": "llmtr",
     "providerName": "LLMTR",
-    "displayName": "MiMo-V2.5",
-    "family": "mimo",
-    "releaseDate": "2026-04-22",
-    "lastUpdated": "2026-04-22",
-    "knowledgeCutoff": "2024-12",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
+    "displayName": "Solar Pro 2",
+    "family": "solar-pro",
+    "releaseDate": "2025-05-20",
+    "lastUpdated": "2025-05-20",
+    "knowledgeCutoff": "2025-03",
+    "contextWindow": 65536,
+    "maxOutputTokens": 8192,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": false,
-      "open_weights": true
+      "open_weights": false
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "audio",
-        "video"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.14,
-      "output": 0.28,
+      "input": 0.15,
+      "output": 0.6,
       "currency": "USD",
       "per": 1000000
     },
@@ -1467,27 +1418,76 @@
     ]
   },
   {
-    "id": "mimo/mimo-v2.5-pro",
+    "id": "mistral/voxtral-small-latest",
     "provider": "llmtr",
     "providerName": "LLMTR",
-    "displayName": "MiMo-V2.5-Pro",
-    "family": "mimo",
-    "releaseDate": "2026-04-22",
-    "lastUpdated": "2026-04-22",
-    "knowledgeCutoff": "2024-12",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
+    "displayName": "Voxtral Small",
+    "family": "voxtral",
+    "releaseDate": "2025-07-15",
+    "lastUpdated": "2025-07-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 32000,
+    "maxOutputTokens": 32000,
     "capabilities": {
       "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [
+      "Voxtral Small (latest)"
+    ],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "perplexity/sonar-deep-research",
+    "provider": "llmtr",
+    "providerName": "LLMTR",
+    "displayName": "Sonar Deep Research",
+    "family": "sonar",
+    "releaseDate": "2025-02-01",
+    "lastUpdated": "2025-09-01",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 128000,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": false,
       "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
-      "temperature": true,
+      "temperature": false,
       "attachment": false,
       "structured_output": false,
-      "open_weights": true
+      "open_weights": false
     },
     "modalities": {
       "input": [
@@ -1498,8 +1498,8 @@
       ]
     },
     "pricing": {
-      "input": 0.435,
-      "output": 0.87,
+      "input": 2,
+      "output": 8,
       "currency": "USD",
       "per": 1000000
     },

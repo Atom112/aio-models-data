@@ -46,16 +46,62 @@
     ]
   },
   {
-    "id": "llama3.3:70b",
+    "id": "gpt-oss:120b",
     "provider": "pendra",
     "providerName": "Pendra",
-    "displayName": "Llama-3.3-70B-Instruct",
-    "family": "llama",
-    "releaseDate": "2024-12-06",
-    "lastUpdated": "2024-12-06",
-    "knowledgeCutoff": "2023-12",
-    "contextWindow": 128000,
-    "maxOutputTokens": 4096,
+    "displayName": "GPT OSS 120B",
+    "family": "gpt-oss",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": null,
+    "contextWindow": 131072,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3-coder:30b",
+    "provider": "pendra",
+    "providerName": "Pendra",
+    "displayName": "Qwen3-Coder 30B-A3B Instruct",
+    "family": "qwen",
+    "releaseDate": "2025-04",
+    "lastUpdated": "2025-04",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -139,26 +185,26 @@
     ]
   },
   {
-    "id": "gpt-oss:120b",
+    "id": "llama3.3:70b",
     "provider": "pendra",
     "providerName": "Pendra",
-    "displayName": "GPT OSS 120B",
-    "family": "gpt-oss",
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 32768,
+    "displayName": "Llama-3.3-70B-Instruct",
+    "family": "llama",
+    "releaseDate": "2024-12-06",
+    "lastUpdated": "2024-12-06",
+    "knowledgeCutoff": "2023-12",
+    "contextWindow": 128000,
+    "maxOutputTokens": 4096,
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": true,
+      "reasoning": false,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": true,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
@@ -199,52 +245,6 @@
       "tools": true,
       "vision": false,
       "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-coder:30b",
-    "provider": "pendra",
-    "providerName": "Pendra",
-    "displayName": "Qwen3-Coder 30B-A3B Instruct",
-    "family": "qwen",
-    "releaseDate": "2025-04",
-    "lastUpdated": "2025-04",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,

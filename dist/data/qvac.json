@@ -1,5 +1,53 @@
 [
   {
+    "id": "qwen3.5-9b",
+    "provider": "qvac",
+    "providerName": "QVAC",
+    "displayName": "Qwen3.5 9B",
+    "family": "qwen",
+    "releaseDate": "2026-02-23",
+    "lastUpdated": "2026-02-23",
+    "knowledgeCutoff": null,
+    "contextWindow": 32768,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "gemma4-31b",
     "provider": "qvac",
     "providerName": "QVAC",
@@ -47,56 +95,10 @@
     ]
   },
   {
-    "id": "qwen3.5-2b",
+    "id": "gpt-oss-20b",
     "provider": "qvac",
     "providerName": "QVAC",
-    "displayName": "Qwen3.5 2B",
-    "family": "qwen",
-    "releaseDate": "2025-11-01",
-    "lastUpdated": "2025-11-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 32768,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-oss-120b",
-    "provider": "qvac",
-    "providerName": "QVAC",
-    "displayName": "GPT OSS 120B",
+    "displayName": "GPT OSS 20B",
     "family": "gpt-oss",
     "releaseDate": "2025-08-05",
     "lastUpdated": "2025-08-05",
@@ -139,31 +141,34 @@
     ]
   },
   {
-    "id": "qwen3.5-0.8b",
+    "id": "qwen3.6-27b",
     "provider": "qvac",
     "providerName": "QVAC",
-    "displayName": "Qwen3.5 0.8B",
+    "displayName": "Qwen3.6 27B",
     "family": "qwen",
-    "releaseDate": "2025-11-01",
-    "lastUpdated": "2025-11-01",
+    "releaseDate": "2026-04-22",
+    "lastUpdated": "2026-04-22",
     "knowledgeCutoff": null,
-    "contextWindow": 32768,
-    "maxOutputTokens": 8192,
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
-      "vision": false,
-      "reasoning": false,
+      "vision": true,
+      "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
-      "structured_output": false,
+      "attachment": true,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "video",
+        "audio"
       ],
       "output": [
         "text"
@@ -185,10 +190,10 @@
     ]
   },
   {
-    "id": "qwen3.5-4b",
+    "id": "qwen3.5-0.8b",
     "provider": "qvac",
     "providerName": "QVAC",
-    "displayName": "Qwen3.5 4B",
+    "displayName": "Qwen3.5 0.8B",
     "family": "qwen",
     "releaseDate": "2025-11-01",
     "lastUpdated": "2025-11-01",
@@ -280,82 +285,31 @@
     ]
   },
   {
-    "id": "qwen3.6-27b",
+    "id": "qwen3.5-4b",
     "provider": "qvac",
     "providerName": "QVAC",
-    "displayName": "Qwen3.6 27B",
+    "displayName": "Qwen3.5 4B",
     "family": "qwen",
-    "releaseDate": "2026-04-22",
-    "lastUpdated": "2026-04-22",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "audio"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3.5-9b",
-    "provider": "qvac",
-    "providerName": "QVAC",
-    "displayName": "Qwen3.5 9B",
-    "family": "qwen",
-    "releaseDate": "2026-02-23",
-    "lastUpdated": "2026-02-23",
+    "releaseDate": "2025-11-01",
+    "lastUpdated": "2025-11-01",
     "knowledgeCutoff": null,
     "contextWindow": 32768,
     "maxOutputTokens": 8192,
     "capabilities": {
       "tools": true,
-      "vision": true,
-      "reasoning": true,
+      "vision": false,
+      "reasoning": false,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
-      "structured_output": true,
+      "attachment": false,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "video"
+        "text"
       ],
       "output": [
         "text"
@@ -377,10 +331,56 @@
     ]
   },
   {
-    "id": "gpt-oss-20b",
+    "id": "qwen3.5-2b",
     "provider": "qvac",
     "providerName": "QVAC",
-    "displayName": "GPT OSS 20B",
+    "displayName": "Qwen3.5 2B",
+    "family": "qwen",
+    "releaseDate": "2025-11-01",
+    "lastUpdated": "2025-11-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 32768,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-oss-120b",
+    "provider": "qvac",
+    "providerName": "QVAC",
+    "displayName": "GPT OSS 120B",
     "family": "gpt-oss",
     "releaseDate": "2025-08-05",
     "lastUpdated": "2025-08-05",

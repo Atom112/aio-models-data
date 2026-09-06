@@ -1,185 +1,19 @@
 [
   {
-    "id": "grok-imagine-video",
+    "id": "grok-4.3",
     "provider": "xai",
     "providerName": "xAI",
-    "displayName": "Grok Imagine Video",
+    "displayName": "Grok 4.3",
     "family": "grok",
-    "releaseDate": "2026-01-28",
-    "lastUpdated": "2026-01-28",
-    "knowledgeCutoff": null,
-    "contextWindow": 1024,
-    "maxOutputTokens": 0,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "video"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "grok-4.6",
-    "provider": "xai",
-    "providerName": "xAI",
-    "displayName": "Grok 4.6",
-    "family": "grok",
-    "releaseDate": "2026-08-12",
-    "lastUpdated": "2026-08-12",
-    "knowledgeCutoff": "2026-02-01",
-    "contextWindow": 500000,
-    "maxOutputTokens": 500000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2,
-      "output": 6,
-      "cacheRead": 0.5,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 4,
-          "output": 12,
-          "contextThreshold": 200000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 4,
-        "output": 12,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "grok-4.5",
-    "provider": "xai",
-    "providerName": "xAI",
-    "displayName": "Grok 4.5",
-    "family": "grok",
-    "releaseDate": "2026-07-08",
-    "lastUpdated": "2026-07-08",
-    "knowledgeCutoff": null,
-    "contextWindow": 500000,
-    "maxOutputTokens": 500000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2,
-      "output": 6,
-      "cacheRead": 0.3,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 4,
-          "output": 12,
-          "contextThreshold": 200000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 4,
-        "output": 12,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "grok-4.20-0309-non-reasoning",
-    "provider": "xai",
-    "providerName": "xAI",
-    "displayName": "Grok 4.20 (Non-Reasoning)",
-    "family": "grok",
-    "releaseDate": "2026-03-09",
-    "lastUpdated": "2026-03-09",
+    "releaseDate": "2026-04-17",
+    "lastUpdated": "2026-04-17",
     "knowledgeCutoff": null,
     "contextWindow": 1000000,
     "maxOutputTokens": 30000,
     "capabilities": {
       "tools": true,
       "vision": true,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
@@ -217,94 +51,6 @@
         "contextThreshold": 200000
       }
     },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "grok-imagine-video-1.5",
-    "provider": "xai",
-    "providerName": "xAI",
-    "displayName": "Grok Imagine Video 1.5",
-    "family": "grok",
-    "releaseDate": "2026-05-30",
-    "lastUpdated": "2026-05-30",
-    "knowledgeCutoff": null,
-    "contextWindow": 1024,
-    "maxOutputTokens": 0,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "pdf"
-      ],
-      "output": [
-        "video"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "grok-imagine-image-quality",
-    "provider": "xai",
-    "providerName": "xAI",
-    "displayName": "Grok Imagine Image Quality",
-    "family": "grok",
-    "releaseDate": "2026-04-03",
-    "lastUpdated": "2026-04-03",
-    "knowledgeCutoff": null,
-    "contextWindow": 8000,
-    "maxOutputTokens": 0,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "image",
-        "pdf"
-      ]
-    },
-    "pricing": null,
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
@@ -437,15 +183,15 @@
     ]
   },
   {
-    "id": "grok-imagine-image-2.0",
+    "id": "grok-imagine-image",
     "provider": "xai",
     "providerName": "xAI",
-    "displayName": "Grok Imagine Image 2.0",
+    "displayName": "Grok Imagine Image",
     "family": "grok",
-    "releaseDate": "2026-08-07",
-    "lastUpdated": "2026-08-07",
+    "releaseDate": "2026-01-28",
+    "lastUpdated": "2026-01-28",
     "knowledgeCutoff": null,
-    "contextWindow": 8000,
+    "contextWindow": 16000,
     "maxOutputTokens": 0,
     "capabilities": {
       "tools": false,
@@ -481,15 +227,15 @@
     ]
   },
   {
-    "id": "grok-imagine-image",
+    "id": "grok-imagine-video",
     "provider": "xai",
     "providerName": "xAI",
-    "displayName": "Grok Imagine Image",
+    "displayName": "Grok Imagine Video",
     "family": "grok",
     "releaseDate": "2026-01-28",
     "lastUpdated": "2026-01-28",
     "knowledgeCutoff": null,
-    "contextWindow": 8000,
+    "contextWindow": 1024,
     "maxOutputTokens": 0,
     "capabilities": {
       "tools": false,
@@ -507,14 +253,75 @@
       "input": [
         "text",
         "image",
+        "video",
         "pdf"
       ],
       "output": [
-        "image",
-        "pdf"
+        "video"
       ]
     },
     "pricing": null,
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "grok-4.5",
+    "provider": "xai",
+    "providerName": "xAI",
+    "displayName": "Grok 4.5",
+    "family": "grok",
+    "releaseDate": "2026-07-08",
+    "lastUpdated": "2026-07-08",
+    "knowledgeCutoff": null,
+    "contextWindow": 500000,
+    "maxOutputTokens": 500000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 6,
+      "cacheRead": 0.3,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 4,
+          "output": 12,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 4,
+        "output": 12,
+        "contextThreshold": 200000
+      }
+    },
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
@@ -586,20 +393,213 @@
     ]
   },
   {
-    "id": "grok-4.3",
+    "id": "grok-imagine-video-1.5",
     "provider": "xai",
     "providerName": "xAI",
-    "displayName": "Grok 4.3",
+    "displayName": "Grok Imagine Video 1.5",
     "family": "grok",
-    "releaseDate": "2026-04-17",
-    "lastUpdated": "2026-04-17",
+    "releaseDate": "2026-05-30",
+    "lastUpdated": "2026-05-30",
+    "knowledgeCutoff": null,
+    "contextWindow": 1024,
+    "maxOutputTokens": 0,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "video"
+      ]
+    },
+    "pricing": null,
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "grok-imagine-image-2.0",
+    "provider": "xai",
+    "providerName": "xAI",
+    "displayName": "Grok Imagine Image 2.0",
+    "family": "grok",
+    "releaseDate": "2026-08-07",
+    "lastUpdated": "2026-08-07",
+    "knowledgeCutoff": null,
+    "contextWindow": 64000,
+    "maxOutputTokens": 0,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "image",
+        "pdf"
+      ]
+    },
+    "pricing": null,
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "grok-4.6",
+    "provider": "xai",
+    "providerName": "xAI",
+    "displayName": "Grok 4.6",
+    "family": "grok",
+    "releaseDate": "2026-08-12",
+    "lastUpdated": "2026-08-12",
+    "knowledgeCutoff": "2026-02-01",
+    "contextWindow": 500000,
+    "maxOutputTokens": 500000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 6,
+      "cacheRead": 0.5,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 4,
+          "output": 12,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 4,
+        "output": 12,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "grok-imagine-image-quality",
+    "provider": "xai",
+    "providerName": "xAI",
+    "displayName": "Grok Imagine Image Quality",
+    "family": "grok",
+    "releaseDate": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "knowledgeCutoff": null,
+    "contextWindow": 16000,
+    "maxOutputTokens": 0,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "image",
+        "pdf"
+      ]
+    },
+    "pricing": null,
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "grok-4.20-0309-non-reasoning",
+    "provider": "xai",
+    "providerName": "xAI",
+    "displayName": "Grok 4.20 (Non-Reasoning)",
+    "family": "grok",
+    "releaseDate": "2026-03-09",
+    "lastUpdated": "2026-03-09",
     "knowledgeCutoff": null,
     "contextWindow": 1000000,
     "maxOutputTokens": 30000,
     "capabilities": {
       "tools": true,
       "vision": true,
-      "reasoning": true,
+      "reasoning": false,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,

@@ -1,13 +1,13 @@
 [
   {
-    "id": "claude-sonnet-4-5@20250929",
+    "id": "claude-sonnet-4@20250514",
     "provider": "google-vertex-anthropic",
     "providerName": "Vertex (Anthropic)",
-    "displayName": "Claude Sonnet 4.5",
+    "displayName": "Claude Sonnet 4",
     "family": "claude-sonnet",
-    "releaseDate": "2025-09-29",
-    "lastUpdated": "2025-09-29",
-    "knowledgeCutoff": "2025-07-31",
+    "releaseDate": "2025-05-22",
+    "lastUpdated": "2025-05-22",
+    "knowledgeCutoff": "2025-03-31",
     "contextWindow": 200000,
     "maxOutputTokens": 64000,
     "capabilities": {
@@ -40,7 +40,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -50,16 +50,16 @@
     ]
   },
   {
-    "id": "claude-opus-4-7@default",
+    "id": "claude-opus-4-5@20251101",
     "provider": "google-vertex-anthropic",
     "providerName": "Vertex (Anthropic)",
-    "displayName": "Claude Opus 4.7",
+    "displayName": "Claude Opus 4.5",
     "family": "claude-opus",
-    "releaseDate": "2026-04-16",
-    "lastUpdated": "2026-04-16",
-    "knowledgeCutoff": "2026-01-31",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
+    "releaseDate": "2025-11-01",
+    "lastUpdated": "2025-11-01",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 200000,
+    "maxOutputTokens": 64000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -67,7 +67,7 @@
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": false,
       "open_weights": false
@@ -88,19 +88,7 @@
       "cacheRead": 0.5,
       "cacheWrite": 6.25,
       "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 10,
-          "output": 37.5,
-          "contextThreshold": 200000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 10,
-        "output": 37.5,
-        "contextThreshold": 200000
-      }
+      "per": 1000000
     },
     "status": "active",
     "deprecationDate": null,
@@ -174,75 +162,13 @@
     ]
   },
   {
-    "id": "claude-opus-4-8@default",
+    "id": "claude-fable-5@default",
     "provider": "google-vertex-anthropic",
     "providerName": "Vertex (Anthropic)",
-    "displayName": "Claude Opus 4.8",
-    "family": "claude-opus",
-    "releaseDate": "2026-05-28",
-    "lastUpdated": "2026-05-28",
-    "knowledgeCutoff": "2026-01",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 10,
-          "output": 37.5,
-          "contextThreshold": 200000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 10,
-        "output": 37.5,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-sonnet-5@default",
-    "provider": "google-vertex-anthropic",
-    "providerName": "Vertex (Anthropic)",
-    "displayName": "Claude Sonnet 5",
-    "family": "claude-sonnet",
-    "releaseDate": "2026-06-30",
-    "lastUpdated": "2026-06-30",
+    "displayName": "Claude Fable 5",
+    "family": "claude-fable",
+    "releaseDate": "2026-06-09",
+    "lastUpdated": "2026-06-09",
     "knowledgeCutoff": "2026-01-31",
     "contextWindow": 1000000,
     "maxOutputTokens": 128000,
@@ -269,10 +195,10 @@
       ]
     },
     "pricing": {
-      "input": 2,
-      "output": 10,
-      "cacheRead": 0.2,
-      "cacheWrite": 2.5,
+      "input": 10,
+      "output": 50,
+      "cacheRead": 1,
+      "cacheWrite": 12.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -337,56 +263,6 @@
         "output": 37.5,
         "contextThreshold": 200000
       }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-opus-5@default",
-    "provider": "google-vertex-anthropic",
-    "providerName": "Vertex (Anthropic)",
-    "displayName": "Claude Opus 5",
-    "family": "claude-opus",
-    "releaseDate": "2026-07-24",
-    "lastUpdated": "2026-07-24",
-    "knowledgeCutoff": "2026-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
-      "currency": "USD",
-      "per": 1000000
     },
     "status": "active",
     "deprecationDate": null,
@@ -498,63 +374,13 @@
     ]
   },
   {
-    "id": "claude-sonnet-4@20250514",
+    "id": "claude-sonnet-5@default",
     "provider": "google-vertex-anthropic",
     "providerName": "Vertex (Anthropic)",
-    "displayName": "Claude Sonnet 4",
+    "displayName": "Claude Sonnet 5",
     "family": "claude-sonnet",
-    "releaseDate": "2025-05-22",
-    "lastUpdated": "2025-05-22",
-    "knowledgeCutoff": "2025-03-31",
-    "contextWindow": 200000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 3,
-      "output": 15,
-      "cacheRead": 0.3,
-      "cacheWrite": 3.75,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-fable-5@default",
-    "provider": "google-vertex-anthropic",
-    "providerName": "Vertex (Anthropic)",
-    "displayName": "Claude Fable 5",
-    "family": "claude-fable",
-    "releaseDate": "2026-06-09",
-    "lastUpdated": "2026-06-09",
+    "releaseDate": "2026-06-30",
+    "lastUpdated": "2026-06-30",
     "knowledgeCutoff": "2026-01-31",
     "contextWindow": 1000000,
     "maxOutputTokens": 128000,
@@ -581,60 +407,10 @@
       ]
     },
     "pricing": {
-      "input": 10,
-      "output": 50,
-      "cacheRead": 1,
-      "cacheWrite": 12.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-opus-4-5@20251101",
-    "provider": "google-vertex-anthropic",
-    "providerName": "Vertex (Anthropic)",
-    "displayName": "Claude Opus 4.5",
-    "family": "claude-opus",
-    "releaseDate": "2025-11-01",
-    "lastUpdated": "2025-11-01",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 200000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -689,6 +465,280 @@
       "per": 1000000
     },
     "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-fable-5-1@default",
+    "provider": "google-vertex-anthropic",
+    "providerName": "Vertex (Anthropic)",
+    "displayName": "Claude Fable 5.1",
+    "family": "claude-fable",
+    "releaseDate": "2026-09-01",
+    "lastUpdated": "2026-09-01",
+    "knowledgeCutoff": "2026-06",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 10,
+      "output": 50,
+      "cacheRead": 0.25,
+      "cacheWrite": 12.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-opus-4-7@default",
+    "provider": "google-vertex-anthropic",
+    "providerName": "Vertex (Anthropic)",
+    "displayName": "Claude Opus 4.7",
+    "family": "claude-opus",
+    "releaseDate": "2026-04-16",
+    "lastUpdated": "2026-04-16",
+    "knowledgeCutoff": "2026-01-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 25,
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 10,
+          "output": 37.5,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 10,
+        "output": 37.5,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-opus-5@default",
+    "provider": "google-vertex-anthropic",
+    "providerName": "Vertex (Anthropic)",
+    "displayName": "Claude Opus 5",
+    "family": "claude-opus",
+    "releaseDate": "2026-07-24",
+    "lastUpdated": "2026-07-24",
+    "knowledgeCutoff": "2026-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 25,
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-opus-4-8@default",
+    "provider": "google-vertex-anthropic",
+    "providerName": "Vertex (Anthropic)",
+    "displayName": "Claude Opus 4.8",
+    "family": "claude-opus",
+    "releaseDate": "2026-05-28",
+    "lastUpdated": "2026-05-28",
+    "knowledgeCutoff": "2026-01",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 25,
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 10,
+          "output": 37.5,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 10,
+        "output": 37.5,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-sonnet-4-5@20250929",
+    "provider": "google-vertex-anthropic",
+    "providerName": "Vertex (Anthropic)",
+    "displayName": "Claude Sonnet 4.5",
+    "family": "claude-sonnet",
+    "releaseDate": "2025-09-29",
+    "lastUpdated": "2025-09-29",
+    "knowledgeCutoff": "2025-07-31",
+    "contextWindow": 200000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 15,
+      "cacheRead": 0.3,
+      "cacheWrite": 3.75,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],

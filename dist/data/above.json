@@ -1,5 +1,53 @@
 [
   {
+    "id": "deepseek-v4-flash-vision-exp",
+    "provider": "above",
+    "providerName": "above.dev",
+    "displayName": "DeepSeek V4 Flash Vision (Exp)",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-08-21",
+    "lastUpdated": "2026-08-21",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.242,
+      "output": 0.726,
+      "cacheRead": 0.0077,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "mimo-v2.5-pro-ultraspeed",
     "provider": "above",
     "providerName": "above.dev",
@@ -34,6 +82,53 @@
       "input": 1.5231,
       "output": 3.0462,
       "cacheRead": 0.0127,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5.2",
+    "provider": "above",
+    "providerName": "above.dev",
+    "displayName": "GLM 5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.54,
+      "output": 4.84,
+      "cacheRead": 0.154,
       "currency": "USD",
       "per": 1000000
     },
@@ -94,53 +189,6 @@
     ]
   },
   {
-    "id": "deepseek-v4-pro",
-    "provider": "above",
-    "providerName": "above.dev",
-    "displayName": "DeepSeek V4 Pro",
-    "family": "deepseek-thinking",
-    "releaseDate": "2026-08-12",
-    "lastUpdated": "2026-08-22",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.726,
-      "output": 2.178,
-      "cacheRead": 0.0242,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "glm-5.2-fast",
     "provider": "above",
     "providerName": "above.dev",
@@ -175,6 +223,54 @@
       "input": 2.31,
       "output": 7.26,
       "cacheRead": 0.231,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5.3-flash",
+    "provider": "above",
+    "providerName": "above.dev",
+    "displayName": "GLM 5.3 Flash",
+    "family": "glm",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.165,
+      "output": 0.55,
+      "cacheRead": 0.0319,
       "currency": "USD",
       "per": 1000000
     },
@@ -236,16 +332,16 @@
     ]
   },
   {
-    "id": "glm-5.2",
+    "id": "deepseek-v4-pro",
     "provider": "above",
     "providerName": "above.dev",
-    "displayName": "GLM 5.2",
-    "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
+    "displayName": "DeepSeek V4 Pro",
+    "family": "deepseek-thinking",
+    "releaseDate": "2026-08-12",
+    "lastUpdated": "2026-08-22",
     "knowledgeCutoff": null,
     "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 384000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -267,9 +363,9 @@
       ]
     },
     "pricing": {
-      "input": 1.54,
-      "output": 4.84,
-      "cacheRead": 0.154,
+      "input": 0.726,
+      "output": 2.178,
+      "cacheRead": 0.0242,
       "currency": "USD",
       "per": 1000000
     },
@@ -317,54 +413,6 @@
       "input": 0.5077,
       "output": 1.0154,
       "cacheRead": 0.0042,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-v4-flash-vision-exp",
-    "provider": "above",
-    "providerName": "above.dev",
-    "displayName": "DeepSeek V4 Flash Vision (Exp)",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-08-21",
-    "lastUpdated": "2026-08-21",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.242,
-      "output": 0.726,
-      "cacheRead": 0.0077,
       "currency": "USD",
       "per": 1000000
     },

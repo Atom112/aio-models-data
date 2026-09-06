@@ -1,38 +1,40 @@
 [
   {
-    "id": "DeepSeek-V4-Flash",
-    "provider": "ebcloud",
-    "providerName": "EBCloud",
-    "displayName": "DeepSeek V4 Flash",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
+    "id": "sensenova-6.8-flash-lite",
+    "provider": "sensenova",
+    "providerName": "SenseNova (China)",
+    "displayName": "SenseNova 6.8 Flash Lite",
+    "family": null,
+    "releaseDate": "2026-08-11",
+    "lastUpdated": "2026-08-28",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
-      "open_weights": true
+      "open_weights": false
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.143,
-      "output": 0.2857,
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
       "currency": "USD",
       "per": 1000000
     },
@@ -46,15 +48,15 @@
     ]
   },
   {
-    "id": "GLM-5.1",
-    "provider": "ebcloud",
-    "providerName": "EBCloud",
-    "displayName": "GLM-5.1",
+    "id": "glm-5.2",
+    "provider": "sensenova",
+    "providerName": "SenseNova (China)",
+    "displayName": "GLM-5.2",
     "family": "glm",
-    "releaseDate": "2026-04-07",
-    "lastUpdated": "2026-04-07",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
     "knowledgeCutoff": null,
-    "contextWindow": 200000,
+    "contextWindow": 1000000,
     "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
@@ -77,8 +79,9 @@
       ]
     },
     "pricing": {
-      "input": 0.8571,
-      "output": 3.4286,
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
       "currency": "USD",
       "per": 1000000
     },
@@ -92,62 +95,16 @@
     ]
   },
   {
-    "id": "Kimi-K2.6",
-    "provider": "ebcloud",
-    "providerName": "EBCloud",
-    "displayName": "Kimi K2.6",
-    "family": "kimi-k2",
-    "releaseDate": "2026-04-21",
-    "lastUpdated": "2026-04-21",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.9286,
-      "output": 3.8571,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "DeepSeek-V4-Pro",
-    "provider": "ebcloud",
-    "providerName": "EBCloud",
-    "displayName": "DeepSeek V4 Pro",
-    "family": "deepseek-thinking",
+    "id": "deepseek-v4-flash",
+    "provider": "sensenova",
+    "providerName": "SenseNova (China)",
+    "displayName": "DeepSeek V4 Flash",
+    "family": "deepseek-flash",
     "releaseDate": "2026-04-24",
     "lastUpdated": "2026-04-24",
     "knowledgeCutoff": "2025-05",
     "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -169,8 +126,9 @@
       ]
     },
     "pricing": {
-      "input": 0.4286,
-      "output": 0.8571,
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
       "currency": "USD",
       "per": 1000000
     },

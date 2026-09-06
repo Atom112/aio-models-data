@@ -47,34 +47,31 @@
     ]
   },
   {
-    "id": "mimo-v2.5",
+    "id": "mimo-v2-flash",
     "provider": "xiaomi",
     "providerName": "Xiaomi",
-    "displayName": "MiMo-V2.5",
+    "displayName": "MiMo-V2-Flash",
     "family": "mimo",
-    "releaseDate": "2026-04-22",
+    "releaseDate": "2025-12-16",
     "lastUpdated": "2026-06-24",
-    "knowledgeCutoff": "2024-12",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
+    "knowledgeCutoff": "2024-12-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "audio",
-        "video"
+        "text"
       ],
       "output": [
         "text"
@@ -87,7 +84,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -195,31 +192,34 @@
     ]
   },
   {
-    "id": "mimo-v2-flash",
+    "id": "mimo-v2.5",
     "provider": "xiaomi",
     "providerName": "Xiaomi",
-    "displayName": "MiMo-V2-Flash",
+    "displayName": "MiMo-V2.5",
     "family": "mimo",
-    "releaseDate": "2025-12-16",
+    "releaseDate": "2026-04-22",
     "lastUpdated": "2026-06-24",
-    "knowledgeCutoff": "2024-12-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
+    "knowledgeCutoff": "2024-12",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "audio",
+        "video"
       ],
       "output": [
         "text"
@@ -232,7 +232,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "deprecated",
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],

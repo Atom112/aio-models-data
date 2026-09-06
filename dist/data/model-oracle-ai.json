@@ -43,101 +43,16 @@
     ]
   },
   {
-    "id": "auto",
+    "id": "glm-5.2",
     "provider": "model-oracle-ai",
     "providerName": "Model Oracle AI",
-    "displayName": "Auto",
-    "family": null,
-    "releaseDate": "2026-06-29",
-    "lastUpdated": "2026-07-07",
+    "displayName": "GLM-5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
     "knowledgeCutoff": null,
     "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5",
-    "provider": "model-oracle-ai",
-    "providerName": "Model Oracle AI",
-    "displayName": "GPT-5",
-    "family": "gpt",
-    "releaseDate": "2025-08-07",
-    "lastUpdated": "2025-08-07",
-    "knowledgeCutoff": "2024-09-30",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-v4-pro",
-    "provider": "model-oracle-ai",
-    "providerName": "Model Oracle AI",
-    "displayName": "DeepSeek V4 Pro",
-    "family": "deepseek-thinking",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -169,26 +84,69 @@
     ]
   },
   {
-    "id": "claude-sonnet-5",
+    "id": "gpt-4.1-mini",
     "provider": "model-oracle-ai",
     "providerName": "Model Oracle AI",
-    "displayName": "Claude Sonnet 5",
-    "family": "claude-sonnet",
-    "releaseDate": "2026-06-30",
-    "lastUpdated": "2026-06-30",
-    "knowledgeCutoff": "2026-01-31",
-    "contextWindow": 1000000,
+    "displayName": "GPT-4.1 mini",
+    "family": "gpt-mini",
+    "releaseDate": "2025-04-14",
+    "lastUpdated": "2025-04-14",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 1047576,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.4",
+    "provider": "model-oracle-ai",
+    "providerName": "Model Oracle AI",
+    "displayName": "GPT-5.4",
+    "family": "gpt",
+    "releaseDate": "2026-03-05",
+    "lastUpdated": "2026-03-05",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 1050000,
     "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -257,6 +215,134 @@
     ]
   },
   {
+    "id": "claude-fable-5",
+    "provider": "model-oracle-ai",
+    "providerName": "Model Oracle AI",
+    "displayName": "Claude Fable 5",
+    "family": "claude-fable",
+    "releaseDate": "2026-06-09",
+    "lastUpdated": "2026-06-09",
+    "knowledgeCutoff": "2026-01-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-4.1",
+    "provider": "model-oracle-ai",
+    "providerName": "Model Oracle AI",
+    "displayName": "GPT-4.1",
+    "family": "gpt",
+    "releaseDate": "2025-04-14",
+    "lastUpdated": "2025-04-14",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 1047576,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.4-nano",
+    "provider": "model-oracle-ai",
+    "providerName": "Model Oracle AI",
+    "displayName": "GPT-5.4 nano",
+    "family": "gpt-nano",
+    "releaseDate": "2026-03-17",
+    "lastUpdated": "2026-03-17",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "gpt-5.4-mini",
     "provider": "model-oracle-ai",
     "providerName": "Model Oracle AI",
@@ -299,59 +385,16 @@
     ]
   },
   {
-    "id": "gpt-5.5",
+    "id": "deepseek-v4-pro",
     "provider": "model-oracle-ai",
     "providerName": "Model Oracle AI",
-    "displayName": "GPT-5.5",
-    "family": "gpt",
-    "releaseDate": "2026-04-23",
-    "lastUpdated": "2026-04-23",
-    "knowledgeCutoff": "2025-12-01",
-    "contextWindow": 1050000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm-5.2",
-    "provider": "model-oracle-ai",
-    "providerName": "Model Oracle AI",
-    "displayName": "GLM-5.2",
-    "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
-    "knowledgeCutoff": null,
+    "displayName": "DeepSeek V4 Pro",
+    "family": "deepseek-thinking",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
     "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 384000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -383,26 +426,68 @@
     ]
   },
   {
-    "id": "gpt-4.1",
+    "id": "gpt-5",
     "provider": "model-oracle-ai",
     "providerName": "Model Oracle AI",
-    "displayName": "GPT-4.1",
+    "displayName": "GPT-5",
     "family": "gpt",
-    "releaseDate": "2025-04-14",
-    "lastUpdated": "2025-04-14",
-    "knowledgeCutoff": "2024-04",
-    "contextWindow": 1047576,
-    "maxOutputTokens": 32768,
+    "releaseDate": "2025-08-07",
+    "lastUpdated": "2025-08-07",
+    "knowledgeCutoff": "2024-09-30",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
       "vision": true,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": true,
+      "temperature": false,
       "attachment": true,
       "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-sonnet-5",
+    "provider": "model-oracle-ai",
+    "providerName": "Model Oracle AI",
+    "displayName": "Claude Sonnet 5",
+    "family": "claude-sonnet",
+    "releaseDate": "2026-06-30",
+    "lastUpdated": "2026-06-30",
+    "knowledgeCutoff": "2026-01-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
       "open_weights": false
     },
     "modalities": {
@@ -468,14 +553,57 @@
     ]
   },
   {
-    "id": "gpt-5.4",
+    "id": "auto",
     "provider": "model-oracle-ai",
     "providerName": "Model Oracle AI",
-    "displayName": "GPT-5.4",
+    "displayName": "Auto",
+    "family": null,
+    "releaseDate": "2026-06-29",
+    "lastUpdated": "2026-07-07",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.5",
+    "provider": "model-oracle-ai",
+    "providerName": "Model Oracle AI",
+    "displayName": "GPT-5.5",
     "family": "gpt",
-    "releaseDate": "2026-03-05",
-    "lastUpdated": "2026-03-05",
-    "knowledgeCutoff": "2025-08-31",
+    "releaseDate": "2026-04-23",
+    "lastUpdated": "2026-04-23",
+    "knowledgeCutoff": "2025-12-01",
     "contextWindow": 1050000,
     "maxOutputTokens": 128000,
     "capabilities": {
@@ -485,94 +613,8 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-fable-5",
-    "provider": "model-oracle-ai",
-    "providerName": "Model Oracle AI",
-    "displayName": "Claude Fable 5",
-    "family": "claude-fable",
-    "releaseDate": "2026-06-09",
-    "lastUpdated": "2026-06-09",
-    "knowledgeCutoff": "2026-01-31",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
       "temperature": false,
       "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-4.1-mini",
-    "provider": "model-oracle-ai",
-    "providerName": "Model Oracle AI",
-    "displayName": "GPT-4.1 mini",
-    "family": "gpt-mini",
-    "releaseDate": "2025-04-14",
-    "lastUpdated": "2025-04-14",
-    "knowledgeCutoff": "2024-04",
-    "contextWindow": 1047576,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
       "structured_output": true,
       "open_weights": false
     },
@@ -581,48 +623,6 @@
         "text",
         "image",
         "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5.4-nano",
-    "provider": "model-oracle-ai",
-    "providerName": "Model Oracle AI",
-    "displayName": "GPT-5.4 nano",
-    "family": "gpt-nano",
-    "releaseDate": "2026-03-17",
-    "lastUpdated": "2026-03-17",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
       ],
       "output": [
         "text"

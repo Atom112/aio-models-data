@@ -1,5 +1,51 @@
 [
   {
+    "id": "bge_multilingual_gemma2",
+    "provider": "infomaniak",
+    "providerName": "Infomaniak",
+    "displayName": "BGE Multilingual Gemma2",
+    "family": "text-embedding",
+    "releaseDate": "2024-07-25",
+    "lastUpdated": "2026-08-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 8000,
+    "maxOutputTokens": 3584,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.08,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "mini_lm_l12_v2",
     "provider": "infomaniak",
     "providerName": "Infomaniak",
@@ -46,43 +92,139 @@
     ]
   },
   {
-    "id": "bge_multilingual_gemma2",
+    "id": "swiss-ai/Apertus-v1.5-70B",
     "provider": "infomaniak",
     "providerName": "Infomaniak",
-    "displayName": "BGE Multilingual Gemma2",
-    "family": "text-embedding",
-    "releaseDate": "2024-07-25",
+    "displayName": "Apertus v1.5 70B",
+    "family": null,
+    "releaseDate": "2026-07-24",
     "lastUpdated": "2026-08-01",
     "knowledgeCutoff": null,
-    "contextWindow": 8000,
-    "maxOutputTokens": 3584,
+    "contextWindow": 100000,
+    "maxOutputTokens": 8192,
     "capabilities": {
-      "tools": false,
-      "vision": false,
+      "tools": true,
+      "vision": true,
       "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
+      "temperature": true,
+      "attachment": true,
       "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "audio"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.08,
-      "output": 0,
+      "input": 0.87,
+      "output": 3.1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "beta",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mistralai/Mistral-Small-4-119B-2603",
+    "provider": "infomaniak",
+    "providerName": "Infomaniak",
+    "displayName": "Mistral Small 4",
+    "family": "mistral-small",
+    "releaseDate": "2026-03-16",
+    "lastUpdated": "2026-08-01",
+    "knowledgeCutoff": "2025-06",
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.25,
+      "output": 0.93,
       "currency": "USD",
       "per": 1000000
     },
     "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mistralai/Ministral-3-14B-Instruct-2512",
+    "provider": "infomaniak",
+    "providerName": "Infomaniak",
+    "displayName": "Ministral 3 14B Instruct",
+    "family": "ministral",
+    "releaseDate": "2025-12-02",
+    "lastUpdated": "2026-08-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 100000,
+    "maxOutputTokens": 25600,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.37,
+      "output": 0.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "beta",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -175,101 +317,6 @@
       "per": 1000000
     },
     "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "moonshotai/Kimi-K2.6",
-    "provider": "infomaniak",
-    "providerName": "Infomaniak",
-    "displayName": "Kimi K2.6",
-    "family": "kimi-k2",
-    "releaseDate": "2026-04-21",
-    "lastUpdated": "2026-08-01",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 256000,
-    "maxOutputTokens": 256000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.74,
-      "output": 3.72,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "beta",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "swiss-ai/Apertus-v1.5-70B",
-    "provider": "infomaniak",
-    "providerName": "Infomaniak",
-    "displayName": "Apertus v1.5 70B",
-    "family": null,
-    "releaseDate": "2026-07-24",
-    "lastUpdated": "2026-08-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 100000,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.87,
-      "output": 3.1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "beta",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -373,20 +420,20 @@
     ]
   },
   {
-    "id": "mistralai/Ministral-3-14B-Instruct-2512",
+    "id": "moonshotai/Kimi-K2.6",
     "provider": "infomaniak",
     "providerName": "Infomaniak",
-    "displayName": "Ministral 3 14B Instruct",
-    "family": "ministral",
-    "releaseDate": "2025-12-02",
+    "displayName": "Kimi K2.6",
+    "family": "kimi-k2",
+    "releaseDate": "2026-04-21",
     "lastUpdated": "2026-08-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 100000,
-    "maxOutputTokens": 25600,
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
     "capabilities": {
       "tools": true,
       "vision": true,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
@@ -405,59 +452,12 @@
       ]
     },
     "pricing": {
-      "input": 0.37,
-      "output": 0.5,
+      "input": 0.74,
+      "output": 3.72,
       "currency": "USD",
       "per": 1000000
     },
     "status": "beta",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "mistralai/Mistral-Small-4-119B-2603",
-    "provider": "infomaniak",
-    "providerName": "Infomaniak",
-    "displayName": "Mistral Small 4",
-    "family": "mistral-small",
-    "releaseDate": "2026-03-16",
-    "lastUpdated": "2026-08-01",
-    "knowledgeCutoff": "2025-06",
-    "contextWindow": 256000,
-    "maxOutputTokens": 256000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.25,
-      "output": 0.93,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],

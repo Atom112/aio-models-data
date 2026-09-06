@@ -1,5 +1,98 @@
 [
   {
+    "id": "gemma-4-31B-it-fp8",
+    "provider": "inferx",
+    "providerName": "InferX",
+    "displayName": "Gemma 4 31B IT FP8",
+    "family": "gemma",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen3-Coder-Next-FP8-no-thinking",
+    "provider": "inferx",
+    "providerName": "InferX",
+    "displayName": "Qwen3-Coder-Next-FP8-no-thinking",
+    "family": "qwen",
+    "releaseDate": "2026-02-03",
+    "lastUpdated": "2026-02-03",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 260000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "deepseek-v4-flash",
     "provider": "inferx",
     "providerName": "InferX",
@@ -20,6 +113,52 @@
       "temperature": true,
       "attachment": false,
       "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Devstral-2-123B-Instruct-2512-int4-AutoRound",
+    "provider": "inferx",
+    "providerName": "InferX",
+    "displayName": "Devstral-2-123B-Instruct-2512-int4-AutoRound",
+    "family": "devstral",
+    "releaseDate": "2025-12-09",
+    "lastUpdated": "2025-12-09",
+    "knowledgeCutoff": "2025-12",
+    "contextWindow": 128000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
@@ -93,126 +232,32 @@
     ]
   },
   {
-    "id": "Qwen3-Coder-Next-FP8",
+    "id": "Ornith-1.0-35B-FP8",
     "provider": "inferx",
     "providerName": "InferX",
-    "displayName": "Qwen3 Coder Next FP8",
-    "family": "qwen",
-    "releaseDate": "2026-02-03",
-    "lastUpdated": "2026-02-03",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 256144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen3-Coder-Next-FP8-no-thinking",
-    "provider": "inferx",
-    "providerName": "InferX",
-    "displayName": "Qwen3-Coder-Next-FP8-no-thinking",
-    "family": "qwen",
-    "releaseDate": "2026-02-03",
-    "lastUpdated": "2026-02-03",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 260000,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen3.6-27B-FP8",
-    "provider": "inferx",
-    "providerName": "InferX",
-    "displayName": "Qwen3.6 27B FP8",
-    "family": "qwen",
-    "releaseDate": "2026-04-22",
-    "lastUpdated": "2026-04-22",
+    "displayName": "Ornith-1.0-35B-FP8",
+    "family": "ornith",
+    "releaseDate": "2026-06-25",
+    "lastUpdated": "2026-06-25",
     "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
+    "contextWindow": 262000,
+    "maxOutputTokens": 100000,
     "capabilities": {
       "tools": true,
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": true,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
         "text",
-        "image",
-        "video",
-        "audio"
+        "image"
       ],
       "output": [
         "text"
@@ -283,32 +328,34 @@
     ]
   },
   {
-    "id": "Ornith-1.0-35B-FP8",
+    "id": "Qwen3.6-27B-FP8",
     "provider": "inferx",
     "providerName": "InferX",
-    "displayName": "Ornith-1.0-35B-FP8",
-    "family": "ornith",
-    "releaseDate": "2026-06-25",
-    "lastUpdated": "2026-06-25",
+    "displayName": "Qwen3.6 27B FP8",
+    "family": "qwen",
+    "releaseDate": "2026-04-22",
+    "lastUpdated": "2026-04-22",
     "knowledgeCutoff": null,
-    "contextWindow": 262000,
-    "maxOutputTokens": 100000,
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "video",
+        "audio"
       ],
       "output": [
         "text"
@@ -379,26 +426,26 @@
     ]
   },
   {
-    "id": "Qwen3-Embedding-8B",
+    "id": "Qwen3-Coder-Next-FP8",
     "provider": "inferx",
     "providerName": "InferX",
-    "displayName": "Qwen3-Embedding-8B",
-    "family": "text-embedding",
-    "releaseDate": "2025-06-05",
-    "lastUpdated": "2025-06-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 32768,
-    "maxOutputTokens": 0,
+    "displayName": "Qwen3 Coder Next FP8",
+    "family": "qwen",
+    "releaseDate": "2026-02-03",
+    "lastUpdated": "2026-02-03",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 256144,
+    "maxOutputTokens": 65536,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
       "reasoning": false,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -425,32 +472,31 @@
     ]
   },
   {
-    "id": "gemma-4-31B-it-fp8",
+    "id": "Qwen3-Embedding-8B",
     "provider": "inferx",
     "providerName": "InferX",
-    "displayName": "Gemma 4 31B IT FP8",
-    "family": "gemma",
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-04-02",
+    "displayName": "Qwen3-Embedding-8B",
+    "family": "text-embedding",
+    "releaseDate": "2025-06-05",
+    "lastUpdated": "2025-06-05",
     "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 32768,
+    "contextWindow": 32768,
+    "maxOutputTokens": 0,
     "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
@@ -500,52 +546,6 @@
         "image",
         "audio",
         "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Devstral-2-123B-Instruct-2512-int4-AutoRound",
-    "provider": "inferx",
-    "providerName": "InferX",
-    "displayName": "Devstral-2-123B-Instruct-2512-int4-AutoRound",
-    "family": "devstral",
-    "releaseDate": "2025-12-09",
-    "lastUpdated": "2025-12-09",
-    "knowledgeCutoff": "2025-12",
-    "contextWindow": 128000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
       ],
       "output": [
         "text"

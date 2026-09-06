@@ -1,17 +1,17 @@
 [
   {
-    "id": "c4ai-aya-expanse-32b",
+    "id": "command-r7b-arabic-02-2025",
     "provider": "cohere",
     "providerName": "Cohere",
-    "displayName": "Aya Expanse 32B",
-    "family": null,
-    "releaseDate": "2024-10-24",
-    "lastUpdated": "2024-10-24",
-    "knowledgeCutoff": null,
+    "displayName": "Command R7B Arabic",
+    "family": "command-r",
+    "releaseDate": "2025-02-27",
+    "lastUpdated": "2025-02-27",
+    "knowledgeCutoff": "2024-06-01",
     "contextWindow": 128000,
     "maxOutputTokens": 4000,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
       "reasoning": false,
       "streaming": true,
@@ -30,7 +30,59 @@
         "text"
       ]
     },
-    "pricing": null,
+    "pricing": {
+      "input": 0.0375,
+      "output": 0.15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "command-a-plus-05-2026",
+    "provider": "cohere",
+    "providerName": "Cohere",
+    "displayName": "Command A Plus",
+    "family": "command-a",
+    "releaseDate": "2026-05-20",
+    "lastUpdated": "2026-06-09",
+    "knowledgeCutoff": "2025-04-01",
+    "contextWindow": 128000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.5,
+      "output": 10,
+      "currency": "USD",
+      "per": 1000000
+    },
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
@@ -87,16 +139,16 @@
     ]
   },
   {
-    "id": "c4ai-aya-vision-32b",
+    "id": "command-a-vision-07-2025",
     "provider": "cohere",
     "providerName": "Cohere",
-    "displayName": "Aya Vision 32B",
-    "family": null,
-    "releaseDate": "2025-03-04",
-    "lastUpdated": "2025-05-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 16000,
-    "maxOutputTokens": 4000,
+    "displayName": "Command A Vision",
+    "family": "command-a",
+    "releaseDate": "2025-07-31",
+    "lastUpdated": "2025-07-31",
+    "knowledgeCutoff": "2024-06-01",
+    "contextWindow": 128000,
+    "maxOutputTokens": 8000,
     "capabilities": {
       "tools": false,
       "vision": true,
@@ -118,7 +170,58 @@
         "text"
       ]
     },
-    "pricing": null,
+    "pricing": {
+      "input": 2.5,
+      "output": 10,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "north-mini-code-1-0",
+    "provider": "cohere",
+    "providerName": "Cohere",
+    "displayName": "North Mini Code",
+    "family": "north",
+    "releaseDate": "2026-06-09",
+    "lastUpdated": "2026-06-09",
+    "knowledgeCutoff": "2025-09-23",
+    "contextWindow": 256000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
@@ -221,16 +324,16 @@
     ]
   },
   {
-    "id": "command-r7b-arabic-02-2025",
+    "id": "command-a-03-2025",
     "provider": "cohere",
     "providerName": "Cohere",
-    "displayName": "Command R7B Arabic",
-    "family": "command-r",
-    "releaseDate": "2025-02-27",
-    "lastUpdated": "2025-02-27",
+    "displayName": "Command A",
+    "family": "command-a",
+    "releaseDate": "2025-03-13",
+    "lastUpdated": "2025-03-13",
     "knowledgeCutoff": "2024-06-01",
-    "contextWindow": 128000,
-    "maxOutputTokens": 4000,
+    "contextWindow": 256000,
+    "maxOutputTokens": 8000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -252,11 +355,52 @@
       ]
     },
     "pricing": {
-      "input": 0.0375,
-      "output": 0.15,
+      "input": 2.5,
+      "output": 10,
       "currency": "USD",
       "per": 1000000
     },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "c4ai-aya-expanse-32b",
+    "provider": "cohere",
+    "providerName": "Cohere",
+    "displayName": "Aya Expanse 32B",
+    "family": null,
+    "releaseDate": "2024-10-24",
+    "lastUpdated": "2024-10-24",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 4000,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
@@ -308,16 +452,16 @@
     ]
   },
   {
-    "id": "command-a-vision-07-2025",
+    "id": "c4ai-aya-vision-8b",
     "provider": "cohere",
     "providerName": "Cohere",
-    "displayName": "Command A Vision",
-    "family": "command-a",
-    "releaseDate": "2025-07-31",
-    "lastUpdated": "2025-07-31",
-    "knowledgeCutoff": "2024-06-01",
-    "contextWindow": 128000,
-    "maxOutputTokens": 8000,
+    "displayName": "Aya Vision 8B",
+    "family": null,
+    "releaseDate": "2025-03-04",
+    "lastUpdated": "2025-05-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 16000,
+    "maxOutputTokens": 4000,
     "capabilities": {
       "tools": false,
       "vision": true,
@@ -339,105 +483,7 @@
         "text"
       ]
     },
-    "pricing": {
-      "input": 2.5,
-      "output": 10,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "command-a-plus-05-2026",
-    "provider": "cohere",
-    "providerName": "Cohere",
-    "displayName": "Command A Plus",
-    "family": "command-a",
-    "releaseDate": "2026-05-20",
-    "lastUpdated": "2026-06-09",
-    "knowledgeCutoff": "2025-04-01",
-    "contextWindow": 128000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2.5,
-      "output": 10,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "command-a-03-2025",
-    "provider": "cohere",
-    "providerName": "Cohere",
-    "displayName": "Command A",
-    "family": "command-a",
-    "releaseDate": "2025-03-13",
-    "lastUpdated": "2025-03-13",
-    "knowledgeCutoff": "2024-06-01",
-    "contextWindow": 256000,
-    "maxOutputTokens": 8000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2.5,
-      "output": 10,
-      "currency": "USD",
-      "per": 1000000
-    },
+    "pricing": null,
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
@@ -494,6 +540,48 @@
     ]
   },
   {
+    "id": "c4ai-aya-vision-32b",
+    "provider": "cohere",
+    "providerName": "Cohere",
+    "displayName": "Aya Vision 32B",
+    "family": null,
+    "releaseDate": "2025-03-04",
+    "lastUpdated": "2025-05-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 16000,
+    "maxOutputTokens": 4000,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "command-r-08-2024",
     "provider": "cohere",
     "providerName": "Cohere",
@@ -530,94 +618,6 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "north-mini-code-1-0",
-    "provider": "cohere",
-    "providerName": "Cohere",
-    "displayName": "North Mini Code",
-    "family": "north",
-    "releaseDate": "2026-06-09",
-    "lastUpdated": "2026-06-09",
-    "knowledgeCutoff": "2025-09-23",
-    "contextWindow": 256000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "c4ai-aya-vision-8b",
-    "provider": "cohere",
-    "providerName": "Cohere",
-    "displayName": "Aya Vision 8B",
-    "family": null,
-    "releaseDate": "2025-03-04",
-    "lastUpdated": "2025-05-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 16000,
-    "maxOutputTokens": 4000,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
