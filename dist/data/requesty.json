@@ -656,8 +656,8 @@
       ]
     },
     "pricing": {
-      "input": 0.14,
-      "output": 0.28,
+      "input": 0.28,
+      "output": 0.56,
       "cacheRead": 0.07,
       "currency": "USD",
       "per": 1000000
@@ -1887,6 +1887,54 @@
     ]
   },
   {
+    "id": "deepseek-v4.1-flash@eu",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "DeepSeek V4.1 Flash (EU)",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 393216,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.5,
+      "output": 1.5,
+      "cacheRead": 0.05,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "gpt-5.4@eu",
     "provider": "requesty",
     "providerName": "Requesty",
@@ -1935,6 +1983,67 @@
       "contextOverThreshold": {
         "input": 5,
         "output": 22.5,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-6-astra",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "GPT-6 Astra",
+    "family": "gpt-astra",
+    "releaseDate": "2026-09-04",
+    "lastUpdated": "2026-09-04",
+    "knowledgeCutoff": "2026-04-30",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 10,
+      "output": 50,
+      "cacheRead": 1,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 20,
+          "output": 75,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 20,
+        "output": 75,
         "contextThreshold": 200000
       }
     },
@@ -2179,8 +2288,8 @@
       ]
     },
     "pricing": {
-      "input": 0.14,
-      "output": 0.28,
+      "input": 0.28,
+      "output": 0.56,
       "cacheRead": 0.07,
       "currency": "USD",
       "per": 1000000
@@ -2810,6 +2919,54 @@
     ]
   },
   {
+    "id": "deepseek-v4.1-flash",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "DeepSeek V4.1 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 393216,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.5,
+      "output": 1.5,
+      "cacheRead": 0.05,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "hy3",
     "provider": "requesty",
     "providerName": "Requesty",
@@ -3135,53 +3292,6 @@
       "input": 0.2,
       "output": 0.5,
       "cacheRead": 0.05,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "thinkingcap-qwen3.6-27b",
-    "provider": "requesty",
-    "providerName": "Requesty",
-    "displayName": "thinkingcap-qwen3.6-27b",
-    "family": "qwen3.6",
-    "releaseDate": "2026-07-13",
-    "lastUpdated": "2026-07-13",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.4,
-      "output": 3,
-      "cacheRead": 0.26,
       "currency": "USD",
       "per": 1000000
     },
@@ -3728,9 +3838,9 @@
       ]
     },
     "pricing": {
-      "input": 2.25,
-      "output": 11.25,
-      "cacheRead": 0.225,
+      "input": 3,
+      "output": 15,
+      "cacheRead": 0.45,
       "currency": "USD",
       "per": 1000000
     },
@@ -3825,9 +3935,9 @@
       ]
     },
     "pricing": {
-      "input": 5.5,
-      "output": 33,
-      "cacheRead": 0.55,
+      "input": 4.4,
+      "output": 22,
+      "cacheRead": 0.44,
       "currency": "USD",
       "per": 1000000
     },
@@ -4007,7 +4117,7 @@
       "temperature": true,
       "attachment": true,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -4022,7 +4132,7 @@
     },
     "pricing": {
       "input": 0.2,
-      "output": 0.5,
+      "output": 0.6,
       "cacheRead": 0.07,
       "currency": "USD",
       "per": 1000000
@@ -4300,7 +4410,7 @@
       "temperature": true,
       "attachment": true,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -4315,7 +4425,7 @@
     },
     "pricing": {
       "input": 0.2,
-      "output": 0.5,
+      "output": 0.6,
       "cacheRead": 0.07,
       "currency": "USD",
       "per": 1000000
@@ -4600,53 +4710,6 @@
       "input": 1.375,
       "output": 11,
       "cacheRead": 0.1375,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "thinkingcap-qwen3.6-27b@eu",
-    "provider": "requesty",
-    "providerName": "Requesty",
-    "displayName": "thinkingcap-qwen3.6-27b@eu",
-    "family": "qwen3.6",
-    "releaseDate": "2026-07-13",
-    "lastUpdated": "2026-07-13",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.4,
-      "output": 3,
-      "cacheRead": 0.26,
       "currency": "USD",
       "per": 1000000
     },
@@ -5855,9 +5918,9 @@
       ]
     },
     "pricing": {
-      "input": 2.25,
-      "output": 11.25,
-      "cacheRead": 0.225,
+      "input": 3,
+      "output": 15,
+      "cacheRead": 0.45,
       "currency": "USD",
       "per": 1000000
     },
@@ -7281,8 +7344,8 @@
       ]
     },
     "pricing": {
-      "input": 0.14,
-      "output": 0.28,
+      "input": 0.28,
+      "output": 0.56,
       "cacheRead": 0.07,
       "currency": "USD",
       "per": 1000000

@@ -48,53 +48,6 @@
     ]
   },
   {
-    "id": "mimo-v2.5-pro-ultraspeed",
-    "provider": "above",
-    "providerName": "above.dev",
-    "displayName": "MiMo V2.5 Pro UltraSpeed",
-    "family": "mimo",
-    "releaseDate": "2026-06-08",
-    "lastUpdated": "2026-06-09",
-    "knowledgeCutoff": "2024-12",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.5231,
-      "output": 3.0462,
-      "cacheRead": 0.0127,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "glm-5.2",
     "provider": "above",
     "providerName": "above.dev",
@@ -147,35 +100,36 @@
     "providerName": "above.dev",
     "displayName": "DeepSeek V4 Flash",
     "family": "deepseek-flash",
-    "releaseDate": "2026-07-31",
-    "lastUpdated": "2026-07-31",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
     "knowledgeCutoff": "2025-05",
     "contextWindow": 1000000,
     "maxOutputTokens": 384000,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.242,
-      "output": 0.726,
-      "cacheRead": 0.0077,
+      "input": 0.165,
+      "output": 0.66,
+      "cacheRead": 0.0033,
       "currency": "USD",
       "per": 1000000
     },
@@ -256,7 +210,7 @@
       "temperature": true,
       "attachment": true,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [

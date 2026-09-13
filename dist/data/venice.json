@@ -7,7 +7,7 @@
     "family": "gemma",
     "releaseDate": "2025-11-04",
     "lastUpdated": "2026-06-11",
-    "knowledgeCutoff": null,
+    "knowledgeCutoff": "2024-08",
     "contextWindow": 198000,
     "maxOutputTokens": 16384,
     "capabilities": {
@@ -343,19 +343,20 @@
     "maxOutputTokens": 16384,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": false,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
@@ -1269,6 +1270,54 @@
     ]
   },
   {
+    "id": "deepseek-v4-1-flash",
+    "provider": "venice",
+    "providerName": "Venice AI",
+    "displayName": "DeepSeek V4.1 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.375,
+      "output": 1.5,
+      "cacheRead": 0.0075,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "openai-gpt-6-astra",
     "provider": "venice",
     "providerName": "Venice AI",
@@ -1276,7 +1325,7 @@
     "family": "gpt",
     "releaseDate": "2026-09-05",
     "lastUpdated": "2026-09-04",
-    "knowledgeCutoff": null,
+    "knowledgeCutoff": "2026-04-30",
     "contextWindow": 1050000,
     "maxOutputTokens": 128000,
     "capabilities": {
@@ -2293,6 +2342,53 @@
     "pricing": {
       "input": 0.5,
       "output": 2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mercury-2-5",
+    "provider": "venice",
+    "providerName": "Venice AI",
+    "displayName": "Mercury 2.5",
+    "family": "mercury",
+    "releaseDate": "2026-09-08",
+    "lastUpdated": "2026-09-09",
+    "knowledgeCutoff": null,
+    "contextWindow": 260000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.04999999999999999,
+      "output": 0.18749999999999994,
+      "cacheRead": 0.004999999999999999,
       "currency": "USD",
       "per": 1000000
     },
@@ -3906,6 +4002,55 @@
       "input": 1.25,
       "output": 5.0625,
       "cacheRead": 0.2125,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen-3-8-flash",
+    "provider": "venice",
+    "providerName": "Venice AI",
+    "displayName": "Qwen 3.8 Flash",
+    "family": "qwen",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.14,
+      "output": 0.49,
+      "cacheRead": 0.014,
       "currency": "USD",
       "per": 1000000
     },

@@ -183,7 +183,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "beta",
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -672,7 +672,7 @@
         "contextThreshold": 200000
       }
     },
-    "status": "beta",
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1001,6 +1001,68 @@
       "output": 0,
       "currency": "USD",
       "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-6-astra",
+    "provider": "azure",
+    "providerName": "Azure",
+    "displayName": "GPT-6 Astra",
+    "family": "gpt-astra",
+    "releaseDate": "2026-09-04",
+    "lastUpdated": "2026-09-04",
+    "knowledgeCutoff": "2026-04-30",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 10,
+      "output": 50,
+      "cacheRead": 1,
+      "cacheWrite": 12.5,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 20,
+          "output": 75,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 20,
+        "output": 75,
+        "contextThreshold": 200000
+      }
     },
     "status": "active",
     "deprecationDate": null,
@@ -1584,7 +1646,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "beta",
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1999,7 +2061,7 @@
         "contextThreshold": 200000
       }
     },
-    "status": "beta",
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -3653,7 +3715,7 @@
         "contextThreshold": 200000
       }
     },
-    "status": "beta",
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -3845,7 +3907,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "beta",
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],

@@ -3,7 +3,7 @@
     "id": "qwen/deepseek-v4-pro-0813",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "DeepSeek V4 Pro 0813",
+    "displayName": "DeepSeek V4 Pro 0813 (Alibaba)",
     "family": "deepseek-thinking",
     "releaseDate": "2026-08-12",
     "lastUpdated": "2026-08-22",
@@ -49,7 +49,7 @@
     "id": "qwen/deepseek-v4-flash-0731",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "DeepSeek V4 Flash 0731",
+    "displayName": "DeepSeek V4 Flash 0731 (Alibaba)",
     "family": "deepseek-flash",
     "releaseDate": "2026-07-31",
     "lastUpdated": "2026-07-31",
@@ -1144,7 +1144,7 @@
     "id": "groq/openai/gpt-oss-20b",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GPT OSS 20B",
+    "displayName": "GPT OSS 20B (Groq)",
     "family": "gpt-oss",
     "releaseDate": "2025-08-05",
     "lastUpdated": "2025-08-05",
@@ -1188,10 +1188,57 @@
     ]
   },
   {
+    "id": "groq/openai/gpt-oss-safeguard-20b",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "GPT OSS Safeguard 20B (Groq)",
+    "family": "gpt-oss",
+    "releaseDate": "2025-10-29",
+    "lastUpdated": "2025-10-29",
+    "knowledgeCutoff": null,
+    "contextWindow": 131072,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.075,
+      "output": 0.3,
+      "cacheRead": 0.0375,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "groq/openai/gpt-oss-120b",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GPT OSS 120B",
+    "displayName": "GPT OSS 120B (Groq)",
     "family": "gpt-oss",
     "releaseDate": "2025-08-05",
     "lastUpdated": "2025-08-05",
@@ -1238,7 +1285,7 @@
     "id": "scaleway/deepseek-v4-flash-0731",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "DeepSeek V4 Flash 0731",
+    "displayName": "DeepSeek V4 Flash 0731 (Scaleway)",
     "family": "deepseek-flash",
     "releaseDate": "2026-07-31",
     "lastUpdated": "2026-07-31",
@@ -1266,8 +1313,55 @@
       ]
     },
     "pricing": {
-      "input": 0.46488,
-      "output": 0.92976,
+      "input": 0.46368,
+      "output": 0.92736,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "scaleway/gemma-3-27b-it",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Gemma 3 27B IT (Scaleway)",
+    "family": "gemma",
+    "releaseDate": "2025-03-12",
+    "lastUpdated": "2025-03-12",
+    "knowledgeCutoff": "2024-08",
+    "contextWindow": 40000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.287125,
+      "output": 0.57425,
       "currency": "USD",
       "per": 1000000
     },
@@ -1284,7 +1378,7 @@
     "id": "scaleway/gpt-oss-120b",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GPT OSS 120B",
+    "displayName": "GPT OSS 120B (Scaleway)",
     "family": "gpt-oss",
     "releaseDate": "2025-08-05",
     "lastUpdated": "2025-08-05",
@@ -1312,8 +1406,8 @@
       ]
     },
     "pricing": {
-      "input": 0.17433,
-      "output": 0.69732,
+      "input": 0.17388,
+      "output": 0.69552,
       "currency": "USD",
       "per": 1000000
     },
@@ -1330,7 +1424,7 @@
     "id": "scaleway/llama-3.3-70b-instruct",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Llama-3.3-70B-Instruct",
+    "displayName": "Llama-3.3-70B-Instruct (Scaleway)",
     "family": "llama",
     "releaseDate": "2024-12-06",
     "lastUpdated": "2024-12-06",
@@ -1358,8 +1452,8 @@
       ]
     },
     "pricing": {
-      "input": 1.04598,
-      "output": 1.04598,
+      "input": 1.04328,
+      "output": 1.04328,
       "currency": "USD",
       "per": 1000000
     },
@@ -1376,7 +1470,7 @@
     "id": "nebius/deepseek-ai/DeepSeek-V4-Flash-0731",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "DeepSeek V4 Flash 0731",
+    "displayName": "DeepSeek V4 Flash 0731 (Nebius)",
     "family": "deepseek-flash",
     "releaseDate": "2026-07-31",
     "lastUpdated": "2026-07-31",
@@ -1420,10 +1514,57 @@
     ]
   },
   {
+    "id": "nebius/deepseek-ai/DeepSeek-V4-Pro-0813",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "DeepSeek V4 Pro 0813 (Nebius)",
+    "family": "deepseek-thinking",
+    "releaseDate": "2026-08-12",
+    "lastUpdated": "2026-08-22",
+    "knowledgeCutoff": null,
+    "contextWindow": 979000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.32,
+      "output": 3.96,
+      "cacheRead": 1.32,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "nebius/nvidia/Nemotron-3-Ultra-550b-a55b",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Nemotron 3 Ultra 550B A55B",
+    "displayName": "Nemotron 3 Ultra 550B A55B (Nebius)",
     "family": "nemotron",
     "releaseDate": "2026-06-04",
     "lastUpdated": "2026-06-04",
@@ -1470,7 +1611,7 @@
     "id": "nebius/nvidia/nemotron-3-super-120b-a12b",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Nemotron 3 Super 120B A12B",
+    "displayName": "Nemotron 3 Super 120B A12B (Nebius)",
     "family": "nemotron",
     "releaseDate": "2026-03-11",
     "lastUpdated": "2026-03-11",
@@ -1514,10 +1655,58 @@
     ]
   },
   {
+    "id": "nebius/google/gemma-3-27b-it",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Gemma 3 27B IT (Nebius)",
+    "family": "gemma",
+    "releaseDate": "2025-03-12",
+    "lastUpdated": "2025-03-12",
+    "knowledgeCutoff": "2024-08",
+    "contextWindow": 110000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.3,
+      "cacheRead": 0.1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "nebius/meta-llama/Llama-3.3-70B-Instruct",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Llama-3.3-70B-Instruct",
+    "displayName": "Llama-3.3-70B-Instruct (Nebius)",
     "family": "llama",
     "releaseDate": "2024-12-06",
     "lastUpdated": "2024-12-06",
@@ -1564,7 +1753,7 @@
     "id": "nebius/openai/gpt-oss-120b",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GPT OSS 120B",
+    "displayName": "GPT OSS 120B (Nebius)",
     "family": "gpt-oss",
     "releaseDate": "2025-08-05",
     "lastUpdated": "2025-08-05",
@@ -1611,7 +1800,7 @@
     "id": "cloudflare/@cf/qwen/qwen2.5-coder-32b-instruct",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Qwen2.5-Coder-32B-Instruct",
+    "displayName": "Qwen2.5-Coder-32B-Instruct (Cloudflare)",
     "family": "qwen",
     "releaseDate": "2024-11-12",
     "lastUpdated": "2024-11-12",
@@ -1657,7 +1846,7 @@
     "id": "cloudflare/@cf/deepseek-ai/deepseek-v4-pro-0813",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "DeepSeek V4 Pro 0813",
+    "displayName": "DeepSeek V4 Pro 0813 (Cloudflare)",
     "family": "deepseek-thinking",
     "releaseDate": "2026-08-12",
     "lastUpdated": "2026-08-22",
@@ -1704,7 +1893,7 @@
     "id": "cloudflare/@cf/deepseek-ai/deepseek-v4-flash-0731",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "DeepSeek V4 Flash 0731",
+    "displayName": "DeepSeek V4 Flash 0731 (Cloudflare)",
     "family": "deepseek-flash",
     "releaseDate": "2026-07-31",
     "lastUpdated": "2026-07-31",
@@ -1751,7 +1940,7 @@
     "id": "cloudflare/@cf/zai-org/glm-4.7-flash",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GLM-4.7-Flash",
+    "displayName": "GLM-4.7-Flash (Cloudflare)",
     "family": "glm-flash",
     "releaseDate": "2026-01-19",
     "lastUpdated": "2026-01-19",
@@ -1797,7 +1986,7 @@
     "id": "cloudflare/@cf/aisingapore/gemma-sea-lion-v4-27b-it",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Gemma-SEA-LION-v4-27B-IT",
+    "displayName": "Gemma-SEA-LION-v4-27B-IT (Cloudflare)",
     "family": "gemma",
     "releaseDate": "2025-09-23",
     "lastUpdated": "2025-09-23",
@@ -1843,7 +2032,7 @@
     "id": "cloudflare/@cf/meta/llama-guard-3-8b",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Llama-Guard-3-8B",
+    "displayName": "Llama-Guard-3-8B (Cloudflare)",
     "family": "llama",
     "releaseDate": "2024-07-23",
     "lastUpdated": "2024-07-23",
@@ -1889,7 +2078,7 @@
     "id": "cloudflare/@cf/openai/gpt-oss-20b",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GPT OSS 20B",
+    "displayName": "GPT OSS 20B (Cloudflare)",
     "family": "gpt-oss",
     "releaseDate": "2025-08-05",
     "lastUpdated": "2025-08-05",
@@ -1935,7 +2124,7 @@
     "id": "cloudflare/@cf/openai/gpt-oss-120b",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GPT OSS 120B",
+    "displayName": "GPT OSS 120B (Cloudflare)",
     "family": "gpt-oss",
     "releaseDate": "2025-08-05",
     "lastUpdated": "2025-08-05",
@@ -2217,7 +2406,7 @@
     "id": "ovhcloud/gpt-oss-20b",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GPT OSS 20B",
+    "displayName": "GPT OSS 20B (OVHcloud)",
     "family": "gpt-oss",
     "releaseDate": "2025-08-05",
     "lastUpdated": "2025-08-05",
@@ -2263,7 +2452,7 @@
     "id": "ovhcloud/gpt-oss-120b",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GPT OSS 120B",
+    "displayName": "GPT OSS 120B (OVHcloud)",
     "family": "gpt-oss",
     "releaseDate": "2025-08-05",
     "lastUpdated": "2025-08-05",
@@ -2359,7 +2548,7 @@
     "id": "anthropic/claude-fable-latest",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Claude Fable 5.1",
+    "displayName": "Claude Fable Latest (Claude Fable 5.1)",
     "family": "claude-fable",
     "releaseDate": "2026-09-01",
     "lastUpdated": "2026-09-01",
@@ -2611,7 +2800,7 @@
     "id": "anthropic/claude-opus-latest",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Claude Opus 5",
+    "displayName": "Claude Opus Latest (Claude Opus 5)",
     "family": "claude-opus",
     "releaseDate": "2026-07-24",
     "lastUpdated": "2026-07-24",
@@ -2761,7 +2950,7 @@
     "id": "anthropic/claude-sonnet-latest",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Claude Sonnet 5",
+    "displayName": "Claude Sonnet Latest (Claude Sonnet 5)",
     "family": "claude-sonnet",
     "releaseDate": "2026-06-30",
     "lastUpdated": "2026-06-30",
@@ -2961,7 +3150,7 @@
     "id": "google/gemini-pro-latest",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Gemini 3.1 Pro Preview",
+    "displayName": "Gemini Pro Latest (Gemini 3.1 Pro Preview)",
     "family": "gemini-pro",
     "releaseDate": "2026-02-19",
     "lastUpdated": "2026-02-19",
@@ -3621,7 +3810,7 @@
     "id": "google/gemini-3-pro-image-preview",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Nano Banana Pro",
+    "displayName": "Nano Banana Pro Preview",
     "family": "gemini-pro",
     "releaseDate": "2025-11-20",
     "lastUpdated": "2025-11-20",
@@ -3831,7 +4020,7 @@
     "id": "google/gemini-flash-latest",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Gemini 3.8 Flash",
+    "displayName": "Gemini Flash Latest (Gemini 3.8 Flash)",
     "family": "gemini-flash",
     "releaseDate": "2026-09-02",
     "lastUpdated": "2026-09-02",
@@ -3884,7 +4073,7 @@
     "id": "google/gemini-3.1-flash-image-preview",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Nano Banana 2",
+    "displayName": "Nano Banana 2 Preview",
     "family": "gemini-flash",
     "releaseDate": "2026-02-26",
     "lastUpdated": "2026-02-26",
@@ -3932,7 +4121,7 @@
     "id": "tensorx/deepseek/deepseek-v4-pro-0813",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "DeepSeek V4 Pro 0813",
+    "displayName": "DeepSeek V4 Pro 0813 (TensorX)",
     "family": "deepseek-thinking",
     "releaseDate": "2026-08-12",
     "lastUpdated": "2026-08-22",
@@ -3979,7 +4168,7 @@
     "id": "tensorx/deepseek/deepseek-v4-flash-0731",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "DeepSeek V4 Flash 0731",
+    "displayName": "DeepSeek V4 Flash 0731 (TensorX)",
     "family": "deepseek-flash",
     "releaseDate": "2026-07-31",
     "lastUpdated": "2026-07-31",
@@ -4026,7 +4215,7 @@
     "id": "tensorx/moonshotai/kimi-k2.5",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Kimi K2.5",
+    "displayName": "Kimi K2.5 (TensorX)",
     "family": "kimi-k2",
     "releaseDate": "2026-01",
     "lastUpdated": "2026-01",
@@ -4071,20 +4260,20 @@
     ]
   },
   {
-    "id": "flexai/deepseek-v4-flash-0731",
+    "id": "infomaniak/mistralai/Ministral-3-14B-Instruct-2512",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "DeepSeek V4 Flash 0731",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-07-31",
-    "lastUpdated": "2026-07-31",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 786432,
-    "maxOutputTokens": 384000,
+    "displayName": "Ministral 3 14B (Infomaniak)",
+    "family": "ministral",
+    "releaseDate": "2025-12-02",
+    "lastUpdated": "2025-12-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 100000,
+    "maxOutputTokens": 262144,
     "capabilities": {
       "tools": false,
       "vision": false,
-      "reasoning": true,
+      "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
@@ -4102,8 +4291,8 @@
       ]
     },
     "pricing": {
-      "input": 0.03,
-      "output": 0.1,
+      "input": 0.34776,
+      "output": 0.46368,
       "currency": "USD",
       "per": 1000000
     },
@@ -4120,7 +4309,7 @@
     "id": "flexai/Nemotron-3-Super-120B-A12B",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Nemotron 3 Super 120B A12B",
+    "displayName": "Nemotron 3 Super 120B A12B (FlexAI)",
     "family": "nemotron",
     "releaseDate": "2026-03-11",
     "lastUpdated": "2026-03-11",
@@ -4166,7 +4355,7 @@
     "id": "flexai/Step-3.7-Flash",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Step 3.7 Flash",
+    "displayName": "Step 3.7 Flash (FlexAI)",
     "family": null,
     "releaseDate": "2026-05-29",
     "lastUpdated": "2026-05-29",
@@ -4213,7 +4402,7 @@
     "id": "flexai/gpt-oss-20b",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GPT OSS 20B",
+    "displayName": "GPT OSS 20B (FlexAI)",
     "family": "gpt-oss",
     "releaseDate": "2025-08-05",
     "lastUpdated": "2025-08-05",
@@ -4241,8 +4430,54 @@
       ]
     },
     "pricing": {
-      "input": 0.02,
-      "output": 0.1,
+      "input": 0.03,
+      "output": 0.13,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "flexai/DeepSeek-V4-Flash-0731",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "DeepSeek V4 Flash 0731 (FlexAI)",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-07-31",
+    "lastUpdated": "2026-07-31",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 786432,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.065,
+      "output": 0.18,
       "currency": "USD",
       "per": 1000000
     },
@@ -4259,7 +4494,7 @@
     "id": "flexai/Muse-Glimmer-30B",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Muse Glimmer 30B",
+    "displayName": "Muse Glimmer 30B (FlexAI)",
     "family": "muse",
     "releaseDate": "2026-08-10",
     "lastUpdated": "2026-08-10",
@@ -4306,7 +4541,7 @@
     "id": "flexai/gpt-oss-120b",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GPT OSS 120B",
+    "displayName": "GPT OSS 120B (FlexAI)",
     "family": "gpt-oss",
     "releaseDate": "2025-08-05",
     "lastUpdated": "2025-08-05",
@@ -4334,8 +4569,8 @@
       ]
     },
     "pricing": {
-      "input": 0.039,
-      "output": 0.1,
+      "input": 0.037,
+      "output": 0.17,
       "currency": "USD",
       "per": 1000000
     },
@@ -4352,7 +4587,7 @@
     "id": "databricks/databricks-gpt-oss-20b@eu",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GPT OSS 20B (EU)",
+    "displayName": "GPT OSS 20B (Databricks, EU)",
     "family": "gpt-oss",
     "releaseDate": "2025-08-05",
     "lastUpdated": "2025-08-05",
@@ -4400,7 +4635,7 @@
     "id": "databricks/databricks-deepseek-v4-pro-0813",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "DeepSeek V4 Pro 0813",
+    "displayName": "DeepSeek V4 Pro 0813 (Databricks)",
     "family": "deepseek-thinking",
     "releaseDate": "2026-08-12",
     "lastUpdated": "2026-08-22",
@@ -4448,7 +4683,7 @@
     "id": "databricks/databricks-gpt-oss-120b@eu",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GPT OSS 120B (EU)",
+    "displayName": "GPT OSS 120B (Databricks, EU)",
     "family": "gpt-oss",
     "releaseDate": "2025-08-05",
     "lastUpdated": "2025-08-05",
@@ -4496,7 +4731,7 @@
     "id": "databricks/databricks-gpt-oss-20b",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GPT OSS 20B",
+    "displayName": "GPT OSS 20B (Databricks)",
     "family": "gpt-oss",
     "releaseDate": "2025-08-05",
     "lastUpdated": "2025-08-05",
@@ -4544,7 +4779,7 @@
     "id": "databricks/databricks-deepseek-v4-flash-0731",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "DeepSeek V4 Flash 0731",
+    "displayName": "DeepSeek V4 Flash 0731 (Databricks)",
     "family": "deepseek-flash",
     "releaseDate": "2026-07-31",
     "lastUpdated": "2026-07-31",
@@ -4592,7 +4827,7 @@
     "id": "databricks/databricks-inkling",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Inkling",
+    "displayName": "Inkling (Databricks)",
     "family": "ling",
     "releaseDate": "2026-07-15",
     "lastUpdated": "2026-07-15",
@@ -4641,7 +4876,7 @@
     "id": "databricks/databricks-gpt-oss-120b",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GPT OSS 120B",
+    "displayName": "GPT OSS 120B (Databricks)",
     "family": "gpt-oss",
     "releaseDate": "2025-08-05",
     "lastUpdated": "2025-08-05",
@@ -4689,7 +4924,7 @@
     "id": "deepinfra/nemotron-3-ultra-550b-a55b",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Nemotron 3 Ultra 550B A55B",
+    "displayName": "Nemotron 3 Ultra 550B A55B (Deep Infra)",
     "family": "nemotron",
     "releaseDate": "2026-06-04",
     "lastUpdated": "2026-06-04",
@@ -4736,7 +4971,7 @@
     "id": "deepinfra/ByteDance/Seed-2.0-mini",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Seed 2.0 Mini",
+    "displayName": "Seed 2.0 Mini (Deep Infra)",
     "family": "seed",
     "releaseDate": "2026-02-14",
     "lastUpdated": "2026-02-14",
@@ -4784,7 +5019,7 @@
     "id": "deepinfra/ByteDance/Seed-2.0-code",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Seed 2.0 Code",
+    "displayName": "Seed 2.0 Code (Deep Infra)",
     "family": "seed",
     "releaseDate": "2026-02-14",
     "lastUpdated": "2026-02-14",
@@ -4832,7 +5067,7 @@
     "id": "deepinfra/stepfun-ai/Step-3.7-Flash",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Step 3.7 Flash",
+    "displayName": "Step 3.7 Flash (Deep Infra)",
     "family": null,
     "releaseDate": "2026-05-29",
     "lastUpdated": "2026-05-29",
@@ -4881,7 +5116,7 @@
     "id": "deepinfra/stepfun-ai/Step-3.5-Flash",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Step 3.5 Flash",
+    "displayName": "Step 3.5 Flash (Deep Infra)",
     "family": null,
     "releaseDate": "2026-01-29",
     "lastUpdated": "2026-02-13",
@@ -4928,7 +5163,7 @@
     "id": "deepinfra/deepseek-ai/DeepSeek-V3",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "DeepSeek-V3",
+    "displayName": "DeepSeek-V3 (Deep Infra)",
     "family": "deepseek",
     "releaseDate": "2024-12-26",
     "lastUpdated": "2024-12-26",
@@ -4974,7 +5209,7 @@
     "id": "deepinfra/deepseek-ai/DeepSeek-V3-0324",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "DeepSeek V3 0324",
+    "displayName": "DeepSeek V3 0324 (Deep Infra)",
     "family": "deepseek",
     "releaseDate": "2025-03-24",
     "lastUpdated": "2025-03-24",
@@ -5021,7 +5256,7 @@
     "id": "deepinfra/deepseek-ai/DeepSeek-V4-Flash-0731",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "DeepSeek V4 Flash 0731",
+    "displayName": "DeepSeek V4 Flash 0731 (Deep Infra)",
     "family": "deepseek-flash",
     "releaseDate": "2026-07-31",
     "lastUpdated": "2026-07-31",
@@ -5049,9 +5284,57 @@
       ]
     },
     "pricing": {
-      "input": 0.08,
+      "input": 0.06,
       "output": 0.18,
-      "cacheRead": 0.016,
+      "cacheRead": 0.015,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepinfra/deepseek-ai/DeepSeek-V4.1-Flash",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "DeepSeek V4.1 Flash (Deep Infra)",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2,
+      "output": 0.6,
+      "cacheRead": 0.006,
       "currency": "USD",
       "per": 1000000
     },
@@ -5068,7 +5351,7 @@
     "id": "deepinfra/deepseek-ai/DeepSeek-V4-Pro-0813",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "DeepSeek V4 Pro 0813",
+    "displayName": "DeepSeek V4 Pro 0813 (Deep Infra)",
     "family": "deepseek-thinking",
     "releaseDate": "2026-08-12",
     "lastUpdated": "2026-08-22",
@@ -5115,7 +5398,7 @@
     "id": "deepinfra/deepseek-ai/DeepSeek-R1",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "DeepSeek-R1",
+    "displayName": "DeepSeek-R1 (Deep Infra)",
     "family": "deepseek-thinking",
     "releaseDate": "2025-01-20",
     "lastUpdated": "2025-05-29",
@@ -5161,7 +5444,7 @@
     "id": "deepinfra/nvidia/Llama-3.1-Nemotron-70B-Instruct",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Llama 3.1 Nemotron 70B Instruct",
+    "displayName": "Llama 3.1 Nemotron 70B Instruct (Deep Infra)",
     "family": "nemotron",
     "releaseDate": "2025-04-15",
     "lastUpdated": "2025-04-15",
@@ -5207,7 +5490,7 @@
     "id": "deepinfra/nvidia/Nemotron-3-Nano-30B-A3B",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Nemotron 3 Nano 30B A3B",
+    "displayName": "Nemotron 3 Nano 30B A3B (Deep Infra)",
     "family": "nemotron",
     "releaseDate": "2025-12-15",
     "lastUpdated": "2025-12-15",
@@ -5254,7 +5537,7 @@
     "id": "deepinfra/meta-models/Muse-Glimmer-30B",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Muse Glimmer 30B",
+    "displayName": "Muse Glimmer 30B (Deep Infra)",
     "family": "muse",
     "releaseDate": "2026-08-10",
     "lastUpdated": "2026-08-10",
@@ -5299,10 +5582,151 @@
     ]
   },
   {
+    "id": "deepinfra/google/gemma-3-4b-it",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Gemma 3 4B IT (Deep Infra)",
+    "family": "gemma",
+    "releaseDate": "2025-03-12",
+    "lastUpdated": "2025-03-12",
+    "knowledgeCutoff": "2024-08",
+    "contextWindow": 131072,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.05,
+      "output": 0.1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepinfra/google/gemma-3-27b-it",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Gemma 3 27B IT (Deep Infra)",
+    "family": "gemma",
+    "releaseDate": "2025-03-12",
+    "lastUpdated": "2025-03-12",
+    "knowledgeCutoff": "2024-08",
+    "contextWindow": 131072,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.08,
+      "output": 0.16,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepinfra/google/gemma-3-12b-it",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Gemma 3 12B IT (Deep Infra)",
+    "family": "gemma",
+    "releaseDate": "2025-03-12",
+    "lastUpdated": "2025-03-12",
+    "knowledgeCutoff": "2024-08",
+    "contextWindow": 131072,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.05,
+      "output": 0.15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "deepinfra/zai-org/GLM-4.7-Flash",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GLM-4.7-Flash",
+    "displayName": "GLM-4.7-Flash (Deep Infra)",
     "family": "glm-flash",
     "releaseDate": "2026-01-19",
     "lastUpdated": "2026-01-19",
@@ -5349,7 +5773,7 @@
     "id": "deepinfra/thinkingmachines/Inkling-Small",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Inkling Small",
+    "displayName": "Inkling Small (Deep Infra)",
     "family": "ling",
     "releaseDate": "2026-07-30",
     "lastUpdated": "2026-07-30",
@@ -5398,7 +5822,7 @@
     "id": "deepinfra/thinkingmachines/Inkling",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Inkling",
+    "displayName": "Inkling (Deep Infra)",
     "family": "ling",
     "releaseDate": "2026-07-15",
     "lastUpdated": "2026-07-15",
@@ -5447,7 +5871,7 @@
     "id": "deepinfra/meta-llama/Llama-Guard-3-8B",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Llama-Guard-3-8B",
+    "displayName": "Llama-Guard-3-8B (Deep Infra)",
     "family": "llama",
     "releaseDate": "2024-07-23",
     "lastUpdated": "2024-07-23",
@@ -5493,7 +5917,7 @@
     "id": "deepinfra/meta-llama/Llama-3.3-70B-Instruct",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Llama-3.3-70B-Instruct",
+    "displayName": "Llama-3.3-70B-Instruct (Deep Infra)",
     "family": "llama",
     "releaseDate": "2024-12-06",
     "lastUpdated": "2024-12-06",
@@ -5539,7 +5963,7 @@
     "id": "deepinfra/meta-llama/Llama-3.2-11B-Vision-Instruct",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Llama-3.2-11B-Vision-Instruct",
+    "displayName": "Llama-3.2-11B-Vision-Instruct (Deep Infra)",
     "family": "llama",
     "releaseDate": "2024-09-25",
     "lastUpdated": "2024-09-25",
@@ -5586,7 +6010,7 @@
     "id": "deepinfra/openai/gpt-oss-20b",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GPT OSS 20B",
+    "displayName": "GPT OSS 20B (Deep Infra)",
     "family": "gpt-oss",
     "releaseDate": "2025-08-05",
     "lastUpdated": "2025-08-05",
@@ -5632,7 +6056,7 @@
     "id": "deepinfra/openai/gpt-oss-120b",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GPT OSS 120B",
+    "displayName": "GPT OSS 120B (Deep Infra)",
     "family": "gpt-oss",
     "releaseDate": "2025-08-05",
     "lastUpdated": "2025-08-05",
@@ -5678,7 +6102,7 @@
     "id": "deepinfra/moonshotai/Kimi-K2.5",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Kimi K2.5",
+    "displayName": "Kimi K2.5 (Deep Infra)",
     "family": "kimi-k2",
     "releaseDate": "2026-01",
     "lastUpdated": "2026-01",
@@ -5726,7 +6150,7 @@
     "id": "deepinfra/tencent/Hy3",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Hy3",
+    "displayName": "Hy3 (Deep Infra)",
     "family": "Hy",
     "releaseDate": "2026-07-06",
     "lastUpdated": "2026-07-06",
@@ -5965,7 +6389,7 @@
     "id": "azure/gpt-5.1-codex-mini",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GPT-5.1 Codex mini",
+    "displayName": "GPT-5.1 Codex mini (Azure)",
     "family": "gpt-codex",
     "releaseDate": "2025-11-13",
     "lastUpdated": "2025-11-13",
@@ -6014,7 +6438,7 @@
     "id": "azure/gpt-5.1-codex",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GPT-5.1 Codex",
+    "displayName": "GPT-5.1 Codex (Azure)",
     "family": "gpt-codex",
     "releaseDate": "2025-11-13",
     "lastUpdated": "2025-11-13",
@@ -6063,7 +6487,7 @@
     "id": "azure/gpt-5.2-codex",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GPT-5.2 Codex",
+    "displayName": "GPT-5.2 Codex (Azure)",
     "family": "gpt-codex",
     "releaseDate": "2025-12-11",
     "lastUpdated": "2025-12-11",
@@ -6112,7 +6536,7 @@
     "id": "azure/gpt-5.1-codex-max",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GPT-5.1 Codex Max",
+    "displayName": "GPT-5.1 Codex Max (Azure)",
     "family": "gpt-codex",
     "releaseDate": "2025-11-13",
     "lastUpdated": "2025-11-13",
@@ -6350,7 +6774,7 @@
     "id": "fireworks_ai/gpt-oss-120b",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GPT OSS 120B",
+    "displayName": "GPT OSS 120B (Fireworks AI)",
     "family": "gpt-oss",
     "releaseDate": "2025-08-05",
     "lastUpdated": "2025-08-05",
@@ -6397,7 +6821,7 @@
     "id": "fireworks_ai/accounts/fireworks/models/deepseek-v4-pro-0813",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "DeepSeek V4 Pro 0813",
+    "displayName": "DeepSeek V4 Pro 0813 (Fireworks AI)",
     "family": "deepseek-thinking",
     "releaseDate": "2026-08-12",
     "lastUpdated": "2026-08-22",
@@ -6444,7 +6868,7 @@
     "id": "fireworks_ai/accounts/fireworks/models/deepseek-v4-flash-0731",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "DeepSeek V4 Flash 0731",
+    "displayName": "DeepSeek V4 Flash 0731 (Fireworks AI)",
     "family": "deepseek-flash",
     "releaseDate": "2026-07-31",
     "lastUpdated": "2026-07-31",
@@ -6491,7 +6915,7 @@
     "id": "fireworks_ai/accounts/fireworks/models/muse-glimmer-30b",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Muse Glimmer 30B",
+    "displayName": "Muse Glimmer 30B (Fireworks AI)",
     "family": "muse",
     "releaseDate": "2026-08-10",
     "lastUpdated": "2026-08-10",
@@ -6539,7 +6963,7 @@
     "id": "fireworks_ai/accounts/fireworks/models/inkling",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Inkling",
+    "displayName": "Inkling (Fireworks AI)",
     "family": "ling",
     "releaseDate": "2026-07-15",
     "lastUpdated": "2026-07-15",
@@ -6587,7 +7011,7 @@
     "id": "amazon/moonshotai.kimi-k2.5",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Kimi K2.5",
+    "displayName": "Kimi K2.5 (Amazon Bedrock)",
     "family": "kimi-k2",
     "releaseDate": "2026-01",
     "lastUpdated": "2026-01",
@@ -6631,10 +7055,150 @@
     ]
   },
   {
+    "id": "amazon/amazon.nova-micro-v1:0@us",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Nova Micro (US)",
+    "family": "nova-micro",
+    "releaseDate": "2024-12-03",
+    "lastUpdated": "2024-12-03",
+    "knowledgeCutoff": "2024-10",
+    "contextWindow": 128000,
+    "maxOutputTokens": 10000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.035,
+      "output": 0.14,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "amazon/mistral.pixtral-large-2502-v1:0",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Pixtral Large (25.02) (Amazon Bedrock)",
+    "family": "pixtral",
+    "releaseDate": "2025-04-08",
+    "lastUpdated": "2025-04-08",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 6,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "amazon/amazon.nova-lite-v1:0@us",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Nova Lite (US)",
+    "family": "nova-lite",
+    "releaseDate": "2024-12-03",
+    "lastUpdated": "2024-12-03",
+    "knowledgeCutoff": "2024-10",
+    "contextWindow": 300000,
+    "maxOutputTokens": 10000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.06,
+      "output": 0.24,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "amazon/zai.glm-4.7-flash@us",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GLM-4.7-Flash (US)",
+    "displayName": "GLM-4.7-Flash (Amazon Bedrock, US)",
     "family": "glm-flash",
     "releaseDate": "2026-01-19",
     "lastUpdated": "2026-01-19",
@@ -6677,10 +7241,387 @@
     ]
   },
   {
+    "id": "amazon/google.gemma-3-12b-it@us",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Gemma 3 12B IT (Amazon Bedrock, US)",
+    "family": "gemma",
+    "releaseDate": "2025-03-12",
+    "lastUpdated": "2025-03-12",
+    "knowledgeCutoff": "2024-08",
+    "contextWindow": 128000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.09,
+      "output": 0.29,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "amazon/mistral.voxtral-mini-3b-2507",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Voxtral Mini 3B 2507 (Amazon Bedrock)",
+    "family": "voxtral",
+    "releaseDate": "2025-07-15",
+    "lastUpdated": "2025-07-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.04,
+      "output": 0.04,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "amazon/amazon.nova-pro-v1:0@us",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Nova Pro (US)",
+    "family": "nova-pro",
+    "releaseDate": "2024-12-03",
+    "lastUpdated": "2024-12-03",
+    "knowledgeCutoff": "2024-10",
+    "contextWindow": 300000,
+    "maxOutputTokens": 10000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.8,
+      "output": 3.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "amazon/google.gemma-3-12b-it",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Gemma 3 12B IT (Amazon Bedrock)",
+    "family": "gemma",
+    "releaseDate": "2025-03-12",
+    "lastUpdated": "2025-03-12",
+    "knowledgeCutoff": "2024-08",
+    "contextWindow": 128000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.09,
+      "output": 0.29,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "amazon/openai.gpt-oss-safeguard-20b",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "GPT OSS Safeguard 20B (Amazon Bedrock)",
+    "family": "gpt-oss",
+    "releaseDate": "2025-10-29",
+    "lastUpdated": "2025-10-29",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.07,
+      "output": 0.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "amazon/amazon.nova-lite-v1:0",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Nova Lite",
+    "family": "nova-lite",
+    "releaseDate": "2024-12-03",
+    "lastUpdated": "2024-12-03",
+    "knowledgeCutoff": "2024-10",
+    "contextWindow": 300000,
+    "maxOutputTokens": 10000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.06,
+      "output": 0.24,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "amazon/amazon.nova-pro-v1:0",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Nova Pro",
+    "family": "nova-pro",
+    "releaseDate": "2024-12-03",
+    "lastUpdated": "2024-12-03",
+    "knowledgeCutoff": "2024-10",
+    "contextWindow": 300000,
+    "maxOutputTokens": 10000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.8,
+      "output": 3.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "amazon/openai.gpt-oss-safeguard-20b@us",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "GPT OSS Safeguard 20B (Amazon Bedrock, US)",
+    "family": "gpt-oss",
+    "releaseDate": "2025-10-29",
+    "lastUpdated": "2025-10-29",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.07,
+      "output": 0.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "amazon/moonshot.kimi-k2-thinking",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Kimi K2 Thinking",
+    "displayName": "Kimi K2 Thinking (Amazon Bedrock)",
     "family": "kimi-thinking",
     "releaseDate": "2025-11-06",
     "lastUpdated": "2025-11-06",
@@ -6723,10 +7664,243 @@
     ]
   },
   {
+    "id": "amazon/google.gemma-3-27b-it",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Gemma 3 27B IT (Amazon Bedrock)",
+    "family": "gemma",
+    "releaseDate": "2025-03-12",
+    "lastUpdated": "2025-03-12",
+    "knowledgeCutoff": "2024-08",
+    "contextWindow": 128000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.23,
+      "output": 0.38,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "amazon/amazon.nova-micro-v1:0",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Nova Micro",
+    "family": "nova-micro",
+    "releaseDate": "2024-12-03",
+    "lastUpdated": "2024-12-03",
+    "knowledgeCutoff": "2024-10",
+    "contextWindow": 128000,
+    "maxOutputTokens": 10000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.035,
+      "output": 0.14,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "amazon/mistral.voxtral-mini-3b-2507@us",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Voxtral Mini 3B 2507 (Amazon Bedrock, US)",
+    "family": "voxtral",
+    "releaseDate": "2025-07-15",
+    "lastUpdated": "2025-07-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.04,
+      "output": 0.04,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "amazon/mistral.pixtral-large-2502-v1:0@us",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Pixtral Large (25.02) (Amazon Bedrock, US)",
+    "family": "pixtral",
+    "releaseDate": "2025-04-08",
+    "lastUpdated": "2025-04-08",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 6,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "amazon/google.gemma-3-27b-it@us",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Gemma 3 27B IT (Amazon Bedrock, US)",
+    "family": "gemma",
+    "releaseDate": "2025-03-12",
+    "lastUpdated": "2025-03-12",
+    "knowledgeCutoff": "2024-08",
+    "contextWindow": 128000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.23,
+      "output": 0.38,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "amazon/zai.glm-4.7-flash",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GLM-4.7-Flash",
+    "displayName": "GLM-4.7-Flash (Amazon Bedrock)",
     "family": "glm-flash",
     "releaseDate": "2026-01-19",
     "lastUpdated": "2026-01-19",
@@ -6756,6 +7930,194 @@
     "pricing": {
       "input": 0.07,
       "output": 0.4,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "amazon/google.gemma-3-4b-it",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Gemma 3 4B IT (Amazon Bedrock)",
+    "family": "gemma",
+    "releaseDate": "2025-03-12",
+    "lastUpdated": "2025-03-12",
+    "knowledgeCutoff": "2024-08",
+    "contextWindow": 128000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.04,
+      "output": 0.08,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "amazon/mistral.voxtral-small-24b-2507",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Voxtral Small 24B 2507 (Amazon Bedrock)",
+    "family": "voxtral",
+    "releaseDate": "2025-07-15",
+    "lastUpdated": "2025-07-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "amazon/mistral.voxtral-small-24b-2507@us",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Voxtral Small 24B 2507 (Amazon Bedrock, US)",
+    "family": "voxtral",
+    "releaseDate": "2025-07-15",
+    "lastUpdated": "2025-07-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "amazon/google.gemma-3-4b-it@us",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Gemma 3 4B IT (Amazon Bedrock, US)",
+    "family": "gemma",
+    "releaseDate": "2025-03-12",
+    "lastUpdated": "2025-03-12",
+    "knowledgeCutoff": "2024-08",
+    "contextWindow": 128000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.04,
+      "output": 0.08,
       "currency": "USD",
       "per": 1000000
     },
@@ -7029,11 +8391,11 @@
     "id": "openai/gpt-latest",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GPT-6 Astra",
+    "displayName": "GPT Latest (GPT-6 Astra)",
     "family": "gpt-astra",
     "releaseDate": "2026-09-04",
     "lastUpdated": "2026-09-04",
-    "knowledgeCutoff": null,
+    "knowledgeCutoff": "2026-04-30",
     "contextWindow": 1050000,
     "maxOutputTokens": 128000,
     "capabilities": {
@@ -7095,7 +8457,7 @@
     "family": "gpt-astra",
     "releaseDate": "2026-09-04",
     "lastUpdated": "2026-09-04",
-    "knowledgeCutoff": null,
+    "knowledgeCutoff": "2026-04-30",
     "contextWindow": 1050000,
     "maxOutputTokens": 128000,
     "capabilities": {
@@ -7844,7 +9206,6 @@
     "pricing": {
       "input": 30,
       "output": 180,
-      "cacheRead": 3,
       "currency": "USD",
       "per": 1000000,
       "tiers": [
@@ -8049,7 +9410,6 @@
     "pricing": {
       "input": 30,
       "output": 180,
-      "cacheRead": 3,
       "currency": "USD",
       "per": 1000000,
       "tiers": [
@@ -8333,7 +9693,7 @@
     "id": "openai/gpt-mini-latest",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GPT-5.4 mini",
+    "displayName": "GPT Mini Latest (GPT-5.4 mini)",
     "family": "gpt-mini",
     "releaseDate": "2026-03-17",
     "lastUpdated": "2026-03-17",
@@ -8430,7 +9790,7 @@
     "id": "openai/gpt-pro-latest",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GPT-5.5 Pro",
+    "displayName": "GPT Pro Latest (GPT-5.5 Pro)",
     "family": "gpt-pro",
     "releaseDate": "2026-04-23",
     "lastUpdated": "2026-04-23",
@@ -8462,7 +9822,6 @@
     "pricing": {
       "input": 30,
       "output": 180,
-      "cacheRead": 3,
       "currency": "USD",
       "per": 1000000,
       "tiers": [
@@ -9003,7 +10362,7 @@
     "id": "xai/grok-latest",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Grok 4.6",
+    "displayName": "Grok Latest (Grok 4.6)",
     "family": "grok",
     "releaseDate": "2026-08-12",
     "lastUpdated": "2026-08-12",
@@ -9514,7 +10873,7 @@
       "temperature": true,
       "attachment": true,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -9783,7 +11142,7 @@
     "id": "together_ai/deepseek-ai/DeepSeek-V4-Flash-0731",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "DeepSeek V4 Flash 0731",
+    "displayName": "DeepSeek V4 Flash 0731 (Together AI)",
     "family": "deepseek-flash",
     "releaseDate": "2026-07-31",
     "lastUpdated": "2026-07-31",
@@ -9827,10 +11186,58 @@
     ]
   },
   {
+    "id": "together_ai/deepseek-ai/DeepSeek-V4.1-Flash",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "DeepSeek V4.1 Flash (Together AI)",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 1.2,
+      "cacheRead": 0.006,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "together_ai/deepseek-ai/DeepSeek-V4-Pro-0813",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "DeepSeek V4 Pro 0813",
+    "displayName": "DeepSeek V4 Pro 0813 (Together AI)",
     "family": "deepseek-thinking",
     "releaseDate": "2026-08-12",
     "lastUpdated": "2026-08-22",
@@ -9877,7 +11284,7 @@
     "id": "together_ai/meta-models/Muse-Glimmer-30B",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Muse Glimmer 30B",
+    "displayName": "Muse Glimmer 30B (Together AI)",
     "family": "muse",
     "releaseDate": "2026-08-10",
     "lastUpdated": "2026-08-10",
@@ -9925,7 +11332,7 @@
     "id": "together_ai/thinkingmachines/Inkling-Small",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Inkling Small",
+    "displayName": "Inkling Small (Together AI)",
     "family": "ling",
     "releaseDate": "2026-07-30",
     "lastUpdated": "2026-07-30",
@@ -9974,7 +11381,7 @@
     "id": "together_ai/thinkingmachines/Inkling",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Inkling",
+    "displayName": "Inkling (Together AI)",
     "family": "ling",
     "releaseDate": "2026-07-15",
     "lastUpdated": "2026-07-15",
@@ -10023,7 +11430,7 @@
     "id": "together_ai/openai/gpt-oss-20b",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GPT OSS 20B",
+    "displayName": "GPT OSS 20B (Together AI)",
     "family": "gpt-oss",
     "releaseDate": "2025-08-05",
     "lastUpdated": "2025-08-05",
@@ -10069,7 +11476,7 @@
     "id": "together_ai/openai/gpt-oss-120b",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GPT OSS 120B",
+    "displayName": "GPT OSS 120B (Together AI)",
     "family": "gpt-oss",
     "releaseDate": "2025-08-05",
     "lastUpdated": "2025-08-05",
@@ -10192,8 +11599,9 @@
       ]
     },
     "pricing": {
-      "input": 2,
-      "output": 5,
+      "input": 1.5,
+      "output": 7.5,
+      "cacheRead": 0.15,
       "currency": "USD",
       "per": 1000000
     },
@@ -10312,7 +11720,7 @@
     "providerName": "Eden AI",
     "displayName": "Mistral Large 3",
     "family": "mistral-large",
-    "releaseDate": "2024-11-01",
+    "releaseDate": "2025-12-02",
     "lastUpdated": "2025-12-02",
     "knowledgeCutoff": "2024-11",
     "contextWindow": 262144,
@@ -10701,7 +12109,7 @@
     "id": "vertex/gemini-pro-latest",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Gemini 3.1 Pro Preview",
+    "displayName": "Gemini Pro Latest (Gemini 3.1 Pro Preview, Vertex AI)",
     "family": "gemini-pro",
     "releaseDate": "2026-02-19",
     "lastUpdated": "2026-02-19",
@@ -10766,7 +12174,7 @@
     "id": "vertex/gemini-3.1-flash-lite-image",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Nano Banana 2 Lite",
+    "displayName": "Nano Banana 2 Lite (Vertex AI)",
     "family": "gemini-flash-lite",
     "releaseDate": "2026-06-30",
     "lastUpdated": "2026-06-30",
@@ -10814,7 +12222,7 @@
     "id": "vertex/gemini-3.7-flash@eu",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Gemini 3.7 Flash (EU)",
+    "displayName": "Gemini 3.7 Flash (Vertex AI, EU)",
     "family": "gemini-flash",
     "releaseDate": "2026-08-13",
     "lastUpdated": "2026-08-13",
@@ -10867,7 +12275,7 @@
     "id": "vertex/gemini-2.5-flash-image",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Nano Banana",
+    "displayName": "Nano Banana (Vertex AI)",
     "family": "gemini-flash",
     "releaseDate": "2025-08-26",
     "lastUpdated": "2025-08-26",
@@ -10918,7 +12326,7 @@
     "id": "vertex/gemini-3-pro-image",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Nano Banana Pro",
+    "displayName": "Nano Banana Pro (Vertex AI)",
     "family": "gemini-pro",
     "releaseDate": "2026-05-28",
     "lastUpdated": "2026-05-28",
@@ -10969,7 +12377,7 @@
     "id": "vertex/gemini-3.1-pro-preview",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Gemini 3.1 Pro Preview",
+    "displayName": "Gemini 3.1 Pro Preview (Vertex AI)",
     "family": "gemini-pro",
     "releaseDate": "2026-02-19",
     "lastUpdated": "2026-02-19",
@@ -11034,7 +12442,7 @@
     "id": "vertex/gemini-3.8-flash@eu",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Gemini 3.8 Flash (EU)",
+    "displayName": "Gemini 3.8 Flash (Vertex AI, EU)",
     "family": "gemini-flash",
     "releaseDate": "2026-09-02",
     "lastUpdated": "2026-09-02",
@@ -11087,7 +12495,7 @@
     "id": "vertex/gemini-3.6-flash",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Gemini 3.6 Flash",
+    "displayName": "Gemini 3.6 Flash (Vertex AI)",
     "family": "gemini-flash",
     "releaseDate": "2026-07-21",
     "lastUpdated": "2026-07-21",
@@ -11140,7 +12548,7 @@
     "id": "vertex/gemini-3.1-flash-lite",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Gemini 3.1 Flash Lite",
+    "displayName": "Gemini 3.1 Flash Lite (Vertex AI)",
     "family": "gemini-flash-lite",
     "releaseDate": "2026-05-07",
     "lastUpdated": "2026-05-07",
@@ -11193,7 +12601,7 @@
     "id": "vertex/gemini-3.1-flash-lite@us",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Gemini 3.1 Flash Lite (US)",
+    "displayName": "Gemini 3.1 Flash Lite (Vertex AI, US)",
     "family": "gemini-flash-lite",
     "releaseDate": "2026-05-07",
     "lastUpdated": "2026-05-07",
@@ -11246,7 +12654,7 @@
     "id": "vertex/gemini-3.6-flash@eu",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Gemini 3.6 Flash (EU)",
+    "displayName": "Gemini 3.6 Flash (Vertex AI, EU)",
     "family": "gemini-flash",
     "releaseDate": "2026-07-21",
     "lastUpdated": "2026-07-21",
@@ -11299,7 +12707,7 @@
     "id": "vertex/gemini-3.8-flash@us",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Gemini 3.8 Flash (US)",
+    "displayName": "Gemini 3.8 Flash (Vertex AI, US)",
     "family": "gemini-flash",
     "releaseDate": "2026-09-02",
     "lastUpdated": "2026-09-02",
@@ -11352,7 +12760,7 @@
     "id": "vertex/gemini-3.6-flash@us",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Gemini 3.6 Flash (US)",
+    "displayName": "Gemini 3.6 Flash (Vertex AI, US)",
     "family": "gemini-flash",
     "releaseDate": "2026-07-21",
     "lastUpdated": "2026-07-21",
@@ -11405,7 +12813,7 @@
     "id": "vertex/gemini-3.7-flash@us",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Gemini 3.7 Flash (US)",
+    "displayName": "Gemini 3.7 Flash (Vertex AI, US)",
     "family": "gemini-flash",
     "releaseDate": "2026-08-13",
     "lastUpdated": "2026-08-13",
@@ -11458,7 +12866,7 @@
     "id": "vertex/gemini-3.5-flash",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Gemini 3.5 Flash",
+    "displayName": "Gemini 3.5 Flash (Vertex AI)",
     "family": "gemini-flash",
     "releaseDate": "2026-05-19",
     "lastUpdated": "2026-05-19",
@@ -11511,7 +12919,7 @@
     "id": "vertex/gemini-3.1-flash-image",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Nano Banana 2",
+    "displayName": "Nano Banana 2 (Vertex AI)",
     "family": "gemini-flash",
     "releaseDate": "2026-05-28",
     "lastUpdated": "2026-05-28",
@@ -11559,7 +12967,7 @@
     "id": "vertex/gemini-3.5-flash-lite",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Gemini 3.5 Flash Lite",
+    "displayName": "Gemini 3.5 Flash Lite (Vertex AI)",
     "family": "gemini-flash-lite",
     "releaseDate": "2026-07-21",
     "lastUpdated": "2026-07-21",
@@ -11612,7 +13020,7 @@
     "id": "vertex/gemini-3.5-flash-lite@us",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Gemini 3.5 Flash Lite (US)",
+    "displayName": "Gemini 3.5 Flash Lite (Vertex AI, US)",
     "family": "gemini-flash-lite",
     "releaseDate": "2026-07-21",
     "lastUpdated": "2026-07-21",
@@ -11665,7 +13073,7 @@
     "id": "vertex/gemini-3.5-flash-lite@eu",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Gemini 3.5 Flash Lite (EU)",
+    "displayName": "Gemini 3.5 Flash Lite (Vertex AI, EU)",
     "family": "gemini-flash-lite",
     "releaseDate": "2026-07-21",
     "lastUpdated": "2026-07-21",
@@ -11718,7 +13126,7 @@
     "id": "vertex/gemini-3.5-flash@us",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Gemini 3.5 Flash (US)",
+    "displayName": "Gemini 3.5 Flash (Vertex AI, US)",
     "family": "gemini-flash",
     "releaseDate": "2026-05-19",
     "lastUpdated": "2026-05-19",
@@ -11771,7 +13179,7 @@
     "id": "vertex/gemini-3-flash-preview",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Gemini 3 Flash Preview",
+    "displayName": "Gemini 3 Flash Preview (Vertex AI)",
     "family": "gemini-flash",
     "releaseDate": "2025-12-17",
     "lastUpdated": "2025-12-17",
@@ -11824,7 +13232,7 @@
     "id": "vertex/gemini-3.8-flash",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Gemini 3.8 Flash",
+    "displayName": "Gemini 3.8 Flash (Vertex AI)",
     "family": "gemini-flash",
     "releaseDate": "2026-09-02",
     "lastUpdated": "2026-09-02",
@@ -11877,7 +13285,7 @@
     "id": "vertex/gemini-3.1-flash-lite@eu",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Gemini 3.1 Flash Lite (EU)",
+    "displayName": "Gemini 3.1 Flash Lite (Vertex AI, EU)",
     "family": "gemini-flash-lite",
     "releaseDate": "2026-05-07",
     "lastUpdated": "2026-05-07",
@@ -11930,7 +13338,7 @@
     "id": "vertex/gemini-3.7-flash",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Gemini 3.7 Flash",
+    "displayName": "Gemini 3.7 Flash (Vertex AI)",
     "family": "gemini-flash",
     "releaseDate": "2026-08-13",
     "lastUpdated": "2026-08-13",
@@ -11983,7 +13391,7 @@
     "id": "vertex/gemini-flash-latest",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Gemini 3.8 Flash",
+    "displayName": "Gemini Flash Latest (Gemini 3.8 Flash, Vertex AI)",
     "family": "gemini-flash",
     "releaseDate": "2026-09-02",
     "lastUpdated": "2026-09-02",
@@ -12036,7 +13444,7 @@
     "id": "vertex/gemini-3.5-flash@eu",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Gemini 3.5 Flash (EU)",
+    "displayName": "Gemini 3.5 Flash (Vertex AI, EU)",
     "family": "gemini-flash",
     "releaseDate": "2026-05-19",
     "lastUpdated": "2026-05-19",
@@ -12089,7 +13497,7 @@
     "id": "cerebras/gpt-oss-120b",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GPT OSS 120B",
+    "displayName": "GPT OSS 120B (Cerebras)",
     "family": "gpt-oss",
     "releaseDate": "2025-08-05",
     "lastUpdated": "2025-08-05",
@@ -12136,7 +13544,7 @@
     "id": "ionos/meta-llama/Llama-3.3-70B-Instruct",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Llama-3.3-70B-Instruct",
+    "displayName": "Llama-3.3-70B-Instruct (IONOS)",
     "family": "llama",
     "releaseDate": "2024-12-06",
     "lastUpdated": "2024-12-06",
@@ -12164,8 +13572,8 @@
       ]
     },
     "pricing": {
-      "input": 0.75543,
-      "output": 0.75543,
+      "input": 0.75348,
+      "output": 0.75348,
       "currency": "USD",
       "per": 1000000
     },
@@ -12182,7 +13590,7 @@
     "id": "ionos/openai/gpt-oss-120b",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "GPT OSS 120B",
+    "displayName": "GPT OSS 120B (IONOS)",
     "family": "gpt-oss",
     "releaseDate": "2025-08-05",
     "lastUpdated": "2025-08-05",
@@ -12210,8 +13618,8 @@
       ]
     },
     "pricing": {
-      "input": 0.17433,
-      "output": 0.75543,
+      "input": 0.17388,
+      "output": 0.75348,
       "currency": "USD",
       "per": 1000000
     },

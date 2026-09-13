@@ -822,6 +822,66 @@
     ]
   },
   {
+    "id": "openai-gpt-6-astra",
+    "provider": "digitalocean",
+    "providerName": "DigitalOcean",
+    "displayName": "OpenAI GPT-6 Astra",
+    "family": "gpt-astra",
+    "releaseDate": "2026-09-04",
+    "lastUpdated": "2026-09-04",
+    "knowledgeCutoff": "2026-04-30",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 10,
+      "output": 50,
+      "cacheRead": 1,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 20,
+          "output": 75,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 20,
+        "output": 75,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "glm-5.2",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
@@ -2110,8 +2170,8 @@
       ]
     },
     "pricing": {
-      "input": 2.85,
-      "output": 14.25,
+      "input": 2.55,
+      "output": 12.95,
       "cacheRead": 0.285,
       "currency": "USD",
       "per": 1000000
@@ -2598,7 +2658,7 @@
       "temperature": true,
       "attachment": true,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -4032,7 +4092,7 @@
     "lastUpdated": "2026-08-14",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
+    "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -4054,9 +4114,9 @@
       ]
     },
     "pricing": {
-      "input": 1.4,
-      "output": 4.4,
-      "cacheRead": 0.26,
+      "input": 0.95,
+      "output": 3.4,
+      "cacheRead": 0.2,
       "currency": "USD",
       "per": 1000000
     },

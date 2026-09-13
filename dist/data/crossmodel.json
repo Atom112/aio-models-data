@@ -1147,56 +1147,6 @@
     ]
   },
   {
-    "id": "moonshot/kimi-k2.5",
-    "provider": "crossmodel",
-    "providerName": "CrossModel",
-    "displayName": "Kimi K2.5",
-    "family": "kimi-k2",
-    "releaseDate": "2026-01",
-    "lastUpdated": "2026-01",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262000,
-    "maxOutputTokens": 262000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.62,
-      "output": 3.3,
-      "cacheRead": 0.11,
-      "cacheWrite": 0.62,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "deepseek/deepseek-v4-flash-vision-exp",
     "provider": "crossmodel",
     "providerName": "CrossModel",
@@ -1229,10 +1179,10 @@
       ]
     },
     "pricing": {
-      "input": 0.405,
-      "output": 1.215,
-      "cacheRead": 0.0135,
-      "cacheWrite": 0.405,
+      "input": 0.27,
+      "output": 1.08,
+      "cacheRead": 0.0054,
+      "cacheWrite": 0.27,
       "currency": "USD",
       "per": 1000000
     },
@@ -1277,10 +1227,59 @@
       ]
     },
     "pricing": {
-      "input": 0.405,
-      "output": 1.215,
-      "cacheRead": 0.0135,
-      "cacheWrite": 0.405,
+      "input": 0.27,
+      "output": 1.08,
+      "cacheRead": 0.0054,
+      "cacheWrite": 0.27,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek/deepseek-v4.1-flash",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "DeepSeek V4.1 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.27,
+      "output": 1.08,
+      "cacheRead": 0.0054,
+      "cacheWrite": 0.27,
       "currency": "USD",
       "per": 1000000
     },
@@ -2188,7 +2187,7 @@
     "family": "gpt-astra",
     "releaseDate": "2026-09-04",
     "lastUpdated": "2026-09-04",
-    "knowledgeCutoff": null,
+    "knowledgeCutoff": "2026-04-30",
     "contextWindow": 1050000,
     "maxOutputTokens": 128000,
     "capabilities": {
@@ -2911,7 +2910,7 @@
       "temperature": true,
       "attachment": true,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -2924,10 +2923,10 @@
       ]
     },
     "pricing": {
-      "input": 0.075,
-      "output": 0.25,
-      "cacheRead": 0.015,
-      "cacheWrite": 0.075,
+      "input": 0.15,
+      "output": 0.5,
+      "cacheRead": 0.03,
+      "cacheWrite": 0.15,
       "currency": "USD",
       "per": 1000000
     },

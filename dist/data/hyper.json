@@ -78,9 +78,9 @@
       ]
     },
     "pricing": {
-      "input": 0.106,
-      "output": 0.368,
-      "cacheWrite": 0.053,
+      "input": 0.102,
+      "output": 0.356,
+      "cacheRead": 0.051,
       "currency": "USD",
       "per": 1000000
     },
@@ -221,7 +221,7 @@
     "pricing": {
       "input": 0.1175,
       "output": 1.136,
-      "cacheWrite": 0.05875,
+      "cacheRead": 0.05875,
       "currency": "USD",
       "per": 1000000
     },
@@ -363,9 +363,9 @@
       ]
     },
     "pricing": {
-      "input": 0.484,
-      "output": 1.852,
-      "cacheWrite": 0.242,
+      "input": 0.396,
+      "output": 1.464,
+      "cacheRead": 0.198,
       "currency": "USD",
       "per": 1000000
     },
@@ -458,9 +458,9 @@
       ]
     },
     "pricing": {
-      "input": 0.274,
-      "output": 0.8992,
-      "cacheWrite": 0.137,
+      "input": 0.255,
+      "output": 0.8365,
+      "cacheRead": 0.1275,
       "currency": "USD",
       "per": 1000000
     },
@@ -697,7 +697,55 @@
     "pricing": {
       "input": 0.6,
       "output": 2.5,
-      "cacheWrite": 0.3,
+      "cacheRead": 0.3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v4.1-flash",
+    "provider": "hyper",
+    "providerName": "Charm Hyper",
+    "displayName": "DeepSeek V4.1 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 26214,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 1.2,
+      "cacheRead": 0.03,
       "currency": "USD",
       "per": 1000000
     },
@@ -827,7 +875,7 @@
       "temperature": true,
       "attachment": true,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -1079,8 +1127,8 @@
     },
     "pricing": {
       "input": 0.86,
-      "output": 2.784,
-      "cacheWrite": 0.43,
+      "output": 2.752,
+      "cacheRead": 0.43,
       "currency": "USD",
       "per": 1000000
     },
@@ -1173,9 +1221,9 @@
       ]
     },
     "pricing": {
-      "input": 0.5144,
-      "output": 2.755,
-      "cacheWrite": 0.2572,
+      "input": 0.5584,
+      "output": 2.935,
+      "cacheRead": 0.2792,
       "currency": "USD",
       "per": 1000000
     },
@@ -1220,9 +1268,9 @@
       ]
     },
     "pricing": {
-      "input": 1.262,
-      "output": 4.132,
-      "cacheWrite": 0.631,
+      "input": 1.318,
+      "output": 4.308,
+      "cacheRead": 0.659,
       "currency": "USD",
       "per": 1000000
     },
@@ -1362,9 +1410,9 @@
       ]
     },
     "pricing": {
-      "input": 0.188,
-      "output": 0.7,
-      "cacheWrite": 0.094,
+      "input": 0.168,
+      "output": 0.66,
+      "cacheRead": 0.084,
       "currency": "USD",
       "per": 1000000
     },
@@ -1390,19 +1438,20 @@
     "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
@@ -1458,7 +1507,7 @@
     "pricing": {
       "input": 0.6066,
       "output": 1.0386,
-      "cacheWrite": 0.3033,
+      "cacheRead": 0.3033,
       "currency": "USD",
       "per": 1000000
     },
@@ -1553,7 +1602,7 @@
     "pricing": {
       "input": 0.445,
       "output": 2.145,
-      "cacheWrite": 0.2225,
+      "cacheRead": 0.2225,
       "currency": "USD",
       "per": 1000000
     },

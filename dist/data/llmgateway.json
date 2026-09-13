@@ -573,54 +573,6 @@
     ]
   },
   {
-    "id": "deepseek-v4-flash-vision-exp",
-    "provider": "llmgateway",
-    "providerName": "DevPass (LLM Gateway)",
-    "displayName": "DeepSeek V4 Flash Vision Exp",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-08-21",
-    "lastUpdated": "2026-08-21",
-    "knowledgeCutoff": null,
-    "contextWindow": 1050000,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.14,
-      "output": 0.28,
-      "cacheRead": 0.0028,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "gpt-4.1-nano",
     "provider": "llmgateway",
     "providerName": "DevPass (LLM Gateway)",
@@ -894,9 +846,9 @@
       ]
     },
     "pricing": {
-      "input": 0.41,
-      "output": 2.5,
-      "cacheRead": 0.08,
+      "input": 0.2,
+      "output": 2,
+      "cacheRead": 0.05,
       "currency": "USD",
       "per": 1000000
     },
@@ -2338,9 +2290,9 @@
       ]
     },
     "pricing": {
-      "input": 0.22,
-      "output": 1.137,
-      "cacheRead": 0.048,
+      "input": 0.6,
+      "output": 3.05,
+      "cacheRead": 0.13,
       "currency": "USD",
       "per": 1000000
     },
@@ -2545,9 +2497,9 @@
       ]
     },
     "pricing": {
-      "input": 0.55,
-      "output": 1.784,
-      "cacheRead": 0.111,
+      "input": 0.8,
+      "output": 2.55,
+      "cacheRead": 0.16,
       "cacheWrite": 0,
       "currency": "USD",
       "per": 1000000
@@ -2887,9 +2839,9 @@
       ]
     },
     "pricing": {
-      "input": 0.89,
-      "output": 3.71,
-      "cacheRead": 0.18,
+      "input": 0.95,
+      "output": 4,
+      "cacheRead": 0.19,
       "currency": "USD",
       "per": 1000000
     },
@@ -3768,6 +3720,54 @@
     ]
   },
   {
+    "id": "deepseek-v4.1-flash",
+    "provider": "llmgateway",
+    "providerName": "DevPass (LLM Gateway)",
+    "displayName": "DeepSeek V4.1 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.6,
+      "cacheRead": 0.003,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "hy3",
     "provider": "llmgateway",
     "providerName": "DevPass (LLM Gateway)",
@@ -3799,9 +3799,9 @@
       ]
     },
     "pricing": {
-      "input": 0.14,
-      "output": 0.58,
-      "cacheRead": 0.035,
+      "input": 0.132,
+      "output": 0.528,
+      "cacheRead": 0.033,
       "currency": "USD",
       "per": 1000000
     },
@@ -4052,6 +4052,53 @@
     ]
   },
   {
+    "id": "hy4-preview",
+    "provider": "llmgateway",
+    "providerName": "DevPass (LLM Gateway)",
+    "displayName": "Hy4 preview",
+    "family": "Hy",
+    "releaseDate": "2026-08-28",
+    "lastUpdated": "2026-08-28",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.834,
+      "output": 2.501,
+      "cacheRead": 0.042,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "ernie-4.5-vl-424b-a47b",
     "provider": "llmgateway",
     "providerName": "DevPass (LLM Gateway)",
@@ -4154,7 +4201,7 @@
     "providerName": "DevPass (LLM Gateway)",
     "displayName": "Mistral Large 3",
     "family": "mistral-large",
-    "releaseDate": "2024-11-01",
+    "releaseDate": "2025-12-02",
     "lastUpdated": "2025-12-02",
     "knowledgeCutoff": "2024-11",
     "contextWindow": 262144,
@@ -4426,6 +4473,52 @@
       "input": 2.5,
       "output": 10,
       "cacheRead": 1.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "hy-mt2-plus",
+    "provider": "llmgateway",
+    "providerName": "DevPass (LLM Gateway)",
+    "displayName": "Hy-MT2 Plus",
+    "family": "Hy",
+    "releaseDate": "2026-05-21",
+    "lastUpdated": "2026-05-21",
+    "knowledgeCutoff": null,
+    "contextWindow": 8192,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.074,
+      "output": 0.295,
       "currency": "USD",
       "per": 1000000
     },
@@ -4718,9 +4811,9 @@
       ]
     },
     "pricing": {
-      "input": 2.83,
-      "output": 14.13,
-      "cacheRead": 0.28,
+      "input": 3,
+      "output": 15,
+      "cacheRead": 0.3,
       "currency": "USD",
       "per": 1000000
     },
@@ -4958,9 +5051,9 @@
       ]
     },
     "pricing": {
-      "input": 1.99,
-      "output": 6.16,
-      "cacheRead": 0.4,
+      "input": 2.2,
+      "output": 6.5,
+      "cacheRead": 0.45,
       "currency": "USD",
       "per": 1000000
     },
@@ -5189,7 +5282,7 @@
       "temperature": true,
       "attachment": true,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -5203,9 +5296,9 @@
       ]
     },
     "pricing": {
-      "input": 0.1,
+      "input": 0.088,
       "output": 0.25,
-      "cacheRead": 0.02,
+      "cacheRead": 0.025,
       "currency": "USD",
       "per": 1000000
     },
@@ -6263,6 +6356,54 @@
     ]
   },
   {
+    "id": "fugu-max",
+    "provider": "llmgateway",
+    "providerName": "DevPass (LLM Gateway)",
+    "displayName": "Fugu Max",
+    "family": "fugu",
+    "releaseDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 1000000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 6,
+      "cacheRead": 0.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "gpt-5.4-mini",
     "provider": "llmgateway",
     "providerName": "DevPass (LLM Gateway)",
@@ -6499,9 +6640,9 @@
       ]
     },
     "pricing": {
-      "input": 0.102,
-      "output": 0.297,
-      "cacheRead": 0.012,
+      "input": 0.1,
+      "output": 0.25,
+      "cacheRead": 0.01,
       "currency": "USD",
       "per": 1000000
     },
@@ -6793,9 +6934,9 @@
       ]
     },
     "pricing": {
-      "input": 1.815,
-      "output": 5.4461,
-      "cacheRead": 0.21,
+      "input": 2,
+      "output": 6,
+      "cacheRead": 0.25,
       "cacheWrite": 2.5,
       "currency": "USD",
       "per": 1000000
@@ -7703,6 +7844,53 @@
     ]
   },
   {
+    "id": "glm-5-turbo",
+    "provider": "llmgateway",
+    "providerName": "DevPass (LLM Gateway)",
+    "displayName": "GLM-5-Turbo",
+    "family": "glm",
+    "releaseDate": "2026-03-16",
+    "lastUpdated": "2026-03-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.2,
+      "output": 4,
+      "cacheRead": 0.24,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "gpt-5-mini",
     "provider": "llmgateway",
     "providerName": "DevPass (LLM Gateway)",
@@ -8151,6 +8339,56 @@
     ]
   },
   {
+    "id": "glm-5v-turbo",
+    "provider": "llmgateway",
+    "providerName": "DevPass (LLM Gateway)",
+    "displayName": "GLM-5V-Turbo",
+    "family": "glm",
+    "releaseDate": "2026-04-01",
+    "lastUpdated": "2026-04-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.2,
+      "output": 4,
+      "cacheRead": 0.24,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "gpt-4",
     "provider": "llmgateway",
     "providerName": "DevPass (LLM Gateway)",
@@ -8454,6 +8692,54 @@
     ]
   },
   {
+    "id": "fugu-ultra-v2.0",
+    "provider": "llmgateway",
+    "providerName": "DevPass (LLM Gateway)",
+    "displayName": "Fugu Ultra v2.0",
+    "family": "fugu",
+    "releaseDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 1000000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 30,
+      "cacheRead": 0.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "claude-sonnet-5",
     "provider": "llmgateway",
     "providerName": "DevPass (LLM Gateway)",
@@ -8515,13 +8801,13 @@
     "maxOutputTokens": 4096,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": false,
       "open_weights": true
     },
