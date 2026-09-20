@@ -130,10 +130,10 @@
       ]
     },
     "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
+      "input": 5.5,
+      "output": 27.5,
+      "cacheRead": 0.55,
+      "cacheWrite": 6.875,
       "currency": "USD",
       "per": 1000000
     },
@@ -277,10 +277,10 @@
       ]
     },
     "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
+      "input": 5.5,
+      "output": 27.5,
+      "cacheRead": 0.55,
+      "cacheWrite": 6.875,
       "currency": "USD",
       "per": 1000000
     },
@@ -508,8 +508,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
       ],
       "output": [
         "text"
@@ -934,7 +933,7 @@
     "lastUpdated": "2026-03-13",
     "knowledgeCutoff": "2025-08-31",
     "contextWindow": 1000000,
-    "maxOutputTokens": 64000,
+    "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -1123,9 +1122,9 @@
     "providerName": "Amazon Bedrock",
     "displayName": "Claude Opus 4.5",
     "family": "claude-opus",
-    "releaseDate": "2025-11-24",
-    "lastUpdated": "2025-08-01",
-    "knowledgeCutoff": "2025-03-31",
+    "releaseDate": "2025-11-01",
+    "lastUpdated": "2025-11-01",
+    "knowledgeCutoff": "2025-05",
     "contextWindow": 200000,
     "maxOutputTokens": 64000,
     "capabilities": {
@@ -1249,10 +1248,10 @@
       ]
     },
     "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
+      "input": 5.5,
+      "output": 27.5,
+      "cacheRead": 0.55,
+      "cacheWrite": 6.875,
       "currency": "USD",
       "per": 1000000
     },
@@ -1281,11 +1280,11 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": false,
       "attachment": true,
-      "structured_output": true,
+      "structured_output": false,
       "open_weights": false
     },
     "modalities": {
@@ -1416,8 +1415,8 @@
     "displayName": "AU Anthropic Claude Sonnet 4.6",
     "family": "claude-sonnet",
     "releaseDate": "2026-02-17",
-    "lastUpdated": "2026-02-17",
-    "knowledgeCutoff": "2025-08",
+    "lastUpdated": "2026-03-13",
+    "knowledgeCutoff": "2025-08-31",
     "contextWindow": 1000000,
     "maxOutputTokens": 128000,
     "capabilities": {
@@ -1590,10 +1589,10 @@
       ]
     },
     "pricing": {
-      "input": 3,
-      "output": 15,
-      "cacheRead": 0.3,
-      "cacheWrite": 3.75,
+      "input": 3.3,
+      "output": 16.5,
+      "cacheRead": 0.33,
+      "cacheWrite": 4.125,
       "currency": "USD",
       "per": 1000000
     },
@@ -1632,8 +1631,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
       ],
       "output": [
         "text"
@@ -1880,7 +1878,7 @@
     "lastUpdated": "2026-03-13",
     "knowledgeCutoff": "2025-08-31",
     "contextWindow": 1000000,
-    "maxOutputTokens": 64000,
+    "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -1904,10 +1902,10 @@
       ]
     },
     "pricing": {
-      "input": 3,
-      "output": 15,
-      "cacheRead": 0.3,
-      "cacheWrite": 3.75,
+      "input": 3.3,
+      "output": 16.5,
+      "cacheRead": 0.33,
+      "cacheWrite": 4.125,
       "currency": "USD",
       "per": 1000000
     },
@@ -2165,9 +2163,9 @@
     "providerName": "Amazon Bedrock",
     "displayName": "Claude Opus 4.5 (EU)",
     "family": "claude-opus",
-    "releaseDate": "2025-11-24",
-    "lastUpdated": "2025-08-01",
-    "knowledgeCutoff": "2025-03-31",
+    "releaseDate": "2025-11-01",
+    "lastUpdated": "2025-11-01",
+    "knowledgeCutoff": "2025-05",
     "contextWindow": 200000,
     "maxOutputTokens": 64000,
     "capabilities": {
@@ -2413,11 +2411,11 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": false,
       "attachment": true,
-      "structured_output": true,
+      "structured_output": false,
       "open_weights": false
     },
     "modalities": {
@@ -2732,6 +2730,56 @@
     ]
   },
   {
+    "id": "eu.anthropic.claude-sonnet-4-20250514-v1:0",
+    "provider": "amazon-bedrock",
+    "providerName": "Amazon Bedrock",
+    "displayName": "Claude Sonnet 4 (EU)",
+    "family": "claude-sonnet",
+    "releaseDate": "2025-05-22",
+    "lastUpdated": "2025-05-22",
+    "knowledgeCutoff": "2025-03-31",
+    "contextWindow": 200000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 15,
+      "cacheRead": 0.3,
+      "cacheWrite": 3.75,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "qwen.qwen3-32b-v1:0",
     "provider": "amazon-bedrock",
     "providerName": "Amazon Bedrock",
@@ -2955,10 +3003,10 @@
       ]
     },
     "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
+      "input": 5.5,
+      "output": 27.5,
+      "cacheRead": 0.55,
+      "cacheWrite": 6.875,
       "currency": "USD",
       "per": 1000000
     },
@@ -3005,10 +3053,10 @@
       ]
     },
     "pricing": {
-      "input": 1,
-      "output": 5,
-      "cacheRead": 0.1,
-      "cacheWrite": 1.25,
+      "input": 1.1,
+      "output": 5.5,
+      "cacheRead": 0.11,
+      "cacheWrite": 1.375,
       "currency": "USD",
       "per": 1000000
     },
@@ -3156,10 +3204,10 @@
       ]
     },
     "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
+      "input": 5.5,
+      "output": 27.5,
+      "cacheRead": 0.55,
+      "cacheWrite": 6.875,
       "currency": "USD",
       "per": 1000000
     },
@@ -3257,6 +3305,56 @@
       "per": 1000000
     },
     "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "global.anthropic.claude-sonnet-4-20250514-v1:0",
+    "provider": "amazon-bedrock",
+    "providerName": "Amazon Bedrock",
+    "displayName": "Claude Sonnet 4 (Global)",
+    "family": "claude-sonnet",
+    "releaseDate": "2025-05-22",
+    "lastUpdated": "2025-05-22",
+    "knowledgeCutoff": "2025-03-31",
+    "contextWindow": 200000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 15,
+      "cacheRead": 0.3,
+      "cacheWrite": 3.75,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -3460,10 +3558,10 @@
       ]
     },
     "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
+      "input": 5.5,
+      "output": 27.5,
+      "cacheRead": 0.55,
+      "cacheWrite": 6.875,
       "currency": "USD",
       "per": 1000000
     },
@@ -3725,9 +3823,9 @@
     "providerName": "Amazon Bedrock",
     "displayName": "Claude Opus 4.5 (Global)",
     "family": "claude-opus",
-    "releaseDate": "2025-11-24",
-    "lastUpdated": "2025-08-01",
-    "knowledgeCutoff": "2025-03-31",
+    "releaseDate": "2025-11-01",
+    "lastUpdated": "2025-11-01",
+    "knowledgeCutoff": "2025-05",
     "contextWindow": 200000,
     "maxOutputTokens": 64000,
     "capabilities": {
@@ -3947,8 +4045,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
       ],
       "output": [
         "text"
@@ -4160,10 +4257,10 @@
       ]
     },
     "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
+      "input": 5.5,
+      "output": 27.5,
+      "cacheRead": 0.55,
+      "cacheWrite": 6.875,
       "currency": "USD",
       "per": 1000000
     },
@@ -4183,8 +4280,8 @@
     "displayName": "AU Anthropic Claude Opus 4.6",
     "family": "claude-opus",
     "releaseDate": "2026-02-05",
-    "lastUpdated": "2026-02-05",
-    "knowledgeCutoff": "2025-05",
+    "lastUpdated": "2026-03-13",
+    "knowledgeCutoff": "2025-05-31",
     "contextWindow": 1000000,
     "maxOutputTokens": 128000,
     "capabilities": {
@@ -4210,10 +4307,10 @@
       ]
     },
     "pricing": {
-      "input": 16.5,
-      "output": 82.5,
-      "cacheRead": 1.65,
-      "cacheWrite": 20.625,
+      "input": 5.5,
+      "output": 27.5,
+      "cacheRead": 0.55,
+      "cacheWrite": 6.875,
       "currency": "USD",
       "per": 1000000
     },
@@ -4298,8 +4395,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
       ],
       "output": [
         "text"
@@ -4661,8 +4757,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
       ],
       "output": [
         "text"
@@ -4689,6 +4784,56 @@
       }
     },
     "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
+    "provider": "amazon-bedrock",
+    "providerName": "Amazon Bedrock",
+    "displayName": "Claude Sonnet 4 (US)",
+    "family": "claude-sonnet",
+    "releaseDate": "2025-05-22",
+    "lastUpdated": "2025-05-22",
+    "knowledgeCutoff": "2025-03-31",
+    "contextWindow": 200000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 15,
+      "cacheRead": 0.3,
+      "cacheWrite": 3.75,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -4920,10 +5065,10 @@
       ]
     },
     "pricing": {
-      "input": 10,
-      "output": 50,
-      "cacheRead": 1,
-      "cacheWrite": 12.5,
+      "input": 11,
+      "output": 55,
+      "cacheRead": 1.1,
+      "cacheWrite": 13.75,
       "currency": "USD",
       "per": 1000000
     },
@@ -5012,8 +5157,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
       ],
       "output": [
         "text"
@@ -5520,10 +5664,10 @@
       ]
     },
     "pricing": {
-      "input": 1,
-      "output": 5,
-      "cacheRead": 0.1,
-      "cacheWrite": 1.25,
+      "input": 1.1,
+      "output": 5.5,
+      "cacheRead": 0.11,
+      "cacheWrite": 1.375,
       "currency": "USD",
       "per": 1000000
     },
@@ -5546,7 +5690,7 @@
     "lastUpdated": "2026-03-13",
     "knowledgeCutoff": "2025-08-31",
     "contextWindow": 1000000,
-    "maxOutputTokens": 64000,
+    "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -5682,10 +5826,10 @@
       ]
     },
     "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
+      "input": 5.5,
+      "output": 27.5,
+      "cacheRead": 0.55,
+      "cacheWrite": 6.875,
       "currency": "USD",
       "per": 1000000
     },
@@ -5810,11 +5954,11 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": false,
       "attachment": true,
-      "structured_output": true,
+      "structured_output": false,
       "open_weights": false
     },
     "modalities": {
@@ -5828,10 +5972,10 @@
       ]
     },
     "pricing": {
-      "input": 2,
-      "output": 10,
-      "cacheRead": 0.2,
-      "cacheWrite": 2.5,
+      "input": 2.2,
+      "output": 11,
+      "cacheRead": 0.22,
+      "cacheWrite": 2.75,
       "currency": "USD",
       "per": 1000000
     },
@@ -6268,8 +6412,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
       ],
       "output": [
         "text"
@@ -6564,7 +6707,7 @@
     "lastUpdated": "2026-03-13",
     "knowledgeCutoff": "2025-08-31",
     "contextWindow": 1000000,
-    "maxOutputTokens": 64000,
+    "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -6588,10 +6731,10 @@
       ]
     },
     "pricing": {
-      "input": 3,
-      "output": 15,
-      "cacheRead": 0.3,
-      "cacheWrite": 3.75,
+      "input": 3.3,
+      "output": 16.5,
+      "cacheRead": 0.33,
+      "cacheWrite": 4.125,
       "currency": "USD",
       "per": 1000000
     },
@@ -6847,9 +6990,9 @@
     "providerName": "Amazon Bedrock",
     "displayName": "Claude Opus 4.5 (US)",
     "family": "claude-opus",
-    "releaseDate": "2025-11-24",
-    "lastUpdated": "2025-08-01",
-    "knowledgeCutoff": "2025-03-31",
+    "releaseDate": "2025-11-01",
+    "lastUpdated": "2025-11-01",
+    "knowledgeCutoff": "2025-05",
     "contextWindow": 200000,
     "maxOutputTokens": 64000,
     "capabilities": {
@@ -6875,10 +7018,10 @@
       ]
     },
     "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
+      "input": 5.5,
+      "output": 27.5,
+      "cacheRead": 0.55,
+      "cacheWrite": 6.875,
       "currency": "USD",
       "per": 1000000
     },
@@ -6951,7 +7094,7 @@
     "lastUpdated": "2026-03-13",
     "knowledgeCutoff": "2025-08-31",
     "contextWindow": 1000000,
-    "maxOutputTokens": 64000,
+    "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -6975,10 +7118,10 @@
       ]
     },
     "pricing": {
-      "input": 3,
-      "output": 15,
-      "cacheRead": 0.3,
-      "cacheWrite": 3.75,
+      "input": 3.3,
+      "output": 16.5,
+      "cacheRead": 0.33,
+      "cacheWrite": 4.125,
       "currency": "USD",
       "per": 1000000
     },
@@ -7025,10 +7168,10 @@
       ]
     },
     "pricing": {
-      "input": 3,
-      "output": 15,
-      "cacheRead": 0.3,
-      "cacheWrite": 3.75,
+      "input": 3.3,
+      "output": 16.5,
+      "cacheRead": 0.33,
+      "cacheWrite": 4.125,
       "currency": "USD",
       "per": 1000000
     },
@@ -7121,10 +7264,10 @@
       ]
     },
     "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
+      "input": 5.5,
+      "output": 27.5,
+      "cacheRead": 0.55,
+      "cacheWrite": 6.875,
       "currency": "USD",
       "per": 1000000
     },
@@ -7171,10 +7314,10 @@
       ]
     },
     "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
+      "input": 5.5,
+      "output": 27.5,
+      "cacheRead": 0.55,
+      "cacheWrite": 6.875,
       "currency": "USD",
       "per": 1000000
     },
@@ -7238,6 +7381,56 @@
     ]
   },
   {
+    "id": "apac.anthropic.claude-sonnet-4-20250514-v1:0",
+    "provider": "amazon-bedrock",
+    "providerName": "Amazon Bedrock",
+    "displayName": "Claude Sonnet 4 (APAC)",
+    "family": "claude-sonnet",
+    "releaseDate": "2025-05-22",
+    "lastUpdated": "2025-05-22",
+    "knowledgeCutoff": "2025-03-31",
+    "contextWindow": 200000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 15,
+      "cacheRead": 0.3,
+      "cacheWrite": 3.75,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "jp.anthropic.claude-sonnet-5",
     "provider": "amazon-bedrock",
     "providerName": "Amazon Bedrock",
@@ -7253,11 +7446,11 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": false,
       "attachment": true,
-      "structured_output": true,
+      "structured_output": false,
       "open_weights": false
     },
     "modalities": {
@@ -7271,10 +7464,10 @@
       ]
     },
     "pricing": {
-      "input": 2,
-      "output": 10,
-      "cacheRead": 0.2,
-      "cacheWrite": 2.5,
+      "input": 2.2,
+      "output": 11,
+      "cacheRead": 0.22,
+      "cacheWrite": 2.75,
       "currency": "USD",
       "per": 1000000
     },
@@ -7303,11 +7496,11 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": false,
       "attachment": true,
-      "structured_output": true,
+      "structured_output": false,
       "open_weights": false
     },
     "modalities": {
@@ -7321,10 +7514,10 @@
       ]
     },
     "pricing": {
-      "input": 2,
-      "output": 10,
-      "cacheRead": 0.2,
-      "cacheWrite": 2.5,
+      "input": 2.2,
+      "output": 11,
+      "cacheRead": 0.22,
+      "cacheWrite": 2.75,
       "currency": "USD",
       "per": 1000000
     },
@@ -7561,10 +7754,10 @@
       ]
     },
     "pricing": {
-      "input": 1,
-      "output": 5,
-      "cacheRead": 0.1,
-      "cacheWrite": 1.25,
+      "input": 1.1,
+      "output": 5.5,
+      "cacheRead": 0.11,
+      "cacheWrite": 1.375,
       "currency": "USD",
       "per": 1000000
     },
@@ -7643,11 +7836,11 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": false,
       "attachment": true,
-      "structured_output": true,
+      "structured_output": false,
       "open_weights": false
     },
     "modalities": {
@@ -7757,10 +7950,10 @@
       ]
     },
     "pricing": {
-      "input": 3,
-      "output": 15,
-      "cacheRead": 0.3,
-      "cacheWrite": 3.75,
+      "input": 3.3,
+      "output": 16.5,
+      "cacheRead": 0.33,
+      "cacheWrite": 4.125,
       "currency": "USD",
       "per": 1000000
     },
@@ -7799,8 +7992,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
       ],
       "output": [
         "text"

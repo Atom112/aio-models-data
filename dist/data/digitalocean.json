@@ -1704,6 +1704,54 @@
     ]
   },
   {
+    "id": "deepseek-v4.1-flash",
+    "provider": "digitalocean",
+    "providerName": "DigitalOcean",
+    "displayName": "DeepSeek V4.1 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 1.2,
+      "cacheRead": 0.006,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "anthropic-claude-3.7-sonnet",
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
@@ -1969,8 +2017,8 @@
       ]
     },
     "pricing": {
-      "input": 0.2,
-      "output": 0.696,
+      "input": 0.25,
+      "output": 0.87,
       "currency": "USD",
       "per": 1000000
     },
@@ -2642,7 +2690,7 @@
     "provider": "digitalocean",
     "providerName": "DigitalOcean",
     "displayName": "GLM5.3 Flash",
-    "family": "glm",
+    "family": "glm-flash",
     "releaseDate": "2026-08-26",
     "lastUpdated": "2026-08-26",
     "knowledgeCutoff": null,

@@ -49,55 +49,6 @@
     ]
   },
   {
-    "id": "umans-glm-5.2",
-    "provider": "umans-ai-coding-plan",
-    "providerName": "Umans AI Coding Plan",
-    "displayName": "GLM 5.2",
-    "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
-    "knowledgeCutoff": null,
-    "contextWindow": 405504,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "cacheWrite": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "umans-kimi-k3",
     "provider": "umans-ai-coding-plan",
     "providerName": "Umans AI Coding Plan",
@@ -124,56 +75,6 @@
       "input": [
         "text",
         "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "cacheWrite": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "umans-kimi-k2.7",
-    "provider": "umans-ai-coding-plan",
-    "providerName": "Umans AI Coding Plan",
-    "displayName": "Kimi K2.7 Code",
-    "family": "kimi-k2",
-    "releaseDate": "2026-06-12",
-    "lastUpdated": "2026-06-12",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
       ],
       "output": [
         "text"
@@ -245,16 +146,66 @@
     ]
   },
   {
+    "id": "umans-glm-5.3-flash",
+    "provider": "umans-ai-coding-plan",
+    "providerName": "Umans AI Coding Plan",
+    "displayName": "GLM 5.3 Flash",
+    "family": "glm-flash",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131071,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "cacheWrite": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "umans-coder",
     "provider": "umans-ai-coding-plan",
     "providerName": "Umans AI Coding Plan",
     "displayName": "Umans Coder",
-    "family": "kimi-k2",
-    "releaseDate": "2026-06-12",
-    "lastUpdated": "2026-06-12",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "family": "glm-flash",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131071,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -270,7 +221,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "video"
       ],
       "output": [
         "text"

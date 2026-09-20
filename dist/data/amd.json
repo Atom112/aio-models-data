@@ -1,5 +1,51 @@
 [
   {
+    "id": "Qwen3.8-27B",
+    "provider": "amd",
+    "providerName": "AMD",
+    "displayName": "Qwen3.8 27B",
+    "family": "qwen",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 131072,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "Qwen3.8-Flash-Next",
     "provider": "amd",
     "providerName": "AMD",
@@ -56,7 +102,7 @@
     "releaseDate": "2026-07-31",
     "lastUpdated": "2026-07-31",
     "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
+    "contextWindow": 1048576,
     "maxOutputTokens": 384000,
     "capabilities": {
       "tools": true,
@@ -101,7 +147,7 @@
     "displayName": "DeepSeek V4 Flash Vision Exp",
     "family": "deepseek-flash",
     "releaseDate": "2026-08-21",
-    "lastUpdated": "2026-08-21",
+    "lastUpdated": "2026-09-01",
     "knowledgeCutoff": null,
     "contextWindow": 1000000,
     "maxOutputTokens": 384000,
@@ -115,7 +161,7 @@
       "temperature": true,
       "attachment": true,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -143,13 +189,13 @@
     ]
   },
   {
-    "id": "MiniCPM5-1B",
+    "id": "MiniCPM5-2B",
     "provider": "amd",
     "providerName": "AMD",
-    "displayName": "MiniCPM5-1B",
+    "displayName": "MiniCPM5-2B",
     "family": null,
-    "releaseDate": "2026-05-19",
-    "lastUpdated": "2026-05-19",
+    "releaseDate": "2026-09-06",
+    "lastUpdated": "2026-09-12",
     "knowledgeCutoff": null,
     "contextWindow": 131072,
     "maxOutputTokens": 131072,
@@ -177,6 +223,54 @@
       "input": 0.124,
       "output": 0.7425,
       "cacheRead": 0.124,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "DeepSeek-V4.1-Flash",
+    "provider": "amd",
+    "providerName": "AMD",
+    "displayName": "DeepSeek V4.1 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.14,
+      "output": 0.28,
+      "cacheRead": 0.0028,
       "currency": "USD",
       "per": 1000000
     },

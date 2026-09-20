@@ -222,6 +222,54 @@
     ]
   },
   {
+    "id": "deepseek-v4-flash-vision-exp",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "DeepSeek V4 Flash Vision Exp",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-08-21",
+    "lastUpdated": "2026-09-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.155,
+      "output": 0.62,
+      "cacheRead": 0.0031,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "deepseek-v4-pro-0813",
     "provider": "aihubmix",
     "providerName": "AIHubMix",
@@ -1737,6 +1785,56 @@
     ]
   },
   {
+    "id": "claude-fable-5-1",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Claude Fable 5.1",
+    "family": "claude-fable",
+    "releaseDate": "2026-09-01",
+    "lastUpdated": "2026-09-01",
+    "knowledgeCutoff": "2026-06",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 11,
+      "output": 55,
+      "cacheRead": 0.275,
+      "cacheWrite": 13.75,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "gpt-5.1",
     "provider": "aihubmix",
     "providerName": "AIHubMix",
@@ -2408,7 +2506,7 @@
     "provider": "aihubmix",
     "providerName": "AIHubMix",
     "displayName": "GLM-5.3-Flash",
-    "family": "glm",
+    "family": "glm-flash",
     "releaseDate": "2026-08-26",
     "lastUpdated": "2026-08-26",
     "knowledgeCutoff": null,
@@ -2712,6 +2810,56 @@
         "output": 4.06,
         "contextThreshold": 200000
       }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.8-flash",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Qwen3.8 Flash",
+    "family": "qwen",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1126,
+      "output": 0.380025,
+      "cacheRead": 0.014075,
+      "cacheWrite": 0.175937,
+      "currency": "USD",
+      "per": 1000000
     },
     "status": "active",
     "deprecationDate": null,
@@ -3641,6 +3789,55 @@
       "input": 0.7042,
       "output": 3.09848,
       "cacheRead": 0.169008,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "ox-alpha",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Ox Alpha",
+    "family": "glm-flash",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
       "currency": "USD",
       "per": 1000000
     },

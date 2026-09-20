@@ -1,25 +1,25 @@
 [
   {
-    "id": "Nemotron-3-Nano-Omni-30B-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Nemotron 3 Nano Omni 30B TEE",
-    "family": "nemotron",
-    "releaseDate": "2026-07-23",
-    "lastUpdated": "2026-07-23",
+    "id": "deepseek-v4-pro-0813",
+    "provider": "melious",
+    "providerName": "Melious",
+    "displayName": "DeepSeek V4 Pro 0813",
+    "family": "deepseek-thinking",
+    "releaseDate": "2026-08-12",
+    "lastUpdated": "2026-08-22",
     "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 0,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -31,9 +31,9 @@
       ]
     },
     "pricing": {
-      "input": 0.0245,
-      "output": 0.0978,
-      "cacheRead": 0.0024499999999999995,
+      "input": 1.1592,
+      "output": 3.4776,
+      "cacheRead": 0.11592,
       "currency": "USD",
       "per": 1000000
     },
@@ -47,16 +47,16 @@
     ]
   },
   {
-    "id": "deepseek-ai/DeepSeek-V4-Flash-0731-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "DeepSeek V4 Flash 0731 TEE",
+    "id": "deepseek-v4-flash-0731",
+    "provider": "melious",
+    "providerName": "Melious",
+    "displayName": "DeepSeek V4 Flash 0731",
     "family": "deepseek-flash",
     "releaseDate": "2026-07-31",
-    "lastUpdated": "2026-08-02",
+    "lastUpdated": "2026-07-31",
     "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -78,9 +78,9 @@
       ]
     },
     "pricing": {
-      "input": 0.44,
-      "output": 1.32,
-      "cacheRead": 0.04399999999999999,
+      "input": 0.11592,
+      "output": 0.2898,
+      "cacheRead": 0.023184,
       "currency": "USD",
       "per": 1000000
     },
@@ -94,63 +94,16 @@
     ]
   },
   {
-    "id": "deepseek-ai/DeepSeek-V3.2-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "DeepSeek V3.2 TEE",
-    "family": "deepseek",
-    "releaseDate": "2025-12",
-    "lastUpdated": "2026-06-21",
-    "knowledgeCutoff": "2024-07",
-    "contextWindow": 131072,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1,
-      "output": 1,
-      "cacheRead": 0.09999999999999998,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "google/gemma-4-31B-turbo-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "gemma 4 31B turbo TEE",
-    "family": "gemma",
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-04-02",
-    "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 65536,
+    "id": "kimi-k2.6",
+    "provider": "melious",
+    "providerName": "Melious",
+    "displayName": "Kimi K2.6",
+    "family": "kimi-k2",
+    "releaseDate": "2026-04-21",
+    "lastUpdated": "2026-04-21",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -166,16 +119,17 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "video"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.12,
-      "output": 0.37,
-      "cacheRead": 0.011999999999999997,
+      "input": 0.81144,
+      "output": 4.0572,
+      "cacheRead": 0.266616,
       "currency": "USD",
       "per": 1000000
     },
@@ -189,63 +143,16 @@
     ]
   },
   {
-    "id": "zai-org/GLM-5.1-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "GLM 5.1 TEE",
-    "family": "glm",
-    "releaseDate": "2026-04-07",
-    "lastUpdated": "2026-04-07",
-    "knowledgeCutoff": null,
-    "contextWindow": 202752,
-    "maxOutputTokens": 65535,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.98,
-      "output": 3.08,
-      "cacheRead": 0.09799999999999998,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/GLM-5.2-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "GLM 5.2 TEE",
+    "id": "glm-5.2",
+    "provider": "melious",
+    "providerName": "Melious",
+    "displayName": "GLM-5.2",
     "family": "glm",
     "releaseDate": "2026-06-13",
     "lastUpdated": "2026-06-13",
     "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65535,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -267,9 +174,9 @@
       ]
     },
     "pricing": {
-      "input": 1.25,
-      "output": 3.95,
-      "cacheRead": 0.12499999999999997,
+      "input": 1.1592,
+      "output": 4.6368,
+      "cacheRead": 0.2898,
       "currency": "USD",
       "per": 1000000
     },
@@ -283,184 +190,42 @@
     ]
   },
   {
-    "id": "Qwen/Qwen3.8-27B-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Qwen3.8 27B TEE",
-    "family": "qwen",
-    "releaseDate": "2026-08-16",
-    "lastUpdated": "2026-08-16",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.24,
-      "output": 2.2,
-      "cacheRead": 0.023999999999999994,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3.6-27B-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Qwen3.6 27B TEE",
-    "family": "qwen",
-    "releaseDate": "2026-04-22",
-    "lastUpdated": "2026-04-22",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 2,
-      "cacheRead": 0.029999999999999992,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3.5-397B-A17B-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Qwen3.5 397B A17B TEE",
-    "family": "qwen",
-    "releaseDate": "2026-02-15",
-    "lastUpdated": "2026-02-15",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.45,
-      "output": 3,
-      "cacheRead": 0.04499999999999999,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3-235B-A22B-Thinking-2507-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Qwen3 235B A22B Thinking 2507 TEE",
-    "family": "qwen",
-    "releaseDate": "2025-07",
-    "lastUpdated": "2026-06-21",
-    "knowledgeCutoff": "2025-04",
+    "id": "kimi-k2.7-code",
+    "provider": "melious",
+    "providerName": "Melious",
+    "displayName": "Kimi K2.7 Code",
+    "family": "kimi-k2",
+    "releaseDate": "2026-06-12",
+    "lastUpdated": "2026-06-12",
+    "knowledgeCutoff": "2025-01",
     "contextWindow": 262144,
     "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
+      "temperature": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "video"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.2989,
-      "output": 1.1957,
-      "cacheRead": 0.029889999999999993,
+      "input": 0.81144,
+      "output": 3.4776,
+      "cacheRead": 0.220248,
       "currency": "USD",
       "per": 1000000
     },
@@ -474,67 +239,117 @@
     ]
   },
   {
-    "id": "Qwen/Qwen3-32B-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Qwen3 32B TEE",
-    "family": "qwen",
-    "releaseDate": "2025-04",
-    "lastUpdated": "2025-04",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 40960,
-    "maxOutputTokens": 40960,
+    "id": "deepseek-v4.1-flash",
+    "provider": "melious",
+    "providerName": "Melious",
+    "displayName": "DeepSeek V4.1 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.23184,
+      "output": 1.1592,
+      "cacheRead": 0.011592,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k3",
+    "provider": "melious",
+    "providerName": "Melious",
+    "displayName": "Kimi K3",
+    "family": "kimi-k3",
+    "releaseDate": "2026-07-16",
+    "lastUpdated": "2026-07-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3.1878,
+      "output": 15.939,
+      "cacheRead": 0.788256,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-r1-0528",
+    "provider": "melious",
+    "providerName": "Melious",
+    "displayName": "DeepSeek-R1",
+    "family": "deepseek-thinking",
+    "releaseDate": "2025-01-20",
+    "lastUpdated": "2025-05-29",
+    "knowledgeCutoff": "2024-07",
+    "contextWindow": 164000,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
       "vision": false,
       "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.104,
-      "output": 0.416,
-      "cacheRead": 0.010399999999999998,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "unsloth/Mistral-Nemo-Instruct-2407-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Mistral Nemo Instruct 2407 TEE",
-    "family": "mistral-nemo",
-    "releaseDate": "2024-07-01",
-    "lastUpdated": "2024-07-01",
-    "knowledgeCutoff": "2024-07",
-    "contextWindow": 131072,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
@@ -552,9 +367,9 @@
       ]
     },
     "pricing": {
-      "input": 0.0245,
-      "output": 0.0978,
-      "cacheRead": 0.0024499999999999995,
+      "input": 0.69552,
+      "output": 2.78208,
+      "cacheRead": 0.185472,
       "currency": "USD",
       "per": 1000000
     },
@@ -568,16 +383,63 @@
     ]
   },
   {
-    "id": "moonshotai/Kimi-K3-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Kimi K3 TEE",
-    "family": "kimi-k3",
-    "releaseDate": "2026-07-29",
-    "lastUpdated": "2026-07-29",
+    "id": "deepseek-v3.2",
+    "provider": "melious",
+    "providerName": "Melious",
+    "displayName": "DeepSeek V3.2",
+    "family": "deepseek",
+    "releaseDate": "2025-12-01",
+    "lastUpdated": "2025-12-01",
+    "knowledgeCutoff": "2024-07",
+    "contextWindow": 164000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.34776,
+      "output": 0.5796,
+      "cacheRead": 0.092736,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5.3-flash",
+    "provider": "melious",
+    "providerName": "Melious",
+    "displayName": "GLM-5.3-Flash",
+    "family": "glm-flash",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
     "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65535,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -601,9 +463,9 @@
       ]
     },
     "pricing": {
-      "input": 3,
-      "output": 15,
-      "cacheRead": 0.29999999999999993,
+      "input": 0.11592,
+      "output": 0.46368,
+      "cacheRead": 0.023184,
       "currency": "USD",
       "per": 1000000
     },
@@ -617,16 +479,63 @@
     ]
   },
   {
-    "id": "moonshotai/Kimi-K2.6-TEE",
-    "provider": "chutes",
-    "providerName": "Chutes",
-    "displayName": "Kimi K2.6 TEE",
+    "id": "glm-5",
+    "provider": "melious",
+    "providerName": "Melious",
+    "displayName": "GLM-5",
+    "family": "glm",
+    "releaseDate": "2026-02-12",
+    "lastUpdated": "2026-02-12",
+    "knowledgeCutoff": null,
+    "contextWindow": 203000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.10124,
+      "output": 3.36168,
+      "cacheRead": 0.266616,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k2.5",
+    "provider": "melious",
+    "providerName": "Melious",
+    "displayName": "Kimi K2.5",
     "family": "kimi-k2",
-    "releaseDate": "2026-04-21",
-    "lastUpdated": "2026-04-21",
-    "knowledgeCutoff": "2025-12",
-    "contextWindow": 262144,
-    "maxOutputTokens": 65535,
+    "releaseDate": "2026-01",
+    "lastUpdated": "2026-01",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262000,
+    "maxOutputTokens": 262000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -634,7 +543,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": true,
+      "temperature": false,
       "attachment": true,
       "structured_output": true,
       "open_weights": true
@@ -642,17 +551,157 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "video"
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.5,
-      "output": 2.85,
-      "cacheRead": 0.04999999999999999,
+      "input": 0.5796,
+      "output": 2.95596,
+      "cacheRead": 0.139104,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5.1",
+    "provider": "melious",
+    "providerName": "Melious",
+    "displayName": "GLM-5.1",
+    "family": "glm",
+    "releaseDate": "2026-04-07",
+    "lastUpdated": "2026-04-07",
+    "knowledgeCutoff": null,
+    "contextWindow": 203000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.50696,
+      "output": 4.6368,
+      "cacheRead": 0.370944,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v4-pro",
+    "provider": "melious",
+    "providerName": "Melious",
+    "displayName": "DeepSeek V4 Pro",
+    "family": "deepseek-thinking",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.85472,
+      "output": 3.70944,
+      "cacheRead": 0.46368,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5.3",
+    "provider": "melious",
+    "providerName": "Melious",
+    "displayName": "GLM-5.3",
+    "family": "glm",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.1592,
+      "output": 3.4776,
+      "cacheRead": 0.23184,
       "currency": "USD",
       "per": 1000000
     },

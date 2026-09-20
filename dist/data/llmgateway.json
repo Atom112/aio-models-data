@@ -846,8 +846,8 @@
       ]
     },
     "pricing": {
-      "input": 0.2,
-      "output": 2,
+      "input": 0.08,
+      "output": 0.35,
       "cacheRead": 0.05,
       "currency": "USD",
       "per": 1000000
@@ -1484,7 +1484,7 @@
     "provider": "llmgateway",
     "providerName": "DevPass (LLM Gateway)",
     "displayName": "GLM-4.6V FlashX",
-    "family": "glm",
+    "family": "glm-flash",
     "releaseDate": "2025-12-08",
     "lastUpdated": "2025-12-08",
     "knowledgeCutoff": null,
@@ -1953,10 +1953,10 @@
       ]
     },
     "pricing": {
-      "input": 5,
-      "output": 30,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
+      "input": 4,
+      "output": 20,
+      "cacheRead": 0.4,
+      "cacheWrite": 5,
       "currency": "USD",
       "per": 1000000
     },
@@ -5266,7 +5266,7 @@
     "provider": "llmgateway",
     "providerName": "DevPass (LLM Gateway)",
     "displayName": "GLM-5.3-Flash",
-    "family": "glm",
+    "family": "glm-flash",
     "releaseDate": "2026-08-26",
     "lastUpdated": "2026-08-26",
     "knowledgeCutoff": null,
@@ -6036,6 +6036,52 @@
       "input": 1.25,
       "output": 4.25,
       "cacheRead": 0.15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "atria-dawn-preview",
+    "provider": "llmgateway",
+    "providerName": "DevPass (LLM Gateway)",
+    "displayName": "Atria Dawn Preview",
+    "family": null,
+    "releaseDate": "2026-09-12",
+    "lastUpdated": "2026-09-12",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
       "currency": "USD",
       "per": 1000000
     },

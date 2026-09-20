@@ -288,7 +288,7 @@
     "provider": "venice",
     "providerName": "Venice AI",
     "displayName": "GLM 4.7 Flash",
-    "family": "glm",
+    "family": "glm-flash",
     "releaseDate": "2026-01-29",
     "lastUpdated": "2026-06-11",
     "knowledgeCutoff": "2025-04",
@@ -1061,54 +1061,6 @@
       "output": 30,
       "cacheRead": 0.6,
       "cacheWrite": 7.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "openai-gpt-52-codex",
-    "provider": "venice",
-    "providerName": "Venice AI",
-    "displayName": "GPT-5.2 Codex",
-    "family": "gpt",
-    "releaseDate": "2025-01-15",
-    "lastUpdated": "2026-06-11",
-    "knowledgeCutoff": "2025-08",
-    "contextWindow": 256000,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2.19,
-      "output": 17.5,
-      "cacheRead": 0.219,
       "currency": "USD",
       "per": 1000000
     },
@@ -3124,22 +3076,22 @@
       ]
     },
     "pricing": {
-      "input": 2.5,
-      "output": 12.5,
-      "cacheRead": 0.25,
-      "cacheWrite": 3.125,
+      "input": 5,
+      "output": 25,
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
       "currency": "USD",
       "per": 1000000,
       "tiers": [
         {
-          "input": 5,
-          "output": 18.75,
+          "input": 10,
+          "output": 37.5,
           "contextThreshold": 272000
         }
       ],
       "contextOverThreshold": {
-        "input": 5,
-        "output": 18.75,
+        "input": 10,
+        "output": 37.5,
         "contextThreshold": 200000
       }
     },
@@ -3644,7 +3596,7 @@
     "provider": "venice",
     "providerName": "Venice AI",
     "displayName": "GLM 5.3 Flash",
-    "family": "glm",
+    "family": "glm-flash",
     "releaseDate": "2026-08-21",
     "lastUpdated": "2026-08-26",
     "knowledgeCutoff": null,
@@ -4537,53 +4489,6 @@
     ]
   },
   {
-    "id": "mistral-small-2603",
-    "provider": "venice",
-    "providerName": "Venice AI",
-    "displayName": "Mistral Small 4",
-    "family": "mistral-small",
-    "releaseDate": "2026-03-16",
-    "lastUpdated": "2026-06-11",
-    "knowledgeCutoff": "2025-06",
-    "contextWindow": 256000,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1875,
-      "output": 0.75,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "z-ai-glm-5v-turbo",
     "provider": "venice",
     "providerName": "Venice AI",
@@ -5338,22 +5243,22 @@
       ]
     },
     "pricing": {
-      "input": 2.5,
-      "output": 12.5,
-      "cacheRead": 0.25,
-      "cacheWrite": 3.125,
+      "input": 5,
+      "output": 25,
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
       "currency": "USD",
       "per": 1000000,
       "tiers": [
         {
-          "input": 5,
-          "output": 18.75,
+          "input": 10,
+          "output": 37.5,
           "contextThreshold": 272000
         }
       ],
       "contextOverThreshold": {
-        "input": 5,
-        "output": 18.75,
+        "input": 10,
+        "output": 37.5,
         "contextThreshold": 200000
       }
     },

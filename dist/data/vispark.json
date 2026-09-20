@@ -1,39 +1,42 @@
 [
   {
-    "id": "mercury-2.5",
-    "provider": "inception",
-    "providerName": "Inception",
-    "displayName": "Mercury 2.5",
-    "family": "mercury",
-    "releaseDate": "2026-09-08",
-    "lastUpdated": "2026-09-10",
-    "knowledgeCutoff": "2025-11-01",
-    "contextWindow": 260000,
+    "id": "vispark/vision-large",
+    "provider": "vispark",
+    "providerName": "Vispark",
+    "displayName": "Vision Large",
+    "family": null,
+    "releaseDate": "2024-05-15",
+    "lastUpdated": "2026-09",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
     "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": false
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "audio",
+        "video",
+        "pdf"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.04,
-      "output": 0.15,
-      "cacheRead": 0.004,
+      "input": 7.37,
+      "output": 22.11,
       "currency": "USD",
       "per": 1000000
     },
@@ -47,87 +50,93 @@
     ]
   },
   {
-    "id": "mercury-edit-2",
-    "provider": "inception",
-    "providerName": "Inception",
-    "displayName": "Mercury Edit 2",
-    "family": "mercury",
-    "releaseDate": "2026-03-30",
-    "lastUpdated": "2026-03-30",
+    "id": "vispark/vision-medium",
+    "provider": "vispark",
+    "providerName": "Vispark",
+    "displayName": "Vision Medium",
+    "family": null,
+    "releaseDate": "2024-05-15",
+    "lastUpdated": "2026-09",
     "knowledgeCutoff": null,
-    "contextWindow": 32000,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.25,
-      "output": 0.75,
-      "cacheRead": 0.025,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "mercury-2",
-    "provider": "inception",
-    "providerName": "Inception",
-    "displayName": "Mercury 2",
-    "family": "mercury",
-    "releaseDate": "2026-02-24",
-    "lastUpdated": "2026-02-24",
-    "knowledgeCutoff": "2025-01-01",
-    "contextWindow": 128000,
-    "maxOutputTokens": 50000,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": false
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "audio",
+        "video",
+        "pdf"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.25,
-      "output": 0.75,
-      "cacheRead": 0.025,
+      "input": 4.21,
+      "output": 12.63,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "vispark/vision-small",
+    "provider": "vispark",
+    "providerName": "Vispark",
+    "displayName": "Vision Small",
+    "family": null,
+    "releaseDate": "2024-05-15",
+    "lastUpdated": "2026-09",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.05,
+      "output": 3.16,
       "currency": "USD",
       "per": 1000000
     },

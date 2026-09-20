@@ -46,6 +46,54 @@
     ]
   },
   {
+    "id": "deepseek-v4-1-flash",
+    "provider": "tinfoil",
+    "providerName": "Tinfoil",
+    "displayName": "DeepSeek V4.1 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.65,
+      "output": 1.45,
+      "cacheRead": 0.13,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "beta",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "gemma4-31b",
     "provider": "tinfoil",
     "providerName": "Tinfoil",
@@ -93,16 +141,16 @@
     ]
   },
   {
-    "id": "deepseek-v4-flash",
+    "id": "glm-5-3",
     "provider": "tinfoil",
     "providerName": "Tinfoil",
-    "displayName": "DeepSeek V4 Flash 0731",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-07-31",
-    "lastUpdated": "2026-07-31",
-    "knowledgeCutoff": "2025-05",
+    "displayName": "GLM-5.3",
+    "family": "glm",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
     "contextWindow": 1048576,
-    "maxOutputTokens": 384000,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -124,9 +172,9 @@
       ]
     },
     "pricing": {
-      "input": 0.3,
-      "output": 0.7,
-      "cacheRead": 0.06,
+      "input": 1.8,
+      "output": 5.75,
+      "cacheRead": 0.45,
       "currency": "USD",
       "per": 1000000
     },
@@ -239,7 +287,7 @@
     "provider": "tinfoil",
     "providerName": "Tinfoil",
     "displayName": "GLM-5.3-Flash",
-    "family": "glm",
+    "family": "glm-flash",
     "releaseDate": "2026-08-26",
     "lastUpdated": "2026-08-26",
     "knowledgeCutoff": null,

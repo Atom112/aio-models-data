@@ -1,5 +1,53 @@
 [
   {
+    "id": "hf:deepseek-ai/DeepSeek-V4.1-Flash",
+    "provider": "synthetic",
+    "providerName": "Synthetic",
+    "displayName": "DeepSeek V4.1 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 524288,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.6,
+      "output": 1.2,
+      "cacheRead": 0.03,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "hf:openai/gpt-oss-120b",
     "provider": "synthetic",
     "providerName": "Synthetic",
@@ -384,7 +432,7 @@
     "provider": "synthetic",
     "providerName": "Synthetic",
     "displayName": "GLM-5.3-Flash",
-    "family": "glm",
+    "family": "glm-flash",
     "releaseDate": "2026-08-26",
     "lastUpdated": "2026-08-26",
     "knowledgeCutoff": null,

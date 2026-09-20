@@ -145,6 +145,56 @@
     ]
   },
   {
+    "id": "claude-opus-5",
+    "provider": "vivgrid",
+    "providerName": "Vivgrid",
+    "displayName": "Claude Opus 5",
+    "family": "claude-opus",
+    "releaseDate": "2026-07-24",
+    "lastUpdated": "2026-07-24",
+    "knowledgeCutoff": "2026-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 25,
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "gemini-3.1-pro-preview",
     "provider": "vivgrid",
     "providerName": "Vivgrid",
@@ -808,7 +858,7 @@
     "provider": "vivgrid",
     "providerName": "Vivgrid",
     "displayName": "GLM-5.3-Flash",
-    "family": "glm",
+    "family": "glm-flash",
     "releaseDate": "2026-08-26",
     "lastUpdated": "2026-08-26",
     "knowledgeCutoff": null,
@@ -1283,6 +1333,102 @@
       "input": 1.2,
       "output": 4.2,
       "cacheRead": 0.26,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-sonnet-5",
+    "provider": "vivgrid",
+    "providerName": "Vivgrid",
+    "displayName": "Claude Sonnet 5",
+    "family": "claude-sonnet",
+    "releaseDate": "2026-06-30",
+    "lastUpdated": "2026-06-30",
+    "knowledgeCutoff": "2026-01-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "jev",
+    "provider": "vivgrid",
+    "providerName": "Vivgrid",
+    "displayName": "Jev",
+    "family": null,
+    "releaseDate": "2026-09-15",
+    "lastUpdated": "2026-09-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 64000,
+    "maxOutputTokens": 0,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.042,
+      "output": 0,
       "currency": "USD",
       "per": 1000000
     },

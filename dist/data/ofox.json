@@ -2185,6 +2185,56 @@
     ]
   },
   {
+    "id": "bailian/qwen3.8-flash",
+    "provider": "ofox",
+    "providerName": "Ofox",
+    "displayName": "Qwen3.8 Flash",
+    "family": "qwen",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.47,
+      "cacheRead": 0.016,
+      "cacheWrite": 0.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "bailian/qwen3.6-max-preview",
     "provider": "ofox",
     "providerName": "Ofox",
@@ -4593,7 +4643,7 @@
     "displayName": "DeepSeek V4 Flash Vision Exp",
     "family": "deepseek-flash",
     "releaseDate": "2026-08-21",
-    "lastUpdated": "2026-08-21",
+    "lastUpdated": "2026-09-01",
     "knowledgeCutoff": null,
     "contextWindow": 1000000,
     "maxOutputTokens": 384000,
@@ -4607,7 +4657,7 @@
       "temperature": true,
       "attachment": true,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -4666,9 +4716,9 @@
       ]
     },
     "pricing": {
-      "input": 1.32,
-      "output": 3.96,
-      "cacheRead": 0.044,
+      "input": 0.924,
+      "output": 2.772,
+      "cacheRead": 0.0308,
       "currency": "USD",
       "per": 1000000
     },
@@ -4713,9 +4763,9 @@
       ]
     },
     "pricing": {
-      "input": 0.44,
-      "output": 1.32,
-      "cacheRead": 0.014,
+      "input": 0.308,
+      "output": 0.924,
+      "cacheRead": 0.0098,
       "currency": "USD",
       "per": 1000000
     },
@@ -4808,9 +4858,9 @@
       ]
     },
     "pricing": {
-      "input": 0.3,
-      "output": 1.2,
-      "cacheRead": 0.006,
+      "input": 0.21,
+      "output": 0.84,
+      "cacheRead": 0.0042,
       "currency": "USD",
       "per": 1000000
     },
@@ -5239,9 +5289,9 @@
       ]
     },
     "pricing": {
-      "input": 0.05,
-      "output": 0.4,
-      "cacheRead": 0.01,
+      "input": 0.04,
+      "output": 0.32,
+      "cacheRead": 0.008,
       "currency": "USD",
       "per": 1000000
     },
@@ -5287,9 +5337,9 @@
       ]
     },
     "pricing": {
-      "input": 0.25,
-      "output": 2,
-      "cacheRead": 0.03,
+      "input": 0.2,
+      "output": 1.6,
+      "cacheRead": 0.024,
       "currency": "USD",
       "per": 1000000
     },
@@ -5386,9 +5436,9 @@
       ]
     },
     "pricing": {
-      "input": 1.75,
-      "output": 14,
-      "cacheRead": 0.18,
+      "input": 1.4,
+      "output": 11.2,
+      "cacheRead": 0.144,
       "currency": "USD",
       "per": 1000000
     },
@@ -5435,10 +5485,10 @@
       ]
     },
     "pricing": {
-      "input": 10,
-      "output": 50,
-      "cacheRead": 1,
-      "cacheWrite": 12.5,
+      "input": 8,
+      "output": 40,
+      "cacheRead": 0.8,
+      "cacheWrite": 10,
       "currency": "USD",
       "per": 1000000
     },
@@ -5485,9 +5535,9 @@
       ]
     },
     "pricing": {
-      "input": 0.4,
-      "output": 1.6,
-      "cacheRead": 0.1,
+      "input": 0.32,
+      "output": 1.28,
+      "cacheRead": 0.08,
       "currency": "USD",
       "per": 1000000
     },
@@ -5534,9 +5584,9 @@
       ]
     },
     "pricing": {
-      "input": 2.5,
-      "output": 15,
-      "cacheRead": 0.25,
+      "input": 2,
+      "output": 12,
+      "cacheRead": 0.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -5582,9 +5632,9 @@
       ]
     },
     "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cacheRead": 0.13,
+      "input": 1,
+      "output": 8,
+      "cacheRead": 0.104,
       "currency": "USD",
       "per": 1000000
     },
@@ -5630,9 +5680,9 @@
       ]
     },
     "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cacheRead": 0.13,
+      "input": 1,
+      "output": 8,
+      "cacheRead": 0.104,
       "currency": "USD",
       "per": 1000000
     },
@@ -5679,9 +5729,9 @@
       ]
     },
     "pricing": {
-      "input": 2.5,
-      "output": 10,
-      "cacheRead": 1.25,
+      "input": 2,
+      "output": 8,
+      "cacheRead": 1,
       "currency": "USD",
       "per": 1000000
     },
@@ -5778,9 +5828,9 @@
       ]
     },
     "pricing": {
-      "input": 1.75,
-      "output": 14,
-      "cacheRead": 0.18,
+      "input": 1.4,
+      "output": 11.2,
+      "cacheRead": 0.144,
       "currency": "USD",
       "per": 1000000
     },
@@ -5827,9 +5877,9 @@
       ]
     },
     "pricing": {
-      "input": 0.15,
-      "output": 0.6,
-      "cacheRead": 0.075,
+      "input": 0.12,
+      "output": 0.48,
+      "cacheRead": 0.06,
       "currency": "USD",
       "per": 1000000
     },
@@ -5876,9 +5926,9 @@
       ]
     },
     "pricing": {
-      "input": 2,
-      "output": 8,
-      "cacheRead": 0.5,
+      "input": 1.6,
+      "output": 6.4,
+      "cacheRead": 0.4,
       "currency": "USD",
       "per": 1000000
     },
@@ -5924,9 +5974,9 @@
       ]
     },
     "pricing": {
-      "input": 0.2,
-      "output": 1.25,
-      "cacheRead": 0.02,
+      "input": 0.16,
+      "output": 1,
+      "cacheRead": 0.016,
       "currency": "USD",
       "per": 1000000
     },
@@ -5972,9 +6022,9 @@
       ]
     },
     "pricing": {
-      "input": 0.75,
-      "output": 4.5,
-      "cacheRead": 0.075,
+      "input": 0.6,
+      "output": 3.6,
+      "cacheRead": 0.06,
       "currency": "USD",
       "per": 1000000
     },
@@ -6020,9 +6070,9 @@
       ]
     },
     "pricing": {
-      "input": 0.25,
-      "output": 2,
-      "cacheRead": 0.03,
+      "input": 0.2,
+      "output": 1.6,
+      "cacheRead": 0.024,
       "currency": "USD",
       "per": 1000000
     },
@@ -6068,8 +6118,8 @@
       ]
     },
     "pricing": {
-      "input": 30,
-      "output": 180,
+      "input": 24,
+      "output": 144,
       "currency": "USD",
       "per": 1000000
     },
@@ -6165,9 +6215,9 @@
       ]
     },
     "pricing": {
-      "input": 1.75,
-      "output": 14,
-      "cacheRead": 0.18,
+      "input": 1.4,
+      "output": 11.2,
+      "cacheRead": 0.144,
       "currency": "USD",
       "per": 1000000
     },
@@ -6213,9 +6263,9 @@
       ]
     },
     "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cacheRead": 0.13,
+      "input": 1,
+      "output": 8,
+      "cacheRead": 0.104,
       "currency": "USD",
       "per": 1000000
     },
@@ -6262,9 +6312,9 @@
       ]
     },
     "pricing": {
-      "input": 5,
-      "output": 30,
-      "cacheRead": 0.5,
+      "input": 4,
+      "output": 24,
+      "cacheRead": 0.4,
       "currency": "USD",
       "per": 1000000
     },
@@ -6668,7 +6718,7 @@
     "provider": "ofox",
     "providerName": "Ofox",
     "displayName": "GLM-5.3-Flash",
-    "family": "glm",
+    "family": "glm-flash",
     "releaseDate": "2026-08-26",
     "lastUpdated": "2026-08-26",
     "knowledgeCutoff": null,
