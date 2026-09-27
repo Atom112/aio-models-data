@@ -1,32 +1,73 @@
 [
   {
-    "id": "step-3.7-flash",
+    "id": "step-5-preview",
     "provider": "stepfun-ai-step-plan",
     "providerName": "StepFun Step Plan (Global)",
-    "displayName": "Step 3.7 Flash",
+    "displayName": "Step 5 Preview",
     "family": null,
-    "releaseDate": "2026-05-29",
-    "lastUpdated": "2026-05-29",
-    "knowledgeCutoff": "2026-03-01",
-    "contextWindow": 256000,
-    "maxOutputTokens": 256000,
+    "releaseDate": "2026-09-16",
+    "lastUpdated": "2026-09-20",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": false,
-      "open_weights": true
+      "structured_output": true,
+      "open_weights": false
     },
     "modalities": {
       "input": [
         "text",
         "image",
         "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "step-3.5-flash-2603",
+    "provider": "stepfun-ai-step-plan",
+    "providerName": "StepFun Step Plan (Global)",
+    "displayName": "Step 3.5 Flash 2603",
+    "family": null,
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
       ],
       "output": [
         "text"
@@ -84,31 +125,33 @@
     ]
   },
   {
-    "id": "step-3.5-flash-2603",
+    "id": "step-3.7-flash",
     "provider": "stepfun-ai-step-plan",
     "providerName": "StepFun Step Plan (Global)",
-    "displayName": "Step 3.5 Flash 2603",
+    "displayName": "Step 3.7 Flash",
     "family": null,
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-04-02",
-    "knowledgeCutoff": "2025-01",
+    "releaseDate": "2026-05-29",
+    "lastUpdated": "2026-05-29",
+    "knowledgeCutoff": "2026-03-01",
     "contextWindow": 256000,
     "maxOutputTokens": 256000,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "video"
       ],
       "output": [
         "text"

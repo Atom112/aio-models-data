@@ -1,52 +1,5 @@
 [
   {
-    "id": "deepseek-ai/DeepSeek-V3.2",
-    "provider": "friendli",
-    "providerName": "Friendli",
-    "displayName": "DeepSeek V3.2",
-    "family": "deepseek",
-    "releaseDate": "2025-12-01",
-    "lastUpdated": "2025-12-01",
-    "knowledgeCutoff": "2024-07",
-    "contextWindow": 163840,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.5,
-      "output": 1.5,
-      "cacheRead": 0.25,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "google/gemma-4-31B-it",
     "provider": "friendli",
     "providerName": "Friendli",
@@ -94,6 +47,100 @@
     ]
   },
   {
+    "id": "deepseek-ai/DeepSeek-V3.2",
+    "provider": "friendli",
+    "providerName": "Friendli",
+    "displayName": "DeepSeek V3.2",
+    "family": "deepseek",
+    "releaseDate": "2025-12-01",
+    "lastUpdated": "2025-12-01",
+    "knowledgeCutoff": "2024-07",
+    "contextWindow": 163840,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.5,
+      "output": 1.5,
+      "cacheRead": 0.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "MiniMaxAI/MiniMax-M2.5",
+    "provider": "friendli",
+    "providerName": "Friendli",
+    "displayName": "MiniMax-M2.5",
+    "family": "minimax",
+    "releaseDate": "2026-02-12",
+    "lastUpdated": "2026-02-12",
+    "knowledgeCutoff": null,
+    "contextWindow": 196608,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 1.2,
+      "cacheRead": 0.06,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "zai-org/GLM-5.1",
     "provider": "friendli",
     "providerName": "Friendli",
@@ -128,53 +175,6 @@
       "input": 1.4,
       "output": 4.4,
       "cacheRead": 0.26,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/GLM-5.3",
-    "provider": "friendli",
-    "providerName": "Friendli",
-    "displayName": "GLM-5.3",
-    "family": "glm",
-    "releaseDate": "2026-08-14",
-    "lastUpdated": "2026-08-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.26,
-      "output": 3.96,
-      "cacheRead": 0.234,
       "currency": "USD",
       "per": 1000000
     },
@@ -284,15 +284,15 @@
     ]
   },
   {
-    "id": "MiniMaxAI/MiniMax-M2.5",
+    "id": "zai-org/GLM-5.3",
     "provider": "friendli",
     "providerName": "Friendli",
-    "displayName": "MiniMax-M2.5",
-    "family": "minimax",
-    "releaseDate": "2026-02-12",
-    "lastUpdated": "2026-02-12",
+    "displayName": "GLM-5.3",
+    "family": "glm",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
     "knowledgeCutoff": null,
-    "contextWindow": 196608,
+    "contextWindow": 1048576,
     "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
@@ -315,9 +315,9 @@
       ]
     },
     "pricing": {
-      "input": 0.3,
-      "output": 1.2,
-      "cacheRead": 0.06,
+      "input": 1.26,
+      "output": 3.96,
+      "cacheRead": 0.234,
       "currency": "USD",
       "per": 1000000
     },

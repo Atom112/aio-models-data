@@ -1,31 +1,150 @@
 [
   {
-    "id": "meta.llama-4-maverick-17b-128e-instruct-fp8",
+    "id": "xai.grok-4.3",
     "provider": "oci",
     "providerName": "OCI Generative AI",
-    "displayName": "Llama 4 Maverick 17B Instruct",
-    "family": "llama",
-    "releaseDate": "2025-04-05",
-    "lastUpdated": "2025-04-05",
-    "knowledgeCutoff": "2024-08",
-    "contextWindow": 512000,
-    "maxOutputTokens": 16384,
+    "displayName": "Grok 4.3",
+    "family": "grok",
+    "releaseDate": "2026-04-17",
+    "lastUpdated": "2026-04-17",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 30000,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": true,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": false,
-      "open_weights": true
+      "structured_output": true,
+      "open_weights": false
     },
     "modalities": {
       "input": [
         "text",
         "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 2.5,
+      "cacheRead": 0.2,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 2.5,
+          "output": 5,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 2.5,
+        "output": 5,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "xai.grok-4.20-non-reasoning",
+    "provider": "oci",
+    "providerName": "OCI Generative AI",
+    "displayName": "Grok 4.20 (Non-Reasoning)",
+    "family": "grok",
+    "releaseDate": "2026-03-09",
+    "lastUpdated": "2026-03-09",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 30000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 2.5,
+      "cacheRead": 0.2,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 2.5,
+          "output": 5,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 2.5,
+        "output": 5,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "meta.llama-3.3-70b-instruct",
+    "provider": "oci",
+    "providerName": "OCI Generative AI",
+    "displayName": "Llama-3.3-70B-Instruct",
+    "family": "llama",
+    "releaseDate": "2024-12-06",
+    "lastUpdated": "2024-12-06",
+    "knowledgeCutoff": "2023-12",
+    "contextWindow": 128000,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
       ],
       "output": [
         "text"
@@ -73,52 +192,6 @@
       "input": [
         "text",
         "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.72,
-      "output": 0.72,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "meta.llama-3.3-70b-instruct",
-    "provider": "oci",
-    "providerName": "OCI Generative AI",
-    "displayName": "Llama-3.3-70B-Instruct",
-    "family": "llama",
-    "releaseDate": "2024-12-06",
-    "lastUpdated": "2024-12-06",
-    "knowledgeCutoff": "2023-12",
-    "contextWindow": 128000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
       ],
       "output": [
         "text"
@@ -200,136 +273,30 @@
     ]
   },
   {
-    "id": "xai.grok-4.20-reasoning",
+    "id": "meta.llama-4-maverick-17b-128e-instruct-fp8",
     "provider": "oci",
     "providerName": "OCI Generative AI",
-    "displayName": "Grok 4.20 (Reasoning)",
-    "family": "grok",
-    "releaseDate": "2026-03-09",
-    "lastUpdated": "2026-03-09",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 30000,
+    "displayName": "Llama 4 Maverick 17B Instruct",
+    "family": "llama",
+    "releaseDate": "2025-04-05",
+    "lastUpdated": "2025-04-05",
+    "knowledgeCutoff": "2024-08",
+    "contextWindow": 512000,
+    "maxOutputTokens": 16384,
     "capabilities": {
-      "tools": true,
+      "tools": false,
       "vision": true,
-      "reasoning": true,
+      "reasoning": false,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.25,
-      "output": 2.5,
-      "cacheRead": 0.2,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 2.5,
-          "output": 5,
-          "contextThreshold": 200000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 2.5,
-        "output": 5,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "openai.gpt-oss-20b",
-    "provider": "oci",
-    "providerName": "OCI Generative AI",
-    "displayName": "GPT OSS 20B",
-    "family": "gpt-oss",
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.07,
-      "output": 0.3,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "xai.grok-4.3",
-    "provider": "oci",
-    "providerName": "OCI Generative AI",
-    "displayName": "Grok 4.3",
-    "family": "grok",
-    "releaseDate": "2026-04-17",
-    "lastUpdated": "2026-04-17",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 30000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
         "text",
         "image"
       ],
@@ -338,23 +305,10 @@
       ]
     },
     "pricing": {
-      "input": 1.25,
-      "output": 2.5,
-      "cacheRead": 0.2,
+      "input": 0.72,
+      "output": 0.72,
       "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 2.5,
-          "output": 5,
-          "contextThreshold": 200000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 2.5,
-        "output": 5,
-        "contextThreshold": 200000
-      }
+      "per": 1000000
     },
     "status": "active",
     "deprecationDate": null,
@@ -412,10 +366,56 @@
     ]
   },
   {
-    "id": "xai.grok-4.20-non-reasoning",
+    "id": "openai.gpt-oss-20b",
     "provider": "oci",
     "providerName": "OCI Generative AI",
-    "displayName": "Grok 4.20 (Non-Reasoning)",
+    "displayName": "GPT OSS 20B",
+    "family": "gpt-oss",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.07,
+      "output": 0.3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "xai.grok-4.20-reasoning",
+    "provider": "oci",
+    "providerName": "OCI Generative AI",
+    "displayName": "Grok 4.20 (Reasoning)",
     "family": "grok",
     "releaseDate": "2026-03-09",
     "lastUpdated": "2026-03-09",
@@ -425,7 +425,7 @@
     "capabilities": {
       "tools": true,
       "vision": true,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,

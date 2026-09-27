@@ -1,5 +1,175 @@
 [
   {
+    "id": "glm-5-3-flash-260828",
+    "provider": "volcengine",
+    "providerName": "Volcengine Ark",
+    "displayName": "GLM-5.3-Flash",
+    "family": "glm-flash",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.11875,
+      "output": 0.41563,
+      "cacheRead": 0.03414,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "doubao-seed-1-6-251015",
+    "provider": "volcengine",
+    "providerName": "Volcengine Ark",
+    "displayName": "Seed 1.6",
+    "family": "seed",
+    "releaseDate": "2025-10-15",
+    "lastUpdated": "2025-10-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.11875,
+      "output": 1.18747,
+      "cacheRead": 0.02375,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.17812,
+          "output": 2.37494,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 0.35624,
+          "output": 3.56241,
+          "contextThreshold": 128000
+        }
+      ]
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "doubao-seed-2-0-pro-260215",
+    "provider": "volcengine",
+    "providerName": "Volcengine Ark",
+    "displayName": "Seed 2.0 Pro",
+    "family": "seed",
+    "releaseDate": "2026-02-14",
+    "lastUpdated": "2026-02-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.47499,
+      "output": 2.37494,
+      "cacheRead": 0.095,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.71248,
+          "output": 3.56241,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 1.42496,
+          "output": 7.12482,
+          "contextThreshold": 128000
+        }
+      ]
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "doubao-seed-2-0-lite-260428",
     "provider": "volcengine",
     "providerName": "Volcengine Ark",
@@ -61,10 +231,10 @@
     ]
   },
   {
-    "id": "doubao-seed-character-260628",
+    "id": "doubao-seed-2-1-pro-260628",
     "provider": "volcengine",
     "providerName": "Volcengine Ark",
-    "displayName": "Seed Character",
+    "displayName": "Seed 2.1 Pro",
     "family": "seed",
     "releaseDate": "2026-06-23",
     "lastUpdated": "2026-06-23",
@@ -94,16 +264,69 @@
       ]
     },
     "pricing": {
+      "input": 0.8906,
+      "output": 4.45301,
+      "cacheRead": 0.17812,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "doubao-seed-1-6-vision-250815",
+    "provider": "volcengine",
+    "providerName": "Volcengine Ark",
+    "displayName": "Seed 1.6 Vision",
+    "family": "seed",
+    "releaseDate": "2025-08-15",
+    "lastUpdated": "2025-08-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
       "input": 0.11875,
-      "output": 0.29687,
+      "output": 1.18747,
       "cacheRead": 0.02375,
       "currency": "USD",
       "per": 1000000,
       "tiers": [
         {
           "input": 0.17812,
-          "output": 0.8906,
+          "output": 2.37494,
           "contextThreshold": 32000
+        },
+        {
+          "input": 0.35624,
+          "output": 3.56241,
+          "contextThreshold": 128000
         }
       ]
     },
@@ -178,55 +401,6 @@
     ]
   },
   {
-    "id": "doubao-seed-2-1-pro-260628",
-    "provider": "volcengine",
-    "providerName": "Volcengine Ark",
-    "displayName": "Seed 2.1 Pro",
-    "family": "seed",
-    "releaseDate": "2026-06-23",
-    "lastUpdated": "2026-06-23",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 256000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.8906,
-      "output": 4.45301,
-      "cacheRead": 0.17812,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "doubao-seed-2-0-code-preview-260215",
     "provider": "volcengine",
     "providerName": "Volcengine Ark",
@@ -277,6 +451,102 @@
           "contextThreshold": 128000
         }
       ]
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "doubao-seed-2-1-turbo-260628",
+    "provider": "volcengine",
+    "providerName": "Volcengine Ark",
+    "displayName": "Seed 2.1 Turbo",
+    "family": "seed",
+    "releaseDate": "2026-06-23",
+    "lastUpdated": "2026-06-23",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.4453,
+      "output": 2.22651,
+      "cacheRead": 0.08906,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5-2-260617",
+    "provider": "volcengine",
+    "providerName": "Volcengine Ark",
+    "displayName": "GLM-5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.18747,
+      "output": 4.15615,
+      "cacheRead": 0.29687,
+      "currency": "USD",
+      "per": 1000000
     },
     "status": "active",
     "deprecationDate": null,
@@ -348,6 +618,55 @@
     ]
   },
   {
+    "id": "doubao-seed-evolving",
+    "provider": "volcengine",
+    "providerName": "Volcengine Ark",
+    "displayName": "Seed Evolving",
+    "family": "seed",
+    "releaseDate": "2026-06-23",
+    "lastUpdated": "2026-06-23",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.8906,
+      "output": 4.45301,
+      "cacheRead": 0.17812,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "doubao-seed-1-6-flash-250828",
     "provider": "volcengine",
     "providerName": "Volcengine Ark",
@@ -408,31 +727,33 @@
     ]
   },
   {
-    "id": "doubao-seed-1-6-251015",
+    "id": "doubao-seed-character-260628",
     "provider": "volcengine",
     "providerName": "Volcengine Ark",
-    "displayName": "Seed 1.6",
+    "displayName": "Seed Character",
     "family": "seed",
-    "releaseDate": "2025-10-15",
-    "lastUpdated": "2025-10-15",
+    "releaseDate": "2026-06-23",
+    "lastUpdated": "2026-06-23",
     "knowledgeCutoff": null,
     "contextWindow": 256000,
-    "maxOutputTokens": 64000,
+    "maxOutputTokens": 256000,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": false
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "video"
       ],
       "output": [
         "text"
@@ -440,20 +761,15 @@
     },
     "pricing": {
       "input": 0.11875,
-      "output": 1.18747,
+      "output": 0.29687,
       "cacheRead": 0.02375,
       "currency": "USD",
       "per": 1000000,
       "tiers": [
         {
           "input": 0.17812,
-          "output": 2.37494,
+          "output": 0.8906,
           "contextThreshold": 32000
-        },
-        {
-          "input": 0.35624,
-          "output": 3.56241,
-          "contextThreshold": 128000
         }
       ]
     },
@@ -501,322 +817,6 @@
       "input": 1.3359,
       "output": 4.00771,
       "cacheRead": 0.04453,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "doubao-seed-evolving",
-    "provider": "volcengine",
-    "providerName": "Volcengine Ark",
-    "displayName": "Seed Evolving",
-    "family": "seed",
-    "releaseDate": "2026-06-23",
-    "lastUpdated": "2026-06-23",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 256000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.8906,
-      "output": 4.45301,
-      "cacheRead": 0.17812,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "doubao-seed-2-0-pro-260215",
-    "provider": "volcengine",
-    "providerName": "Volcengine Ark",
-    "displayName": "Seed 2.0 Pro",
-    "family": "seed",
-    "releaseDate": "2026-02-14",
-    "lastUpdated": "2026-02-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.47499,
-      "output": 2.37494,
-      "cacheRead": 0.095,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.71248,
-          "output": 3.56241,
-          "contextThreshold": 32000
-        },
-        {
-          "input": 1.42496,
-          "output": 7.12482,
-          "contextThreshold": 128000
-        }
-      ]
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "doubao-seed-1-6-vision-250815",
-    "provider": "volcengine",
-    "providerName": "Volcengine Ark",
-    "displayName": "Seed 1.6 Vision",
-    "family": "seed",
-    "releaseDate": "2025-08-15",
-    "lastUpdated": "2025-08-15",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.11875,
-      "output": 1.18747,
-      "cacheRead": 0.02375,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.17812,
-          "output": 2.37494,
-          "contextThreshold": 32000
-        },
-        {
-          "input": 0.35624,
-          "output": 3.56241,
-          "contextThreshold": 128000
-        }
-      ]
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm-5-2-260617",
-    "provider": "volcengine",
-    "providerName": "Volcengine Ark",
-    "displayName": "GLM-5.2",
-    "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.18747,
-      "output": 4.15615,
-      "cacheRead": 0.29687,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "doubao-seed-2-1-turbo-260628",
-    "provider": "volcengine",
-    "providerName": "Volcengine Ark",
-    "displayName": "Seed 2.1 Turbo",
-    "family": "seed",
-    "releaseDate": "2026-06-23",
-    "lastUpdated": "2026-06-23",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 256000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.4453,
-      "output": 2.22651,
-      "cacheRead": 0.08906,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm-5-3-flash-260828",
-    "provider": "volcengine",
-    "providerName": "Volcengine Ark",
-    "displayName": "GLM-5.3-Flash",
-    "family": "glm-flash",
-    "releaseDate": "2026-08-26",
-    "lastUpdated": "2026-08-26",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.11875,
-      "output": 0.41563,
-      "cacheRead": 0.03414,
       "currency": "USD",
       "per": 1000000
     },

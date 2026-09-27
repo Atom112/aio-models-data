@@ -1,51 +1,5 @@
 [
   {
-    "id": "lucidquery-nexus-coder",
-    "provider": "lucidquery",
-    "providerName": "LucidQuery",
-    "displayName": "LucidQuery Nexus Coder",
-    "family": "lucid",
-    "releaseDate": "2025-09-01",
-    "lastUpdated": "2025-09-01",
-    "knowledgeCutoff": "2025-08-01",
-    "contextWindow": 250000,
-    "maxOutputTokens": 60000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2,
-      "output": 5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "lucidquery-agi-01-frontier",
     "provider": "lucidquery",
     "providerName": "LucidQuery",
@@ -93,16 +47,16 @@
     ]
   },
   {
-    "id": "lucidquery-agi-01-swift",
+    "id": "lucidquery-nexus-coder",
     "provider": "lucidquery",
     "providerName": "LucidQuery",
-    "displayName": "AGI-01 Swift",
-    "family": "agi",
-    "releaseDate": "2026-06-16",
-    "lastUpdated": "2026-06-16",
-    "knowledgeCutoff": "2026-06-05",
-    "contextWindow": 300000,
-    "maxOutputTokens": 120000,
+    "displayName": "LucidQuery Nexus Coder",
+    "family": "lucid",
+    "releaseDate": "2025-09-01",
+    "lastUpdated": "2025-09-01",
+    "knowledgeCutoff": "2025-08-01",
+    "contextWindow": 250000,
+    "maxOutputTokens": 60000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -110,23 +64,22 @@
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
-      "temperature": true,
+      "temperature": false,
       "attachment": true,
       "structured_output": false,
       "open_weights": false
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 2.5,
-      "output": 15,
+      "input": 2,
+      "output": 5,
       "currency": "USD",
       "per": 1000000
     },
@@ -173,6 +126,53 @@
     "pricing": {
       "input": 2,
       "output": 5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "lucidquery-agi-01-swift",
+    "provider": "lucidquery",
+    "providerName": "LucidQuery",
+    "displayName": "AGI-01 Swift",
+    "family": "agi",
+    "releaseDate": "2026-06-16",
+    "lastUpdated": "2026-06-16",
+    "knowledgeCutoff": "2026-06-05",
+    "contextWindow": 300000,
+    "maxOutputTokens": 120000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.5,
+      "output": 15,
       "currency": "USD",
       "per": 1000000
     },

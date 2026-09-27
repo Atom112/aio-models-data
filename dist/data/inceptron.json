@@ -48,40 +48,41 @@
     ]
   },
   {
-    "id": "zai-org/GLM-5.2",
+    "id": "moonshotai/Kimi-K2.6",
     "provider": "inceptron",
     "providerName": "Inceptron",
-    "displayName": "GLM 5.2",
-    "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
+    "displayName": "Kimi K2.6",
+    "family": "kimi-k2",
+    "releaseDate": "2026-04-21",
+    "lastUpdated": "2026-04-21",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.71,
-      "output": 2.35,
-      "cacheRead": 0.12,
+      "input": 0.53,
+      "output": 3.39,
+      "cacheRead": 0.17,
       "cacheWrite": 0,
       "currency": "USD",
       "per": 1000000
@@ -145,41 +146,40 @@
     ]
   },
   {
-    "id": "moonshotai/Kimi-K2.6",
+    "id": "zai-org/GLM-5.2",
     "provider": "inceptron",
     "providerName": "Inceptron",
-    "displayName": "Kimi K2.6",
-    "family": "kimi-k2",
-    "releaseDate": "2026-04-21",
-    "lastUpdated": "2026-04-21",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "displayName": "GLM 5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.53,
-      "output": 3.39,
-      "cacheRead": 0.17,
+      "input": 0.71,
+      "output": 2.35,
+      "cacheRead": 0.12,
       "cacheWrite": 0,
       "currency": "USD",
       "per": 1000000

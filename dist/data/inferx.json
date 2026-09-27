@@ -47,77 +47,34 @@
     ]
   },
   {
-    "id": "Qwen3-Coder-Next-FP8-no-thinking",
+    "id": "Qwen3.6-35B-A3B-fp8-no-thinking",
     "provider": "inferx",
     "providerName": "InferX",
-    "displayName": "Qwen3-Coder-Next-FP8-no-thinking",
+    "displayName": "Qwen3.6-35B-A3B-fp8-no-thinking",
     "family": "qwen",
-    "releaseDate": "2026-02-03",
-    "lastUpdated": "2026-02-03",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 260000,
+    "releaseDate": "2026-04-17",
+    "lastUpdated": "2026-04-17",
+    "knowledgeCutoff": null,
+    "contextWindow": 262000,
     "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": false,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-v4-flash",
-    "provider": "inferx",
-    "providerName": "InferX",
-    "displayName": "deepseek-v4-flash",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 100000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
+        "text",
+        "image",
+        "video",
+        "audio"
       ],
       "output": [
         "text"
@@ -185,149 +142,6 @@
     ]
   },
   {
-    "id": "Agents-A1",
-    "provider": "inferx",
-    "providerName": "InferX",
-    "displayName": "Agents-A1",
-    "family": null,
-    "releaseDate": "2026-06-26",
-    "lastUpdated": "2026-06-26",
-    "knowledgeCutoff": null,
-    "contextWindow": 262000,
-    "maxOutputTokens": 100000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Ornith-1.0-35B-FP8",
-    "provider": "inferx",
-    "providerName": "InferX",
-    "displayName": "Ornith-1.0-35B-FP8",
-    "family": "ornith",
-    "releaseDate": "2026-06-25",
-    "lastUpdated": "2026-06-25",
-    "knowledgeCutoff": null,
-    "contextWindow": 262000,
-    "maxOutputTokens": 100000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen3.6-35B-A3B-FP8",
-    "provider": "inferx",
-    "providerName": "InferX",
-    "displayName": "Qwen3.6 35B A3B FP8",
-    "family": "qwen",
-    "releaseDate": "2026-04-17",
-    "lastUpdated": "2026-04-17",
-    "knowledgeCutoff": null,
-    "contextWindow": 262000,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "audio"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "Qwen3.6-27B-FP8",
     "provider": "inferx",
     "providerName": "InferX",
@@ -342,55 +156,6 @@
       "tools": true,
       "vision": true,
       "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "audio"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen3.6-35B-A3B-fp8-no-thinking",
-    "provider": "inferx",
-    "providerName": "InferX",
-    "displayName": "Qwen3.6-35B-A3B-fp8-no-thinking",
-    "family": "qwen",
-    "releaseDate": "2026-04-17",
-    "lastUpdated": "2026-04-17",
-    "knowledgeCutoff": null,
-    "contextWindow": 262000,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
@@ -472,26 +237,26 @@
     ]
   },
   {
-    "id": "Qwen3-Embedding-8B",
+    "id": "Qwen3-Coder-Next-FP8-no-thinking",
     "provider": "inferx",
     "providerName": "InferX",
-    "displayName": "Qwen3-Embedding-8B",
-    "family": "text-embedding",
-    "releaseDate": "2025-06-05",
-    "lastUpdated": "2025-06-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 32768,
-    "maxOutputTokens": 0,
+    "displayName": "Qwen3-Coder-Next-FP8-no-thinking",
+    "family": "qwen",
+    "releaseDate": "2026-02-03",
+    "lastUpdated": "2026-02-03",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 260000,
+    "maxOutputTokens": 65536,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
       "reasoning": false,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -546,6 +311,241 @@
         "image",
         "audio",
         "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen3-Embedding-8B",
+    "provider": "inferx",
+    "providerName": "InferX",
+    "displayName": "Qwen3-Embedding-8B",
+    "family": "text-embedding",
+    "releaseDate": "2025-06-05",
+    "lastUpdated": "2025-06-05",
+    "knowledgeCutoff": null,
+    "contextWindow": 32768,
+    "maxOutputTokens": 0,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen3.6-35B-A3B-FP8",
+    "provider": "inferx",
+    "providerName": "InferX",
+    "displayName": "Qwen3.6 35B A3B FP8",
+    "family": "qwen",
+    "releaseDate": "2026-04-17",
+    "lastUpdated": "2026-04-17",
+    "knowledgeCutoff": null,
+    "contextWindow": 262000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Ornith-1.0-35B-FP8",
+    "provider": "inferx",
+    "providerName": "InferX",
+    "displayName": "Ornith-1.0-35B-FP8",
+    "family": "ornith",
+    "releaseDate": "2026-06-25",
+    "lastUpdated": "2026-06-25",
+    "knowledgeCutoff": null,
+    "contextWindow": 262000,
+    "maxOutputTokens": 100000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Agents-A1",
+    "provider": "inferx",
+    "providerName": "InferX",
+    "displayName": "Agents-A1",
+    "family": null,
+    "releaseDate": "2026-06-26",
+    "lastUpdated": "2026-06-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 262000,
+    "maxOutputTokens": 100000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v4-flash",
+    "provider": "inferx",
+    "providerName": "InferX",
+    "displayName": "deepseek-v4-flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 100000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
       ],
       "output": [
         "text"

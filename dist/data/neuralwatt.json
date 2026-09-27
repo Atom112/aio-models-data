@@ -1,9 +1,9 @@
 [
   {
-    "id": "glm-5.2-short-fast-flex",
+    "id": "glm-5.2-short-fast",
     "provider": "neuralwatt",
     "providerName": "Neuralwatt",
-    "displayName": "GLM 5.2 Short Fast Flex",
+    "displayName": "GLM 5.2 Short Fast",
     "family": "glm",
     "releaseDate": "2026-06-17",
     "lastUpdated": "2026-06-17",
@@ -31,9 +31,152 @@
       ]
     },
     "pricing": {
-      "input": 0.9425,
-      "output": 2.925,
-      "cacheRead": 0.09425,
+      "input": 1.45,
+      "output": 4.5,
+      "cacheRead": 0.145,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k3-flex",
+    "provider": "neuralwatt",
+    "providerName": "Neuralwatt",
+    "displayName": "Kimi K3 Flex",
+    "family": "kimi-k3",
+    "releaseDate": "2026-07-16",
+    "lastUpdated": "2026-07-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048560,
+    "maxOutputTokens": 1048560,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.95,
+      "output": 9.75,
+      "cacheRead": 0.195,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v4-flash-flex",
+    "provider": "neuralwatt",
+    "providerName": "Neuralwatt",
+    "displayName": "DeepSeek V4 Flash Flex",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048560,
+    "maxOutputTokens": 393216,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.091,
+      "output": 0.182,
+      "cacheRead": 0.0182,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5.3-flash",
+    "provider": "neuralwatt",
+    "providerName": "Neuralwatt",
+    "displayName": "GLM-5.3 Flash",
+    "family": "glm-flash",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048560,
+    "maxOutputTokens": 1048560,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.5,
+      "cacheRead": 0.03,
       "currency": "USD",
       "per": 1000000
     },
@@ -84,7 +227,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -94,40 +237,41 @@
     ]
   },
   {
-    "id": "glm-5.2-flex",
+    "id": "qwen3.6-35b",
     "provider": "neuralwatt",
     "providerName": "Neuralwatt",
-    "displayName": "GLM 5.2 Flex",
-    "family": "glm",
-    "releaseDate": "2026-06-17",
-    "lastUpdated": "2026-06-17",
+    "displayName": "Qwen3.6 35B",
+    "family": "qwen",
+    "releaseDate": "2026-04-17",
+    "lastUpdated": "2026-04-17",
     "knowledgeCutoff": null,
-    "contextWindow": 1048560,
-    "maxOutputTokens": 1048560,
+    "contextWindow": 131056,
+    "maxOutputTokens": 131056,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
-      "structured_output": false,
+      "attachment": true,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.9425,
-      "output": 2.925,
-      "cacheRead": 0.09425,
+      "input": 0.29,
+      "output": 1.15,
+      "cacheRead": 0.029,
       "currency": "USD",
       "per": 1000000
     },
@@ -141,10 +285,10 @@
     ]
   },
   {
-    "id": "glm-5.2",
+    "id": "glm-5.2-fast",
     "provider": "neuralwatt",
     "providerName": "Neuralwatt",
-    "displayName": "GLM 5.2",
+    "displayName": "GLM 5.2 Fast",
     "family": "glm",
     "releaseDate": "2026-06-17",
     "lastUpdated": "2026-06-17",
@@ -178,245 +322,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-v4-flash",
-    "provider": "neuralwatt",
-    "providerName": "Neuralwatt",
-    "displayName": "DeepSeek V4 Flash",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048560,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.14,
-      "output": 0.28,
-      "cacheRead": 0.028,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "kimi-k2.7-code",
-    "provider": "neuralwatt",
-    "providerName": "Neuralwatt",
-    "displayName": "Kimi K2.7 Code",
-    "family": "kimi-k2",
-    "releaseDate": "2026-06-12",
-    "lastUpdated": "2026-06-12",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262128,
-    "maxOutputTokens": 262128,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.95,
-      "output": 4,
-      "cacheRead": 0.095,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "kimi-k2.7-code-flex",
-    "provider": "neuralwatt",
-    "providerName": "Neuralwatt",
-    "displayName": "Kimi K2.7 Code Flex",
-    "family": "kimi-k2",
-    "releaseDate": "2026-06-12",
-    "lastUpdated": "2026-06-12",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262128,
-    "maxOutputTokens": 262128,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.6175,
-      "output": 2.6,
-      "cacheRead": 0.06175,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "kimi-k2.7-code-fast",
-    "provider": "neuralwatt",
-    "providerName": "Neuralwatt",
-    "displayName": "Kimi K2.7 Code Fast",
-    "family": "kimi-k2",
-    "releaseDate": "2026-06-12",
-    "lastUpdated": "2026-06-12",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262128,
-    "maxOutputTokens": 262128,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.95,
-      "output": 4,
-      "cacheRead": 0.095,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm-5.2-short-fast",
-    "provider": "neuralwatt",
-    "providerName": "Neuralwatt",
-    "displayName": "GLM 5.2 Short Fast",
-    "family": "glm",
-    "releaseDate": "2026-06-17",
-    "lastUpdated": "2026-06-17",
-    "knowledgeCutoff": null,
-    "contextWindow": 199984,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.45,
-      "output": 4.5,
-      "cacheRead": 0.145,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -461,6 +367,54 @@
       "input": 3,
       "output": 15,
       "cacheRead": 0.3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v4.1-flash",
+    "provider": "neuralwatt",
+    "providerName": "Neuralwatt",
+    "displayName": "DeepSeek V4.1 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048560,
+    "maxOutputTokens": 393216,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.6,
+      "cacheRead": 0.015,
       "currency": "USD",
       "per": 1000000
     },
@@ -522,16 +476,112 @@
     ]
   },
   {
-    "id": "glm-5.2-fast",
+    "id": "qwen3.6-35b-flex",
     "provider": "neuralwatt",
     "providerName": "Neuralwatt",
-    "displayName": "GLM 5.2 Fast",
+    "displayName": "Qwen3.6 35B Flex",
+    "family": "qwen",
+    "releaseDate": "2026-04-17",
+    "lastUpdated": "2026-04-17",
+    "knowledgeCutoff": null,
+    "contextWindow": 131056,
+    "maxOutputTokens": 131056,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1885,
+      "output": 0.7475,
+      "cacheRead": 0.01885,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen-3.8-27b",
+    "provider": "neuralwatt",
+    "providerName": "Neuralwatt",
+    "displayName": "Qwen3.8 27B",
+    "family": "qwen",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 262128,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.45,
+      "output": 3.2,
+      "cacheRead": 0.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5.2-short",
+    "provider": "neuralwatt",
+    "providerName": "Neuralwatt",
+    "displayName": "GLM 5.2 Short",
     "family": "glm",
     "releaseDate": "2026-06-17",
     "lastUpdated": "2026-06-17",
     "knowledgeCutoff": null,
-    "contextWindow": 1048560,
-    "maxOutputTokens": 1048560,
+    "contextWindow": 199984,
+    "maxOutputTokens": 32000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -559,7 +609,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -569,13 +619,13 @@
     ]
   },
   {
-    "id": "kimi-k3-flex",
+    "id": "glm-5.3-flash-flex",
     "provider": "neuralwatt",
     "providerName": "Neuralwatt",
-    "displayName": "Kimi K3 Flex",
-    "family": "kimi-k3",
-    "releaseDate": "2026-07-16",
-    "lastUpdated": "2026-07-16",
+    "displayName": "GLM-5.3 Flash Flex",
+    "family": "glm-flash",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
     "knowledgeCutoff": null,
     "contextWindow": 1048560,
     "maxOutputTokens": 1048560,
@@ -584,11 +634,11 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
-      "structured_output": true,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
@@ -601,9 +651,9 @@
       ]
     },
     "pricing": {
-      "input": 1.95,
-      "output": 9.75,
-      "cacheRead": 0.195,
+      "input": 0.0975,
+      "output": 0.325,
+      "cacheRead": 0.0195,
       "currency": "USD",
       "per": 1000000
     },
@@ -665,6 +715,242 @@
     ]
   },
   {
+    "id": "glm-5.2-flex",
+    "provider": "neuralwatt",
+    "providerName": "Neuralwatt",
+    "displayName": "GLM 5.2 Flex",
+    "family": "glm",
+    "releaseDate": "2026-06-17",
+    "lastUpdated": "2026-06-17",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048560,
+    "maxOutputTokens": 1048560,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.9425,
+      "output": 2.925,
+      "cacheRead": 0.09425,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v4-flash-speed",
+    "provider": "neuralwatt",
+    "providerName": "Neuralwatt",
+    "displayName": "DeepSeek V4 Flash (Speed)",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-07-31",
+    "lastUpdated": "2026-07-31",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048560,
+    "maxOutputTokens": 393216,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.14,
+      "output": 0.28,
+      "cacheRead": 0.028,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5.2",
+    "provider": "neuralwatt",
+    "providerName": "Neuralwatt",
+    "displayName": "GLM 5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-17",
+    "lastUpdated": "2026-06-17",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048560,
+    "maxOutputTokens": 1048560,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.45,
+      "output": 4.5,
+      "cacheRead": 0.145,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5.2-short-fast-flex",
+    "provider": "neuralwatt",
+    "providerName": "Neuralwatt",
+    "displayName": "GLM 5.2 Short Fast Flex",
+    "family": "glm",
+    "releaseDate": "2026-06-17",
+    "lastUpdated": "2026-06-17",
+    "knowledgeCutoff": null,
+    "contextWindow": 199984,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.9425,
+      "output": 2.925,
+      "cacheRead": 0.09425,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k2.7-code-fast",
+    "provider": "neuralwatt",
+    "providerName": "Neuralwatt",
+    "displayName": "Kimi K2.7 Code Fast",
+    "family": "kimi-k2",
+    "releaseDate": "2026-06-12",
+    "lastUpdated": "2026-06-12",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262128,
+    "maxOutputTokens": 262128,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.95,
+      "output": 4,
+      "cacheRead": 0.095,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "gemma-4-31b",
     "provider": "neuralwatt",
     "providerName": "Neuralwatt",
@@ -700,6 +986,53 @@
       "input": 0.144,
       "output": 0.42,
       "cacheRead": 0.0144,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5.3-flex",
+    "provider": "neuralwatt",
+    "providerName": "Neuralwatt",
+    "displayName": "GLM 5.3 Flex",
+    "family": "glm",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048560,
+    "maxOutputTokens": 1048560,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.9425,
+      "output": 2.925,
+      "cacheRead": 0.09425,
       "currency": "USD",
       "per": 1000000
     },
@@ -750,7 +1083,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "beta",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -760,40 +1093,89 @@
     ]
   },
   {
-    "id": "deepseek-v4-flash-flex",
+    "id": "qwen-3.8-27b-flex",
     "provider": "neuralwatt",
     "providerName": "Neuralwatt",
-    "displayName": "DeepSeek V4 Flash Flex",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048560,
-    "maxOutputTokens": 65536,
+    "displayName": "Qwen3.8 27B Flex",
+    "family": "qwen",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 262128,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.091,
-      "output": 0.182,
-      "cacheRead": 0.0182,
+      "input": 0.2925,
+      "output": 2.08,
+      "cacheRead": 0.1625,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k2.7-code-flex",
+    "provider": "neuralwatt",
+    "providerName": "Neuralwatt",
+    "displayName": "Kimi K2.7 Code Flex",
+    "family": "kimi-k2",
+    "releaseDate": "2026-06-12",
+    "lastUpdated": "2026-06-12",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262128,
+    "maxOutputTokens": 262128,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.6175,
+      "output": 2.6,
+      "cacheRead": 0.06175,
       "currency": "USD",
       "per": 1000000
     },
@@ -844,7 +1226,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "beta",
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -854,16 +1236,16 @@
     ]
   },
   {
-    "id": "qwen3.6-35b",
+    "id": "kimi-k2.7-code",
     "provider": "neuralwatt",
     "providerName": "Neuralwatt",
-    "displayName": "Qwen3.6 35B",
-    "family": "qwen",
-    "releaseDate": "2026-04-17",
-    "lastUpdated": "2026-04-17",
-    "knowledgeCutoff": null,
-    "contextWindow": 131056,
-    "maxOutputTokens": 131056,
+    "displayName": "Kimi K2.7 Code",
+    "family": "kimi-k2",
+    "releaseDate": "2026-06-12",
+    "lastUpdated": "2026-06-12",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262128,
+    "maxOutputTokens": 262128,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -871,7 +1253,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": true,
+      "temperature": false,
       "attachment": true,
       "structured_output": true,
       "open_weights": true
@@ -886,9 +1268,9 @@
       ]
     },
     "pricing": {
-      "input": 0.29,
-      "output": 1.15,
-      "cacheRead": 0.029,
+      "input": 0.95,
+      "output": 4,
+      "cacheRead": 0.095,
       "currency": "USD",
       "per": 1000000
     },
@@ -902,16 +1284,16 @@
     ]
   },
   {
-    "id": "qwen-3.8-27b",
+    "id": "deepseek-v4.1-flash-flex",
     "provider": "neuralwatt",
     "providerName": "Neuralwatt",
-    "displayName": "Qwen3.8 27B",
-    "family": "qwen",
-    "releaseDate": "2026-08-14",
-    "lastUpdated": "2026-08-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 262128,
-    "maxOutputTokens": 65536,
+    "displayName": "DeepSeek V4.1 Flash Flex",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048560,
+    "maxOutputTokens": 393216,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -934,13 +1316,13 @@
       ]
     },
     "pricing": {
-      "input": 0.45,
-      "output": 3.2,
-      "cacheRead": 0.25,
+      "input": 0.0975,
+      "output": 0.39,
+      "cacheRead": 0.00975,
       "currency": "USD",
       "per": 1000000
     },
-    "status": "beta",
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -950,26 +1332,26 @@
     ]
   },
   {
-    "id": "glm-5.2-short",
+    "id": "deepseek-v4-flash",
     "provider": "neuralwatt",
     "providerName": "Neuralwatt",
-    "displayName": "GLM 5.2 Short",
-    "family": "glm",
-    "releaseDate": "2026-06-17",
-    "lastUpdated": "2026-06-17",
-    "knowledgeCutoff": null,
-    "contextWindow": 199984,
-    "maxOutputTokens": 32000,
+    "displayName": "DeepSeek V4 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048560,
+    "maxOutputTokens": 393216,
     "capabilities": {
       "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -981,9 +1363,9 @@
       ]
     },
     "pricing": {
-      "input": 1.45,
-      "output": 4.5,
-      "cacheRead": 0.145,
+      "input": 0.14,
+      "output": 0.28,
+      "cacheRead": 0.028,
       "currency": "USD",
       "per": 1000000
     },

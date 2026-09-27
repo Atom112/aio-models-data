@@ -41,6 +41,98 @@
     ]
   },
   {
+    "id": "llama-3.3-70b-versatile",
+    "provider": "groq",
+    "providerName": "Groq",
+    "displayName": "Llama 3.3 70B",
+    "family": "llama",
+    "releaseDate": "2024-12-06",
+    "lastUpdated": "2024-12-06",
+    "knowledgeCutoff": "2023-12",
+    "contextWindow": 131072,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.59,
+      "output": 0.79,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "allam-2-7b",
+    "provider": "groq",
+    "providerName": "Groq",
+    "displayName": "ALLaM-2-7b",
+    "family": null,
+    "releaseDate": "2025-01-23",
+    "lastUpdated": "2025-01-23",
+    "knowledgeCutoff": null,
+    "contextWindow": 4096,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "whisper-large-v3-turbo",
     "provider": "groq",
     "providerName": "Groq",
@@ -128,197 +220,10 @@
     ]
   },
   {
-    "id": "allam-2-7b",
+    "id": "groq/compound-mini",
     "provider": "groq",
     "providerName": "Groq",
-    "displayName": "ALLaM-2-7b",
-    "family": null,
-    "releaseDate": "2025-01-23",
-    "lastUpdated": "2025-01-23",
-    "knowledgeCutoff": null,
-    "contextWindow": 4096,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "llama-3.3-70b-versatile",
-    "provider": "groq",
-    "providerName": "Groq",
-    "displayName": "Llama 3.3 70B",
-    "family": "llama",
-    "releaseDate": "2024-12-06",
-    "lastUpdated": "2024-12-06",
-    "knowledgeCutoff": "2023-12",
-    "contextWindow": 131072,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.59,
-      "output": 0.79,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen/qwen3.8-27b",
-    "provider": "groq",
-    "providerName": "Groq",
-    "displayName": "Qwen3.8 27B",
-    "family": "qwen",
-    "releaseDate": "2026-08-14",
-    "lastUpdated": "2026-08-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 131042,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.8,
-      "output": 4,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen/qwen3.6-27b",
-    "provider": "groq",
-    "providerName": "Groq",
-    "displayName": "Qwen3.6 27B",
-    "family": "qwen",
-    "releaseDate": "2026-04-22",
-    "lastUpdated": "2026-04-22",
-    "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.6,
-      "output": 3,
-      "cacheRead": 0.3,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "groq/compound",
-    "provider": "groq",
-    "providerName": "Groq",
-    "displayName": "Compound",
+    "displayName": "Compound Mini",
     "family": "groq",
     "releaseDate": "2025-09-04",
     "lastUpdated": "2025-09-04",
@@ -356,10 +261,10 @@
     ]
   },
   {
-    "id": "groq/compound-mini",
+    "id": "groq/compound",
     "provider": "groq",
     "providerName": "Groq",
-    "displayName": "Compound Mini",
+    "displayName": "Compound",
     "family": "groq",
     "releaseDate": "2025-09-04",
     "lastUpdated": "2025-09-04",
@@ -480,6 +385,183 @@
       "per": 1000000
     },
     "status": "beta",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "canopylabs/orpheus-v1-english",
+    "provider": "groq",
+    "providerName": "Groq",
+    "displayName": "Canopy Labs Orpheus V1 English",
+    "family": "canopylabs",
+    "releaseDate": "2025-12-19",
+    "lastUpdated": "2025-12-19",
+    "knowledgeCutoff": null,
+    "contextWindow": 4000,
+    "maxOutputTokens": 50000,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "audio"
+      ]
+    },
+    "pricing": null,
+    "status": "beta",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "canopylabs/orpheus-arabic-saudi",
+    "provider": "groq",
+    "providerName": "Groq",
+    "displayName": "Canopy Labs Orpheus Arabic Saudi",
+    "family": "canopylabs",
+    "releaseDate": "2025-12-16",
+    "lastUpdated": "2025-12-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 4000,
+    "maxOutputTokens": 50000,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "audio"
+      ]
+    },
+    "pricing": null,
+    "status": "beta",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.8-27b",
+    "provider": "groq",
+    "providerName": "Groq",
+    "displayName": "Qwen3.8 27B",
+    "family": "qwen",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 131042,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.8,
+      "output": 4,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.6-27b",
+    "provider": "groq",
+    "providerName": "Groq",
+    "displayName": "Qwen3.6 27B",
+    "family": "qwen",
+    "releaseDate": "2026-04-22",
+    "lastUpdated": "2026-04-22",
+    "knowledgeCutoff": null,
+    "contextWindow": 131072,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.6,
+      "output": 3,
+      "cacheRead": 0.3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -620,88 +702,6 @@
       "per": 1000000
     },
     "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "canopylabs/orpheus-v1-english",
-    "provider": "groq",
-    "providerName": "Groq",
-    "displayName": "Canopy Labs Orpheus V1 English",
-    "family": "canopylabs",
-    "releaseDate": "2025-12-19",
-    "lastUpdated": "2025-12-19",
-    "knowledgeCutoff": null,
-    "contextWindow": 4000,
-    "maxOutputTokens": 50000,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "audio"
-      ]
-    },
-    "pricing": null,
-    "status": "beta",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "canopylabs/orpheus-arabic-saudi",
-    "provider": "groq",
-    "providerName": "Groq",
-    "displayName": "Canopy Labs Orpheus Arabic Saudi",
-    "family": "canopylabs",
-    "releaseDate": "2025-12-16",
-    "lastUpdated": "2025-12-16",
-    "knowledgeCutoff": null,
-    "contextWindow": 4000,
-    "maxOutputTokens": 50000,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "audio"
-      ]
-    },
-    "pricing": null,
-    "status": "beta",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],

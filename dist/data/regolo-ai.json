@@ -1,52 +1,5 @@
 [
   {
-    "id": "qwen3.5-9b",
-    "provider": "regolo-ai",
-    "providerName": "Regolo AI",
-    "displayName": "Qwen3.5-9B",
-    "family": "qwen",
-    "releaseDate": "2026-02-01",
-    "lastUpdated": "2026-02-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.15,
-      "output": 0.6,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "qwen3.8-27b",
     "provider": "regolo-ai",
     "providerName": "Regolo AI",
@@ -95,18 +48,158 @@
     ]
   },
   {
-    "id": "faster-whisper-large-v3",
+    "id": "brick-v1-beta",
     "provider": "regolo-ai",
     "providerName": "Regolo AI",
-    "displayName": "Faster Whisper Large v3",
-    "family": "whisper",
-    "releaseDate": "2024-10-01",
-    "lastUpdated": "2024-10-01",
+    "displayName": "Brick v1 Beta",
+    "family": "model-router",
+    "releaseDate": "2026-02-06",
+    "lastUpdated": "2026-02-06",
     "knowledgeCutoff": null,
-    "contextWindow": 448,
-    "maxOutputTokens": 4096,
+    "contextWindow": 100000,
+    "maxOutputTokens": 15000,
     "capabilities": {
-      "tools": false,
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "beta",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.5-122b",
+    "provider": "regolo-ai",
+    "providerName": "Regolo AI",
+    "displayName": "Qwen3.5-122B",
+    "family": "qwen",
+    "releaseDate": "2026-02-01",
+    "lastUpdated": "2026-02-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.9,
+      "output": 3.6,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3-coder-next",
+    "provider": "regolo-ai",
+    "providerName": "Regolo AI",
+    "displayName": "Qwen3-Coder-Next",
+    "family": "qwen",
+    "releaseDate": "2026-03-01",
+    "lastUpdated": "2026-03-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 1.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "apertus-70b",
+    "provider": "regolo-ai",
+    "providerName": "Regolo AI",
+    "displayName": "Apertus 70B",
+    "family": null,
+    "releaseDate": "2025-09-02",
+    "lastUpdated": "2025-09-02",
+    "knowledgeCutoff": "2025-09",
+    "contextWindow": 30000,
+    "maxOutputTokens": 30000,
+    "capabilities": {
+      "tools": true,
       "vision": false,
       "reasoning": false,
       "streaming": true,
@@ -119,7 +212,146 @@
     },
     "modalities": {
       "input": [
-        "audio"
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.46,
+      "output": 2.42,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm5.2",
+    "provider": "regolo-ai",
+    "providerName": "Regolo AI",
+    "displayName": "GLM-5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 96000,
+    "maxOutputTokens": 96000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.31,
+      "output": 6,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3-reranker-4b",
+    "provider": "regolo-ai",
+    "providerName": "Regolo AI",
+    "displayName": "Qwen3-Reranker-4B",
+    "family": "qwen",
+    "releaseDate": "2026-02-01",
+    "lastUpdated": "2026-02-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 32768,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.12,
+      "output": 0.12,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ocr-2",
+    "provider": "regolo-ai",
+    "providerName": "Regolo AI",
+    "displayName": "DeepSeek OCR 2",
+    "family": null,
+    "releaseDate": "2026-01-27",
+    "lastUpdated": "2026-01-27",
+    "knowledgeCutoff": null,
+    "contextWindow": 4000,
+    "maxOutputTokens": 4000,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
       ],
       "output": [
         "text"
@@ -128,6 +360,52 @@
     "pricing": {
       "input": 0,
       "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "llama-3.3-70b-instruct",
+    "provider": "regolo-ai",
+    "providerName": "Regolo AI",
+    "displayName": "Llama 3.3 70B Instruct",
+    "family": "llama",
+    "releaseDate": "2025-04-28",
+    "lastUpdated": "2025-04-28",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.6,
+      "output": 2.7,
       "currency": "USD",
       "per": 1000000
     },
@@ -235,52 +513,6 @@
     ]
   },
   {
-    "id": "apertus-70b",
-    "provider": "regolo-ai",
-    "providerName": "Regolo AI",
-    "displayName": "Apertus 70B",
-    "family": null,
-    "releaseDate": "2025-09-02",
-    "lastUpdated": "2025-09-02",
-    "knowledgeCutoff": "2025-09",
-    "contextWindow": 30000,
-    "maxOutputTokens": 30000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.46,
-      "output": 2.42,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "gpt-oss-20b",
     "provider": "regolo-ai",
     "providerName": "Regolo AI",
@@ -327,39 +559,40 @@
     ]
   },
   {
-    "id": "qwen3-coder-next",
+    "id": "qwen3.5-9b",
     "provider": "regolo-ai",
     "providerName": "Regolo AI",
-    "displayName": "Qwen3-Coder-Next",
+    "displayName": "Qwen3.5-9B",
     "family": "qwen",
-    "releaseDate": "2026-03-01",
-    "lastUpdated": "2026-03-01",
+    "releaseDate": "2026-02-01",
+    "lastUpdated": "2026-02-01",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 16384,
+    "maxOutputTokens": 8192,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.3,
-      "output": 1.2,
+      "input": 0.15,
+      "output": 0.6,
       "currency": "USD",
       "per": 1000000
     },
@@ -419,112 +652,20 @@
     ]
   },
   {
-    "id": "qwen3-reranker-4b",
+    "id": "mistral-small-4-119b",
     "provider": "regolo-ai",
     "providerName": "Regolo AI",
-    "displayName": "Qwen3-Reranker-4B",
-    "family": "qwen",
-    "releaseDate": "2026-02-01",
-    "lastUpdated": "2026-02-01",
+    "displayName": "Mistral Small 4 119B",
+    "family": "mistral-small",
+    "releaseDate": "2026-03-15",
+    "lastUpdated": "2026-03-15",
     "knowledgeCutoff": null,
-    "contextWindow": 32768,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.12,
-      "output": 0.12,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm5.2",
-    "provider": "regolo-ai",
-    "providerName": "Regolo AI",
-    "displayName": "GLM-5.2",
-    "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
-    "knowledgeCutoff": null,
-    "contextWindow": 96000,
-    "maxOutputTokens": 96000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2.31,
-      "output": 6,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "brick-v1-beta",
-    "provider": "regolo-ai",
-    "providerName": "Regolo AI",
-    "displayName": "Brick v1 Beta",
-    "family": "model-router",
-    "releaseDate": "2026-02-06",
-    "lastUpdated": "2026-02-06",
-    "knowledgeCutoff": null,
-    "contextWindow": 100000,
-    "maxOutputTokens": 15000,
+    "contextWindow": 256000,
+    "maxOutputTokens": 16384,
     "capabilities": {
       "tools": true,
       "vision": true,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
@@ -543,12 +684,12 @@
       ]
     },
     "pricing": {
-      "input": 0,
-      "output": 0,
+      "input": 0.75,
+      "output": 3,
       "currency": "USD",
       "per": 1000000
     },
-    "status": "beta",
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -650,112 +791,18 @@
     ]
   },
   {
-    "id": "deepseek-ocr-2",
+    "id": "faster-whisper-large-v3",
     "provider": "regolo-ai",
     "providerName": "Regolo AI",
-    "displayName": "DeepSeek OCR 2",
-    "family": null,
-    "releaseDate": "2026-01-27",
-    "lastUpdated": "2026-01-27",
+    "displayName": "Faster Whisper Large v3",
+    "family": "whisper",
+    "releaseDate": "2024-10-01",
+    "lastUpdated": "2024-10-01",
     "knowledgeCutoff": null,
-    "contextWindow": 4000,
-    "maxOutputTokens": 4000,
+    "contextWindow": 448,
+    "maxOutputTokens": 4096,
     "capabilities": {
       "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "mistral-small-4-119b",
-    "provider": "regolo-ai",
-    "providerName": "Regolo AI",
-    "displayName": "Mistral Small 4 119B",
-    "family": "mistral-small",
-    "releaseDate": "2026-03-15",
-    "lastUpdated": "2026-03-15",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.75,
-      "output": 3,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "llama-3.3-70b-instruct",
-    "provider": "regolo-ai",
-    "providerName": "Regolo AI",
-    "displayName": "Llama 3.3 70B Instruct",
-    "family": "llama",
-    "releaseDate": "2025-04-28",
-    "lastUpdated": "2025-04-28",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
       "vision": false,
       "reasoning": false,
       "streaming": true,
@@ -764,66 +811,19 @@
       "temperature": true,
       "attachment": false,
       "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.6,
-      "output": 2.7,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3.5-122b",
-    "provider": "regolo-ai",
-    "providerName": "Regolo AI",
-    "displayName": "Qwen3.5-122B",
-    "family": "qwen",
-    "releaseDate": "2026-02-01",
-    "lastUpdated": "2026-02-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "audio"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.9,
-      "output": 3.6,
+      "input": 0,
+      "output": 0,
       "currency": "USD",
       "per": 1000000
     },

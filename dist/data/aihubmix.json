@@ -1,15 +1,15 @@
 [
   {
-    "id": "claude-sonnet-4-6",
+    "id": "gpt-5.4",
     "provider": "aihubmix",
     "providerName": "AIHubMix",
-    "displayName": "Claude Sonnet 4.6",
-    "family": "claude-sonnet",
-    "releaseDate": "2026-02-17",
-    "lastUpdated": "2026-03-13",
+    "displayName": "GPT-5.4",
+    "family": "gpt",
+    "releaseDate": "2026-03-05",
+    "lastUpdated": "2026-03-05",
     "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 64000,
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -17,7 +17,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": true,
+      "temperature": false,
       "attachment": true,
       "structured_output": true,
       "open_weights": false
@@ -33,24 +33,119 @@
       ]
     },
     "pricing": {
-      "input": 3,
+      "input": 2.5,
       "output": 15,
-      "cacheRead": 0.3,
-      "cacheWrite": 3.75,
+      "cacheRead": 0.25,
       "currency": "USD",
       "per": 1000000,
       "tiers": [
         {
-          "input": 6,
+          "input": 5,
           "output": 22.5,
-          "contextThreshold": 200000
+          "contextThreshold": 272000
         }
       ],
       "contextOverThreshold": {
-        "input": 6,
+        "input": 5,
         "output": 22.5,
         "contextThreshold": 200000
       }
+    },
+    "status": "experimental",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mimo-v2.6-pro",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "MiMo-V2.6-Pro",
+    "family": "mimo",
+    "releaseDate": "2026-09-22",
+    "lastUpdated": "2026-09-22",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.48,
+      "output": 0.96,
+      "cacheRead": 0.00384,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "coding-minimax-m2.7-free",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Coding MiniMax M2.7 (Free)",
+    "family": "minimax-free",
+    "releaseDate": "2026-03-18",
+    "lastUpdated": "2026-03-18",
+    "knowledgeCutoff": null,
+    "contextWindow": 204800,
+    "maxOutputTokens": 128100,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
     },
     "status": "active",
     "deprecationDate": null,
@@ -110,6 +205,1105 @@
     ]
   },
   {
+    "id": "muse-spark-1.3",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Muse Spark 1.3",
+    "family": "muse",
+    "releaseDate": "2026-09-02",
+    "lastUpdated": "2026-09-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.375,
+      "output": 4.675,
+      "cacheRead": 0.165,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deep-deepseek-v4-pro",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "DeepSeek V4 Pro (DeepSeek)",
+    "family": "deepseek-thinking",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.478,
+      "output": 0.956,
+      "cacheRead": 0.004302,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "grok-4.7",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Grok 4.7",
+    "family": "grok",
+    "releaseDate": "2026-09-21",
+    "lastUpdated": "2026-09-21",
+    "knowledgeCutoff": "2026-05",
+    "contextWindow": 500000,
+    "maxOutputTokens": 500000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.2,
+      "output": 6.6,
+      "cacheRead": 0.55,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 4.4,
+          "output": 13.2,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 4.4,
+        "output": 13.2,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.8-2.4t-a95b",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Qwen3.8 2.4T A95B",
+    "family": "qwen",
+    "releaseDate": "2026-08-12",
+    "lastUpdated": "2026-08-12",
+    "knowledgeCutoff": null,
+    "contextWindow": 262000,
+    "maxOutputTokens": 262000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 6,
+      "cacheRead": 0.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.2-codex",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "GPT-5.2 Codex",
+    "family": "gpt-codex",
+    "releaseDate": "2025-12-11",
+    "lastUpdated": "2025-12-11",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.75,
+      "output": 14,
+      "cacheRead": 0.175,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.1-codex",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "GPT-5.1 Codex",
+    "family": "gpt-codex",
+    "releaseDate": "2025-11-13",
+    "lastUpdated": "2025-11-13",
+    "knowledgeCutoff": "2024-09-30",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 10,
+      "cacheRead": 0.125,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5v-turbo",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "GLM 5 Vision Turbo",
+    "family": "glmv",
+    "releaseDate": "2026-05-09",
+    "lastUpdated": "2026-05-09",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.7042,
+      "output": 3.09848,
+      "cacheRead": 0.169008,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5.3-flash",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "GLM-5.3-Flash",
+    "family": "glm-flash",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.11268,
+      "output": 0.39438,
+      "cacheRead": 0.02817,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v4-flash-0731",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "DeepSeek V4 Flash 0731",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-07-31",
+    "lastUpdated": "2026-07-31",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.142,
+      "output": 0.284,
+      "cacheRead": 0.0284,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.8-max",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Qwen3.8 Max",
+    "family": "qwen",
+    "releaseDate": "2026-08-03",
+    "lastUpdated": "2026-08-03",
+    "knowledgeCutoff": null,
+    "contextWindow": 991000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.69,
+      "output": 5.07,
+      "cacheRead": 0.169,
+      "cacheWrite": 2.1125,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k3",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Kimi K3",
+    "family": "kimi-k3",
+    "releaseDate": "2026-07-16",
+    "lastUpdated": "2026-07-27",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 15,
+      "cacheRead": 0.3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "doubao-seed-2-0-lite-260428",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Doubao Seed 2.0 Lite 260428",
+    "family": "seed",
+    "releaseDate": "2026-04-28",
+    "lastUpdated": "2026-04-28",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.08,
+      "output": 0.51,
+      "cacheRead": 0.01692,
+      "inputAudio": 1.269,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.13,
+          "output": 0.76,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 0.25,
+          "output": 1.52,
+          "contextThreshold": 128000
+        }
+      ]
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-sonnet-4-6-think",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Claude Sonnet 4.6 Thinking",
+    "family": "claude-sonnet",
+    "releaseDate": "2026-02-17",
+    "lastUpdated": "2026-03-13",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 15,
+      "cacheRead": 0.3,
+      "cacheWrite": 3.75,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 6,
+          "output": 22.5,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 6,
+        "output": 22.5,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v4-flash-0731-fast",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "DeepSeek V4 Flash 0731 Fast",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-07-31",
+    "lastUpdated": "2026-07-31",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.28,
+      "output": 1.4,
+      "cacheRead": 0.07,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "hy3-preview",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Hy3 Preview",
+    "family": "Hy",
+    "releaseDate": "2026-04-20",
+    "lastUpdated": "2026-04-20",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.17,
+      "output": 0.566661,
+      "cacheRead": 0.051,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "alicloud-deepseek-v4-pro",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "DeepSeek V4 Pro (Alibaba Cloud)",
+    "family": "deepseek-thinking",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.69,
+      "output": 3.38,
+      "cacheRead": 0.13,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "zai-glm-5.1",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "GLM-5.1 (Z.ai)",
+    "family": "glm",
+    "releaseDate": "2026-03-27",
+    "lastUpdated": "2026-03-27",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.845,
+      "output": 3.38,
+      "cacheRead": 0.183112,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v4.1-flash",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "DeepSeek V4.1 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.155,
+      "output": 0.62,
+      "cacheRead": 0.0031,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.3-codex",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "GPT-5.3 Codex",
+    "family": "gpt-codex",
+    "releaseDate": "2026-02-05",
+    "lastUpdated": "2026-02-05",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.75,
+      "output": 14,
+      "cacheRead": 0.175,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "coding-minimax-m2.7-highspeed",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Coding MiniMax M2.7 Highspeed",
+    "family": "minimax",
+    "releaseDate": "2026-03-18",
+    "lastUpdated": "2026-03-18",
+    "knowledgeCutoff": null,
+    "contextWindow": 204800,
+    "maxOutputTokens": 128100,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2,
+      "output": 0.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "muse-spark-1.1",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Muse Spark 1.1",
+    "family": "muse",
+    "releaseDate": "2026-04-08",
+    "lastUpdated": "2026-07-09",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.375,
+      "output": 4.675,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v4-flash-vision-exp",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "DeepSeek V4 Flash Vision Exp",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-08-21",
+    "lastUpdated": "2026-09-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.155,
+      "output": 0.62,
+      "cacheRead": 0.0031,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "kimi-k2.7-code-highspeed",
     "provider": "aihubmix",
     "providerName": "AIHubMix",
@@ -146,6 +1340,2820 @@
       "input": 1.9,
       "output": 7.999,
       "cacheRead": 0.32167,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.7-flash",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Qwen3.7 Flash",
+    "family": "qwen",
+    "releaseDate": "2026-07-15",
+    "lastUpdated": "2026-07-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 991000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.0282,
+      "output": 0.1128,
+      "cacheRead": 0.00564,
+      "cacheWrite": 0.03525,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k2.6",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Kimi K2.6",
+    "family": "kimi-k2",
+    "releaseDate": "2026-04-21",
+    "lastUpdated": "2026-04-21",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.95,
+      "output": 4,
+      "cacheRead": 0.16,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-opus-5-5",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Claude Opus 5.5",
+    "family": "claude-opus",
+    "releaseDate": "2026-09-22",
+    "lastUpdated": "2026-09-22",
+    "knowledgeCutoff": "2026-06",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 4,
+      "output": 20,
+      "cacheRead": 0.2,
+      "cacheWrite": 5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-opus-4-8-think",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Claude Opus 4.8",
+    "family": "claude-opus",
+    "releaseDate": "2026-05-28",
+    "lastUpdated": "2026-05-28",
+    "knowledgeCutoff": "2026-01",
+    "contextWindow": 200000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 25,
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "doubao-seed-2-0-pro",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Doubao Seed 2.0 Pro",
+    "family": "seed",
+    "releaseDate": "2026-02-14",
+    "lastUpdated": "2026-02-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.48,
+      "output": 2.41,
+      "cacheRead": 0.09644,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.72,
+          "output": 3.62,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 1.45,
+          "output": 7.23,
+          "contextThreshold": 128000
+        }
+      ]
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "xiaomi-mimo-v2.5",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Xiaomi MiMo-V2.5",
+    "family": "mimo-v2.5",
+    "releaseDate": "2026-04-22",
+    "lastUpdated": "2026-05-13",
+    "knowledgeCutoff": "2024-12",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.44,
+      "output": 2.2,
+      "cacheRead": 0.088,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.88,
+          "output": 4.4,
+          "contextThreshold": 256000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 0.88,
+        "output": 4.4,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-fable-5-1",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Claude Fable 5.1",
+    "family": "claude-fable",
+    "releaseDate": "2026-09-01",
+    "lastUpdated": "2026-09-01",
+    "knowledgeCutoff": "2026-06",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 11,
+      "output": 55,
+      "cacheRead": 0.275,
+      "cacheWrite": 13.75,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3.6-flash",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Gemini 3.6 Flash",
+    "family": "gemini-flash",
+    "releaseDate": "2026-07-21",
+    "lastUpdated": "2026-07-21",
+    "knowledgeCutoff": "2026-03",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.5,
+      "output": 7.5,
+      "cacheRead": 0.15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "step-5-preview",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Step 5 Preview",
+    "family": null,
+    "releaseDate": "2026-09-16",
+    "lastUpdated": "2026-09-20",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 1000000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.08,
+      "output": 3.0888,
+      "cacheRead": 0.054,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "longcat-2.0",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "LongCat-2.0",
+    "family": "longcat",
+    "releaseDate": "2026-06-30",
+    "lastUpdated": "2026-06-30",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.7746,
+      "output": 3.0984,
+      "cacheRead": 0.015492,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mimo-v2.6-pro-ultraspeed",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "MiMo-V2.6-Pro-UltraSpeed",
+    "family": "mimo",
+    "releaseDate": "2026-09-21",
+    "lastUpdated": "2026-09-21",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 4.8,
+      "output": 9.6,
+      "cacheRead": 0.0384,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "doubao-seed-2-0-code-preview",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Doubao Seed 2.0 Code Preview",
+    "family": "seed",
+    "releaseDate": "2026-02-14",
+    "lastUpdated": "2026-02-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.48,
+      "output": 2.41,
+      "cacheRead": 0.09644,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.72,
+          "output": 3.62,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 1.45,
+          "output": 7.23,
+          "contextThreshold": 128000
+        }
+      ]
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "grok-4.3",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Grok 4.3",
+    "family": "grok",
+    "releaseDate": "2026-05-01",
+    "lastUpdated": "2026-05-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 1000000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 2.5,
+      "cacheRead": 0.2,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 2.5,
+          "output": 5,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 2.5,
+        "output": 5,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.8-omni-flash",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Qwen3.8 Omni Flash",
+    "family": "qwen",
+    "releaseDate": "2026-09-17",
+    "lastUpdated": "2026-09-17",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1126,
+      "output": 0.380025,
+      "cacheRead": 0.014075,
+      "cacheWrite": 0.175937,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "doubao-seed-2-0-mini-260428",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Doubao Seed 2.0 Mini 260428",
+    "family": "seed",
+    "releaseDate": "2026-04-28",
+    "lastUpdated": "2026-04-28",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.03,
+      "output": 0.28,
+      "cacheRead": 0.00564,
+      "inputAudio": 0.423,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.06,
+          "output": 0.56,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 0.11,
+          "output": 1.13,
+          "contextThreshold": 128000
+        }
+      ]
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "xiaomi-mimo-v2.5-pro-free",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Xiaomi MiMo-V2.5-Pro (free)",
+    "family": "mimo-v2.5-pro",
+    "releaseDate": "2026-04-22",
+    "lastUpdated": "2026-05-13",
+    "knowledgeCutoff": "2024-12",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3.5-flash-lite",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Gemini 3.5 Flash Lite",
+    "family": "gemini-flash-lite",
+    "releaseDate": "2026-07-21",
+    "lastUpdated": "2026-07-21",
+    "knowledgeCutoff": "2026-03",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 2.499999,
+      "cacheRead": 0.03,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3.1-flash-image",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Nano Banana 2",
+    "family": "gemini-flash",
+    "releaseDate": "2026-05-28",
+    "lastUpdated": "2026-05-28",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 131072,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text",
+        "image"
+      ]
+    },
+    "pricing": {
+      "input": 0.5,
+      "output": 3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-6-astra",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "GPT-6 Astra",
+    "family": "gpt-astra",
+    "releaseDate": "2026-09-04",
+    "lastUpdated": "2026-09-04",
+    "knowledgeCutoff": "2026-04-30",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 10,
+      "output": 50,
+      "cacheRead": 1,
+      "cacheWrite": 12.5,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 20,
+          "output": 75,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 20,
+        "output": 75,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3.1-pro-preview",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Gemini 3.1 Pro Preview",
+    "family": "gemini-pro",
+    "releaseDate": "2026-02-19",
+    "lastUpdated": "2026-02-19",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 12,
+      "cacheRead": 0.2,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 4,
+          "output": 18,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 4,
+        "output": 18,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "grok-4.5",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Grok 4.5",
+    "family": "grok",
+    "releaseDate": "2026-07-08",
+    "lastUpdated": "2026-07-08",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 1000000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 6,
+      "cacheRead": 0.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k2.5",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Kimi K2.5",
+    "family": "kimi-k2",
+    "releaseDate": "2026-01",
+    "lastUpdated": "2026-01",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.6,
+      "output": 3,
+      "cacheRead": 0.1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.1",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "GPT-5.1",
+    "family": "gpt",
+    "releaseDate": "2025-11-13",
+    "lastUpdated": "2025-11-13",
+    "knowledgeCutoff": "2024-09-30",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 10,
+      "cacheRead": 0.13,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-opus-5",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Claude Opus 5",
+    "family": "claude-opus",
+    "releaseDate": "2026-07-24",
+    "lastUpdated": "2026-07-24",
+    "knowledgeCutoff": "2026-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 25,
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "coding-minimax-m2.7",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Coding MiniMax M2.7",
+    "family": "minimax",
+    "releaseDate": "2026-03-18",
+    "lastUpdated": "2026-03-18",
+    "knowledgeCutoff": null,
+    "contextWindow": 204800,
+    "maxOutputTokens": 128100,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2,
+      "output": 0.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimax-m2.7",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "MiniMax M2.7",
+    "family": "minimax",
+    "releaseDate": "2026-03-18",
+    "lastUpdated": "2026-03-18",
+    "knowledgeCutoff": null,
+    "contextWindow": 204800,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 1.2,
+      "cacheRead": 0.06,
+      "cacheWrite": 0.375,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3.5-flash",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Gemini 3.5 Flash",
+    "family": "gemini-flash",
+    "releaseDate": "2026-05-19",
+    "lastUpdated": "2026-05-19",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.5,
+      "output": 9,
+      "cacheRead": 1.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-2.5-pro",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Gemini 2.5 Pro",
+    "family": "gemini-pro",
+    "releaseDate": "2025-03-20",
+    "lastUpdated": "2025-06-05",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 10,
+      "cacheRead": 0.125,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 2.5,
+          "output": 15,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 2.5,
+        "output": 15,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deep-deepseek-v4-flash",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "DeepSeek V4 Flash (DeepSeek)",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.154,
+      "output": 0.308,
+      "cacheRead": 0.0308,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.6-flash",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Qwen3.6 Flash",
+    "family": "qwen3.6",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 991000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.17,
+      "output": 1.01,
+      "cacheRead": 0.0169,
+      "cacheWrite": 0.21125,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.68,
+          "output": 4.06,
+          "contextThreshold": 256000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 0.68,
+        "output": 4.06,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "coding-glm-5.1",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Coding GLM 5.1",
+    "family": "glm",
+    "releaseDate": "2026-04-11",
+    "lastUpdated": "2026-04-11",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.06,
+      "output": 0.22,
+      "cacheRead": 0.013,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Gemini 2.5 Flash",
+    "family": "gemini-flash",
+    "releaseDate": "2025-03-20",
+    "lastUpdated": "2025-06-05",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 2.5,
+      "cacheRead": 0.03,
+      "inputAudio": 1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "xiaomi-mimo-v2.5-free",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Xiaomi MiMo-V2.5 (free)",
+    "family": "mimo-v2.5",
+    "releaseDate": "2026-04-22",
+    "lastUpdated": "2026-05-13",
+    "knowledgeCutoff": "2024-12",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-fable-5",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Claude Fable 5",
+    "family": "claude-fable",
+    "releaseDate": "2026-06-09",
+    "lastUpdated": "2026-06-09",
+    "knowledgeCutoff": "2026-01-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 11,
+      "output": 55,
+      "cacheRead": 1.1,
+      "cacheWrite": 13.75,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v4-pro-0813",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "DeepSeek V4 Pro 0813",
+    "family": "deepseek-thinking",
+    "releaseDate": "2026-08-12",
+    "lastUpdated": "2026-08-22",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.6918,
+      "output": 2.0754,
+      "cacheRead": 0.023058,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "muse-spark-1.2",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Muse Spark 1.2",
+    "family": "muse",
+    "releaseDate": "2026-08-05",
+    "lastUpdated": "2026-08-05",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.375,
+      "output": 4.675,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3.1-flash-lite-image",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Nano Banana 2 Lite",
+    "family": "gemini-flash-lite",
+    "releaseDate": "2026-06-30",
+    "lastUpdated": "2026-06-30",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 65536,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text",
+        "image"
+      ]
+    },
+    "pricing": {
+      "input": 0.25,
+      "output": 1.5,
+      "cacheRead": 0.025,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mimo-v2.6-flash",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "MiMo-V2.6-Flash",
+    "family": "mimo",
+    "releaseDate": "2026-09-22",
+    "lastUpdated": "2026-09-22",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.155,
+      "output": 0.31,
+      "cacheRead": 0.0031,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.4-mini",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "GPT-5.4 mini",
+    "family": "gpt-mini",
+    "releaseDate": "2026-03-17",
+    "lastUpdated": "2026-03-17",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.75,
+      "output": 4.5,
+      "cacheRead": 0.075,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "experimental",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimax-m3",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "MiniMax-M3",
+    "family": "minimax",
+    "releaseDate": "2026-06-01",
+    "lastUpdated": "2026-06-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 512000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.288,
+      "output": 1.152,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.6-luna",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "GPT-5.6 Luna",
+    "family": "gpt-luna",
+    "releaseDate": "2026-07-09",
+    "lastUpdated": "2026-07-09",
+    "knowledgeCutoff": "2026-02-16",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1,
+      "output": 6,
+      "cacheRead": 0.1,
+      "cacheWrite": 1.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.8-flash",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Qwen3.8 Flash",
+    "family": "qwen",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1126,
+      "output": 0.380025,
+      "cacheRead": 0.014075,
+      "cacheWrite": 0.175937,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-opus-4-6-think",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Claude Opus 4.6 Thinking",
+    "family": "claude-opus",
+    "releaseDate": "2026-02-05",
+    "lastUpdated": "2026-03-13",
+    "knowledgeCutoff": "2025-05-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 25,
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 10,
+          "output": 37.5,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 10,
+        "output": 37.5,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "coding-xiaomi-mimo-v2.5",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Coding Xiaomi MiMo-V2.5",
+    "family": "mimo-v2.5",
+    "releaseDate": "2026-04-22",
+    "lastUpdated": "2026-05-13",
+    "knowledgeCutoff": "2024-12",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.08,
+      "output": 0.4,
+      "cacheRead": 0.016,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.16,
+          "output": 0.8,
+          "contextThreshold": 256000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 0.16,
+        "output": 0.8,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.2",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "GPT-5.2",
+    "family": "gpt",
+    "releaseDate": "2025-12-11",
+    "lastUpdated": "2025-12-11",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.75,
+      "output": 14,
+      "cacheRead": 0.175,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-opus-4-8",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Claude Opus 4.8",
+    "family": "claude-opus",
+    "releaseDate": "2026-05-28",
+    "lastUpdated": "2026-05-28",
+    "knowledgeCutoff": "2026-01",
+    "contextWindow": 200000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 25,
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.5",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "GPT-5.5",
+    "family": "gpt",
+    "releaseDate": "2026-04-23",
+    "lastUpdated": "2026-04-23",
+    "knowledgeCutoff": "2025-12-01",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 30,
+      "cacheRead": 0.5,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 10,
+          "output": 45,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 10,
+        "output": 45,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "experimental",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-sonnet-5",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Claude Sonnet 5",
+    "family": "claude-sonnet",
+    "releaseDate": "2026-06-30",
+    "lastUpdated": "2026-06-30",
+    "knowledgeCutoff": "2026-01-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "ox-alpha",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Ox Alpha",
+    "family": "glm-flash",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.6-max-preview",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Qwen3.6 Max Preview",
+    "family": "qwen3.6",
+    "releaseDate": "2026-05-09",
+    "lastUpdated": "2026-05-09",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 240000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.27,
+      "output": 7.61,
+      "cacheRead": 0.1268,
+      "cacheWrite": 1.585,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 2.11,
+          "output": 12.67,
+          "contextThreshold": 128000
+        }
+      ]
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-opus-4-6",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Claude Opus 4.6",
+    "family": "claude-opus",
+    "releaseDate": "2026-02-05",
+    "lastUpdated": "2026-03-13",
+    "knowledgeCutoff": "2025-05-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 25,
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 10,
+          "output": 37.5,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 10,
+        "output": 37.5,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3.7-flash",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Gemini 3.7 Flash",
+    "family": "gemini-flash",
+    "releaseDate": "2026-08-13",
+    "lastUpdated": "2026-08-13",
+    "knowledgeCutoff": "2026-03",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.75,
+      "output": 3.75,
+      "cacheRead": 0.075,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5.2",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "GLM-5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.1268,
+      "output": 3.9438,
+      "cacheRead": 0.2817,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "hy3",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Hy3",
+    "family": "Hy",
+    "releaseDate": "2026-07-06",
+    "lastUpdated": "2026-07-06",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1562,
+      "output": 0.6248,
+      "cacheRead": 0.03905,
       "currency": "USD",
       "per": 1000000
     },
@@ -222,958 +4230,13 @@
     ]
   },
   {
-    "id": "deepseek-v4-flash-vision-exp",
+    "id": "gemini-3-flash-preview",
     "provider": "aihubmix",
     "providerName": "AIHubMix",
-    "displayName": "DeepSeek V4 Flash Vision Exp",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-08-21",
-    "lastUpdated": "2026-09-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.155,
-      "output": 0.62,
-      "cacheRead": 0.0031,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-v4-pro-0813",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "DeepSeek V4 Pro 0813",
-    "family": "deepseek-thinking",
-    "releaseDate": "2026-08-12",
-    "lastUpdated": "2026-08-22",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.6918,
-      "output": 2.0754,
-      "cacheRead": 0.023058,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "doubao-seed-2-0-lite-260428",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Doubao Seed 2.0 Lite 260428",
-    "family": "seed",
-    "releaseDate": "2026-04-28",
-    "lastUpdated": "2026-04-28",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.08,
-      "output": 0.51,
-      "cacheRead": 0.01692,
-      "inputAudio": 1.269,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.13,
-          "output": 0.76,
-          "contextThreshold": 32000
-        },
-        {
-          "input": 0.25,
-          "output": 1.52,
-          "contextThreshold": 128000
-        }
-      ]
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-v4-flash-0731",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "DeepSeek V4 Flash 0731",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-07-31",
-    "lastUpdated": "2026-07-31",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.142,
-      "output": 0.284,
-      "cacheRead": 0.0284,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "coding-minimax-m2.7",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Coding MiniMax M2.7",
-    "family": "minimax",
-    "releaseDate": "2026-03-18",
-    "lastUpdated": "2026-03-18",
-    "knowledgeCutoff": null,
-    "contextWindow": 204800,
-    "maxOutputTokens": 128100,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2,
-      "output": 0.2,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "coding-glm-5.1",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Coding GLM 5.1",
-    "family": "glm",
-    "releaseDate": "2026-04-11",
-    "lastUpdated": "2026-04-11",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.06,
-      "output": 0.22,
-      "cacheRead": 0.013,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-opus-4-7-think",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Claude Opus 4.7 Thinking",
-    "family": "claude-opus",
-    "releaseDate": "2026-04-16",
-    "lastUpdated": "2026-04-16",
-    "knowledgeCutoff": "2026-01-31",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 10,
-          "output": 37.5,
-          "contextThreshold": 200000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 10,
-        "output": 37.5,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5.1-codex-mini",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "GPT-5.1 Codex mini",
-    "family": "gpt-codex",
-    "releaseDate": "2025-11-13",
-    "lastUpdated": "2025-11-13",
-    "knowledgeCutoff": "2024-09-30",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.25,
-      "output": 2,
-      "cacheRead": 0.025,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "grok-4.3",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Grok 4.3",
-    "family": "grok",
-    "releaseDate": "2026-05-01",
-    "lastUpdated": "2026-05-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 1000000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.25,
-      "output": 2.5,
-      "cacheRead": 0.2,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 2.5,
-          "output": 5,
-          "contextThreshold": 200000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 2.5,
-        "output": 5,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3.6-plus",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Qwen3.6 Plus",
-    "family": "qwen3.6",
-    "releaseDate": "2026-05-09",
-    "lastUpdated": "2026-05-09",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 991000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.28,
-      "output": 1.69,
-      "cacheRead": 0.0282,
-      "cacheWrite": 0.3525,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 1.13,
-          "output": 6.77,
-          "contextThreshold": 256000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 1.13,
-        "output": 6.77,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5.1-codex",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "GPT-5.1 Codex",
-    "family": "gpt-codex",
-    "releaseDate": "2025-11-13",
-    "lastUpdated": "2025-11-13",
-    "knowledgeCutoff": "2024-09-30",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cacheRead": 0.125,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "doubao-seed-2-0-mini-260428",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Doubao Seed 2.0 Mini 260428",
-    "family": "seed",
-    "releaseDate": "2026-04-28",
-    "lastUpdated": "2026-04-28",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.03,
-      "output": 0.28,
-      "cacheRead": 0.00564,
-      "inputAudio": 0.423,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.06,
-          "output": 0.56,
-          "contextThreshold": 32000
-        },
-        {
-          "input": 0.11,
-          "output": 1.13,
-          "contextThreshold": 128000
-        }
-      ]
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5.6-sol",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "GPT-5.6 Sol",
-    "family": "gpt-sol",
-    "releaseDate": "2026-07-09",
-    "lastUpdated": "2026-07-09",
-    "knowledgeCutoff": "2026-02-16",
-    "contextWindow": 1050000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 5,
-      "output": 30,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-opus-5",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Claude Opus 5",
-    "family": "claude-opus",
-    "releaseDate": "2026-07-24",
-    "lastUpdated": "2026-07-24",
-    "knowledgeCutoff": "2026-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "minimax-m2.7",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "MiniMax M2.7",
-    "family": "minimax",
-    "releaseDate": "2026-03-18",
-    "lastUpdated": "2026-03-18",
-    "knowledgeCutoff": null,
-    "contextWindow": 204800,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 1.2,
-      "cacheRead": 0.06,
-      "cacheWrite": 0.375,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "doubao-seed-2-0-code-preview",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Doubao Seed 2.0 Code Preview",
-    "family": "seed",
-    "releaseDate": "2026-02-14",
-    "lastUpdated": "2026-02-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.48,
-      "output": 2.41,
-      "cacheRead": 0.09644,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.72,
-          "output": 3.62,
-          "contextThreshold": 32000
-        },
-        {
-          "input": 1.45,
-          "output": 7.23,
-          "contextThreshold": 128000
-        }
-      ]
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "xiaomi-mimo-v2.5-free",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Xiaomi MiMo-V2.5 (free)",
-    "family": "mimo-v2.5",
-    "releaseDate": "2026-04-22",
-    "lastUpdated": "2026-05-13",
-    "knowledgeCutoff": "2024-12",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "kimi-k2.6",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Kimi K2.6",
-    "family": "kimi-k2",
-    "releaseDate": "2026-04-21",
-    "lastUpdated": "2026-04-21",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.95,
-      "output": 4,
-      "cacheRead": 0.16,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-3.1-pro-preview",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Gemini 3.1 Pro Preview",
-    "family": "gemini-pro",
-    "releaseDate": "2026-02-19",
-    "lastUpdated": "2026-02-19",
+    "displayName": "Gemini 3 Flash Preview",
+    "family": "gemini-flash",
+    "releaseDate": "2025-12-17",
+    "lastUpdated": "2025-12-17",
     "knowledgeCutoff": "2025-01",
     "contextWindow": 1048576,
     "maxOutputTokens": 65536,
@@ -1202,435 +4265,23 @@
       ]
     },
     "pricing": {
-      "input": 2,
-      "output": 12,
-      "cacheRead": 0.2,
+      "input": 0.5,
+      "output": 3,
+      "cacheRead": 0.05,
       "currency": "USD",
       "per": 1000000,
       "tiers": [
         {
-          "input": 4,
-          "output": 18,
+          "input": 0.5,
+          "output": 3,
           "contextThreshold": 200000
         }
       ],
       "contextOverThreshold": {
-        "input": 4,
-        "output": 18,
+        "input": 0.5,
+        "output": 3,
         "contextThreshold": 200000
       }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "coding-xiaomi-mimo-v2.5-pro",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Coding Xiaomi MiMo-V2.5-Pro",
-    "family": "mimo-v2.5-pro",
-    "releaseDate": "2026-04-22",
-    "lastUpdated": "2026-05-13",
-    "knowledgeCutoff": "2024-12",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2,
-      "output": 0.6,
-      "cacheRead": 0.04,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.4,
-          "output": 1.2,
-          "contextThreshold": 256000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 0.4,
-        "output": 1.2,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5.2-codex",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "GPT-5.2 Codex",
-    "family": "gpt-codex",
-    "releaseDate": "2025-12-11",
-    "lastUpdated": "2025-12-11",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.75,
-      "output": 14,
-      "cacheRead": 0.175,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm-5.2",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "GLM-5.2",
-    "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.1268,
-      "output": 3.9438,
-      "cacheRead": 0.2817,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "kimi-k2.7-code",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Kimi K2.7 Code",
-    "family": "kimi-k2",
-    "releaseDate": "2026-06-12",
-    "lastUpdated": "2026-06-12",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.95,
-      "output": 3.9995,
-      "cacheRead": 0.160835,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "grok-4.5",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Grok 4.5",
-    "family": "grok",
-    "releaseDate": "2026-07-08",
-    "lastUpdated": "2026-07-08",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 1000000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2,
-      "output": 6,
-      "cacheRead": 0.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "alicloud-deepseek-v4-pro",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "DeepSeek V4 Pro (Alibaba Cloud)",
-    "family": "deepseek-thinking",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.69,
-      "output": 3.38,
-      "cacheRead": 0.13,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5.4",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "GPT-5.4",
-    "family": "gpt",
-    "releaseDate": "2026-03-05",
-    "lastUpdated": "2026-03-05",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 1050000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2.5,
-      "output": 15,
-      "cacheRead": 0.25,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 5,
-          "output": 22.5,
-          "contextThreshold": 272000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 5,
-        "output": 22.5,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "experimental",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-3.1-flash-lite",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Gemini 3.1 Flash Lite",
-    "family": "gemini-flash-lite",
-    "releaseDate": "2026-05-07",
-    "lastUpdated": "2026-05-07",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.25,
-      "output": 1.5,
-      "cacheRead": 0.025,
-      "cacheWrite": 1,
-      "currency": "USD",
-      "per": 1000000
     },
     "status": "active",
     "deprecationDate": null,
@@ -1690,568 +4341,10 @@
     ]
   },
   {
-    "id": "xiaomi-mimo-v2.5-pro-free",
+    "id": "claude-opus-4-7-think",
     "provider": "aihubmix",
     "providerName": "AIHubMix",
-    "displayName": "Xiaomi MiMo-V2.5-Pro (free)",
-    "family": "mimo-v2.5-pro",
-    "releaseDate": "2026-04-22",
-    "lastUpdated": "2026-05-13",
-    "knowledgeCutoff": "2024-12",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-v4.1-flash",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "DeepSeek V4.1 Flash",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.155,
-      "output": 0.62,
-      "cacheRead": 0.0031,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-fable-5-1",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Claude Fable 5.1",
-    "family": "claude-fable",
-    "releaseDate": "2026-09-01",
-    "lastUpdated": "2026-09-01",
-    "knowledgeCutoff": "2026-06",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 11,
-      "output": 55,
-      "cacheRead": 0.275,
-      "cacheWrite": 13.75,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5.1",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "GPT-5.1",
-    "family": "gpt",
-    "releaseDate": "2025-11-13",
-    "lastUpdated": "2025-11-13",
-    "knowledgeCutoff": "2024-09-30",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cacheRead": 0.13,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deep-deepseek-v4-pro",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "DeepSeek V4 Pro (DeepSeek)",
-    "family": "deepseek-thinking",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.478,
-      "output": 0.956,
-      "cacheRead": 0.004302,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deep-deepseek-v4-flash",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "DeepSeek V4 Flash (DeepSeek)",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.154,
-      "output": 0.308,
-      "cacheRead": 0.0308,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-opus-4-6",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Claude Opus 4.6",
-    "family": "claude-opus",
-    "releaseDate": "2026-02-05",
-    "lastUpdated": "2026-03-13",
-    "knowledgeCutoff": "2025-05-31",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 10,
-          "output": 37.5,
-          "contextThreshold": 200000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 10,
-        "output": 37.5,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-3.5-flash",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Gemini 3.5 Flash",
-    "family": "gemini-flash",
-    "releaseDate": "2026-05-19",
-    "lastUpdated": "2026-05-19",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.5,
-      "output": 9,
-      "cacheRead": 1.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "xiaomi-mimo-v2.5",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Xiaomi MiMo-V2.5",
-    "family": "mimo-v2.5",
-    "releaseDate": "2026-04-22",
-    "lastUpdated": "2026-05-13",
-    "knowledgeCutoff": "2024-12",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.44,
-      "output": 2.2,
-      "cacheRead": 0.088,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.88,
-          "output": 4.4,
-          "contextThreshold": 256000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 0.88,
-        "output": 4.4,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5.6-luna",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "GPT-5.6 Luna",
-    "family": "gpt-luna",
-    "releaseDate": "2026-07-09",
-    "lastUpdated": "2026-07-09",
-    "knowledgeCutoff": "2026-02-16",
-    "contextWindow": 1050000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1,
-      "output": 6,
-      "cacheRead": 0.1,
-      "cacheWrite": 1.25,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3.7-flash",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Qwen3.7 Flash",
-    "family": "qwen",
-    "releaseDate": "2026-07-15",
-    "lastUpdated": "2026-07-15",
-    "knowledgeCutoff": null,
-    "contextWindow": 991000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.0282,
-      "output": 0.1128,
-      "cacheRead": 0.00564,
-      "cacheWrite": 0.03525,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-opus-4-7",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Claude Opus 4.7",
+    "displayName": "Claude Opus 4.7 Thinking",
     "family": "claude-opus",
     "releaseDate": "2026-04-16",
     "lastUpdated": "2026-04-16",
@@ -2357,16 +4450,75 @@
     ]
   },
   {
-    "id": "kimi-k3",
+    "id": "coding-xiaomi-mimo-v2.5-pro",
     "provider": "aihubmix",
     "providerName": "AIHubMix",
-    "displayName": "Kimi K3",
-    "family": "kimi-k3",
-    "releaseDate": "2026-07-16",
-    "lastUpdated": "2026-07-27",
-    "knowledgeCutoff": null,
+    "displayName": "Coding Xiaomi MiMo-V2.5-Pro",
+    "family": "mimo-v2.5-pro",
+    "releaseDate": "2026-04-22",
+    "lastUpdated": "2026-05-13",
+    "knowledgeCutoff": "2024-12",
     "contextWindow": 1048576,
     "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2,
+      "output": 0.6,
+      "cacheRead": 0.04,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.4,
+          "output": 1.2,
+          "contextThreshold": 256000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 0.4,
+        "output": 1.2,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3.8-flash",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Gemini 3.8 Flash",
+    "family": "gemini-flash",
+    "releaseDate": "2026-09-02",
+    "lastUpdated": "2026-09-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -2374,25 +4526,27 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
-      "open_weights": true
+      "open_weights": false
     },
     "modalities": {
       "input": [
         "text",
         "image",
-        "video"
+        "video",
+        "audio",
+        "pdf"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 3,
-      "output": 15,
-      "cacheRead": 0.3,
+      "input": 0.75,
+      "output": 3.75,
+      "cacheRead": 0.075,
       "currency": "USD",
       "per": 1000000
     },
@@ -2406,15 +4560,15 @@
     ]
   },
   {
-    "id": "gpt-5.3-codex",
+    "id": "gpt-6-luna",
     "provider": "aihubmix",
     "providerName": "AIHubMix",
-    "displayName": "GPT-5.3 Codex",
-    "family": "gpt-codex",
-    "releaseDate": "2026-02-05",
-    "lastUpdated": "2026-02-05",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 400000,
+    "displayName": "GPT-6 Luna",
+    "family": "gpt-luna",
+    "releaseDate": "2026-09-22",
+    "lastUpdated": "2026-09-22",
+    "knowledgeCutoff": "2026-05-18",
+    "contextWindow": 1050000,
     "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
@@ -2439,313 +4593,22 @@
       ]
     },
     "pricing": {
-      "input": 1.75,
-      "output": 14,
-      "cacheRead": 0.175,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-glm-5.1",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "GLM-5.1 (Z.ai)",
-    "family": "glm",
-    "releaseDate": "2026-03-27",
-    "lastUpdated": "2026-03-27",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.845,
-      "output": 3.38,
-      "cacheRead": 0.183112,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm-5.3-flash",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "GLM-5.3-Flash",
-    "family": "glm-flash",
-    "releaseDate": "2026-08-26",
-    "lastUpdated": "2026-08-26",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.11268,
-      "output": 0.39438,
-      "cacheRead": 0.02817,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-fable-5",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Claude Fable 5",
-    "family": "claude-fable",
-    "releaseDate": "2026-06-09",
-    "lastUpdated": "2026-06-09",
-    "knowledgeCutoff": "2026-01-31",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 11,
-      "output": 55,
-      "cacheRead": 1.1,
-      "cacheWrite": 13.75,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3.8-2.4t-a95b",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Qwen3.8 2.4T A95B",
-    "family": "qwen",
-    "releaseDate": "2026-08-12",
-    "lastUpdated": "2026-08-12",
-    "knowledgeCutoff": null,
-    "contextWindow": 262000,
-    "maxOutputTokens": 262000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2,
-      "output": 6,
-      "cacheRead": 0.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-opus-4-8-think",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Claude Opus 4.8",
-    "family": "claude-opus",
-    "releaseDate": "2026-05-28",
-    "lastUpdated": "2026-05-28",
-    "knowledgeCutoff": "2026-01",
-    "contextWindow": 200000,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "coding-xiaomi-mimo-v2.5",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Coding Xiaomi MiMo-V2.5",
-    "family": "mimo-v2.5",
-    "releaseDate": "2026-04-22",
-    "lastUpdated": "2026-05-13",
-    "knowledgeCutoff": "2024-12",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.08,
-      "output": 0.4,
-      "cacheRead": 0.016,
+      "input": 0.1,
+      "output": 0.5,
+      "cacheRead": 0.01,
+      "cacheWrite": 0.125,
       "currency": "USD",
       "per": 1000000,
       "tiers": [
         {
-          "input": 0.16,
-          "output": 0.8,
-          "contextThreshold": 256000
+          "input": 0.2,
+          "output": 0.75,
+          "contextThreshold": 272000
         }
       ],
       "contextOverThreshold": {
-        "input": 0.16,
-        "output": 0.8,
+        "input": 0.2,
+        "output": 0.75,
         "contextThreshold": 200000
       }
     },
@@ -2759,233 +4622,27 @@
     ]
   },
   {
-    "id": "qwen3.6-flash",
+    "id": "step-3.7-flash",
     "provider": "aihubmix",
     "providerName": "AIHubMix",
-    "displayName": "Qwen3.6 Flash",
-    "family": "qwen3.6",
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-04-02",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 991000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.17,
-      "output": 1.01,
-      "cacheRead": 0.0169,
-      "cacheWrite": 0.21125,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.68,
-          "output": 4.06,
-          "contextThreshold": 256000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 0.68,
-        "output": 4.06,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3.8-flash",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Qwen3.8 Flash",
-    "family": "qwen",
-    "releaseDate": "2026-08-26",
-    "lastUpdated": "2026-08-26",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1126,
-      "output": 0.380025,
-      "cacheRead": 0.014075,
-      "cacheWrite": 0.175937,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5.4-mini",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "GPT-5.4 mini",
-    "family": "gpt-mini",
-    "releaseDate": "2026-03-17",
-    "lastUpdated": "2026-03-17",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.75,
-      "output": 4.5,
-      "cacheRead": 0.075,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "experimental",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "coding-minimax-m2.7-free",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Coding MiniMax M2.7 (Free)",
-    "family": "minimax-free",
-    "releaseDate": "2026-03-18",
-    "lastUpdated": "2026-03-18",
-    "knowledgeCutoff": null,
-    "contextWindow": 204800,
-    "maxOutputTokens": 128100,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "doubao-seed-2-0-pro",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Doubao Seed 2.0 Pro",
-    "family": "seed",
-    "releaseDate": "2026-02-14",
-    "lastUpdated": "2026-02-14",
-    "knowledgeCutoff": null,
+    "displayName": "Step 3.7 Flash",
+    "family": null,
+    "releaseDate": "2026-05-29",
+    "lastUpdated": "2026-05-29",
+    "knowledgeCutoff": "2026-03-01",
     "contextWindow": 256000,
-    "maxOutputTokens": 128000,
+    "maxOutputTokens": 256000,
     "capabilities": {
       "tools": true,
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": true,
-      "open_weights": false
+      "structured_output": false,
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -2998,124 +4655,9 @@
       ]
     },
     "pricing": {
-      "input": 0.48,
-      "output": 2.41,
-      "cacheRead": 0.09644,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.72,
-          "output": 3.62,
-          "contextThreshold": 32000
-        },
-        {
-          "input": 1.45,
-          "output": 7.23,
-          "contextThreshold": 128000
-        }
-      ]
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3.6-max-preview",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Qwen3.6 Max Preview",
-    "family": "qwen3.6",
-    "releaseDate": "2026-05-09",
-    "lastUpdated": "2026-05-09",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 240000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.27,
-      "output": 7.61,
-      "cacheRead": 0.1268,
-      "cacheWrite": 1.585,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 2.11,
-          "output": 12.67,
-          "contextThreshold": 128000
-        }
-      ]
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "grok-4.6",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Grok 4.6",
-    "family": "grok",
-    "releaseDate": "2026-08-12",
-    "lastUpdated": "2026-08-12",
-    "knowledgeCutoff": "2026-02-01",
-    "contextWindow": 500000,
-    "maxOutputTokens": 500000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2,
-      "output": 6,
-      "cacheRead": 0.5,
+      "input": 0.22,
+      "output": 1.32,
+      "cacheRead": 0.044,
       "currency": "USD",
       "per": 1000000
     },
@@ -3177,170 +4719,10 @@
     ]
   },
   {
-    "id": "qwen3.8-max",
+    "id": "claude-sonnet-4-6",
     "provider": "aihubmix",
     "providerName": "AIHubMix",
-    "displayName": "Qwen3.8 Max",
-    "family": "qwen",
-    "releaseDate": "2026-08-03",
-    "lastUpdated": "2026-08-03",
-    "knowledgeCutoff": null,
-    "contextWindow": 991000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.69,
-      "output": 5.07,
-      "cacheRead": 0.169,
-      "cacheWrite": 2.1125,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "kimi-k2.5",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Kimi K2.5",
-    "family": "kimi-k2",
-    "releaseDate": "2026-01",
-    "lastUpdated": "2026-01",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.6,
-      "output": 3,
-      "cacheRead": 0.1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-3-flash-preview",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Gemini 3 Flash Preview",
-    "family": "gemini-flash",
-    "releaseDate": "2025-12-17",
-    "lastUpdated": "2025-12-17",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.5,
-      "output": 3,
-      "cacheRead": 0.05,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.5,
-          "output": 3,
-          "contextThreshold": 200000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 0.5,
-        "output": 3,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-sonnet-4-6-think",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Claude Sonnet 4.6 Thinking",
+    "displayName": "Claude Sonnet 4.6",
     "family": "claude-sonnet",
     "releaseDate": "2026-02-17",
     "lastUpdated": "2026-03-13",
@@ -3399,163 +4781,15 @@
     ]
   },
   {
-    "id": "qwen3.7-plus",
+    "id": "coding-glm-5.1-free",
     "provider": "aihubmix",
     "providerName": "AIHubMix",
-    "displayName": "Qwen3.7 Plus",
-    "family": "qwen",
-    "releaseDate": "2026-06-02",
-    "lastUpdated": "2026-06-02",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 991000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.282,
-      "output": 1.128,
-      "cacheRead": 0.0564,
-      "cacheWrite": 0.3525,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-opus-4-8",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Claude Opus 4.8",
-    "family": "claude-opus",
-    "releaseDate": "2026-05-28",
-    "lastUpdated": "2026-05-28",
-    "knowledgeCutoff": "2026-01",
-    "contextWindow": 200000,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-3.7-flash",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Gemini 3.7 Flash",
-    "family": "gemini-flash",
-    "releaseDate": "2026-08-13",
-    "lastUpdated": "2026-08-13",
-    "knowledgeCutoff": "2026-03",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "audio",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.75,
-      "output": 3.75,
-      "cacheRead": 0.075,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "hy3-preview",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Hy3 Preview",
-    "family": "Hy",
-    "releaseDate": "2026-04-20",
-    "lastUpdated": "2026-04-20",
+    "displayName": "Coding GLM 5.1 (free)",
+    "family": "glm-free",
+    "releaseDate": "2026-04-11",
+    "lastUpdated": "2026-04-11",
     "knowledgeCutoff": null,
-    "contextWindow": 256000,
+    "contextWindow": 200000,
     "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
@@ -3578,9 +4812,8 @@
       ]
     },
     "pricing": {
-      "input": 0.17,
-      "output": 0.566661,
-      "cacheRead": 0.051,
+      "input": 0,
+      "output": 0,
       "currency": "USD",
       "per": 1000000
     },
@@ -3594,16 +4827,16 @@
     ]
   },
   {
-    "id": "gemini-2.5-pro",
+    "id": "qwen3.6-plus",
     "provider": "aihubmix",
     "providerName": "AIHubMix",
-    "displayName": "Gemini 2.5 Pro",
-    "family": "gemini-pro",
-    "releaseDate": "2025-03-20",
-    "lastUpdated": "2025-06-05",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
+    "displayName": "Qwen3.6 Plus",
+    "family": "qwen3.6",
+    "releaseDate": "2026-05-09",
+    "lastUpdated": "2026-05-09",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 991000,
+    "maxOutputTokens": 64000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -3620,30 +4853,29 @@
       "input": [
         "text",
         "image",
-        "audio",
-        "video",
-        "pdf"
+        "video"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cacheRead": 0.125,
+      "input": 0.28,
+      "output": 1.69,
+      "cacheRead": 0.0282,
+      "cacheWrite": 0.3525,
       "currency": "USD",
       "per": 1000000,
       "tiers": [
         {
-          "input": 2.5,
-          "output": 15,
-          "contextThreshold": 200000
+          "input": 1.13,
+          "output": 6.77,
+          "contextThreshold": 256000
         }
       ],
       "contextOverThreshold": {
-        "input": 2.5,
-        "output": 15,
+        "input": 1.13,
+        "output": 6.77,
         "contextThreshold": 200000
       }
     },
@@ -3706,6 +4938,101 @@
     ]
   },
   {
+    "id": "hy4-preview",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Hy4 preview",
+    "family": "Hy",
+    "releaseDate": "2026-08-28",
+    "lastUpdated": "2026-08-28",
+    "knowledgeCutoff": null,
+    "contextWindow": 1024000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.845,
+      "output": 2.535,
+      "cacheRead": 0.04225,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.1-codex-mini",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "GPT-5.1 Codex mini",
+    "family": "gpt-codex",
+    "releaseDate": "2025-11-13",
+    "lastUpdated": "2025-11-13",
+    "knowledgeCutoff": "2024-09-30",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.25,
+      "output": 2,
+      "cacheRead": 0.025,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "glm-5.3",
     "provider": "aihubmix",
     "providerName": "AIHubMix",
@@ -3753,113 +5080,15 @@
     ]
   },
   {
-    "id": "glm-5v-turbo",
+    "id": "claude-opus-4-7",
     "provider": "aihubmix",
     "providerName": "AIHubMix",
-    "displayName": "GLM 5 Vision Turbo",
-    "family": "glmv",
-    "releaseDate": "2026-05-09",
-    "lastUpdated": "2026-05-09",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.7042,
-      "output": 3.09848,
-      "cacheRead": 0.169008,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "ox-alpha",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Ox Alpha",
-    "family": "glm-flash",
-    "releaseDate": "2026-08-26",
-    "lastUpdated": "2026-08-26",
-    "knowledgeCutoff": null,
+    "displayName": "Claude Opus 4.7",
+    "family": "claude-opus",
+    "releaseDate": "2026-04-16",
+    "lastUpdated": "2026-04-16",
+    "knowledgeCutoff": "2026-01-31",
     "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5.2",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "GPT-5.2",
-    "family": "gpt",
-    "releaseDate": "2025-12-11",
-    "lastUpdated": "2025-12-11",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 400000,
     "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
@@ -3876,16 +5105,79 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 1.75,
-      "output": 14,
-      "cacheRead": 0.175,
+      "input": 5,
+      "output": 25,
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 10,
+          "output": 37.5,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 10,
+        "output": 37.5,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k2.7-code",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Kimi K2.7 Code",
+    "family": "kimi-k2",
+    "releaseDate": "2026-06-12",
+    "lastUpdated": "2026-06-12",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.95,
+      "output": 3.9995,
+      "cacheRead": 0.160835,
       "currency": "USD",
       "per": 1000000
     },
@@ -3899,16 +5191,16 @@
     ]
   },
   {
-    "id": "gemini-2.5-flash",
+    "id": "grok-4.6",
     "provider": "aihubmix",
     "providerName": "AIHubMix",
-    "displayName": "Gemini 2.5 Flash",
-    "family": "gemini-flash",
-    "releaseDate": "2025-03-20",
-    "lastUpdated": "2025-06-05",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
+    "displayName": "Grok 4.6",
+    "family": "grok",
+    "releaseDate": "2026-08-12",
+    "lastUpdated": "2026-08-12",
+    "knowledgeCutoff": "2026-02-01",
+    "contextWindow": 500000,
+    "maxOutputTokens": 500000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -3924,20 +5216,16 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "audio",
-        "video",
-        "pdf"
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.3,
-      "output": 2.5,
-      "cacheRead": 0.03,
-      "inputAudio": 1,
+      "input": 2,
+      "output": 6,
+      "cacheRead": 0.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -4010,15 +5298,63 @@
     ]
   },
   {
-    "id": "claude-sonnet-5",
+    "id": "qwen3.7-plus",
     "provider": "aihubmix",
     "providerName": "AIHubMix",
-    "displayName": "Claude Sonnet 5",
-    "family": "claude-sonnet",
-    "releaseDate": "2026-06-30",
-    "lastUpdated": "2026-06-30",
-    "knowledgeCutoff": "2026-01-31",
-    "contextWindow": 1000000,
+    "displayName": "Qwen3.7 Plus",
+    "family": "qwen",
+    "releaseDate": "2026-06-02",
+    "lastUpdated": "2026-06-02",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 991000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.282,
+      "output": 1.128,
+      "cacheRead": 0.0564,
+      "cacheWrite": 0.3525,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.6-sol",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "GPT-5.6 Sol",
+    "family": "gpt-sol",
+    "releaseDate": "2026-07-09",
+    "lastUpdated": "2026-07-09",
+    "knowledgeCutoff": "2026-02-16",
+    "contextWindow": 1050000,
     "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
@@ -4042,119 +5378,11 @@
       ]
     },
     "pricing": {
-      "input": 2,
-      "output": 10,
-      "cacheRead": 0.2,
-      "cacheWrite": 2.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-opus-4-6-think",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Claude Opus 4.6 Thinking",
-    "family": "claude-opus",
-    "releaseDate": "2026-02-05",
-    "lastUpdated": "2026-03-13",
-    "knowledgeCutoff": "2025-05-31",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
       "input": 5,
-      "output": 25,
+      "output": 30,
       "cacheRead": 0.5,
       "cacheWrite": 6.25,
       "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 10,
-          "output": 37.5,
-          "contextThreshold": 200000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 10,
-        "output": 37.5,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "coding-glm-5.1-free",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "Coding GLM 5.1 (free)",
-    "family": "glm-free",
-    "releaseDate": "2026-04-11",
-    "lastUpdated": "2026-04-11",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
       "per": 1000000
     },
     "status": "active",
@@ -4167,60 +5395,14 @@
     ]
   },
   {
-    "id": "coding-minimax-m2.7-highspeed",
+    "id": "gpt-6-sol",
     "provider": "aihubmix",
     "providerName": "AIHubMix",
-    "displayName": "Coding MiniMax M2.7 Highspeed",
-    "family": "minimax",
-    "releaseDate": "2026-03-18",
-    "lastUpdated": "2026-03-18",
-    "knowledgeCutoff": null,
-    "contextWindow": 204800,
-    "maxOutputTokens": 128100,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2,
-      "output": 0.2,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5.5",
-    "provider": "aihubmix",
-    "providerName": "AIHubMix",
-    "displayName": "GPT-5.5",
-    "family": "gpt",
-    "releaseDate": "2026-04-23",
-    "lastUpdated": "2026-04-23",
-    "knowledgeCutoff": "2025-12-01",
+    "displayName": "GPT-6 Sol",
+    "family": "gpt-sol",
+    "releaseDate": "2026-09-22",
+    "lastUpdated": "2026-09-22",
+    "knowledgeCutoff": "2026-04-20",
     "contextWindow": 1050000,
     "maxOutputTokens": 128000,
     "capabilities": {
@@ -4246,25 +5428,78 @@
       ]
     },
     "pricing": {
-      "input": 5,
-      "output": 30,
-      "cacheRead": 0.5,
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
       "currency": "USD",
       "per": 1000000,
       "tiers": [
         {
-          "input": 10,
-          "output": 45,
+          "input": 4,
+          "output": 15,
           "contextThreshold": 272000
         }
       ],
       "contextOverThreshold": {
-        "input": 10,
-        "output": 45,
+        "input": 4,
+        "output": 15,
         "contextThreshold": 200000
       }
     },
-    "status": "experimental",
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3.1-flash-lite",
+    "provider": "aihubmix",
+    "providerName": "AIHubMix",
+    "displayName": "Gemini 3.1 Flash Lite",
+    "family": "gemini-flash-lite",
+    "releaseDate": "2026-05-07",
+    "lastUpdated": "2026-05-07",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.25,
+      "output": 1.5,
+      "cacheRead": 0.025,
+      "cacheWrite": 1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
