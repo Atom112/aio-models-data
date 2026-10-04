@@ -359,7 +359,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "experimental",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -506,7 +506,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "experimental",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [
@@ -558,7 +558,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "experimental",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -895,7 +895,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "experimental",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -991,7 +991,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "experimental",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1256,6 +1256,68 @@
     ]
   },
   {
+    "id": "gpt-6.1-sol",
+    "provider": "openai",
+    "providerName": "OpenAI",
+    "displayName": "GPT-6.1 Sol",
+    "family": "gpt-sol",
+    "releaseDate": "2026-09-29",
+    "lastUpdated": "2026-09-29",
+    "knowledgeCutoff": "2026-04-30",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.1,
+      "cacheWrite": 2.5,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 4,
+          "output": 15,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 4,
+        "output": 15,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "experimental",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "text-embedding-3-large",
     "provider": "openai",
     "providerName": "OpenAI",
@@ -1450,7 +1512,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "experimental",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1499,7 +1561,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "experimental",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [
@@ -1591,6 +1653,68 @@
     },
     "pricing": null,
     "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-daybreak-blue-latest",
+    "provider": "openai",
+    "providerName": "OpenAI",
+    "displayName": "Daybreak Blue",
+    "family": "gpt-sol",
+    "releaseDate": "2026-08-07",
+    "lastUpdated": "2026-08-07",
+    "knowledgeCutoff": "2026-02-16",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 4,
+      "output": 20,
+      "cacheRead": 0.4,
+      "cacheWrite": 5,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 8,
+          "output": 30,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 8,
+        "output": 30,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1748,7 +1872,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "experimental",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1858,7 +1982,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "experimental",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1955,7 +2079,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "experimental",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2272,6 +2396,55 @@
     ]
   },
   {
+    "id": "gpt-daybreak-red-latest",
+    "provider": "openai",
+    "providerName": "OpenAI",
+    "displayName": "Daybreak Red",
+    "family": "gpt",
+    "releaseDate": "2026-08-07",
+    "lastUpdated": "2026-08-07",
+    "knowledgeCutoff": "2026-02-16",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 12.5,
+      "output": 75,
+      "cacheRead": 1.25,
+      "cacheWrite": 15.625,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "o3",
     "provider": "openai",
     "providerName": "OpenAI",
@@ -2311,7 +2484,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "experimental",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [
@@ -2361,7 +2534,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "experimental",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],

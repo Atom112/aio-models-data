@@ -1347,7 +1347,7 @@
     "lastUpdated": "2026-07-15",
     "knowledgeCutoff": null,
     "contextWindow": 1000000,
-    "maxOutputTokens": 65536,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -1981,6 +1981,56 @@
     "pricing": {
       "input": 0.574,
       "output": 2.294,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.8-omni-flash",
+    "provider": "alibaba-cn",
+    "providerName": "Alibaba (China)",
+    "displayName": "Qwen3.8 Omni Flash",
+    "family": "qwen",
+    "releaseDate": "2026-09-17",
+    "lastUpdated": "2026-09-17",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.113,
+      "output": 0.382,
+      "cacheRead": 0.014,
       "currency": "USD",
       "per": 1000000
     },

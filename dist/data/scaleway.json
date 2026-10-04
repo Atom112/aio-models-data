@@ -1,5 +1,54 @@
 [
   {
+    "id": "qwen3.8-27b",
+    "provider": "scaleway",
+    "providerName": "Scaleway",
+    "displayName": "Qwen3.8 27B",
+    "family": "qwen",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.684,
+      "output": 3.762,
+      "cacheRead": 0.137,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "beta",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "deepseek-v4-flash-0731",
     "provider": "scaleway",
     "providerName": "Scaleway",
@@ -9,7 +58,7 @@
     "lastUpdated": "2026-07-31",
     "knowledgeCutoff": "2025-05",
     "contextWindow": 256000,
-    "maxOutputTokens": 16384,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
       "vision": false,

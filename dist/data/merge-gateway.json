@@ -82,9 +82,9 @@
       ]
     },
     "pricing": {
-      "input": 0.015,
-      "output": 0.05,
-      "cacheRead": 0.003,
+      "input": 0.075,
+      "output": 0.25,
+      "cacheRead": 0.015,
       "currency": "USD",
       "per": 1000000
     },
@@ -1155,8 +1155,8 @@
       ]
     },
     "pricing": {
-      "input": 3,
-      "output": 15,
+      "input": 2,
+      "output": 10,
       "cacheRead": 0.2,
       "cacheWrite": 2.5,
       "currency": "USD",
@@ -1359,6 +1359,56 @@
       "output": 15,
       "cacheRead": 0.3,
       "cacheWrite": 3.75,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "anthropic/claude-sonnet-5-5",
+    "provider": "merge-gateway",
+    "providerName": "Merge Gateway",
+    "displayName": "Claude Sonnet 5.5",
+    "family": "claude-sonnet",
+    "releaseDate": "2026-09-28",
+    "lastUpdated": "2026-09-28",
+    "knowledgeCutoff": "2026-06",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -1825,8 +1875,8 @@
       ]
     },
     "pricing": {
-      "input": 0.58,
-      "output": 1.68,
+      "input": 0.27,
+      "output": 1.1,
       "currency": "USD",
       "per": 1000000
     },
@@ -2080,18 +2130,18 @@
     "releaseDate": "2025-12-01",
     "lastUpdated": "2025-12-01",
     "knowledgeCutoff": "2024-07",
-    "contextWindow": 163840,
-    "maxOutputTokens": 40960,
+    "contextWindow": 128000,
+    "maxOutputTokens": 32768,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -2104,8 +2154,8 @@
     },
     "pricing": {
       "input": 0.28,
-      "output": 0.45,
-      "cacheRead": 0.14,
+      "output": 0.4,
+      "cacheRead": 0.13,
       "currency": "USD",
       "per": 1000000
     },
@@ -4606,6 +4656,52 @@
     ]
   },
   {
+    "id": "nvidia/nemotron-3-nano-30b-a3b",
+    "provider": "merge-gateway",
+    "providerName": "Merge Gateway",
+    "displayName": "Nemotron 3 Nano 30B A3B",
+    "family": "nemotron",
+    "releaseDate": "2025-12-15",
+    "lastUpdated": "2025-12-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.05,
+      "output": 0.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "nvidia/nemotron-3.5-lightning-30b-a3b",
     "provider": "merge-gateway",
     "providerName": "Merge Gateway",
@@ -6049,11 +6145,11 @@
       "vision": false,
       "reasoning": false,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -6067,7 +6163,7 @@
     "pricing": {
       "input": 0.1,
       "output": 0.6,
-      "cacheRead": 0.05,
+      "cacheRead": 0.0574,
       "currency": "USD",
       "per": 1000000
     },
@@ -6818,6 +6914,53 @@
     "pricing": {
       "input": 0.09,
       "output": 0.13,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.8-flash",
+    "provider": "merge-gateway",
+    "providerName": "Merge Gateway",
+    "displayName": "Qwen3.8 Flash",
+    "family": "qwen",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 977000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.47,
+      "cacheRead": 0.016,
       "currency": "USD",
       "per": 1000000
     },
@@ -7893,6 +8036,55 @@
     ]
   },
   {
+    "id": "openai/gpt-6.1-sol",
+    "provider": "merge-gateway",
+    "providerName": "Merge Gateway",
+    "displayName": "GPT-6.1 Sol",
+    "family": "gpt-sol",
+    "releaseDate": "2026-09-29",
+    "lastUpdated": "2026-09-29",
+    "knowledgeCutoff": "2026-04-30",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.1,
+      "cacheWrite": 2.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "openai/gpt-5-chat-latest",
     "provider": "merge-gateway",
     "providerName": "Merge Gateway",
@@ -8146,8 +8338,8 @@
     "releaseDate": "2025-08-05",
     "lastUpdated": "2025-08-05",
     "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 32768,
+    "contextWindow": 128000,
+    "maxOutputTokens": 32000,
     "capabilities": {
       "tools": false,
       "vision": false,
@@ -8170,7 +8362,7 @@
     },
     "pricing": {
       "input": 0.04,
-      "output": 0.2,
+      "output": 0.15,
       "cacheRead": 0.02,
       "currency": "USD",
       "per": 1000000
@@ -8793,8 +8985,8 @@
     "releaseDate": "2025-08-05",
     "lastUpdated": "2025-08-05",
     "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 32768,
+    "contextWindow": 128000,
+    "maxOutputTokens": 32000,
     "capabilities": {
       "tools": false,
       "vision": false,
@@ -8816,8 +9008,8 @@
       ]
     },
     "pricing": {
-      "input": 0.09,
-      "output": 0.36,
+      "input": 0.05,
+      "output": 0.25,
       "currency": "USD",
       "per": 1000000
     },

@@ -394,6 +394,55 @@
     ]
   },
   {
+    "id": "anthropic/claude-sonnet-5-5",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "Claude Sonnet 5.5",
+    "family": "claude-sonnet",
+    "releaseDate": "2026-09-28",
+    "lastUpdated": "2026-09-28",
+    "knowledgeCutoff": "2026-06",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "anthropic/claude-opus-4-7",
     "provider": "crossmodel",
     "providerName": "CrossModel",
@@ -475,10 +524,10 @@
       ]
     },
     "pricing": {
-      "input": 0.27,
-      "output": 1.08,
-      "cacheRead": 0.0054,
-      "cacheWrite": 0.27,
+      "input": 0.3,
+      "output": 1.2,
+      "cacheRead": 0.006,
+      "cacheWrite": 0.3,
       "currency": "USD",
       "per": 1000000
     },
@@ -524,10 +573,10 @@
       ]
     },
     "pricing": {
-      "input": 0.27,
-      "output": 1.08,
-      "cacheRead": 0.0054,
-      "cacheWrite": 0.27,
+      "input": 0.3,
+      "output": 1.2,
+      "cacheRead": 0.006,
+      "cacheWrite": 0.3,
       "currency": "USD",
       "per": 1000000
     },
@@ -572,10 +621,10 @@
       ]
     },
     "pricing": {
-      "input": 1.215,
-      "output": 3.645,
-      "cacheRead": 0.0405,
-      "cacheWrite": 1.215,
+      "input": 1.35,
+      "output": 4.05,
+      "cacheRead": 0.045,
+      "cacheWrite": 1.35,
       "currency": "USD",
       "per": 1000000
     },
@@ -620,10 +669,10 @@
       ]
     },
     "pricing": {
-      "input": 0.27,
-      "output": 1.08,
-      "cacheRead": 0.0054,
-      "cacheWrite": 0.27,
+      "input": 0.3,
+      "output": 1.2,
+      "cacheRead": 0.006,
+      "cacheWrite": 0.3,
       "currency": "USD",
       "per": 1000000
     },
@@ -2422,11 +2471,11 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -2852,6 +2901,67 @@
       "cacheWrite": 0.2,
       "currency": "USD",
       "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "openai/gpt-6.1-sol",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "GPT-6.1 Sol",
+    "family": "gpt-sol",
+    "releaseDate": "2026-09-29",
+    "lastUpdated": "2026-09-29",
+    "knowledgeCutoff": "2026-04-30",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.1,
+      "cacheWrite": 2.5,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 4,
+          "output": 15,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 4,
+        "output": 15,
+        "contextThreshold": 200000
+      }
     },
     "status": "active",
     "deprecationDate": null,

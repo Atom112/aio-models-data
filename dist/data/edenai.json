@@ -153,15 +153,15 @@
     "contextWindow": 1048576,
     "maxOutputTokens": 64000,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -2189,11 +2189,11 @@
     "id": "anthropic/claude-sonnet-latest",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Claude Sonnet Latest (Claude Sonnet 5)",
+    "displayName": "Claude Sonnet Latest (Claude Sonnet 5.5)",
     "family": "claude-sonnet",
-    "releaseDate": "2026-06-30",
-    "lastUpdated": "2026-06-30",
-    "knowledgeCutoff": "2026-01-31",
+    "releaseDate": "2026-09-28",
+    "lastUpdated": "2026-09-28",
+    "knowledgeCutoff": "2026-06",
     "contextWindow": 1000000,
     "maxOutputTokens": 128000,
     "capabilities": {
@@ -2623,6 +2623,56 @@
       "output": 15,
       "cacheRead": 0.3,
       "cacheWrite": 3.75,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "anthropic/claude-sonnet-5-5",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Claude Sonnet 5.5",
+    "family": "claude-sonnet",
+    "releaseDate": "2026-09-28",
+    "lastUpdated": "2026-09-28",
+    "knowledgeCutoff": "2026-06",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -3443,6 +3493,194 @@
     ]
   },
   {
+    "id": "tencent/step-5-preview",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Step 5 Preview (Tencent)",
+    "family": null,
+    "releaseDate": "2026-09-16",
+    "lastUpdated": "2026-09-20",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 1000000,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1,
+      "output": 2.7,
+      "cacheRead": 0.05,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "tencent/deepseek-v4-pro-0813",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "DeepSeek V4 Pro 0813 (Tencent)",
+    "family": "deepseek-thinking",
+    "releaseDate": "2026-08-12",
+    "lastUpdated": "2026-08-22",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.66,
+      "output": 1.98,
+      "cacheRead": 0.022,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "tencent/hy3",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Hy3 (Tencent)",
+    "family": "Hy",
+    "releaseDate": "2026-07-06",
+    "lastUpdated": "2026-07-06",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.132,
+      "output": 0.528,
+      "cacheRead": 0.033,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "tencent/hy4-preview",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Hy4 preview (Tencent)",
+    "family": "Hy",
+    "releaseDate": "2026-08-28",
+    "lastUpdated": "2026-08-28",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.834,
+      "output": 2.501,
+      "cacheRead": 0.042,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "together_ai/meta-models/Muse-Glimmer-30B",
     "provider": "edenai",
     "providerName": "Eden AI",
@@ -4019,26 +4257,26 @@
     ]
   },
   {
-    "id": "flexai/Muse-Glimmer-30B",
+    "id": "flexai/DeepSeek-V4.1-Flash",
     "provider": "edenai",
     "providerName": "Eden AI",
-    "displayName": "Muse Glimmer 30B (FlexAI)",
-    "family": "muse",
-    "releaseDate": "2026-08-10",
-    "lastUpdated": "2026-08-10",
-    "knowledgeCutoff": "2026-01-04",
-    "contextWindow": 131072,
-    "maxOutputTokens": 131072,
+    "displayName": "DeepSeek V4.1 Flash (FlexAI)",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 384000,
     "capabilities": {
       "tools": true,
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -4051,9 +4289,9 @@
       ]
     },
     "pricing": {
-      "input": 0.3,
-      "output": 1.2,
-      "cacheRead": 0.045,
+      "input": 0.14,
+      "output": 0.42,
+      "cacheRead": 0.021,
       "currency": "USD",
       "per": 1000000
     },
@@ -4737,100 +4975,6 @@
     ]
   },
   {
-    "id": "google/deep-research-preview-04-2026",
-    "provider": "edenai",
-    "providerName": "Eden AI",
-    "displayName": "Gemini Deep Research Preview",
-    "family": "gemini-pro",
-    "releaseDate": "2026-04-21",
-    "lastUpdated": "2026-04-21",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 131072,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2,
-      "output": 12,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "google/deep-research-max-preview-04-2026",
-    "provider": "edenai",
-    "providerName": "Eden AI",
-    "displayName": "Deep Research Max Preview",
-    "family": "gemini-pro",
-    "releaseDate": "2026-04-21",
-    "lastUpdated": "2026-04-21",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 131072,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2,
-      "output": 12,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "google/gemini-3.7-flash",
     "provider": "edenai",
     "providerName": "Eden AI",
@@ -5266,14 +5410,14 @@
       "per": 1000000,
       "tiers": [
         {
-          "input": 3.2,
-          "output": 9.6,
+          "input": 4,
+          "output": 12,
           "contextThreshold": 200000
         }
       ],
       "contextOverThreshold": {
-        "input": 3.2,
-        "output": 9.6,
+        "input": 4,
+        "output": 12,
         "contextThreshold": 200000
       }
     },
@@ -5327,14 +5471,14 @@
       "per": 1000000,
       "tiers": [
         {
-          "input": 3.2,
-          "output": 9.6,
+          "input": 4,
+          "output": 12,
           "contextThreshold": 200000
         }
       ],
       "contextOverThreshold": {
-        "input": 3.2,
-        "output": 9.6,
+        "input": 4,
+        "output": 12,
         "contextThreshold": 200000
       }
     },
@@ -5865,7 +6009,7 @@
     "contextWindow": 1048000,
     "maxOutputTokens": 384000,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": true,
       "reasoning": true,
       "streaming": true,
@@ -6121,9 +6265,9 @@
       ]
     },
     "pricing": {
-      "input": 0.45612,
-      "output": 0.91224,
-      "cacheRead": 0.091224,
+      "input": 0.449,
+      "output": 0.898,
+      "cacheRead": 0.0898,
       "currency": "USD",
       "per": 1000000
     },
@@ -6168,8 +6312,8 @@
       ]
     },
     "pricing": {
-      "input": 1.02627,
-      "output": 1.02627,
+      "input": 1.01025,
+      "output": 1.01025,
       "currency": "USD",
       "per": 1000000
     },
@@ -6214,8 +6358,8 @@
       ]
     },
     "pricing": {
-      "input": 0.171045,
-      "output": 0.68418,
+      "input": 0.168375,
+      "output": 0.6735,
       "currency": "USD",
       "per": 1000000
     },
@@ -6260,8 +6404,8 @@
       ]
     },
     "pricing": {
-      "input": 0.741195,
-      "output": 0.741195,
+      "input": 0.729625,
+      "output": 0.729625,
       "currency": "USD",
       "per": 1000000
     },
@@ -6306,8 +6450,8 @@
       ]
     },
     "pricing": {
-      "input": 0.171045,
-      "output": 0.741195,
+      "input": 0.168375,
+      "output": 0.729625,
       "currency": "USD",
       "per": 1000000
     },
@@ -7709,6 +7853,53 @@
     ]
   },
   {
+    "id": "greenference/gpt-oss-20b",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "GPT OSS 20B (Greenference)",
+    "family": "gpt-oss",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": null,
+    "contextWindow": 131072,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.009,
+      "output": 0.045,
+      "cacheRead": 0.0045,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "perplexityai/sonar-pro",
     "provider": "edenai",
     "providerName": "Eden AI",
@@ -7996,7 +8187,7 @@
     "releaseDate": "2026-07-31",
     "lastUpdated": "2026-07-31",
     "knowledgeCutoff": "2025-05",
-    "contextWindow": 1310720,
+    "contextWindow": 1048576,
     "maxOutputTokens": 384000,
     "capabilities": {
       "tools": true,
@@ -9960,148 +10151,6 @@
     ]
   },
   {
-    "id": "fireworks_ai/accounts/fireworks/models/deepseek-v4-flash-0731",
-    "provider": "edenai",
-    "providerName": "Eden AI",
-    "displayName": "DeepSeek V4 Flash 0731 (Fireworks AI)",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-07-31",
-    "lastUpdated": "2026-07-31",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.22,
-      "output": 0.66,
-      "cacheRead": 0.007,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "fireworks_ai/accounts/fireworks/models/muse-glimmer-30b",
-    "provider": "edenai",
-    "providerName": "Eden AI",
-    "displayName": "Muse Glimmer 30B (Fireworks AI)",
-    "family": "muse",
-    "releaseDate": "2026-08-10",
-    "lastUpdated": "2026-08-10",
-    "knowledgeCutoff": "2026-01-04",
-    "contextWindow": 131072,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.35,
-      "output": 1.5,
-      "cacheRead": 0.04,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "fireworks_ai/accounts/fireworks/models/deepseek-v4-pro-0813",
-    "provider": "edenai",
-    "providerName": "Eden AI",
-    "displayName": "DeepSeek V4 Pro 0813 (Fireworks AI)",
-    "family": "deepseek-thinking",
-    "releaseDate": "2026-08-12",
-    "lastUpdated": "2026-08-22",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.32,
-      "output": 3.96,
-      "cacheRead": 0.044,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "fireworks_ai/accounts/fireworks/models/inkling",
     "provider": "edenai",
     "providerName": "Eden AI",
@@ -10137,6 +10186,53 @@
       "input": 1,
       "output": 4.05,
       "cacheRead": 0.17,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "fireworks_ai/accounts/fireworks/models/gpt-oss-120b",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "GPT OSS 120B (Fireworks AI)",
+    "family": "gpt-oss",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": null,
+    "contextWindow": 131072,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.6,
+      "cacheRead": 0.015,
       "currency": "USD",
       "per": 1000000
     },
@@ -11494,6 +11590,55 @@
     ]
   },
   {
+    "id": "qwen/qwen3.8-omni-flash",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "Qwen3.8 Omni Flash",
+    "family": "qwen",
+    "releaseDate": "2026-09-17",
+    "lastUpdated": "2026-09-17",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.47,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "qwen/qwen-vl-max",
     "provider": "edenai",
     "providerName": "Eden AI",
@@ -12800,6 +12945,68 @@
     ]
   },
   {
+    "id": "openai/gpt-6.1-sol",
+    "provider": "edenai",
+    "providerName": "Eden AI",
+    "displayName": "GPT-6.1 Sol",
+    "family": "gpt-sol",
+    "releaseDate": "2026-09-29",
+    "lastUpdated": "2026-09-29",
+    "knowledgeCutoff": "2026-04-30",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.1,
+      "cacheWrite": 2.5,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 4,
+          "output": 15,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 4,
+        "output": 15,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "openai/gpt-4o-2024-08-06",
     "provider": "edenai",
     "providerName": "Eden AI",
@@ -14007,8 +14214,8 @@
       ]
     },
     "pricing": {
-      "input": 0.34209,
-      "output": 0.45612,
+      "input": 0.33675,
+      "output": 0.449,
       "currency": "USD",
       "per": 1000000
     },
