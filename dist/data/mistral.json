@@ -131,7 +131,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -177,7 +177,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -267,7 +267,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -335,7 +335,7 @@
     "releaseDate": "2026-03-16",
     "lastUpdated": "2026-03-16",
     "knowledgeCutoff": "2025-06",
-    "contextWindow": 256000,
+    "contextWindow": 262144,
     "maxOutputTokens": 256000,
     "capabilities": {
       "tools": true,
@@ -377,6 +377,54 @@
     ]
   },
   {
+    "id": "ministral-8b-2512",
+    "provider": "mistral",
+    "providerName": "Mistral",
+    "displayName": "Ministral 3 8B",
+    "family": "ministral",
+    "releaseDate": "2025-12-02",
+    "lastUpdated": "2025-12-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.15,
+      "cacheRead": 0.015,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "zai-glm-5-2",
     "provider": "mistral",
     "providerName": "Mistral",
@@ -385,7 +433,7 @@
     "releaseDate": "2026-06-13",
     "lastUpdated": "2026-06-13",
     "knowledgeCutoff": null,
-    "contextWindow": 1000000,
+    "contextWindow": 1048576,
     "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
@@ -414,7 +462,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "beta",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -432,23 +480,24 @@
     "releaseDate": "2024-10-01",
     "lastUpdated": "2024-10-04",
     "knowledgeCutoff": "2024-10",
-    "contextWindow": 128000,
+    "contextWindow": 262144,
     "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
@@ -520,6 +569,54 @@
     ]
   },
   {
+    "id": "mistral-large-4",
+    "provider": "mistral",
+    "providerName": "Mistral",
+    "displayName": "Mistral Large 4",
+    "family": "mistral-large",
+    "releaseDate": "2026-10-06",
+    "lastUpdated": "2026-10-06",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.68,
+      "output": 2.09,
+      "cacheRead": 0.07,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "beta",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "open-mixtral-8x22b",
     "provider": "mistral",
     "providerName": "Mistral",
@@ -556,7 +653,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -649,7 +746,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -667,23 +764,24 @@
     "releaseDate": "2025-03-17",
     "lastUpdated": "2025-03-20",
     "knowledgeCutoff": "2025-06",
-    "contextWindow": 128000,
+    "contextWindow": 262144,
     "maxOutputTokens": 16384,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
@@ -695,12 +793,153 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [
       "Magistral Medium (latest)"
     ],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "voxtral-small-2507",
+    "provider": "mistral",
+    "providerName": "Mistral",
+    "displayName": "Voxtral Small",
+    "family": "voxtral",
+    "releaseDate": "2025-07-15",
+    "lastUpdated": "2025-07-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 32768,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.4,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5-2",
+    "provider": "mistral",
+    "providerName": "Mistral",
+    "displayName": "GLM-5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.4,
+      "output": 4.4,
+      "cacheRead": 0.14,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "labs-leanstral-1-5-1",
+    "provider": "mistral",
+    "providerName": "Mistral",
+    "displayName": "Leanstral 1.5",
+    "family": "leanstral",
+    "releaseDate": "2026-06-30",
+    "lastUpdated": "2026-06-30",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
     "isAggregator": false,
     "sources": [
       "models.dev"
@@ -744,7 +983,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -854,7 +1093,7 @@
     "releaseDate": "2026-03-16",
     "lastUpdated": "2026-03-16",
     "knowledgeCutoff": "2025-06",
-    "contextWindow": 256000,
+    "contextWindow": 262144,
     "maxOutputTokens": 256000,
     "capabilities": {
       "tools": true,
@@ -1124,6 +1363,54 @@
     ]
   },
   {
+    "id": "ministral-14b-2512",
+    "provider": "mistral",
+    "providerName": "Mistral",
+    "displayName": "Ministral 3 14B",
+    "family": "ministral",
+    "releaseDate": "2025-12-02",
+    "lastUpdated": "2025-12-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2,
+      "output": 0.2,
+      "cacheRead": 0.02,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "devstral-small-2507",
     "provider": "mistral",
     "providerName": "Mistral",
@@ -1207,7 +1494,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [
@@ -1227,7 +1514,7 @@
     "releaseDate": "2025-07-15",
     "lastUpdated": "2025-07-15",
     "knowledgeCutoff": null,
-    "contextWindow": 32000,
+    "contextWindow": 32768,
     "maxOutputTokens": 32000,
     "capabilities": {
       "tools": true,
@@ -1304,7 +1591,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1351,7 +1638,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1369,7 +1656,7 @@
     "releaseDate": "2026-08-14",
     "lastUpdated": "2026-08-14",
     "knowledgeCutoff": null,
-    "contextWindow": 1000000,
+    "contextWindow": 1048576,
     "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
@@ -1395,6 +1682,54 @@
       "input": 1.4,
       "output": 4.4,
       "cacheRead": 0.14,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "ministral-3b-2512",
+    "provider": "mistral",
+    "providerName": "Mistral",
+    "displayName": "Ministral 3 3B",
+    "family": "ministral",
+    "releaseDate": "2025-12-02",
+    "lastUpdated": "2025-12-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 131072,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.1,
+      "cacheRead": 0.01,
       "currency": "USD",
       "per": 1000000
     },
@@ -1492,6 +1827,53 @@
       "currency": "USD",
       "per": 1000000
     },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "codestral-2508",
+    "provider": "mistral",
+    "providerName": "Mistral",
+    "displayName": "Codestral 25.08",
+    "family": "codestral",
+    "releaseDate": "2025-07-30",
+    "lastUpdated": "2025-07-30",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 0.9,
+      "cacheRead": 0.03,
+      "currency": "USD",
+      "per": 1000000
+    },
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
@@ -1510,23 +1892,24 @@
     "releaseDate": "2024-10-01",
     "lastUpdated": "2024-10-04",
     "knowledgeCutoff": "2024-10",
-    "contextWindow": 128000,
+    "contextWindow": 131072,
     "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"

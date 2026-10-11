@@ -383,55 +383,6 @@
     ]
   },
   {
-    "id": "glm-5v-turbo",
-    "provider": "cortecs",
-    "providerName": "Cortecs",
-    "displayName": "GLM-5V-Turbo",
-    "family": "glm",
-    "releaseDate": "2026-04-01",
-    "lastUpdated": "2026-04-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 202752,
-    "maxOutputTokens": 202752,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.186,
-      "output": 3.955,
-      "cacheRead": 0.296,
-      "cacheWrite": 1.544,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "gpt-4o",
     "provider": "cortecs",
     "providerName": "Cortecs",
@@ -748,8 +699,8 @@
       ]
     },
     "pricing": {
-      "input": 0.069,
-      "output": 0.455,
+      "input": 0.199,
+      "output": 0.598,
       "cacheRead": 0.018,
       "currency": "USD",
       "per": 1000000
@@ -905,6 +856,56 @@
     ]
   },
   {
+    "id": "claude-haiku-5.5",
+    "provider": "cortecs",
+    "providerName": "Cortecs",
+    "displayName": "Claude Haiku 5.5",
+    "family": "claude-haiku",
+    "releaseDate": "2026-10-07",
+    "lastUpdated": "2026-10-07",
+    "knowledgeCutoff": "2026-06",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.113,
+      "output": 0.563,
+      "cacheRead": 0.011,
+      "cacheWrite": 0.14,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "apertus-70b",
     "provider": "cortecs",
     "providerName": "Cortecs",
@@ -986,53 +987,6 @@
       "input": 0.279,
       "output": 2.192,
       "cacheRead": 0.056,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm-5",
-    "provider": "cortecs",
-    "providerName": "Cortecs",
-    "displayName": "GLM-5",
-    "family": "glm",
-    "releaseDate": "2026-02-12",
-    "lastUpdated": "2026-02-12",
-    "knowledgeCutoff": null,
-    "contextWindow": 202752,
-    "maxOutputTokens": 202752,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.988,
-      "output": 3.164,
-      "cacheRead": 0.247,
       "currency": "USD",
       "per": 1000000
     },
@@ -1174,8 +1128,8 @@
       ]
     },
     "pricing": {
-      "input": 0.296,
-      "output": 1.186,
+      "input": 0.348,
+      "output": 1.39,
       "cacheRead": 0.075,
       "currency": "USD",
       "per": 1000000
@@ -1390,8 +1344,8 @@
     "releaseDate": "2026-04-21",
     "lastUpdated": "2026-04-21",
     "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -1657,8 +1611,8 @@
       ]
     },
     "pricing": {
-      "input": 0.067,
-      "output": 0.245,
+      "input": 0.179,
+      "output": 0.697,
       "cacheRead": 0.014,
       "currency": "USD",
       "per": 1000000
@@ -1903,101 +1857,6 @@
       "input": 0.123,
       "output": 0.368,
       "cacheRead": 0.012,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3.5-122b-a10b",
-    "provider": "cortecs",
-    "providerName": "Cortecs",
-    "displayName": "Qwen3.5 122B-A10B",
-    "family": "qwen",
-    "releaseDate": "2026-02-23",
-    "lastUpdated": "2026-02-23",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.495,
-      "output": 3.46,
-      "cacheRead": 0.124,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "kimi-k2.5",
-    "provider": "cortecs",
-    "providerName": "Cortecs",
-    "displayName": "Kimi K2.5",
-    "family": "kimi-k2",
-    "releaseDate": "2026-01",
-    "lastUpdated": "2026-01",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.495,
-      "output": 2.768,
-      "cacheRead": 0.124,
       "currency": "USD",
       "per": 1000000
     },
@@ -2332,6 +2191,56 @@
     "pricing": {
       "input": 0.223,
       "output": 0.223,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-sonnet-5.5",
+    "provider": "cortecs",
+    "providerName": "Cortecs",
+    "displayName": "Claude Sonnet 5.5",
+    "family": "claude-sonnet",
+    "releaseDate": "2026-09-28",
+    "lastUpdated": "2026-09-28",
+    "knowledgeCutoff": "2026-06",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.25,
+      "output": 11.249,
+      "cacheRead": 0.225,
+      "cacheWrite": 2.813,
       "currency": "USD",
       "per": 1000000
     },
@@ -2737,8 +2646,8 @@
     "releaseDate": "2026-02-23",
     "lastUpdated": "2026-02-23",
     "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "contextWindow": 262000,
+    "maxOutputTokens": 262000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -3935,54 +3844,6 @@
     ]
   },
   {
-    "id": "glm-5-turbo",
-    "provider": "cortecs",
-    "providerName": "Cortecs",
-    "displayName": "GLM-5-Turbo",
-    "family": "glm",
-    "releaseDate": "2026-03-16",
-    "lastUpdated": "2026-03-16",
-    "knowledgeCutoff": null,
-    "contextWindow": 202752,
-    "maxOutputTokens": 202752,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.186,
-      "output": 3.955,
-      "cacheRead": 0.296,
-      "cacheWrite": 1.544,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "gpt-6-luna",
     "provider": "cortecs",
     "providerName": "Cortecs",
@@ -4041,8 +3902,8 @@
     "releaseDate": "2026-04-24",
     "lastUpdated": "2026-04-24",
     "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -4067,6 +3928,54 @@
       "input": 1.7,
       "output": 3.4,
       "cacheRead": 0.15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mistral-large-4-0",
+    "provider": "cortecs",
+    "providerName": "Cortecs",
+    "displayName": "Mistral Large 4",
+    "family": "mistral-large",
+    "releaseDate": "2026-10-06",
+    "lastUpdated": "2026-10-06",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.765,
+      "output": 2.351,
+      "cacheRead": 0.079,
       "currency": "USD",
       "per": 1000000
     },
@@ -4274,53 +4183,6 @@
     ]
   },
   {
-    "id": "deepseek-r1-0528",
-    "provider": "cortecs",
-    "providerName": "Cortecs",
-    "displayName": "DeepSeek R1 0528",
-    "family": "deepseek-thinking",
-    "releaseDate": "2025-05-28",
-    "lastUpdated": "2025-05-28",
-    "knowledgeCutoff": "2024-07",
-    "contextWindow": 164000,
-    "maxOutputTokens": 164000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.652,
-      "output": 2.57,
-      "cacheRead": 0.163,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "gpt-5.6-terra",
     "provider": "cortecs",
     "providerName": "Cortecs",
@@ -4380,7 +4242,7 @@
     "lastUpdated": "2025-12-01",
     "knowledgeCutoff": "2024-07",
     "contextWindow": 163840,
-    "maxOutputTokens": 163840,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -4402,9 +4264,9 @@
       ]
     },
     "pricing": {
-      "input": 0.296,
-      "output": 0.495,
-      "cacheRead": 0.075,
+      "input": 0.5,
+      "output": 1.499,
+      "cacheRead": 0.15,
       "currency": "USD",
       "per": 1000000
     },
@@ -5044,11 +4906,11 @@
     "id": "codestral-2508",
     "provider": "cortecs",
     "providerName": "Cortecs",
-    "displayName": "Codestral 2508",
-    "family": "mistral",
+    "displayName": "Codestral 25.08",
+    "family": "codestral",
     "releaseDate": "2025-07-30",
     "lastUpdated": "2025-07-30",
-    "knowledgeCutoff": "2025-03",
+    "knowledgeCutoff": null,
     "contextWindow": 256000,
     "maxOutputTokens": 256000,
     "capabilities": {
@@ -5061,7 +4923,7 @@
       "temperature": true,
       "attachment": false,
       "structured_output": true,
-      "open_weights": true
+      "open_weights": false
     },
     "modalities": {
       "input": [

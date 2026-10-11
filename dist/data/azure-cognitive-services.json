@@ -51,7 +51,7 @@
         "contextThreshold": 200000
       }
     },
-    "status": "active",
+    "status": "experimental",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -863,7 +863,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "experimental",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1109,6 +1109,63 @@
     ]
   },
   {
+    "id": "claude-haiku-5-5",
+    "provider": "azure-cognitive-services",
+    "providerName": "Azure Cognitive Services",
+    "displayName": "Claude Haiku 5.5",
+    "family": "claude-haiku",
+    "releaseDate": "2026-10-07",
+    "lastUpdated": "2026-10-07",
+    "knowledgeCutoff": "2026-06",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.5,
+      "cacheRead": 0.01,
+      "cacheWrite": 0.125,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.5,
+          "output": 2.5,
+          "contextThreshold": 100000
+        }
+      ]
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "claude-sonnet-4-6",
     "provider": "azure-cognitive-services",
     "providerName": "Azure Cognitive Services",
@@ -1261,7 +1318,7 @@
         "contextThreshold": 200000
       }
     },
-    "status": "active",
+    "status": "experimental",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1372,7 +1429,7 @@
         "contextThreshold": 200000
       }
     },
-    "status": "active",
+    "status": "experimental",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2264,7 +2321,7 @@
         "contextThreshold": 200000
       }
     },
-    "status": "active",
+    "status": "experimental",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2358,7 +2415,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "experimental",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2786,7 +2843,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "experimental",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],

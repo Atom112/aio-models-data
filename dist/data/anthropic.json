@@ -112,7 +112,7 @@
     "releaseDate": "2025-09-29",
     "lastUpdated": "2025-09-29",
     "knowledgeCutoff": "2025-07-31",
-    "contextWindow": 1000000,
+    "contextWindow": 200000,
     "maxOutputTokens": 64000,
     "capabilities": {
       "tools": true,
@@ -466,7 +466,7 @@
     "releaseDate": "2025-09-29",
     "lastUpdated": "2025-09-29",
     "knowledgeCutoff": "2025-07-31",
-    "contextWindow": 1000000,
+    "contextWindow": 200000,
     "maxOutputTokens": 64000,
     "capabilities": {
       "tools": true,
@@ -658,6 +658,63 @@
     ]
   },
   {
+    "id": "claude-haiku-5-5",
+    "provider": "anthropic",
+    "providerName": "Anthropic",
+    "displayName": "Claude Haiku 5.5",
+    "family": "claude-haiku",
+    "releaseDate": "2026-10-07",
+    "lastUpdated": "2026-10-07",
+    "knowledgeCutoff": "2026-06",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.5,
+      "cacheRead": 0.01,
+      "cacheWrite": 0.125,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.5,
+          "output": 2.5,
+          "contextThreshold": 100000
+        }
+      ]
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "claude-sonnet-4-6",
     "provider": "anthropic",
     "providerName": "Anthropic",
@@ -743,7 +800,7 @@
     "pricing": {
       "input": 2,
       "output": 10,
-      "cacheRead": 0.2,
+      "cacheRead": 0.1,
       "cacheWrite": 2.5,
       "currency": "USD",
       "per": 1000000
