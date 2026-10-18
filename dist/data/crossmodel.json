@@ -2352,6 +2352,57 @@
     ]
   },
   {
+    "id": "gemini/gemini-4-argon",
+    "provider": "crossmodel",
+    "providerName": "CrossModel",
+    "displayName": "Gemini 4 Argon",
+    "family": "gemini",
+    "releaseDate": "2026-10-13",
+    "lastUpdated": "2026-10-13",
+    "knowledgeCutoff": "2026-03",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.1,
+      "cacheWrite": 2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "qwen/qwen3.7-max",
     "provider": "crossmodel",
     "providerName": "CrossModel",

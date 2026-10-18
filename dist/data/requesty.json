@@ -651,6 +651,57 @@
     ]
   },
   {
+    "id": "muse-spark-1.3",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Muse Spark 1.3",
+    "family": "muse",
+    "releaseDate": "2026-09-02",
+    "lastUpdated": "2026-09-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 943718,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 4.25,
+      "cacheRead": 0.15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "nemotron-3.5-lightning-30b-a3b",
     "provider": "requesty",
     "providerName": "Requesty",
@@ -848,7 +899,7 @@
     "id": "mistral-medium-3-5@eu",
     "provider": "requesty",
     "providerName": "Requesty",
-    "displayName": "mistral-medium-3-5@eu",
+    "displayName": "Mistral Medium 3.5 (EU)",
     "family": "mistral-medium",
     "releaseDate": "2026-04-30",
     "lastUpdated": "2026-04-30",
@@ -870,7 +921,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
@@ -2108,6 +2160,54 @@
     ]
   },
   {
+    "id": "deepseek-v4.1-flash-1017@eu",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "DeepSeek V4.1 Flash 1017 (EU)",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-10-17",
+    "lastUpdated": "2026-10-17",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 393216,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.5,
+      "output": 1.5,
+      "cacheRead": 0.05,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "claude-opus-4-5",
     "provider": "requesty",
     "providerName": "Requesty",
@@ -3024,6 +3124,55 @@
     ]
   },
   {
+    "id": "step-5-preview",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Step 5 Preview",
+    "family": null,
+    "releaseDate": "2026-09-16",
+    "lastUpdated": "2026-09-20",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1,
+      "output": 2.7,
+      "cacheRead": 0.05,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "claude-opus-5-5@eu",
     "provider": "requesty",
     "providerName": "Requesty",
@@ -3061,6 +3210,57 @@
       "output": 22,
       "cacheRead": 0.22,
       "cacheWrite": 5.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-4-argon@eu",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Gemini 4 Argon (EU)",
+    "family": "gemini",
+    "releaseDate": "2026-10-13",
+    "lastUpdated": "2026-10-13",
+    "knowledgeCutoff": "2026-03",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.2,
+      "output": 11,
+      "cacheRead": 0.11,
       "currency": "USD",
       "per": 1000000
     },
@@ -3125,7 +3325,7 @@
     "id": "mistral-medium-3-5",
     "provider": "requesty",
     "providerName": "Requesty",
-    "displayName": "mistral-medium-3-5",
+    "displayName": "Mistral Medium 3.5",
     "family": "mistral-medium",
     "releaseDate": "2026-04-30",
     "lastUpdated": "2026-04-30",
@@ -3147,7 +3347,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
@@ -7425,6 +7626,57 @@
     ]
   },
   {
+    "id": "muse-wonder-1.0",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Muse Wonder",
+    "family": "muse",
+    "releaseDate": "2026-10-12",
+    "lastUpdated": "2026-10-12",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 943718,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 4,
+      "output": 20,
+      "cacheRead": 0.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "claude-sonnet-4-6",
     "provider": "requesty",
     "providerName": "Requesty",
@@ -8352,6 +8604,54 @@
     ]
   },
   {
+    "id": "deepseek-v4.1-flash-1017",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "DeepSeek V4.1 Flash 1017",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-10-17",
+    "lastUpdated": "2026-10-17",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 393216,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.5,
+      "output": 1.5,
+      "cacheRead": 0.05,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "gpt-5.6-sol",
     "provider": "requesty",
     "providerName": "Requesty",
@@ -8451,6 +8751,107 @@
       "output": 27.5,
       "cacheRead": 0.55,
       "cacheWrite": 6.875,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "muse-spark-open",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Muse Spark Open",
+    "family": "muse",
+    "releaseDate": "2026-10-15",
+    "lastUpdated": "2026-10-15",
+    "knowledgeCutoff": "2026-01-04",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 4.25,
+      "cacheRead": 0.15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-4-argon",
+    "provider": "requesty",
+    "providerName": "Requesty",
+    "displayName": "Gemini 4 Argon",
+    "family": "gemini",
+    "releaseDate": "2026-10-13",
+    "lastUpdated": "2026-10-13",
+    "knowledgeCutoff": "2026-03",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.1,
       "currency": "USD",
       "per": 1000000
     },

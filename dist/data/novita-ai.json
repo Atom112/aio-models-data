@@ -1464,7 +1464,7 @@
     "lastUpdated": "2026-09-29",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 32768,
+    "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -1486,8 +1486,9 @@
       ]
     },
     "pricing": {
-      "input": 0,
-      "output": 0,
+      "input": 0.3,
+      "output": 0.9,
+      "cacheRead": 0.06,
       "currency": "USD",
       "per": 1000000
     },
@@ -2924,6 +2925,55 @@
     "pricing": {
       "input": 0.02,
       "output": 0.02,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "stepfun/step-5-preview",
+    "provider": "novita-ai",
+    "providerName": "Novita AI",
+    "displayName": "Step 5 Preview",
+    "family": null,
+    "releaseDate": "2026-09-16",
+    "lastUpdated": "2026-09-20",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1,
+      "output": 2.7,
+      "cacheRead": 0.1,
       "currency": "USD",
       "per": 1000000
     },

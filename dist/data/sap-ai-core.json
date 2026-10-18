@@ -480,6 +480,47 @@
     ]
   },
   {
+    "id": "nvidia--llama-nemotron-embed-1b",
+    "provider": "sap-ai-core",
+    "providerName": "SAP AI Core",
+    "displayName": "Llama Nemotron Embed 1B v2",
+    "family": "nemotron",
+    "releaseDate": "2025-10-16",
+    "lastUpdated": "2025-10-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 8192,
+    "maxOutputTokens": 2048,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "anthropic--claude-4.5-haiku",
     "provider": "sap-ai-core",
     "providerName": "SAP AI Core",
@@ -649,6 +690,51 @@
         "image",
         "audio",
         "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3.6-flash",
+    "provider": "sap-ai-core",
+    "providerName": "SAP AI Core",
+    "displayName": "Gemini 3.6 Flash",
+    "family": "gemini-flash",
+    "releaseDate": "2026-07-21",
+    "lastUpdated": "2026-07-21",
+    "knowledgeCutoff": "2026-03",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
         "pdf"
       ],
       "output": [
@@ -859,6 +945,49 @@
     ]
   },
   {
+    "id": "gpt-6.1-sol",
+    "provider": "sap-ai-core",
+    "providerName": "SAP AI Core",
+    "displayName": "GPT-6.1 Sol",
+    "family": "gpt-sol",
+    "releaseDate": "2026-09-29",
+    "lastUpdated": "2026-09-29",
+    "knowledgeCutoff": "2026-04-30",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "text-embedding-3-large",
     "provider": "sap-ai-core",
     "providerName": "SAP AI Core",
@@ -986,6 +1115,49 @@
       "currency": "USD",
       "per": 1000000
     },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-6-astra",
+    "provider": "sap-ai-core",
+    "providerName": "SAP AI Core",
+    "displayName": "GPT-6 Astra",
+    "family": "gpt-astra",
+    "releaseDate": "2026-09-04",
+    "lastUpdated": "2026-09-04",
+    "knowledgeCutoff": "2026-04-30",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
@@ -2017,6 +2189,49 @@
         "image",
         "video",
         "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-6-luna",
+    "provider": "sap-ai-core",
+    "providerName": "SAP AI Core",
+    "displayName": "GPT-6 Luna",
+    "family": "gpt-luna",
+    "releaseDate": "2026-09-22",
+    "lastUpdated": "2026-09-22",
+    "knowledgeCutoff": "2026-05-18",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
         "pdf"
       ],
       "output": [

@@ -522,6 +522,54 @@
     ]
   },
   {
+    "id": "accounts/fireworks/models/muse-spark-open",
+    "provider": "fireworks-ai",
+    "providerName": "Fireworks AI",
+    "displayName": "Muse Spark Open",
+    "family": "muse",
+    "releaseDate": "2026-10-15",
+    "lastUpdated": "2026-10-15",
+    "knowledgeCutoff": "2026-01-04",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 4.25,
+      "cacheRead": 0.15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "accounts/fireworks/models/qwen3p8-max",
     "provider": "fireworks-ai",
     "providerName": "Fireworks AI",

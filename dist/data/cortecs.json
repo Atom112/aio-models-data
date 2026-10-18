@@ -529,10 +529,10 @@
     "id": "ministral-8b-2512",
     "provider": "cortecs",
     "providerName": "Cortecs",
-    "displayName": "ministral-8b-2512",
-    "family": null,
-    "releaseDate": "2025-12-03",
-    "lastUpdated": "2025-12-03",
+    "displayName": "Ministral 3 8B 2512",
+    "family": "ministral",
+    "releaseDate": "2025-12-02",
+    "lastUpdated": "2025-12-02",
     "knowledgeCutoff": null,
     "contextWindow": 256000,
     "maxOutputTokens": 256000,
@@ -546,7 +546,7 @@
       "temperature": false,
       "attachment": true,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -811,11 +811,11 @@
     "id": "nova-lite-v1",
     "provider": "cortecs",
     "providerName": "Cortecs",
-    "displayName": "nova-lite-v1",
-    "family": null,
-    "releaseDate": "2025-04-14",
-    "lastUpdated": "2025-04-14",
-    "knowledgeCutoff": null,
+    "displayName": "Nova Lite 1.0",
+    "family": "nova-lite",
+    "releaseDate": "2024-12-05",
+    "lastUpdated": "2024-12-05",
+    "knowledgeCutoff": "2024-10-31",
     "contextWindow": 300000,
     "maxOutputTokens": 10000,
     "capabilities": {
@@ -1521,52 +1521,6 @@
       "output": 3.75,
       "cacheRead": 0.075,
       "cacheWrite": 0.038,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "mistral-7b-instruct-v0.3",
-    "provider": "cortecs",
-    "providerName": "Cortecs",
-    "displayName": "mistral-7b-instruct-v0.3",
-    "family": null,
-    "releaseDate": "2025-05-26",
-    "lastUpdated": "2025-05-26",
-    "knowledgeCutoff": null,
-    "contextWindow": 127000,
-    "maxOutputTokens": 127000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.111,
-      "output": 0.111,
       "currency": "USD",
       "per": 1000000
     },
@@ -2403,11 +2357,11 @@
     "id": "hermes-4-405b",
     "provider": "cortecs",
     "providerName": "Cortecs",
-    "displayName": "hermes-4-405b",
-    "family": null,
-    "releaseDate": "2024-08-13",
-    "lastUpdated": "2024-08-13",
-    "knowledgeCutoff": null,
+    "displayName": "Hermes 4 405B",
+    "family": "hermes",
+    "releaseDate": "2025-08-26",
+    "lastUpdated": "2025-08-26",
+    "knowledgeCutoff": "2024-08-31",
     "contextWindow": 128000,
     "maxOutputTokens": 128000,
     "capabilities": {
@@ -2420,7 +2374,7 @@
       "temperature": false,
       "attachment": false,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -2729,58 +2683,6 @@
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-sonnet-4",
-    "provider": "cortecs",
-    "providerName": "Cortecs",
-    "displayName": "Claude Sonnet 4",
-    "family": "claude-sonnet",
-    "releaseDate": "2025-05-22",
-    "lastUpdated": "2025-05-22",
-    "knowledgeCutoff": "2025-03-31",
-    "contextWindow": 200000,
-    "maxOutputTokens": 65000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2.989,
-      "output": 14.945,
-      "cacheRead": 0.296,
-      "cacheWrite": 3.707,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [
-      "Claude Sonnet 4 (latest)"
-    ],
     "isAggregator": true,
     "sources": [
       "models.dev"
@@ -3462,52 +3364,6 @@
     ]
   },
   {
-    "id": "llama-3.1-8b-instruct",
-    "provider": "cortecs",
-    "providerName": "Cortecs",
-    "displayName": "Llama-3.1-8B-Instruct",
-    "family": "llama",
-    "releaseDate": "2024-07-23",
-    "lastUpdated": "2024-07-23",
-    "knowledgeCutoff": "2023-12",
-    "contextWindow": 128000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.167,
-      "output": 0.167,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "glm-5.1",
     "provider": "cortecs",
     "providerName": "Cortecs",
@@ -3799,10 +3655,10 @@
     "id": "ministral-14b-2512",
     "provider": "cortecs",
     "providerName": "Cortecs",
-    "displayName": "ministral-14b-2512",
-    "family": null,
-    "releaseDate": "2025-12-03",
-    "lastUpdated": "2025-12-03",
+    "displayName": "Ministral 3 14B 2512",
+    "family": "ministral",
+    "releaseDate": "2025-12-02",
+    "lastUpdated": "2025-12-02",
     "knowledgeCutoff": null,
     "contextWindow": 256000,
     "maxOutputTokens": 256000,
@@ -3816,7 +3672,7 @@
       "temperature": false,
       "attachment": true,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -4333,9 +4189,9 @@
     "providerName": "Cortecs",
     "displayName": "Nova Pro 1.0",
     "family": "nova-pro",
-    "releaseDate": "2024-12-03",
-    "lastUpdated": "2024-12-03",
-    "knowledgeCutoff": "2024-04",
+    "releaseDate": "2024-12-05",
+    "lastUpdated": "2024-12-05",
+    "knowledgeCutoff": "2024-10-31",
     "contextWindow": 300000,
     "maxOutputTokens": 10000,
     "capabilities": {
@@ -4426,10 +4282,10 @@
     "id": "ministral-3b-2512",
     "provider": "cortecs",
     "providerName": "Cortecs",
-    "displayName": "ministral-3b-2512",
-    "family": null,
-    "releaseDate": "2025-12-03",
-    "lastUpdated": "2025-12-03",
+    "displayName": "Ministral 3 3B 2512",
+    "family": "ministral",
+    "releaseDate": "2025-12-02",
+    "lastUpdated": "2025-12-02",
     "knowledgeCutoff": null,
     "contextWindow": 256000,
     "maxOutputTokens": 256000,
@@ -4443,7 +4299,7 @@
       "temperature": false,
       "attachment": true,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -4713,6 +4569,54 @@
     ]
   },
   {
+    "id": "deepseek-v4.1-flash-1017",
+    "provider": "cortecs",
+    "providerName": "Cortecs",
+    "displayName": "DeepSeek V4.1 Flash 1017",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-10-17",
+    "lastUpdated": "2026-10-17",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.511,
+      "output": 1.534,
+      "cacheRead": 0.128,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "gpt-5.6-sol",
     "provider": "cortecs",
     "providerName": "Cortecs",
@@ -4810,6 +4714,56 @@
     ]
   },
   {
+    "id": "gemini-4-argon",
+    "provider": "cortecs",
+    "providerName": "Cortecs",
+    "displayName": "Gemini 4 Argon",
+    "family": "gemini",
+    "releaseDate": "2026-10-13",
+    "lastUpdated": "2026-10-13",
+    "knowledgeCutoff": "2026-03",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65535,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.25,
+      "output": 11.249,
+      "cacheRead": 0.113,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "minimax-m2",
     "provider": "cortecs",
     "providerName": "Cortecs",
@@ -4859,11 +4813,11 @@
     "id": "nova-micro-v1",
     "provider": "cortecs",
     "providerName": "Cortecs",
-    "displayName": "nova-micro-v1",
-    "family": null,
-    "releaseDate": "2025-04-14",
-    "lastUpdated": "2025-04-14",
-    "knowledgeCutoff": null,
+    "displayName": "Nova Micro 1.0",
+    "family": "nova-micro",
+    "releaseDate": "2024-12-05",
+    "lastUpdated": "2024-12-05",
+    "knowledgeCutoff": "2024-10-31",
     "contextWindow": 128000,
     "maxOutputTokens": 10000,
     "capabilities": {

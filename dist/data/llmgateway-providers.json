@@ -98,6 +98,53 @@
     ]
   },
   {
+    "id": "entrim/glm-5.3",
+    "provider": "llmgateway-providers",
+    "providerName": "LLM Gateway",
+    "displayName": "GLM-5.3 (entrim)",
+    "family": "glm",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.5,
+      "output": 2,
+      "cacheRead": 0.15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "consensusprotocol/gemma-4-31b-it",
     "provider": "llmgateway-providers",
     "providerName": "LLM Gateway",
@@ -229,7 +276,7 @@
     "pricing": {
       "input": 0.1,
       "output": 0.25,
-      "cacheRead": 0.02,
+      "cacheRead": 0.01,
       "currency": "USD",
       "per": 1000000
     },
@@ -338,6 +385,100 @@
     ]
   },
   {
+    "id": "consensusprotocol/mimo-v2.6-flash",
+    "provider": "llmgateway-providers",
+    "providerName": "LLM Gateway",
+    "displayName": "MiMo V2.6 Flash (Consensus Protocol)",
+    "family": "mimo",
+    "releaseDate": "2026-09-22",
+    "lastUpdated": "2026-09-22",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.12,
+      "output": 0.25,
+      "cacheRead": 0.0025,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "consensusprotocol/minimax-m3",
+    "provider": "llmgateway-providers",
+    "providerName": "LLM Gateway",
+    "displayName": "MiniMax M3 (Consensus Protocol)",
+    "family": "minimax",
+    "releaseDate": "2026-06-01",
+    "lastUpdated": "2026-06-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 512000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.28,
+      "output": 1.1,
+      "cacheRead": 0.05,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "consensusprotocol/deepseek-v4-flash",
     "provider": "llmgateway-providers",
     "providerName": "LLM Gateway",
@@ -346,7 +487,7 @@
     "releaseDate": "2026-04-24",
     "lastUpdated": "2026-04-24",
     "knowledgeCutoff": "2025-05",
-    "contextWindow": 524288,
+    "contextWindow": 1000000,
     "maxOutputTokens": 384000,
     "capabilities": {
       "tools": true,
@@ -516,53 +657,6 @@
       "input": 0.2,
       "output": 0.88,
       "cacheRead": 0.11,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepinfra/qwen3.8-2.4t-a95b",
-    "provider": "llmgateway-providers",
-    "providerName": "LLM Gateway",
-    "displayName": "Qwen3.8 2.4T A95B (DeepInfra)",
-    "family": "qwen",
-    "releaseDate": "2026-08-12",
-    "lastUpdated": "2026-08-12",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2,
-      "output": 6,
-      "cacheRead": 0.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -967,19 +1061,21 @@
     "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
-      "structured_output": false,
+      "attachment": true,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "video"
       ],
       "output": [
         "text"
@@ -1645,9 +1741,9 @@
       ]
     },
     "pricing": {
-      "input": 2.2,
-      "output": 6.5,
-      "cacheRead": 0.45,
+      "input": 2.156,
+      "output": 6.776,
+      "cacheRead": 0.429,
       "currency": "USD",
       "per": 1000000
     },
@@ -1695,9 +1791,9 @@
       ]
     },
     "pricing": {
-      "input": 2,
-      "output": 6,
-      "cacheRead": 0.25,
+      "input": 1.54,
+      "output": 4.631,
+      "cacheRead": 0.198,
       "cacheWrite": 2.5,
       "currency": "USD",
       "per": 1000000
@@ -1745,9 +1841,9 @@
       ]
     },
     "pricing": {
-      "input": 3.5,
-      "output": 18,
-      "cacheRead": 0.35,
+      "input": 3.135,
+      "output": 15.675,
+      "cacheRead": 0.319,
       "currency": "USD",
       "per": 1000000
     },
@@ -1839,9 +1935,9 @@
       ]
     },
     "pricing": {
-      "input": 0.88,
-      "output": 2.55,
-      "cacheRead": 0.16,
+      "input": 0.605,
+      "output": 2.123,
+      "cacheRead": 0.154,
       "currency": "USD",
       "per": 1000000
     },
@@ -1886,9 +1982,9 @@
       ]
     },
     "pricing": {
-      "input": 1.4,
-      "output": 4.4,
-      "cacheRead": 0.26,
+      "input": 0.924,
+      "output": 2.904,
+      "cacheRead": 0.1716,
       "currency": "USD",
       "per": 1000000
     },
@@ -1935,9 +2031,9 @@
       ]
     },
     "pricing": {
-      "input": 0.95,
-      "output": 4,
-      "cacheRead": 0.19,
+      "input": 0.737,
+      "output": 3.08,
+      "cacheRead": 0.143,
       "currency": "USD",
       "per": 1000000
     },
@@ -4168,224 +4264,6 @@
     ]
   },
   {
-    "id": "google-ai-studio/gemini-3.5-flash",
-    "provider": "llmgateway-providers",
-    "providerName": "LLM Gateway",
-    "displayName": "Gemini 3.5 Flash (Google AI Studio)",
-    "family": "gemini-flash",
-    "releaseDate": "2026-05-19",
-    "lastUpdated": "2026-05-19",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "audio",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.5,
-      "output": 9,
-      "cacheRead": 0.15,
-      "cacheWrite": 0.08333,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "google-ai-studio/gemini-2.5-pro",
-    "provider": "llmgateway-providers",
-    "providerName": "LLM Gateway",
-    "displayName": "Gemini 2.5 Pro (Google AI Studio)",
-    "family": "gemini-pro",
-    "releaseDate": "2025-06-17",
-    "lastUpdated": "2025-06-17",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cacheRead": 0.125,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 2.5,
-          "output": 15,
-          "contextThreshold": 200000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 2.5,
-        "output": 15,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "google-ai-studio/gemini-2.5-flash",
-    "provider": "llmgateway-providers",
-    "providerName": "LLM Gateway",
-    "displayName": "Gemini 2.5 Flash (Google AI Studio)",
-    "family": "gemini-flash",
-    "releaseDate": "2025-06-17",
-    "lastUpdated": "2025-06-17",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65535,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 2.5,
-      "cacheRead": 0.03,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "google-ai-studio/gemini-3.7-flash",
-    "provider": "llmgateway-providers",
-    "providerName": "LLM Gateway",
-    "displayName": "Gemini 3.7 Flash (Google AI Studio)",
-    "family": "gemini-flash",
-    "releaseDate": "2026-08-13",
-    "lastUpdated": "2026-08-13",
-    "knowledgeCutoff": "2026-03",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "audio",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.75,
-      "output": 3.75,
-      "cacheRead": 0.075,
-      "cacheWrite": 0.08333,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "google-ai-studio/gemini-3-flash-preview",
     "provider": "llmgateway-providers",
     "providerName": "LLM Gateway",
@@ -4538,24 +4416,24 @@
     ]
   },
   {
-    "id": "google-ai-studio/gemini-2.5-flash-lite",
+    "id": "google-ai-studio/gemini-4-argon",
     "provider": "llmgateway-providers",
     "providerName": "LLM Gateway",
-    "displayName": "Gemini 2.5 Flash Lite (Google AI Studio)",
-    "family": "gemini-flash-lite",
-    "releaseDate": "2025-06-17",
-    "lastUpdated": "2025-06-17",
-    "knowledgeCutoff": "2025-01",
+    "displayName": "Gemini 4 Argon (Google AI Studio)",
+    "family": "gemini",
+    "releaseDate": "2026-10-13",
+    "lastUpdated": "2026-10-13",
+    "knowledgeCutoff": "2026-03",
     "contextWindow": 1048576,
-    "maxOutputTokens": 65535,
+    "maxOutputTokens": 1048576,
     "capabilities": {
       "tools": true,
       "vision": true,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": true,
+      "temperature": false,
       "attachment": true,
       "structured_output": true,
       "open_weights": false
@@ -4564,8 +4442,8 @@
       "input": [
         "text",
         "image",
-        "audio",
         "video",
+        "audio",
         "pdf"
       ],
       "output": [
@@ -4573,9 +4451,10 @@
       ]
     },
     "pricing": {
-      "input": 0.1,
-      "output": 0.4,
-      "cacheRead": 0.01,
+      "input": 4,
+      "output": 20,
+      "cacheRead": 0.2,
+      "cacheWrite": 0.375,
       "currency": "USD",
       "per": 1000000
     },
@@ -5523,6 +5402,54 @@
       "input": 0.435,
       "output": 0.87,
       "cacheRead": 0.003625,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "llmgateway-providers",
+    "providerName": "LLM Gateway",
+    "displayName": "DeepSeek V4.1 Flash 1017 (DeepSeek)",
+    "family": "deepseek",
+    "releaseDate": "2026-10-17",
+    "lastUpdated": "2026-10-17",
+    "knowledgeCutoff": null,
+    "contextWindow": 1050000,
+    "maxOutputTokens": 393216,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.6,
+      "cacheRead": 0.003,
       "currency": "USD",
       "per": 1000000
     },
@@ -10191,6 +10118,57 @@
     ]
   },
   {
+    "id": "meta/muse-wonder-1.0",
+    "provider": "llmgateway-providers",
+    "providerName": "LLM Gateway",
+    "displayName": "Muse Wonder 1.0 (Meta)",
+    "family": "muse",
+    "releaseDate": "2026-10-12",
+    "lastUpdated": "2026-10-12",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 4,
+      "output": 20,
+      "cacheRead": 0.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "azure/gpt-5.4",
     "provider": "llmgateway-providers",
     "providerName": "LLM Gateway",
@@ -10564,54 +10542,6 @@
       "input": 1.75,
       "output": 14,
       "cacheRead": 0.175,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "azure/gpt-4.1-nano",
-    "provider": "llmgateway-providers",
-    "providerName": "LLM Gateway",
-    "displayName": "GPT-4.1 Nano (Azure)",
-    "family": "gpt-nano",
-    "releaseDate": "2025-04-14",
-    "lastUpdated": "2025-04-14",
-    "knowledgeCutoff": "2024-04",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1,
-      "output": 0.4,
-      "cacheRead": 0.025,
       "currency": "USD",
       "per": 1000000
     },
@@ -13116,53 +13046,6 @@
     ]
   },
   {
-    "id": "gonka24/glm-5.3-flash",
-    "provider": "llmgateway-providers",
-    "providerName": "LLM Gateway",
-    "displayName": "GLM-5.3 Flash (Gonka24)",
-    "family": "glm-flash",
-    "releaseDate": "2026-08-26",
-    "lastUpdated": "2026-08-26",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.15,
-      "output": 0.3,
-      "cacheRead": 0.035,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "gonka24/minimax-m2.7",
     "provider": "llmgateway-providers",
     "providerName": "LLM Gateway",
@@ -13210,53 +13093,6 @@
     ]
   },
   {
-    "id": "gonka24/deepseek-v4-flash",
-    "provider": "llmgateway-providers",
-    "providerName": "LLM Gateway",
-    "displayName": "DeepSeek V4 Flash (Gonka24)",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 390000,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.065,
-      "output": 0.116,
-      "cacheRead": 0.012,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "reka-ai/reka-edge-2603",
     "provider": "llmgateway-providers",
     "providerName": "LLM Gateway",
@@ -13291,105 +13127,6 @@
     "pricing": {
       "input": 0.1,
       "output": 0.1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "reka-ai/qwen3.8-27b",
-    "provider": "llmgateway-providers",
-    "providerName": "LLM Gateway",
-    "displayName": "Qwen3.8 27B (reka-ai)",
-    "family": "qwen",
-    "releaseDate": "2026-08-14",
-    "lastUpdated": "2026-08-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2,
-      "output": 2.5,
-      "cacheRead": 0.05,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "reka-ai/glm-5.3-flash",
-    "provider": "llmgateway-providers",
-    "providerName": "LLM Gateway",
-    "displayName": "GLM-5.3 Flash (reka-ai)",
-    "family": "glm-flash",
-    "releaseDate": "2026-08-26",
-    "lastUpdated": "2026-08-26",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.15,
-      "output": 0.5,
-      "cacheRead": 0.015,
       "currency": "USD",
       "per": 1000000
     },
@@ -13484,53 +13221,6 @@
       "input": 1.17,
       "output": 3.96,
       "cacheRead": 0.234,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "reka-ai/deepseek-v4-flash",
-    "provider": "llmgateway-providers",
-    "providerName": "LLM Gateway",
-    "displayName": "DeepSeek V4 Flash (reka-ai)",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 262144,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.11,
-      "output": 0.66,
-      "cacheRead": 0.007,
       "currency": "USD",
       "per": 1000000
     },
@@ -15172,53 +14862,6 @@
     ]
   },
   {
-    "id": "fireworks/deepseek-v4-pro",
-    "provider": "llmgateway-providers",
-    "providerName": "LLM Gateway",
-    "displayName": "DeepSeek V4 Pro (Fireworks AI)",
-    "family": "deepseek-thinking",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 393216,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.32,
-      "output": 3.96,
-      "cacheRead": 0.044,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "fireworks/glm-5.3",
     "provider": "llmgateway-providers",
     "providerName": "LLM Gateway",
@@ -15444,98 +15087,6 @@
       "input": 5,
       "output": 30,
       "cacheRead": 0.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "scx-ai/gemma-4-31b-it",
-    "provider": "llmgateway-providers",
-    "providerName": "LLM Gateway",
-    "displayName": "Gemma 4 31B IT (SCX.ai (Turbo))",
-    "family": "gemma",
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-04-02",
-    "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 0.91,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "scx-ai/llama-4-maverick-17b-instruct",
-    "provider": "llmgateway-providers",
-    "providerName": "LLM Gateway",
-    "displayName": "Llama 4 Maverick 17B Instruct (SCX.ai (Turbo))",
-    "family": "llama",
-    "releaseDate": "2025-04-05",
-    "lastUpdated": "2025-04-05",
-    "knowledgeCutoff": "2024-08",
-    "contextWindow": 131072,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.53,
-      "output": 1.62,
       "currency": "USD",
       "per": 1000000
     },
@@ -16260,127 +15811,6 @@
     ]
   },
   {
-    "id": "xiaomi/mimo-v2.5",
-    "provider": "llmgateway-providers",
-    "providerName": "LLM Gateway",
-    "displayName": "MiMo V2.5 (Xiaomi)",
-    "family": "mimo",
-    "releaseDate": "2026-04-22",
-    "lastUpdated": "2026-04-22",
-    "knowledgeCutoff": "2024-12",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.14,
-      "output": 0.28,
-      "cacheRead": 0.0028,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.8,
-          "output": 4,
-          "contextThreshold": 256000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 0.8,
-        "output": 4,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "xiaomi/mimo-v2.5-pro",
-    "provider": "llmgateway-providers",
-    "providerName": "LLM Gateway",
-    "displayName": "MiMo V2.5 Pro (Xiaomi)",
-    "family": "mimo",
-    "releaseDate": "2026-04-22",
-    "lastUpdated": "2026-04-22",
-    "knowledgeCutoff": "2024-12",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.435,
-      "output": 0.87,
-      "cacheRead": 0.0036,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 2,
-          "output": 6,
-          "contextThreshold": 256000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 2,
-        "output": 6,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "xiaomi/mimo-v2.6-flash",
     "provider": "llmgateway-providers",
     "providerName": "LLM Gateway",
@@ -17059,6 +16489,54 @@
     ]
   },
   {
+    "id": "inference.net/deepseek-v4.1-flash-1017",
+    "provider": "llmgateway-providers",
+    "providerName": "LLM Gateway",
+    "displayName": "DeepSeek V4.1 Flash 1017 (Inference.net)",
+    "family": "deepseek",
+    "releaseDate": "2026-10-17",
+    "lastUpdated": "2026-10-17",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 1,
+      "cacheRead": 0.007,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "azure-anthropic/claude-opus-5-5",
     "provider": "llmgateway-providers",
     "providerName": "LLM Gateway",
@@ -17496,52 +16974,6 @@
       "output": 25,
       "cacheRead": 0.5,
       "cacheWrite": 6.25,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "atria/atria-dawn-preview",
-    "provider": "llmgateway-providers",
-    "providerName": "LLM Gateway",
-    "displayName": "Atria Dawn Preview (Atria)",
-    "family": null,
-    "releaseDate": "2026-09-12",
-    "lastUpdated": "2026-09-12",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
       "currency": "USD",
       "per": 1000000
     },
@@ -19226,120 +18658,6 @@
     ]
   },
   {
-    "id": "google-vertex/gemini-2.5-pro",
-    "provider": "llmgateway-providers",
-    "providerName": "LLM Gateway",
-    "displayName": "Gemini 2.5 Pro (Google Vertex AI)",
-    "family": "gemini-pro",
-    "releaseDate": "2025-06-17",
-    "lastUpdated": "2025-06-17",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cacheRead": 0.125,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 2.5,
-          "output": 15,
-          "contextThreshold": 200000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 2.5,
-        "output": 15,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "google-vertex/gemini-2.5-flash",
-    "provider": "llmgateway-providers",
-    "providerName": "LLM Gateway",
-    "displayName": "Gemini 2.5 Flash (Google Vertex AI)",
-    "family": "gemini-flash",
-    "releaseDate": "2025-06-17",
-    "lastUpdated": "2025-06-17",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65535,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 2.5,
-      "cacheRead": 0.03,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "google-vertex/gemini-3.7-flash",
     "provider": "llmgateway-providers",
     "providerName": "LLM Gateway",
@@ -19493,24 +18811,24 @@
     ]
   },
   {
-    "id": "google-vertex/gemini-2.5-flash-lite",
+    "id": "google-vertex/gemini-4-argon",
     "provider": "llmgateway-providers",
     "providerName": "LLM Gateway",
-    "displayName": "Gemini 2.5 Flash Lite (Google Vertex AI)",
-    "family": "gemini-flash-lite",
-    "releaseDate": "2025-06-17",
-    "lastUpdated": "2025-06-17",
-    "knowledgeCutoff": "2025-01",
+    "displayName": "Gemini 4 Argon (Google Vertex AI)",
+    "family": "gemini",
+    "releaseDate": "2026-09-30",
+    "lastUpdated": "2026-09-30",
+    "knowledgeCutoff": null,
     "contextWindow": 1048576,
-    "maxOutputTokens": 65535,
+    "maxOutputTokens": 1048576,
     "capabilities": {
       "tools": true,
       "vision": true,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": true,
+      "temperature": false,
       "attachment": true,
       "structured_output": true,
       "open_weights": false
@@ -19519,18 +18837,17 @@
       "input": [
         "text",
         "image",
-        "audio",
-        "video",
-        "pdf"
+        "audio"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.1,
-      "output": 0.4,
-      "cacheRead": 0.01,
+      "input": 4,
+      "output": 20,
+      "cacheRead": 0.2,
+      "cacheWrite": 0.375,
       "currency": "USD",
       "per": 1000000
     },

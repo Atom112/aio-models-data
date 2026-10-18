@@ -755,9 +755,9 @@
       ]
     },
     "pricing": {
-      "input": 0.75,
-      "output": 14.9,
-      "cacheRead": 0.29,
+      "input": 0.27,
+      "output": 14,
+      "cacheRead": 0.27,
       "currency": "USD",
       "per": 1000000
     },
@@ -1613,56 +1613,6 @@
     ]
   },
   {
-    "id": "anthropic/claude-sonnet-4",
-    "provider": "kilo",
-    "providerName": "Kilo Gateway",
-    "displayName": "Anthropic: Claude Sonnet 4",
-    "family": "claude-sonnet",
-    "releaseDate": "2025-05-22",
-    "lastUpdated": "2025-05-22",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "image",
-        "text",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 3,
-      "output": 15,
-      "cacheRead": 0.3,
-      "cacheWrite": 3.75,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "anthropic/claude-sonnet-5",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
@@ -2006,11 +1956,11 @@
     "id": "cohere/command-a",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
-    "displayName": "Cohere: Command A",
+    "displayName": "Command A",
     "family": "command-a",
     "releaseDate": "2025-03-13",
     "lastUpdated": "2025-03-13",
-    "knowledgeCutoff": null,
+    "knowledgeCutoff": "2024-08-31",
     "contextWindow": 256000,
     "maxOutputTokens": 8192,
     "capabilities": {
@@ -2023,7 +1973,7 @@
       "temperature": true,
       "attachment": false,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -2190,11 +2140,11 @@
     "id": "deepseek/deepseek-chat-v3.1",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
-    "displayName": "DeepSeek: DeepSeek V3.1",
+    "displayName": "DeepSeek V3.1",
     "family": "deepseek",
     "releaseDate": "2025-08-21",
     "lastUpdated": "2025-08-21",
-    "knowledgeCutoff": null,
+    "knowledgeCutoff": "2025-03-31",
     "contextWindow": 163840,
     "maxOutputTokens": 32768,
     "capabilities": {
@@ -2207,7 +2157,7 @@
       "temperature": true,
       "attachment": false,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -2477,8 +2427,8 @@
     "releaseDate": "2026-08-12",
     "lastUpdated": "2026-08-22",
     "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 393216,
+    "contextWindow": 1024000,
+    "maxOutputTokens": 384000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -2565,11 +2515,11 @@
     "id": "deepseek/deepseek-chat-v3-0324",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
-    "displayName": "DeepSeek: DeepSeek V3 0324",
+    "displayName": "DeepSeek V3 0324",
     "family": "deepseek",
     "releaseDate": "2025-03-24",
     "lastUpdated": "2025-03-24",
-    "knowledgeCutoff": null,
+    "knowledgeCutoff": "2024-07-31",
     "contextWindow": 128000,
     "maxOutputTokens": 115200,
     "capabilities": {
@@ -2582,7 +2532,7 @@
       "temperature": true,
       "attachment": false,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -2757,8 +2707,8 @@
     "releaseDate": "2025-12-01",
     "lastUpdated": "2025-12-01",
     "knowledgeCutoff": "2024-07",
-    "contextWindow": 163840,
-    "maxOutputTokens": 147456,
+    "contextWindow": 131072,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -2780,9 +2730,57 @@
       ]
     },
     "pricing": {
-      "input": 0.259,
-      "output": 0.8,
-      "cacheRead": 0.14,
+      "input": 0.28,
+      "output": 0.42,
+      "cacheRead": 0.028,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "kilo",
+    "providerName": "Kilo Gateway",
+    "displayName": "DeepSeek V4.1 Flash 1017",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-10-17",
+    "lastUpdated": "2026-10-17",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 393216,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.6,
+      "cacheRead": 0.003,
       "currency": "USD",
       "per": 1000000
     },
@@ -2804,8 +2802,8 @@
     "releaseDate": "2026-04-24",
     "lastUpdated": "2026-04-24",
     "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 943718,
+    "contextWindow": 1048575,
+    "maxOutputTokens": 943717,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -2827,9 +2825,9 @@
       ]
     },
     "pricing": {
-      "input": 0.03,
-      "output": 1.28,
-      "cacheRead": 0.03,
+      "input": 0.091,
+      "output": 0.182,
+      "cacheRead": 0.0182,
       "currency": "USD",
       "per": 1000000
     },
@@ -2843,61 +2841,13 @@
     ]
   },
   {
-    "id": "unbiased/pareto-26.10-preview",
+    "id": "unbiased/pareto-26.9",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
-    "displayName": "Pareto 26.10 Preview",
+    "displayName": "Pareto 26.9",
     "family": null,
-    "releaseDate": "2026-10-01",
-    "lastUpdated": "2026-10-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.8,
-      "output": 3.2,
-      "cacheRead": 0.03,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "unbiased/pareto",
-    "provider": "kilo",
-    "providerName": "Kilo Gateway",
-    "displayName": "Pareto",
-    "family": null,
-    "releaseDate": "2026-09-17",
-    "lastUpdated": "2026-09-17",
+    "releaseDate": "2026-10-13",
+    "lastUpdated": "2026-10-13",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
     "maxOutputTokens": 131072,
@@ -2926,6 +2876,54 @@
       "input": 2.5,
       "output": 7.5,
       "cacheRead": 0.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "unbiased/pareto-26.10",
+    "provider": "kilo",
+    "providerName": "Kilo Gateway",
+    "displayName": "Pareto 26.10",
+    "family": null,
+    "releaseDate": "2026-10-15",
+    "lastUpdated": "2026-10-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.8,
+      "output": 3.2,
+      "cacheRead": 0.03,
       "currency": "USD",
       "per": 1000000
     },
@@ -3035,7 +3033,7 @@
     "id": "tencent/hy-mt2-30b-a3b",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
-    "displayName": "Tencent: Hy-MT2-30B-A3B",
+    "displayName": "Hy-MT2-30B-A3B",
     "family": "Hy",
     "releaseDate": "2026-08-20",
     "lastUpdated": "2026-08-20",
@@ -3052,7 +3050,7 @@
       "temperature": true,
       "attachment": false,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -3081,7 +3079,7 @@
     "id": "tencent/hy-mt2-1.8b",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
-    "displayName": "Tencent: Hy-MT2-1.8B",
+    "displayName": "Hy-MT2-1.8B",
     "family": "Hy",
     "releaseDate": "2026-08-20",
     "lastUpdated": "2026-08-20",
@@ -3098,7 +3096,7 @@
       "temperature": true,
       "attachment": false,
       "structured_output": false,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -3174,7 +3172,7 @@
     "id": "tencent/hy-mt2-7b",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
-    "displayName": "Tencent: Hy-MT2-7B",
+    "displayName": "Hy-MT2-7B",
     "family": "Hy",
     "releaseDate": "2026-08-19",
     "lastUpdated": "2026-08-19",
@@ -3191,7 +3189,7 @@
       "temperature": true,
       "attachment": false,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -3342,8 +3340,8 @@
       ]
     },
     "pricing": {
-      "input": 0.1,
-      "output": 0.3,
+      "input": 0.08,
+      "output": 0.24,
       "currency": "USD",
       "per": 1000000
     },
@@ -3389,8 +3387,8 @@
       ]
     },
     "pricing": {
-      "input": 0.18,
-      "output": 0.18,
+      "input": 0.144,
+      "output": 0.144,
       "currency": "USD",
       "per": 1000000
     },
@@ -3770,9 +3768,57 @@
     },
     "pricing": {
       "input": 2,
-      "output": 12,
-      "cacheRead": 0.2,
-      "cacheWrite": 0.375,
+      "output": 10,
+      "cacheRead": 0.1,
+      "cacheWrite": 0.1875,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "~unbiased/pareto-latest",
+    "provider": "kilo",
+    "providerName": "Kilo Gateway",
+    "displayName": "Pareto Latest",
+    "family": null,
+    "releaseDate": "2026-10-13",
+    "lastUpdated": "2026-10-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.8,
+      "output": 3.2,
+      "cacheRead": 0.03,
       "currency": "USD",
       "per": 1000000
     },
@@ -4083,8 +4129,8 @@
     "releaseDate": "2026-08-26",
     "lastUpdated": "2026-08-26",
     "knowledgeCutoff": null,
-    "contextWindow": 1048575,
-    "maxOutputTokens": 943717,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 943718,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -4179,8 +4225,8 @@
     "releaseDate": "2026-02-12",
     "lastUpdated": "2026-02-12",
     "knowledgeCutoff": null,
-    "contextWindow": 198000,
-    "maxOutputTokens": 128000,
+    "contextWindow": 202752,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -4202,9 +4248,9 @@
       ]
     },
     "pricing": {
-      "input": 0.6,
-      "output": 1.92,
-      "cacheRead": 0.12,
+      "input": 1,
+      "output": 3.2,
+      "cacheRead": 0.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -4369,7 +4415,7 @@
     "releaseDate": "2025-12-22",
     "lastUpdated": "2025-12-22",
     "knowledgeCutoff": "2025-04",
-    "contextWindow": 202752,
+    "contextWindow": 204800,
     "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
@@ -4392,9 +4438,9 @@
       ]
     },
     "pricing": {
-      "input": 0.6,
-      "output": 2.2,
-      "cacheRead": 0.11,
+      "input": 0.54,
+      "output": 1.98,
+      "cacheRead": 0.099,
       "currency": "USD",
       "per": 1000000
     },
@@ -4630,6 +4676,99 @@
       "input": 1.4,
       "output": 4.4,
       "cacheRead": 0.26,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "reflection/beam-1.0-501b-a23b",
+    "provider": "kilo",
+    "providerName": "Kilo Gateway",
+    "displayName": "Reflection: Beam 1.0 501B A23B",
+    "family": "beam",
+    "releaseDate": "2026-10-16",
+    "lastUpdated": "2026-10-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 943718,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.25,
+      "output": 1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "reflection/beam-free",
+    "provider": "kilo",
+    "providerName": "Kilo Gateway",
+    "displayName": "Reflection: Beam 1.0 (free)",
+    "family": "beam",
+    "releaseDate": "2025-08-26",
+    "lastUpdated": "2025-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
       "currency": "USD",
       "per": 1000000
     },
@@ -5453,6 +5592,57 @@
     ]
   },
   {
+    "id": "meta/muse-wonder",
+    "provider": "kilo",
+    "providerName": "Kilo Gateway",
+    "displayName": "Meta: Muse Wonder",
+    "family": "muse",
+    "releaseDate": "2026-10-12",
+    "lastUpdated": "2026-10-12",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 943718,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 4,
+      "output": 20,
+      "cacheRead": 0.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "meta/muse-spark-1.1",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
@@ -5653,6 +5843,57 @@
     ]
   },
   {
+    "id": "meta/muse-spark-open",
+    "provider": "kilo",
+    "providerName": "Kilo Gateway",
+    "displayName": "Muse Spark Open",
+    "family": "muse",
+    "releaseDate": "2026-10-15",
+    "lastUpdated": "2026-10-15",
+    "knowledgeCutoff": "2026-01-04",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 943718,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 4.25,
+      "cacheRead": 0.15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "nousresearch/hermes-3-llama-3.1-70b",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
@@ -5760,11 +6001,11 @@
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -5791,6 +6032,102 @@
     ]
   },
   {
+    "id": "scaledown/summarize",
+    "provider": "kilo",
+    "providerName": "Kilo Gateway",
+    "displayName": "ScaleDown: Summarize",
+    "family": null,
+    "releaseDate": "2026-10-13",
+    "lastUpdated": "2026-10-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 4000,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.05,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "scaledown/extract",
+    "provider": "kilo",
+    "providerName": "Kilo Gateway",
+    "displayName": "ScaleDown: Extract",
+    "family": null,
+    "releaseDate": "2026-10-13",
+    "lastUpdated": "2026-10-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 900000,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.05,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "~z-ai/glm-flash-latest",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
@@ -5800,7 +6137,7 @@
     "lastUpdated": "2026-08-27",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 943718,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -5824,9 +6161,9 @@
       ]
     },
     "pricing": {
-      "input": 0.04,
-      "output": 0.5,
-      "cacheRead": 0.0125,
+      "input": 0.048,
+      "output": 0.2,
+      "cacheRead": 0.006,
       "currency": "USD",
       "per": 1000000
     },
@@ -5849,7 +6186,7 @@
     "lastUpdated": "2026-08-19",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
-    "maxOutputTokens": 943718,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -5871,9 +6208,9 @@
       ]
     },
     "pricing": {
-      "input": 0.07,
-      "output": 4.8,
-      "cacheRead": 0.05,
+      "input": 0.0632,
+      "output": 4.4,
+      "cacheRead": 0.0588,
       "currency": "USD",
       "per": 1000000
     },
@@ -6712,6 +7049,55 @@
     ]
   },
   {
+    "id": "elorian/glimpse",
+    "provider": "kilo",
+    "providerName": "Kilo Gateway",
+    "displayName": "Elorian: Glimpse",
+    "family": null,
+    "releaseDate": "2026-10-17",
+    "lastUpdated": "2026-10-17",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.6,
+      "output": 3,
+      "cacheRead": 0.06,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "~anthropic/claude-opus-latest",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
@@ -7085,9 +7471,9 @@
       ]
     },
     "pricing": {
-      "input": 0.03,
-      "output": 0.99,
-      "cacheRead": 0.029,
+      "input": 0.05,
+      "output": 0.6,
+      "cacheRead": 0.008,
       "currency": "USD",
       "per": 1000000
     },
@@ -7132,9 +7518,9 @@
       ]
     },
     "pricing": {
-      "input": 0.21912,
-      "output": 0.65736,
-      "cacheRead": 0.006972,
+      "input": 0.12,
+      "output": 8,
+      "cacheRead": 0.12,
       "currency": "USD",
       "per": 1000000
     },
@@ -7179,9 +7565,9 @@
       ]
     },
     "pricing": {
-      "input": 0.0161,
-      "output": 0.64,
-      "cacheRead": 0.0161,
+      "input": 0.00392,
+      "output": 0.143616,
+      "cacheRead": 0.001523,
       "currency": "USD",
       "per": 1000000
     },
@@ -7338,6 +7724,53 @@
     ]
   },
   {
+    "id": "liquid/lfm-2.5-24b-a2b",
+    "provider": "kilo",
+    "providerName": "Kilo Gateway",
+    "displayName": "LiquidAI: LFM2.5-24B-A2B",
+    "family": "liquid",
+    "releaseDate": "2026-10-13",
+    "lastUpdated": "2026-10-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.05,
+      "output": 0.7,
+      "cacheRead": 0.025,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "google/gemma-4-31b-it",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
@@ -7371,9 +7804,9 @@
       ]
     },
     "pricing": {
-      "input": 0.09,
+      "input": 0.1,
       "output": 0.34,
-      "cacheRead": 0.05,
+      "cacheRead": 0.1,
       "currency": "USD",
       "per": 1000000
     },
@@ -7585,11 +8018,11 @@
     "id": "google/gemma-2-27b-it",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
-    "displayName": "Google: Gemma 2 27B",
+    "displayName": "Gemma 2 27B",
     "family": "gemma",
     "releaseDate": "2024-07-13",
     "lastUpdated": "2024-07-13",
-    "knowledgeCutoff": null,
+    "knowledgeCutoff": "2024-06-30",
     "contextWindow": 8192,
     "maxOutputTokens": 2048,
     "capabilities": {
@@ -7602,7 +8035,7 @@
       "temperature": true,
       "attachment": false,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -8013,8 +8446,8 @@
       ]
     },
     "pricing": {
-      "input": 0.05,
-      "output": 0.15,
+      "input": 0.04,
+      "output": 0.12,
       "currency": "USD",
       "per": 1000000
     },
@@ -8524,8 +8957,9 @@
       ]
     },
     "pricing": {
-      "input": 0.05,
-      "output": 0.1,
+      "input": 0.04,
+      "output": 0.05,
+      "cacheRead": 0.02,
       "currency": "USD",
       "per": 1000000
     },
@@ -8594,11 +9028,11 @@
     "id": "google/gemini-2.5-pro-preview",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
-    "displayName": "Google: Gemini 2.5 Pro Preview 06-05",
+    "displayName": "Gemini 2.5 Pro Preview 06-05",
     "family": "gemini",
     "releaseDate": "2025-06-05",
     "lastUpdated": "2025-06-05",
-    "knowledgeCutoff": null,
+    "knowledgeCutoff": "2025-01-31",
     "contextWindow": 1048576,
     "maxOutputTokens": 65536,
     "capabilities": {
@@ -8743,6 +9177,58 @@
     ]
   },
   {
+    "id": "google/gemini-4-argon",
+    "provider": "kilo",
+    "providerName": "Kilo Gateway",
+    "displayName": "Gemini 4 Argon",
+    "family": "gemini",
+    "releaseDate": "2026-10-13",
+    "lastUpdated": "2026-10-13",
+    "knowledgeCutoff": "2026-03",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.1,
+      "cacheWrite": 0.1875,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "google/gemini-3.1-flash-lite",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
@@ -8828,6 +9314,100 @@
     "pricing": {
       "input": 0.6,
       "output": 6,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "moondream/moondream3-preview",
+    "provider": "kilo",
+    "providerName": "Kilo Gateway",
+    "displayName": "Moondream: Moondream 3 Preview",
+    "family": null,
+    "releaseDate": "2026-10-15",
+    "lastUpdated": "2026-10-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 32000,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 2.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "moondream/moondream3.1-9b-a2b",
+    "provider": "kilo",
+    "providerName": "Kilo Gateway",
+    "displayName": "Moondream: Moondream 3.1",
+    "family": null,
+    "releaseDate": "2026-10-15",
+    "lastUpdated": "2026-10-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 32000,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 2.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -9032,7 +9612,7 @@
     "id": "mistralai/ministral-8b-2512",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
-    "displayName": "Mistral: Ministral 3 8B 2512",
+    "displayName": "Ministral 3 8B 2512",
     "family": "ministral",
     "releaseDate": "2025-12-02",
     "lastUpdated": "2025-12-02",
@@ -9049,7 +9629,7 @@
       "temperature": true,
       "attachment": true,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -9080,11 +9660,11 @@
     "id": "mistralai/mistral-small-24b-instruct-2501",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
-    "displayName": "Mistral: Mistral Small 3",
+    "displayName": "Mistral Small 3",
     "family": "mistral-small",
     "releaseDate": "2025-01-30",
     "lastUpdated": "2025-01-30",
-    "knowledgeCutoff": null,
+    "knowledgeCutoff": "2023-10-31",
     "contextWindow": 32768,
     "maxOutputTokens": 16384,
     "capabilities": {
@@ -9097,7 +9677,7 @@
       "temperature": true,
       "attachment": false,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -9174,11 +9754,11 @@
     "id": "mistralai/mistral-saba",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
-    "displayName": "Mistral: Saba",
+    "displayName": "Saba",
     "family": "mistral",
     "releaseDate": "2025-02-17",
     "lastUpdated": "2025-02-17",
-    "knowledgeCutoff": null,
+    "knowledgeCutoff": "2024-09-30",
     "contextWindow": 32768,
     "maxOutputTokens": 26214,
     "capabilities": {
@@ -9222,7 +9802,7 @@
     "id": "mistralai/mistral-medium-3-5",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
-    "displayName": "Mistral: Mistral Medium 3.5",
+    "displayName": "Mistral Medium 3.5",
     "family": "mistral-medium",
     "releaseDate": "2026-04-30",
     "lastUpdated": "2026-04-30",
@@ -9270,11 +9850,11 @@
     "id": "mistralai/mistral-medium-3.1",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
-    "displayName": "Mistral: Mistral Medium 3.1",
+    "displayName": "Mistral Medium 3.1",
     "family": "mistral-medium",
     "releaseDate": "2025-08-13",
     "lastUpdated": "2025-08-13",
-    "knowledgeCutoff": null,
+    "knowledgeCutoff": "2025-06-30",
     "contextWindow": 131072,
     "maxOutputTokens": 104857,
     "capabilities": {
@@ -9319,11 +9899,11 @@
     "id": "mistralai/mistral-small-3.2-24b-instruct",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
-    "displayName": "Mistral: Mistral Small 3.2 24B",
+    "displayName": "Mistral Small 3.2 24B",
     "family": "mistral-small",
     "releaseDate": "2025-06-20",
     "lastUpdated": "2025-06-20",
-    "knowledgeCutoff": null,
+    "knowledgeCutoff": "2023-10-31",
     "contextWindow": 256000,
     "maxOutputTokens": 16384,
     "capabilities": {
@@ -9336,7 +9916,7 @@
       "temperature": true,
       "attachment": true,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -9371,7 +9951,7 @@
     "family": "mistral-large",
     "releaseDate": "2024-02-26",
     "lastUpdated": "2024-02-26",
-    "knowledgeCutoff": null,
+    "knowledgeCutoff": "2024-11-30",
     "contextWindow": 128000,
     "maxOutputTokens": 102400,
     "capabilities": {
@@ -9463,11 +10043,11 @@
     "id": "mistralai/mistral-medium-3",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
-    "displayName": "Mistral: Mistral Medium 3",
+    "displayName": "Mistral Medium 3",
     "family": "mistral-medium",
     "releaseDate": "2025-05-07",
     "lastUpdated": "2025-05-07",
-    "knowledgeCutoff": null,
+    "knowledgeCutoff": "2025-03-31",
     "contextWindow": 131072,
     "maxOutputTokens": 104857,
     "capabilities": {
@@ -9614,7 +10194,7 @@
     "family": "mistral-large",
     "releaseDate": "2024-11-19",
     "lastUpdated": "2024-11-19",
-    "knowledgeCutoff": null,
+    "knowledgeCutoff": "2024-03-31",
     "contextWindow": 131072,
     "maxOutputTokens": 104857,
     "capabilities": {
@@ -9658,7 +10238,7 @@
     "id": "mistralai/ministral-14b-2512",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
-    "displayName": "Mistral: Ministral 3 14B 2512",
+    "displayName": "Ministral 3 14B 2512",
     "family": "ministral",
     "releaseDate": "2025-12-02",
     "lastUpdated": "2025-12-02",
@@ -9675,7 +10255,7 @@
       "temperature": true,
       "attachment": true,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -9754,11 +10334,11 @@
     "id": "mistralai/mistral-small-3.1-24b-instruct",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
-    "displayName": "Mistral: Mistral Small 3.1 24B",
+    "displayName": "Mistral Small 3.1 24B",
     "family": "mistral-small",
     "releaseDate": "2025-03-17",
     "lastUpdated": "2025-03-17",
-    "knowledgeCutoff": null,
+    "knowledgeCutoff": "2023-10-31",
     "contextWindow": 128000,
     "maxOutputTokens": 102400,
     "capabilities": {
@@ -9771,7 +10351,7 @@
       "temperature": true,
       "attachment": true,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -9801,7 +10381,7 @@
     "id": "mistralai/ministral-3b-2512",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
-    "displayName": "Mistral: Ministral 3 3B 2512",
+    "displayName": "Ministral 3 3B 2512",
     "family": "ministral",
     "releaseDate": "2025-12-02",
     "lastUpdated": "2025-12-02",
@@ -9818,7 +10398,7 @@
       "temperature": true,
       "attachment": true,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -9849,11 +10429,11 @@
     "id": "mistralai/mixtral-8x22b-instruct",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
-    "displayName": "Mistral: Mixtral 8x22B Instruct",
+    "displayName": "Mixtral 8x22B Instruct",
     "family": "mistral",
     "releaseDate": "2024-04-17",
     "lastUpdated": "2024-04-17",
-    "knowledgeCutoff": null,
+    "knowledgeCutoff": "2024-01-31",
     "contextWindow": 65536,
     "maxOutputTokens": 52428,
     "capabilities": {
@@ -9866,7 +10446,7 @@
       "temperature": true,
       "attachment": true,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -9945,7 +10525,7 @@
     "id": "sakana/fugu-max",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
-    "displayName": "Sakana: Fugu Max",
+    "displayName": "Fugu Max",
     "family": "fugu",
     "releaseDate": "2026-09-11",
     "lastUpdated": "2026-09-11",
@@ -9994,11 +10574,11 @@
     "id": "sakana/fugu-ultra-v2",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
-    "displayName": "Sakana: Fugu Ultra v2",
+    "displayName": "Fugu Ultra v2",
     "family": "fugu",
     "releaseDate": "2026-09-11",
     "lastUpdated": "2026-09-11",
-    "knowledgeCutoff": null,
+    "knowledgeCutoff": "2026-08-28",
     "contextWindow": 1000000,
     "maxOutputTokens": 128000,
     "capabilities": {
@@ -10193,17 +10773,17 @@
     "lastUpdated": "2026-10-02",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 32768,
+    "maxOutputTokens": 235929,
     "capabilities": {
       "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -10215,55 +10795,9 @@
       ]
     },
     "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "inclusionai/ling-3.0-flash-sante",
-    "provider": "kilo",
-    "providerName": "Kilo Gateway",
-    "displayName": "inclusionAI: Ling 3.0 Flash Sante",
-    "family": "ling",
-    "releaseDate": "2026-09-04",
-    "lastUpdated": "2026-09-04",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.075,
-      "output": 0.22,
-      "cacheRead": 0.015,
+      "input": 0.3,
+      "output": 0.9,
+      "cacheRead": 0.06,
       "currency": "USD",
       "per": 1000000
     },
@@ -10285,7 +10819,7 @@
     "releaseDate": "2026-09-10",
     "lastUpdated": "2026-09-10",
     "knowledgeCutoff": null,
-    "contextWindow": 262144,
+    "contextWindow": 131072,
     "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
@@ -10310,56 +10844,9 @@
       ]
     },
     "pricing": {
-      "input": 0.075,
-      "output": 0.22,
-      "cacheRead": 0.015,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "inclusionai/ling-3.0-flash-fin",
-    "provider": "kilo",
-    "providerName": "Kilo Gateway",
-    "displayName": "inclusionAI: Ling 3.0 Flash Fin",
-    "family": "ling",
-    "releaseDate": "2026-08-27",
-    "lastUpdated": "2026-08-27",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.075,
-      "output": 0.22,
-      "cacheRead": 0.015,
+      "input": 0.06,
+      "output": 0.18,
+      "cacheRead": 0.012,
       "currency": "USD",
       "per": 1000000
     },
@@ -10614,11 +11101,11 @@
     "id": "moonshotai/kimi-k2",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
-    "displayName": "MoonshotAI: Kimi K2 0711",
+    "displayName": "Kimi K2 0711",
     "family": "kimi-k2",
     "releaseDate": "2025-07-11",
     "lastUpdated": "2025-07-11",
-    "knowledgeCutoff": null,
+    "knowledgeCutoff": "2024-12-31",
     "contextWindow": 131072,
     "maxOutputTokens": 98304,
     "capabilities": {
@@ -10631,7 +11118,7 @@
       "temperature": true,
       "attachment": false,
       "structured_output": false,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -11043,6 +11530,54 @@
     ]
   },
   {
+    "id": "nvidia/nemotron-3.5-super-vl:free",
+    "provider": "kilo",
+    "providerName": "Kilo Gateway",
+    "displayName": "NVIDIA: Nemotron 3.5 Super VL (free)",
+    "family": "nemotron",
+    "releaseDate": "2026-10-15",
+    "lastUpdated": "2026-10-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "nvidia/nemotron-3-nano-30b-a3b",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
@@ -11278,6 +11813,55 @@
     ]
   },
   {
+    "id": "nvidia/nemotron-3.5-super-vl",
+    "provider": "kilo",
+    "providerName": "Kilo Gateway",
+    "displayName": "NVIDIA: Nemotron 3.5 Super VL",
+    "family": "nemotron",
+    "releaseDate": "2026-10-15",
+    "lastUpdated": "2026-10-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 235929,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.4,
+      "cacheRead": 0.08,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
@@ -11355,9 +11939,9 @@
       ]
     },
     "pricing": {
-      "input": 0.5,
-      "output": 2.2,
-      "cacheRead": 0.1,
+      "input": 0.4,
+      "output": 1.76,
+      "cacheRead": 0.08,
       "currency": "USD",
       "per": 1000000
     },
@@ -11881,8 +12465,8 @@
     "releaseDate": "2026-02-12",
     "lastUpdated": "2026-02-12",
     "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 128000,
+    "contextWindow": 198000,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -12022,8 +12606,8 @@
     "releaseDate": "2026-03-18",
     "lastUpdated": "2026-03-18",
     "knowledgeCutoff": null,
-    "contextWindow": 196608,
-    "maxOutputTokens": 176947,
+    "contextWindow": 204800,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -12211,8 +12795,8 @@
     "releaseDate": "2025-10-27",
     "lastUpdated": "2025-10-27",
     "knowledgeCutoff": null,
-    "contextWindow": 196608,
-    "maxOutputTokens": 176947,
+    "contextWindow": 204800,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -12330,7 +12914,7 @@
     "pricing": {
       "input": 1,
       "output": 2.7,
-      "cacheRead": 0.05,
+      "cacheRead": 0.1,
       "currency": "USD",
       "per": 1000000
     },
@@ -12426,54 +13010,6 @@
       "input": 0.2,
       "output": 1.15,
       "cacheRead": 0.04,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "stepfun/step-5-preview-free",
-    "provider": "kilo",
-    "providerName": "Kilo Gateway",
-    "displayName": "StepFun: Step 5 Preview (free)",
-    "family": "step",
-    "releaseDate": "2025-08-26",
-    "lastUpdated": "2025-08-26",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
       "currency": "USD",
       "per": 1000000
     },
@@ -13438,7 +13974,7 @@
     "releaseDate": "2026-08-12",
     "lastUpdated": "2026-08-12",
     "knowledgeCutoff": null,
-    "contextWindow": 1048576,
+    "contextWindow": 1000000,
     "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
@@ -14056,7 +14592,7 @@
     "lastUpdated": "2026-04-17",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 65536,
+    "maxOutputTokens": 235929,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -14080,9 +14616,9 @@
       ]
     },
     "pricing": {
-      "input": 0.1,
-      "output": 0.95,
-      "cacheRead": 0.1,
+      "input": 0.15,
+      "output": 1,
+      "cacheRead": 0.05,
       "currency": "USD",
       "per": 1000000
     },
@@ -14105,7 +14641,7 @@
     "lastUpdated": "2025-09",
     "knowledgeCutoff": "2025-04",
     "contextWindow": 262144,
-    "maxOutputTokens": 235929,
+    "maxOutputTokens": 16384,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -14127,9 +14663,8 @@
       ]
     },
     "pricing": {
-      "input": 0.1,
+      "input": 0.09,
       "output": 1.1,
-      "cacheRead": 0.07,
       "currency": "USD",
       "per": 1000000
     },
@@ -14586,7 +15121,7 @@
     "lastUpdated": "2026-02-23",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 32768,
+    "maxOutputTokens": 235929,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -14798,7 +15333,7 @@
       ]
     },
     "pricing": {
-      "input": 0.1,
+      "input": 0.09,
       "output": 0.3,
       "currency": "USD",
       "per": 1000000
@@ -15010,7 +15545,7 @@
     "lastUpdated": "2026-04-22",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 81920,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -15243,6 +15778,52 @@
     ]
   },
   {
+    "id": "xingchen-agi/xing4.0-29b-a4b:free",
+    "provider": "kilo",
+    "providerName": "Kilo Gateway",
+    "displayName": "XingChen: Xing4.0 29B A4B (free)",
+    "family": "agi",
+    "releaseDate": "2026-10-16",
+    "lastUpdated": "2026-10-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 235929,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "morph/morph-v3-large",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
@@ -15387,7 +15968,7 @@
     "id": "openai/gpt-5.4-image-2",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
-    "displayName": "OpenAI: GPT-5.4 Image 2",
+    "displayName": "GPT-5.4 Image 2",
     "family": "gpt",
     "releaseDate": "2026-04-21",
     "lastUpdated": "2026-04-21",
@@ -16900,7 +17481,7 @@
     "id": "openai/gpt-5-image-mini",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
-    "displayName": "OpenAI: GPT-5 Image Mini",
+    "displayName": "GPT-5 Image Mini",
     "family": "gpt",
     "releaseDate": "2025-10-16",
     "lastUpdated": "2025-10-16",
@@ -17335,11 +17916,11 @@
     "id": "openai/gpt-5-image",
     "provider": "kilo",
     "providerName": "Kilo Gateway",
-    "displayName": "OpenAI: GPT-5 Image ($$$$)",
+    "displayName": "GPT-5 Image",
     "family": "gpt",
     "releaseDate": "2025-10-14",
     "lastUpdated": "2025-10-14",
-    "knowledgeCutoff": null,
+    "knowledgeCutoff": "2024-10-01",
     "contextWindow": 400000,
     "maxOutputTokens": 128000,
     "capabilities": {
@@ -18178,7 +18759,7 @@
     "lastUpdated": "2025-08-05",
     "knowledgeCutoff": null,
     "contextWindow": 131072,
-    "maxOutputTokens": 117964,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -18202,7 +18783,7 @@
     "pricing": {
       "input": 0.03,
       "output": 0.15,
-      "cacheRead": 0.03,
+      "cacheRead": 0.015,
       "currency": "USD",
       "per": 1000000
     },
@@ -18542,8 +19123,8 @@
       ]
     },
     "pricing": {
-      "input": 0.07,
-      "output": 0.14,
+      "input": 0.056,
+      "output": 0.112,
       "currency": "USD",
       "per": 1000000
     },

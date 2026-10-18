@@ -813,6 +813,55 @@
     ]
   },
   {
+    "id": "grok-imagine-image",
+    "provider": "kenari",
+    "providerName": "Kenari",
+    "displayName": "Grok Imagine Image",
+    "family": "grok",
+    "releaseDate": "2026-01-28",
+    "lastUpdated": "2026-01-28",
+    "knowledgeCutoff": null,
+    "contextWindow": 16000,
+    "maxOutputTokens": 0,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "image",
+        "pdf"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "mimo-v2-5-pro",
     "provider": "kenari",
     "providerName": "Kenari",
@@ -1145,6 +1194,54 @@
     ]
   },
   {
+    "id": "nano-banana-pro",
+    "provider": "kenari",
+    "providerName": "Kenari",
+    "displayName": "Nano Banana Pro",
+    "family": "gemini-pro",
+    "releaseDate": "2026-05-28",
+    "lastUpdated": "2026-05-28",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 65536,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text",
+        "image"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "gemini-3-1-pro",
     "provider": "kenari",
     "providerName": "Kenari",
@@ -1223,6 +1320,56 @@
       ],
       "output": [
         "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "nano-banana-2",
+    "provider": "kenari",
+    "providerName": "Kenari",
+    "displayName": "Nano Banana 2",
+    "family": "gemini-flash",
+    "releaseDate": "2026-05-28",
+    "lastUpdated": "2026-05-28",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 131072,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text",
+        "image"
       ]
     },
     "pricing": {
@@ -1933,6 +2080,54 @@
       ],
       "output": [
         "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "nano-banana-2-lite",
+    "provider": "kenari",
+    "providerName": "Kenari",
+    "displayName": "Nano Banana 2 Lite",
+    "family": "gemini-flash-lite",
+    "releaseDate": "2026-06-30",
+    "lastUpdated": "2026-06-30",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 65536,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text",
+        "image"
       ]
     },
     "pricing": {

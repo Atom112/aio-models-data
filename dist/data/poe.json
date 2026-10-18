@@ -2043,6 +2043,56 @@
     ]
   },
   {
+    "id": "google/gemini-3.6-flash",
+    "provider": "poe",
+    "providerName": "Poe",
+    "displayName": "Gemini-3.6-Flash",
+    "family": "gemini-flash",
+    "releaseDate": "2026-07-21",
+    "lastUpdated": "2026-07-21",
+    "knowledgeCutoff": "2026-03",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.7576,
+      "output": 3.7879,
+      "cacheRead": 0.0758,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "google/veo-3-fast",
     "provider": "poe",
     "providerName": "Poe",
@@ -2222,6 +2272,56 @@
     ]
   },
   {
+    "id": "google/gemini-3.5-flash-lite",
+    "provider": "poe",
+    "providerName": "Poe",
+    "displayName": "Gemini-3.5-Flash-Lite",
+    "family": "gemini-flash-lite",
+    "releaseDate": "2026-07-21",
+    "lastUpdated": "2026-07-21",
+    "knowledgeCutoff": "2026-03",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.303,
+      "output": 2.5253,
+      "cacheRead": 0.0303,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "google/gemini-2.0-flash-lite",
     "provider": "poe",
     "providerName": "Poe",
@@ -2271,18 +2371,18 @@
     ]
   },
   {
-    "id": "google/gemini-3-flash",
+    "id": "google/gemini-omni-1.1-flash",
     "provider": "poe",
     "providerName": "Poe",
-    "displayName": "Gemini-3-Flash",
-    "family": null,
-    "releaseDate": "2025-10-07",
-    "lastUpdated": "2025-10-07",
+    "displayName": "Gemini-Omni-1.1-Flash",
+    "family": "gemini",
+    "releaseDate": "2026-08-27",
+    "lastUpdated": "2026-08-27",
     "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
+    "contextWindow": 131072,
+    "maxOutputTokens": 57920,
     "capabilities": {
-      "tools": true,
+      "tools": false,
       "vision": true,
       "reasoning": true,
       "streaming": true,
@@ -2297,6 +2397,54 @@
       "input": [
         "text",
         "image",
+        "video"
+      ],
+      "output": [
+        "video"
+      ]
+    },
+    "pricing": {
+      "input": 1.5152,
+      "output": 9.0909,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "google/gemini-3-flash",
+    "provider": "poe",
+    "providerName": "Poe",
+    "displayName": "Gemini-3-Flash",
+    "family": "gemini-flash",
+    "releaseDate": "2025-12-17",
+    "lastUpdated": "2025-12-17",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
         "video",
         "audio"
       ],
@@ -2305,9 +2453,9 @@
       ]
     },
     "pricing": {
-      "input": 0.4,
-      "output": 2.4,
-      "cacheRead": 0.04,
+      "input": 0.404,
+      "output": 2.4242,
+      "cacheRead": 0.0404,
       "currency": "USD",
       "per": 1000000
     },
@@ -2338,7 +2486,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
       "open_weights": false
@@ -2347,7 +2495,7 @@
       "input": [
         "text",
         "image",
-        "audio"
+        "video"
       ],
       "output": [
         "text"
@@ -2561,6 +2709,56 @@
     ]
   },
   {
+    "id": "google/gemini-3.7-flash",
+    "provider": "poe",
+    "providerName": "Poe",
+    "displayName": "Gemini-3.7-Flash",
+    "family": "gemini-flash",
+    "releaseDate": "2026-08-13",
+    "lastUpdated": "2026-08-13",
+    "knowledgeCutoff": "2026-03",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.7576,
+      "output": 3.7879,
+      "cacheRead": 0.0758,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "google/veo-2",
     "provider": "poe",
     "providerName": "Poe",
@@ -2691,6 +2889,56 @@
     ]
   },
   {
+    "id": "google/gemini-3.8-flash",
+    "provider": "poe",
+    "providerName": "Poe",
+    "displayName": "Gemini-3.8-Flash",
+    "family": "gemini-flash",
+    "releaseDate": "2026-09-02",
+    "lastUpdated": "2026-09-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.7576,
+      "output": 3.7879,
+      "cacheRead": 0.0758,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "google/veo-3",
     "provider": "poe",
     "providerName": "Poe",
@@ -2785,10 +3033,10 @@
     "provider": "poe",
     "providerName": "Poe",
     "displayName": "Gemini-3.1-Pro",
-    "family": null,
+    "family": "gemini-pro",
     "releaseDate": "2026-02-19",
     "lastUpdated": "2026-02-19",
-    "knowledgeCutoff": null,
+    "knowledgeCutoff": "2025-01",
     "contextWindow": 1048576,
     "maxOutputTokens": 65536,
     "capabilities": {
@@ -2796,11 +3044,11 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -2815,9 +3063,9 @@
       ]
     },
     "pricing": {
-      "input": 2,
-      "output": 12,
-      "cacheRead": 0.2,
+      "input": 2.0202,
+      "output": 12.1212,
+      "cacheRead": 0.202,
       "currency": "USD",
       "per": 1000000
     },
@@ -2835,10 +3083,10 @@
     "provider": "poe",
     "providerName": "Poe",
     "displayName": "Gemini-3.1-Flash-Lite",
-    "family": null,
-    "releaseDate": "2026-02-18",
-    "lastUpdated": "2026-02-18",
-    "knowledgeCutoff": null,
+    "family": "gemini-flash-lite",
+    "releaseDate": "2026-05-07",
+    "lastUpdated": "2026-05-07",
+    "knowledgeCutoff": "2025-01",
     "contextWindow": 1048576,
     "maxOutputTokens": 65536,
     "capabilities": {
@@ -2846,11 +3094,11 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -2865,8 +3113,8 @@
       ]
     },
     "pricing": {
-      "input": 0.25,
-      "output": 1.5,
+      "input": 0.2525,
+      "output": 1.5152,
       "currency": "USD",
       "per": 1000000
     },
