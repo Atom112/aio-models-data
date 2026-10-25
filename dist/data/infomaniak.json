@@ -1,12 +1,58 @@
 [
   {
+    "id": "bge_multilingual_gemma2",
+    "provider": "infomaniak",
+    "providerName": "Infomaniak",
+    "displayName": "BGE Multilingual Gemma2",
+    "family": "text-embedding",
+    "releaseDate": "2024-07-25",
+    "lastUpdated": "2026-08-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 8000,
+    "maxOutputTokens": 3584,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.08,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "mini_lm_l12_v2",
     "provider": "infomaniak",
     "providerName": "Infomaniak",
     "displayName": "All-MiniLM-L12-v2",
     "family": "text-embedding",
     "releaseDate": "2021-08-30",
-    "lastUpdated": "2026-08-01",
+    "lastUpdated": "2021-08-30",
     "knowledgeCutoff": null,
     "contextWindow": 128,
     "maxOutputTokens": 384,
@@ -46,26 +92,73 @@
     ]
   },
   {
-    "id": "bge_multilingual_gemma2",
+    "id": "moonshotai/Kimi-K2.6",
     "provider": "infomaniak",
     "providerName": "Infomaniak",
-    "displayName": "BGE Multilingual Gemma2",
-    "family": "text-embedding",
-    "releaseDate": "2024-07-25",
-    "lastUpdated": "2026-08-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 8000,
-    "maxOutputTokens": 3584,
+    "displayName": "Kimi K2.6",
+    "family": "kimi-k2",
+    "releaseDate": "2026-04-20",
+    "lastUpdated": "2026-04-20",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
     "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.74,
+      "output": 3.72,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "beta",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "google/gemma-4-31B-it",
+    "provider": "infomaniak",
+    "providerName": "Infomaniak",
+    "displayName": "Gemma 4 31B IT",
+    "family": "gemma",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 100000,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -77,8 +170,8 @@
       ]
     },
     "pricing": {
-      "input": 0.08,
-      "output": 0,
+      "input": 0.25,
+      "output": 0.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -140,153 +233,13 @@
     ]
   },
   {
-    "id": "google/gemma-4-31B-it",
-    "provider": "infomaniak",
-    "providerName": "Infomaniak",
-    "displayName": "Gemma 4 31B IT",
-    "family": "gemma",
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-08-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 100000,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.25,
-      "output": 0.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3.5-122B-A10B-FP8",
-    "provider": "infomaniak",
-    "providerName": "Infomaniak",
-    "displayName": "Qwen3.5 122B-A10B FP8",
-    "family": "qwen",
-    "releaseDate": "2026-02-23",
-    "lastUpdated": "2026-08-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.5,
-      "output": 3.97,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3.5-397B-A17B-FP8",
-    "provider": "infomaniak",
-    "providerName": "Infomaniak",
-    "displayName": "Qwen3.5 397B-A17B FP8",
-    "family": "qwen",
-    "releaseDate": "2026-02-15",
-    "lastUpdated": "2026-08-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.99,
-      "output": 4.46,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "beta",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "mistralai/Mistral-Small-4-119B-2603",
     "provider": "infomaniak",
     "providerName": "Infomaniak",
     "displayName": "Mistral Small 4",
     "family": "mistral-small",
     "releaseDate": "2026-03-16",
-    "lastUpdated": "2026-08-01",
+    "lastUpdated": "2026-03-16",
     "knowledgeCutoff": "2025-06",
     "contextWindow": 256000,
     "maxOutputTokens": 256000,
@@ -333,7 +286,7 @@
     "displayName": "Ministral 3 14B Instruct",
     "family": "ministral",
     "releaseDate": "2025-12-02",
-    "lastUpdated": "2026-08-01",
+    "lastUpdated": "2025-12-02",
     "knowledgeCutoff": null,
     "contextWindow": 100000,
     "maxOutputTokens": 25600,
@@ -374,61 +327,14 @@
     ]
   },
   {
-    "id": "moonshotai/Kimi-K2.6",
-    "provider": "infomaniak",
-    "providerName": "Infomaniak",
-    "displayName": "Kimi K2.6",
-    "family": "kimi-k2",
-    "releaseDate": "2026-04-21",
-    "lastUpdated": "2026-08-01",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 256000,
-    "maxOutputTokens": 256000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.74,
-      "output": 3.72,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "beta",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-FP8",
     "provider": "infomaniak",
     "providerName": "Infomaniak",
     "displayName": "Nemotron 3 Nano 30B A3B FP8",
     "family": "nemotron",
     "releaseDate": "2025-12-15",
-    "lastUpdated": "2026-08-01",
-    "knowledgeCutoff": null,
+    "lastUpdated": "2025-12-15",
+    "knowledgeCutoff": "2025-06-25",
     "contextWindow": 1000000,
     "maxOutputTokens": 262144,
     "capabilities": {
@@ -457,7 +363,101 @@
       "currency": "USD",
       "per": 1000000
     },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen/Qwen3.5-397B-A17B-FP8",
+    "provider": "infomaniak",
+    "providerName": "Infomaniak",
+    "displayName": "Qwen3.5 397B-A17B FP8",
+    "family": "qwen",
+    "releaseDate": "2026-02-15",
+    "lastUpdated": "2026-02-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.99,
+      "output": 4.46,
+      "currency": "USD",
+      "per": 1000000
+    },
     "status": "beta",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen/Qwen3.5-122B-A10B-FP8",
+    "provider": "infomaniak",
+    "providerName": "Infomaniak",
+    "displayName": "Qwen3.5 122B-A10B FP8",
+    "family": "qwen",
+    "releaseDate": "2026-02-23",
+    "lastUpdated": "2026-02-23",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.5,
+      "output": 3.97,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],

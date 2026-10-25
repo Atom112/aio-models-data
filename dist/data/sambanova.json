@@ -1,51 +1,5 @@
 [
   {
-    "id": "DeepSeek-V3.1",
-    "provider": "sambanova",
-    "providerName": "SambaNova",
-    "displayName": "DeepSeek-V3.1",
-    "family": "deepseek",
-    "releaseDate": "2025-08-21",
-    "lastUpdated": "2025-08-21",
-    "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 7168,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 3,
-      "output": 4.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "MiniMax-M3",
     "provider": "sambanova",
     "providerName": "SambaNova",
@@ -139,16 +93,16 @@
     ]
   },
   {
-    "id": "DeepSeek-V3.2",
+    "id": "gpt-oss-120b",
     "provider": "sambanova",
     "providerName": "SambaNova",
-    "displayName": "DeepSeek V3.2",
-    "family": "deepseek",
-    "releaseDate": "2025-12-01",
-    "lastUpdated": "2025-12-01",
-    "knowledgeCutoff": "2024-07",
-    "contextWindow": 32768,
-    "maxOutputTokens": 7168,
+    "displayName": "GPT OSS 120B",
+    "family": "gpt-oss",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": "2024-06",
+    "contextWindow": 131072,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -170,8 +124,8 @@
       ]
     },
     "pricing": {
-      "input": 3,
-      "output": 4.5,
+      "input": 0.22,
+      "output": 0.59,
       "currency": "USD",
       "per": 1000000
     },
@@ -192,7 +146,7 @@
     "family": "gemma",
     "releaseDate": "2026-04-02",
     "lastUpdated": "2026-04-02",
-    "knowledgeCutoff": null,
+    "knowledgeCutoff": "2025-01",
     "contextWindow": 131072,
     "maxOutputTokens": 131072,
     "capabilities": {
@@ -233,16 +187,62 @@
     ]
   },
   {
-    "id": "gpt-oss-120b",
+    "id": "DeepSeek-V3.1",
     "provider": "sambanova",
     "providerName": "SambaNova",
-    "displayName": "GPT OSS 120B",
-    "family": "gpt-oss",
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
+    "displayName": "DeepSeek-V3.1",
+    "family": "deepseek",
+    "releaseDate": "2025-08-21",
+    "lastUpdated": "2025-08-21",
     "knowledgeCutoff": null,
     "contextWindow": 131072,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 7168,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 4.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "DeepSeek-V3.2",
+    "provider": "sambanova",
+    "providerName": "SambaNova",
+    "displayName": "DeepSeek V3.2",
+    "family": "deepseek",
+    "releaseDate": "2025-12-01",
+    "lastUpdated": "2025-12-01",
+    "knowledgeCutoff": "2024-07",
+    "contextWindow": 32768,
+    "maxOutputTokens": 7168,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -264,8 +264,8 @@
       ]
     },
     "pricing": {
-      "input": 0.22,
-      "output": 0.59,
+      "input": 3,
+      "output": 4.5,
       "currency": "USD",
       "per": 1000000
     },

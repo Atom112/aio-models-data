@@ -1,36 +1,110 @@
 [
   {
-    "id": "glm-4.5",
+    "id": "doubao-seed-2.0-mini",
     "provider": "qiniu-ai",
     "providerName": "Qiniu",
-    "displayName": "GLM 4.5",
-    "family": null,
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
+    "displayName": "Doubao Seed 2.0 Mini",
+    "family": "seed",
+    "releaseDate": "2026-02-14",
+    "lastUpdated": "2026-02-14",
     "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 98304,
+    "contextWindow": 256000,
+    "maxOutputTokens": 32000,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
-      "structured_output": false,
+      "attachment": true,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "video"
       ],
       "output": [
         "text"
       ]
     },
-    "pricing": null,
+    "pricing": {
+      "input": 0.02898551,
+      "output": 0.28985507,
+      "cacheRead": 0.0057971,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.05797101,
+          "output": 0.57971014,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 0.11594203,
+          "output": 1.15942029,
+          "contextThreshold": 128000
+        }
+      ]
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.5-397b-a17b",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Qwen3.5 397B A17B",
+    "family": "qwen",
+    "releaseDate": "2026-02-15",
+    "lastUpdated": "2026-02-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.17391304,
+      "output": 1.04347826,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.43478261,
+          "output": 2.60869565,
+          "contextThreshold": 128000
+        }
+      ]
+    },
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
@@ -45,10 +119,10 @@
     "provider": "qiniu-ai",
     "providerName": "Qiniu",
     "displayName": "Gemini 3.0 Flash Preview",
-    "family": null,
-    "releaseDate": "2025-12-18",
-    "lastUpdated": "2025-12-18",
-    "knowledgeCutoff": null,
+    "family": "gemini-flash",
+    "releaseDate": "2025-12-17",
+    "lastUpdated": "2025-12-17",
+    "knowledgeCutoff": "2025-01",
     "contextWindow": 1000000,
     "maxOutputTokens": 64000,
     "capabilities": {
@@ -76,7 +150,7 @@
       ]
     },
     "pricing": null,
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -86,59 +160,16 @@
     ]
   },
   {
-    "id": "doubao-seed-2.0-mini",
+    "id": "deepseek-r1",
     "provider": "qiniu-ai",
     "providerName": "Qiniu",
-    "displayName": "Doubao Seed 2.0 Mini",
-    "family": null,
-    "releaseDate": "2026-02-14",
-    "lastUpdated": "2026-02-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
+    "displayName": "DeepSeek-R1",
+    "family": "deepseek-thinking",
+    "releaseDate": "2025-01-20",
+    "lastUpdated": "2025-05-29",
+    "knowledgeCutoff": "2024-07",
+    "contextWindow": 128000,
     "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "mimo-v2-flash",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Mimo-V2-Flash",
-    "family": "mimo",
-    "releaseDate": "2025-12-16",
-    "lastUpdated": "2026-02-04",
-    "knowledgeCutoff": "2024-12-01",
-    "contextWindow": 256000,
-    "maxOutputTokens": 256000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -160,637 +191,12 @@
       ]
     },
     "pricing": {
-      "input": 0.1,
-      "output": 0.3,
-      "cacheRead": 0.01,
+      "input": 0.57971014,
+      "output": 2.31884058,
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "doubao-seed-2.0-lite",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Doubao Seed 2.0 Lite",
-    "family": null,
-    "releaseDate": "2026-02-14",
-    "lastUpdated": "2026-02-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "doubao-seed-1.6-thinking",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Doubao-Seed 1.6 Thinking",
-    "family": null,
-    "releaseDate": "2025-08-15",
-    "lastUpdated": "2025-08-15",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "image",
-        "text",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-2.5-flash-image",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Gemini 2.5 Flash Image",
-    "family": null,
-    "releaseDate": "2025-10-22",
-    "lastUpdated": "2025-10-22",
-    "knowledgeCutoff": null,
-    "contextWindow": 32768,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "image"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-3.0-pro-image-preview",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Gemini 3.0 Pro Image Preview",
-    "family": null,
-    "releaseDate": "2025-11-20",
-    "lastUpdated": "2025-11-20",
-    "knowledgeCutoff": null,
-    "contextWindow": 32768,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text",
-        "image"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-3.5-haiku",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Claude 3.5 Haiku",
-    "family": null,
-    "releaseDate": "2025-08-26",
-    "lastUpdated": "2025-08-26",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-235b-a22b-instruct-2507",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Qwen3 235b A22B Instruct 2507",
-    "family": null,
-    "releaseDate": "2025-08-12",
-    "lastUpdated": "2025-08-12",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-next-80b-a3b-thinking",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Qwen3 Next 80B A3B Thinking",
-    "family": null,
-    "releaseDate": "2025-09-12",
-    "lastUpdated": "2025-09-12",
-    "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen-max-2025-01-25",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Qwen2.5-Max-2025-01-25",
-    "family": null,
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-v3-0324",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "DeepSeek-V3-0324",
-    "family": null,
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 16000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-32b",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Qwen3 32B",
-    "family": null,
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 40000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-max",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Qwen3 Max",
-    "family": null,
-    "releaseDate": "2025-09-24",
-    "lastUpdated": "2025-09-24",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-4.5-sonnet",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Claude 4.5 Sonnet",
-    "family": null,
-    "releaseDate": "2025-09-30",
-    "lastUpdated": "2025-09-30",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-v3",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "DeepSeek-V3",
-    "family": null,
-    "releaseDate": "2025-08-13",
-    "lastUpdated": "2025-08-13",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 16000,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-coder-480b-a35b-instruct",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Qwen3 Coder 480B A35B Instruct",
-    "family": null,
-    "releaseDate": "2025-08-14",
-    "lastUpdated": "2025-08-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 262000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen-turbo",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Qwen-Turbo",
-    "family": null,
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -804,10 +210,10 @@
     "provider": "qiniu-ai",
     "providerName": "Qiniu",
     "displayName": "Gemini 2.0 Flash",
-    "family": null,
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
+    "family": "gemini-flash",
+    "releaseDate": "2024-12-11",
+    "lastUpdated": "2024-12-11",
+    "knowledgeCutoff": "2024-06",
     "contextWindow": 1048576,
     "maxOutputTokens": 8192,
     "capabilities": {
@@ -834,7 +240,7 @@
       ]
     },
     "pricing": null,
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -844,197 +250,26 @@
     ]
   },
   {
-    "id": "gemini-2.0-flash-lite",
+    "id": "qwen3-30b-a3b-thinking-2507",
     "provider": "qiniu-ai",
     "providerName": "Qiniu",
-    "displayName": "Gemini 2.0 Flash Lite",
+    "displayName": "Qwen3 30b A3b Thinking 2507",
     "family": null,
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
+    "releaseDate": "2026-02-04",
+    "lastUpdated": "2026-02-04",
     "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-4.0-sonnet",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Claude 4.0 Sonnet",
-    "family": null,
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen2.5-vl-7b-instruct",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Qwen 2.5 VL 7B Instruct",
-    "family": null,
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-235b-a22b-thinking-2507",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Qwen3 235B A22B Thinking 2507",
-    "family": null,
-    "releaseDate": "2025-08-12",
-    "lastUpdated": "2025-08-12",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-235b-a22b",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Qwen 3 235B A22B",
-    "family": null,
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
+    "contextWindow": 126000,
     "maxOutputTokens": 32000,
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -1045,51 +280,13 @@
         "text"
       ]
     },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "doubao-seed-2.0-pro",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Doubao Seed 2.0 Pro",
-    "family": null,
-    "releaseDate": "2026-02-14",
-    "lastUpdated": "2026-02-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
+    "pricing": {
+      "input": 0.10869565,
+      "output": 1.08695652,
+      "currency": "USD",
+      "per": 1000000
     },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1103,9 +300,9 @@
     "provider": "qiniu-ai",
     "providerName": "Qiniu",
     "displayName": "Doubao-Seed 1.6 Flash",
-    "family": null,
-    "releaseDate": "2025-08-15",
-    "lastUpdated": "2025-08-15",
+    "family": "seed",
+    "releaseDate": "2025-08-28",
+    "lastUpdated": "2025-08-28",
     "knowledgeCutoff": null,
     "contextWindow": 256000,
     "maxOutputTokens": 32000,
@@ -1114,11 +311,11 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -1131,8 +328,25 @@
         "text"
       ]
     },
-    "pricing": null,
-    "status": "active",
+    "pricing": {
+      "input": 0.02173913,
+      "output": 0.2173913,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.04347826,
+          "output": 0.43478261,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 0.08695652,
+          "output": 0.86956522,
+          "contextThreshold": 128000
+        }
+      ]
+    },
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1142,108 +356,26 @@
     ]
   },
   {
-    "id": "qwen3-max-preview",
+    "id": "doubao-seed-2.0-lite",
     "provider": "qiniu-ai",
     "providerName": "Qiniu",
-    "displayName": "Qwen3 Max Preview",
-    "family": null,
-    "releaseDate": "2025-09-06",
-    "lastUpdated": "2025-09-06",
+    "displayName": "Doubao Seed 2.0 Lite",
+    "family": "seed",
+    "releaseDate": "2026-02-14",
+    "lastUpdated": "2026-02-14",
     "knowledgeCutoff": null,
     "contextWindow": 256000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-next-80b-a3b-instruct",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Qwen3 Next 80B A3B Instruct",
-    "family": null,
-    "releaseDate": "2025-09-12",
-    "lastUpdated": "2025-09-12",
-    "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-vl-30b-a3b-thinking",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Qwen3-Vl 30b A3b Thinking",
-    "family": null,
-    "releaseDate": "2026-02-09",
-    "lastUpdated": "2026-02-09",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
     "maxOutputTokens": 32000,
     "capabilities": {
       "tools": true,
       "vision": true,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -1256,48 +388,25 @@
         "text"
       ]
     },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "doubao-1.5-pro-32k",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Doubao 1.5 Pro 32k",
-    "family": null,
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 12000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
+    "pricing": {
+      "input": 0.08695652,
+      "output": 0.52173913,
+      "cacheRead": 0.0173913,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.13043478,
+          "output": 0.7826087,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 0.26086957,
+          "output": 1.56521739,
+          "contextThreshold": 128000
+        }
       ]
     },
-    "pricing": null,
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
@@ -1308,57 +417,15 @@
     ]
   },
   {
-    "id": "claude-3.5-sonnet",
+    "id": "glm-4.5-air",
     "provider": "qiniu-ai",
     "providerName": "Qiniu",
-    "displayName": "Claude 3.5 Sonnet",
-    "family": null,
-    "releaseDate": "2025-09-09",
-    "lastUpdated": "2025-09-09",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 8200,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-oss-20b",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "gpt-oss-20b",
-    "family": null,
-    "releaseDate": "2025-08-06",
-    "lastUpdated": "2025-08-06",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
+    "displayName": "GLM 4.5 Air",
+    "family": "glm-air",
+    "releaseDate": "2025-07-28",
+    "lastUpdated": "2025-07-28",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 131000,
     "maxOutputTokens": 4096,
     "capabilities": {
       "tools": true,
@@ -1370,7 +437,7 @@
       "temperature": true,
       "attachment": false,
       "structured_output": false,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -1381,7 +448,7 @@
       ]
     },
     "pricing": null,
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1391,159 +458,27 @@
     ]
   },
   {
-    "id": "gemini-2.5-pro",
+    "id": "MiniMax-M1",
     "provider": "qiniu-ai",
     "providerName": "Qiniu",
-    "displayName": "Gemini 2.5 Pro",
-    "family": null,
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
+    "displayName": "MiniMax M1",
+    "family": "minimax",
+    "releaseDate": "2025-06-17",
+    "lastUpdated": "2025-06-17",
     "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "audio"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-2.5-flash",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Gemini 2.5 Flash",
-    "family": null,
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen-vl-max-2025-01-25",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Qwen VL-MAX-2025-01-25",
-    "family": null,
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "doubao-1.5-thinking-pro",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Doubao 1.5 Thinking Pro",
-    "family": null,
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 16000,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 80000,
     "capabilities": {
       "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
-      "open_weights": false
+      "structured_output": true,
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -1553,8 +488,13 @@
         "text"
       ]
     },
-    "pricing": null,
-    "status": "active",
+    "pricing": {
+      "input": 0.57971014,
+      "output": 2.31884058,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1564,39 +504,150 @@
     ]
   },
   {
-    "id": "claude-4.5-haiku",
+    "id": "qwen3-30b-a3b-instruct-2507",
     "provider": "qiniu-ai",
     "providerName": "Qiniu",
-    "displayName": "Claude 4.5 Haiku",
-    "family": null,
-    "releaseDate": "2025-10-16",
-    "lastUpdated": "2025-10-16",
+    "displayName": "Qwen3 30b A3b Instruct 2507",
+    "family": "qwen",
+    "releaseDate": "2025-07-28",
+    "lastUpdated": "2025-07-28",
     "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 64000,
+    "contextWindow": 128000,
+    "maxOutputTokens": 32000,
     "capabilities": {
       "tools": true,
-      "vision": true,
-      "reasoning": true,
+      "vision": false,
+      "reasoning": false,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
-    "pricing": null,
-    "status": "active",
+    "pricing": {
+      "input": 0.10869565,
+      "output": 0.43478261,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3-30b-a3b",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Qwen3 30B A3B",
+    "family": "qwen",
+    "releaseDate": "2025-04-28",
+    "lastUpdated": "2025-04-28",
+    "knowledgeCutoff": null,
+    "contextWindow": 40000,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.10869565,
+      "output": 0.43478261,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "doubao-seed-2.0-pro",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Doubao Seed 2.0 Pro",
+    "family": "seed",
+    "releaseDate": "2026-02-14",
+    "lastUpdated": "2026-02-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.46376812,
+      "output": 2.31884058,
+      "cacheRead": 0.09275362,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.69565217,
+          "output": 3.47826087,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 1.39130435,
+          "output": 6.95652174,
+          "contextThreshold": 128000
+        }
+      ]
+    },
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1649,224 +700,15 @@
     ]
   },
   {
-    "id": "claude-4.1-opus",
+    "id": "gemini-2.5-flash",
     "provider": "qiniu-ai",
     "providerName": "Qiniu",
-    "displayName": "Claude 4.1 Opus",
-    "family": null,
-    "releaseDate": "2025-08-06",
-    "lastUpdated": "2025-08-06",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-3.7-sonnet",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Claude 3.7 Sonnet",
-    "family": null,
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "MiniMax-M1",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "MiniMax M1",
-    "family": null,
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 80000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "doubao-seed-1.6",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Doubao-Seed 1.6",
-    "family": null,
-    "releaseDate": "2025-08-15",
-    "lastUpdated": "2025-08-15",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-30b-a3b",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Qwen3 30B A3B",
-    "family": null,
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 40000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3.5-397b-a17b",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Qwen3.5 397B A17B",
-    "family": null,
-    "releaseDate": "2026-02-22",
-    "lastUpdated": "2026-02-22",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
+    "displayName": "Gemini 2.5 Flash",
+    "family": "gemini-flash",
+    "releaseDate": "2025-06-17",
+    "lastUpdated": "2025-06-17",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
     "maxOutputTokens": 64000,
     "capabilities": {
       "tools": true,
@@ -1883,49 +725,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "doubao-seed-2.0-code",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Doubao Seed 2.0 Code",
-    "family": null,
-    "releaseDate": "2026-02-14",
-    "lastUpdated": "2026-02-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
         "image",
+        "audio",
         "video"
       ],
       "output": [
@@ -1933,7 +734,7 @@
       ]
     },
     "pricing": null,
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1943,20 +744,112 @@
     ]
   },
   {
-    "id": "claude-4.0-opus",
+    "id": "qwen3-32b",
     "provider": "qiniu-ai",
     "providerName": "Qiniu",
-    "displayName": "Claude 4.0 Opus",
-    "family": null,
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 32000,
+    "displayName": "Qwen3 32B",
+    "family": "qwen",
+    "releaseDate": "2025-04-28",
+    "lastUpdated": "2025-04-28",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 40000,
+    "maxOutputTokens": 4096,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.28985507,
+      "output": 1.15942029,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3-235b-a22b-thinking-2507",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Qwen3 235B A22B Thinking 2507",
+    "family": "qwen",
+    "releaseDate": "2025-07-25",
+    "lastUpdated": "2025-07-25",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.28985507,
+      "output": 2.89855072,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash-image",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Gemini 2.5 Flash Image",
+    "family": "gemini-flash",
+    "releaseDate": "2025-08-26",
+    "lastUpdated": "2025-08-26",
+    "knowledgeCutoff": "2024-06",
+    "contextWindow": 32768,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
@@ -1971,11 +864,11 @@
         "image"
       ],
       "output": [
-        "text"
+        "image"
       ]
     },
     "pricing": null,
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1985,26 +878,26 @@
     ]
   },
   {
-    "id": "kimi-k2",
+    "id": "qwen-turbo",
     "provider": "qiniu-ai",
     "providerName": "Qiniu",
-    "displayName": "Kimi K2",
-    "family": null,
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 128000,
+    "displayName": "Qwen-Turbo",
+    "family": "qwen",
+    "releaseDate": "2024-11-01",
+    "lastUpdated": "2025-04-28",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 4096,
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -2015,8 +908,13 @@
         "text"
       ]
     },
-    "pricing": null,
-    "status": "active",
+    "pricing": {
+      "input": 0.04347826,
+      "output": 0.08695652,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2026,27 +924,27 @@
     ]
   },
   {
-    "id": "qwen3-30b-a3b-instruct-2507",
+    "id": "qwen3-235b-a22b-instruct-2507",
     "provider": "qiniu-ai",
     "providerName": "Qiniu",
-    "displayName": "Qwen3 30b A3b Instruct 2507",
-    "family": null,
-    "releaseDate": "2026-02-04",
-    "lastUpdated": "2026-02-04",
+    "displayName": "Qwen3 235b A22B Instruct 2507",
+    "family": "qwen",
+    "releaseDate": "2025-07-21",
+    "lastUpdated": "2025-07-21",
     "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 32000,
+    "contextWindow": 262144,
+    "maxOutputTokens": 64000,
     "capabilities": {
       "tools": true,
       "vision": false,
       "reasoning": false,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
-      "open_weights": false
+      "structured_output": true,
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -2056,8 +954,13 @@
         "text"
       ]
     },
-    "pricing": null,
-    "status": "active",
+    "pricing": {
+      "input": 0.28985507,
+      "output": 1.15942029,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2067,15 +970,15 @@
     ]
   },
   {
-    "id": "qwen2.5-vl-72b-instruct",
+    "id": "gemini-2.0-flash-lite",
     "provider": "qiniu-ai",
     "providerName": "Qiniu",
-    "displayName": "Qwen 2.5 VL 72B Instruct",
-    "family": null,
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
+    "displayName": "Gemini 2.0 Flash Lite",
+    "family": "gemini-flash-lite",
+    "releaseDate": "2024-12-11",
+    "lastUpdated": "2024-12-11",
+    "knowledgeCutoff": "2024-06",
+    "contextWindow": 1048576,
     "maxOutputTokens": 8192,
     "capabilities": {
       "tools": true,
@@ -2101,7 +1004,53 @@
       ]
     },
     "pricing": null,
-    "status": "active",
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen-max-2025-01-25",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Qwen2.5-Max-2025-01-25",
+    "family": "qwen",
+    "releaseDate": "2024-04-03",
+    "lastUpdated": "2025-01-25",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 128000,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.34782609,
+      "output": 1.39130435,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2126,11 +1075,11 @@
       "vision": true,
       "reasoning": false,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -2143,8 +1092,144 @@
         "text"
       ]
     },
+    "pricing": {
+      "input": 0.43478261,
+      "output": 1.30434783,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-4.1-opus",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Claude 4.1 Opus",
+    "family": "claude-opus",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": "2025-03-31",
+    "contextWindow": 200000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
     "pricing": null,
-    "status": "active",
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v3.1",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "DeepSeek-V3.1",
+    "family": "deepseek",
+    "releaseDate": "2025-08-21",
+    "lastUpdated": "2025-08-21",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.57971014,
+      "output": 1.73913043,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3.0-pro-image-preview",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Gemini 3.0 Pro Image Preview",
+    "family": "gemini-pro",
+    "releaseDate": "2025-11-20",
+    "lastUpdated": "2025-11-20",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 32768,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text",
+        "image"
+      ]
+    },
+    "pricing": null,
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2158,10 +1243,10 @@
     "provider": "qiniu-ai",
     "providerName": "Qiniu",
     "displayName": "Claude 4.5 Opus",
-    "family": null,
-    "releaseDate": "2025-11-25",
-    "lastUpdated": "2025-11-25",
-    "knowledgeCutoff": null,
+    "family": "claude-opus",
+    "releaseDate": "2025-11-24",
+    "lastUpdated": "2025-11-24",
+    "knowledgeCutoff": "2025-05",
     "contextWindow": 200000,
     "maxOutputTokens": 200000,
     "capabilities": {
@@ -2186,7 +1271,7 @@
       ]
     },
     "pricing": null,
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2196,38 +1281,39 @@
     ]
   },
   {
-    "id": "deepseek-v3.1",
+    "id": "claude-3.7-sonnet",
     "provider": "qiniu-ai",
     "providerName": "Qiniu",
-    "displayName": "DeepSeek-V3.1",
-    "family": null,
-    "releaseDate": "2025-08-19",
-    "lastUpdated": "2025-08-19",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 32000,
+    "displayName": "Claude 3.7 Sonnet",
+    "family": "claude-sonnet",
+    "releaseDate": "2025-02-19",
+    "lastUpdated": "2025-02-19",
+    "knowledgeCutoff": "2024-10-31",
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": false,
       "open_weights": false
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": null,
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2237,98 +1323,289 @@
     ]
   },
   {
-    "id": "deepseek-r1",
+    "id": "claude-4.5-haiku",
     "provider": "qiniu-ai",
     "providerName": "Qiniu",
-    "displayName": "DeepSeek-R1",
-    "family": null,
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-30b-a3b-thinking-2507",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Qwen3 30b A3b Thinking 2507",
-    "family": null,
-    "releaseDate": "2026-02-04",
-    "lastUpdated": "2026-02-04",
-    "knowledgeCutoff": null,
-    "contextWindow": 126000,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-2.5-flash-lite",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Gemini 2.5 Flash Lite",
-    "family": null,
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
+    "displayName": "Claude 4.5 Haiku",
+    "family": "claude-haiku",
+    "releaseDate": "2025-10-15",
+    "lastUpdated": "2025-10-15",
+    "knowledgeCutoff": "2025-02-28",
+    "contextWindow": 200000,
     "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-4.0-opus",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Claude 4.0 Opus",
+    "family": "claude-opus",
+    "releaseDate": "2025-05-22",
+    "lastUpdated": "2025-05-22",
+    "knowledgeCutoff": "2025-03-31",
+    "contextWindow": 200000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k2",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Kimi K2",
+    "family": "kimi-k2",
+    "releaseDate": "2025-07-11",
+    "lastUpdated": "2025-07-11",
+    "knowledgeCutoff": "2024-12-31",
+    "contextWindow": 128000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.57971014,
+      "output": 2.31884058,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen2.5-vl-72b-instruct",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Qwen 2.5 VL 72B Instruct",
+    "family": "qwen",
+    "releaseDate": "2025-01-26",
+    "lastUpdated": "2025-01-26",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 128000,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.31884058,
+      "output": 6.95652174,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-r1-0528",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "DeepSeek-R1-0528",
+    "family": "deepseek-thinking",
+    "releaseDate": "2025-05-28",
+    "lastUpdated": "2025-05-28",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.57971014,
+      "output": 2.31884058,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen-vl-max-2025-01-25",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Qwen VL-MAX-2025-01-25",
+    "family": null,
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.43478261,
+      "output": 1.30434783,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-3.5-haiku",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Claude 3.5 Haiku",
+    "family": "claude-haiku",
+    "releaseDate": "2024-10-22",
+    "lastUpdated": "2024-10-22",
+    "knowledgeCutoff": "2024-07-31",
+    "contextWindow": 200000,
+    "maxOutputTokens": 8192,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -2344,16 +1621,14 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "audio",
-        "video"
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": null,
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2363,16 +1638,16 @@
     ]
   },
   {
-    "id": "deepseek-r1-0528",
+    "id": "mimo-v2-flash",
     "provider": "qiniu-ai",
     "providerName": "Qiniu",
-    "displayName": "DeepSeek-R1-0528",
-    "family": null,
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 32000,
+    "displayName": "Mimo-V2-Flash",
+    "family": "mimo",
+    "releaseDate": "2025-12-16",
+    "lastUpdated": "2026-02-04",
+    "knowledgeCutoff": "2024-12-01",
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -2383,7 +1658,7 @@
       "temperature": true,
       "attachment": false,
       "structured_output": false,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -2393,8 +1668,14 @@
         "text"
       ]
     },
-    "pricing": null,
-    "status": "active",
+    "pricing": {
+      "input": 0.1,
+      "output": 0.3,
+      "cacheRead": 0.01,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2404,79 +1685,39 @@
     ]
   },
   {
-    "id": "glm-4.5-air",
+    "id": "claude-3.5-sonnet",
     "provider": "qiniu-ai",
     "providerName": "Qiniu",
-    "displayName": "GLM 4.5 Air",
-    "family": null,
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 131000,
-    "maxOutputTokens": 4096,
+    "displayName": "Claude 3.5 Sonnet",
+    "family": "claude-sonnet",
+    "releaseDate": "2024-10-22",
+    "lastUpdated": "2024-10-22",
+    "knowledgeCutoff": "2024-04-30",
+    "contextWindow": 200000,
+    "maxOutputTokens": 8192,
     "capabilities": {
       "tools": true,
-      "vision": false,
-      "reasoning": true,
+      "vision": true,
+      "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": false,
       "open_weights": false
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-oss-120b",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "gpt-oss-120b",
-    "family": null,
-    "releaseDate": "2025-08-06",
-    "lastUpdated": "2025-08-06",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2490,10 +1731,10 @@
     "provider": "qiniu-ai",
     "providerName": "Qiniu",
     "displayName": "Gemini 3.0 Pro Preview",
-    "family": null,
-    "releaseDate": "2025-11-19",
-    "lastUpdated": "2025-11-19",
-    "knowledgeCutoff": null,
+    "family": "gemini-pro",
+    "releaseDate": "2025-11-18",
+    "lastUpdated": "2025-11-18",
+    "knowledgeCutoff": "2025-01",
     "contextWindow": 1000000,
     "maxOutputTokens": 64000,
     "capabilities": {
@@ -2521,7 +1762,1126 @@
       ]
     },
     "pricing": null,
-    "status": "active",
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-4.5-sonnet",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Claude 4.5 Sonnet",
+    "family": "claude-sonnet",
+    "releaseDate": "2025-09-29",
+    "lastUpdated": "2025-09-29",
+    "knowledgeCutoff": "2025-07-31",
+    "contextWindow": 200000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash-lite",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Gemini 2.5 Flash Lite",
+    "family": "gemini-flash-lite",
+    "releaseDate": "2025-06-17",
+    "lastUpdated": "2025-06-17",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "doubao-1.5-pro-32k",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Doubao 1.5 Pro 32k",
+    "family": null,
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 12000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.11594203,
+      "output": 0.28985507,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3-235b-a22b",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Qwen 3 235B A22B",
+    "family": "qwen",
+    "releaseDate": "2025-04-28",
+    "lastUpdated": "2025-04-28",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 128000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.28985507,
+      "output": 1.15942029,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3-next-80b-a3b-thinking",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Qwen3 Next 80B A3B Thinking",
+    "family": "qwen",
+    "releaseDate": "2025-09",
+    "lastUpdated": "2025-09",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 131072,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.14492754,
+      "output": 1.44927536,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3-coder-480b-a35b-instruct",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Qwen3 Coder 480B A35B Instruct",
+    "family": "qwen",
+    "releaseDate": "2025-07-22",
+    "lastUpdated": "2025-07-22",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 262000,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.86956522,
+      "output": 3.47826087,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 1.30434783,
+          "output": 5.2173913,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 2.17391304,
+          "output": 8.69565217,
+          "contextThreshold": 128000
+        }
+      ]
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3-vl-30b-a3b-thinking",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Qwen3-Vl 30b A3b Thinking",
+    "family": null,
+    "releaseDate": "2026-02-09",
+    "lastUpdated": "2026-02-09",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.10869565,
+      "output": 1.08695652,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-4.0-sonnet",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Claude 4.0 Sonnet",
+    "family": "claude-sonnet",
+    "releaseDate": "2025-05-22",
+    "lastUpdated": "2025-05-22",
+    "knowledgeCutoff": "2025-03-31",
+    "contextWindow": 200000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "doubao-seed-1.6",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Doubao-Seed 1.6",
+    "family": "seed",
+    "releaseDate": "2025-10-15",
+    "lastUpdated": "2025-10-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.11594203,
+      "output": 1.15942029,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.17391304,
+          "output": 2.31884058,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 0.34782609,
+          "output": 3.47826087,
+          "contextThreshold": 128000
+        }
+      ]
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v3",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "DeepSeek-V3",
+    "family": "deepseek",
+    "releaseDate": "2024-12-26",
+    "lastUpdated": "2024-12-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 16000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.28985507,
+      "output": 1.15942029,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-2.5-pro",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Gemini 2.5 Pro",
+    "family": "gemini-pro",
+    "releaseDate": "2025-06-17",
+    "lastUpdated": "2025-06-17",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "doubao-1.5-thinking-pro",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Doubao 1.5 Thinking Pro",
+    "family": null,
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 16000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.57971014,
+      "output": 2.31884058,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3-max",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Qwen3 Max",
+    "family": "qwen",
+    "releaseDate": "2025-09-23",
+    "lastUpdated": "2025-09-23",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.86956522,
+      "output": 3.47826087,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 1.44927536,
+          "output": 5.79710145,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 2.17391304,
+          "output": 8.69565217,
+          "contextThreshold": 128000
+        }
+      ]
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-4.5",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "GLM 4.5",
+    "family": "glm",
+    "releaseDate": "2025-07-28",
+    "lastUpdated": "2025-07-28",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 131072,
+    "maxOutputTokens": 98304,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.57971014,
+      "output": 2.31884058,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-oss-20b",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "gpt-oss-20b",
+    "family": "gpt-oss",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": "2024-06",
+    "contextWindow": 128000,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3-next-80b-a3b-instruct",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Qwen3 Next 80B A3B Instruct",
+    "family": "qwen",
+    "releaseDate": "2025-09",
+    "lastUpdated": "2025-09",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 131072,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.14492754,
+      "output": 0.57971014,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "doubao-seed-1.6-thinking",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Doubao-Seed 1.6 Thinking",
+    "family": null,
+    "releaseDate": "2025-08-15",
+    "lastUpdated": "2025-08-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "image",
+        "text",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.11594203,
+      "output": 1.15942029,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.17391304,
+          "output": 2.31884058,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 0.34782609,
+          "output": 3.47826087,
+          "contextThreshold": 128000
+        }
+      ]
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "doubao-seed-2.0-code",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Doubao Seed 2.0 Code",
+    "family": "seed",
+    "releaseDate": "2026-02-14",
+    "lastUpdated": "2026-02-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.46376812,
+      "output": 2.31884058,
+      "cacheRead": 0.09275362,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.69565217,
+          "output": 3.47826087,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 1.39130435,
+          "output": 6.95652174,
+          "contextThreshold": 128000
+        }
+      ]
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3-max-preview",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Qwen3 Max Preview",
+    "family": "qwen",
+    "releaseDate": "2025-09-05",
+    "lastUpdated": "2025-09-23",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 256000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.86956522,
+      "output": 3.47826087,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 1.44927536,
+          "output": 5.79710145,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 2.17391304,
+          "output": 8.69565217,
+          "contextThreshold": 128000
+        }
+      ]
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "moonshotai/kimi-k2-thinking",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Kimi K2 Thinking",
+    "family": "kimi-thinking",
+    "releaseDate": "2025-11-06",
+    "lastUpdated": "2025-11-06",
+    "knowledgeCutoff": "2024-08",
+    "contextWindow": 256000,
+    "maxOutputTokens": 100000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.57971014,
+      "output": 2.31884058,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "moonshotai/kimi-k2-0905",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Kimi K2 0905",
+    "family": "kimi-k2",
+    "releaseDate": "2025-09-05",
+    "lastUpdated": "2025-09-05",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 100000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "moonshotai/kimi-k2.5",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Moonshotai/Kimi-K2.5",
+    "family": "kimi-k2",
+    "releaseDate": "2026-01-27",
+    "lastUpdated": "2026-01-27",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.57971014,
+      "output": 3.04347826,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek/deepseek-v3.1-terminus",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "DeepSeek/DeepSeek-V3.1-Terminus",
+    "family": null,
+    "releaseDate": "2025-09-22",
+    "lastUpdated": "2025-09-22",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.57971014,
+      "output": 1.73913043,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2542,7 +2902,7 @@
     "contextWindow": 128000,
     "maxOutputTokens": 32000,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
@@ -2561,8 +2921,13 @@
         "text"
       ]
     },
-    "pricing": null,
-    "status": "active",
+    "pricing": {
+      "input": 0.28985507,
+      "output": 0.43478261,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2603,130 +2968,7 @@
       ]
     },
     "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek/deepseek-v3.1-terminus",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "DeepSeek/DeepSeek-V3.1-Terminus",
-    "family": null,
-    "releaseDate": "2025-09-22",
-    "lastUpdated": "2025-09-22",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek/deepseek-v3.2-251201",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Deepseek/DeepSeek-V3.2",
-    "family": null,
-    "releaseDate": "2025-12-01",
-    "lastUpdated": "2025-12-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek/deepseek-v3.1-terminus-thinking",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "DeepSeek/DeepSeek-V3.1-Terminus-Thinking",
-    "family": null,
-    "releaseDate": "2025-09-22",
-    "lastUpdated": "2025-09-22",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2766,8 +3008,13 @@
         "text"
       ]
     },
-    "pricing": null,
-    "status": "active",
+    "pricing": {
+      "input": 0.28985507,
+      "output": 0.43478261,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2777,16 +3024,151 @@
     ]
   },
   {
-    "id": "z-ai/glm-4.6",
+    "id": "deepseek/deepseek-v3.2-251201",
     "provider": "qiniu-ai",
     "providerName": "Qiniu",
-    "displayName": "Z-AI/GLM 4.6",
+    "displayName": "Deepseek/DeepSeek-V3.2",
+    "family": "deepseek",
+    "releaseDate": "2025-12-01",
+    "lastUpdated": "2025-12-01",
+    "knowledgeCutoff": "2024-07",
+    "contextWindow": 128000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.28985507,
+      "output": 0.43478261,
+      "cacheRead": 0.02898551,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek/deepseek-v3.1-terminus-thinking",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "DeepSeek/DeepSeek-V3.1-Terminus-Thinking",
     "family": null,
-    "releaseDate": "2025-10-11",
-    "lastUpdated": "2025-10-11",
+    "releaseDate": "2025-09-22",
+    "lastUpdated": "2025-09-22",
     "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 200000,
+    "contextWindow": 128000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.57971014,
+      "output": 1.73913043,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "openai/gpt-5.2",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "OpenAI/GPT-5.2",
+    "family": "gpt",
+    "releaseDate": "2025-12-11",
+    "lastUpdated": "2025-12-11",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "openai/gpt-5",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "OpenAI/GPT-5",
+    "family": "gpt",
+    "releaseDate": "2025-08-07",
+    "lastUpdated": "2025-08-07",
+    "knowledgeCutoff": "2024-09-30",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -2808,7 +3190,7 @@
       ]
     },
     "pricing": null,
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2818,27 +3200,27 @@
     ]
   },
   {
-    "id": "z-ai/glm-5",
+    "id": "stepfun/step-3.5-flash",
     "provider": "qiniu-ai",
     "providerName": "Qiniu",
-    "displayName": "Z-Ai/GLM 5",
-    "family": null,
-    "releaseDate": "2026-02-12",
-    "lastUpdated": "2026-02-12",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 128000,
+    "displayName": "Stepfun/Step-3.5 Flash",
+    "family": "step",
+    "releaseDate": "2026-01-29",
+    "lastUpdated": "2026-02-13",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 64000,
+    "maxOutputTokens": 4096,
     "capabilities": {
-      "tools": true,
+      "tools": false,
       "vision": false,
-      "reasoning": true,
+      "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
       "structured_output": false,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -2849,7 +3231,7 @@
       ]
     },
     "pricing": null,
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2859,14 +3241,14 @@
     ]
   },
   {
-    "id": "z-ai/glm-4.7",
+    "id": "z-ai/glm-4.6",
     "provider": "qiniu-ai",
     "providerName": "Qiniu",
-    "displayName": "Z-Ai/GLM 4.7",
-    "family": null,
-    "releaseDate": "2025-12-23",
-    "lastUpdated": "2025-12-23",
-    "knowledgeCutoff": null,
+    "displayName": "Z-AI/GLM 4.6",
+    "family": "glm",
+    "releaseDate": "2025-09-30",
+    "lastUpdated": "2025-09-30",
+    "knowledgeCutoff": "2025-04",
     "contextWindow": 200000,
     "maxOutputTokens": 200000,
     "capabilities": {
@@ -2874,12 +3256,12 @@
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
-      "open_weights": false
+      "structured_output": true,
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -2889,8 +3271,13 @@
         "text"
       ]
     },
-    "pricing": null,
-    "status": "active",
+    "pricing": {
+      "input": 1.04347826,
+      "output": 1.82608696,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2932,7 +3319,290 @@
       ]
     },
     "pricing": null,
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-5",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Z-Ai/GLM 5",
+    "family": "glm",
+    "releaseDate": "2026-02-12",
+    "lastUpdated": "2026-02-12",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.57971014,
+      "output": 2.60869565,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.86956522,
+          "output": 3.1884058,
+          "contextThreshold": 32000
+        }
+      ]
+    },
     "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-4.7",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Z-Ai/GLM 4.7",
+    "family": "glm",
+    "releaseDate": "2025-12-22",
+    "lastUpdated": "2025-12-22",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 200000,
+    "maxOutputTokens": 200000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.45913043,
+      "output": 1.81565217,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimax/minimax-m2",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Minimax/Minimax-M2",
+    "family": "minimax",
+    "releaseDate": "2025-10-27",
+    "lastUpdated": "2025-10-27",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.30434783,
+      "output": 1.2173913,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimax/minimax-m2.5-highspeed",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Minimax/Minimax-M2.5 Highspeed",
+    "family": "minimax",
+    "releaseDate": "2026-02-13",
+    "lastUpdated": "2026-02-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 204800,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.60869565,
+      "output": 2.43478261,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimax/minimax-m2.5",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Minimax/Minimax-M2.5",
+    "family": "minimax",
+    "releaseDate": "2026-02-12",
+    "lastUpdated": "2026-02-12",
+    "knowledgeCutoff": null,
+    "contextWindow": 204800,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.30434783,
+      "output": 1.2173913,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimax/minimax-m2.1",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "Minimax/Minimax-M2.1",
+    "family": "minimax",
+    "releaseDate": "2025-12-23",
+    "lastUpdated": "2025-12-23",
+    "knowledgeCutoff": null,
+    "contextWindow": 204800,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.30434783,
+      "output": 1.2173913,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2973,7 +3643,7 @@
       ]
     },
     "pricing": null,
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2996,13 +3666,13 @@
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -3013,8 +3683,13 @@
         "text"
       ]
     },
-    "pricing": null,
-    "status": "active",
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -3028,7 +3703,7 @@
     "provider": "qiniu-ai",
     "providerName": "Qiniu",
     "displayName": "X-Ai/Grok-4-Fast-Reasoning",
-    "family": null,
+    "family": "grok",
     "releaseDate": "2025-12-18",
     "lastUpdated": "2025-12-18",
     "knowledgeCutoff": null,
@@ -3058,7 +3733,51 @@
       ]
     },
     "pricing": null,
-    "status": "active",
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "x-ai/grok-4-fast-non-reasoning",
+    "provider": "qiniu-ai",
+    "providerName": "Qiniu",
+    "displayName": "X-Ai/Grok-4-Fast-Non-Reasoning",
+    "family": "grok",
+    "releaseDate": "2025-12-18",
+    "lastUpdated": "2025-12-18",
+    "knowledgeCutoff": null,
+    "contextWindow": 2000000,
+    "maxOutputTokens": 2000000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -3072,9 +3791,9 @@
     "provider": "qiniu-ai",
     "providerName": "Qiniu",
     "displayName": "X-Ai/Grok 4.1 Fast Reasoning",
-    "family": null,
-    "releaseDate": "2025-12-19",
-    "lastUpdated": "2025-12-19",
+    "family": "grok",
+    "releaseDate": "2025-11-19",
+    "lastUpdated": "2025-11-19",
     "knowledgeCutoff": null,
     "contextWindow": 20000000,
     "maxOutputTokens": 2000000,
@@ -3093,16 +3812,14 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "audio",
-        "video"
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": null,
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -3112,13 +3829,13 @@
     ]
   },
   {
-    "id": "x-ai/grok-4-fast-non-reasoning",
+    "id": "x-ai/grok-4.1-fast-non-reasoning",
     "provider": "qiniu-ai",
     "providerName": "Qiniu",
-    "displayName": "X-Ai/Grok-4-Fast-Non-Reasoning",
-    "family": null,
-    "releaseDate": "2025-12-18",
-    "lastUpdated": "2025-12-18",
+    "displayName": "X-Ai/Grok 4.1 Fast Non Reasoning",
+    "family": "grok",
+    "releaseDate": "2025-11-19",
+    "lastUpdated": "2025-11-19",
     "knowledgeCutoff": null,
     "contextWindow": 2000000,
     "maxOutputTokens": 2000000,
@@ -3137,57 +3854,14 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "audio",
-        "video"
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "x-ai/grok-code-fast-1",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "x-AI/Grok-Code-Fast 1",
-    "family": null,
-    "releaseDate": "2025-09-02",
-    "lastUpdated": "2025-09-02",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 10000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -3228,7 +3902,7 @@
       ]
     },
     "pricing": null,
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -3238,41 +3912,38 @@
     ]
   },
   {
-    "id": "x-ai/grok-4.1-fast-non-reasoning",
+    "id": "x-ai/grok-code-fast-1",
     "provider": "qiniu-ai",
     "providerName": "Qiniu",
-    "displayName": "X-Ai/Grok 4.1 Fast Non Reasoning",
-    "family": null,
-    "releaseDate": "2025-12-19",
-    "lastUpdated": "2025-12-19",
+    "displayName": "x-AI/Grok-Code-Fast 1",
+    "family": "grok",
+    "releaseDate": "2025-09-02",
+    "lastUpdated": "2025-09-02",
     "knowledgeCutoff": null,
-    "contextWindow": 2000000,
-    "maxOutputTokens": 2000000,
+    "contextWindow": 256000,
+    "maxOutputTokens": 10000,
     "capabilities": {
       "tools": true,
-      "vision": true,
-      "reasoning": false,
+      "vision": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": false,
       "open_weights": false
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "audio",
-        "video"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": null,
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -3316,7 +3987,7 @@
       ]
     },
     "pricing": null,
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -3358,468 +4029,7 @@
       ]
     },
     "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "moonshotai/kimi-k2-thinking",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Kimi K2 Thinking",
-    "family": null,
-    "releaseDate": "2025-11-07",
-    "lastUpdated": "2025-11-07",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 100000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "moonshotai/kimi-k2.5",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Moonshotai/Kimi-K2.5",
-    "family": null,
-    "releaseDate": "2026-01-28",
-    "lastUpdated": "2026-01-28",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 256000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "moonshotai/kimi-k2-0905",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Kimi K2 0905",
-    "family": null,
-    "releaseDate": "2025-09-08",
-    "lastUpdated": "2025-09-08",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 100000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "xiaomi/mimo-v2-flash",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Xiaomi/Mimo-V2-Flash",
-    "family": "mimo",
-    "releaseDate": "2025-12-16",
-    "lastUpdated": "2026-02-04",
-    "knowledgeCutoff": "2024-12-01",
-    "contextWindow": 256000,
-    "maxOutputTokens": 256000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1,
-      "output": 0.3,
-      "cacheRead": 0.01,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "minimax/minimax-m2.5",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Minimax/Minimax-M2.5",
-    "family": null,
-    "releaseDate": "2026-02-12",
-    "lastUpdated": "2026-02-12",
-    "knowledgeCutoff": null,
-    "contextWindow": 204800,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "minimax/minimax-m2.5-highspeed",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Minimax/Minimax-M2.5 Highspeed",
-    "family": null,
-    "releaseDate": "2026-02-14",
-    "lastUpdated": "2026-02-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 204800,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "minimax/minimax-m2.1",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Minimax/Minimax-M2.1",
-    "family": null,
-    "releaseDate": "2025-12-23",
-    "lastUpdated": "2025-12-23",
-    "knowledgeCutoff": null,
-    "contextWindow": 204800,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "minimax/minimax-m2",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Minimax/Minimax-M2",
-    "family": null,
-    "releaseDate": "2025-10-28",
-    "lastUpdated": "2025-10-28",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "stepfun/step-3.5-flash",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "Stepfun/Step-3.5 Flash",
-    "family": null,
-    "releaseDate": "2026-02-02",
-    "lastUpdated": "2026-02-02",
-    "knowledgeCutoff": null,
-    "contextWindow": 64000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "openai/gpt-5.2",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "OpenAI/GPT-5.2",
-    "family": null,
-    "releaseDate": "2025-12-11",
-    "lastUpdated": "2025-12-11",
-    "knowledgeCutoff": null,
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "openai/gpt-5",
-    "provider": "qiniu-ai",
-    "providerName": "Qiniu",
-    "displayName": "OpenAI/GPT-5",
-    "family": null,
-    "releaseDate": "2025-09-19",
-    "lastUpdated": "2025-09-19",
-    "knowledgeCutoff": null,
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],

@@ -1,12 +1,12 @@
 [
   {
-    "id": "qwen3.8-27b",
+    "id": "qwen3.5-397b-a17b",
     "provider": "ovhcloud",
     "providerName": "OVHcloud AI Endpoints",
-    "displayName": "Qwen3.8-27B",
+    "displayName": "Qwen3.5-397B-A17B",
     "family": "qwen",
-    "releaseDate": "2026-09-02",
-    "lastUpdated": "2026-09-02",
+    "releaseDate": "2026-02-15",
+    "lastUpdated": "2026-02-15",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
     "maxOutputTokens": 262144,
@@ -32,8 +32,8 @@
       ]
     },
     "pricing": {
-      "input": 0.47,
-      "output": 3.19,
+      "input": 0.71,
+      "output": 4.25,
       "currency": "USD",
       "per": 1000000
     },
@@ -93,6 +93,99 @@
     ]
   },
   {
+    "id": "qwen3.6-27b",
+    "provider": "ovhcloud",
+    "providerName": "OVHcloud AI Endpoints",
+    "displayName": "Qwen3.6-27B",
+    "family": "qwen",
+    "releaseDate": "2026-04-22",
+    "lastUpdated": "2026-04-22",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.47,
+      "output": 3.19,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mistral-nemo-instruct-2407",
+    "provider": "ovhcloud",
+    "providerName": "OVHcloud AI Endpoints",
+    "displayName": "Mistral-Nemo-Instruct-2407",
+    "family": "mistral-nemo",
+    "releaseDate": "2024-07-18",
+    "lastUpdated": "2024-07-18",
+    "knowledgeCutoff": "2024-07",
+    "contextWindow": 65536,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.14,
+      "output": 0.14,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "qwen3guard-gen-0.6b",
     "provider": "ovhcloud",
     "providerName": "OVHcloud AI Endpoints",
@@ -139,14 +232,200 @@
     ]
   },
   {
+    "id": "meta-llama-3_3-70b-instruct",
+    "provider": "ovhcloud",
+    "providerName": "OVHcloud AI Endpoints",
+    "displayName": "Meta-Llama-3_3-70B-Instruct",
+    "family": "llama",
+    "releaseDate": "2024-12-06",
+    "lastUpdated": "2024-12-06",
+    "knowledgeCutoff": "2023-12",
+    "contextWindow": 131072,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.74,
+      "output": 0.74,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen2.5-vl-72b-instruct",
+    "provider": "ovhcloud",
+    "providerName": "OVHcloud AI Endpoints",
+    "displayName": "Qwen2.5-VL-72B-Instruct",
+    "family": "qwen",
+    "releaseDate": "2025-01-26",
+    "lastUpdated": "2025-01-26",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 32768,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.01,
+      "output": 1.01,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mistral-small-3.2-24b-instruct-2506",
+    "provider": "ovhcloud",
+    "providerName": "OVHcloud AI Endpoints",
+    "displayName": "Mistral-Small-3.2-24B-Instruct-2506",
+    "family": "mistral-small",
+    "releaseDate": "2025-06-20",
+    "lastUpdated": "2025-06-20",
+    "knowledgeCutoff": "2023-10-31",
+    "contextWindow": 131072,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.31,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-oss-120b",
+    "provider": "ovhcloud",
+    "providerName": "OVHcloud AI Endpoints",
+    "displayName": "gpt-oss-120b",
+    "family": "gpt-oss",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": "2024-06",
+    "contextWindow": 131072,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.09,
+      "output": 0.47,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "gpt-oss-20b",
     "provider": "ovhcloud",
     "providerName": "OVHcloud AI Endpoints",
     "displayName": "gpt-oss-20b",
-    "family": null,
-    "releaseDate": "2025-08-28",
-    "lastUpdated": "2025-08-28",
-    "knowledgeCutoff": null,
+    "family": "gpt-oss",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": "2024-06",
     "contextWindow": 131072,
     "maxOutputTokens": 131072,
     "capabilities": {
@@ -189,9 +468,9 @@
     "provider": "ovhcloud",
     "providerName": "OVHcloud AI Endpoints",
     "displayName": "Qwen3.5-9B",
-    "family": null,
-    "releaseDate": "2026-04-22",
-    "lastUpdated": "2026-04-22",
+    "family": "qwen",
+    "releaseDate": "2026-02-23",
+    "lastUpdated": "2026-02-23",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
     "maxOutputTokens": 262144,
@@ -232,153 +511,13 @@
     ]
   },
   {
-    "id": "meta-llama-3_3-70b-instruct",
+    "id": "qwen3.8-27b",
     "provider": "ovhcloud",
     "providerName": "OVHcloud AI Endpoints",
-    "displayName": "Meta-Llama-3_3-70B-Instruct",
-    "family": null,
-    "releaseDate": "2025-04-01",
-    "lastUpdated": "2025-04-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.74,
-      "output": 0.74,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3.5-397b-a17b",
-    "provider": "ovhcloud",
-    "providerName": "OVHcloud AI Endpoints",
-    "displayName": "Qwen3.5-397B-A17B",
-    "family": null,
-    "releaseDate": "2026-05-18",
-    "lastUpdated": "2026-05-18",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.71,
-      "output": 4.25,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen2.5-vl-72b-instruct",
-    "provider": "ovhcloud",
-    "providerName": "OVHcloud AI Endpoints",
-    "displayName": "Qwen2.5-VL-72B-Instruct",
-    "family": null,
-    "releaseDate": "2025-03-31",
-    "lastUpdated": "2025-03-31",
-    "knowledgeCutoff": null,
-    "contextWindow": 32768,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.01,
-      "output": 1.01,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3.6-27b",
-    "provider": "ovhcloud",
-    "providerName": "OVHcloud AI Endpoints",
-    "displayName": "Qwen3.6-27B",
-    "family": null,
-    "releaseDate": "2026-06-01",
-    "lastUpdated": "2026-06-01",
+    "displayName": "Qwen3.8-27B",
+    "family": "qwen",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
     "maxOutputTokens": 262144,
@@ -406,145 +545,6 @@
     "pricing": {
       "input": 0.47,
       "output": 3.19,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "mistral-small-3.2-24b-instruct-2506",
-    "provider": "ovhcloud",
-    "providerName": "OVHcloud AI Endpoints",
-    "displayName": "Mistral-Small-3.2-24B-Instruct-2506",
-    "family": null,
-    "releaseDate": "2025-07-16",
-    "lastUpdated": "2025-07-16",
-    "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1,
-      "output": 0.31,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-oss-120b",
-    "provider": "ovhcloud",
-    "providerName": "OVHcloud AI Endpoints",
-    "displayName": "gpt-oss-120b",
-    "family": null,
-    "releaseDate": "2025-08-28",
-    "lastUpdated": "2025-08-28",
-    "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.09,
-      "output": 0.47,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "mistral-nemo-instruct-2407",
-    "provider": "ovhcloud",
-    "providerName": "OVHcloud AI Endpoints",
-    "displayName": "Mistral-Nemo-Instruct-2407",
-    "family": null,
-    "releaseDate": "2024-11-20",
-    "lastUpdated": "2024-11-20",
-    "knowledgeCutoff": null,
-    "contextWindow": 65536,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.14,
-      "output": 0.14,
       "currency": "USD",
       "per": 1000000
     },

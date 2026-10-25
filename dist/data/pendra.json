@@ -46,52 +46,6 @@
     ]
   },
   {
-    "id": "qwen3-coder:30b",
-    "provider": "pendra",
-    "providerName": "Pendra",
-    "displayName": "Qwen3-Coder 30B-A3B Instruct",
-    "family": "qwen",
-    "releaseDate": "2025-04",
-    "lastUpdated": "2025-04",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "gpt-oss:120b",
     "provider": "pendra",
     "providerName": "Pendra",
@@ -99,7 +53,7 @@
     "family": "gpt-oss",
     "releaseDate": "2025-08-05",
     "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": null,
+    "knowledgeCutoff": "2024-06",
     "contextWindow": 131072,
     "maxOutputTokens": 32768,
     "capabilities": {
@@ -185,20 +139,20 @@
     ]
   },
   {
-    "id": "glm-4.7-flash",
+    "id": "qwen3-coder:30b",
     "provider": "pendra",
     "providerName": "Pendra",
-    "displayName": "GLM-4.7-Flash",
-    "family": "glm-flash",
-    "releaseDate": "2026-01-19",
-    "lastUpdated": "2026-01-19",
+    "displayName": "Qwen3-Coder 30B-A3B Instruct",
+    "family": "qwen",
+    "releaseDate": "2025-07-31",
+    "lastUpdated": "2025-07-31",
     "knowledgeCutoff": "2025-04",
-    "contextWindow": 200000,
-    "maxOutputTokens": 131072,
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": true,
+      "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
@@ -251,6 +205,52 @@
       "temperature": true,
       "attachment": false,
       "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-4.7-flash",
+    "provider": "pendra",
+    "providerName": "Pendra",
+    "displayName": "GLM-4.7-Flash",
+    "family": "glm-flash",
+    "releaseDate": "2026-01-19",
+    "lastUpdated": "2026-01-19",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 200000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {

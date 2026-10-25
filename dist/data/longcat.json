@@ -1,5 +1,53 @@
 [
   {
+    "id": "LongCat-2.5-Preview",
+    "provider": "longcat",
+    "providerName": "LongCat",
+    "displayName": "LongCat-2.5-Preview",
+    "family": "longcat",
+    "releaseDate": "2026-09-25",
+    "lastUpdated": "2026-09-25",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 1.2,
+      "cacheRead": 0.006,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "LongCat-2.0",
     "provider": "longcat",
     "providerName": "LongCat",
@@ -8,7 +56,7 @@
     "releaseDate": "2026-06-30",
     "lastUpdated": "2026-06-30",
     "knowledgeCutoff": null,
-    "contextWindow": 1000000,
+    "contextWindow": 1048576,
     "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
@@ -17,10 +65,10 @@
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
-      "temperature": true,
+      "temperature": false,
       "attachment": false,
       "structured_output": false,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -31,9 +79,9 @@
       ]
     },
     "pricing": {
-      "input": 0.75,
-      "output": 2.95,
-      "cacheRead": 0.015,
+      "input": 0.3,
+      "output": 1.2,
+      "cacheRead": 0.006,
       "currency": "USD",
       "per": 1000000
     },

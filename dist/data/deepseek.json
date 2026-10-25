@@ -1,53 +1,5 @@
 [
   {
-    "id": "deepseek-v4-flash-vision-exp",
-    "provider": "deepseek",
-    "providerName": "DeepSeek",
-    "displayName": "DeepSeek V4 Flash Vision Exp",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-10-17",
-    "lastUpdated": "2026-10-17",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 393216,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.15,
-      "output": 0.6,
-      "cacheRead": 0.003,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "deepseek-flash",
     "provider": "deepseek",
     "providerName": "DeepSeek",
@@ -56,7 +8,7 @@
     "releaseDate": "2026-10-17",
     "lastUpdated": "2026-10-17",
     "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
+    "contextWindow": 1048576,
     "maxOutputTokens": 393216,
     "capabilities": {
       "tools": true,
@@ -101,10 +53,10 @@
     "providerName": "DeepSeek",
     "displayName": "DeepSeek V4 Pro",
     "family": "deepseek-thinking",
-    "releaseDate": "2026-08-12",
+    "releaseDate": "2026-08-13",
     "lastUpdated": "2026-08-22",
     "knowledgeCutoff": null,
-    "contextWindow": 1000000,
+    "contextWindow": 1048576,
     "maxOutputTokens": 393216,
     "capabilities": {
       "tools": true,
@@ -151,7 +103,55 @@
     "releaseDate": "2026-10-17",
     "lastUpdated": "2026-10-17",
     "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 393216,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.6,
+      "cacheRead": 0.003,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v4-flash-vision-exp",
+    "provider": "deepseek",
+    "providerName": "DeepSeek",
+    "displayName": "DeepSeek V4 Flash Vision Exp",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-10-17",
+    "lastUpdated": "2026-10-17",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
     "maxOutputTokens": 393216,
     "capabilities": {
       "tools": true,

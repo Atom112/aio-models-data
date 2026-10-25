@@ -1,5 +1,55 @@
 [
   {
+    "id": "glm-5.3-flash:fast",
+    "provider": "inco",
+    "providerName": "Inco",
+    "displayName": "GLM-5.3-Flash",
+    "family": "glm-flash",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 1,
+      "cacheRead": 0.06,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "kimi-k3:fast",
     "provider": "inco",
     "providerName": "Inco",
@@ -35,6 +85,7 @@
     "pricing": {
       "input": 6,
       "output": 30,
+      "cacheRead": 0.6,
       "currency": "USD",
       "per": 1000000
     },
@@ -48,10 +99,10 @@
     ]
   },
   {
-    "id": "glm-5.3:fast",
+    "id": "glm-5.3",
     "provider": "inco",
     "providerName": "Inco",
-    "displayName": "GLM-5.3 Fast",
+    "displayName": "GLM-5.3",
     "family": "glm",
     "releaseDate": "2026-08-14",
     "lastUpdated": "2026-08-14",
@@ -79,57 +130,9 @@
       ]
     },
     "pricing": {
-      "input": 2.8,
-      "output": 8.8,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm-5.3-flash:fast",
-    "provider": "inco",
-    "providerName": "Inco",
-    "displayName": "GLM-5.3-Flash",
-    "family": "glm-flash",
-    "releaseDate": "2026-08-26",
-    "lastUpdated": "2026-08-26",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.15,
-      "output": 0.5,
+      "input": 1.4,
+      "output": 4.4,
+      "cacheRead": 0.26,
       "currency": "USD",
       "per": 1000000
     },
@@ -178,6 +181,7 @@
     "pricing": {
       "input": 0.3,
       "output": 1.2,
+      "cacheRead": 0.06,
       "currency": "USD",
       "per": 1000000
     },
@@ -191,40 +195,40 @@
     ]
   },
   {
-    "id": "deepseek-v4.1-flash:fast",
+    "id": "glm-5.3:fast",
     "provider": "inco",
     "providerName": "Inco",
-    "displayName": "DeepSeek V4.1 Flash",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "knowledgeCutoff": "2025-05",
+    "displayName": "GLM-5.3 Fast",
+    "family": "glm",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
     "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.6,
-      "output": 2.4,
+      "input": 2.8,
+      "output": 8.8,
+      "cacheRead": 0.52,
       "currency": "USD",
       "per": 1000000
     },
@@ -273,6 +277,7 @@
     "pricing": {
       "input": 0.6,
       "output": 2.4,
+      "cacheRead": 0.12,
       "currency": "USD",
       "per": 1000000
     },
@@ -286,39 +291,41 @@
     ]
   },
   {
-    "id": "glm-5.3",
+    "id": "deepseek-v4.1-flash:fast",
     "provider": "inco",
     "providerName": "Inco",
-    "displayName": "GLM-5.3",
-    "family": "glm",
-    "releaseDate": "2026-08-14",
-    "lastUpdated": "2026-08-14",
-    "knowledgeCutoff": null,
+    "displayName": "DeepSeek V4.1 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
     "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 384000,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 1.4,
-      "output": 4.4,
+      "input": 0.6,
+      "output": 2.4,
+      "cacheRead": 0.012,
       "currency": "USD",
       "per": 1000000
     },

@@ -1,52 +1,5 @@
 [
   {
-    "id": "step-1-32k",
-    "provider": "stepfun",
-    "providerName": "StepFun (China)",
-    "displayName": "Step 1 (32K)",
-    "family": null,
-    "releaseDate": "2025-01-01",
-    "lastUpdated": "2026-02-13",
-    "knowledgeCutoff": "2024-06",
-    "contextWindow": 32768,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2.05,
-      "output": 9.59,
-      "cacheRead": 0.41,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "step-tts-2",
     "provider": "stepfun",
     "providerName": "StepFun (China)",
@@ -88,6 +41,53 @@
     ]
   },
   {
+    "id": "step-3.5-flash",
+    "provider": "stepfun",
+    "providerName": "StepFun (China)",
+    "displayName": "Step 3.5 Flash",
+    "family": "step",
+    "releaseDate": "2026-01-29",
+    "lastUpdated": "2026-02-13",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.10461,
+      "output": 0.31384,
+      "cacheRead": 0.02092,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "step-5-preview",
     "provider": "stepfun",
     "providerName": "StepFun (China)",
@@ -108,7 +108,7 @@
       "temperature": true,
       "attachment": true,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -121,103 +121,9 @@
       ]
     },
     "pricing": {
-      "input": 0.959,
-      "output": 2.741,
-      "cacheRead": 0.048,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "step-3.5-flash-2603",
-    "provider": "stepfun",
-    "providerName": "StepFun (China)",
-    "displayName": "Step 3.5 Flash 2603",
-    "family": null,
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-04-02",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 256000,
-    "maxOutputTokens": 256000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1,
-      "output": 0.3,
-      "cacheRead": 0.02,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "step-2-16k",
-    "provider": "stepfun",
-    "providerName": "StepFun (China)",
-    "displayName": "Step 2 (16K)",
-    "family": null,
-    "releaseDate": "2025-01-01",
-    "lastUpdated": "2026-02-13",
-    "knowledgeCutoff": "2024-06",
-    "contextWindow": 16384,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 5.21,
-      "output": 16.44,
-      "cacheRead": 1.04,
+      "input": 1.04613,
+      "output": 2.98895,
+      "cacheRead": 0.10461,
       "currency": "USD",
       "per": 1000000
     },
@@ -272,101 +178,13 @@
     ]
   },
   {
-    "id": "stepaudio-2.5-asr",
-    "provider": "stepfun",
-    "providerName": "StepFun (China)",
-    "displayName": "StepAudio 2.5 ASR",
-    "family": "step",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-07-02",
-    "knowledgeCutoff": null,
-    "contextWindow": 0,
-    "maxOutputTokens": 0,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "audio"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "step-3.5-flash",
-    "provider": "stepfun",
-    "providerName": "StepFun (China)",
-    "displayName": "Step 3.5 Flash",
-    "family": null,
-    "releaseDate": "2026-01-29",
-    "lastUpdated": "2026-06-15",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 256000,
-    "maxOutputTokens": 256000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1,
-      "output": 0.3,
-      "cacheRead": 0.02,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "step-3.7-flash",
     "provider": "stepfun",
     "providerName": "StepFun (China)",
     "displayName": "Step 3.7 Flash",
     "family": null,
     "releaseDate": "2026-05-29",
-    "lastUpdated": "2026-06-29",
+    "lastUpdated": "2026-05-29",
     "knowledgeCutoff": "2026-03-01",
     "contextWindow": 256000,
     "maxOutputTokens": 256000,
@@ -375,11 +193,11 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -393,12 +211,100 @@
       ]
     },
     "pricing": {
-      "input": 0.185,
-      "output": 1.11,
-      "cacheRead": 0.037,
+      "input": 0.20175,
+      "output": 1.21052,
+      "cacheRead": 0.04035,
       "currency": "USD",
       "per": 1000000
     },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "step-3.5-flash-2603",
+    "provider": "stepfun",
+    "providerName": "StepFun (China)",
+    "displayName": "Step 3.5 Flash 2603",
+    "family": "step",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.10461,
+      "output": 0.31384,
+      "cacheRead": 0.02092,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "stepaudio-2.5-asr",
+    "provider": "stepfun",
+    "providerName": "StepFun (China)",
+    "displayName": "StepAudio 2.5 ASR",
+    "family": "step",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-07-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 0,
+    "maxOutputTokens": 0,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,

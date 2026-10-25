@@ -1,14 +1,14 @@
 [
   {
-    "id": "agnes-2.5-pro-alpha",
+    "id": "agnes-2.5-flash",
     "provider": "agnes",
     "providerName": "Agnes AI",
-    "displayName": "Agnes 2.5 Pro Alpha",
+    "displayName": "Agnes 2.5 Flash",
     "family": null,
-    "releaseDate": "2026-07-24",
-    "lastUpdated": "2026-07-24",
+    "releaseDate": "2026-07",
+    "lastUpdated": "2026-07",
     "knowledgeCutoff": null,
-    "contextWindow": 1000000,
+    "contextWindow": 512000,
     "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
@@ -20,7 +20,7 @@
       "temperature": true,
       "attachment": true,
       "structured_output": true,
-      "open_weights": true
+      "open_weights": false
     },
     "modalities": {
       "input": [
@@ -32,9 +32,8 @@
       ]
     },
     "pricing": {
-      "input": 0.45,
-      "output": 0.9,
-      "cacheRead": 0.0038,
+      "input": 0,
+      "output": 0,
       "currency": "USD",
       "per": 1000000
     },
@@ -142,15 +141,15 @@
     ]
   },
   {
-    "id": "agnes-2.5-flash",
+    "id": "agnes-2.5-pro-alpha",
     "provider": "agnes",
     "providerName": "Agnes AI",
-    "displayName": "Agnes 2.5 Flash",
+    "displayName": "Agnes 2.5 Pro Alpha",
     "family": null,
-    "releaseDate": "2026-07",
-    "lastUpdated": "2026-07",
+    "releaseDate": "2026-07-24",
+    "lastUpdated": "2026-07-24",
     "knowledgeCutoff": null,
-    "contextWindow": 512000,
+    "contextWindow": 1000000,
     "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
@@ -162,7 +161,7 @@
       "temperature": true,
       "attachment": true,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -174,8 +173,9 @@
       ]
     },
     "pricing": {
-      "input": 0,
-      "output": 0,
+      "input": 0.45,
+      "output": 0.9,
+      "cacheRead": 0.0038,
       "currency": "USD",
       "per": 1000000
     },
