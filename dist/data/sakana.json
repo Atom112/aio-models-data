@@ -1,9 +1,9 @@
 [
   {
-    "id": "fugu-ultra",
+    "id": "fugu",
     "provider": "sakana",
     "providerName": "Sakana AI",
-    "displayName": "Fugu Ultra",
+    "displayName": "Fugu",
     "family": "fugu",
     "releaseDate": "2026-06-15",
     "lastUpdated": "2026-06-15",
@@ -31,25 +31,7 @@
         "text"
       ]
     },
-    "pricing": {
-      "input": 5,
-      "output": 30,
-      "cacheRead": 0.5,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 10,
-          "output": 45,
-          "contextThreshold": 272000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 10,
-        "output": 45,
-        "contextThreshold": 200000
-      }
-    },
+    "pricing": null,
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
@@ -120,10 +102,10 @@
     ]
   },
   {
-    "id": "fugu",
+    "id": "fugu-ultra",
     "provider": "sakana",
     "providerName": "Sakana AI",
-    "displayName": "Fugu",
+    "displayName": "Fugu Ultra",
     "family": "fugu",
     "releaseDate": "2026-06-15",
     "lastUpdated": "2026-06-15",
@@ -151,7 +133,25 @@
         "text"
       ]
     },
-    "pricing": null,
+    "pricing": {
+      "input": 5,
+      "output": 30,
+      "cacheRead": 0.5,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 10,
+          "output": 45,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 10,
+        "output": 45,
+        "contextThreshold": 200000
+      }
+    },
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,

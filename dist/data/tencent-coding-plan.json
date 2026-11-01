@@ -1,9 +1,9 @@
 [
   {
-    "id": "hunyuan-turbos",
+    "id": "hunyuan-t1",
     "provider": "tencent-coding-plan",
     "providerName": "Tencent Coding Plan (China)",
-    "displayName": "Hunyuan-TurboS",
+    "displayName": "Hunyuan-T1",
     "family": "hunyuan",
     "releaseDate": "2026-03-08",
     "lastUpdated": "2026-03-08",
@@ -13,7 +13,7 @@
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
@@ -98,10 +98,10 @@
     ]
   },
   {
-    "id": "hunyuan-2.0-instruct",
+    "id": "hunyuan-turbos",
     "provider": "tencent-coding-plan",
     "providerName": "Tencent Coding Plan (China)",
-    "displayName": "Tencent HY 2.0 Instruct",
+    "displayName": "Hunyuan-TurboS",
     "family": "hunyuan",
     "releaseDate": "2026-03-08",
     "lastUpdated": "2026-03-08",
@@ -194,54 +194,6 @@
     ]
   },
   {
-    "id": "tc-code-latest",
-    "provider": "tencent-coding-plan",
-    "providerName": "Tencent Coding Plan (China)",
-    "displayName": "Auto",
-    "family": "auto",
-    "releaseDate": "2026-03-08",
-    "lastUpdated": "2026-03-08",
-    "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "cacheWrite": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "minimax-m2.5",
     "provider": "tencent-coding-plan",
     "providerName": "Tencent Coding Plan (China)",
@@ -263,54 +215,6 @@
       "attachment": false,
       "structured_output": false,
       "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "cacheWrite": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "hunyuan-t1",
-    "provider": "tencent-coding-plan",
-    "providerName": "Tencent Coding Plan (China)",
-    "displayName": "Hunyuan-T1",
-    "family": "hunyuan",
-    "releaseDate": "2026-03-08",
-    "lastUpdated": "2026-03-08",
-    "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
     },
     "modalities": {
       "input": [
@@ -377,6 +281,102 @@
       "per": 1000000
     },
     "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "hunyuan-2.0-instruct",
+    "provider": "tencent-coding-plan",
+    "providerName": "Tencent Coding Plan (China)",
+    "displayName": "Tencent HY 2.0 Instruct",
+    "family": "hunyuan",
+    "releaseDate": "2026-03-08",
+    "lastUpdated": "2026-03-08",
+    "knowledgeCutoff": null,
+    "contextWindow": 131072,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "cacheWrite": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "tc-code-latest",
+    "provider": "tencent-coding-plan",
+    "providerName": "Tencent Coding Plan (China)",
+    "displayName": "Auto",
+    "family": "auto",
+    "releaseDate": "2026-03-08",
+    "lastUpdated": "2026-03-08",
+    "knowledgeCutoff": null,
+    "contextWindow": 131072,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "cacheWrite": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],

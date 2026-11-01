@@ -1,5 +1,102 @@
 [
   {
+    "id": "MiniMax-M2",
+    "provider": "minimax-cn",
+    "providerName": "MiniMax (minimax.cn)",
+    "displayName": "MiniMax-M2",
+    "family": "minimax",
+    "releaseDate": "2025-10-27",
+    "lastUpdated": "2025-10-27",
+    "knowledgeCutoff": null,
+    "contextWindow": 204800,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3137,
+      "output": 1.2549,
+      "cacheRead": 0.0314,
+      "cacheWrite": 0.3922,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "MiniMax-M3.1-Flash",
+    "provider": "minimax-cn",
+    "providerName": "MiniMax (minimax.cn)",
+    "displayName": "MiniMax-M3.1-Flash",
+    "family": "minimax",
+    "releaseDate": "2026-10-19",
+    "lastUpdated": "2026-10-19",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 524288,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1494,
+      "output": 0.5976,
+      "cacheRead": 0.0149,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "MiniMax-M2.7",
     "provider": "minimax-cn",
     "providerName": "MiniMax (minimax.cn)",
@@ -109,54 +206,6 @@
     ]
   },
   {
-    "id": "MiniMax-M2.5",
-    "provider": "minimax-cn",
-    "providerName": "MiniMax (minimax.cn)",
-    "displayName": "MiniMax-M2.5",
-    "family": "minimax",
-    "releaseDate": "2026-02-12",
-    "lastUpdated": "2026-02-12",
-    "knowledgeCutoff": null,
-    "contextWindow": 204800,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3137,
-      "output": 1.2549,
-      "cacheRead": 0.0314,
-      "cacheWrite": 0.3922,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "MiniMax-M2.5-highspeed",
     "provider": "minimax-cn",
     "providerName": "MiniMax (minimax.cn)",
@@ -196,55 +245,6 @@
       "per": 1000000
     },
     "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "MiniMax-M3.1-Flash",
-    "provider": "minimax-cn",
-    "providerName": "MiniMax (minimax.cn)",
-    "displayName": "MiniMax-M3.1-Flash",
-    "family": "minimax",
-    "releaseDate": "2026-10-19",
-    "lastUpdated": "2026-10-19",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 524288,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1494,
-      "output": 0.5976,
-      "cacheRead": 0.0149,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -302,13 +302,13 @@
     ]
   },
   {
-    "id": "MiniMax-M2",
+    "id": "MiniMax-M2.5",
     "provider": "minimax-cn",
     "providerName": "MiniMax (minimax.cn)",
-    "displayName": "MiniMax-M2",
+    "displayName": "MiniMax-M2.5",
     "family": "minimax",
-    "releaseDate": "2025-10-27",
-    "lastUpdated": "2025-10-27",
+    "releaseDate": "2026-02-12",
+    "lastUpdated": "2026-02-12",
     "knowledgeCutoff": null,
     "contextWindow": 204800,
     "maxOutputTokens": 131072,
