@@ -1,42 +1,39 @@
 [
   {
-    "id": "Qwen3.8-Max",
+    "id": "GLM-5.2",
     "provider": "scx-ai",
     "providerName": "SCX.ai",
-    "displayName": "Qwen3.8 Max",
-    "family": "qwen",
-    "releaseDate": "2026-08-03",
-    "lastUpdated": "2026-08-03",
+    "displayName": "GLM-5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
     "knowledgeCutoff": null,
     "contextWindow": 1000000,
     "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "video"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 1.815,
-      "output": 5.4461,
-      "cacheRead": 0.17,
-      "cacheWrite": 2.5,
+      "input": 0.55,
+      "output": 1.784,
+      "cacheRead": 0.111,
       "currency": "USD",
       "per": 1000000
     },
@@ -143,40 +140,43 @@
     ]
   },
   {
-    "id": "GLM-5.2",
+    "id": "Qwen3.8-Max",
     "provider": "scx-ai",
     "providerName": "SCX.ai",
-    "displayName": "GLM-5.2",
-    "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
+    "displayName": "Qwen3.8 Max",
+    "family": "qwen",
+    "releaseDate": "2026-08-03",
+    "lastUpdated": "2026-08-03",
     "knowledgeCutoff": null,
     "contextWindow": 1000000,
     "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
-      "open_weights": true
+      "open_weights": false
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "video"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.55,
-      "output": 1.784,
-      "cacheRead": 0.111,
+      "input": 1.815,
+      "output": 5.4461,
+      "cacheRead": 0.17,
+      "cacheWrite": 2.5,
       "currency": "USD",
       "per": 1000000
     },

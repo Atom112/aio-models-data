@@ -49,43 +49,37 @@
     ]
   },
   {
-    "id": "step-3.5-flash",
+    "id": "stepaudio-2.5-asr",
     "provider": "stepfun-ai",
     "providerName": "StepFun (Global)",
-    "displayName": "Step 3.5 Flash",
+    "displayName": "StepAudio 2.5 ASR",
     "family": "step",
-    "releaseDate": "2026-01-29",
-    "lastUpdated": "2026-02-13",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 256000,
-    "maxOutputTokens": 256000,
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-07-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 0,
+    "maxOutputTokens": 0,
     "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
     },
     "modalities": {
       "input": [
-        "text"
+        "audio"
       ],
       "output": [
         "text"
       ]
     },
-    "pricing": {
-      "input": 0.1,
-      "output": 0.3,
-      "cacheRead": 0.02,
-      "currency": "USD",
-      "per": 1000000
-    },
+    "pricing": null,
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
@@ -137,42 +131,40 @@
     ]
   },
   {
-    "id": "step-5-preview",
+    "id": "step-3.5-flash-2603",
     "provider": "stepfun-ai",
     "providerName": "StepFun (Global)",
-    "displayName": "Step 5 Preview",
-    "family": null,
-    "releaseDate": "2026-09-16",
-    "lastUpdated": "2026-09-20",
-    "knowledgeCutoff": null,
-    "contextWindow": 1024000,
-    "maxOutputTokens": 65536,
+    "displayName": "Step 3.5 Flash 2603",
+    "family": "step",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "video"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 1,
-      "output": 2.7,
-      "cacheRead": 0.1,
+      "input": 0.1,
+      "output": 0.3,
+      "cacheRead": 0.02,
       "currency": "USD",
       "per": 1000000
     },
@@ -186,13 +178,13 @@
     ]
   },
   {
-    "id": "step-3.5-flash-2603",
+    "id": "step-3.5-flash",
     "provider": "stepfun-ai",
     "providerName": "StepFun (Global)",
-    "displayName": "Step 3.5 Flash 2603",
+    "displayName": "Step 3.5 Flash",
     "family": "step",
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-04-02",
+    "releaseDate": "2026-01-29",
+    "lastUpdated": "2026-02-13",
     "knowledgeCutoff": "2025-01",
     "contextWindow": 256000,
     "maxOutputTokens": 256000,
@@ -274,37 +266,45 @@
     ]
   },
   {
-    "id": "stepaudio-2.5-asr",
+    "id": "step-5-preview",
     "provider": "stepfun-ai",
     "providerName": "StepFun (Global)",
-    "displayName": "StepAudio 2.5 ASR",
-    "family": "step",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-07-02",
+    "displayName": "Step 5 Preview",
+    "family": null,
+    "releaseDate": "2026-09-16",
+    "lastUpdated": "2026-09-20",
     "knowledgeCutoff": null,
-    "contextWindow": 0,
-    "maxOutputTokens": 0,
+    "contextWindow": 1024000,
+    "maxOutputTokens": 65536,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": true,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
-      "structured_output": false,
-      "open_weights": false
+      "structured_output": true,
+      "open_weights": true
     },
     "modalities": {
       "input": [
-        "audio"
+        "text",
+        "image",
+        "video"
       ],
       "output": [
         "text"
       ]
     },
-    "pricing": null,
+    "pricing": {
+      "input": 1,
+      "output": 2.7,
+      "cacheRead": 0.1,
+      "currency": "USD",
+      "per": 1000000
+    },
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,

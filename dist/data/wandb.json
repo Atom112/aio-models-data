@@ -1,19 +1,67 @@
 [
   {
-    "id": "meta-llama/Llama-3.3-70B-Instruct",
+    "id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B",
     "provider": "wandb",
     "providerName": "CoreWeave",
-    "displayName": "Llama 3.3 70B",
-    "family": "llama",
-    "releaseDate": "2024-12-06",
-    "lastUpdated": "2024-12-06",
-    "knowledgeCutoff": "2023-12",
-    "contextWindow": 128000,
-    "maxOutputTokens": 128000,
+    "displayName": "Nemotron 3.5 Super VL",
+    "family": "nemotron",
+    "releaseDate": "2026-10-15",
+    "lastUpdated": "2026-10-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.5,
+      "cacheRead": 0.02,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+    "provider": "wandb",
+    "providerName": "CoreWeave",
+    "displayName": "Nemotron 3.5 Lightning",
+    "family": "nemotron",
+    "releaseDate": "2026-08-11",
+    "lastUpdated": "2026-08-11",
+    "knowledgeCutoff": "2025-09",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
@@ -31,9 +79,9 @@
       ]
     },
     "pricing": {
-      "input": 0.71,
-      "output": 0.71,
-      "cacheRead": 0.71,
+      "input": 0.07,
+      "output": 0.2,
+      "cacheRead": 0.04,
       "currency": "USD",
       "per": 1000000
     },
@@ -47,20 +95,20 @@
     ]
   },
   {
-    "id": "meta-llama/Llama-3.1-8B-Instruct",
+    "id": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
     "provider": "wandb",
     "providerName": "CoreWeave",
-    "displayName": "Llama 3.1 8B",
-    "family": "llama",
-    "releaseDate": "2024-07-23",
-    "lastUpdated": "2024-07-23",
-    "knowledgeCutoff": "2023-12",
-    "contextWindow": 131072,
-    "maxOutputTokens": 131072,
+    "displayName": "Nemotron 3 Ultra",
+    "family": "nemotron",
+    "releaseDate": "2026-06-04",
+    "lastUpdated": "2026-06-04",
+    "knowledgeCutoff": "2025-09",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
@@ -78,9 +126,9 @@
       ]
     },
     "pricing": {
-      "input": 0.22,
-      "output": 0.22,
-      "cacheRead": 0.22,
+      "input": 0.5,
+      "output": 2.15,
+      "cacheRead": 0.1,
       "currency": "USD",
       "per": 1000000
     },
@@ -94,13 +142,13 @@
     ]
   },
   {
-    "id": "zai-org/GLM-5.3",
+    "id": "zai-org/GLM-5.2",
     "provider": "wandb",
     "providerName": "CoreWeave",
-    "displayName": "GLM 5.3",
+    "displayName": "GLM 5.2",
     "family": "glm",
-    "releaseDate": "2026-08-14",
-    "lastUpdated": "2026-08-14",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
     "maxOutputTokens": 1048576,
@@ -125,9 +173,9 @@
       ]
     },
     "pricing": {
-      "input": 1.2,
-      "output": 4,
-      "cacheRead": 0.19,
+      "input": 0.62,
+      "output": 2.42,
+      "cacheRead": 0.14,
       "currency": "USD",
       "per": 1000000
     },
@@ -189,13 +237,13 @@
     ]
   },
   {
-    "id": "zai-org/GLM-5.2",
+    "id": "zai-org/GLM-5.3",
     "provider": "wandb",
     "providerName": "CoreWeave",
-    "displayName": "GLM 5.2",
+    "displayName": "GLM 5.3",
     "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
     "maxOutputTokens": 1048576,
@@ -220,198 +268,9 @@
       ]
     },
     "pricing": {
-      "input": 0.62,
-      "output": 2.42,
-      "cacheRead": 0.14,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-V4-Flash-0731",
-    "provider": "wandb",
-    "providerName": "CoreWeave",
-    "displayName": "DeepSeek V4 Flash 0731",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-07-31",
-    "lastUpdated": "2026-07-31",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.13,
-      "output": 0.28,
-      "cacheRead": 0.07,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "provider": "wandb",
-    "providerName": "CoreWeave",
-    "displayName": "DeepSeek V4.1 Flash",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.13,
-      "output": 0.65,
-      "cacheRead": 0.002,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-V4-Pro-0813",
-    "provider": "wandb",
-    "providerName": "CoreWeave",
-    "displayName": "DeepSeek V4 Pro 0813",
-    "family": "deepseek-thinking",
-    "releaseDate": "2026-08-13",
-    "lastUpdated": "2026-08-22",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.31,
-      "output": 3.96,
-      "cacheRead": 0.044,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-V3.1",
-    "provider": "wandb",
-    "providerName": "CoreWeave",
-    "displayName": "DeepSeek V3.1",
-    "family": "deepseek",
-    "releaseDate": "2025-08-21",
-    "lastUpdated": "2025-08-21",
-    "knowledgeCutoff": null,
-    "contextWindow": 161000,
-    "maxOutputTokens": 161000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.55,
-      "output": 1.65,
-      "cacheRead": 0.55,
+      "input": 0.75,
+      "output": 3,
+      "cacheRead": 0.19,
       "currency": "USD",
       "per": 1000000
     },
@@ -472,41 +331,40 @@
     ]
   },
   {
-    "id": "google/gemma-4-26B-A4B-it",
+    "id": "openai/gpt-oss-120b",
     "provider": "wandb",
     "providerName": "CoreWeave",
-    "displayName": "Gemma 4 26B A4B",
-    "family": "gemma",
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-04-02",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "displayName": "gpt-oss-120b",
+    "family": "gpt-oss",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": "2024-06",
+    "contextWindow": 131072,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.1,
-      "output": 0.3,
-      "cacheRead": 0.05,
+      "input": 0.03,
+      "output": 0.17,
+      "cacheRead": 0.03,
       "currency": "USD",
       "per": 1000000
     },
@@ -520,89 +378,40 @@
     ]
   },
   {
-    "id": "google/gemma-4-31B-it",
+    "id": "openai/gpt-oss-20b",
     "provider": "wandb",
     "providerName": "CoreWeave",
-    "displayName": "Gemma 4 31B",
-    "family": "gemma",
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-04-02",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "displayName": "gpt-oss-20b",
+    "family": "gpt-oss",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": "2024-06",
+    "contextWindow": 131072,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.1,
-      "output": 0.34,
-      "cacheRead": 0.1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "moonshotai/Kimi-K2.6",
-    "provider": "wandb",
-    "providerName": "CoreWeave",
-    "displayName": "Kimi K2.6",
-    "family": "kimi-k2",
-    "releaseDate": "2026-04-20",
-    "lastUpdated": "2026-04-20",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.65,
-      "output": 3.41,
-      "cacheRead": 0.15,
+      "input": 0.03,
+      "output": 0.13,
+      "cacheRead": 0.03,
       "currency": "USD",
       "per": 1000000
     },
@@ -664,61 +473,14 @@
     ]
   },
   {
-    "id": "reflection/Beam-1.0-501B-A23B",
+    "id": "moonshotai/Kimi-K2.6",
     "provider": "wandb",
     "providerName": "CoreWeave",
-    "displayName": "Beam 1.0 501B A23B",
-    "family": "beam",
-    "releaseDate": "2026-10-05",
-    "lastUpdated": "2026-10-16",
-    "knowledgeCutoff": "2026-06-30",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 1,
-      "cacheRead": 0.04,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "MiniMaxAI/MiniMax-M3",
-    "provider": "wandb",
-    "providerName": "CoreWeave",
-    "displayName": "MiniMax M3",
-    "family": "minimax",
-    "releaseDate": "2026-06-01",
-    "lastUpdated": "2026-06-01",
-    "knowledgeCutoff": null,
+    "displayName": "Kimi K2.6",
+    "family": "kimi-k2",
+    "releaseDate": "2026-04-20",
+    "lastUpdated": "2026-04-20",
+    "knowledgeCutoff": "2025-01",
     "contextWindow": 262144,
     "maxOutputTokens": 262144,
     "capabilities": {
@@ -743,151 +505,9 @@
       ]
     },
     "pricing": {
-      "input": 0.23,
-      "output": 0.96,
-      "cacheRead": 0.05,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
-    "provider": "wandb",
-    "providerName": "CoreWeave",
-    "displayName": "Nemotron 3 Ultra",
-    "family": "nemotron",
-    "releaseDate": "2026-06-04",
-    "lastUpdated": "2026-06-04",
-    "knowledgeCutoff": "2025-09",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.5,
-      "output": 2.15,
-      "cacheRead": 0.1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
-    "provider": "wandb",
-    "providerName": "CoreWeave",
-    "displayName": "Nemotron 3.5 Lightning",
-    "family": "nemotron",
-    "releaseDate": "2026-08-11",
-    "lastUpdated": "2026-08-11",
-    "knowledgeCutoff": "2025-09",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.07,
-      "output": 0.2,
-      "cacheRead": 0.04,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B",
-    "provider": "wandb",
-    "providerName": "CoreWeave",
-    "displayName": "Nemotron 3.5 Super VL",
-    "family": "nemotron",
-    "releaseDate": "2026-10-15",
-    "lastUpdated": "2026-10-15",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.15,
-      "output": 0.5,
-      "cacheRead": 0.02,
+      "input": 0.65,
+      "output": 3.41,
+      "cacheRead": 0.15,
       "currency": "USD",
       "per": 1000000
     },
@@ -934,8 +554,8 @@
     },
     "pricing": {
       "input": 0.1,
-      "output": 0.95,
-      "cacheRead": 0.05,
+      "output": 0.89,
+      "cacheRead": 0.035,
       "currency": "USD",
       "per": 1000000
     },
@@ -997,40 +617,41 @@
     ]
   },
   {
-    "id": "openai/gpt-oss-20b",
+    "id": "MiniMaxAI/MiniMax-M3",
     "provider": "wandb",
     "providerName": "CoreWeave",
-    "displayName": "gpt-oss-20b",
-    "family": "gpt-oss",
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": "2024-06",
-    "contextWindow": 131072,
-    "maxOutputTokens": 131072,
+    "displayName": "MiniMax M3",
+    "family": "minimax",
+    "releaseDate": "2026-06-01",
+    "lastUpdated": "2026-06-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.03,
-      "output": 0.13,
-      "cacheRead": 0.03,
+      "input": 0.23,
+      "output": 0.96,
+      "cacheRead": 0.05,
       "currency": "USD",
       "per": 1000000
     },
@@ -1044,16 +665,16 @@
     ]
   },
   {
-    "id": "openai/gpt-oss-120b",
+    "id": "reflection/Beam-1.0-501B-A23B",
     "provider": "wandb",
     "providerName": "CoreWeave",
-    "displayName": "gpt-oss-120b",
-    "family": "gpt-oss",
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": "2024-06",
-    "contextWindow": 131072,
-    "maxOutputTokens": 131072,
+    "displayName": "Beam 1.0 501B A23B",
+    "family": "beam",
+    "releaseDate": "2026-10-05",
+    "lastUpdated": "2026-10-16",
+    "knowledgeCutoff": "2026-06-30",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -1075,9 +696,436 @@
       ]
     },
     "pricing": {
-      "input": 0.03,
-      "output": 0.17,
-      "cacheRead": 0.03,
+      "input": 0.3,
+      "output": 1,
+      "cacheRead": 0.04,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "meta-llama/Llama-3.1-8B-Instruct",
+    "provider": "wandb",
+    "providerName": "CoreWeave",
+    "displayName": "Llama 3.1 8B",
+    "family": "llama",
+    "releaseDate": "2024-07-23",
+    "lastUpdated": "2024-07-23",
+    "knowledgeCutoff": "2023-12",
+    "contextWindow": 131072,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.22,
+      "output": 0.22,
+      "cacheRead": 0.22,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "meta-llama/Llama-3.3-70B-Instruct",
+    "provider": "wandb",
+    "providerName": "CoreWeave",
+    "displayName": "Llama 3.3 70B",
+    "family": "llama",
+    "releaseDate": "2024-12-06",
+    "lastUpdated": "2024-12-06",
+    "knowledgeCutoff": "2023-12",
+    "contextWindow": 128000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.71,
+      "output": 0.71,
+      "cacheRead": 0.71,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "google/gemma-4-31B-it",
+    "provider": "wandb",
+    "providerName": "CoreWeave",
+    "displayName": "Gemma 4 31B",
+    "family": "gemma",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.34,
+      "cacheRead": 0.1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "google/gemma-4-26B-A4B-it",
+    "provider": "wandb",
+    "providerName": "CoreWeave",
+    "displayName": "Gemma 4 26B A4B",
+    "family": "gemma",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.3,
+      "cacheRead": 0.05,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V4-Pro-0813",
+    "provider": "wandb",
+    "providerName": "CoreWeave",
+    "displayName": "DeepSeek V4 Pro 0813",
+    "family": "deepseek-thinking",
+    "releaseDate": "2026-08-13",
+    "lastUpdated": "2026-08-22",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.31,
+      "output": 3.96,
+      "cacheRead": 0.044,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V4-Flash-0731",
+    "provider": "wandb",
+    "providerName": "CoreWeave",
+    "displayName": "DeepSeek V4 Flash 0731",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-07-31",
+    "lastUpdated": "2026-07-31",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.13,
+      "output": 0.27,
+      "cacheRead": 0.05,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V3.1",
+    "provider": "wandb",
+    "providerName": "CoreWeave",
+    "displayName": "DeepSeek V3.1",
+    "family": "deepseek",
+    "releaseDate": "2025-08-21",
+    "lastUpdated": "2025-08-21",
+    "knowledgeCutoff": null,
+    "contextWindow": 161000,
+    "maxOutputTokens": 161000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.5,
+      "output": 1.5,
+      "cacheRead": 0.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "provider": "wandb",
+    "providerName": "CoreWeave",
+    "displayName": "DeepSeek V4.1 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.13,
+      "output": 0.65,
+      "cacheRead": 0.002,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "provider": "wandb",
+    "providerName": "CoreWeave",
+    "displayName": "DeepSeek V4.1 Flash 1017",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-10-17",
+    "lastUpdated": "2026-10-17",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 1.2,
+      "cacheRead": 0.006,
       "currency": "USD",
       "per": 1000000
     },

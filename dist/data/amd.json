@@ -1,15 +1,15 @@
 [
   {
-    "id": "MiniCPM-V-4.7-35B-A3B",
+    "id": "MiMo-V2.6-Flash",
     "provider": "amd",
     "providerName": "AMD",
-    "displayName": "MiniCPM-V 4.7 35B-A3B",
-    "family": null,
-    "releaseDate": "2026-10-07",
-    "lastUpdated": "2026-10-07",
+    "displayName": "MiMo-V2.6-Flash",
+    "family": "mimo",
+    "releaseDate": "2026-09-22",
+    "lastUpdated": "2026-09-22",
     "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -96,13 +96,13 @@
     ]
   },
   {
-    "id": "MiniCPM-V-4.7-1B",
+    "id": "MiniCPM-V-4.7-35B-A3B",
     "provider": "amd",
     "providerName": "AMD",
-    "displayName": "MiniCPM-V 4.7 1B",
+    "displayName": "MiniCPM-V 4.7 35B-A3B",
     "family": null,
-    "releaseDate": "2026-10-06",
-    "lastUpdated": "2026-10-06",
+    "releaseDate": "2026-10-07",
+    "lastUpdated": "2026-10-07",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
     "maxOutputTokens": 262144,
@@ -144,64 +144,16 @@
     ]
   },
   {
-    "id": "Qwen3.8-Flash-Next",
+    "id": "MiniCPM-V-4.7-1B",
     "provider": "amd",
     "providerName": "AMD",
-    "displayName": "Qwen3.8 Flash Next",
-    "family": "qwen",
-    "releaseDate": "2026-08-27",
-    "lastUpdated": "2026-08-27",
+    "displayName": "MiniCPM-V 4.7 1B",
+    "family": null,
+    "releaseDate": "2026-10-06",
+    "lastUpdated": "2026-10-06",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "DeepSeek-V4.1-Flash",
-    "provider": "amd",
-    "providerName": "AMD",
-    "displayName": "DeepSeek V4.1 Flash",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-10-17",
-    "lastUpdated": "2026-10-17",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 384000,
+    "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -288,16 +240,16 @@
     ]
   },
   {
-    "id": "Gemma-4-31B-IT",
+    "id": "Qwen3.8-Flash-Next",
     "provider": "amd",
     "providerName": "AMD",
-    "displayName": "Gemma 4 31B IT",
-    "family": "gemma",
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-04-02",
-    "knowledgeCutoff": "2025-01",
+    "displayName": "Qwen3.8 Flash Next",
+    "family": "qwen",
+    "releaseDate": "2026-08-27",
+    "lastUpdated": "2026-08-27",
+    "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 32768,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -336,32 +288,31 @@
     ]
   },
   {
-    "id": "MiMo-V2.6-Flash",
+    "id": "MiniCPM5-2B",
     "provider": "amd",
     "providerName": "AMD",
-    "displayName": "MiMo-V2.6-Flash",
-    "family": "mimo",
-    "releaseDate": "2026-09-22",
-    "lastUpdated": "2026-09-22",
+    "displayName": "MiniCPM5-2B",
+    "family": null,
+    "releaseDate": "2026-09-06",
+    "lastUpdated": "2026-09-12",
     "knowledgeCutoff": null,
-    "contextWindow": 1048576,
+    "contextWindow": 131072,
     "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
-      "structured_output": true,
+      "attachment": false,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
@@ -431,31 +382,32 @@
     ]
   },
   {
-    "id": "DeepSeek-V4-Flash",
+    "id": "Gemma-4-31B-IT",
     "provider": "amd",
     "providerName": "AMD",
-    "displayName": "DeepSeek V4 Flash 0731",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-07-31",
-    "lastUpdated": "2026-07-31",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 384000,
+    "displayName": "Gemma 4 31B IT",
+    "family": "gemma",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
@@ -478,26 +430,74 @@
     ]
   },
   {
-    "id": "MiniCPM5-2B",
+    "id": "DeepSeek-V4.1-Flash",
     "provider": "amd",
     "providerName": "AMD",
-    "displayName": "MiniCPM5-2B",
-    "family": null,
-    "releaseDate": "2026-09-06",
-    "lastUpdated": "2026-09-12",
-    "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 131072,
+    "displayName": "DeepSeek V4.1 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-10-17",
+    "lastUpdated": "2026-10-17",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "DeepSeek-V4-Flash",
+    "provider": "amd",
+    "providerName": "AMD",
+    "displayName": "DeepSeek V4 Flash 0731",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-07-31",
+    "lastUpdated": "2026-07-31",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 384000,
     "capabilities": {
       "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {

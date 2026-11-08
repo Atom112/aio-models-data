@@ -1,12 +1,12 @@
 [
   {
-    "id": "zai-org/GLM-5.3",
+    "id": "zai-org/GLM-5.2",
     "provider": "inceptron",
     "providerName": "Inceptron",
-    "displayName": "GLM 5.3",
+    "displayName": "GLM 5.2",
     "family": "glm",
-    "releaseDate": "2026-08-14",
-    "lastUpdated": "2026-08-14",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
     "maxOutputTokens": 1048576,
@@ -32,8 +32,8 @@
     },
     "pricing": {
       "input": 1.4,
-      "output": 2.64,
-      "cacheRead": 0.14,
+      "output": 4.4,
+      "cacheRead": 0.19,
       "cacheWrite": 0,
       "currency": "USD",
       "per": 1000000
@@ -79,9 +79,9 @@
       ]
     },
     "pricing": {
-      "input": 0.19,
-      "output": 0.6,
-      "cacheRead": 0.06,
+      "input": 0.175,
+      "output": 0.45,
+      "cacheRead": 0.04,
       "cacheWrite": 0,
       "currency": "USD",
       "per": 1000000
@@ -96,13 +96,13 @@
     ]
   },
   {
-    "id": "zai-org/GLM-5.2",
+    "id": "zai-org/GLM-5.3",
     "provider": "inceptron",
     "providerName": "Inceptron",
-    "displayName": "GLM 5.2",
+    "displayName": "GLM 5.3",
     "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
     "maxOutputTokens": 1048576,
@@ -127,106 +127,9 @@
       ]
     },
     "pricing": {
-      "input": 1.4,
-      "output": 4.4,
-      "cacheRead": 0.16,
-      "cacheWrite": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-V4-Flash-0731",
-    "provider": "inceptron",
-    "providerName": "Inceptron",
-    "displayName": "DeepSeek V4 Flash 0731",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-07-31",
-    "lastUpdated": "2026-07-31",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.13,
-      "output": 0.495,
-      "cacheRead": 0.027,
-      "cacheWrite": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "moonshotai/Kimi-K2.6",
-    "provider": "inceptron",
-    "providerName": "Inceptron",
-    "displayName": "Kimi K2.6",
-    "family": "kimi-k2",
-    "releaseDate": "2026-04-20",
-    "lastUpdated": "2026-04-20",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.6821,
-      "output": 3.5,
-      "cacheRead": 0.1831,
+      "input": 1,
+      "output": 4.9,
+      "cacheRead": 0.14,
       "cacheWrite": 0,
       "currency": "USD",
       "per": 1000000
@@ -275,7 +178,104 @@
     "pricing": {
       "input": 0.6,
       "output": 3.5,
-      "cacheRead": 0.15,
+      "cacheRead": 0.16,
+      "cacheWrite": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "moonshotai/Kimi-K2.6",
+    "provider": "inceptron",
+    "providerName": "Inceptron",
+    "displayName": "Kimi K2.6",
+    "family": "kimi-k2",
+    "releaseDate": "2026-04-20",
+    "lastUpdated": "2026-04-20",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.7995,
+      "output": 3.75,
+      "cacheRead": 0.156,
+      "cacheWrite": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V4-Flash-0731",
+    "provider": "inceptron",
+    "providerName": "Inceptron",
+    "displayName": "DeepSeek V4 Flash 0731",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-07-31",
+    "lastUpdated": "2026-07-31",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.13,
+      "output": 0.495,
+      "cacheRead": 0.027,
       "cacheWrite": 0,
       "currency": "USD",
       "per": 1000000

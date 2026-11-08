@@ -1,5 +1,52 @@
 [
   {
+    "id": "hy4-preview",
+    "provider": "tencent-token-plan",
+    "providerName": "Tencent Token Plan",
+    "displayName": "Hy4 preview",
+    "family": "Hy",
+    "releaseDate": "2026-08-28",
+    "lastUpdated": "2026-08-28",
+    "knowledgeCutoff": null,
+    "contextWindow": 1024000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.834,
+      "output": 2.501,
+      "cacheRead": 0.042,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "hy3",
     "provider": "tencent-token-plan",
     "providerName": "Tencent Token Plan",
@@ -48,31 +95,32 @@
     ]
   },
   {
-    "id": "hy4-preview",
+    "id": "hy4",
     "provider": "tencent-token-plan",
     "providerName": "Tencent Token Plan",
-    "displayName": "Hy4 preview",
+    "displayName": "Hy4",
     "family": "Hy",
-    "releaseDate": "2026-08-28",
-    "lastUpdated": "2026-08-28",
+    "releaseDate": "2026-11-04",
+    "lastUpdated": "2026-11-04",
     "knowledgeCutoff": null,
-    "contextWindow": 1024000,
-    "maxOutputTokens": 64000,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": false,
-      "open_weights": true
+      "open_weights": false
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"

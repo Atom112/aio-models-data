@@ -49,14 +49,63 @@
     ]
   },
   {
-    "id": "deepseek-ai/deepseek-v4-flash",
+    "id": "qwen/qwen3.8-27b",
     "provider": "munito",
     "providerName": "Munito AI",
-    "displayName": "DeepSeek V4 Flash 0731",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-07-31",
-    "lastUpdated": "2026-07-31",
-    "knowledgeCutoff": "2025-05",
+    "displayName": "Qwen3.8 27B",
+    "family": "qwen",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 235929,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.18,
+      "output": 2.4,
+      "cacheRead": 0.05,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "aleph-alpha/kolibri-1",
+    "provider": "munito",
+    "providerName": "Munito AI",
+    "displayName": "Kolibri 1",
+    "family": null,
+    "releaseDate": "2026-10-03",
+    "lastUpdated": "2026-10-03",
+    "knowledgeCutoff": "2026-06-18",
     "contextWindow": 1048576,
     "maxOutputTokens": 943718,
     "capabilities": {
@@ -80,9 +129,9 @@
       ]
     },
     "pricing": {
-      "input": 0.099,
-      "output": 0.25,
-      "cacheRead": 0.019,
+      "input": 0.13,
+      "output": 0.51,
+      "cacheRead": 0.078,
       "currency": "USD",
       "per": 1000000
     },
@@ -144,14 +193,14 @@
     ]
   },
   {
-    "id": "aleph-alpha/kolibri-1",
+    "id": "deepseek-ai/deepseek-v4-flash",
     "provider": "munito",
     "providerName": "Munito AI",
-    "displayName": "Kolibri 1",
-    "family": null,
-    "releaseDate": "2026-10-03",
-    "lastUpdated": "2026-10-03",
-    "knowledgeCutoff": "2026-06-18",
+    "displayName": "DeepSeek V4 Flash 0731",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-07-31",
+    "lastUpdated": "2026-07-31",
+    "knowledgeCutoff": "2025-05",
     "contextWindow": 1048576,
     "maxOutputTokens": 943718,
     "capabilities": {
@@ -175,58 +224,9 @@
       ]
     },
     "pricing": {
-      "input": 0.13,
-      "output": 0.51,
-      "cacheRead": 0.078,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen/qwen3.8-27b",
-    "provider": "munito",
-    "providerName": "Munito AI",
-    "displayName": "Qwen3.8 27B",
-    "family": "qwen",
-    "releaseDate": "2026-08-14",
-    "lastUpdated": "2026-08-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 235929,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.18,
-      "output": 2.4,
-      "cacheRead": 0.05,
+      "input": 0.099,
+      "output": 0.25,
+      "cacheRead": 0.019,
       "currency": "USD",
       "per": 1000000
     },

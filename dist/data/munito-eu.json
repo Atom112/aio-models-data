@@ -49,40 +49,42 @@
     ]
   },
   {
-    "id": "deepseek-ai/deepseek-v4-flash",
+    "id": "qwen/qwen3.8-27b",
     "provider": "munito-eu",
     "providerName": "Munito AI (EU)",
-    "displayName": "DeepSeek V4 Flash 0731",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-07-31",
-    "lastUpdated": "2026-07-31",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 943718,
+    "displayName": "Qwen3.8 27B",
+    "family": "qwen",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 235929,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "video"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.11,
-      "output": 0.28,
-      "cacheRead": 0.022,
+      "input": 0.2,
+      "output": 2.7,
+      "cacheRead": 0.11,
       "currency": "USD",
       "per": 1000000
     },
@@ -143,42 +145,40 @@
     ]
   },
   {
-    "id": "qwen/qwen3.8-27b",
+    "id": "deepseek-ai/deepseek-v4-flash",
     "provider": "munito-eu",
     "providerName": "Munito AI (EU)",
-    "displayName": "Qwen3.8 27B",
-    "family": "qwen",
-    "releaseDate": "2026-08-14",
-    "lastUpdated": "2026-08-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 235929,
+    "displayName": "DeepSeek V4 Flash 0731",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-07-31",
+    "lastUpdated": "2026-07-31",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 943718,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "video"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.2,
-      "output": 2.7,
-      "cacheRead": 0.11,
+      "input": 0.11,
+      "output": 0.28,
+      "cacheRead": 0.022,
       "currency": "USD",
       "per": 1000000
     },

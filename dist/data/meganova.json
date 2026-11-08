@@ -1,19 +1,19 @@
 [
   {
-    "id": "meta-llama/Llama-3.3-70B-Instruct",
+    "id": "zai-org/GLM-4.6",
     "provider": "meganova",
     "providerName": "Meganova",
-    "displayName": "Llama 3.3 70B Instruct",
-    "family": "llama",
-    "releaseDate": "2024-12-06",
-    "lastUpdated": "2024-12-06",
-    "knowledgeCutoff": "2023-12",
-    "contextWindow": 131072,
-    "maxOutputTokens": 16384,
+    "displayName": "GLM-4.6",
+    "family": "glm",
+    "releaseDate": "2025-09-30",
+    "lastUpdated": "2025-09-30",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 202752,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
@@ -31,8 +31,8 @@
       ]
     },
     "pricing": {
-      "input": 0.1,
-      "output": 0.3,
+      "input": 0.45,
+      "output": 1.9,
       "currency": "USD",
       "per": 1000000
     },
@@ -140,31 +140,32 @@
     ]
   },
   {
-    "id": "zai-org/GLM-4.6",
+    "id": "moonshotai/Kimi-K2.5",
     "provider": "meganova",
     "providerName": "Meganova",
-    "displayName": "GLM-4.6",
-    "family": "glm",
-    "releaseDate": "2025-09-30",
-    "lastUpdated": "2025-09-30",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 202752,
-    "maxOutputTokens": 131072,
+    "displayName": "Kimi K2.5",
+    "family": "kimi-k2",
+    "releaseDate": "2026-01-27",
+    "lastUpdated": "2026-01-27",
+    "knowledgeCutoff": "2026-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
@@ -172,240 +173,8 @@
     },
     "pricing": {
       "input": 0.45,
-      "output": 1.9,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-V3.2",
-    "provider": "meganova",
-    "providerName": "Meganova",
-    "displayName": "DeepSeek V3.2",
-    "family": "deepseek",
-    "releaseDate": "2025-12-01",
-    "lastUpdated": "2025-12-01",
-    "knowledgeCutoff": "2024-07",
-    "contextWindow": 164000,
-    "maxOutputTokens": 164000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.26,
-      "output": 0.38,
-      "cacheRead": 0.13,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-V3-0324",
-    "provider": "meganova",
-    "providerName": "Meganova",
-    "displayName": "DeepSeek V3 0324",
-    "family": "deepseek",
-    "releaseDate": "2025-03-24",
-    "lastUpdated": "2025-03-24",
-    "knowledgeCutoff": null,
-    "contextWindow": 163840,
-    "maxOutputTokens": 163840,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.275,
-      "output": 1.1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-R1-0528",
-    "provider": "meganova",
-    "providerName": "Meganova",
-    "displayName": "DeepSeek R1 0528",
-    "family": "deepseek-thinking",
-    "releaseDate": "2025-05-28",
-    "lastUpdated": "2025-05-28",
-    "knowledgeCutoff": "2024-07",
-    "contextWindow": 163840,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.5,
-      "output": 2.15,
-      "cacheRead": 0.4,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-V3.1",
-    "provider": "meganova",
-    "providerName": "Meganova",
-    "displayName": "DeepSeek V3.1",
-    "family": "deepseek",
-    "releaseDate": "2025-08-21",
-    "lastUpdated": "2025-08-21",
-    "knowledgeCutoff": null,
-    "contextWindow": 164000,
-    "maxOutputTokens": 164000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.19,
-      "output": 0.79,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-V3.2-Exp",
-    "provider": "meganova",
-    "providerName": "Meganova",
-    "displayName": "DeepSeek V3.2 Exp",
-    "family": "deepseek",
-    "releaseDate": "2025-10-10",
-    "lastUpdated": "2025-10-10",
-    "knowledgeCutoff": null,
-    "contextWindow": 164000,
-    "maxOutputTokens": 164000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.26,
-      "output": 0.38,
-      "cacheRead": 0.13,
+      "output": 2.25,
+      "cacheRead": 0.07,
       "currency": "USD",
       "per": 1000000
     },
@@ -465,16 +234,16 @@
     ]
   },
   {
-    "id": "moonshotai/Kimi-K2.5",
+    "id": "Qwen/Qwen3.5-Plus",
     "provider": "meganova",
     "providerName": "Meganova",
-    "displayName": "Kimi K2.5",
-    "family": "kimi-k2",
-    "releaseDate": "2026-01-27",
-    "lastUpdated": "2026-01-27",
-    "knowledgeCutoff": "2026-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "displayName": "Qwen3.5 Plus",
+    "family": "qwen",
+    "releaseDate": "2026-02-16",
+    "lastUpdated": "2026-02-16",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -485,6 +254,100 @@
       "temperature": true,
       "attachment": true,
       "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.4,
+      "output": 2.4,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+    "provider": "meganova",
+    "providerName": "Meganova",
+    "displayName": "Qwen3 235B A22B Instruct 2507",
+    "family": "qwen",
+    "releaseDate": "2025-07-21",
+    "lastUpdated": "2025-07-21",
+    "knowledgeCutoff": null,
+    "contextWindow": 262000,
+    "maxOutputTokens": 262000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.09,
+      "output": 0.1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen/Qwen2.5-VL-32B-Instruct",
+    "provider": "meganova",
+    "providerName": "Meganova",
+    "displayName": "Qwen2.5 VL 32B Instruct",
+    "family": "qwen",
+    "releaseDate": "2025-03-24",
+    "lastUpdated": "2025-03-24",
+    "knowledgeCutoff": null,
+    "contextWindow": 16384,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -497,9 +360,8 @@
       ]
     },
     "pricing": {
-      "input": 0.45,
-      "output": 2.25,
-      "cacheRead": 0.07,
+      "input": 0.2,
+      "output": 0.6,
       "currency": "USD",
       "per": 1000000
     },
@@ -699,147 +561,6 @@
     ]
   },
   {
-    "id": "Qwen/Qwen3.5-Plus",
-    "provider": "meganova",
-    "providerName": "Meganova",
-    "displayName": "Qwen3.5 Plus",
-    "family": "qwen",
-    "releaseDate": "2026-02-16",
-    "lastUpdated": "2026-02-16",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.4,
-      "output": 2.4,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen2.5-VL-32B-Instruct",
-    "provider": "meganova",
-    "providerName": "Meganova",
-    "displayName": "Qwen2.5 VL 32B Instruct",
-    "family": "qwen",
-    "releaseDate": "2025-03-24",
-    "lastUpdated": "2025-03-24",
-    "knowledgeCutoff": null,
-    "contextWindow": 16384,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2,
-      "output": 0.6,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
-    "provider": "meganova",
-    "providerName": "Meganova",
-    "displayName": "Qwen3 235B A22B Instruct 2507",
-    "family": "qwen",
-    "releaseDate": "2025-07-21",
-    "lastUpdated": "2025-07-21",
-    "knowledgeCutoff": null,
-    "contextWindow": 262000,
-    "maxOutputTokens": 262000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.09,
-      "output": 0.1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "XiaomiMiMo/MiMo-V2-Flash",
     "provider": "meganova",
     "providerName": "Meganova",
@@ -877,6 +598,285 @@
       "per": 1000000
     },
     "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "meta-llama/Llama-3.3-70B-Instruct",
+    "provider": "meganova",
+    "providerName": "Meganova",
+    "displayName": "Llama 3.3 70B Instruct",
+    "family": "llama",
+    "releaseDate": "2024-12-06",
+    "lastUpdated": "2024-12-06",
+    "knowledgeCutoff": "2023-12",
+    "contextWindow": 131072,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V3.2",
+    "provider": "meganova",
+    "providerName": "Meganova",
+    "displayName": "DeepSeek V3.2",
+    "family": "deepseek",
+    "releaseDate": "2025-12-01",
+    "lastUpdated": "2025-12-01",
+    "knowledgeCutoff": "2024-07",
+    "contextWindow": 164000,
+    "maxOutputTokens": 164000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.26,
+      "output": 0.38,
+      "cacheRead": 0.13,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-R1-0528",
+    "provider": "meganova",
+    "providerName": "Meganova",
+    "displayName": "DeepSeek R1 0528",
+    "family": "deepseek-thinking",
+    "releaseDate": "2025-05-28",
+    "lastUpdated": "2025-05-28",
+    "knowledgeCutoff": "2024-07",
+    "contextWindow": 163840,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.5,
+      "output": 2.15,
+      "cacheRead": 0.4,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V3.2-Exp",
+    "provider": "meganova",
+    "providerName": "Meganova",
+    "displayName": "DeepSeek V3.2 Exp",
+    "family": "deepseek",
+    "releaseDate": "2025-10-10",
+    "lastUpdated": "2025-10-10",
+    "knowledgeCutoff": null,
+    "contextWindow": 164000,
+    "maxOutputTokens": 164000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.26,
+      "output": 0.38,
+      "cacheRead": 0.13,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V3.1",
+    "provider": "meganova",
+    "providerName": "Meganova",
+    "displayName": "DeepSeek V3.1",
+    "family": "deepseek",
+    "releaseDate": "2025-08-21",
+    "lastUpdated": "2025-08-21",
+    "knowledgeCutoff": null,
+    "contextWindow": 164000,
+    "maxOutputTokens": 164000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.19,
+      "output": 0.79,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V3-0324",
+    "provider": "meganova",
+    "providerName": "Meganova",
+    "displayName": "DeepSeek V3 0324",
+    "family": "deepseek",
+    "releaseDate": "2025-03-24",
+    "lastUpdated": "2025-03-24",
+    "knowledgeCutoff": null,
+    "contextWindow": 163840,
+    "maxOutputTokens": 163840,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.275,
+      "output": 1.1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],

@@ -1,12 +1,108 @@
 [
   {
-    "id": "kimi-k2.6",
+    "id": "gpt-5.6-luna",
     "provider": "routing-run",
     "providerName": "routing.run",
-    "displayName": "Kimi K2.6",
+    "displayName": "GPT-5.6 Luna",
+    "family": "gpt-luna",
+    "releaseDate": "2026-07-09",
+    "lastUpdated": "2026-07-09",
+    "knowledgeCutoff": "2026-02-16",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.7,
+      "output": 4.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.6-sol",
+    "provider": "routing-run",
+    "providerName": "routing.run",
+    "displayName": "GPT-5.6 Sol",
+    "family": "gpt-sol",
+    "releaseDate": "2026-07-09",
+    "lastUpdated": "2026-07-09",
+    "knowledgeCutoff": "2026-02-16",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.5,
+      "output": 15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k2.7-code",
+    "provider": "routing-run",
+    "providerName": "routing.run",
+    "displayName": "Kimi K2.7 Code",
     "family": "kimi-k2",
-    "releaseDate": "2026-04-20",
-    "lastUpdated": "2026-04-20",
+    "releaseDate": "2026-06-12",
+    "lastUpdated": "2026-06-12",
     "knowledgeCutoff": "2025-01",
     "contextWindow": 200000,
     "maxOutputTokens": 32000,
@@ -17,7 +113,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": true,
+      "temperature": false,
       "attachment": true,
       "structured_output": true,
       "open_weights": true
@@ -48,13 +144,59 @@
     ]
   },
   {
-    "id": "kimi-k2.6-nitro",
+    "id": "glm-5.2",
     "provider": "routing-run",
     "providerName": "routing.run",
-    "displayName": "Kimi K2.6 Nitro",
+    "displayName": "GLM-5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.8,
+      "output": 2.4,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k2.7-code-nitro",
+    "provider": "routing-run",
+    "providerName": "routing.run",
+    "displayName": "Kimi K2.7 Code Nitro",
     "family": "kimi-k2",
-    "releaseDate": "2026-04-20",
-    "lastUpdated": "2026-04-20",
+    "releaseDate": "2026-06-12",
+    "lastUpdated": "2026-06-12",
     "knowledgeCutoff": "2025-01",
     "contextWindow": 200000,
     "maxOutputTokens": 32000,
@@ -65,7 +207,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": true,
+      "temperature": false,
       "attachment": true,
       "structured_output": true,
       "open_weights": true
@@ -144,52 +286,6 @@
     ]
   },
   {
-    "id": "deepseek-v4-flash",
-    "provider": "routing-run",
-    "providerName": "routing.run",
-    "displayName": "DeepSeek V4 Flash",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.112,
-      "output": 0.224,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "qwen3.5-9b",
     "provider": "routing-run",
     "providerName": "routing.run",
@@ -238,201 +334,13 @@
     ]
   },
   {
-    "id": "glm-5.2",
+    "id": "kimi-k2.6-nitro",
     "provider": "routing-run",
     "providerName": "routing.run",
-    "displayName": "GLM-5.2",
-    "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.8,
-      "output": 2.4,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm-5.2-nitro",
-    "provider": "routing-run",
-    "providerName": "routing.run",
-    "displayName": "GLM 5.2 Nitro",
-    "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.8,
-      "output": 2.4,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5.6-sol",
-    "provider": "routing-run",
-    "providerName": "routing.run",
-    "displayName": "GPT-5.6 Sol",
-    "family": "gpt-sol",
-    "releaseDate": "2026-07-09",
-    "lastUpdated": "2026-07-09",
-    "knowledgeCutoff": "2026-02-16",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2.5,
-      "output": 15,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5.6-luna",
-    "provider": "routing-run",
-    "providerName": "routing.run",
-    "displayName": "GPT-5.6 Luna",
-    "family": "gpt-luna",
-    "releaseDate": "2026-07-09",
-    "lastUpdated": "2026-07-09",
-    "knowledgeCutoff": "2026-02-16",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.7,
-      "output": 4.2,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "kimi-k2.7-code-nitro",
-    "provider": "routing-run",
-    "providerName": "routing.run",
-    "displayName": "Kimi K2.7 Code Nitro",
+    "displayName": "Kimi K2.6 Nitro",
     "family": "kimi-k2",
-    "releaseDate": "2026-06-12",
-    "lastUpdated": "2026-06-12",
+    "releaseDate": "2026-04-20",
+    "lastUpdated": "2026-04-20",
     "knowledgeCutoff": "2025-01",
     "contextWindow": 200000,
     "maxOutputTokens": 32000,
@@ -443,7 +351,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
       "open_weights": true
@@ -461,52 +369,6 @@
     "pricing": {
       "input": 0.275,
       "output": 1.1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "nemotron-3-ultra",
-    "provider": "routing-run",
-    "providerName": "routing.run",
-    "displayName": "Nemotron 3 Ultra 550B A55B",
-    "family": "nemotron",
-    "releaseDate": "2026-06-04",
-    "lastUpdated": "2026-06-04",
-    "knowledgeCutoff": "2025-09",
-    "contextWindow": 131072,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1,
-      "output": 0.1,
       "currency": "USD",
       "per": 1000000
     },
@@ -568,6 +430,190 @@
     ]
   },
   {
+    "id": "deepseek-v4-flash",
+    "provider": "routing-run",
+    "providerName": "routing.run",
+    "displayName": "DeepSeek V4 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.112,
+      "output": 0.224,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "nemotron-3-ultra",
+    "provider": "routing-run",
+    "providerName": "routing.run",
+    "displayName": "Nemotron 3 Ultra 550B A55B",
+    "family": "nemotron",
+    "releaseDate": "2026-06-04",
+    "lastUpdated": "2026-06-04",
+    "knowledgeCutoff": "2025-09",
+    "contextWindow": 131072,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5.2-nitro",
+    "provider": "routing-run",
+    "providerName": "routing.run",
+    "displayName": "GLM 5.2 Nitro",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.8,
+      "output": 2.4,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v4-pro",
+    "provider": "routing-run",
+    "providerName": "routing.run",
+    "displayName": "DeepSeek V4 Pro",
+    "family": "deepseek-thinking",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.348,
+      "output": 0.696,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "gpt-5.6-terra",
     "provider": "routing-run",
     "providerName": "routing.run",
@@ -616,13 +662,13 @@
     ]
   },
   {
-    "id": "kimi-k2.7-code",
+    "id": "kimi-k2.6",
     "provider": "routing-run",
     "providerName": "routing.run",
-    "displayName": "Kimi K2.7 Code",
+    "displayName": "Kimi K2.6",
     "family": "kimi-k2",
-    "releaseDate": "2026-06-12",
-    "lastUpdated": "2026-06-12",
+    "releaseDate": "2026-04-20",
+    "lastUpdated": "2026-04-20",
     "knowledgeCutoff": "2025-01",
     "contextWindow": 200000,
     "maxOutputTokens": 32000,
@@ -633,7 +679,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
       "open_weights": true
@@ -651,52 +697,6 @@
     "pricing": {
       "input": 0.275,
       "output": 1.1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-v4-pro",
-    "provider": "routing-run",
-    "providerName": "routing.run",
-    "displayName": "DeepSeek V4 Pro",
-    "family": "deepseek-thinking",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.348,
-      "output": 0.696,
       "currency": "USD",
       "per": 1000000
     },

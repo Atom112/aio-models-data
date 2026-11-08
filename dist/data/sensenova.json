@@ -1,31 +1,30 @@
 [
   {
-    "id": "deepseek-v4.1-flash",
+    "id": "glm-5.2",
     "provider": "sensenova",
     "providerName": "SenseNova (China)",
-    "displayName": "DeepSeek V4.1 Flash",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
+    "displayName": "GLM-5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
@@ -95,32 +94,31 @@
     ]
   },
   {
-    "id": "sensenova-6.8-flash-lite",
+    "id": "deepseek-v4-pro",
     "provider": "sensenova",
     "providerName": "SenseNova (China)",
-    "displayName": "SenseNova 6.8 Flash Lite",
-    "family": null,
-    "releaseDate": "2026-08-11",
-    "lastUpdated": "2026-08-28",
+    "displayName": "DeepSeek V4 Pro",
+    "family": "deepseek-thinking",
+    "releaseDate": "2026-08-13",
+    "lastUpdated": "2026-08-22",
     "knowledgeCutoff": null,
-    "contextWindow": 262144,
+    "contextWindow": 1048576,
     "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
@@ -143,31 +141,32 @@
     ]
   },
   {
-    "id": "glm-5.2",
+    "id": "deepseek-v4.1-flash",
     "provider": "sensenova",
     "providerName": "SenseNova (China)",
-    "displayName": "GLM-5.2",
-    "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
+    "displayName": "DeepSeek V4.1 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
@@ -238,31 +237,32 @@
     ]
   },
   {
-    "id": "deepseek-v4-pro",
+    "id": "sensenova-6.8-flash-lite",
     "provider": "sensenova",
     "providerName": "SenseNova (China)",
-    "displayName": "DeepSeek V4 Pro",
-    "family": "deepseek-thinking",
-    "releaseDate": "2026-08-13",
-    "lastUpdated": "2026-08-22",
+    "displayName": "SenseNova 6.8 Flash Lite",
+    "family": null,
+    "releaseDate": "2026-08-11",
+    "lastUpdated": "2026-08-28",
     "knowledgeCutoff": null,
-    "contextWindow": 1048576,
+    "contextWindow": 262144,
     "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
-      "open_weights": true
+      "open_weights": false
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"

@@ -1,103 +1,5 @@
 [
   {
-    "id": "gemini-2.5-flash",
-    "provider": "modelis",
-    "providerName": "Modelis",
-    "displayName": "Gemini 2.5 Flash",
-    "family": "gemini-flash",
-    "releaseDate": "2025-06-17",
-    "lastUpdated": "2025-06-17",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 2.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-sonnet-4-6",
-    "provider": "modelis",
-    "providerName": "Modelis",
-    "displayName": "Claude Sonnet 4.6",
-    "family": "claude-sonnet",
-    "releaseDate": "2026-02-17",
-    "lastUpdated": "2026-03-13",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 3,
-      "output": 15,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "gemini-2.5-pro",
     "provider": "modelis",
     "providerName": "Modelis",
@@ -148,39 +50,41 @@
     ]
   },
   {
-    "id": "deepseek-v4-flash",
+    "id": "claude-sonnet-4-6",
     "provider": "modelis",
     "providerName": "Modelis",
-    "displayName": "DeepSeek V4 Flash",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
-    "knowledgeCutoff": "2025-05",
+    "displayName": "Claude Sonnet 4.6",
+    "family": "claude-sonnet",
+    "releaseDate": "2026-02-17",
+    "lastUpdated": "2026-03-13",
+    "knowledgeCutoff": "2025-08-31",
     "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
+    "maxOutputTokens": 64000,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.0983,
-      "output": 0.1966,
+      "input": 3,
+      "output": 15,
       "currency": "USD",
       "per": 1000000
     },
@@ -290,6 +194,52 @@
     ]
   },
   {
+    "id": "deepseek-v4-flash",
+    "provider": "modelis",
+    "providerName": "Modelis",
+    "displayName": "DeepSeek V4 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.0983,
+      "output": 0.1966,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "deepseek-v4-pro",
     "provider": "modelis",
     "providerName": "Modelis",
@@ -323,6 +273,56 @@
     "pricing": {
       "input": 0.435,
       "output": 0.87,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash",
+    "provider": "modelis",
+    "providerName": "Modelis",
+    "displayName": "Gemini 2.5 Flash",
+    "family": "gemini-flash",
+    "releaseDate": "2025-06-17",
+    "lastUpdated": "2025-06-17",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 2.5,
       "currency": "USD",
       "per": 1000000
     },

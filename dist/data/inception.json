@@ -1,25 +1,25 @@
 [
   {
-    "id": "mercury-edit-2",
+    "id": "mercury-3",
     "provider": "inception",
     "providerName": "Inception",
-    "displayName": "Mercury Edit 2",
+    "displayName": "Mercury 3",
     "family": "mercury",
-    "releaseDate": "2026-03-30",
-    "lastUpdated": "2026-03-30",
+    "releaseDate": "2026-10-16",
+    "lastUpdated": "2026-10-20",
     "knowledgeCutoff": null,
-    "contextWindow": 32000,
-    "maxOutputTokens": 8192,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -31,9 +31,9 @@
       ]
     },
     "pricing": {
-      "input": 0.25,
-      "output": 0.75,
-      "cacheRead": 0.025,
+      "input": 0.1,
+      "output": 0.35,
+      "cacheRead": 0.01,
       "currency": "USD",
       "per": 1000000
     },
@@ -67,6 +67,53 @@
       "temperature": true,
       "attachment": false,
       "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.25,
+      "output": 0.75,
+      "cacheRead": 0.025,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mercury-edit-2",
+    "provider": "inception",
+    "providerName": "Inception",
+    "displayName": "Mercury Edit 2",
+    "family": "mercury",
+    "releaseDate": "2026-03-30",
+    "lastUpdated": "2026-03-30",
+    "knowledgeCutoff": null,
+    "contextWindow": 32000,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
       "open_weights": false
     },
     "modalities": {
@@ -128,53 +175,6 @@
       "input": 0.2,
       "output": 0.75,
       "cacheRead": 0.02,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "mercury-3",
-    "provider": "inception",
-    "providerName": "Inception",
-    "displayName": "Mercury 3",
-    "family": "mercury",
-    "releaseDate": "2026-10-16",
-    "lastUpdated": "2026-10-20",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1,
-      "output": 0.35,
-      "cacheRead": 0.01,
       "currency": "USD",
       "per": 1000000
     },

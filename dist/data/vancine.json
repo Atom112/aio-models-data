@@ -1,12 +1,12 @@
 [
   {
-    "id": "glm-5.3-flash",
+    "id": "qwen3.8-max",
     "provider": "vancine",
     "providerName": "Vancine",
-    "displayName": "GLM-5.3-Flash",
-    "family": "glm-flash",
-    "releaseDate": "2026-08-26",
-    "lastUpdated": "2026-08-26",
+    "displayName": "Qwen3.8 Max",
+    "family": "qwen",
+    "releaseDate": "2026-08-03",
+    "lastUpdated": "2026-08-03",
     "knowledgeCutoff": null,
     "contextWindow": 1000000,
     "maxOutputTokens": 131072,
@@ -15,12 +15,12 @@
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": true,
-      "open_weights": true
+      "structured_output": false,
+      "open_weights": false
     },
     "modalities": {
       "input": [
@@ -34,9 +34,103 @@
       ]
     },
     "pricing": {
-      "input": 0.12,
-      "output": 0.4,
-      "cacheRead": 0.024,
+      "input": 1.6,
+      "output": 4.8,
+      "cacheRead": 0.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "hy4-preview",
+    "provider": "vancine",
+    "providerName": "Vancine",
+    "displayName": "Hy4 preview",
+    "family": "Hy",
+    "releaseDate": "2026-08-28",
+    "lastUpdated": "2026-08-28",
+    "knowledgeCutoff": null,
+    "contextWindow": 1024000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.67,
+      "output": 2,
+      "cacheRead": 0.034,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5.3",
+    "provider": "vancine",
+    "providerName": "Vancine",
+    "displayName": "GLM-5.3",
+    "family": "glm",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.12,
+      "output": 3.52,
+      "cacheRead": 0.208,
       "currency": "USD",
       "per": 1000000
     },
@@ -98,124 +192,27 @@
     ]
   },
   {
-    "id": "qwen3.8-max",
+    "id": "qwen3.8-flash",
     "provider": "vancine",
     "providerName": "Vancine",
-    "displayName": "Qwen3.8 Max",
+    "displayName": "Qwen3.8 Flash",
     "family": "qwen",
-    "releaseDate": "2026-08-03",
-    "lastUpdated": "2026-08-03",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
     "knowledgeCutoff": null,
     "contextWindow": 1000000,
     "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.6,
-      "output": 4.8,
-      "cacheRead": 0.2,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm-5.3",
-    "provider": "vancine",
-    "providerName": "Vancine",
-    "displayName": "GLM-5.3",
-    "family": "glm",
-    "releaseDate": "2026-08-14",
-    "lastUpdated": "2026-08-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.12,
-      "output": 3.52,
-      "cacheRead": 0.208,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "MiniMax-M3",
-    "provider": "vancine",
-    "providerName": "Vancine",
-    "displayName": "MiniMax-M3",
-    "family": "minimax",
-    "releaseDate": "2026-06-01",
-    "lastUpdated": "2026-06-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 512000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
       "attachment": true,
-      "structured_output": false,
-      "open_weights": true
+      "structured_output": true,
+      "open_weights": false
     },
     "modalities": {
       "input": [
@@ -228,56 +225,9 @@
       ]
     },
     "pricing": {
-      "input": 0.24,
-      "output": 0.96,
-      "cacheRead": 0.048,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "hy4-preview",
-    "provider": "vancine",
-    "providerName": "Vancine",
-    "displayName": "Hy4 preview",
-    "family": "Hy",
-    "releaseDate": "2026-08-28",
-    "lastUpdated": "2026-08-28",
-    "knowledgeCutoff": null,
-    "contextWindow": 1024000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.67,
-      "output": 2,
-      "cacheRead": 0.034,
+      "input": 0.12,
+      "output": 0.38,
+      "cacheRead": 0.013,
       "currency": "USD",
       "per": 1000000
     },
@@ -340,11 +290,11 @@
     ]
   },
   {
-    "id": "qwen3.8-flash",
+    "id": "glm-5.3-flash",
     "provider": "vancine",
     "providerName": "Vancine",
-    "displayName": "Qwen3.8 Flash",
-    "family": "qwen",
+    "displayName": "GLM-5.3-Flash",
+    "family": "glm-flash",
     "releaseDate": "2026-08-26",
     "lastUpdated": "2026-08-26",
     "knowledgeCutoff": null,
@@ -360,7 +310,57 @@
       "temperature": true,
       "attachment": true,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.12,
+      "output": 0.4,
+      "cacheRead": 0.024,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "MiniMax-M3",
+    "provider": "vancine",
+    "providerName": "Vancine",
+    "displayName": "MiniMax-M3",
+    "family": "minimax",
+    "releaseDate": "2026-06-01",
+    "lastUpdated": "2026-06-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 512000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -373,13 +373,13 @@
       ]
     },
     "pricing": {
-      "input": 0.12,
-      "output": 0.38,
-      "cacheRead": 0.013,
+      "input": 0.24,
+      "output": 0.96,
+      "cacheRead": 0.048,
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],

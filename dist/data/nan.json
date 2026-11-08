@@ -1,15 +1,156 @@
 [
   {
-    "id": "gemma4",
+    "id": "qwen3.6",
     "provider": "nan",
     "providerName": "NaN",
-    "displayName": "Gemma 4 26B A4B IT",
-    "family": "gemma",
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-04-02",
+    "displayName": "Qwen3.6 35B-A3B",
+    "family": "qwen",
+    "releaseDate": "2026-04-17",
+    "lastUpdated": "2026-04-17",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 32768,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mimo-v2.6-flash",
+    "provider": "nan",
+    "providerName": "NaN",
+    "displayName": "MiMo-V2.6-Flash",
+    "family": "mimo",
+    "releaseDate": "2026-09-22",
+    "lastUpdated": "2026-09-22",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm5.3",
+    "provider": "nan",
+    "providerName": "NaN",
+    "displayName": "GLM-5.3",
+    "family": "glm",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm5.3-flash",
+    "provider": "nan",
+    "providerName": "NaN",
+    "displayName": "GLM-5.3-Flash",
+    "family": "glm-flash",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -93,16 +234,16 @@
     ]
   },
   {
-    "id": "qwen3.6",
+    "id": "gemma4",
     "provider": "nan",
     "providerName": "NaN",
-    "displayName": "Qwen3.6 35B-A3B",
-    "family": "qwen",
-    "releaseDate": "2026-04-17",
-    "lastUpdated": "2026-04-17",
+    "displayName": "Gemma 4 26B A4B IT",
+    "family": "gemma",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 65536,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -166,147 +307,6 @@
       "input": [
         "text",
         "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm5.3-flash",
-    "provider": "nan",
-    "providerName": "NaN",
-    "displayName": "GLM-5.3-Flash",
-    "family": "glm-flash",
-    "releaseDate": "2026-08-26",
-    "lastUpdated": "2026-08-26",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm5.3",
-    "provider": "nan",
-    "providerName": "NaN",
-    "displayName": "GLM-5.3",
-    "family": "glm",
-    "releaseDate": "2026-08-14",
-    "lastUpdated": "2026-08-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "mimo-v2.6-flash",
-    "provider": "nan",
-    "providerName": "NaN",
-    "displayName": "MiMo-V2.6-Flash",
-    "family": "mimo",
-    "releaseDate": "2026-09-22",
-    "lastUpdated": "2026-09-22",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio"
       ],
       "output": [
         "text"

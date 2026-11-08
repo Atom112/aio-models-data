@@ -1,42 +1,44 @@
 [
   {
-    "id": "GLM-4.7",
+    "id": "Qwen3.6-Flash",
     "provider": "moark",
     "providerName": "Moark",
-    "displayName": "GLM-4.7",
-    "family": "glm",
-    "releaseDate": "2025-12-22",
-    "lastUpdated": "2025-12-22",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 204800,
-    "maxOutputTokens": 131072,
+    "displayName": "Qwen3.6 Flash",
+    "family": "qwen3.6",
+    "releaseDate": "2026-04-27",
+    "lastUpdated": "2026-04-27",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "video"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.42,
-      "output": 2.2,
+      "input": 0.18,
+      "output": 1.03,
       "currency": "USD",
       "per": 1000000
     },
-    "status": "deprecated",
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -79,98 +81,6 @@
     "pricing": {
       "input": 0.29,
       "output": 1.2,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "GLM-5.3",
-    "provider": "moark",
-    "providerName": "Moark",
-    "displayName": "GLM-5.3",
-    "family": "glm",
-    "releaseDate": "2026-08-14",
-    "lastUpdated": "2026-08-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.2,
-      "output": 4.18,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "DeepSeek-V4-Pro",
-    "provider": "moark",
-    "providerName": "Moark",
-    "displayName": "DeepSeek V4 Pro",
-    "family": "deepseek-thinking",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.8,
-      "output": 3.6,
       "currency": "USD",
       "per": 1000000
     },
@@ -230,41 +140,39 @@
     ]
   },
   {
-    "id": "kimi-k3",
+    "id": "DeepSeek-V4-Pro",
     "provider": "moark",
     "providerName": "Moark",
-    "displayName": "Kimi K3",
-    "family": "kimi-k3",
-    "releaseDate": "2026-07-16",
-    "lastUpdated": "2026-07-16",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
+    "displayName": "DeepSeek V4 Pro",
+    "family": "deepseek-thinking",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
+      "temperature": true,
+      "attachment": false,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "video"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 3,
-      "output": 15,
+      "input": 1.8,
+      "output": 3.6,
       "currency": "USD",
       "per": 1000000
     },
@@ -326,41 +234,39 @@
     ]
   },
   {
-    "id": "Qwen3.6-Flash",
+    "id": "GLM-5.3",
     "provider": "moark",
     "providerName": "Moark",
-    "displayName": "Qwen3.6 Flash",
-    "family": "qwen3.6",
-    "releaseDate": "2026-04-27",
-    "lastUpdated": "2026-04-27",
+    "displayName": "GLM-5.3",
+    "family": "glm",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
     "knowledgeCutoff": null,
     "contextWindow": 1000000,
-    "maxOutputTokens": 65536,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "video"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.18,
-      "output": 1.03,
+      "input": 1.2,
+      "output": 4.18,
       "currency": "USD",
       "per": 1000000
     },
@@ -420,6 +326,54 @@
     ]
   },
   {
+    "id": "kimi-k3",
+    "provider": "moark",
+    "providerName": "Moark",
+    "displayName": "Kimi K3",
+    "family": "kimi-k3",
+    "releaseDate": "2026-07-16",
+    "lastUpdated": "2026-07-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "MiniMax-M2.1",
     "provider": "moark",
     "providerName": "Moark",
@@ -453,6 +407,52 @@
     "pricing": {
       "input": 0.29,
       "output": 1.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "GLM-4.7",
+    "provider": "moark",
+    "providerName": "Moark",
+    "displayName": "GLM-4.7",
+    "family": "glm",
+    "releaseDate": "2025-12-22",
+    "lastUpdated": "2025-12-22",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 204800,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.42,
+      "output": 2.2,
       "currency": "USD",
       "per": 1000000
     },
