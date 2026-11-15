@@ -48,14 +48,14 @@
     ]
   },
   {
-    "id": "glm-5",
+    "id": "glm-4.7",
     "provider": "alibaba-coding-plan-cn",
     "providerName": "Alibaba Coding Plan (China)",
-    "displayName": "GLM-5",
+    "displayName": "GLM-4.7",
     "family": "glm",
-    "releaseDate": "2026-02-11",
-    "lastUpdated": "2026-02-11",
-    "knowledgeCutoff": null,
+    "releaseDate": "2025-12-22",
+    "lastUpdated": "2025-12-22",
+    "knowledgeCutoff": "2025-04",
     "contextWindow": 202752,
     "maxOutputTokens": 16384,
     "capabilities": {
@@ -68,11 +68,61 @@
       "temperature": true,
       "attachment": false,
       "structured_output": false,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
         "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "cacheWrite": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.6-plus",
+    "provider": "alibaba-coding-plan-cn",
+    "providerName": "Alibaba Coding Plan (China)",
+    "displayName": "Qwen3.6 Plus",
+    "family": "qwen",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
       ],
       "output": [
         "text"
@@ -144,6 +194,54 @@
     ]
   },
   {
+    "id": "glm-5",
+    "provider": "alibaba-coding-plan-cn",
+    "providerName": "Alibaba Coding Plan (China)",
+    "displayName": "GLM-5",
+    "family": "glm",
+    "releaseDate": "2026-02-11",
+    "lastUpdated": "2026-02-11",
+    "knowledgeCutoff": null,
+    "contextWindow": 202752,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "cacheWrite": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "qwen3-coder-next",
     "provider": "alibaba-coding-plan-cn",
     "providerName": "Alibaba Coding Plan (China)",
@@ -164,102 +262,6 @@
       "temperature": true,
       "attachment": false,
       "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "cacheWrite": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm-4.7",
-    "provider": "alibaba-coding-plan-cn",
-    "providerName": "Alibaba Coding Plan (China)",
-    "displayName": "GLM-4.7",
-    "family": "glm",
-    "releaseDate": "2025-12-22",
-    "lastUpdated": "2025-12-22",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 202752,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "cacheWrite": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-coder-plus",
-    "provider": "alibaba-coding-plan-cn",
-    "providerName": "Alibaba Coding Plan (China)",
-    "displayName": "Qwen3 Coder Plus",
-    "family": "qwen",
-    "releaseDate": "2025-07-23",
-    "lastUpdated": "2025-07-23",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
@@ -337,13 +339,13 @@
     ]
   },
   {
-    "id": "qwen3.6-plus",
+    "id": "qwen3.5-plus",
     "provider": "alibaba-coding-plan-cn",
     "providerName": "Alibaba Coding Plan (China)",
-    "displayName": "Qwen3.6 Plus",
+    "displayName": "Qwen3.5 Plus",
     "family": "qwen",
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-04-02",
+    "releaseDate": "2026-02-16",
+    "lastUpdated": "2026-02-16",
     "knowledgeCutoff": "2025-04",
     "contextWindow": 1000000,
     "maxOutputTokens": 65536,
@@ -362,8 +364,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "video"
+        "image"
       ],
       "output": [
         "text"
@@ -378,6 +379,54 @@
       "per": 1000000
     },
     "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3-coder-plus",
+    "provider": "alibaba-coding-plan-cn",
+    "providerName": "Alibaba Coding Plan (China)",
+    "displayName": "Qwen3 Coder Plus",
+    "family": "qwen",
+    "releaseDate": "2025-07-23",
+    "lastUpdated": "2025-07-23",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "cacheWrite": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -414,55 +463,6 @@
         "text",
         "image",
         "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "cacheWrite": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3.5-plus",
-    "provider": "alibaba-coding-plan-cn",
-    "providerName": "Alibaba Coding Plan (China)",
-    "displayName": "Qwen3.5 Plus",
-    "family": "qwen",
-    "releaseDate": "2026-02-16",
-    "lastUpdated": "2026-02-16",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
       ],
       "output": [
         "text"

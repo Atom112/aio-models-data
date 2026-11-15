@@ -1,25 +1,72 @@
 [
   {
-    "id": "ibm/granite-4-h-small",
+    "id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
     "provider": "watsonx",
     "providerName": "watsonx.ai",
-    "displayName": "Granite-4.0-H-Small",
-    "family": "granite",
-    "releaseDate": "2025-10-02",
-    "lastUpdated": "2025-10-02",
-    "knowledgeCutoff": null,
+    "displayName": "Llama 4 Maverick 17B 128E Instruct FP8",
+    "family": "llama",
+    "releaseDate": "2025-04-05",
+    "lastUpdated": "2025-04-05",
+    "knowledgeCutoff": "2024-08",
     "contextWindow": 131072,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.371,
+      "output": 1.484,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": false,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "meta-llama/llama-3-3-70b-instruct",
+    "provider": "watsonx",
+    "providerName": "watsonx.ai",
+    "displayName": "Llama-3.3-70B-Instruct",
+    "family": "llama",
+    "releaseDate": "2024-12-06",
+    "lastUpdated": "2024-12-06",
+    "knowledgeCutoff": "2023-12",
+    "contextWindow": 131072,
+    "maxOutputTokens": 4096,
     "capabilities": {
       "tools": true,
       "vision": false,
       "reasoning": false,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": true,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
@@ -31,8 +78,8 @@
       ]
     },
     "pricing": {
-      "input": 0.0636,
-      "output": 0.265,
+      "input": 0.7526,
+      "output": 0.7526,
       "currency": "USD",
       "per": 1000000
     },
@@ -55,7 +102,7 @@
     "lastUpdated": "2025-08-05",
     "knowledgeCutoff": "2024-06",
     "contextWindow": 131072,
-    "maxOutputTokens": 32768,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -139,26 +186,26 @@
     ]
   },
   {
-    "id": "meta-llama/llama-3-3-70b-instruct",
+    "id": "ibm/granite-4-h-small",
     "provider": "watsonx",
     "providerName": "watsonx.ai",
-    "displayName": "Llama-3.3-70B-Instruct",
-    "family": "llama",
-    "releaseDate": "2024-12-06",
-    "lastUpdated": "2024-12-06",
-    "knowledgeCutoff": "2023-12",
+    "displayName": "Granite-4.0-H-Small",
+    "family": "granite",
+    "releaseDate": "2025-10-02",
+    "lastUpdated": "2025-10-02",
+    "knowledgeCutoff": null,
     "contextWindow": 131072,
-    "maxOutputTokens": 4096,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": false,
       "reasoning": false,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -170,55 +217,8 @@
       ]
     },
     "pricing": {
-      "input": 0.7526,
-      "output": 0.7526,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": false,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
-    "provider": "watsonx",
-    "providerName": "watsonx.ai",
-    "displayName": "Llama 4 Maverick 17B 128E Instruct FP8",
-    "family": "llama",
-    "releaseDate": "2025-04-05",
-    "lastUpdated": "2025-04-05",
-    "knowledgeCutoff": "2024-08",
-    "contextWindow": 131072,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.371,
-      "output": 1.484,
+      "input": 0.0636,
+      "output": 0.265,
       "currency": "USD",
       "per": 1000000
     },

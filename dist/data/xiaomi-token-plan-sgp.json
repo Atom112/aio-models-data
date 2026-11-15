@@ -146,6 +146,52 @@
     ]
   },
   {
+    "id": "mimo-v2.5-tts-voiceclone",
+    "provider": "xiaomi-token-plan-sgp",
+    "providerName": "Xiaomi Token Plan (Singapore)",
+    "displayName": "MiMo-V2.5-TTS-VoiceClone",
+    "family": "mimo",
+    "releaseDate": "2026-04-22",
+    "lastUpdated": "2026-04-22",
+    "knowledgeCutoff": null,
+    "contextWindow": 8192,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "audio"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "mimo-v2.5",
     "provider": "xiaomi-token-plan-sgp",
     "providerName": "Xiaomi Token Plan (Singapore)",
@@ -174,53 +220,6 @@
         "image",
         "audio",
         "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "mimo-v2.5-pro",
-    "provider": "xiaomi-token-plan-sgp",
-    "providerName": "Xiaomi Token Plan (Singapore)",
-    "displayName": "MiMo-V2.5-Pro",
-    "family": "mimo",
-    "releaseDate": "2026-04-22",
-    "lastUpdated": "2026-04-22",
-    "knowledgeCutoff": "2024-12",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
       ],
       "output": [
         "text"
@@ -289,43 +288,44 @@
     ]
   },
   {
-    "id": "mimo-v2.5-tts-voiceclone",
+    "id": "mimo-v2.5-pro",
     "provider": "xiaomi-token-plan-sgp",
     "providerName": "Xiaomi Token Plan (Singapore)",
-    "displayName": "MiMo-V2.5-TTS-VoiceClone",
+    "displayName": "MiMo-V2.5-Pro",
     "family": "mimo",
     "releaseDate": "2026-04-22",
     "lastUpdated": "2026-04-22",
-    "knowledgeCutoff": null,
-    "contextWindow": 8192,
-    "maxOutputTokens": 8192,
+    "knowledgeCutoff": "2024-12",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": false,
       "structured_output": false,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
         "text"
       ],
       "output": [
-        "audio"
+        "text"
       ]
     },
     "pricing": {
       "input": 0,
       "output": 0,
+      "cacheRead": 0,
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],

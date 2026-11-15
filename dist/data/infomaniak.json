@@ -92,43 +92,45 @@
     ]
   },
   {
-    "id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-FP8",
+    "id": "swiss-ai/Apertus-v1.5-70B",
     "provider": "infomaniak",
     "providerName": "Infomaniak",
-    "displayName": "Nemotron 3 Nano 30B A3B FP8",
-    "family": "nemotron",
-    "releaseDate": "2025-12-15",
-    "lastUpdated": "2025-12-15",
-    "knowledgeCutoff": "2025-06-25",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 262144,
+    "displayName": "Apertus v1.5 70B",
+    "family": null,
+    "releaseDate": "2026-07-24",
+    "lastUpdated": "2026-08-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 100000,
+    "maxOutputTokens": 8192,
     "capabilities": {
       "tools": true,
-      "vision": false,
-      "reasoning": true,
+      "vision": true,
+      "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "audio"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.06,
-      "output": 0.25,
+      "input": 0.87,
+      "output": 3.1,
       "currency": "USD",
       "per": 1000000
     },
-    "status": "deprecated",
+    "status": "beta",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -279,44 +281,89 @@
     ]
   },
   {
-    "id": "mistralai/Ministral-3-14B-Instruct-2512",
+    "id": "google/gemma-4-31B-it",
     "provider": "infomaniak",
     "providerName": "Infomaniak",
-    "displayName": "Ministral 3 14B Instruct",
-    "family": "ministral",
-    "releaseDate": "2025-12-02",
-    "lastUpdated": "2025-12-02",
-    "knowledgeCutoff": null,
+    "displayName": "Gemma 4 31B IT",
+    "family": "gemma",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "knowledgeCutoff": "2025-01",
     "contextWindow": 100000,
-    "maxOutputTokens": 25600,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
-      "vision": true,
-      "reasoning": false,
+      "vision": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.37,
+      "input": 0.25,
       "output": 0.5,
       "currency": "USD",
       "per": 1000000
     },
-    "status": "beta",
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-FP8",
+    "provider": "infomaniak",
+    "providerName": "Infomaniak",
+    "displayName": "Nemotron 3 Nano 30B A3B FP8",
+    "family": "nemotron",
+    "releaseDate": "2025-12-15",
+    "lastUpdated": "2025-12-15",
+    "knowledgeCutoff": "2025-06-25",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.06,
+      "output": 0.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -373,91 +420,44 @@
     ]
   },
   {
-    "id": "swiss-ai/Apertus-v1.5-70B",
+    "id": "mistralai/Ministral-3-14B-Instruct-2512",
     "provider": "infomaniak",
     "providerName": "Infomaniak",
-    "displayName": "Apertus v1.5 70B",
-    "family": null,
-    "releaseDate": "2026-07-24",
-    "lastUpdated": "2026-08-01",
+    "displayName": "Ministral 3 14B Instruct",
+    "family": "ministral",
+    "releaseDate": "2025-12-02",
+    "lastUpdated": "2025-12-02",
     "knowledgeCutoff": null,
     "contextWindow": 100000,
-    "maxOutputTokens": 8192,
+    "maxOutputTokens": 25600,
     "capabilities": {
       "tools": true,
       "vision": true,
       "reasoning": false,
       "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.87,
-      "output": 3.1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "beta",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "google/gemma-4-31B-it",
-    "provider": "infomaniak",
-    "providerName": "Infomaniak",
-    "displayName": "Gemma 4 31B IT",
-    "family": "gemma",
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-04-02",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 100000,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.25,
+      "input": 0.37,
       "output": 0.5,
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "beta",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],

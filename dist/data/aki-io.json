@@ -1,25 +1,25 @@
 [
   {
-    "id": "qwen3.8-27b",
+    "id": "mistral4-119b",
     "provider": "aki-io",
     "providerName": "AKI.IO",
-    "displayName": "Qwen3.8 27B",
-    "family": "qwen",
-    "releaseDate": "2026-08-14",
-    "lastUpdated": "2026-08-14",
-    "knowledgeCutoff": null,
+    "displayName": "Mistral Small 4",
+    "family": "mistral-small",
+    "releaseDate": "2026-03-16",
+    "lastUpdated": "2026-03-16",
+    "knowledgeCutoff": "2025-06",
     "contextWindow": 262144,
-    "maxOutputTokens": 32768,
+    "maxOutputTokens": 81920,
     "capabilities": {
       "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": true,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
@@ -31,9 +31,8 @@
       ]
     },
     "pricing": {
-      "input": 0.33645,
-      "output": 2.4673,
-      "cacheRead": 0.11215,
+      "input": 0.2243,
+      "output": 0.6729,
       "currency": "USD",
       "per": 1000000
     },
@@ -94,16 +93,16 @@
     ]
   },
   {
-    "id": "qwen3.6-35b",
+    "id": "deepseek-v4.1-flash-1017-tl5",
     "provider": "aki-io",
     "providerName": "AKI.IO",
-    "displayName": "Qwen3.6 35B-A3B",
-    "family": "qwen",
-    "releaseDate": "2026-04-17",
-    "lastUpdated": "2026-04-17",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 32768,
+    "displayName": "DeepSeek V4.1 Flash 1017",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-10-17",
+    "lastUpdated": "2026-10-17",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 81920,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -125,54 +124,9 @@
       ]
     },
     "pricing": {
-      "input": 0.168225,
-      "output": 0.56075,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-oss-120b",
-    "provider": "aki-io",
-    "providerName": "AKI.IO",
-    "displayName": "GPT OSS 120B",
-    "family": "gpt-oss",
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": "2024-06",
-    "contextWindow": 128000,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.168225,
-      "output": 0.616825,
+      "input": 0.279125,
+      "output": 1.1165,
+      "cacheRead": 0.11165,
       "currency": "USD",
       "per": 1000000
     },
@@ -232,14 +186,14 @@
     ]
   },
   {
-    "id": "mistral4-119b",
+    "id": "kolibri-1-tl5",
     "provider": "aki-io",
     "providerName": "AKI.IO",
-    "displayName": "Mistral Small 4",
-    "family": "mistral-small",
-    "releaseDate": "2026-03-16",
-    "lastUpdated": "2026-03-16",
-    "knowledgeCutoff": "2025-06",
+    "displayName": "Kolibri 1",
+    "family": null,
+    "releaseDate": "2026-10-03",
+    "lastUpdated": "2026-10-03",
+    "knowledgeCutoff": "2026-06-18",
     "contextWindow": 262144,
     "maxOutputTokens": 81920,
     "capabilities": {
@@ -247,11 +201,11 @@
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -263,8 +217,102 @@
       ]
     },
     "pricing": {
-      "input": 0.2243,
-      "output": 0.6729,
+      "input": 0.167475,
+      "output": 0.614075,
+      "cacheRead": 0.0837375,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-oss-120b",
+    "provider": "aki-io",
+    "providerName": "AKI.IO",
+    "displayName": "GPT OSS 120B",
+    "family": "gpt-oss",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": "2024-06",
+    "contextWindow": 128000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.168225,
+      "output": 0.616825,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.8-27b",
+    "provider": "aki-io",
+    "providerName": "AKI.IO",
+    "displayName": "Qwen3.8 27B",
+    "family": "qwen",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.167475,
+      "output": 0.725725,
+      "cacheRead": 0.0837375,
       "currency": "USD",
       "per": 1000000
     },

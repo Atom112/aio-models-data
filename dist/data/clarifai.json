@@ -1,71 +1,25 @@
 [
   {
-    "id": "qwen/qwenCoder/models/Qwen3-Coder-30B-A3B-Instruct",
+    "id": "minimaxai/chat-completion/models/MiniMax-M2_5-high-throughput",
     "provider": "clarifai",
     "providerName": "Clarifai",
-    "displayName": "Qwen3 Coder 30B A3B Instruct",
-    "family": "qwen",
-    "releaseDate": "2025-07-31",
-    "lastUpdated": "2025-07-31",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
+    "displayName": "MiniMax-M2.5 High Throughput",
+    "family": "minimax",
+    "releaseDate": "2026-02-12",
+    "lastUpdated": "2026-02-12",
+    "knowledgeCutoff": null,
+    "contextWindow": 204800,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
       "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.11458,
-      "output": 0.74812,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen/qwenLM/models/Qwen3-30B-A3B-Instruct-2507",
-    "provider": "clarifai",
-    "providerName": "Clarifai",
-    "displayName": "Qwen3 30B A3B Instruct 2507",
-    "family": "qwen",
-    "releaseDate": "2025-07-28",
-    "lastUpdated": "2025-07-28",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -78,7 +32,7 @@
     },
     "pricing": {
       "input": 0.3,
-      "output": 0.5,
+      "output": 1.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -92,39 +46,40 @@
     ]
   },
   {
-    "id": "qwen/qwenLM/models/Qwen3-30B-A3B-Thinking-2507",
+    "id": "moonshotai/chat-completion/models/Kimi-K2_6",
     "provider": "clarifai",
     "providerName": "Clarifai",
-    "displayName": "Qwen3 30B A3B Thinking 2507",
-    "family": "qwen",
-    "releaseDate": "2025-07-31",
-    "lastUpdated": "2026-02-25",
-    "knowledgeCutoff": null,
+    "displayName": "Kimi K2.6",
+    "family": "kimi-k2",
+    "releaseDate": "2026-04-20",
+    "lastUpdated": "2026-04-20",
+    "knowledgeCutoff": "2025-01",
     "contextWindow": 262144,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.36,
-      "output": 1.3,
+      "input": 0.95,
+      "output": 4,
       "currency": "USD",
       "per": 1000000
     },
@@ -138,16 +93,16 @@
     ]
   },
   {
-    "id": "openai/chat-completion/models/gpt-oss-120b-high-throughput",
+    "id": "arcee_ai/AFM/models/trinity-mini",
     "provider": "clarifai",
     "providerName": "Clarifai",
-    "displayName": "GPT OSS 120B High Throughput",
-    "family": "gpt-oss",
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": "2024-06",
+    "displayName": "Trinity Mini",
+    "family": "trinity",
+    "releaseDate": "2025-12-01",
+    "lastUpdated": "2026-05-28",
+    "knowledgeCutoff": "2024-10",
     "contextWindow": 131072,
-    "maxOutputTokens": 16384,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -169,8 +124,8 @@
       ]
     },
     "pricing": {
-      "input": 0.09,
-      "output": 0.36,
+      "input": 0.045,
+      "output": 0.15,
       "currency": "USD",
       "per": 1000000
     },
@@ -230,40 +185,177 @@
     ]
   },
   {
-    "id": "moonshotai/chat-completion/models/Kimi-K2_6",
+    "id": "openai/chat-completion/models/gpt-oss-120b-high-throughput",
     "provider": "clarifai",
     "providerName": "Clarifai",
-    "displayName": "Kimi K2.6",
-    "family": "kimi-k2",
-    "releaseDate": "2026-04-20",
-    "lastUpdated": "2026-04-20",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "displayName": "GPT OSS 120B High Throughput",
+    "family": "gpt-oss",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": "2024-06",
+    "contextWindow": 131072,
+    "maxOutputTokens": 16384,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
-      "structured_output": true,
+      "attachment": false,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.95,
-      "output": 4,
+      "input": 0.09,
+      "output": 0.36,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwenCoder/models/Qwen3-Coder-30B-A3B-Instruct",
+    "provider": "clarifai",
+    "providerName": "Clarifai",
+    "displayName": "Qwen3 Coder 30B A3B Instruct",
+    "family": "qwen",
+    "releaseDate": "2025-07-31",
+    "lastUpdated": "2025-07-31",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.11458,
+      "output": 0.74812,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwenLM/models/Qwen3-30B-A3B-Thinking-2507",
+    "provider": "clarifai",
+    "providerName": "Clarifai",
+    "displayName": "Qwen3 30B A3B Thinking 2507",
+    "family": "qwen",
+    "releaseDate": "2025-07-31",
+    "lastUpdated": "2026-02-25",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.36,
+      "output": 1.3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwenLM/models/Qwen3-30B-A3B-Instruct-2507",
+    "provider": "clarifai",
+    "providerName": "Clarifai",
+    "displayName": "Qwen3 30B A3B Instruct 2507",
+    "family": "qwen",
+    "releaseDate": "2025-07-28",
+    "lastUpdated": "2025-07-28",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 0.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -419,52 +511,6 @@
     ]
   },
   {
-    "id": "minimaxai/chat-completion/models/MiniMax-M2_5-high-throughput",
-    "provider": "clarifai",
-    "providerName": "Clarifai",
-    "displayName": "MiniMax-M2.5 High Throughput",
-    "family": "minimax",
-    "releaseDate": "2026-02-12",
-    "lastUpdated": "2026-02-12",
-    "knowledgeCutoff": null,
-    "contextWindow": 204800,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 1.2,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "deepseek-ai/deepseek-ocr/models/DeepSeek-OCR",
     "provider": "clarifai",
     "providerName": "Clarifai",
@@ -499,52 +545,6 @@
     "pricing": {
       "input": 0.2,
       "output": 0.7,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "arcee_ai/AFM/models/trinity-mini",
-    "provider": "clarifai",
-    "providerName": "Clarifai",
-    "displayName": "Trinity Mini",
-    "family": "trinity",
-    "releaseDate": "2025-12-01",
-    "lastUpdated": "2026-05-28",
-    "knowledgeCutoff": "2024-10",
-    "contextWindow": 131072,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.045,
-      "output": 0.15,
       "currency": "USD",
       "per": 1000000
     },

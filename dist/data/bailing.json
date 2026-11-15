@@ -1,25 +1,25 @@
 [
   {
-    "id": "Ring-1T",
+    "id": "Ling-3.1-flash",
     "provider": "bailing",
     "providerName": "Bailing",
-    "displayName": "Ring-1T",
-    "family": "ring",
-    "releaseDate": "2025-10",
-    "lastUpdated": "2025-10",
-    "knowledgeCutoff": "2024-06",
-    "contextWindow": 128000,
-    "maxOutputTokens": 32000,
+    "displayName": "Ling 3.1 Flash",
+    "family": "ling",
+    "releaseDate": "2026-09-29",
+    "lastUpdated": "2026-09-29",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 32768,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -31,8 +31,9 @@
       ]
     },
     "pricing": {
-      "input": 0.57,
-      "output": 2.29,
+      "input": 0.3,
+      "output": 0.9,
+      "cacheRead": 0.06,
       "currency": "USD",
       "per": 1000000
     },
@@ -46,26 +47,116 @@
     ]
   },
   {
-    "id": "Ling-1T",
+    "id": "Ling-3.0-flash-VL",
     "provider": "bailing",
     "providerName": "Bailing",
-    "displayName": "Ling-1T",
+    "displayName": "Ling 3.0 Flash VL",
     "family": "ling",
-    "releaseDate": "2025-10",
-    "lastUpdated": "2025-10",
-    "knowledgeCutoff": "2024-06",
-    "contextWindow": 128000,
-    "maxOutputTokens": 32000,
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.075,
+      "output": 0.224,
+      "cacheRead": 0.015,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Ling-3.0-tiny",
+    "provider": "bailing",
+    "providerName": "Bailing",
+    "displayName": "Ling 3.0 Tiny",
+    "family": "ling",
+    "releaseDate": "2026-08-07",
+    "lastUpdated": "2026-08-07",
+    "knowledgeCutoff": null,
+    "contextWindow": 131072,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Ling-3.0-flash",
+    "provider": "bailing",
+    "providerName": "Bailing",
+    "displayName": "Ling 3.0 Flash",
+    "family": "ling",
+    "releaseDate": "2026-07-23",
+    "lastUpdated": "2026-07-23",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -77,11 +168,55 @@
       ]
     },
     "pricing": {
-      "input": 0.57,
-      "output": 2.29,
+      "input": 0.075,
+      "output": 0.224,
+      "cacheRead": 0.015,
       "currency": "USD",
       "per": 1000000
     },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Ling-3.2-flash",
+    "provider": "bailing",
+    "providerName": "Bailing",
+    "displayName": "Ling 3.2 Flash",
+    "family": "ling",
+    "releaseDate": "2026-11-05",
+    "lastUpdated": "2026-11-05",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,

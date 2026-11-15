@@ -1,17 +1,17 @@
 [
   {
-    "id": "Meta-Llama-3_1-8B-Instruct-GGUF",
+    "id": "gemma-4-E4B-it-MLX-4bit",
     "provider": "atomic-chat",
     "providerName": "Atomic Chat",
-    "displayName": "Meta Llama 3.1 8B Instruct (GGUF)",
-    "family": "llama",
-    "releaseDate": "2024-07-23",
-    "lastUpdated": "2024-07-23",
-    "knowledgeCutoff": "2023-12",
-    "contextWindow": 131072,
-    "maxOutputTokens": 4096,
+    "displayName": "Gemma 4 E4B Instruct (MLX 4-bit)",
+    "family": "gemma",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 32768,
+    "maxOutputTokens": 8192,
     "capabilities": {
-      "tools": true,
+      "tools": false,
       "vision": false,
       "reasoning": false,
       "streaming": true,
@@ -46,32 +46,31 @@
     ]
   },
   {
-    "id": "Qwen3_5-9B-MLX-4bit",
+    "id": "Meta-Llama-3_1-8B-Instruct-GGUF",
     "provider": "atomic-chat",
     "providerName": "Atomic Chat",
-    "displayName": "Qwen 3.5 9B (MLX 4-bit)",
-    "family": "qwen",
-    "releaseDate": "2026-02-23",
-    "lastUpdated": "2026-02-23",
-    "knowledgeCutoff": null,
-    "contextWindow": 32768,
-    "maxOutputTokens": 8192,
+    "displayName": "Meta Llama 3.1 8B Instruct (GGUF)",
+    "family": "llama",
+    "releaseDate": "2024-07-23",
+    "lastUpdated": "2024-07-23",
+    "knowledgeCutoff": "2023-12",
+    "contextWindow": 131072,
+    "maxOutputTokens": 4096,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
@@ -140,10 +139,10 @@
     ]
   },
   {
-    "id": "gemma-4-E4B-it-MLX-4bit",
+    "id": "gemma-4-E4B-it-IQ4_XS",
     "provider": "atomic-chat",
     "providerName": "Atomic Chat",
-    "displayName": "Gemma 4 E4B Instruct (MLX 4-bit)",
+    "displayName": "Gemma 4 E4B Instruct (IQ4_XS)",
     "family": "gemma",
     "releaseDate": "2026-04-02",
     "lastUpdated": "2026-04-02",
@@ -186,31 +185,32 @@
     ]
   },
   {
-    "id": "gemma-4-E4B-it-IQ4_XS",
+    "id": "Qwen3_5-9B-MLX-4bit",
     "provider": "atomic-chat",
     "providerName": "Atomic Chat",
-    "displayName": "Gemma 4 E4B Instruct (IQ4_XS)",
-    "family": "gemma",
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-04-02",
+    "displayName": "Qwen 3.5 9B (MLX 4-bit)",
+    "family": "qwen",
+    "releaseDate": "2026-02-23",
+    "lastUpdated": "2026-02-23",
     "knowledgeCutoff": null,
     "contextWindow": 32768,
     "maxOutputTokens": 8192,
     "capabilities": {
-      "tools": false,
-      "vision": false,
+      "tools": true,
+      "vision": true,
       "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"

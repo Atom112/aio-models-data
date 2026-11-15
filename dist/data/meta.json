@@ -1,114 +1,12 @@
 [
   {
-    "id": "muse-spark-1.3",
+    "id": "muse-spark-1.3-contributor",
     "provider": "meta",
     "providerName": "Meta",
-    "displayName": "Muse Spark 1.3",
+    "displayName": "Muse Spark 1.3 Contributor",
     "family": "muse",
     "releaseDate": "2026-09-02",
     "lastUpdated": "2026-09-02",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "pdf",
-        "audio"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.25,
-      "output": 4.25,
-      "cacheRead": 0.15,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "muse-wonder-1.0",
-    "provider": "meta",
-    "providerName": "Meta",
-    "displayName": "Muse Wonder",
-    "family": "muse",
-    "releaseDate": "2026-10-12",
-    "lastUpdated": "2026-10-12",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "pdf",
-        "audio"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 4,
-      "output": 20,
-      "cacheRead": 0.2,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "muse-spark-1.2-contributor",
-    "provider": "meta",
-    "providerName": "Meta",
-    "displayName": "Muse Spark 1.2 Contributor",
-    "family": "muse",
-    "releaseDate": "2026-08-05",
-    "lastUpdated": "2026-08-05",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
     "maxOutputTokens": 131072,
@@ -204,13 +102,76 @@
     ]
   },
   {
-    "id": "muse-spark-1.3-contributor",
+    "id": "muse-ember-1.0",
     "provider": "meta",
     "providerName": "Meta",
-    "displayName": "Muse Spark 1.3 Contributor",
+    "displayName": "Muse Ember",
     "family": "muse",
-    "releaseDate": "2026-09-02",
-    "lastUpdated": "2026-09-02",
+    "releaseDate": "2026-11-09",
+    "lastUpdated": "2026-11-09",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 524288,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.5,
+      "cacheRead": 0.004,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.3,
+          "output": 1.5,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 0.3,
+        "output": 1.5,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "muse-spark-1.2-contributor",
+    "provider": "meta",
+    "providerName": "Meta",
+    "displayName": "Muse Spark 1.2 Contributor",
+    "family": "muse",
+    "releaseDate": "2026-08-05",
+    "lastUpdated": "2026-08-05",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
     "maxOutputTokens": 131072,
@@ -242,6 +203,108 @@
       "input": 0.1,
       "output": 0.2,
       "cacheRead": 0.002,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "muse-spark-1.3",
+    "provider": "meta",
+    "providerName": "Meta",
+    "displayName": "Muse Spark 1.3",
+    "family": "muse",
+    "releaseDate": "2026-09-02",
+    "lastUpdated": "2026-09-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 4.25,
+      "cacheRead": 0.15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "muse-wonder-1.0",
+    "provider": "meta",
+    "providerName": "Meta",
+    "displayName": "Muse Wonder",
+    "family": "muse",
+    "releaseDate": "2026-10-12",
+    "lastUpdated": "2026-10-12",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 4,
+      "output": 20,
+      "cacheRead": 0.2,
       "currency": "USD",
       "per": 1000000
     },
