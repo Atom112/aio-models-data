@@ -1,5 +1,55 @@
 [
   {
+    "id": "xiaomi/mimo-v2.6-pro",
+    "provider": "klavo",
+    "providerName": "Klavo AI",
+    "displayName": "MiMo-V2.6-Pro",
+    "family": "mimo-pro",
+    "releaseDate": "2026-09-22",
+    "lastUpdated": "2026-09-22",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.848,
+      "output": 1.696,
+      "cacheRead": 0.0121,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "z-ai/glm-5.3",
     "provider": "klavo",
     "providerName": "Klavo AI",
@@ -96,149 +146,6 @@
     ]
   },
   {
-    "id": "deepseek/deepseek-v4.1-flash-1017",
-    "provider": "klavo",
-    "providerName": "Klavo AI",
-    "displayName": "DeepSeek V4.1 Flash 1017",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-10-17",
-    "lastUpdated": "2026-10-17",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2907,
-      "output": 1.2114,
-      "cacheRead": 0.0182,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek/deepseek-v4-flash-0731",
-    "provider": "klavo",
-    "providerName": "Klavo AI",
-    "displayName": "DeepSeek V4 Flash 0731",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-07-31",
-    "lastUpdated": "2026-07-31",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.4361,
-      "output": 1.3325,
-      "cacheRead": 0.0848,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek/deepseek-v4.1-flash",
-    "provider": "klavo",
-    "providerName": "Klavo AI",
-    "displayName": "DeepSeek V4.1 Flash",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3029,
-      "output": 1.2114,
-      "cacheRead": 0.0606,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "openai/gpt-oss-120b",
     "provider": "klavo",
     "providerName": "Klavo AI",
@@ -273,53 +180,6 @@
       "input": 0.1575,
       "output": 0.6057,
       "cacheRead": 0.0485,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen/qwen3.6-35b-a3b",
-    "provider": "klavo",
-    "providerName": "Klavo AI",
-    "displayName": "Qwen3.6 35B-A3B",
-    "family": "qwen",
-    "releaseDate": "2026-04-17",
-    "lastUpdated": "2026-04-17",
-    "knowledgeCutoff": null,
-    "contextWindow": 208192,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3392,
-      "output": 2.0594,
-      "cacheRead": 0.0727,
       "currency": "USD",
       "per": 1000000
     },
@@ -381,11 +241,201 @@
     ]
   },
   {
+    "id": "qwen/qwen3.6-35b-a3b",
+    "provider": "klavo",
+    "providerName": "Klavo AI",
+    "displayName": "Qwen3.6 35B-A3B",
+    "family": "qwen",
+    "releaseDate": "2026-04-17",
+    "lastUpdated": "2026-04-17",
+    "knowledgeCutoff": null,
+    "contextWindow": 208192,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3392,
+      "output": 2.0594,
+      "cacheRead": 0.0727,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek/deepseek-v4.1-flash",
+    "provider": "klavo",
+    "providerName": "Klavo AI",
+    "displayName": "DeepSeek V4.1 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3029,
+      "output": 1.2114,
+      "cacheRead": 0.0606,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek/deepseek-v4-flash-0731",
+    "provider": "klavo",
+    "providerName": "Klavo AI",
+    "displayName": "DeepSeek V4 Flash 0731",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-07-31",
+    "lastUpdated": "2026-07-31",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.4361,
+      "output": 1.3325,
+      "cacheRead": 0.0848,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "klavo",
+    "providerName": "Klavo AI",
+    "displayName": "DeepSeek V4.1 Flash 1017",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-10-17",
+    "lastUpdated": "2026-10-17",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2907,
+      "output": 1.2114,
+      "cacheRead": 0.0182,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "minimax/minimax-m3.1-flash",
     "provider": "klavo",
     "providerName": "Klavo AI",
     "displayName": "MiniMax-M3.1-Flash",
-    "family": "minimax",
+    "family": "minimax-m-flash",
     "releaseDate": "2026-10-19",
     "lastUpdated": "2026-10-19",
     "knowledgeCutoff": null,
@@ -417,56 +467,6 @@
       "input": 0.2907,
       "output": 1.1508,
       "cacheRead": 0.0303,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "xiaomi/mimo-v2.6-pro",
-    "provider": "klavo",
-    "providerName": "Klavo AI",
-    "displayName": "MiMo-V2.6-Pro",
-    "family": "mimo",
-    "releaseDate": "2026-09-22",
-    "lastUpdated": "2026-09-22",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.848,
-      "output": 1.696,
-      "cacheRead": 0.0121,
       "currency": "USD",
       "per": 1000000
     },

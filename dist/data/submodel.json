@@ -1,5 +1,51 @@
 [
   {
+    "id": "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8",
+    "provider": "submodel",
+    "providerName": "submodel",
+    "displayName": "Qwen3 Coder 480B A35B Instruct",
+    "family": "qwen-coder",
+    "releaseDate": "2025-07-22",
+    "lastUpdated": "2025-07-22",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2,
+      "output": 0.8,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "Qwen/Qwen3-235B-A22B-Thinking-2507",
     "provider": "submodel",
     "providerName": "submodel",
@@ -92,16 +138,108 @@
     ]
   },
   {
-    "id": "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8",
+    "id": "deepseek-ai/DeepSeek-R1-0528",
     "provider": "submodel",
     "providerName": "submodel",
-    "displayName": "Qwen3 Coder 480B A35B Instruct",
-    "family": "qwen",
-    "releaseDate": "2025-07-22",
-    "lastUpdated": "2025-07-22",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "displayName": "DeepSeek R1 0528",
+    "family": "deepseek-r",
+    "releaseDate": "2025-05-28",
+    "lastUpdated": "2025-05-28",
+    "knowledgeCutoff": null,
+    "contextWindow": 75000,
+    "maxOutputTokens": 75000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2,
+      "output": 0.8,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V3.1",
+    "provider": "submodel",
+    "providerName": "submodel",
+    "displayName": "DeepSeek V3.1",
+    "family": "deepseek",
+    "releaseDate": "2025-08-21",
+    "lastUpdated": "2025-08-21",
+    "knowledgeCutoff": null,
+    "contextWindow": 75000,
+    "maxOutputTokens": 75000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2,
+      "output": 0.8,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V3-0324",
+    "provider": "submodel",
+    "providerName": "submodel",
+    "displayName": "DeepSeek V3 0324",
+    "family": "deepseek",
+    "releaseDate": "2025-03-24",
+    "lastUpdated": "2025-03-24",
+    "knowledgeCutoff": null,
+    "contextWindow": 75000,
+    "maxOutputTokens": 75000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -244,144 +382,6 @@
       "tools": true,
       "vision": false,
       "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2,
-      "output": 0.8,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-V3.1",
-    "provider": "submodel",
-    "providerName": "submodel",
-    "displayName": "DeepSeek V3.1",
-    "family": "deepseek",
-    "releaseDate": "2025-08-21",
-    "lastUpdated": "2025-08-21",
-    "knowledgeCutoff": null,
-    "contextWindow": 75000,
-    "maxOutputTokens": 75000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2,
-      "output": 0.8,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-R1-0528",
-    "provider": "submodel",
-    "providerName": "submodel",
-    "displayName": "DeepSeek R1 0528",
-    "family": "deepseek-thinking",
-    "releaseDate": "2025-05-28",
-    "lastUpdated": "2025-05-28",
-    "knowledgeCutoff": null,
-    "contextWindow": 75000,
-    "maxOutputTokens": 75000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2,
-      "output": 0.8,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-V3-0324",
-    "provider": "submodel",
-    "providerName": "submodel",
-    "displayName": "DeepSeek V3 0324",
-    "family": "deepseek",
-    "releaseDate": "2025-03-24",
-    "lastUpdated": "2025-03-24",
-    "knowledgeCutoff": null,
-    "contextWindow": 75000,
-    "maxOutputTokens": 75000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,

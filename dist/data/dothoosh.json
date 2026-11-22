@@ -1,52 +1,5 @@
 [
   {
-    "id": "deepseek-flash",
-    "provider": "dothoosh",
-    "providerName": "DotHoosh",
-    "displayName": "DeepSeek V4.1 Flash 1017",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-10-17",
-    "lastUpdated": "2026-10-17",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 393216,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.385001,
-      "output": 1.54,
-      "cacheRead": 0.007701,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "claude-haiku-5-5",
     "provider": "dothoosh",
     "providerName": "DotHoosh",
@@ -91,336 +44,6 @@
           "contextThreshold": 100000
         }
       ]
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-3.5-flash-lite",
-    "provider": "dothoosh",
-    "providerName": "DotHoosh",
-    "displayName": "Gemini 3.5 Flash Lite",
-    "family": "gemini-flash-lite",
-    "releaseDate": "2026-07-21",
-    "lastUpdated": "2026-07-21",
-    "knowledgeCutoff": "2026-03",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.385001,
-      "output": 3.208337,
-      "cacheRead": 0.038502,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-3.8-flash",
-    "provider": "dothoosh",
-    "providerName": "DotHoosh",
-    "displayName": "Gemini 3.8 Flash",
-    "family": "gemini-flash",
-    "releaseDate": "2026-09-02",
-    "lastUpdated": "2026-09-02",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.962503,
-      "output": 4.812501,
-      "cacheRead": 0.096252,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-fable-5-1",
-    "provider": "dothoosh",
-    "providerName": "DotHoosh",
-    "displayName": "Claude Fable 5.1",
-    "family": "claude-fable",
-    "releaseDate": "2026-09-01",
-    "lastUpdated": "2026-09-01",
-    "knowledgeCutoff": "2026-06",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 12.833336,
-      "output": 64.166668,
-      "cacheRead": 0.320837,
-      "cacheWrite": 16.041669,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "kimi-k2.6",
-    "provider": "dothoosh",
-    "providerName": "DotHoosh",
-    "displayName": "Kimi K2.6",
-    "family": "kimi-k2",
-    "releaseDate": "2026-04-20",
-    "lastUpdated": "2026-04-20",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.219167,
-      "output": 5.133334,
-      "cacheRead": 0.205333,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "kimi-k3",
-    "provider": "dothoosh",
-    "providerName": "DotHoosh",
-    "displayName": "Kimi K3",
-    "family": "kimi-k3",
-    "releaseDate": "2026-07-16",
-    "lastUpdated": "2026-07-16",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 3.850003,
-      "output": 19.250002,
-      "cacheRead": 0.385001,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "kimi-k3.1-pro",
-    "provider": "dothoosh",
-    "providerName": "DotHoosh",
-    "displayName": "Kimi K3.1 Pro",
-    "family": "kimi-k3",
-    "releaseDate": "2026-10-23",
-    "lastUpdated": "2026-10-23",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2.566667,
-      "output": 12.833334,
-      "cacheRead": 0.256667,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "kimi-k2.7-code",
-    "provider": "dothoosh",
-    "providerName": "DotHoosh",
-    "displayName": "Kimi K2.7 Code",
-    "family": "kimi-k2",
-    "releaseDate": "2026-06-12",
-    "lastUpdated": "2026-06-12",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.219167,
-      "output": 5.133334,
-      "cacheRead": 0.243836,
-      "currency": "USD",
-      "per": 1000000
     },
     "status": "active",
     "deprecationDate": null,
@@ -492,6 +115,289 @@
     ]
   },
   {
+    "id": "deepseek-flash",
+    "provider": "dothoosh",
+    "providerName": "DotHoosh",
+    "displayName": "DeepSeek V4.1 Flash 1017",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-10-17",
+    "lastUpdated": "2026-10-17",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 393216,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.385001,
+      "output": 1.54,
+      "cacheRead": 0.007701,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k3",
+    "provider": "dothoosh",
+    "providerName": "DotHoosh",
+    "displayName": "Kimi K3",
+    "family": "kimi",
+    "releaseDate": "2026-07-16",
+    "lastUpdated": "2026-07-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3.850003,
+      "output": 19.250002,
+      "cacheRead": 0.385001,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-opus-5-5",
+    "provider": "dothoosh",
+    "providerName": "DotHoosh",
+    "displayName": "Claude Opus 5.5",
+    "family": "claude-opus",
+    "releaseDate": "2026-09-22",
+    "lastUpdated": "2026-09-22",
+    "knowledgeCutoff": "2026-06",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5.133334,
+      "output": 25.666668,
+      "cacheRead": 0.256669,
+      "cacheWrite": 6.41667,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k3.1-pro",
+    "provider": "dothoosh",
+    "providerName": "DotHoosh",
+    "displayName": "Kimi K3.1 Pro",
+    "family": "kimi-pro",
+    "releaseDate": "2026-10-23",
+    "lastUpdated": "2026-10-23",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.566667,
+      "output": 12.833334,
+      "cacheRead": 0.256667,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3.5-flash-lite",
+    "provider": "dothoosh",
+    "providerName": "DotHoosh",
+    "displayName": "Gemini 3.5 Flash Lite",
+    "family": "gemini-flash-lite",
+    "releaseDate": "2026-07-21",
+    "lastUpdated": "2026-07-21",
+    "knowledgeCutoff": "2026-03",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.385001,
+      "output": 3.208337,
+      "cacheRead": 0.038502,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k2.7-code",
+    "provider": "dothoosh",
+    "providerName": "DotHoosh",
+    "displayName": "Kimi K2.7 Code",
+    "family": "kimi-code",
+    "releaseDate": "2026-06-12",
+    "lastUpdated": "2026-06-12",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.219167,
+      "output": 5.133334,
+      "cacheRead": 0.243836,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "claude-sonnet-5-5",
     "provider": "dothoosh",
     "providerName": "DotHoosh",
@@ -540,16 +446,76 @@
     ]
   },
   {
-    "id": "deepseek-v4-pro",
+    "id": "gpt-6.1-sol",
     "provider": "dothoosh",
     "providerName": "DotHoosh",
-    "displayName": "DeepSeek V4 Pro",
-    "family": "deepseek-thinking",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 393216,
+    "displayName": "GPT-6.1 Sol",
+    "family": "gpt-sol",
+    "releaseDate": "2026-09-29",
+    "lastUpdated": "2026-09-29",
+    "knowledgeCutoff": "2026-04-30",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.566667,
+      "output": 12.833336,
+      "cacheRead": 0.128336,
+      "cacheWrite": 3.208337,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 5.133334,
+          "output": 19.250002,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 5.133334,
+        "output": 19.250002,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k2.6",
+    "provider": "dothoosh",
+    "providerName": "DotHoosh",
+    "displayName": "Kimi K2.6",
+    "family": "kimi",
+    "releaseDate": "2026-04-20",
+    "lastUpdated": "2026-04-20",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -571,9 +537,57 @@
       ]
     },
     "pricing": {
-      "input": 1.694002,
-      "output": 5.082003,
-      "cacheRead": 0.056467,
+      "input": 1.219167,
+      "output": 5.133334,
+      "cacheRead": 0.205333,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-fable-5-1",
+    "provider": "dothoosh",
+    "providerName": "DotHoosh",
+    "displayName": "Claude Fable 5.1",
+    "family": "claude-fable",
+    "releaseDate": "2026-09-01",
+    "lastUpdated": "2026-09-01",
+    "knowledgeCutoff": "2026-06",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 12.833336,
+      "output": 64.166668,
+      "cacheRead": 0.320837,
+      "cacheWrite": 16.041669,
       "currency": "USD",
       "per": 1000000
     },
@@ -647,114 +661,6 @@
     ]
   },
   {
-    "id": "gpt-6.1-sol",
-    "provider": "dothoosh",
-    "providerName": "DotHoosh",
-    "displayName": "GPT-6.1 Sol",
-    "family": "gpt-sol",
-    "releaseDate": "2026-09-29",
-    "lastUpdated": "2026-09-29",
-    "knowledgeCutoff": "2026-04-30",
-    "contextWindow": 1050000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2.566667,
-      "output": 12.833336,
-      "cacheRead": 0.128336,
-      "cacheWrite": 3.208337,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 5.133334,
-          "output": 19.250002,
-          "contextThreshold": 272000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 5.133334,
-        "output": 19.250002,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-opus-5-5",
-    "provider": "dothoosh",
-    "providerName": "DotHoosh",
-    "displayName": "Claude Opus 5.5",
-    "family": "claude-opus",
-    "releaseDate": "2026-09-22",
-    "lastUpdated": "2026-09-22",
-    "knowledgeCutoff": "2026-06",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 5.133334,
-      "output": 25.666668,
-      "cacheRead": 0.256669,
-      "cacheWrite": 6.41667,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "gemini-4-argon",
     "provider": "dothoosh",
     "providerName": "DotHoosh",
@@ -789,6 +695,100 @@
       "input": 2.566667,
       "output": 12.833336,
       "cacheRead": 0.128336,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v4-pro",
+    "provider": "dothoosh",
+    "providerName": "DotHoosh",
+    "displayName": "DeepSeek V4 Pro",
+    "family": "deepseek-pro",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 393216,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.694002,
+      "output": 5.082003,
+      "cacheRead": 0.056467,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3.8-flash",
+    "provider": "dothoosh",
+    "providerName": "DotHoosh",
+    "displayName": "Gemini 3.8 Flash",
+    "family": "gemini-flash",
+    "releaseDate": "2026-09-02",
+    "lastUpdated": "2026-09-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.962503,
+      "output": 4.812501,
+      "cacheRead": 0.096252,
       "currency": "USD",
       "per": 1000000
     },

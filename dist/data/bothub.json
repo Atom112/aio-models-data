@@ -4,7 +4,7 @@
     "provider": "bothub",
     "providerName": "Bothub",
     "displayName": "Muse Spark 1.3 Contributor",
-    "family": "muse",
+    "family": "muse-spark",
     "releaseDate": "2026-09-02",
     "lastUpdated": "2026-09-02",
     "knowledgeCutoff": null,
@@ -96,11 +96,152 @@
     ]
   },
   {
+    "id": "glm-5.3-flash",
+    "provider": "bothub",
+    "providerName": "Bothub",
+    "displayName": "GLM-5.3-Flash",
+    "family": "glm-flash",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1566,
+      "output": 0.522,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v4-flash-0731",
+    "provider": "bothub",
+    "providerName": "Bothub",
+    "displayName": "DeepSeek V4 Flash 0731",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-07-31",
+    "lastUpdated": "2026-07-31",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.589,
+      "output": 1.7671,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "nemotron-3-ultra-550b-a55b:free",
+    "provider": "bothub",
+    "providerName": "Bothub",
+    "displayName": "Nemotron 3 Ultra (free)",
+    "family": "nemotron-ultra-free",
+    "releaseDate": "2026-06-04",
+    "lastUpdated": "2026-06-04",
+    "knowledgeCutoff": "2025-09",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "deepseek-v4-pro-0813",
     "provider": "bothub",
     "providerName": "Bothub",
     "displayName": "DeepSeek V4 Pro 0813",
-    "family": "deepseek-thinking",
+    "family": "deepseek-pro",
     "releaseDate": "2026-08-13",
     "lastUpdated": "2026-08-22",
     "knowledgeCutoff": null,
@@ -190,57 +331,11 @@
     ]
   },
   {
-    "id": "deepseek-v4-flash-0731",
-    "provider": "bothub",
-    "providerName": "Bothub",
-    "displayName": "DeepSeek V4 Flash 0731",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-07-31",
-    "lastUpdated": "2026-07-31",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.589,
-      "output": 1.7671,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "gemma-4-31b-it:free",
     "provider": "bothub",
     "providerName": "Bothub",
     "displayName": "Gemma 4 31B IT (free)",
-    "family": "gemma",
+    "family": "gemma-free",
     "releaseDate": "2026-04-02",
     "lastUpdated": "2026-04-02",
     "knowledgeCutoff": "2025-01",
@@ -270,101 +365,6 @@
     "pricing": {
       "input": 0,
       "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "nemotron-3-ultra-550b-a55b:free",
-    "provider": "bothub",
-    "providerName": "Bothub",
-    "displayName": "Nemotron 3 Ultra (free)",
-    "family": "nemotron",
-    "releaseDate": "2026-06-04",
-    "lastUpdated": "2026-06-04",
-    "knowledgeCutoff": "2025-09",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm-5.3-flash",
-    "provider": "bothub",
-    "providerName": "Bothub",
-    "displayName": "GLM-5.3-Flash",
-    "family": "glm-flash",
-    "releaseDate": "2026-08-26",
-    "lastUpdated": "2026-08-26",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1566,
-      "output": 0.522,
       "currency": "USD",
       "per": 1000000
     },

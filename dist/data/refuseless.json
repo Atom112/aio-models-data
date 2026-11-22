@@ -1,39 +1,40 @@
 [
   {
-    "id": "minimax-m3.1-flash",
+    "id": "glm-5.3-flash-abliterated",
     "provider": "refuseless",
     "providerName": "Refuseless",
-    "displayName": "MiniMax M3.1 Flash",
-    "family": "minimax",
-    "releaseDate": "2026-10-19",
-    "lastUpdated": "2026-10-19",
+    "displayName": "GLM 5.3 Flash Abliterated",
+    "family": "glm-flash",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
-    "maxOutputTokens": 512000,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.02,
-      "output": 0.08,
-      "cacheRead": 0.002,
+      "input": 0.12,
+      "output": 0.5,
+      "cacheRead": 0.03,
       "currency": "USD",
       "per": 1000000
     },
@@ -94,54 +95,6 @@
     ]
   },
   {
-    "id": "glm-5.3-flash-abliterated",
-    "provider": "refuseless",
-    "providerName": "Refuseless",
-    "displayName": "GLM 5.3 Flash Abliterated",
-    "family": "glm-flash",
-    "releaseDate": "2026-08-26",
-    "lastUpdated": "2026-08-26",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.12,
-      "output": 0.5,
-      "cacheRead": 0.03,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "deepseek-v4.1-flash-fast",
     "provider": "refuseless",
     "providerName": "Refuseless",
@@ -174,6 +127,53 @@
     },
     "pricing": {
       "input": 0.01,
+      "output": 0.08,
+      "cacheRead": 0.002,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimax-m3.1-flash",
+    "provider": "refuseless",
+    "providerName": "Refuseless",
+    "displayName": "MiniMax M3.1 Flash",
+    "family": "minimax-m-flash",
+    "releaseDate": "2026-10-19",
+    "lastUpdated": "2026-10-19",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 512000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.02,
       "output": 0.08,
       "cacheRead": 0.002,
       "currency": "USD",
@@ -240,7 +240,7 @@
     "provider": "refuseless",
     "providerName": "Refuseless",
     "displayName": "DeepSeek V4.1 Flash 1017 Abliterated Free",
-    "family": "deepseek-flash",
+    "family": "deepseek-flash-free",
     "releaseDate": "2026-10-17",
     "lastUpdated": "2026-10-17",
     "knowledgeCutoff": "2025-05",

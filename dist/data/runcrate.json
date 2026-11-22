@@ -1,40 +1,39 @@
 [
   {
-    "id": "moonshotai/Kimi-K2.6",
+    "id": "Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo",
     "provider": "runcrate",
     "providerName": "Runcrate",
-    "displayName": "Kimi K2.6",
-    "family": "kimi-k2",
-    "releaseDate": "2026-04-20",
-    "lastUpdated": "2026-04-20",
-    "knowledgeCutoff": "2025-01",
+    "displayName": "Qwen3-Coder 480B-A35B Instruct",
+    "family": "qwen-coder",
+    "releaseDate": "2025-07-22",
+    "lastUpdated": "2025-07-22",
+    "knowledgeCutoff": "2025-04",
     "contextWindow": 262144,
-    "maxOutputTokens": 16384,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
-      "vision": true,
-      "reasoning": true,
+      "vision": false,
+      "reasoning": false,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.7875,
-      "output": 3.675,
-      "cacheRead": 0.1575,
+      "input": 0.315,
+      "output": 1.05,
+      "cacheRead": 0.105,
       "currency": "USD",
       "per": 1000000
     },
@@ -52,7 +51,7 @@
     "provider": "runcrate",
     "providerName": "Runcrate",
     "displayName": "Qwen3.8 Flash",
-    "family": "qwen",
+    "family": "qwen-flash",
     "releaseDate": "2026-08-26",
     "lastUpdated": "2026-08-26",
     "knowledgeCutoff": null,
@@ -128,289 +127,6 @@
     "pricing": {
       "input": 0.0945,
       "output": 0.5775,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo",
-    "provider": "runcrate",
-    "providerName": "Runcrate",
-    "displayName": "Qwen3-Coder 480B-A35B Instruct",
-    "family": "qwen",
-    "releaseDate": "2025-07-22",
-    "lastUpdated": "2025-07-22",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.315,
-      "output": 1.05,
-      "cacheRead": 0.105,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
-    "provider": "runcrate",
-    "providerName": "Runcrate",
-    "displayName": "Llama 3.3 70B Instruct Turbo",
-    "family": "llama",
-    "releaseDate": "2024-12-06",
-    "lastUpdated": "2024-12-06",
-    "knowledgeCutoff": "2023-12",
-    "contextWindow": 131072,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.105,
-      "output": 0.336,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "openai/gpt-oss-120b",
-    "provider": "runcrate",
-    "providerName": "Runcrate",
-    "displayName": "GPT OSS 120B",
-    "family": "gpt-oss",
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": "2024-06",
-    "contextWindow": 131072,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.03885,
-      "output": 0.1785,
-      "cacheRead": 0.0058275,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/GLM-5.3",
-    "provider": "runcrate",
-    "providerName": "Runcrate",
-    "displayName": "GLM-5.3",
-    "family": "glm",
-    "releaseDate": "2026-08-14",
-    "lastUpdated": "2026-08-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.590625,
-      "output": 2.625,
-      "cacheRead": 0.13125,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/GLM-5.3-Flash",
-    "provider": "runcrate",
-    "providerName": "Runcrate",
-    "displayName": "GLM-5.3-Flash",
-    "family": "glm-flash",
-    "releaseDate": "2026-08-26",
-    "lastUpdated": "2026-08-26",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1575,
-      "output": 0.525,
-      "cacheRead": 0.0315,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
-    "provider": "runcrate",
-    "providerName": "Runcrate",
-    "displayName": "DeepSeek V4.1 Flash 1017",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-10-17",
-    "lastUpdated": "2026-10-17",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1029,
-      "output": 0.3087,
-      "cacheRead": 0.003087,
       "currency": "USD",
       "per": 1000000
     },
@@ -506,6 +222,290 @@
       "input": 0.147,
       "output": 0.441,
       "cacheRead": 0.00441,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "provider": "runcrate",
+    "providerName": "Runcrate",
+    "displayName": "DeepSeek V4.1 Flash 1017",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-10-17",
+    "lastUpdated": "2026-10-17",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1029,
+      "output": 0.3087,
+      "cacheRead": 0.003087,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "openai/gpt-oss-120b",
+    "provider": "runcrate",
+    "providerName": "Runcrate",
+    "displayName": "GPT OSS 120B",
+    "family": "gpt-oss",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": "2024-06",
+    "contextWindow": 131072,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.03885,
+      "output": 0.1785,
+      "cacheRead": 0.0058275,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+    "provider": "runcrate",
+    "providerName": "Runcrate",
+    "displayName": "Llama 3.3 70B Instruct Turbo",
+    "family": "llama",
+    "releaseDate": "2024-12-06",
+    "lastUpdated": "2024-12-06",
+    "knowledgeCutoff": "2023-12",
+    "contextWindow": 131072,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.105,
+      "output": 0.336,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "zai-org/GLM-5.3-Flash",
+    "provider": "runcrate",
+    "providerName": "Runcrate",
+    "displayName": "GLM-5.3-Flash",
+    "family": "glm-flash",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1575,
+      "output": 0.525,
+      "cacheRead": 0.0315,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "zai-org/GLM-5.3",
+    "provider": "runcrate",
+    "providerName": "Runcrate",
+    "displayName": "GLM-5.3",
+    "family": "glm",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.590625,
+      "output": 2.625,
+      "cacheRead": 0.13125,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "moonshotai/Kimi-K2.6",
+    "provider": "runcrate",
+    "providerName": "Runcrate",
+    "displayName": "Kimi K2.6",
+    "family": "kimi",
+    "releaseDate": "2026-04-20",
+    "lastUpdated": "2026-04-20",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.7875,
+      "output": 3.675,
+      "cacheRead": 0.1575,
       "currency": "USD",
       "per": 1000000
     },

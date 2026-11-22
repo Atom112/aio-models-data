@@ -1,5 +1,100 @@
 [
   {
+    "id": "gemma-4-31b-it",
+    "provider": "adaption",
+    "providerName": "Adaption",
+    "displayName": "Gemma 4 31B IT",
+    "family": "gemma",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 256000,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.09,
+      "output": 0.34,
+      "cacheRead": 0.05,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm-5.2",
+    "provider": "adaption",
+    "providerName": "Adaption",
+    "displayName": "GLM-5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048575,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.4,
+      "output": 4.4,
+      "cacheRead": 0.26,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "qwen3.5-397b",
     "provider": "adaption",
     "providerName": "Adaption",
@@ -48,14 +143,14 @@
     ]
   },
   {
-    "id": "gemma-4-31b-it",
+    "id": "gemma-4-26b-a4b-it",
     "provider": "adaption",
     "providerName": "Adaption",
-    "displayName": "Gemma 4 31B IT",
+    "displayName": "Gemma 4 26B A4B IT",
     "family": "gemma",
     "releaseDate": "2026-04-02",
     "lastUpdated": "2026-04-02",
-    "knowledgeCutoff": "2025-01",
+    "knowledgeCutoff": null,
     "contextWindow": 256000,
     "maxOutputTokens": 32768,
     "capabilities": {
@@ -80,9 +175,56 @@
       ]
     },
     "pricing": {
-      "input": 0.09,
-      "output": 0.34,
-      "cacheRead": 0.05,
+      "input": 0.0765,
+      "output": 0.255,
+      "cacheRead": 0.0425,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v4-flash",
+    "provider": "adaption",
+    "providerName": "Adaption",
+    "displayName": "DeepSeek V4 Flash 0731",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-07-31",
+    "lastUpdated": "2026-07-31",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.04444,
+      "output": 0.13332,
+      "cacheRead": 0.001414,
       "currency": "USD",
       "per": 1000000
     },
@@ -179,148 +321,6 @@
       "input": 0.039,
       "output": 1.25,
       "cacheRead": 0.0039,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm-5.2",
-    "provider": "adaption",
-    "providerName": "Adaption",
-    "displayName": "GLM-5.2",
-    "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048575,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.4,
-      "output": 4.4,
-      "cacheRead": 0.26,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-v4-flash",
-    "provider": "adaption",
-    "providerName": "Adaption",
-    "displayName": "DeepSeek V4 Flash 0731",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-07-31",
-    "lastUpdated": "2026-07-31",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.04444,
-      "output": 0.13332,
-      "cacheRead": 0.001414,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemma-4-26b-a4b-it",
-    "provider": "adaption",
-    "providerName": "Adaption",
-    "displayName": "Gemma 4 26B A4B IT",
-    "family": "gemma",
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-04-02",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.0765,
-      "output": 0.255,
-      "cacheRead": 0.0425,
       "currency": "USD",
       "per": 1000000
     },

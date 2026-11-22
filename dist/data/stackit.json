@@ -1,52 +1,5 @@
 [
   {
-    "id": "Qwen/Qwen3-VL-235B-A22B-Instruct-FP8",
-    "provider": "stackit",
-    "providerName": "STACKIT",
-    "displayName": "Qwen3-VL 235B",
-    "family": "qwen",
-    "releaseDate": "2025-09-23",
-    "lastUpdated": "2025-09-23",
-    "knowledgeCutoff": "2025-03-31",
-    "contextWindow": 218000,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.76,
-      "output": 2.05,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "Qwen/Qwen3.6-27B",
     "provider": "stackit",
     "providerName": "STACKIT",
@@ -93,11 +46,58 @@
     ]
   },
   {
+    "id": "Qwen/Qwen3-VL-235B-A22B-Instruct-FP8",
+    "provider": "stackit",
+    "providerName": "STACKIT",
+    "displayName": "Qwen3-VL 235B",
+    "family": "qwen-vl",
+    "releaseDate": "2025-09-23",
+    "lastUpdated": "2025-09-23",
+    "knowledgeCutoff": "2025-03-31",
+    "contextWindow": 218000,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.76,
+      "output": 2.05,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "Qwen/Qwen3-VL-Embedding-8B",
     "provider": "stackit",
     "providerName": "STACKIT",
     "displayName": "Qwen3-VL Embedding 8B",
-    "family": "qwen",
+    "family": "qwen-embedding",
     "releaseDate": "2026-02-05",
     "lastUpdated": "2026-02-05",
     "knowledgeCutoff": null,
@@ -187,52 +187,6 @@
     ]
   },
   {
-    "id": "openai/gpt-oss-20b",
-    "provider": "stackit",
-    "providerName": "STACKIT",
-    "displayName": "GPT OSS 20B",
-    "family": "gpt-oss",
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": "2024-06",
-    "contextWindow": 131072,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.18,
-      "output": 0.29,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "openai/gpt-oss-120b",
     "provider": "stackit",
     "providerName": "STACKIT",
@@ -266,6 +220,52 @@
     "pricing": {
       "input": 0.53,
       "output": 0.76,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "openai/gpt-oss-20b",
+    "provider": "stackit",
+    "providerName": "STACKIT",
+    "displayName": "GPT OSS 20B",
+    "family": "gpt-oss",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": "2024-06",
+    "contextWindow": 131072,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.18,
+      "output": 0.29,
       "currency": "USD",
       "per": 1000000
     },

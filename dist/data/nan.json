@@ -1,15 +1,15 @@
 [
   {
-    "id": "mimo-v2.6-flash",
+    "id": "hy4",
     "provider": "nan",
     "providerName": "NaN",
-    "displayName": "MiMo-V2.6-Flash",
-    "family": "mimo",
-    "releaseDate": "2026-09-22",
-    "lastUpdated": "2026-09-22",
+    "displayName": "Hy4",
+    "family": "hy",
+    "releaseDate": "2026-11-04",
+    "lastUpdated": "2026-11-04",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -20,56 +20,7 @@
       "temperature": true,
       "attachment": true,
       "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.19656,
-      "output": 0.39312,
-      "cacheRead": 0.0039312,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm5.3-flash",
-    "provider": "nan",
-    "providerName": "NaN",
-    "displayName": "GLM-5.3-Flash",
-    "family": "glm-flash",
-    "releaseDate": "2026-08-26",
-    "lastUpdated": "2026-08-26",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
+      "open_weights": false
     },
     "modalities": {
       "input": [
@@ -81,56 +32,9 @@
       ]
     },
     "pricing": {
-      "input": 0.14742,
-      "output": 0.4914,
-      "cacheRead": 0.029484,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm5.3",
-    "provider": "nan",
-    "providerName": "NaN",
-    "displayName": "GLM-5.3",
-    "family": "glm",
-    "releaseDate": "2026-08-14",
-    "lastUpdated": "2026-08-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.37592,
-      "output": 4.32432,
-      "cacheRead": 0.029484,
+      "input": 1.170936,
+      "output": 3.511404,
+      "cacheRead": 0.058968,
       "currency": "USD",
       "per": 1000000
     },
@@ -148,7 +52,7 @@
     "provider": "nan",
     "providerName": "NaN",
     "displayName": "Kimi K3.1 Pro",
-    "family": "kimi-k3",
+    "family": "kimi-pro",
     "releaseDate": "2026-10-23",
     "lastUpdated": "2026-10-23",
     "knowledgeCutoff": null,
@@ -197,7 +101,7 @@
     "provider": "nan",
     "providerName": "NaN",
     "displayName": "Qwen3.8 Flash",
-    "family": "qwen",
+    "family": "qwen-flash",
     "releaseDate": "2026-08-26",
     "lastUpdated": "2026-08-26",
     "knowledgeCutoff": null,
@@ -228,195 +132,6 @@
       "input": 0.2106,
       "output": 0.65988,
       "cacheRead": 0.022464,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-v4-pro",
-    "provider": "nan",
-    "providerName": "NaN",
-    "displayName": "DeepSeek V4 Pro 0813",
-    "family": "deepseek-thinking",
-    "releaseDate": "2026-08-13",
-    "lastUpdated": "2026-08-22",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.85328,
-      "output": 5.55984,
-      "cacheRead": 0.061776,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3.6",
-    "provider": "nan",
-    "providerName": "NaN",
-    "displayName": "Qwen3.6 35B-A3B",
-    "family": "qwen",
-    "releaseDate": "2026-04-17",
-    "lastUpdated": "2026-04-17",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3.8-max",
-    "provider": "nan",
-    "providerName": "NaN",
-    "displayName": "Qwen3.8 Max",
-    "family": "qwen",
-    "releaseDate": "2026-08-03",
-    "lastUpdated": "2026-08-03",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2.808,
-      "output": 8.424,
-      "cacheRead": 0.351,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemma4",
-    "provider": "nan",
-    "providerName": "NaN",
-    "displayName": "Gemma 4 26B A4B IT",
-    "family": "gemma",
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-04-02",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
       "currency": "USD",
       "per": 1000000
     },
@@ -478,16 +193,111 @@
     ]
   },
   {
-    "id": "hy4",
+    "id": "gemma4",
     "provider": "nan",
     "providerName": "NaN",
-    "displayName": "Hy4",
-    "family": "Hy",
-    "releaseDate": "2026-11-04",
-    "lastUpdated": "2026-11-04",
+    "displayName": "Gemma 4 26B A4B IT",
+    "family": "gemma",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
     "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm5.3-flash",
+    "provider": "nan",
+    "providerName": "NaN",
+    "displayName": "GLM-5.3-Flash",
+    "family": "glm-flash",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.14742,
+      "output": 0.4914,
+      "cacheRead": 0.029484,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.8-max",
+    "provider": "nan",
+    "providerName": "NaN",
+    "displayName": "Qwen3.8 Max",
+    "family": "qwen-max",
+    "releaseDate": "2026-08-03",
+    "lastUpdated": "2026-08-03",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -510,9 +320,199 @@
       ]
     },
     "pricing": {
-      "input": 1.170936,
-      "output": 3.511404,
-      "cacheRead": 0.058968,
+      "input": 2.808,
+      "output": 8.424,
+      "cacheRead": 0.351,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "glm5.3",
+    "provider": "nan",
+    "providerName": "NaN",
+    "displayName": "GLM-5.3",
+    "family": "glm",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.37592,
+      "output": 4.32432,
+      "cacheRead": 0.029484,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.6",
+    "provider": "nan",
+    "providerName": "NaN",
+    "displayName": "Qwen3.6 35B-A3B",
+    "family": "qwen",
+    "releaseDate": "2026-04-17",
+    "lastUpdated": "2026-04-17",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v4-pro",
+    "provider": "nan",
+    "providerName": "NaN",
+    "displayName": "DeepSeek V4 Pro 0813",
+    "family": "deepseek-pro",
+    "releaseDate": "2026-08-13",
+    "lastUpdated": "2026-08-22",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.85328,
+      "output": 5.55984,
+      "cacheRead": 0.061776,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mimo-v2.6-flash",
+    "provider": "nan",
+    "providerName": "NaN",
+    "displayName": "MiMo-V2.6-Flash",
+    "family": "mimo-flash",
+    "releaseDate": "2026-09-22",
+    "lastUpdated": "2026-09-22",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.19656,
+      "output": 0.39312,
+      "cacheRead": 0.0039312,
       "currency": "USD",
       "per": 1000000
     },

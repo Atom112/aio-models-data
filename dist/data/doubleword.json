@@ -1,186 +1,36 @@
 [
   {
-    "id": "meta/muse-spark-open",
+    "id": "Qwen/Qwen3-Embedding-8B",
     "provider": "doubleword",
     "providerName": "Doubleword",
-    "displayName": "Muse Spark Open",
-    "family": "muse",
-    "releaseDate": "2026-10-15",
-    "lastUpdated": "2026-10-15",
-    "knowledgeCutoff": "2026-01-04",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
+    "displayName": "Qwen3 Embedding 8B",
+    "family": "qwen-embedding",
+    "releaseDate": "2025-06-05",
+    "lastUpdated": "2025-06-05",
+    "knowledgeCutoff": null,
+    "contextWindow": 32768,
+    "maxOutputTokens": 0,
     "capabilities": {
-      "tools": true,
+      "tools": false,
       "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.25,
-      "output": 4.25,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "moonshotai/kimi-k3",
-    "provider": "doubleword",
-    "providerName": "Doubleword",
-    "displayName": "Kimi K3",
-    "family": "kimi-k3",
-    "releaseDate": "2026-07-16",
-    "lastUpdated": "2026-07-16",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 3,
-      "output": 15,
-      "cacheRead": 0.3,
-      "cacheWrite": 3.75,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "moonshotai/Kimi-K3.1-Pro",
-    "provider": "doubleword",
-    "providerName": "Doubleword",
-    "displayName": "Kimi K3.1 Pro",
-    "family": "kimi-k3",
-    "releaseDate": "2026-10-23",
-    "lastUpdated": "2026-10-23",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2,
-      "output": 10,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3-VL-235B-A22B-Instruct-FP8",
-    "provider": "doubleword",
-    "providerName": "Doubleword",
-    "displayName": "Qwen3 VL 235B A22B Instruct",
-    "family": "qwen",
-    "releaseDate": "2025-09-23",
-    "lastUpdated": "2025-09-23",
-    "knowledgeCutoff": "2025-03-31",
-    "contextWindow": 131072,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
       "reasoning": false,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
-    "pricing": {
-      "input": 0.21,
-      "output": 1.9,
-      "cacheRead": 0.1155,
-      "cacheWrite": 0.2625,
-      "currency": "USD",
-      "per": 1000000
-    },
+    "pricing": null,
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
@@ -338,24 +188,73 @@
     ]
   },
   {
-    "id": "Qwen/Qwen3-Embedding-8B",
+    "id": "Qwen/Qwen3-VL-235B-A22B-Instruct-FP8",
     "provider": "doubleword",
     "providerName": "Doubleword",
-    "displayName": "Qwen3 Embedding 8B",
-    "family": "qwen",
-    "releaseDate": "2025-06-05",
-    "lastUpdated": "2025-06-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 32768,
-    "maxOutputTokens": 0,
+    "displayName": "Qwen3 VL 235B A22B Instruct",
+    "family": "qwen-vl",
+    "releaseDate": "2025-09-23",
+    "lastUpdated": "2025-09-23",
+    "knowledgeCutoff": "2025-03-31",
+    "contextWindow": 131072,
+    "maxOutputTokens": 32768,
     "capabilities": {
-      "tools": false,
-      "vision": false,
+      "tools": true,
+      "vision": true,
       "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.21,
+      "output": 1.9,
+      "cacheRead": 0.1155,
+      "cacheWrite": 0.2625,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
+    "provider": "doubleword",
+    "providerName": "Doubleword",
+    "displayName": "Nemotron 3 Ultra 550B A55B",
+    "family": "nemotron-ultra",
+    "releaseDate": "2026-06-04",
+    "lastUpdated": "2026-06-04",
+    "knowledgeCutoff": "2025-09",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": false,
       "structured_output": false,
       "open_weights": true
@@ -368,7 +267,208 @@
         "text"
       ]
     },
-    "pricing": null,
+    "pricing": {
+      "input": 0.5,
+      "output": 2.2,
+      "cacheRead": 0.125,
+      "cacheWrite": 0.625,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V4-Pro-0813",
+    "provider": "doubleword",
+    "providerName": "Doubleword",
+    "displayName": "DeepSeek V4 Pro 0813",
+    "family": "deepseek-pro",
+    "releaseDate": "2026-08-13",
+    "lastUpdated": "2026-08-22",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.32,
+      "output": 3.96,
+      "cacheRead": 0.132,
+      "cacheWrite": 1.65,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "provider": "doubleword",
+    "providerName": "Doubleword",
+    "displayName": "DeepSeek V4.1 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.6,
+      "cacheRead": 0.003,
+      "cacheWrite": 0.1875,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V4-Flash-0731",
+    "provider": "doubleword",
+    "providerName": "Doubleword",
+    "displayName": "DeepSeek V4 Flash 0731",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-07-31",
+    "lastUpdated": "2026-07-31",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.09,
+      "output": 0.18,
+      "cacheRead": 0.018,
+      "cacheWrite": 0.1125,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "provider": "doubleword",
+    "providerName": "Doubleword",
+    "displayName": "DeepSeek V4.1 Flash 1017",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-10-17",
+    "lastUpdated": "2026-10-17",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.6,
+      "cacheRead": 0.003,
+      "cacheWrite": 0.1875,
+      "currency": "USD",
+      "per": 1000000
+    },
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
@@ -428,15 +528,15 @@
     ]
   },
   {
-    "id": "meta-models/Muse-Glimmer-30B",
+    "id": "meta/muse-spark-open",
     "provider": "doubleword",
     "providerName": "Doubleword",
-    "displayName": "Muse Glimmer 30B",
-    "family": "muse",
-    "releaseDate": "2026-08-10",
-    "lastUpdated": "2026-08-10",
+    "displayName": "Muse Spark Open",
+    "family": "muse-spark",
+    "releaseDate": "2026-10-15",
+    "lastUpdated": "2026-10-15",
     "knowledgeCutoff": "2026-01-04",
-    "contextWindow": 131072,
+    "contextWindow": 1048576,
     "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
@@ -459,106 +559,8 @@
       ]
     },
     "pricing": {
-      "input": 0.11,
-      "output": 0.32,
-      "cacheRead": 0.0132,
-      "cacheWrite": 0.1375,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
-    "provider": "doubleword",
-    "providerName": "Doubleword",
-    "displayName": "Nemotron 3 Ultra 550B A55B",
-    "family": "nemotron",
-    "releaseDate": "2026-06-04",
-    "lastUpdated": "2026-06-04",
-    "knowledgeCutoff": "2025-09",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.5,
-      "output": 2.2,
-      "cacheRead": 0.125,
-      "cacheWrite": 0.625,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/GLM-5.3",
-    "provider": "doubleword",
-    "providerName": "Doubleword",
-    "displayName": "GLM-5.3",
-    "family": "glm",
-    "releaseDate": "2026-08-14",
-    "lastUpdated": "2026-08-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.4,
-      "output": 4.4,
-      "cacheRead": 0.28,
-      "cacheWrite": 1.75,
+      "input": 1.25,
+      "output": 4.25,
       "currency": "USD",
       "per": 1000000
     },
@@ -669,113 +671,16 @@
     ]
   },
   {
-    "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "id": "zai-org/GLM-5.3",
     "provider": "doubleword",
     "providerName": "Doubleword",
-    "displayName": "DeepSeek V4.1 Flash 1017",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-10-17",
-    "lastUpdated": "2026-10-17",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.15,
-      "output": 0.6,
-      "cacheRead": 0.003,
-      "cacheWrite": 0.1875,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-V4-Flash-0731",
-    "provider": "doubleword",
-    "providerName": "Doubleword",
-    "displayName": "DeepSeek V4 Flash 0731",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-07-31",
-    "lastUpdated": "2026-07-31",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.09,
-      "output": 0.18,
-      "cacheRead": 0.018,
-      "cacheWrite": 0.1125,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-V4-Pro-0813",
-    "provider": "doubleword",
-    "providerName": "Doubleword",
-    "displayName": "DeepSeek V4 Pro 0813",
-    "family": "deepseek-thinking",
-    "releaseDate": "2026-08-13",
-    "lastUpdated": "2026-08-22",
+    "displayName": "GLM-5.3",
+    "family": "glm",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
     "knowledgeCutoff": null,
     "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -797,10 +702,10 @@
       ]
     },
     "pricing": {
-      "input": 1.32,
-      "output": 3.96,
-      "cacheRead": 0.132,
-      "cacheWrite": 1.65,
+      "input": 1.4,
+      "output": 4.4,
+      "cacheRead": 0.28,
+      "cacheWrite": 1.75,
       "currency": "USD",
       "per": 1000000
     },
@@ -814,16 +719,16 @@
     ]
   },
   {
-    "id": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "id": "moonshotai/kimi-k3",
     "provider": "doubleword",
     "providerName": "Doubleword",
-    "displayName": "DeepSeek V4.1 Flash",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
+    "displayName": "Kimi K3",
+    "family": "kimi",
+    "releaseDate": "2026-07-16",
+    "lastUpdated": "2026-07-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -831,7 +736,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": true,
+      "temperature": false,
       "attachment": true,
       "structured_output": true,
       "open_weights": true
@@ -846,10 +751,105 @@
       ]
     },
     "pricing": {
-      "input": 0.15,
-      "output": 0.6,
-      "cacheRead": 0.003,
-      "cacheWrite": 0.1875,
+      "input": 3,
+      "output": 15,
+      "cacheRead": 0.3,
+      "cacheWrite": 3.75,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "moonshotai/Kimi-K3.1-Pro",
+    "provider": "doubleword",
+    "providerName": "Doubleword",
+    "displayName": "Kimi K3.1 Pro",
+    "family": "kimi-pro",
+    "releaseDate": "2026-10-23",
+    "lastUpdated": "2026-10-23",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 10,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "meta-models/Muse-Glimmer-30B",
+    "provider": "doubleword",
+    "providerName": "Doubleword",
+    "displayName": "Muse Glimmer 30B",
+    "family": "muse-glimmer",
+    "releaseDate": "2026-08-10",
+    "lastUpdated": "2026-08-10",
+    "knowledgeCutoff": "2026-01-04",
+    "contextWindow": 131072,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.11,
+      "output": 0.32,
+      "cacheRead": 0.0132,
+      "cacheWrite": 0.1375,
       "currency": "USD",
       "per": 1000000
     },

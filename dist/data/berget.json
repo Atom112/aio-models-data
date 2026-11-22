@@ -1,40 +1,38 @@
 [
   {
-    "id": "moonshotai/Kimi-K3",
+    "id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
     "provider": "berget",
     "providerName": "Berget.AI",
-    "displayName": "Kimi K3",
-    "family": "kimi-k3",
-    "releaseDate": "2026-07-16",
-    "lastUpdated": "2026-07-16",
-    "knowledgeCutoff": null,
-    "contextWindow": 327680,
-    "maxOutputTokens": 32768,
+    "displayName": "Mistral Small 3.2 24B Instruct 2506",
+    "family": "mistral-small",
+    "releaseDate": "2025-06-20",
+    "lastUpdated": "2025-06-20",
+    "knowledgeCutoff": "2025-09",
+    "contextWindow": 32000,
+    "maxOutputTokens": 8192,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
+      "temperature": true,
+      "attachment": false,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 3.3645,
-      "output": 16.8225,
-      "cacheRead": 1.00935,
+      "input": 0.33645,
+      "output": 0.33645,
       "currency": "USD",
       "per": 1000000
     },
@@ -144,52 +142,6 @@
     ]
   },
   {
-    "id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
-    "provider": "berget",
-    "providerName": "Berget.AI",
-    "displayName": "Mistral Small 3.2 24B Instruct 2506",
-    "family": "mistral-small",
-    "releaseDate": "2025-06-20",
-    "lastUpdated": "2025-06-20",
-    "knowledgeCutoff": "2025-09",
-    "contextWindow": 32000,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.33645,
-      "output": 0.33645,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "zai-org/GLM-5.3-Flash",
     "provider": "berget",
     "providerName": "Berget.AI",
@@ -275,6 +227,54 @@
       "per": 1000000
     },
     "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "moonshotai/Kimi-K3",
+    "provider": "berget",
+    "providerName": "Berget.AI",
+    "displayName": "Kimi K3",
+    "family": "kimi",
+    "releaseDate": "2026-07-16",
+    "lastUpdated": "2026-07-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 327680,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3.3645,
+      "output": 16.8225,
+      "cacheRead": 1.00935,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],

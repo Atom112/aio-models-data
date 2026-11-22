@@ -1,5 +1,52 @@
 [
   {
+    "id": "deepseek-v4.1-flash",
+    "provider": "cloudcode",
+    "providerName": "CloudCode.ONE",
+    "displayName": "DeepSeek V4.1 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.27,
+      "output": 1.08,
+      "cacheRead": 0.0054,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "glm-5.3",
     "provider": "cloudcode",
     "providerName": "CloudCode.ONE",
@@ -34,151 +81,6 @@
       "input": 1.26,
       "output": 3.96,
       "cacheRead": 0.234,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "mistral-large-4",
-    "provider": "cloudcode",
-    "providerName": "CloudCode.ONE",
-    "displayName": "Mistral Large 4",
-    "family": "mistral-large",
-    "releaseDate": "2026-10-06",
-    "lastUpdated": "2026-10-06",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.54,
-      "output": 4.62,
-      "cacheRead": 0.154,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-v4-pro",
-    "provider": "cloudcode",
-    "providerName": "CloudCode.ONE",
-    "displayName": "DeepSeek V4 Pro",
-    "family": "deepseek-thinking",
-    "releaseDate": "2026-08-13",
-    "lastUpdated": "2026-08-22",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.705,
-      "output": 5.115,
-      "cacheRead": 0.0568,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm-5v-turbo",
-    "provider": "cloudcode",
-    "providerName": "CloudCode.ONE",
-    "displayName": "GLM-5V-Turbo",
-    "family": "glm",
-    "releaseDate": "2026-04-01",
-    "lastUpdated": "2026-04-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2.4,
-      "output": 8,
-      "cacheRead": 0.48,
       "currency": "USD",
       "per": 1000000
     },
@@ -242,14 +144,64 @@
     ]
   },
   {
-    "id": "deepseek-v4.1-flash",
+    "id": "glm-5v-turbo",
     "provider": "cloudcode",
     "providerName": "CloudCode.ONE",
-    "displayName": "DeepSeek V4.1 Flash",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "knowledgeCutoff": "2025-05",
+    "displayName": "GLM-5V-Turbo",
+    "family": "glmv-turbo",
+    "releaseDate": "2026-04-01",
+    "lastUpdated": "2026-04-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.4,
+      "output": 8,
+      "cacheRead": 0.48,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v4-pro",
+    "provider": "cloudcode",
+    "providerName": "CloudCode.ONE",
+    "displayName": "DeepSeek V4 Pro",
+    "family": "deepseek-pro",
+    "releaseDate": "2026-08-13",
+    "lastUpdated": "2026-08-22",
+    "knowledgeCutoff": null,
     "contextWindow": 1000000,
     "maxOutputTokens": 384000,
     "capabilities": {
@@ -257,11 +209,11 @@
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": true,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
@@ -273,9 +225,57 @@
       ]
     },
     "pricing": {
-      "input": 0.27,
-      "output": 1.08,
-      "cacheRead": 0.0054,
+      "input": 1.705,
+      "output": 5.115,
+      "cacheRead": 0.0568,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mistral-large-4",
+    "provider": "cloudcode",
+    "providerName": "CloudCode.ONE",
+    "displayName": "Mistral Large 4",
+    "family": "mistral-large",
+    "releaseDate": "2026-10-06",
+    "lastUpdated": "2026-10-06",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.54,
+      "output": 4.62,
+      "cacheRead": 0.154,
       "currency": "USD",
       "per": 1000000
     },

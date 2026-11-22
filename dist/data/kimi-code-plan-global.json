@@ -1,15 +1,15 @@
 [
   {
-    "id": "k3.1-pro",
+    "id": "k3-256k",
     "provider": "kimi-code-plan-global",
     "providerName": "Kimi For Coding (kimi.ai)",
-    "displayName": "Kimi K3.1 Pro",
-    "family": "kimi-k3",
-    "releaseDate": "2026-10-23",
-    "lastUpdated": "2026-10-23",
+    "displayName": "Kimi K3-256K",
+    "family": "kimi",
+    "releaseDate": "2026-07-16",
+    "lastUpdated": "2026-07-16",
     "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -25,8 +25,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "video"
+        "image"
       ],
       "output": [
         "text"
@@ -54,7 +53,7 @@
     "provider": "kimi-code-plan-global",
     "providerName": "Kimi For Coding (kimi.ai)",
     "displayName": "Kimi K3",
-    "family": "kimi-k3",
+    "family": "kimi",
     "releaseDate": "2026-07-16",
     "lastUpdated": "2026-07-16",
     "knowledgeCutoff": null,
@@ -104,7 +103,7 @@
     "provider": "kimi-code-plan-global",
     "providerName": "Kimi For Coding (kimi.ai)",
     "displayName": "Kimi For Coding HighSpeed",
-    "family": "kimi-k2",
+    "family": "kimi-code",
     "releaseDate": "2026-06-12",
     "lastUpdated": "2026-06-12",
     "knowledgeCutoff": "2025-01",
@@ -150,11 +149,61 @@
     ]
   },
   {
+    "id": "kimi-for-coding",
+    "provider": "kimi-code-plan-global",
+    "providerName": "Kimi For Coding (kimi.ai)",
+    "displayName": "kimi-for-coding",
+    "family": "kimi",
+    "releaseDate": "2026-09-11",
+    "lastUpdated": "2026-09-11",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "cacheWrite": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "k3.1-pro-highspeed",
     "provider": "kimi-code-plan-global",
     "providerName": "Kimi For Coding (kimi.ai)",
     "displayName": "Kimi K3.1 Pro Highspeed",
-    "family": "kimi-k3",
+    "family": "kimi-pro",
     "releaseDate": "2026-10-23",
     "lastUpdated": "2026-10-23",
     "knowledgeCutoff": null,
@@ -200,16 +249,16 @@
     ]
   },
   {
-    "id": "k3-256k",
+    "id": "k3.1-pro",
     "provider": "kimi-code-plan-global",
     "providerName": "Kimi For Coding (kimi.ai)",
-    "displayName": "Kimi K3-256K",
-    "family": "kimi-k3",
-    "releaseDate": "2026-07-16",
-    "lastUpdated": "2026-07-16",
+    "displayName": "Kimi K3.1 Pro",
+    "family": "kimi-pro",
+    "releaseDate": "2026-10-23",
+    "lastUpdated": "2026-10-23",
     "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -221,55 +270,6 @@
       "attachment": true,
       "structured_output": true,
       "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "cacheWrite": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "kimi-for-coding",
-    "provider": "kimi-code-plan-global",
-    "providerName": "Kimi For Coding (kimi.ai)",
-    "displayName": "kimi-for-coding",
-    "family": "kimi-k2",
-    "releaseDate": "2026-09-11",
-    "lastUpdated": "2026-09-11",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
     },
     "modalities": {
       "input": [

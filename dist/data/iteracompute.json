@@ -1,5 +1,148 @@
 [
   {
+    "id": "gemini/gemini-4-argon",
+    "provider": "iteracompute",
+    "providerName": "IteraCompute",
+    "displayName": "Gemini 4 Argon",
+    "family": "gemini",
+    "releaseDate": "2026-10-13",
+    "lastUpdated": "2026-10-13",
+    "knowledgeCutoff": "2026-03",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.6,
+      "output": 8,
+      "cacheRead": 0.08,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini/gemini-3.8-flash",
+    "provider": "iteracompute",
+    "providerName": "IteraCompute",
+    "displayName": "Gemini 3.8 Flash",
+    "family": "gemini-flash",
+    "releaseDate": "2026-09-02",
+    "lastUpdated": "2026-09-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.6,
+      "output": 3,
+      "cacheRead": 0.06,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-5.2",
+    "provider": "iteracompute",
+    "providerName": "IteraCompute",
+    "displayName": "GLM-5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.53,
+      "output": 1.72,
+      "cacheRead": 0.12,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "z-ai/glm-5.3",
     "provider": "iteracompute",
     "providerName": "IteraCompute",
@@ -95,206 +238,16 @@
     ]
   },
   {
-    "id": "z-ai/glm-5.2",
+    "id": "openai/gpt-6-astra",
     "provider": "iteracompute",
     "providerName": "IteraCompute",
-    "displayName": "GLM-5.2",
-    "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.53,
-      "output": 1.72,
-      "cacheRead": 0.12,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "moonshotai/kimi-k2.6",
-    "provider": "iteracompute",
-    "providerName": "IteraCompute",
-    "displayName": "Kimi K2.6",
-    "family": "kimi-k2",
-    "releaseDate": "2026-04-20",
-    "lastUpdated": "2026-04-20",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.87,
-      "output": 3.51,
-      "cacheRead": 0.07,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "moonshotai/kimi-k3",
-    "provider": "iteracompute",
-    "providerName": "IteraCompute",
-    "displayName": "Kimi K3",
-    "family": "kimi-k3",
-    "releaseDate": "2026-07-16",
-    "lastUpdated": "2026-07-16",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2.35,
-      "output": 11.76,
-      "cacheRead": 0.23,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "moonshotai/kimi-k2.7-code",
-    "provider": "iteracompute",
-    "providerName": "IteraCompute",
-    "displayName": "Kimi K2.7 Code",
-    "family": "kimi-k2",
-    "releaseDate": "2026-06-12",
-    "lastUpdated": "2026-06-12",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.69,
-      "output": 3.29,
-      "cacheRead": 0.15,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "moonshotai/kimi-k2.5",
-    "provider": "iteracompute",
-    "providerName": "IteraCompute",
-    "displayName": "Kimi K2.5",
-    "family": "kimi-k2",
-    "releaseDate": "2026-01-27",
-    "lastUpdated": "2026-01-27",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 16384,
+    "displayName": "GPT-6 Astra",
+    "family": "gpt-astra",
+    "releaseDate": "2026-09-04",
+    "lastUpdated": "2026-09-04",
+    "knowledgeCutoff": "2026-04-30",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -305,6 +258,488 @@
       "temperature": false,
       "attachment": true,
       "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 8,
+      "output": 40,
+      "cacheRead": 0.8,
+      "cacheWrite": 10,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 16,
+          "output": 60,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 16,
+        "output": 60,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "openai/gpt-6.1-sol",
+    "provider": "iteracompute",
+    "providerName": "IteraCompute",
+    "displayName": "GPT-6.1 Sol",
+    "family": "gpt-sol",
+    "releaseDate": "2026-09-29",
+    "lastUpdated": "2026-09-29",
+    "knowledgeCutoff": "2026-04-30",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.6,
+      "output": 8,
+      "cacheRead": 0.08,
+      "cacheWrite": 2,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 3.2,
+          "output": 12,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 3.2,
+        "output": 12,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "openai/gpt-6-luna",
+    "provider": "iteracompute",
+    "providerName": "IteraCompute",
+    "displayName": "GPT-6 Luna",
+    "family": "gpt-luna",
+    "releaseDate": "2026-09-22",
+    "lastUpdated": "2026-09-22",
+    "knowledgeCutoff": "2026-05-18",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.08,
+      "output": 0.4,
+      "cacheRead": 0.008,
+      "cacheWrite": 0.1,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.16,
+          "output": 0.6,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 0.16,
+        "output": 0.6,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "anthropic/claude-haiku-5-5",
+    "provider": "iteracompute",
+    "providerName": "IteraCompute",
+    "displayName": "Claude Haiku 5.5",
+    "family": "claude-haiku",
+    "releaseDate": "2026-10-07",
+    "lastUpdated": "2026-10-07",
+    "knowledgeCutoff": "2026-06",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.05,
+      "output": 0.25,
+      "cacheRead": 0.005,
+      "cacheWrite": 0.0625,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.25,
+          "output": 1.25,
+          "contextThreshold": 100000
+        }
+      ]
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "anthropic/claude-opus-5-5",
+    "provider": "iteracompute",
+    "providerName": "IteraCompute",
+    "displayName": "Claude Opus 5.5",
+    "family": "claude-opus",
+    "releaseDate": "2026-09-22",
+    "lastUpdated": "2026-09-22",
+    "knowledgeCutoff": "2026-06",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.1,
+      "cacheWrite": 2.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "anthropic/claude-sonnet-5-5",
+    "provider": "iteracompute",
+    "providerName": "IteraCompute",
+    "displayName": "Claude Sonnet 5.5",
+    "family": "claude-sonnet",
+    "releaseDate": "2026-09-28",
+    "lastUpdated": "2026-09-28",
+    "knowledgeCutoff": "2026-06",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1,
+      "output": 5,
+      "cacheRead": 0.05,
+      "cacheWrite": 1.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "anthropic/claude-fable-5-1",
+    "provider": "iteracompute",
+    "providerName": "IteraCompute",
+    "displayName": "Claude Fable 5.1",
+    "family": "claude-fable",
+    "releaseDate": "2026-09-01",
+    "lastUpdated": "2026-09-01",
+    "knowledgeCutoff": "2026-06",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 25,
+      "cacheRead": 0.125,
+      "cacheWrite": 6.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.8-flash",
+    "provider": "iteracompute",
+    "providerName": "IteraCompute",
+    "displayName": "Qwen3.8 Flash",
+    "family": "qwen-flash",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.11,
+      "output": 0.38,
+      "cacheRead": 0.016,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.8-max",
+    "provider": "iteracompute",
+    "providerName": "IteraCompute",
+    "displayName": "Qwen3.8 Max",
+    "family": "qwen-max",
+    "releaseDate": "2026-08-03",
+    "lastUpdated": "2026-08-03",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.95,
+      "output": 5.7,
+      "cacheRead": 0.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.8-2.4t-a95b",
+    "provider": "iteracompute",
+    "providerName": "IteraCompute",
+    "displayName": "Qwen3.8 2.4T A95B",
+    "family": "qwen",
+    "releaseDate": "2026-08-12",
+    "lastUpdated": "2026-08-12",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -317,9 +752,151 @@
       ]
     },
     "pricing": {
-      "input": 0.54,
-      "output": 2.78,
-      "cacheRead": 0.06,
+      "input": 1.95,
+      "output": 5.7,
+      "cacheRead": 0.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.8-27b",
+    "provider": "iteracompute",
+    "providerName": "IteraCompute",
+    "displayName": "Qwen3.8 27B",
+    "family": "qwen",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 131072,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek/deepseek-v4.1-flash",
+    "provider": "iteracompute",
+    "providerName": "IteraCompute",
+    "displayName": "DeepSeek V4.1 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 393216,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.14,
+      "output": 0.55,
+      "cacheRead": 0.006,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek/deepseek-v4-flash-0731",
+    "provider": "iteracompute",
+    "providerName": "IteraCompute",
+    "displayName": "DeepSeek V4 Flash 0731 (legacy alias)",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 393216,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.17,
+      "output": 0.7,
+      "cacheRead": 0.005,
       "currency": "USD",
       "per": 1000000
     },
@@ -337,7 +914,7 @@
     "provider": "iteracompute",
     "providerName": "IteraCompute",
     "displayName": "DeepSeek V4 Pro 0813",
-    "family": "deepseek-thinking",
+    "family": "deepseek-pro",
     "releaseDate": "2026-08-13",
     "lastUpdated": "2026-08-22",
     "knowledgeCutoff": null,
@@ -428,16 +1005,64 @@
     ]
   },
   {
-    "id": "deepseek/deepseek-v4-flash-0731",
+    "id": "moonshotai/kimi-k3",
     "provider": "iteracompute",
     "providerName": "IteraCompute",
-    "displayName": "DeepSeek V4 Flash 0731 (legacy alias)",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "knowledgeCutoff": "2025-05",
+    "displayName": "Kimi K3",
+    "family": "kimi",
+    "releaseDate": "2026-07-16",
+    "lastUpdated": "2026-07-16",
+    "knowledgeCutoff": null,
     "contextWindow": 1048576,
-    "maxOutputTokens": 393216,
+    "maxOutputTokens": 1048576,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.35,
+      "output": 11.76,
+      "cacheRead": 0.23,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "moonshotai/kimi-k2.7-code",
+    "provider": "iteracompute",
+    "providerName": "IteraCompute",
+    "displayName": "Kimi K2.7 Code",
+    "family": "kimi-code",
+    "releaseDate": "2026-06-12",
+    "lastUpdated": "2026-06-12",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -459,9 +1084,9 @@
       ]
     },
     "pricing": {
-      "input": 0.17,
-      "output": 0.7,
-      "cacheRead": 0.005,
+      "input": 0.69,
+      "output": 3.29,
+      "cacheRead": 0.15,
       "currency": "USD",
       "per": 1000000
     },
@@ -475,40 +1100,41 @@
     ]
   },
   {
-    "id": "deepseek/deepseek-v4.1-flash",
+    "id": "moonshotai/kimi-k2.6",
     "provider": "iteracompute",
     "providerName": "IteraCompute",
-    "displayName": "DeepSeek V4.1 Flash",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 393216,
+    "displayName": "Kimi K2.6",
+    "family": "kimi",
+    "releaseDate": "2026-04-20",
+    "lastUpdated": "2026-04-20",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 16384,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.14,
-      "output": 0.55,
-      "cacheRead": 0.006,
+      "input": 0.87,
+      "output": 3.51,
+      "cacheRead": 0.07,
       "currency": "USD",
       "per": 1000000
     },
@@ -522,16 +1148,16 @@
     ]
   },
   {
-    "id": "openai/gpt-6-astra",
+    "id": "moonshotai/kimi-k2.5",
     "provider": "iteracompute",
     "providerName": "IteraCompute",
-    "displayName": "GPT-6 Astra",
-    "family": "gpt-astra",
-    "releaseDate": "2026-09-04",
-    "lastUpdated": "2026-09-04",
-    "knowledgeCutoff": "2026-04-30",
-    "contextWindow": 1050000,
-    "maxOutputTokens": 128000,
+    "displayName": "Kimi K2.5",
+    "family": "kimi",
+    "releaseDate": "2026-01-27",
+    "lastUpdated": "2026-01-27",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 16384,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -542,189 +1168,6 @@
       "temperature": false,
       "attachment": true,
       "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 8,
-      "output": 40,
-      "cacheRead": 0.8,
-      "cacheWrite": 10,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 16,
-          "output": 60,
-          "contextThreshold": 272000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 16,
-        "output": 60,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "openai/gpt-6-luna",
-    "provider": "iteracompute",
-    "providerName": "IteraCompute",
-    "displayName": "GPT-6 Luna",
-    "family": "gpt-luna",
-    "releaseDate": "2026-09-22",
-    "lastUpdated": "2026-09-22",
-    "knowledgeCutoff": "2026-05-18",
-    "contextWindow": 1050000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.08,
-      "output": 0.4,
-      "cacheRead": 0.008,
-      "cacheWrite": 0.1,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.16,
-          "output": 0.6,
-          "contextThreshold": 272000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 0.16,
-        "output": 0.6,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "openai/gpt-6.1-sol",
-    "provider": "iteracompute",
-    "providerName": "IteraCompute",
-    "displayName": "GPT-6.1 Sol",
-    "family": "gpt-sol",
-    "releaseDate": "2026-09-29",
-    "lastUpdated": "2026-09-29",
-    "knowledgeCutoff": "2026-04-30",
-    "contextWindow": 1050000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.6,
-      "output": 8,
-      "cacheRead": 0.08,
-      "cacheWrite": 2,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 3.2,
-          "output": 12,
-          "contextThreshold": 272000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 3.2,
-        "output": 12,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen/qwen3.8-2.4t-a95b",
-    "provider": "iteracompute",
-    "providerName": "IteraCompute",
-    "displayName": "Qwen3.8 2.4T A95B",
-    "family": "qwen",
-    "releaseDate": "2026-08-12",
-    "lastUpdated": "2026-08-12",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -737,9 +1180,9 @@
       ]
     },
     "pricing": {
-      "input": 1.95,
-      "output": 5.7,
-      "cacheRead": 0.25,
+      "input": 0.54,
+      "output": 2.78,
+      "cacheRead": 0.06,
       "currency": "USD",
       "per": 1000000
     },
@@ -753,157 +1196,13 @@
     ]
   },
   {
-    "id": "qwen/qwen3.8-flash",
+    "id": "minimax/minimax-m2.5",
     "provider": "iteracompute",
     "providerName": "IteraCompute",
-    "displayName": "Qwen3.8 Flash",
-    "family": "qwen",
-    "releaseDate": "2026-08-26",
-    "lastUpdated": "2026-08-26",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.11,
-      "output": 0.38,
-      "cacheRead": 0.016,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen/qwen3.8-max",
-    "provider": "iteracompute",
-    "providerName": "IteraCompute",
-    "displayName": "Qwen3.8 Max",
-    "family": "qwen",
-    "releaseDate": "2026-08-03",
-    "lastUpdated": "2026-08-03",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.95,
-      "output": 5.7,
-      "cacheRead": 0.25,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen/qwen3.8-27b",
-    "provider": "iteracompute",
-    "providerName": "IteraCompute",
-    "displayName": "Qwen3.8 27B",
-    "family": "qwen",
-    "releaseDate": "2026-08-14",
-    "lastUpdated": "2026-08-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "minimax/minimax-m2.7",
-    "provider": "iteracompute",
-    "providerName": "IteraCompute",
-    "displayName": "MiniMax-M2.7",
-    "family": "minimax",
-    "releaseDate": "2026-03-18",
-    "lastUpdated": "2026-03-18",
+    "displayName": "MiniMax-M2.5",
+    "family": "minimax-m",
+    "releaseDate": "2026-02-12",
+    "lastUpdated": "2026-02-12",
     "knowledgeCutoff": null,
     "contextWindow": 204800,
     "maxOutputTokens": 16384,
@@ -912,11 +1211,11 @@
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -928,8 +1227,8 @@
       ]
     },
     "pricing": {
-      "input": 0.38,
-      "output": 1.48,
+      "input": 0.27,
+      "output": 1.03,
       "cacheRead": 0.03,
       "currency": "USD",
       "per": 1000000
@@ -948,7 +1247,7 @@
     "provider": "iteracompute",
     "providerName": "IteraCompute",
     "displayName": "MiniMax-M3",
-    "family": "minimax",
+    "family": "minimax-m",
     "releaseDate": "2026-06-01",
     "lastUpdated": "2026-06-01",
     "knowledgeCutoff": null,
@@ -992,13 +1291,13 @@
     ]
   },
   {
-    "id": "minimax/minimax-m2.5",
+    "id": "minimax/minimax-m2.7",
     "provider": "iteracompute",
     "providerName": "IteraCompute",
-    "displayName": "MiniMax-M2.5",
-    "family": "minimax",
-    "releaseDate": "2026-02-12",
-    "lastUpdated": "2026-02-12",
+    "displayName": "MiniMax-M2.7",
+    "family": "minimax-m",
+    "releaseDate": "2026-03-18",
+    "lastUpdated": "2026-03-18",
     "knowledgeCutoff": null,
     "contextWindow": 204800,
     "maxOutputTokens": 16384,
@@ -1007,11 +1306,11 @@
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": true,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
@@ -1023,308 +1322,9 @@
       ]
     },
     "pricing": {
-      "input": 0.27,
-      "output": 1.03,
+      "input": 0.38,
+      "output": 1.48,
       "cacheRead": 0.03,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini/gemini-3.8-flash",
-    "provider": "iteracompute",
-    "providerName": "IteraCompute",
-    "displayName": "Gemini 3.8 Flash",
-    "family": "gemini-flash",
-    "releaseDate": "2026-09-02",
-    "lastUpdated": "2026-09-02",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.6,
-      "output": 3,
-      "cacheRead": 0.06,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini/gemini-4-argon",
-    "provider": "iteracompute",
-    "providerName": "IteraCompute",
-    "displayName": "Gemini 4 Argon",
-    "family": "gemini",
-    "releaseDate": "2026-10-13",
-    "lastUpdated": "2026-10-13",
-    "knowledgeCutoff": "2026-03",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.6,
-      "output": 8,
-      "cacheRead": 0.08,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "anthropic/claude-haiku-5-5",
-    "provider": "iteracompute",
-    "providerName": "IteraCompute",
-    "displayName": "Claude Haiku 5.5",
-    "family": "claude-haiku",
-    "releaseDate": "2026-10-07",
-    "lastUpdated": "2026-10-07",
-    "knowledgeCutoff": "2026-06",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.05,
-      "output": 0.25,
-      "cacheRead": 0.005,
-      "cacheWrite": 0.0625,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.25,
-          "output": 1.25,
-          "contextThreshold": 100000
-        }
-      ]
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "anthropic/claude-fable-5-1",
-    "provider": "iteracompute",
-    "providerName": "IteraCompute",
-    "displayName": "Claude Fable 5.1",
-    "family": "claude-fable",
-    "releaseDate": "2026-09-01",
-    "lastUpdated": "2026-09-01",
-    "knowledgeCutoff": "2026-06",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.125,
-      "cacheWrite": 6.25,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "anthropic/claude-sonnet-5-5",
-    "provider": "iteracompute",
-    "providerName": "IteraCompute",
-    "displayName": "Claude Sonnet 5.5",
-    "family": "claude-sonnet",
-    "releaseDate": "2026-09-28",
-    "lastUpdated": "2026-09-28",
-    "knowledgeCutoff": "2026-06",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1,
-      "output": 5,
-      "cacheRead": 0.05,
-      "cacheWrite": 1.25,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "anthropic/claude-opus-5-5",
-    "provider": "iteracompute",
-    "providerName": "IteraCompute",
-    "displayName": "Claude Opus 5.5",
-    "family": "claude-opus",
-    "releaseDate": "2026-09-22",
-    "lastUpdated": "2026-09-22",
-    "knowledgeCutoff": "2026-06",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2,
-      "output": 10,
-      "cacheRead": 0.1,
-      "cacheWrite": 2.5,
       "currency": "USD",
       "per": 1000000
     },

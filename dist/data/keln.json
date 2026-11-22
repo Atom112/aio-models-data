@@ -1,15 +1,15 @@
 [
   {
-    "id": "minimaxai/minimax-m3.1-flash",
+    "id": "nvidia/nemotron-3-ultra-550b-a55b",
     "provider": "keln",
     "providerName": "Keln",
-    "displayName": "MiniMax-M3.1-Flash",
-    "family": "minimax",
-    "releaseDate": "2026-10-19",
-    "lastUpdated": "2026-10-19",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 512000,
+    "displayName": "Nemotron 3 Ultra 550B A55B",
+    "family": "nemotron-ultra",
+    "releaseDate": "2026-06-04",
+    "lastUpdated": "2026-06-04",
+    "knowledgeCutoff": "2025-09",
+    "contextWindow": 262144,
+    "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -31,9 +31,9 @@
       ]
     },
     "pricing": {
-      "input": 0.15,
-      "output": 0.6,
-      "cacheRead": 0.018,
+      "input": 0.8,
+      "output": 3,
+      "cacheRead": 0.14,
       "currency": "USD",
       "per": 1000000
     },
@@ -47,16 +47,16 @@
     ]
   },
   {
-    "id": "moonshotai/kimi-k3",
+    "id": "deepseek-ai/deepseek-v4.1-flash",
     "provider": "keln",
     "providerName": "Keln",
-    "displayName": "Kimi K3",
-    "family": "kimi-k3",
-    "releaseDate": "2026-07-16",
-    "lastUpdated": "2026-07-16",
-    "knowledgeCutoff": null,
+    "displayName": "DeepSeek V4.1 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
     "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
+    "maxOutputTokens": 384000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -64,7 +64,7 @@
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": false,
       "open_weights": true
@@ -79,9 +79,9 @@
       ]
     },
     "pricing": {
-      "input": 3,
-      "output": 15,
-      "cacheRead": 0.38,
+      "input": 0.3,
+      "output": 1.2,
+      "cacheRead": 0.03,
       "currency": "USD",
       "per": 1000000
     },
@@ -95,16 +95,63 @@
     ]
   },
   {
-    "id": "moonshotai/kimi-k3.1-pro",
+    "id": "deepseek-ai/deepseek-v4-pro-0813",
     "provider": "keln",
     "providerName": "Keln",
-    "displayName": "Kimi K3.1 Pro",
-    "family": "kimi-k3",
-    "releaseDate": "2026-10-23",
-    "lastUpdated": "2026-10-23",
+    "displayName": "DeepSeek V4 Pro 0813",
+    "family": "deepseek-pro",
+    "releaseDate": "2026-08-13",
+    "lastUpdated": "2026-08-22",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.32,
+      "output": 3.96,
+      "cacheRead": 0.15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "provider": "keln",
+    "providerName": "Keln",
+    "displayName": "DeepSeek V4.1 Flash 1017",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-10-17",
+    "lastUpdated": "2026-10-17",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 384000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -112,7 +159,7 @@
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": false,
       "open_weights": true
@@ -127,9 +174,9 @@
       ]
     },
     "pricing": {
-      "input": 2,
-      "output": 10,
-      "cacheRead": 0.24,
+      "input": 0.3,
+      "output": 1.2,
+      "cacheRead": 0.01,
       "currency": "USD",
       "per": 1000000
     },
@@ -333,16 +380,16 @@
     ]
   },
   {
-    "id": "nvidia/nemotron-3-ultra-550b-a55b",
+    "id": "zai-org/glm-5.2",
     "provider": "keln",
     "providerName": "Keln",
-    "displayName": "Nemotron 3 Ultra 550B A55B",
-    "family": "nemotron",
-    "releaseDate": "2026-06-04",
-    "lastUpdated": "2026-06-04",
-    "knowledgeCutoff": "2025-09",
-    "contextWindow": 262144,
-    "maxOutputTokens": 128000,
+    "displayName": "GLM-5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -364,9 +411,9 @@
       ]
     },
     "pricing": {
-      "input": 0.8,
-      "output": 3,
-      "cacheRead": 0.14,
+      "input": 1.4,
+      "output": 4.4,
+      "cacheRead": 0.28,
       "currency": "USD",
       "per": 1000000
     },
@@ -475,16 +522,64 @@
     ]
   },
   {
-    "id": "zai-org/glm-5.2",
+    "id": "moonshotai/kimi-k3.1-pro",
     "provider": "keln",
     "providerName": "Keln",
-    "displayName": "GLM-5.2",
-    "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
+    "displayName": "Kimi K3.1 Pro",
+    "family": "kimi-pro",
+    "releaseDate": "2026-10-23",
+    "lastUpdated": "2026-10-23",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 1048576,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.24,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimaxai/minimax-m3.1-flash",
+    "provider": "keln",
+    "providerName": "Keln",
+    "displayName": "MiniMax-M3.1-Flash",
+    "family": "minimax-m-flash",
+    "releaseDate": "2026-10-19",
+    "lastUpdated": "2026-10-19",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 512000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -506,152 +601,9 @@
       ]
     },
     "pricing": {
-      "input": 1.4,
-      "output": 4.4,
-      "cacheRead": 0.28,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/deepseek-v4-pro-0813",
-    "provider": "keln",
-    "providerName": "Keln",
-    "displayName": "DeepSeek V4 Pro 0813",
-    "family": "deepseek-thinking",
-    "releaseDate": "2026-08-13",
-    "lastUpdated": "2026-08-22",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.32,
-      "output": 3.96,
-      "cacheRead": 0.15,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/deepseek-v4.1-flash-1017",
-    "provider": "keln",
-    "providerName": "Keln",
-    "displayName": "DeepSeek V4.1 Flash 1017",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-10-17",
-    "lastUpdated": "2026-10-17",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 1.2,
-      "cacheRead": 0.01,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/deepseek-v4.1-flash",
-    "provider": "keln",
-    "providerName": "Keln",
-    "displayName": "DeepSeek V4.1 Flash",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 1.2,
-      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.6,
+      "cacheRead": 0.018,
       "currency": "USD",
       "per": 1000000
     },

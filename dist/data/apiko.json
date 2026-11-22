@@ -1,5 +1,54 @@
 [
   {
+    "id": "claude-opus-5-5",
+    "provider": "apiko",
+    "providerName": "APIKO",
+    "displayName": "Claude Opus 5.5",
+    "family": "claude-opus",
+    "releaseDate": "2026-09-22",
+    "lastUpdated": "2026-09-22",
+    "knowledgeCutoff": "2026-06",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.8999,
+      "output": 4.4996,
+      "cacheRead": 0.045,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "claude-sonnet-5-5",
     "provider": "apiko",
     "providerName": "APIKO",
@@ -53,7 +102,7 @@
     "provider": "apiko",
     "providerName": "APIKO",
     "displayName": "DeepSeek V4 Pro",
-    "family": "deepseek-thinking",
+    "family": "deepseek-pro",
     "releaseDate": "2026-04-24",
     "lastUpdated": "2026-04-24",
     "knowledgeCutoff": "2025-05",
@@ -83,55 +132,6 @@
       "input": 0.405,
       "output": 1.2149,
       "cacheRead": 0.0135,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-opus-5-5",
-    "provider": "apiko",
-    "providerName": "APIKO",
-    "displayName": "Claude Opus 5.5",
-    "family": "claude-opus",
-    "releaseDate": "2026-09-22",
-    "lastUpdated": "2026-09-22",
-    "knowledgeCutoff": "2026-06",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.8999,
-      "output": 4.4996,
-      "cacheRead": 0.045,
       "currency": "USD",
       "per": 1000000
     },

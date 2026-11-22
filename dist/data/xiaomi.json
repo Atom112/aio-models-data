@@ -1,46 +1,43 @@
 [
   {
-    "id": "mimo-v2.6-flash",
+    "id": "mimo-v2.5-pro-ultraspeed",
     "provider": "xiaomi",
     "providerName": "Xiaomi",
-    "displayName": "MiMo-V2.6-Flash",
-    "family": "mimo",
-    "releaseDate": "2026-09-22",
-    "lastUpdated": "2026-09-22",
-    "knowledgeCutoff": null,
+    "displayName": "MiMo-V2.5-Pro-UltraSpeed",
+    "family": "mimo-pro",
+    "releaseDate": "2026-06-08",
+    "lastUpdated": "2026-06-09",
+    "knowledgeCutoff": "2024-12",
     "contextWindow": 1048576,
     "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
-      "structured_output": true,
+      "attachment": false,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "audio",
-        "video"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.14,
-      "output": 0.28,
-      "cacheRead": 0.0028,
+      "input": 1.305,
+      "output": 2.61,
+      "cacheRead": 0.0108,
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -54,7 +51,7 @@
     "provider": "xiaomi",
     "providerName": "Xiaomi",
     "displayName": "MiMo-V2.6-Pro-UltraSpeed",
-    "family": "mimo",
+    "family": "mimo-pro",
     "releaseDate": "2026-09-21",
     "lastUpdated": "2026-09-21",
     "knowledgeCutoff": null,
@@ -100,78 +97,34 @@
     ]
   },
   {
-    "id": "mimo-v2.5-pro-ultraspeed",
+    "id": "mimo-v2.6-pro",
     "provider": "xiaomi",
     "providerName": "Xiaomi",
-    "displayName": "MiMo-V2.5-Pro-UltraSpeed",
-    "family": "mimo",
-    "releaseDate": "2026-06-08",
-    "lastUpdated": "2026-06-09",
-    "knowledgeCutoff": "2024-12",
+    "displayName": "MiMo-V2.6-Pro",
+    "family": "mimo-pro",
+    "releaseDate": "2026-09-22",
+    "lastUpdated": "2026-09-22",
+    "knowledgeCutoff": null,
     "contextWindow": 1048576,
     "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
-      "structured_output": false,
+      "attachment": true,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.305,
-      "output": 2.61,
-      "cacheRead": 0.0108,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "mimo-v2.5-pro",
-    "provider": "xiaomi",
-    "providerName": "Xiaomi",
-    "displayName": "MiMo-V2.5-Pro",
-    "family": "mimo",
-    "releaseDate": "2026-04-22",
-    "lastUpdated": "2026-04-22",
-    "knowledgeCutoff": "2024-12",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
+        "text",
+        "image",
+        "audio",
+        "video"
       ],
       "output": [
         "text"
@@ -184,7 +137,57 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "deprecated",
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mimo-v2.6-flash",
+    "provider": "xiaomi",
+    "providerName": "Xiaomi",
+    "displayName": "MiMo-V2.6-Flash",
+    "family": "mimo-flash",
+    "releaseDate": "2026-09-22",
+    "lastUpdated": "2026-09-22",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.14,
+      "output": 0.28,
+      "cacheRead": 0.0028,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -244,34 +247,31 @@
     ]
   },
   {
-    "id": "mimo-v2.6-pro",
+    "id": "mimo-v2.5-pro",
     "provider": "xiaomi",
     "providerName": "Xiaomi",
-    "displayName": "MiMo-V2.6-Pro",
-    "family": "mimo",
-    "releaseDate": "2026-09-22",
-    "lastUpdated": "2026-09-22",
-    "knowledgeCutoff": null,
+    "displayName": "MiMo-V2.5-Pro",
+    "family": "mimo-pro",
+    "releaseDate": "2026-04-22",
+    "lastUpdated": "2026-04-22",
+    "knowledgeCutoff": "2024-12",
     "contextWindow": 1048576,
     "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
-      "structured_output": true,
+      "attachment": false,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "audio",
-        "video"
+        "text"
       ],
       "output": [
         "text"
@@ -284,7 +284,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],

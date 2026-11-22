@@ -1,5 +1,103 @@
 [
   {
+    "id": "glm-flash-latest",
+    "provider": "privatemode-ai",
+    "providerName": "Privatemode AI",
+    "displayName": "GLM Flash",
+    "family": "glm-flash",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2311,
+      "output": 0.7511,
+      "cacheRead": 0.0578,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [
+      "GLM Flash (latest)"
+    ],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ocr-2",
+    "provider": "privatemode-ai",
+    "providerName": "Privatemode AI",
+    "displayName": "DeepSeek OCR 2",
+    "family": "deepseek-ocr",
+    "releaseDate": "2026-01-27",
+    "lastUpdated": "2026-01-27",
+    "knowledgeCutoff": null,
+    "contextWindow": 8192,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.8897,
+      "output": 1.4675,
+      "cacheRead": 0.0924,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "beta",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "glm-5.3",
     "provider": "privatemode-ai",
     "providerName": "Privatemode AI",
@@ -51,7 +149,7 @@
     "provider": "privatemode-ai",
     "providerName": "Privatemode AI",
     "displayName": "Kimi K2.6",
-    "family": "kimi-k2",
+    "family": "kimi",
     "releaseDate": "2026-04-20",
     "lastUpdated": "2026-04-20",
     "knowledgeCutoff": "2025-01",
@@ -86,292 +184,6 @@
       "per": 1000000
     },
     "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "voxtral-mini-3b",
-    "provider": "privatemode-ai",
-    "providerName": "Privatemode AI",
-    "displayName": "Voxtral Mini 3B",
-    "family": "voxtral",
-    "releaseDate": "2025-07-15",
-    "lastUpdated": "2025-07-15",
-    "knowledgeCutoff": null,
-    "contextWindow": 32000,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "audio"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.00462,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "kimi-latest",
-    "provider": "privatemode-ai",
-    "providerName": "Privatemode AI",
-    "displayName": "Kimi",
-    "family": "kimi-k2",
-    "releaseDate": "2026-04-20",
-    "lastUpdated": "2026-04-20",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 256000,
-    "maxOutputTokens": 256000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.791,
-      "output": 8.9436,
-      "cacheRead": 0.1733,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [
-      "Kimi (latest)"
-    ],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm-flash-latest",
-    "provider": "privatemode-ai",
-    "providerName": "Privatemode AI",
-    "displayName": "GLM Flash",
-    "family": "glm-flash",
-    "releaseDate": "2026-08-26",
-    "lastUpdated": "2026-08-26",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2311,
-      "output": 0.7511,
-      "cacheRead": 0.0578,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [
-      "GLM Flash (latest)"
-    ],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "whisper-large-v3",
-    "provider": "privatemode-ai",
-    "providerName": "Privatemode AI",
-    "displayName": "Whisper large-v3",
-    "family": "whisper",
-    "releaseDate": "2023-11-06",
-    "lastUpdated": "2023-11-06",
-    "knowledgeCutoff": null,
-    "contextWindow": 448,
-    "maxOutputTokens": 448,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "audio"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.01618,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-embedding-4b",
-    "provider": "privatemode-ai",
-    "providerName": "Privatemode AI",
-    "displayName": "Qwen3-Embedding 4B",
-    "family": "qwen",
-    "releaseDate": "2025-06-05",
-    "lastUpdated": "2025-06-05",
-    "knowledgeCutoff": "2025-06",
-    "contextWindow": 32000,
-    "maxOutputTokens": 2560,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1502,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ocr-2",
-    "provider": "privatemode-ai",
-    "providerName": "Privatemode AI",
-    "displayName": "DeepSeek OCR 2",
-    "family": null,
-    "releaseDate": "2026-01-27",
-    "lastUpdated": "2026-01-27",
-    "knowledgeCutoff": null,
-    "contextWindow": 8192,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.8897,
-      "output": 1.4675,
-      "cacheRead": 0.0924,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "beta",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -416,6 +228,145 @@
       "input": 0.2311,
       "output": 0.7511,
       "cacheRead": 0.0578,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3-embedding-4b",
+    "provider": "privatemode-ai",
+    "providerName": "Privatemode AI",
+    "displayName": "Qwen3-Embedding 4B",
+    "family": "qwen-embedding",
+    "releaseDate": "2025-06-05",
+    "lastUpdated": "2025-06-05",
+    "knowledgeCutoff": "2025-06",
+    "contextWindow": 32000,
+    "maxOutputTokens": 2560,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1502,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-oss-120b",
+    "provider": "privatemode-ai",
+    "providerName": "Privatemode AI",
+    "displayName": "gpt-oss-120b",
+    "family": "gpt-oss",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": "2024-06",
+    "contextWindow": 128000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2311,
+      "output": 0.7511,
+      "cacheRead": 0.0462,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "voxtral-mini-3b",
+    "provider": "privatemode-ai",
+    "providerName": "Privatemode AI",
+    "displayName": "Voxtral Mini 3B",
+    "family": "voxtral-mini",
+    "releaseDate": "2025-07-15",
+    "lastUpdated": "2025-07-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 32000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.00462,
+      "output": 0,
       "currency": "USD",
       "per": 1000000
     },
@@ -478,40 +429,39 @@
     ]
   },
   {
-    "id": "gpt-oss-120b",
+    "id": "whisper-large-v3",
     "provider": "privatemode-ai",
     "providerName": "Privatemode AI",
-    "displayName": "gpt-oss-120b",
-    "family": "gpt-oss",
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": "2024-06",
-    "contextWindow": 128000,
-    "maxOutputTokens": 128000,
+    "displayName": "Whisper large-v3",
+    "family": "whisper",
+    "releaseDate": "2023-11-06",
+    "lastUpdated": "2023-11-06",
+    "knowledgeCutoff": null,
+    "contextWindow": 448,
+    "maxOutputTokens": 448,
     "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
-      "structured_output": true,
+      "attachment": true,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "audio"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.2311,
-      "output": 0.7511,
-      "cacheRead": 0.0462,
+      "input": 0.01618,
+      "output": 0,
       "currency": "USD",
       "per": 1000000
     },
@@ -519,6 +469,56 @@
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-latest",
+    "provider": "privatemode-ai",
+    "providerName": "Privatemode AI",
+    "displayName": "Kimi",
+    "family": "kimi",
+    "releaseDate": "2026-04-20",
+    "lastUpdated": "2026-04-20",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.791,
+      "output": 8.9436,
+      "cacheRead": 0.1733,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [
+      "Kimi (latest)"
+    ],
     "isAggregator": true,
     "sources": [
       "models.dev"

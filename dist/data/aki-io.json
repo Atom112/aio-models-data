@@ -46,53 +46,6 @@
     ]
   },
   {
-    "id": "glm5.3-754b",
-    "provider": "aki-io",
-    "providerName": "AKI.IO",
-    "displayName": "GLM-5.3",
-    "family": "glm",
-    "releaseDate": "2026-08-14",
-    "lastUpdated": "2026-08-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 524288,
-    "maxOutputTokens": 81920,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.1215,
-      "output": 3.92525,
-      "cacheRead": 0.280375,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "deepseek-v4.1-flash-1017-tl5",
     "provider": "aki-io",
     "providerName": "AKI.IO",
@@ -140,57 +93,11 @@
     ]
   },
   {
-    "id": "gemma4-26b",
-    "provider": "aki-io",
-    "providerName": "AKI.IO",
-    "displayName": "Gemma 4 26B A4B IT",
-    "family": "gemma",
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-04-02",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.11215,
-      "output": 0.56075,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "kolibri-1-tl5",
     "provider": "aki-io",
     "providerName": "AKI.IO",
     "displayName": "Kolibri 1",
-    "family": null,
+    "family": "kolibri",
     "releaseDate": "2026-10-03",
     "lastUpdated": "2026-10-03",
     "knowledgeCutoff": "2026-06-18",
@@ -220,6 +127,53 @@
       "input": 0.167475,
       "output": 0.614075,
       "cacheRead": 0.0837375,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v4.1-flash-552b",
+    "provider": "aki-io",
+    "providerName": "AKI.IO",
+    "displayName": "DeepSeek V4.1 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 81920,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.280375,
+      "output": 1.1215,
+      "cacheRead": 0.11215,
       "currency": "USD",
       "per": 1000000
     },
@@ -266,6 +220,52 @@
     "pricing": {
       "input": 0.168225,
       "output": 0.616825,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemma4-26b",
+    "provider": "aki-io",
+    "providerName": "AKI.IO",
+    "displayName": "Gemma 4 26B A4B IT",
+    "family": "gemma",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.11215,
+      "output": 0.56075,
       "currency": "USD",
       "per": 1000000
     },
@@ -326,15 +326,15 @@
     ]
   },
   {
-    "id": "deepseek-v4.1-flash-552b",
+    "id": "glm5.3-754b",
     "provider": "aki-io",
     "providerName": "AKI.IO",
-    "displayName": "DeepSeek V4.1 Flash",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
+    "displayName": "GLM-5.3",
+    "family": "glm",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 524288,
     "maxOutputTokens": 81920,
     "capabilities": {
       "tools": true,
@@ -357,9 +357,9 @@
       ]
     },
     "pricing": {
-      "input": 0.280375,
-      "output": 1.1215,
-      "cacheRead": 0.11215,
+      "input": 1.1215,
+      "output": 3.92525,
+      "cacheRead": 0.280375,
       "currency": "USD",
       "per": 1000000
     },

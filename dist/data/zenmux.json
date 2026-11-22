@@ -1,15 +1,127 @@
 [
   {
-    "id": "z-ai/glm-4.5-air",
+    "id": "xiaomi/mimo-v2.6-pro",
     "provider": "zenmux",
     "providerName": "ZenMux",
-    "displayName": "GLM 4.5 Air",
-    "family": "glm-air",
-    "releaseDate": "2025-07-28",
-    "lastUpdated": "2025-07-28",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 128000,
-    "maxOutputTokens": 96000,
+    "displayName": "MiMo-V2.6-Pro",
+    "family": "mimo-pro",
+    "releaseDate": "2026-09-22",
+    "lastUpdated": "2026-09-22",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.435,
+      "output": 0.87,
+      "cacheRead": 0.0036,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "xiaomi/mimo-v2.5",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "MiMo-V2.5",
+    "family": "mimo",
+    "releaseDate": "2026-04-22",
+    "lastUpdated": "2026-04-22",
+    "knowledgeCutoff": "2024-12",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.4,
+      "output": 2,
+      "cacheRead": 0.08,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.8,
+          "output": 4,
+          "contextThreshold": 256000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 0.8,
+        "output": 4,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "xiaomi/mimo-v2.5-pro",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "MiMo-V2.5-Pro",
+    "family": "mimo-pro",
+    "releaseDate": "2026-04-22",
+    "lastUpdated": "2026-04-22",
+    "knowledgeCutoff": "2024-12",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -31,16 +143,81 @@
       ]
     },
     "pricing": {
-      "input": 0.1165,
-      "output": 0.2911,
-      "cacheRead": 0.0233,
+      "input": 1,
+      "output": 3,
+      "cacheRead": 0.2,
       "currency": "USD",
       "per": 1000000,
       "tiers": [
         {
-          "input": 0.1747,
-          "output": 1.1645,
+          "input": 2,
+          "output": 6,
+          "contextThreshold": 256000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 2,
+        "output": 6,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "bytedance/doubao-seed-code",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Doubao-Seed-Code",
+    "family": null,
+    "releaseDate": "2025-11-11",
+    "lastUpdated": "2025-11-11",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.17,
+      "output": 1.12,
+      "cacheRead": 0.034,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.2,
+          "output": 1.69,
           "contextThreshold": 32000
+        },
+        {
+          "input": 0.39,
+          "output": 2.25,
+          "contextThreshold": 128000
         }
       ]
     },
@@ -54,42 +231,56 @@
     ]
   },
   {
-    "id": "z-ai/glm-5.3",
+    "id": "bytedance/doubao-seed-1.8",
     "provider": "zenmux",
     "providerName": "ZenMux",
-    "displayName": "GLM 5.3",
-    "family": "glm",
-    "releaseDate": "2026-08-14",
-    "lastUpdated": "2026-08-14",
+    "displayName": "Doubao-Seed-1.8",
+    "family": "seed",
+    "releaseDate": "2025-12-28",
+    "lastUpdated": "2025-12-28",
     "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
+    "contextWindow": 256000,
+    "maxOutputTokens": 32000,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "video"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 1.4,
-      "output": 4.4,
-      "cacheRead": 0.26,
+      "input": 0.11,
+      "output": 0.28,
+      "cacheRead": 0.023,
       "currency": "USD",
-      "per": 1000000
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.17,
+          "output": 2.27,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 0.34,
+          "output": 3.41,
+          "contextThreshold": 128000
+        }
+      ]
     },
     "status": "active",
     "deprecationDate": null,
@@ -101,542 +292,24 @@
     ]
   },
   {
-    "id": "z-ai/glm-image",
+    "id": "bytedance/doubao-seed-2.0-pro",
     "provider": "zenmux",
     "providerName": "ZenMux",
-    "displayName": "GLM-Image",
-    "family": null,
-    "releaseDate": "2026-01-14",
-    "lastUpdated": "2026-01-14",
+    "displayName": "Doubao-Seed-2.0-pro",
+    "family": "seed-pro",
+    "releaseDate": "2026-02-14",
+    "lastUpdated": "2026-02-14",
     "knowledgeCutoff": null,
-    "contextWindow": 10240,
-    "maxOutputTokens": 0,
+    "contextWindow": 256000,
+    "maxOutputTokens": 32000,
     "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": false,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "image"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "z-ai/glm-4.7",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "GLM 4.7",
-    "family": "glm",
-    "releaseDate": "2025-12-22",
-    "lastUpdated": "2025-12-22",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 200000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2911,
-      "output": 1.1645,
-      "cacheRead": 0.0582,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.5823,
-          "output": 2.3291,
-          "contextThreshold": 32000
-        }
-      ]
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "z-ai/glm-4.6",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "GLM 4.6",
-    "family": "glm",
-    "releaseDate": "2025-09-30",
-    "lastUpdated": "2025-09-30",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 200000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2911,
-      "output": 1.1645,
-      "cacheRead": 0.0582,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.5823,
-          "output": 2.3291,
-          "contextThreshold": 32000
-        }
-      ]
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "z-ai/glm-5.3-flashx",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "GLM 5.3 FlashX",
-    "family": "glm-flash",
-    "releaseDate": "2026-08-26",
-    "lastUpdated": "2026-08-26",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.375,
-      "output": 1.25,
-      "cacheRead": 0.075,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "z-ai/glm-5.1",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "GLM 5.1",
-    "family": "glm",
-    "releaseDate": "2026-04-07",
-    "lastUpdated": "2026-04-07",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.8781,
-      "output": 3.5126,
-      "cacheRead": 0.1903,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 1.1709,
-          "output": 4.098,
-          "contextThreshold": 32000
-        }
-      ]
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "z-ai/glm-4.7-flashx",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "GLM 4.7 FlashX",
-    "family": "glm-flash",
-    "releaseDate": "2026-01-19",
-    "lastUpdated": "2026-01-19",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 200000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.0728,
-      "output": 0.4367,
-      "cacheRead": 0.0146,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "z-ai/glm-5",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "GLM 5",
-    "family": "glm",
-    "releaseDate": "2026-02-12",
-    "lastUpdated": "2026-02-12",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.58,
-      "output": 2.6,
-      "cacheRead": 0.14,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.87,
-          "output": 3.18,
-          "contextThreshold": 32000
-        }
-      ]
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "z-ai/glm-4.6v-flash",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "GLM 4.6V FlashX",
-    "family": "glm-flash",
-    "releaseDate": "2025-12-08",
-    "lastUpdated": "2025-12-08",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.0218,
-      "output": 0.2184,
-      "cacheRead": 0.0044,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.0437,
-          "output": 0.4367,
-          "contextThreshold": 32000
-        }
-      ]
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "z-ai/glm-4.5",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "GLM 4.5",
-    "family": "glm",
-    "releaseDate": "2025-07-28",
-    "lastUpdated": "2025-07-28",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 128000,
-    "maxOutputTokens": 96000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2911,
-      "output": 1.1645,
-      "cacheRead": 0.0582,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.5823,
-          "output": 2.3291,
-          "contextThreshold": 32000
-        }
-      ]
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "z-ai/glm-5-turbo",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "GLM 5 Turbo",
-    "family": "glm",
-    "releaseDate": "2026-03-16",
-    "lastUpdated": "2026-03-16",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.73,
-      "output": 3.19,
-      "cacheRead": 0.174,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 1.02,
-          "output": 3.77,
-          "contextThreshold": 32000
-        }
-      ]
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "z-ai/glm-5v-turbo",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "GLM 5V Turbo",
-    "family": "glm",
-    "releaseDate": "2026-04-01",
-    "lastUpdated": "2026-04-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
       "attachment": true,
       "structured_output": false,
       "open_weights": false
@@ -645,120 +318,6 @@
       "input": [
         "text",
         "image",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.726,
-      "output": 3.1946,
-      "cacheRead": 0.1743,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 1.0165,
-          "output": 3.7754,
-          "contextThreshold": 32000
-        }
-      ]
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "z-ai/glm-4.6v-flash-free",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "GLM 4.6V Flash (Free)",
-    "family": "glm-flash",
-    "releaseDate": "2025-12-08",
-    "lastUpdated": "2025-12-08",
-    "knowledgeCutoff": null,
-    "contextWindow": 200000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0,
-          "output": 0,
-          "contextThreshold": 32000
-        }
-      ]
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "z-ai/glm-4.6v",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "GLM 4.6V",
-    "family": "glm",
-    "releaseDate": "2025-12-08",
-    "lastUpdated": "2025-12-08",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 200000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
         "video"
       ],
       "output": [
@@ -766,16 +325,21 @@
       ]
     },
     "pricing": {
-      "input": 0.1456,
-      "output": 0.4367,
-      "cacheRead": 0.0291,
+      "input": 0.45,
+      "output": 2.24,
+      "cacheRead": 0.09,
       "currency": "USD",
       "per": 1000000,
       "tiers": [
         {
-          "input": 0.2911,
-          "output": 0.8734,
+          "input": 0.67,
+          "output": 3.36,
           "contextThreshold": 32000
+        },
+        {
+          "input": 1.34,
+          "output": 6.71,
+          "contextThreshold": 128000
         }
       ]
     },
@@ -789,255 +353,78 @@
     ]
   },
   {
-    "id": "z-ai/glm-4.7-flash-free",
+    "id": "bytedance/doubao-seed-2.0-lite",
     "provider": "zenmux",
     "providerName": "ZenMux",
-    "displayName": "GLM 4.7 Flash (Free)",
-    "family": "glm-flash",
-    "releaseDate": "2026-01-19",
-    "lastUpdated": "2026-01-19",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 200000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "z-ai/glm-5.3-flash",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "GLM 5.3 Flash",
-    "family": "glm-flash",
-    "releaseDate": "2026-08-26",
-    "lastUpdated": "2026-08-26",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.075,
-      "output": 0.25,
-      "cacheRead": 0.015,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "z-ai/glm-5.2",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "GLM 5.2",
-    "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.4,
-      "output": 4.4,
-      "cacheRead": 0.26,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "stepfun/step-3.7-flash",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Step 3.7 Flash",
-    "family": null,
-    "releaseDate": "2026-05-29",
-    "lastUpdated": "2026-05-29",
-    "knowledgeCutoff": "2026-03-01",
-    "contextWindow": 256000,
-    "maxOutputTokens": 256000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2,
-      "output": 1.15,
-      "cacheRead": 0.04,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "stepfun/step-3.5-flash",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Step 3.5 Flash",
-    "family": "step",
-    "releaseDate": "2026-01-29",
-    "lastUpdated": "2026-02-13",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 256000,
-    "maxOutputTokens": 256000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1,
-      "output": 0.3,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "volcengine/doubao-seed-2.0-pro",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Doubao-Seed-2.0-pro",
-    "family": "seed",
+    "displayName": "Doubao-Seed-2.0-lite",
+    "family": "seed-lite",
     "releaseDate": "2026-02-14",
     "lastUpdated": "2026-02-14",
-    "knowledgeCutoff": "2026-02-14",
+    "knowledgeCutoff": null,
     "contextWindow": 256000,
-    "maxOutputTokens": 64000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.09,
+      "output": 0.51,
+      "cacheRead": 0.02,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.13,
+          "output": 0.76,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 0.25,
+          "output": 1.51,
+          "contextThreshold": 128000
+        }
+      ]
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "bytedance/doubao-seed-2.0-code",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Doubao Seed 2.0 Code",
+    "family": "seed-code",
+    "releaseDate": "2026-02-14",
+    "lastUpdated": "2026-02-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 32000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -1064,11 +451,22 @@
       "input": 0.45,
       "output": 2.24,
       "cacheRead": 0.09,
-      "cacheWrite": 0.0024,
       "currency": "USD",
-      "per": 1000000
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.67,
+          "output": 3.36,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 1.34,
+          "output": 6.71,
+          "contextThreshold": 128000
+        }
+      ]
     },
-    "status": "deprecated",
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1078,16 +476,16 @@
     ]
   },
   {
-    "id": "volcengine/doubao-seed-2.0-mini",
+    "id": "bytedance/doubao-seed-2.0-mini",
     "provider": "zenmux",
     "providerName": "ZenMux",
     "displayName": "Doubao-Seed-2.0-mini",
-    "family": "seed",
+    "family": "seed-mini",
     "releaseDate": "2026-02-14",
     "lastUpdated": "2026-02-14",
-    "knowledgeCutoff": "2026-02-14",
+    "knowledgeCutoff": null,
     "contextWindow": 256000,
-    "maxOutputTokens": 64000,
+    "maxOutputTokens": 32000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -1104,6 +502,7 @@
       "input": [
         "text",
         "image",
+        "audio",
         "video"
       ],
       "output": [
@@ -1114,59 +513,22 @@
       "input": 0.03,
       "output": 0.28,
       "cacheRead": 0.01,
-      "cacheWrite": 0.0024,
       "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "volcengine/doubao-seed-2.0-code",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Doubao Seed 2.0 Code",
-    "family": "seed",
-    "releaseDate": "2026-02-14",
-    "lastUpdated": "2026-02-14",
-    "knowledgeCutoff": "2025-01-01",
-    "contextWindow": 256000,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.06,
+          "output": 0.56,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 0.12,
+          "output": 1.12,
+          "contextThreshold": 128000
+        }
       ]
     },
-    "pricing": {
-      "input": 0.9,
-      "output": 4.48,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1176,66 +538,63 @@
     ]
   },
   {
-    "id": "volcengine/doubao-seed-1.8",
+    "id": "inclusionai/ring-2.6-1t",
     "provider": "zenmux",
     "providerName": "ZenMux",
-    "displayName": "Doubao-Seed-1.8",
-    "family": "seed",
-    "releaseDate": "2025-12-28",
-    "lastUpdated": "2025-12-28",
-    "knowledgeCutoff": "2025-01-01",
-    "contextWindow": 256000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.11,
-      "output": 0.28,
-      "cacheRead": 0.02,
-      "cacheWrite": 0.0024,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "volcengine/doubao-seed-code",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Doubao-Seed-Code",
+    "displayName": "inclusionAI: Ring-2.6-1T",
     "family": null,
-    "releaseDate": "2025-11-11",
-    "lastUpdated": "2025-11-11",
-    "knowledgeCutoff": "2025-01-01",
-    "contextWindow": 256000,
-    "maxOutputTokens": 64000,
+    "releaseDate": "2026-05-07",
+    "lastUpdated": "2026-05-14",
+    "knowledgeCutoff": "2025-12-31",
+    "contextWindow": 262000,
+    "maxOutputTokens": 65000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1318155,
+      "output": 1.0984625,
+      "cacheRead": 0.0263631,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "google/gemini-3-flash-preview",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Gemini 3 Flash Preview",
+    "family": "gemini-flash",
+    "releaseDate": "2025-12-17",
+    "lastUpdated": "2025-12-17",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048000,
+    "maxOutputTokens": 65535,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -1251,115 +610,21 @@
     "modalities": {
       "input": [
         "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.17,
-      "output": 1.12,
-      "cacheRead": 0.03,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "volcengine/doubao-seed-2.0-lite",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Doubao-Seed-2.0-lite",
-    "family": "seed",
-    "releaseDate": "2026-02-14",
-    "lastUpdated": "2026-02-14",
-    "knowledgeCutoff": "2026-02-14",
-    "contextWindow": 256000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
         "image",
-        "video"
+        "audio",
+        "video",
+        "pdf"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.09,
-      "output": 0.51,
-      "cacheRead": 0.02,
-      "cacheWrite": 0.0024,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "moonshotai/kimi-k2.7-code-highspeed",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Kimi K2.7 Code HighSpeed",
-    "family": "kimi-k2",
-    "releaseDate": "2026-06-12",
-    "lastUpdated": "2026-06-12",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.9,
-      "output": 8,
-      "cacheRead": 0.38,
+      "input": 0.5,
+      "output": 3,
+      "cacheRead": 0.05,
+      "cacheWrite": 1,
+      "inputAudio": 1,
       "currency": "USD",
       "per": 1000000
     },
@@ -1373,65 +638,16 @@
     ]
   },
   {
-    "id": "moonshotai/kimi-k2.6",
+    "id": "google/gemini-3.1-flash-lite",
     "provider": "zenmux",
     "providerName": "ZenMux",
-    "displayName": "Kimi K2.6",
-    "family": "kimi-k2",
-    "releaseDate": "2026-04-20",
-    "lastUpdated": "2026-04-20",
+    "displayName": "Gemini 3.1 Flash Lite",
+    "family": "gemini-flash-lite",
+    "releaseDate": "2026-05-07",
+    "lastUpdated": "2026-05-07",
     "knowledgeCutoff": "2025-01",
-    "contextWindow": 262140,
-    "maxOutputTokens": 262140,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.95,
-      "output": 4,
-      "cacheRead": 0.16,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "moonshotai/kimi-k3",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Kimi K3",
-    "family": "kimi-k3",
-    "releaseDate": "2026-07-16",
-    "lastUpdated": "2026-07-16",
-    "knowledgeCutoff": null,
     "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -1439,25 +655,28 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
-      "open_weights": true
+      "open_weights": false
     },
     "modalities": {
       "input": [
         "text",
         "image",
-        "video"
+        "video",
+        "audio",
+        "pdf"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 3,
-      "output": 15,
-      "cacheRead": 0.3,
+      "input": 0.25,
+      "output": 1.5,
+      "cacheRead": 0.025,
+      "inputAudio": 0.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -1471,42 +690,45 @@
     ]
   },
   {
-    "id": "moonshotai/kimi-k2.7-code",
+    "id": "google/gemini-2.5-flash",
     "provider": "zenmux",
     "providerName": "ZenMux",
-    "displayName": "Kimi K2.7 Code",
-    "family": "kimi-k2",
-    "releaseDate": "2026-06-12",
-    "lastUpdated": "2026-06-12",
+    "displayName": "Gemini 2.5 Flash",
+    "family": "gemini-flash",
+    "releaseDate": "2025-06-17",
+    "lastUpdated": "2025-06-17",
     "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "contextWindow": 1048000,
+    "maxOutputTokens": 65535,
     "capabilities": {
       "tools": true,
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
-      "structured_output": true,
-      "open_weights": true
+      "structured_output": false,
+      "open_weights": false
     },
     "modalities": {
       "input": [
         "text",
         "image",
-        "video"
+        "audio",
+        "video",
+        "pdf"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.95,
-      "output": 4,
-      "cacheRead": 0.19,
+      "input": 0.3,
+      "output": 2.5,
+      "cacheRead": 0.03,
+      "inputAudio": 1,
       "currency": "USD",
       "per": 1000000
     },
@@ -1634,110 +856,6 @@
     ]
   },
   {
-    "id": "google/gemini-3.1-flash-lite",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Gemini 3.1 Flash Lite",
-    "family": "gemini-flash-lite",
-    "releaseDate": "2026-05-07",
-    "lastUpdated": "2026-05-07",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "audio",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.25,
-      "output": 1.5,
-      "cacheRead": 0.025,
-      "inputAudio": 0.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "google/gemini-2.5-flash",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Gemini 2.5 Flash",
-    "family": "gemini-flash",
-    "releaseDate": "2025-06-17",
-    "lastUpdated": "2025-06-17",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048000,
-    "maxOutputTokens": 65535,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 2.5,
-      "cacheRead": 0.03,
-      "inputAudio": 1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "google/gemini-2.5-flash-lite",
     "provider": "zenmux",
     "providerName": "ZenMux",
@@ -1777,59 +895,6 @@
       "output": 0.4,
       "cacheRead": 0.01,
       "inputAudio": 0.3,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "google/gemini-3-flash-preview",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Gemini 3 Flash Preview",
-    "family": "gemini-flash",
-    "releaseDate": "2025-12-17",
-    "lastUpdated": "2025-12-17",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048000,
-    "maxOutputTokens": 65535,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.5,
-      "output": 3,
-      "cacheRead": 0.05,
-      "cacheWrite": 1,
-      "inputAudio": 1,
       "currency": "USD",
       "per": 1000000
     },
@@ -1906,250 +971,15 @@
     ]
   },
   {
-    "id": "deepseek/deepseek-v3.2",
+    "id": "z-ai/glm-4.6v-flash",
     "provider": "zenmux",
     "providerName": "ZenMux",
-    "displayName": "DeepSeek V3.2",
-    "family": "deepseek",
-    "releaseDate": "2025-12-01",
-    "lastUpdated": "2025-12-01",
-    "knowledgeCutoff": "2024-07",
-    "contextWindow": 128000,
-    "maxOutputTokens": 8000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.293,
-      "output": 0.4395,
-      "cacheRead": 0.0293,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek/deepseek-v3.2-exp",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "DeepSeek-V3.2-Exp",
-    "family": null,
-    "releaseDate": "2025-09-29",
-    "lastUpdated": "2025-09-29",
-    "knowledgeCutoff": "2025-01-01",
-    "contextWindow": 163000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.22,
-      "output": 0.33,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek/deepseek-v4-pro",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "DeepSeek V4 Pro",
-    "family": "deepseek-thinking",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.66,
-      "output": 1.98,
-      "cacheRead": 0.022,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek/deepseek-v4.1-flash",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "DeepSeek V4.1 Flash",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.075,
-      "output": 0.3,
-      "cacheRead": 0.0015,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek/deepseek-v4-flash",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "DeepSeek V4 Flash",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.22,
-      "output": 0.66,
-      "cacheRead": 0.007,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "openai/gpt-5.3-codex",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "GPT-5.3 Codex",
-    "family": "gpt-codex",
-    "releaseDate": "2026-02-05",
-    "lastUpdated": "2026-02-05",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 400000,
+    "displayName": "GLM 4.6V FlashX",
+    "family": "glmv-flash",
+    "releaseDate": "2025-12-08",
+    "lastUpdated": "2025-12-08",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
     "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
@@ -2161,24 +991,31 @@
       "temperature": true,
       "attachment": true,
       "structured_output": false,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
         "text",
         "image",
-        "pdf"
+        "video"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 1.75,
-      "output": 14,
-      "cacheRead": 0.175,
+      "input": 0.0218,
+      "output": 0.2184,
+      "cacheRead": 0.0044,
       "currency": "USD",
-      "per": 1000000
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.0437,
+          "output": 0.4367,
+          "contextThreshold": 32000
+        }
+      ]
     },
     "status": "active",
     "deprecationDate": null,
@@ -2190,41 +1027,40 @@
     ]
   },
   {
-    "id": "openai/gpt-5.1-codex-mini",
+    "id": "z-ai/glm-4.7-flashx",
     "provider": "zenmux",
     "providerName": "ZenMux",
-    "displayName": "GPT-5.1-Codex-Mini",
-    "family": "gpt-codex",
-    "releaseDate": "2025-11-13",
-    "lastUpdated": "2025-11-13",
-    "knowledgeCutoff": "2024-09-30",
-    "contextWindow": 400000,
-    "maxOutputTokens": 100000,
+    "displayName": "GLM 4.7 FlashX",
+    "family": "glm-flash",
+    "releaseDate": "2026-01-19",
+    "lastUpdated": "2026-01-19",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": false,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.25,
-      "output": 2,
-      "cacheRead": 0.025,
+      "input": 0.0728,
+      "output": 0.4367,
+      "cacheRead": 0.0146,
       "currency": "USD",
       "per": 1000000
     },
@@ -2238,32 +1074,181 @@
     ]
   },
   {
-    "id": "openai/gpt-5.4-mini",
+    "id": "z-ai/glm-5-turbo",
     "provider": "zenmux",
     "providerName": "ZenMux",
-    "displayName": "GPT-5.4 Mini",
-    "family": "gpt-mini",
-    "releaseDate": "2026-03-17",
-    "lastUpdated": "2026-03-17",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 400000,
+    "displayName": "GLM 5 Turbo",
+    "family": "glm-turbo",
+    "releaseDate": "2026-03-16",
+    "lastUpdated": "2026-03-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.73,
+      "output": 3.19,
+      "cacheRead": 0.174,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 1.02,
+          "output": 3.77,
+          "contextThreshold": 32000
+        }
+      ]
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-4.7-flash-free",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "GLM 4.7 Flash (Free)",
+    "family": "glm-flash-free",
+    "releaseDate": "2026-01-19",
+    "lastUpdated": "2026-01-19",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-5.2",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "GLM 5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.4,
+      "output": 4.4,
+      "cacheRead": 0.26,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-5.3-flashx",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "GLM 5.3 FlashX",
+    "family": "glm-flash",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
     "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": false,
-      "open_weights": false
+      "structured_output": true,
+      "open_weights": true
     },
     "modalities": {
       "input": [
         "text",
         "image",
+        "video",
         "pdf"
       ],
       "output": [
@@ -2271,8 +1256,8 @@
       ]
     },
     "pricing": {
-      "input": 0.75,
-      "output": 4.5,
+      "input": 0.375,
+      "output": 1.25,
       "cacheRead": 0.075,
       "currency": "USD",
       "per": 1000000
@@ -2287,250 +1272,627 @@
     ]
   },
   {
-    "id": "openai/gpt-5.2-pro",
+    "id": "z-ai/glm-5",
     "provider": "zenmux",
     "providerName": "ZenMux",
-    "displayName": "GPT-5.2-Pro",
-    "family": "gpt-pro",
-    "releaseDate": "2025-12-11",
-    "lastUpdated": "2025-12-11",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 400000,
+    "displayName": "GLM 5",
+    "family": "glm",
+    "releaseDate": "2026-02-12",
+    "lastUpdated": "2026-02-12",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
     "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 21,
-      "output": 168,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "openai/chat-latest",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Chat Latest (GPT-5.5 Instant)",
-    "family": null,
-    "releaseDate": "2026-05-05",
-    "lastUpdated": "2026-05-28",
-    "knowledgeCutoff": "2025-12-01",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "pdf"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 5,
-      "output": 30,
-      "cacheRead": 0.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "openai/gpt-5-codex",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "GPT-5 Codex",
-    "family": "gpt-codex",
-    "releaseDate": "2025-09-15",
-    "lastUpdated": "2025-09-15",
-    "knowledgeCutoff": "2024-09-30",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cacheRead": 0.125,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "openai/gpt-5.1-codex",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "GPT-5.1-Codex",
-    "family": "gpt-codex",
-    "releaseDate": "2025-11-13",
-    "lastUpdated": "2025-11-13",
-    "knowledgeCutoff": "2024-09-30",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cacheRead": 0.125,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "openai/gpt-5.6-luna",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "GPT-5.6 Luna",
-    "family": "gpt-luna",
-    "releaseDate": "2026-07-09",
-    "lastUpdated": "2026-07-09",
-    "knowledgeCutoff": "2026-02-16",
-    "contextWindow": 1050000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2,
-      "output": 1.2,
-      "cacheRead": 0.02,
-      "cacheWrite": 0.25,
+      "input": 0.58,
+      "output": 2.6,
+      "cacheRead": 0.14,
       "currency": "USD",
       "per": 1000000,
       "tiers": [
         {
-          "input": 0.4,
-          "output": 1.8,
-          "contextThreshold": 272000
+          "input": 0.87,
+          "output": 3.18,
+          "contextThreshold": 32000
         }
+      ]
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-4.5",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "GLM 4.5",
+    "family": "glm",
+    "releaseDate": "2025-07-28",
+    "lastUpdated": "2025-07-28",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 128000,
+    "maxOutputTokens": 96000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
       ],
-      "contextOverThreshold": {
-        "input": 0.4,
-        "output": 1.8,
-        "contextThreshold": 200000
-      }
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2911,
+      "output": 1.1645,
+      "cacheRead": 0.0582,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.5823,
+          "output": 2.3291,
+          "contextThreshold": 32000
+        }
+      ]
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-5.3",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "GLM 5.3",
+    "family": "glm",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.4,
+      "output": 4.4,
+      "cacheRead": 0.26,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-5.3-flash",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "GLM 5.3 Flash",
+    "family": "glm-flash",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.075,
+      "output": 0.25,
+      "cacheRead": 0.015,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-4.5-air",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "GLM 4.5 Air",
+    "family": "glm-air",
+    "releaseDate": "2025-07-28",
+    "lastUpdated": "2025-07-28",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 128000,
+    "maxOutputTokens": 96000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1165,
+      "output": 0.2911,
+      "cacheRead": 0.0233,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.1747,
+          "output": 1.1645,
+          "contextThreshold": 32000
+        }
+      ]
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-5.1",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "GLM 5.1",
+    "family": "glm",
+    "releaseDate": "2026-04-07",
+    "lastUpdated": "2026-04-07",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.8781,
+      "output": 3.5126,
+      "cacheRead": 0.1903,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 1.1709,
+          "output": 4.098,
+          "contextThreshold": 32000
+        }
+      ]
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-5v-turbo",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "GLM 5V Turbo",
+    "family": "glmv-turbo",
+    "releaseDate": "2026-04-01",
+    "lastUpdated": "2026-04-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.726,
+      "output": 3.1946,
+      "cacheRead": 0.1743,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 1.0165,
+          "output": 3.7754,
+          "contextThreshold": 32000
+        }
+      ]
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-4.6v-flash-free",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "GLM 4.6V Flash (Free)",
+    "family": "glmv-flash-free",
+    "releaseDate": "2025-12-08",
+    "lastUpdated": "2025-12-08",
+    "knowledgeCutoff": null,
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0,
+          "output": 0,
+          "contextThreshold": 32000
+        }
+      ]
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-4.6",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "GLM 4.6",
+    "family": "glm",
+    "releaseDate": "2025-09-30",
+    "lastUpdated": "2025-09-30",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2911,
+      "output": 1.1645,
+      "cacheRead": 0.0582,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.5823,
+          "output": 2.3291,
+          "contextThreshold": 32000
+        }
+      ]
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-4.6v",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "GLM 4.6V",
+    "family": "glmv",
+    "releaseDate": "2025-12-08",
+    "lastUpdated": "2025-12-08",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1456,
+      "output": 0.4367,
+      "cacheRead": 0.0291,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.2911,
+          "output": 0.8734,
+          "contextThreshold": 32000
+        }
+      ]
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-image",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "GLM-Image",
+    "family": "glm-image",
+    "releaseDate": "2026-01-14",
+    "lastUpdated": "2026-01-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 10240,
+    "maxOutputTokens": 0,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "image"
+      ]
+    },
+    "pricing": null,
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-4.7",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "GLM 4.7",
+    "family": "glm",
+    "releaseDate": "2025-12-22",
+    "lastUpdated": "2025-12-22",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 200000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2911,
+      "output": 1.1645,
+      "cacheRead": 0.0582,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.5823,
+          "output": 2.3291,
+          "contextThreshold": 32000
+        }
+      ]
     },
     "status": "active",
     "deprecationDate": null,
@@ -2666,178 +2028,6 @@
     ]
   },
   {
-    "id": "openai/gpt-5.5",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "GPT-5.5",
-    "family": "gpt",
-    "releaseDate": "2026-04-23",
-    "lastUpdated": "2026-04-23",
-    "knowledgeCutoff": "2025-12-01",
-    "contextWindow": 1050000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 5,
-      "output": 30,
-      "cacheRead": 0.5,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 10,
-          "output": 45,
-          "contextThreshold": 272000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 10,
-        "output": 45,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "experimental",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "openai/gpt-6-sol",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "GPT-6 Sol",
-    "family": "gpt-sol",
-    "releaseDate": "2026-09-22",
-    "lastUpdated": "2026-09-22",
-    "knowledgeCutoff": "2026-04-20",
-    "contextWindow": 1050000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2,
-      "output": 10,
-      "cacheRead": 0.2,
-      "cacheWrite": 2.5,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 4,
-          "output": 15,
-          "contextThreshold": 272000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 4,
-        "output": 15,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "openai/gpt-5.1",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "GPT-5.1",
-    "family": "gpt",
-    "releaseDate": "2025-11-13",
-    "lastUpdated": "2025-11-13",
-    "knowledgeCutoff": "2024-09-30",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "image",
-        "text",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cacheRead": 0.125,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "openai/gpt-5.6-sol",
     "provider": "zenmux",
     "providerName": "ZenMux",
@@ -2900,63 +2090,14 @@
     ]
   },
   {
-    "id": "openai/gpt-5.2",
+    "id": "openai/gpt-5-codex",
     "provider": "zenmux",
     "providerName": "ZenMux",
-    "displayName": "GPT-5.2",
-    "family": "gpt",
-    "releaseDate": "2025-12-11",
-    "lastUpdated": "2025-12-11",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "image",
-        "text",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.75,
-      "output": 14,
-      "cacheRead": 0.175,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "openai/gpt-5.4-nano",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "GPT-5.4 Nano",
-    "family": "gpt-nano",
-    "releaseDate": "2026-03-17",
-    "lastUpdated": "2026-03-17",
-    "knowledgeCutoff": "2025-08-31",
+    "displayName": "GPT-5 Codex",
+    "family": "gpt-codex",
+    "releaseDate": "2025-09-15",
+    "lastUpdated": "2025-09-15",
+    "knowledgeCutoff": "2024-09-30",
     "contextWindow": 400000,
     "maxOutputTokens": 128000,
     "capabilities": {
@@ -2974,17 +2115,16 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.2,
-      "output": 1.25,
-      "cacheRead": 0.02,
+      "input": 1.25,
+      "output": 10,
+      "cacheRead": 0.125,
       "currency": "USD",
       "per": 1000000
     },
@@ -3059,11 +2199,219 @@
     ]
   },
   {
-    "id": "openai/gpt-5.2-codex",
+    "id": "openai/gpt-5",
     "provider": "zenmux",
     "providerName": "ZenMux",
-    "displayName": "GPT-5.2-Codex",
+    "displayName": "GPT-5",
+    "family": "gpt",
+    "releaseDate": "2025-08-07",
+    "lastUpdated": "2025-08-07",
+    "knowledgeCutoff": "2024-09-30",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 10,
+      "cacheRead": 0.125,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "openai/gpt-5.4-mini",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "GPT-5.4 Mini",
+    "family": "gpt-mini",
+    "releaseDate": "2026-03-17",
+    "lastUpdated": "2026-03-17",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.75,
+      "output": 4.5,
+      "cacheRead": 0.075,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "openai/gpt-5.3-codex",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "GPT-5.3 Codex",
     "family": "gpt-codex",
+    "releaseDate": "2026-02-05",
+    "lastUpdated": "2026-02-05",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.75,
+      "output": 14,
+      "cacheRead": 0.175,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "openai/gpt-5.5",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "GPT-5.5",
+    "family": "gpt",
+    "releaseDate": "2026-04-23",
+    "lastUpdated": "2026-04-23",
+    "knowledgeCutoff": "2025-12-01",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 30,
+      "cacheRead": 0.5,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 10,
+          "output": 45,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 10,
+        "output": 45,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "experimental",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "openai/gpt-5.2-pro",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "GPT-5.2-Pro",
+    "family": "gpt-pro",
     "releaseDate": "2025-12-11",
     "lastUpdated": "2025-12-11",
     "knowledgeCutoff": "2025-08-31",
@@ -3092,9 +2440,8 @@
       ]
     },
     "pricing": {
-      "input": 1.75,
-      "output": 14,
-      "cacheRead": 0.175,
+      "input": 21,
+      "output": 168,
       "currency": "USD",
       "per": 1000000
     },
@@ -3168,6 +2515,55 @@
     ]
   },
   {
+    "id": "openai/gpt-5.4-nano",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "GPT-5.4 Nano",
+    "family": "gpt-nano",
+    "releaseDate": "2026-03-17",
+    "lastUpdated": "2026-03-17",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2,
+      "output": 1.25,
+      "cacheRead": 0.02,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "openai/gpt-5.4-pro",
     "provider": "zenmux",
     "providerName": "ZenMux",
@@ -3228,842 +2624,16 @@
     ]
   },
   {
-    "id": "openai/gpt-5",
+    "id": "openai/gpt-5.2",
     "provider": "zenmux",
     "providerName": "ZenMux",
-    "displayName": "GPT-5",
+    "displayName": "GPT-5.2",
     "family": "gpt",
-    "releaseDate": "2025-08-07",
-    "lastUpdated": "2025-08-07",
-    "knowledgeCutoff": "2024-09-30",
+    "releaseDate": "2025-12-11",
+    "lastUpdated": "2025-12-11",
+    "knowledgeCutoff": "2025-08-31",
     "contextWindow": 400000,
     "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cacheRead": 0.125,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen/qwen3-max",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Qwen3-Max-Thinking",
-    "family": "qwen",
-    "releaseDate": "2025-09-23",
-    "lastUpdated": "2025-09-23",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 256000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.2,
-      "output": 6,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen/qwen3.6-plus",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Qwen3.6-Plus",
-    "family": "qwen",
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-04-02",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.5,
-      "output": 3,
-      "cacheRead": 0.1,
-      "cacheWrite": 0.625,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 2,
-          "output": 6,
-          "contextThreshold": 256000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 2,
-        "output": 6,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen/qwen3.5-flash",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Qwen3.5 Flash",
-    "family": "qwen",
-    "releaseDate": "2026-02-23",
-    "lastUpdated": "2026-02-23",
-    "knowledgeCutoff": "2025-01-01",
-    "contextWindow": 1020000,
-    "maxOutputTokens": 1020000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1,
-      "output": 0.4,
-      "cacheRead": 0.02,
-      "cacheWrite": 0.125,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen/qwen3.5-plus",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Qwen3.5 Plus",
-    "family": "qwen",
-    "releaseDate": "2026-02-16",
-    "lastUpdated": "2026-02-16",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.4,
-      "output": 2.4,
-      "cacheRead": 0.08,
-      "cacheWrite": 0.5,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.5,
-          "output": 3,
-          "contextThreshold": 256000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 0.5,
-        "output": 3,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen/qwen3-coder-plus",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Qwen3-Coder-Plus",
-    "family": "qwen",
-    "releaseDate": "2025-07-23",
-    "lastUpdated": "2025-07-23",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1,
-      "output": 5,
-      "cacheRead": 0.1,
-      "cacheWrite": 1.25,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen/qwen3.7-plus",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Qwen3.7 Plus",
-    "family": "qwen",
-    "releaseDate": "2026-06-02",
-    "lastUpdated": "2026-06-02",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.4,
-      "output": 1.6,
-      "cacheRead": 0.08,
-      "cacheWrite": 0.5,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 1.2,
-          "output": 4.8,
-          "contextThreshold": 256000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 1.2,
-        "output": 4.8,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen/qwen3.7-max",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Qwen3.7 Max",
-    "family": "qwen",
-    "releaseDate": "2026-05-21",
-    "lastUpdated": "2026-05-21",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.25,
-      "output": 3.75,
-      "cacheRead": 0.25,
-      "cacheWrite": 1.5625,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "minimax/minimax-m2.1",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "MiniMax M2.1",
-    "family": "minimax",
-    "releaseDate": "2025-12-23",
-    "lastUpdated": "2025-12-23",
-    "knowledgeCutoff": "2025-01-01",
-    "contextWindow": 204000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 1.2,
-      "cacheRead": 0.03,
-      "cacheWrite": 0.375,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "minimax/minimax-m3.1-flash",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "MiniMax-M3.1-Flash",
-    "family": "minimax",
-    "releaseDate": "2026-10-19",
-    "lastUpdated": "2026-10-19",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 512000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.15,
-      "output": 0.6,
-      "cacheRead": 0.015,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "minimax/minimax-m2.7-highspeed",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "MiniMax M2.7 highspeed",
-    "family": "minimax",
-    "releaseDate": "2026-03-18",
-    "lastUpdated": "2026-03-18",
-    "knowledgeCutoff": "2025-01-01",
-    "contextWindow": 204800,
-    "maxOutputTokens": 131070,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.611,
-      "output": 2.4439,
-      "cacheRead": 0.0611,
-      "cacheWrite": 0.3819,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "minimax/minimax-m2.7",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "MiniMax M2.7",
-    "family": "minimax",
-    "releaseDate": "2026-03-18",
-    "lastUpdated": "2026-03-18",
-    "knowledgeCutoff": "2025-01-01",
-    "contextWindow": 204800,
-    "maxOutputTokens": 131070,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 1.2,
-      "cacheRead": 0.06,
-      "cacheWrite": 0.375,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "minimax/minimax-m2",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "MiniMax M2",
-    "family": "minimax",
-    "releaseDate": "2025-10-27",
-    "lastUpdated": "2025-10-27",
-    "knowledgeCutoff": "2025-01-01",
-    "contextWindow": 204000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 1.2,
-      "cacheRead": 0.03,
-      "cacheWrite": 0.375,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "minimax/minimax-m3",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "MiniMax-M3",
-    "family": "minimax",
-    "releaseDate": "2026-06-01",
-    "lastUpdated": "2026-06-01",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 512000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 1.2,
-      "cacheRead": 0.06,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.6,
-          "output": 2.4,
-          "contextThreshold": 512000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 0.6,
-        "output": 2.4,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "minimax/minimax-m2.5-lightning",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "MiniMax M2.5 highspeed",
-    "family": "minimax",
-    "releaseDate": "2026-02-13",
-    "lastUpdated": "2026-02-13",
-    "knowledgeCutoff": "2025-01-01",
-    "contextWindow": 204800,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.6,
-      "output": 2.4,
-      "cacheRead": 0.03,
-      "cacheWrite": 0.375,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "minimax/minimax-m2.5",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "MiniMax M2.5",
-    "family": "minimax",
-    "releaseDate": "2026-02-12",
-    "lastUpdated": "2026-02-12",
-    "knowledgeCutoff": "2025-01-01",
-    "contextWindow": 204800,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 1.2,
-      "cacheRead": 0.03,
-      "cacheWrite": 0.375,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "bytedance/doubao-seed-2.0-pro",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Doubao-Seed-2.0-pro",
-    "family": "seed",
-    "releaseDate": "2026-02-14",
-    "lastUpdated": "2026-02-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 32000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -4078,32 +2648,20 @@
     },
     "modalities": {
       "input": [
-        "text",
         "image",
-        "video"
+        "text",
+        "pdf"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.45,
-      "output": 2.24,
-      "cacheRead": 0.09,
+      "input": 1.75,
+      "output": 14,
+      "cacheRead": 0.175,
       "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.67,
-          "output": 3.36,
-          "contextThreshold": 32000
-        },
-        {
-          "input": 1.34,
-          "output": 6.71,
-          "contextThreshold": 128000
-        }
-      ]
+      "per": 1000000
     },
     "status": "active",
     "deprecationDate": null,
@@ -4115,200 +2673,16 @@
     ]
   },
   {
-    "id": "bytedance/doubao-seed-2.0-mini",
+    "id": "openai/gpt-5.1-codex",
     "provider": "zenmux",
     "providerName": "ZenMux",
-    "displayName": "Doubao-Seed-2.0-mini",
-    "family": "seed",
-    "releaseDate": "2026-02-14",
-    "lastUpdated": "2026-02-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.03,
-      "output": 0.28,
-      "cacheRead": 0.01,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.06,
-          "output": 0.56,
-          "contextThreshold": 32000
-        },
-        {
-          "input": 0.12,
-          "output": 1.12,
-          "contextThreshold": 128000
-        }
-      ]
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "bytedance/doubao-seed-2.0-code",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Doubao Seed 2.0 Code",
-    "family": "seed",
-    "releaseDate": "2026-02-14",
-    "lastUpdated": "2026-02-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.45,
-      "output": 2.24,
-      "cacheRead": 0.09,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.67,
-          "output": 3.36,
-          "contextThreshold": 32000
-        },
-        {
-          "input": 1.34,
-          "output": 6.71,
-          "contextThreshold": 128000
-        }
-      ]
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "bytedance/doubao-seed-1.8",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Doubao-Seed-1.8",
-    "family": "seed",
-    "releaseDate": "2025-12-28",
-    "lastUpdated": "2025-12-28",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.11,
-      "output": 0.28,
-      "cacheRead": 0.023,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.17,
-          "output": 2.27,
-          "contextThreshold": 32000
-        },
-        {
-          "input": 0.34,
-          "output": 3.41,
-          "contextThreshold": 128000
-        }
-      ]
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "bytedance/doubao-seed-code",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Doubao-Seed-Code",
-    "family": null,
-    "releaseDate": "2025-11-11",
-    "lastUpdated": "2025-11-11",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 32000,
+    "displayName": "GPT-5.1-Codex",
+    "family": "gpt-codex",
+    "releaseDate": "2025-11-13",
+    "lastUpdated": "2025-11-13",
+    "knowledgeCutoff": "2024-09-30",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -4331,23 +2705,11 @@
       ]
     },
     "pricing": {
-      "input": 0.17,
-      "output": 1.12,
-      "cacheRead": 0.034,
+      "input": 1.25,
+      "output": 10,
+      "cacheRead": 0.125,
       "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.2,
-          "output": 1.69,
-          "contextThreshold": 32000
-        },
-        {
-          "input": 0.39,
-          "output": 2.25,
-          "contextThreshold": 128000
-        }
-      ]
+      "per": 1000000
     },
     "status": "active",
     "deprecationDate": null,
@@ -4359,16 +2721,78 @@
     ]
   },
   {
-    "id": "bytedance/doubao-seed-2.0-lite",
+    "id": "openai/gpt-6-sol",
     "provider": "zenmux",
     "providerName": "ZenMux",
-    "displayName": "Doubao-Seed-2.0-lite",
-    "family": "seed",
-    "releaseDate": "2026-02-14",
-    "lastUpdated": "2026-02-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 32000,
+    "displayName": "GPT-6 Sol",
+    "family": "gpt-sol",
+    "releaseDate": "2026-09-22",
+    "lastUpdated": "2026-09-22",
+    "knowledgeCutoff": "2026-04-20",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 4,
+          "output": 15,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 4,
+        "output": 15,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "openai/gpt-5.1-codex-mini",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "GPT-5.1-Codex-Mini",
+    "family": "gpt-codex-mini",
+    "releaseDate": "2025-11-13",
+    "lastUpdated": "2025-11-13",
+    "knowledgeCutoff": "2024-09-30",
+    "contextWindow": 400000,
+    "maxOutputTokens": 100000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -4384,32 +2808,18 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "audio",
-        "video"
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.09,
-      "output": 0.51,
-      "cacheRead": 0.02,
+      "input": 0.25,
+      "output": 2,
+      "cacheRead": 0.025,
       "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.13,
-          "output": 0.76,
-          "contextThreshold": 32000
-        },
-        {
-          "input": 0.25,
-          "output": 1.51,
-          "contextThreshold": 128000
-        }
-      ]
+      "per": 1000000
     },
     "status": "active",
     "deprecationDate": null,
@@ -4421,40 +2831,202 @@
     ]
   },
   {
-    "id": "inclusionai/ring-2.6-1t",
+    "id": "openai/chat-latest",
     "provider": "zenmux",
     "providerName": "ZenMux",
-    "displayName": "inclusionAI: Ring-2.6-1T",
-    "family": null,
-    "releaseDate": "2026-05-07",
-    "lastUpdated": "2026-05-14",
-    "knowledgeCutoff": "2025-12-31",
-    "contextWindow": 262000,
-    "maxOutputTokens": 65000,
+    "displayName": "Chat Latest (GPT-5.5 Instant)",
+    "family": "gpt",
+    "releaseDate": "2026-05-05",
+    "lastUpdated": "2026-05-28",
+    "knowledgeCutoff": "2025-12-01",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.1318155,
-      "output": 1.0984625,
-      "cacheRead": 0.0263631,
+      "input": 5,
+      "output": 30,
+      "cacheRead": 0.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "openai/gpt-5.6-luna",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "GPT-5.6 Luna",
+    "family": "gpt-luna",
+    "releaseDate": "2026-07-09",
+    "lastUpdated": "2026-07-09",
+    "knowledgeCutoff": "2026-02-16",
+    "contextWindow": 1050000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2,
+      "output": 1.2,
+      "cacheRead": 0.02,
+      "cacheWrite": 0.25,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.4,
+          "output": 1.8,
+          "contextThreshold": 272000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 0.4,
+        "output": 1.8,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "openai/gpt-5.2-codex",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "GPT-5.2-Codex",
+    "family": "gpt-codex",
+    "releaseDate": "2025-12-11",
+    "lastUpdated": "2025-12-11",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.75,
+      "output": 14,
+      "cacheRead": 0.175,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "openai/gpt-5.1",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "GPT-5.1",
+    "family": "gpt",
+    "releaseDate": "2025-11-13",
+    "lastUpdated": "2025-11-13",
+    "knowledgeCutoff": "2024-09-30",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "image",
+        "text",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 10,
+      "cacheRead": 0.125,
       "currency": "USD",
       "per": 1000000
     },
@@ -4523,16 +3095,16 @@
     ]
   },
   {
-    "id": "xiaomi/mimo-v2.5-pro",
+    "id": "stepfun/step-3.5-flash",
     "provider": "zenmux",
     "providerName": "ZenMux",
-    "displayName": "MiMo-V2.5-Pro",
-    "family": "mimo",
-    "releaseDate": "2026-04-22",
-    "lastUpdated": "2026-04-22",
-    "knowledgeCutoff": "2024-12",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
+    "displayName": "Step 3.5 Flash",
+    "family": "step-flash",
+    "releaseDate": "2026-01-29",
+    "lastUpdated": "2026-02-13",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -4554,9 +3126,1332 @@
       ]
     },
     "pricing": {
-      "input": 1,
-      "output": 3,
+      "input": 0.1,
+      "output": 0.3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "stepfun/step-3.7-flash",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Step 3.7 Flash",
+    "family": "step-flash",
+    "releaseDate": "2026-05-29",
+    "lastUpdated": "2026-05-29",
+    "knowledgeCutoff": "2026-03-01",
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2,
+      "output": 1.15,
+      "cacheRead": 0.04,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "volcengine/doubao-seed-code",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Doubao-Seed-Code",
+    "family": null,
+    "releaseDate": "2025-11-11",
+    "lastUpdated": "2025-11-11",
+    "knowledgeCutoff": "2025-01-01",
+    "contextWindow": 256000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.17,
+      "output": 1.12,
+      "cacheRead": 0.03,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "volcengine/doubao-seed-1.8",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Doubao-Seed-1.8",
+    "family": "seed",
+    "releaseDate": "2025-12-28",
+    "lastUpdated": "2025-12-28",
+    "knowledgeCutoff": "2025-01-01",
+    "contextWindow": 256000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.11,
+      "output": 0.28,
+      "cacheRead": 0.02,
+      "cacheWrite": 0.0024,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "volcengine/doubao-seed-2.0-pro",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Doubao-Seed-2.0-pro",
+    "family": "seed-pro",
+    "releaseDate": "2026-02-14",
+    "lastUpdated": "2026-02-14",
+    "knowledgeCutoff": "2026-02-14",
+    "contextWindow": 256000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.45,
+      "output": 2.24,
+      "cacheRead": 0.09,
+      "cacheWrite": 0.0024,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "volcengine/doubao-seed-2.0-lite",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Doubao-Seed-2.0-lite",
+    "family": "seed-lite",
+    "releaseDate": "2026-02-14",
+    "lastUpdated": "2026-02-14",
+    "knowledgeCutoff": "2026-02-14",
+    "contextWindow": 256000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.09,
+      "output": 0.51,
+      "cacheRead": 0.02,
+      "cacheWrite": 0.0024,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "volcengine/doubao-seed-2.0-code",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Doubao Seed 2.0 Code",
+    "family": "seed-code",
+    "releaseDate": "2026-02-14",
+    "lastUpdated": "2026-02-14",
+    "knowledgeCutoff": "2025-01-01",
+    "contextWindow": 256000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.9,
+      "output": 4.48,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "volcengine/doubao-seed-2.0-mini",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Doubao-Seed-2.0-mini",
+    "family": "seed-mini",
+    "releaseDate": "2026-02-14",
+    "lastUpdated": "2026-02-14",
+    "knowledgeCutoff": "2026-02-14",
+    "contextWindow": 256000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.03,
+      "output": 0.28,
+      "cacheRead": 0.01,
+      "cacheWrite": 0.0024,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "anthropic/claude-sonnet-4.6",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Claude Sonnet 4.6",
+    "family": "claude-sonnet",
+    "releaseDate": "2026-02-17",
+    "lastUpdated": "2026-03-13",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 15,
+      "cacheRead": 0.3,
+      "cacheWrite": 3.75,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "anthropic/claude-opus-4.7",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Claude Opus 4.7",
+    "family": "claude-opus",
+    "releaseDate": "2026-04-16",
+    "lastUpdated": "2026-04-16",
+    "knowledgeCutoff": "2026-01-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 25,
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "anthropic/claude-sonnet-4.5",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Claude Sonnet 4.5",
+    "family": "claude-sonnet",
+    "releaseDate": "2025-09-29",
+    "lastUpdated": "2025-09-29",
+    "knowledgeCutoff": "2025-07-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 15,
+      "cacheRead": 0.3,
+      "cacheWrite": 3.75,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 6,
+          "output": 22.5,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 6,
+        "output": 22.5,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "anthropic/claude-opus-4.6",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Claude Opus 4.6",
+    "family": "claude-opus",
+    "releaseDate": "2026-02-05",
+    "lastUpdated": "2026-03-13",
+    "knowledgeCutoff": "2025-05-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 25,
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "anthropic/claude-opus-4.5",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Claude Opus 4.5",
+    "family": "claude-opus",
+    "releaseDate": "2025-11-24",
+    "lastUpdated": "2025-11-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 200000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 25,
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "anthropic/claude-sonnet-5",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Claude Sonnet 5",
+    "family": "claude-sonnet",
+    "releaseDate": "2026-06-30",
+    "lastUpdated": "2026-06-30",
+    "knowledgeCutoff": "2026-01-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 10,
       "cacheRead": 0.2,
+      "cacheWrite": 2.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "anthropic/claude-fable-5",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Claude Fable 5",
+    "family": "claude-fable",
+    "releaseDate": "2026-06-09",
+    "lastUpdated": "2026-06-09",
+    "knowledgeCutoff": "2026-01-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 10,
+      "output": 50,
+      "cacheRead": 1,
+      "cacheWrite": 12.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "anthropic/claude-fable-5.1",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Claude Fable 5.1",
+    "family": "claude-fable",
+    "releaseDate": "2026-09-01",
+    "lastUpdated": "2026-09-01",
+    "knowledgeCutoff": "2026-06",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 10,
+      "output": 50,
+      "cacheRead": 0.25,
+      "cacheWrite": 12.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "anthropic/claude-opus-4.1",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Claude Opus 4.1",
+    "family": "claude-opus",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": "2025-03-31",
+    "contextWindow": 200000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 15,
+      "output": 75,
+      "cacheRead": 1.5,
+      "cacheWrite": 18.75,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "anthropic/claude-opus-4.8",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Claude Opus 4.8",
+    "family": "claude-opus",
+    "releaseDate": "2026-05-28",
+    "lastUpdated": "2026-05-28",
+    "knowledgeCutoff": "2026-01",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 25,
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "anthropic/claude-opus-5.5",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Claude Opus 5.5",
+    "family": "claude-opus",
+    "releaseDate": "2026-09-22",
+    "lastUpdated": "2026-09-22",
+    "knowledgeCutoff": "2026-06",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 4,
+      "output": 20,
+      "cacheRead": 0.2,
+      "cacheWrite": 5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "anthropic/claude-haiku-4.5",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Claude Haiku 4.5",
+    "family": "claude-haiku",
+    "releaseDate": "2025-10-15",
+    "lastUpdated": "2025-10-15",
+    "knowledgeCutoff": "2025-02-28",
+    "contextWindow": 200000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1,
+      "output": 5,
+      "cacheRead": 0.1,
+      "cacheWrite": 1.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.5-plus",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Qwen3.5 Plus",
+    "family": "qwen-plus",
+    "releaseDate": "2026-02-16",
+    "lastUpdated": "2026-02-16",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.4,
+      "output": 2.4,
+      "cacheRead": 0.08,
+      "cacheWrite": 0.5,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.5,
+          "output": 3,
+          "contextThreshold": 256000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 0.5,
+        "output": 3,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.5-flash",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Qwen3.5 Flash",
+    "family": "qwen-flash",
+    "releaseDate": "2026-02-23",
+    "lastUpdated": "2026-02-23",
+    "knowledgeCutoff": "2025-01-01",
+    "contextWindow": 1020000,
+    "maxOutputTokens": 1020000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.4,
+      "cacheRead": 0.02,
+      "cacheWrite": 0.125,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3-coder-plus",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Qwen3-Coder-Plus",
+    "family": "qwen-coder-plus",
+    "releaseDate": "2025-07-23",
+    "lastUpdated": "2025-07-23",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1,
+      "output": 5,
+      "cacheRead": 0.1,
+      "cacheWrite": 1.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3-max",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Qwen3-Max-Thinking",
+    "family": "qwen-max",
+    "releaseDate": "2025-09-23",
+    "lastUpdated": "2025-09-23",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 256000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.2,
+      "output": 6,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.7-max",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Qwen3.7 Max",
+    "family": "qwen-max",
+    "releaseDate": "2026-05-21",
+    "lastUpdated": "2026-05-21",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 3.75,
+      "cacheRead": 0.25,
+      "cacheWrite": 1.5625,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.7-plus",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Qwen3.7 Plus",
+    "family": "qwen-plus",
+    "releaseDate": "2026-06-02",
+    "lastUpdated": "2026-06-02",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.4,
+      "output": 1.6,
+      "cacheRead": 0.08,
+      "cacheWrite": 0.5,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 1.2,
+          "output": 4.8,
+          "contextThreshold": 256000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 1.2,
+        "output": 4.8,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.6-plus",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Qwen3.6-Plus",
+    "family": "qwen-plus",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.5,
+      "output": 3,
+      "cacheRead": 0.1,
+      "cacheWrite": 0.625,
       "currency": "USD",
       "per": 1000000,
       "tiers": [
@@ -4572,7 +4467,7 @@
         "contextThreshold": 200000
       }
     },
-    "status": "deprecated",
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -4582,105 +4477,40 @@
     ]
   },
   {
-    "id": "xiaomi/mimo-v2.5",
+    "id": "deepseek/deepseek-v3.2",
     "provider": "zenmux",
     "providerName": "ZenMux",
-    "displayName": "MiMo-V2.5",
-    "family": "mimo",
-    "releaseDate": "2026-04-22",
-    "lastUpdated": "2026-04-22",
-    "knowledgeCutoff": "2024-12",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
+    "displayName": "DeepSeek V3.2",
+    "family": "deepseek",
+    "releaseDate": "2025-12-01",
+    "lastUpdated": "2025-12-01",
+    "knowledgeCutoff": "2024-07",
+    "contextWindow": 128000,
+    "maxOutputTokens": 8000,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "audio",
-        "video"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.4,
-      "output": 2,
-      "cacheRead": 0.08,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.8,
-          "output": 4,
-          "contextThreshold": 256000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 0.8,
-        "output": 4,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "xiaomi/mimo-v2.6-pro",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "MiMo-V2.6-Pro",
-    "family": "mimo",
-    "releaseDate": "2026-09-22",
-    "lastUpdated": "2026-09-22",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.435,
-      "output": 0.87,
-      "cacheRead": 0.0036,
+      "input": 0.293,
+      "output": 0.4395,
+      "cacheRead": 0.0293,
       "currency": "USD",
       "per": 1000000
     },
@@ -4694,57 +4524,16 @@
     ]
   },
   {
-    "id": "x-ai/grok-voice-tts-1.0",
+    "id": "deepseek/deepseek-v4.1-flash",
     "provider": "zenmux",
     "providerName": "ZenMux",
-    "displayName": "Grok Voice TTS 1.0",
-    "family": null,
-    "releaseDate": "2026-03-16",
-    "lastUpdated": "2026-03-16",
-    "knowledgeCutoff": null,
-    "contextWindow": 15000,
-    "maxOutputTokens": 15000,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "audio"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "x-ai/grok-4.6",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Grok 4.6",
-    "family": "grok",
-    "releaseDate": "2026-08-12",
-    "lastUpdated": "2026-08-12",
-    "knowledgeCutoff": "2026-02-01",
-    "contextWindow": 500000,
-    "maxOutputTokens": 500000,
+    "displayName": "DeepSeek V4.1 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -4755,7 +4544,7 @@
       "temperature": true,
       "attachment": true,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -4767,23 +4556,11 @@
       ]
     },
     "pricing": {
-      "input": 2,
-      "output": 6,
-      "cacheRead": 0.5,
+      "input": 0.075,
+      "output": 0.3,
+      "cacheRead": 0.0015,
       "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 4,
-          "output": 12,
-          "contextThreshold": 200000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 4,
-        "output": 12,
-        "contextThreshold": 200000
-      }
+      "per": 1000000
     },
     "status": "active",
     "deprecationDate": null,
@@ -4795,94 +4572,90 @@
     ]
   },
   {
-    "id": "x-ai/grok-imagine-image-2.0",
+    "id": "deepseek/deepseek-v4-flash",
     "provider": "zenmux",
     "providerName": "ZenMux",
-    "displayName": "Grok Imagine Image 2.0",
-    "family": "grok",
-    "releaseDate": "2026-08-07",
-    "lastUpdated": "2026-08-07",
-    "knowledgeCutoff": null,
-    "contextWindow": 66000,
-    "maxOutputTokens": 0,
+    "displayName": "DeepSeek V4 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
     "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.22,
+      "output": 0.66,
+      "cacheRead": 0.007,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek/deepseek-v3.2-exp",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "DeepSeek-V3.2-Exp",
+    "family": null,
+    "releaseDate": "2025-09-29",
+    "lastUpdated": "2025-09-29",
+    "knowledgeCutoff": "2025-01-01",
+    "contextWindow": 163000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
+      "temperature": true,
+      "attachment": false,
       "structured_output": false,
       "open_weights": false
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "image"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "x-ai/grok-4.2-fast",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Grok 4.2 Fast",
-    "family": "grok",
-    "releaseDate": "2026-03-09",
-    "lastUpdated": "2026-03-09",
-    "knowledgeCutoff": null,
-    "contextWindow": 2000000,
-    "maxOutputTokens": 30000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 2,
-      "output": 6,
-      "cacheRead": 0.2,
+      "input": 0.22,
+      "output": 0.33,
       "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 4,
-          "output": 12,
-          "contextThreshold": 128000
-        }
-      ]
+      "per": 1000000
     },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -4892,41 +4665,40 @@
     ]
   },
   {
-    "id": "x-ai/grok-build-0.1",
+    "id": "deepseek/deepseek-v4-pro",
     "provider": "zenmux",
     "providerName": "ZenMux",
-    "displayName": "Grok Build 0.1",
-    "family": "grok-build",
-    "releaseDate": "2026-04-16",
-    "lastUpdated": "2026-04-16",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 256000,
+    "displayName": "DeepSeek V4 Pro",
+    "family": "deepseek-pro",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
     "capabilities": {
       "tools": true,
-      "vision": true,
-      "reasoning": false,
+      "vision": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": true,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 1,
-      "output": 2,
-      "cacheRead": 0.2,
+      "input": 0.66,
+      "output": 1.98,
+      "cacheRead": 0.022,
       "currency": "USD",
       "per": 1000000
     },
@@ -4944,7 +4716,7 @@
     "provider": "zenmux",
     "providerName": "ZenMux",
     "displayName": "Grok Voice STT 1.0",
-    "family": "grok",
+    "family": "grok-transcribe",
     "releaseDate": "2026-09-17",
     "lastUpdated": "2026-09-17",
     "knowledgeCutoff": null,
@@ -4971,67 +4743,6 @@
       ]
     },
     "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "x-ai/grok-4.5",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Grok 4.5",
-    "family": "grok",
-    "releaseDate": "2026-07-08",
-    "lastUpdated": "2026-07-08",
-    "knowledgeCutoff": null,
-    "contextWindow": 500000,
-    "maxOutputTokens": 500000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2,
-      "output": 6,
-      "cacheRead": 0.5,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 4,
-          "output": 12,
-          "contextThreshold": 200000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 4,
-        "output": 12,
-        "contextThreshold": 200000
-      }
-    },
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
@@ -5158,96 +4869,37 @@
     ]
   },
   {
-    "id": "anthropic/claude-opus-4.1",
+    "id": "x-ai/grok-voice-tts-1.0",
     "provider": "zenmux",
     "providerName": "ZenMux",
-    "displayName": "Claude Opus 4.1",
-    "family": "claude-opus",
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": "2025-03-31",
-    "contextWindow": 200000,
-    "maxOutputTokens": 32000,
+    "displayName": "Grok Voice TTS 1.0",
+    "family": "grok-tts",
+    "releaseDate": "2026-03-16",
+    "lastUpdated": "2026-03-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 15000,
+    "maxOutputTokens": 15000,
     "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 15,
-      "output": 75,
-      "cacheRead": 1.5,
-      "cacheWrite": 18.75,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "anthropic/claude-opus-4.8",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Claude Opus 4.8",
-    "family": "claude-opus",
-    "releaseDate": "2026-05-28",
-    "lastUpdated": "2026-05-28",
-    "knowledgeCutoff": "2026-01",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": false,
-      "attachment": true,
+      "attachment": false,
       "structured_output": false,
       "open_weights": false
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "pdf"
+        "text"
       ],
       "output": [
-        "text"
+        "audio"
       ]
     },
-    "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
-      "currency": "USD",
-      "per": 1000000
-    },
+    "pricing": null,
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
@@ -5258,288 +4910,26 @@
     ]
   },
   {
-    "id": "anthropic/claude-haiku-4.5",
+    "id": "x-ai/grok-4.5",
     "provider": "zenmux",
     "providerName": "ZenMux",
-    "displayName": "Claude Haiku 4.5",
-    "family": "claude-haiku",
-    "releaseDate": "2025-10-15",
-    "lastUpdated": "2025-10-15",
-    "knowledgeCutoff": "2025-02-28",
-    "contextWindow": 200000,
-    "maxOutputTokens": 64000,
+    "displayName": "Grok 4.5",
+    "family": "grok",
+    "releaseDate": "2026-07-08",
+    "lastUpdated": "2026-07-08",
+    "knowledgeCutoff": null,
+    "contextWindow": 500000,
+    "maxOutputTokens": 500000,
     "capabilities": {
       "tools": true,
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1,
-      "output": 5,
-      "cacheRead": 0.1,
-      "cacheWrite": 1.25,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "anthropic/claude-opus-4.6",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Claude Opus 4.6",
-    "family": "claude-opus",
-    "releaseDate": "2026-02-05",
-    "lastUpdated": "2026-03-13",
-    "knowledgeCutoff": "2025-05-31",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "anthropic/claude-opus-5.5",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Claude Opus 5.5",
-    "family": "claude-opus",
-    "releaseDate": "2026-09-22",
-    "lastUpdated": "2026-09-22",
-    "knowledgeCutoff": "2026-06",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 4,
-      "output": 20,
-      "cacheRead": 0.2,
-      "cacheWrite": 5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "anthropic/claude-sonnet-4.5",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Claude Sonnet 4.5",
-    "family": "claude-sonnet",
-    "releaseDate": "2025-09-29",
-    "lastUpdated": "2025-09-29",
-    "knowledgeCutoff": "2025-07-31",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 3,
-      "output": 15,
-      "cacheRead": 0.3,
-      "cacheWrite": 3.75,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 6,
-          "output": 22.5,
-          "contextThreshold": 200000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 6,
-        "output": 22.5,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "anthropic/claude-fable-5",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Claude Fable 5",
-    "family": "claude-fable",
-    "releaseDate": "2026-06-09",
-    "lastUpdated": "2026-06-09",
-    "knowledgeCutoff": "2026-01-31",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 10,
-      "output": 50,
-      "cacheRead": 1,
-      "cacheWrite": 12.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "anthropic/claude-sonnet-5",
-    "provider": "zenmux",
-    "providerName": "ZenMux",
-    "displayName": "Claude Sonnet 5",
-    "family": "claude-sonnet",
-    "releaseDate": "2026-06-30",
-    "lastUpdated": "2026-06-30",
-    "knowledgeCutoff": "2026-01-31",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -5554,11 +4944,22 @@
     },
     "pricing": {
       "input": 2,
-      "output": 10,
-      "cacheRead": 0.2,
-      "cacheWrite": 2.5,
+      "output": 6,
+      "cacheRead": 0.5,
       "currency": "USD",
-      "per": 1000000
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 4,
+          "output": 12,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 4,
+        "output": 12,
+        "contextThreshold": 200000
+      }
     },
     "status": "active",
     "deprecationDate": null,
@@ -5570,20 +4971,20 @@
     ]
   },
   {
-    "id": "anthropic/claude-fable-5.1",
+    "id": "x-ai/grok-imagine-image-2.0",
     "provider": "zenmux",
     "providerName": "ZenMux",
-    "displayName": "Claude Fable 5.1",
-    "family": "claude-fable",
-    "releaseDate": "2026-09-01",
-    "lastUpdated": "2026-09-01",
-    "knowledgeCutoff": "2026-06",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
+    "displayName": "Grok Imagine Image 2.0",
+    "family": "grok-imagine-image",
+    "releaseDate": "2026-08-07",
+    "lastUpdated": "2026-08-07",
+    "knowledgeCutoff": null,
+    "contextWindow": 66000,
+    "maxOutputTokens": 0,
     "capabilities": {
-      "tools": true,
+      "tools": false,
       "vision": true,
-      "reasoning": true,
+      "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
@@ -5595,20 +4996,67 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
+      ],
+      "output": [
+        "image"
+      ]
+    },
+    "pricing": null,
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "x-ai/grok-4.2-fast",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Grok 4.2 Fast",
+    "family": "grok",
+    "releaseDate": "2026-03-09",
+    "lastUpdated": "2026-03-09",
+    "knowledgeCutoff": null,
+    "contextWindow": 2000000,
+    "maxOutputTokens": 30000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 10,
-      "output": 50,
-      "cacheRead": 0.25,
-      "cacheWrite": 12.5,
+      "input": 2,
+      "output": 6,
+      "cacheRead": 0.2,
       "currency": "USD",
-      "per": 1000000
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 4,
+          "output": 12,
+          "contextThreshold": 128000
+        }
+      ]
     },
     "status": "active",
     "deprecationDate": null,
@@ -5620,43 +5068,101 @@
     ]
   },
   {
-    "id": "anthropic/claude-opus-4.5",
+    "id": "x-ai/grok-4.6",
     "provider": "zenmux",
     "providerName": "ZenMux",
-    "displayName": "Claude Opus 4.5",
-    "family": "claude-opus",
-    "releaseDate": "2025-11-24",
-    "lastUpdated": "2025-11-24",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 200000,
-    "maxOutputTokens": 32000,
+    "displayName": "Grok 4.6",
+    "family": "grok",
+    "releaseDate": "2026-08-12",
+    "lastUpdated": "2026-08-12",
+    "knowledgeCutoff": "2026-02-01",
+    "contextWindow": 500000,
+    "maxOutputTokens": 500000,
     "capabilities": {
       "tools": true,
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 5,
-      "output": 25,
+      "input": 2,
+      "output": 6,
       "cacheRead": 0.5,
-      "cacheWrite": 6.25,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 4,
+          "output": 12,
+          "contextThreshold": 200000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 4,
+        "output": 12,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "x-ai/grok-build-0.1",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Grok Build 0.1",
+    "family": "grok-build",
+    "releaseDate": "2026-04-16",
+    "lastUpdated": "2026-04-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1,
+      "output": 2,
+      "cacheRead": 0.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -5670,33 +5176,33 @@
     ]
   },
   {
-    "id": "anthropic/claude-sonnet-4.6",
+    "id": "moonshotai/kimi-k3",
     "provider": "zenmux",
     "providerName": "ZenMux",
-    "displayName": "Claude Sonnet 4.6",
-    "family": "claude-sonnet",
-    "releaseDate": "2026-02-17",
-    "lastUpdated": "2026-03-13",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 64000,
+    "displayName": "Kimi K3",
+    "family": "kimi",
+    "releaseDate": "2026-07-16",
+    "lastUpdated": "2026-07-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
     "capabilities": {
       "tools": true,
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
-      "temperature": true,
+      "temperature": false,
       "attachment": true,
-      "structured_output": false,
-      "open_weights": false
+      "structured_output": true,
+      "open_weights": true
     },
     "modalities": {
       "input": [
         "text",
         "image",
-        "pdf"
+        "video"
       ],
       "output": [
         "text"
@@ -5706,7 +5212,6 @@
       "input": 3,
       "output": 15,
       "cacheRead": 0.3,
-      "cacheWrite": 3.75,
       "currency": "USD",
       "per": 1000000
     },
@@ -5720,16 +5225,114 @@
     ]
   },
   {
-    "id": "anthropic/claude-opus-4.7",
+    "id": "moonshotai/kimi-k2.7-code-highspeed",
     "provider": "zenmux",
     "providerName": "ZenMux",
-    "displayName": "Claude Opus 4.7",
-    "family": "claude-opus",
-    "releaseDate": "2026-04-16",
-    "lastUpdated": "2026-04-16",
-    "knowledgeCutoff": "2026-01-31",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
+    "displayName": "Kimi K2.7 Code HighSpeed",
+    "family": "kimi-code",
+    "releaseDate": "2026-06-12",
+    "lastUpdated": "2026-06-12",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.9,
+      "output": 8,
+      "cacheRead": 0.38,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "moonshotai/kimi-k2.7-code",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Kimi K2.7 Code",
+    "family": "kimi-code",
+    "releaseDate": "2026-06-12",
+    "lastUpdated": "2026-06-12",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.95,
+      "output": 4,
+      "cacheRead": 0.19,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "moonshotai/kimi-k2.6",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "Kimi K2.6",
+    "family": "kimi",
+    "releaseDate": "2026-04-20",
+    "lastUpdated": "2026-04-20",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262140,
+    "maxOutputTokens": 262140,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -5740,23 +5343,420 @@
       "temperature": false,
       "attachment": true,
       "structured_output": false,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
         "text",
         "image",
-        "pdf"
+        "video"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 5,
-      "output": 25,
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
+      "input": 0.95,
+      "output": 4,
+      "cacheRead": 0.16,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimax/minimax-m2.5-lightning",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "MiniMax M2.5 highspeed",
+    "family": "minimax-m",
+    "releaseDate": "2026-02-13",
+    "lastUpdated": "2026-02-13",
+    "knowledgeCutoff": "2025-01-01",
+    "contextWindow": 204800,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.6,
+      "output": 2.4,
+      "cacheRead": 0.03,
+      "cacheWrite": 0.375,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimax/minimax-m2.5",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "MiniMax M2.5",
+    "family": "minimax-m",
+    "releaseDate": "2026-02-12",
+    "lastUpdated": "2026-02-12",
+    "knowledgeCutoff": "2025-01-01",
+    "contextWindow": 204800,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 1.2,
+      "cacheRead": 0.03,
+      "cacheWrite": 0.375,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimax/minimax-m2",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "MiniMax M2",
+    "family": "minimax-m",
+    "releaseDate": "2025-10-27",
+    "lastUpdated": "2025-10-27",
+    "knowledgeCutoff": "2025-01-01",
+    "contextWindow": 204000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 1.2,
+      "cacheRead": 0.03,
+      "cacheWrite": 0.375,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimax/minimax-m2.1",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "MiniMax M2.1",
+    "family": "minimax-m",
+    "releaseDate": "2025-12-23",
+    "lastUpdated": "2025-12-23",
+    "knowledgeCutoff": "2025-01-01",
+    "contextWindow": 204000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 1.2,
+      "cacheRead": 0.03,
+      "cacheWrite": 0.375,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimax/minimax-m3.1-flash",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "MiniMax-M3.1-Flash",
+    "family": "minimax-m-flash",
+    "releaseDate": "2026-10-19",
+    "lastUpdated": "2026-10-19",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 512000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.6,
+      "cacheRead": 0.015,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimax/minimax-m2.7-highspeed",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "MiniMax M2.7 highspeed",
+    "family": "minimax-m",
+    "releaseDate": "2026-03-18",
+    "lastUpdated": "2026-03-18",
+    "knowledgeCutoff": "2025-01-01",
+    "contextWindow": 204800,
+    "maxOutputTokens": 131070,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.611,
+      "output": 2.4439,
+      "cacheRead": 0.0611,
+      "cacheWrite": 0.3819,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimax/minimax-m3",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "MiniMax-M3",
+    "family": "minimax-m",
+    "releaseDate": "2026-06-01",
+    "lastUpdated": "2026-06-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 512000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 1.2,
+      "cacheRead": 0.06,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.6,
+          "output": 2.4,
+          "contextThreshold": 512000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 0.6,
+        "output": 2.4,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimax/minimax-m2.7",
+    "provider": "zenmux",
+    "providerName": "ZenMux",
+    "displayName": "MiniMax M2.7",
+    "family": "minimax-m",
+    "releaseDate": "2026-03-18",
+    "lastUpdated": "2026-03-18",
+    "knowledgeCutoff": "2025-01-01",
+    "contextWindow": 204800,
+    "maxOutputTokens": 131070,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 1.2,
+      "cacheRead": 0.06,
+      "cacheWrite": 0.375,
       "currency": "USD",
       "per": 1000000
     },

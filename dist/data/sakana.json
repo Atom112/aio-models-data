@@ -1,15 +1,15 @@
 [
   {
-    "id": "sakana-namazu",
+    "id": "fugu",
     "provider": "sakana",
     "providerName": "Sakana AI",
-    "displayName": "Sakana Namazu",
-    "family": "sakana-namazu",
-    "releaseDate": "2026-08-03",
-    "lastUpdated": "2026-08-03",
+    "displayName": "Fugu",
+    "family": "fugu",
+    "releaseDate": "2026-06-15",
+    "lastUpdated": "2026-06-15",
     "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 1000000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -17,7 +17,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": true,
+      "temperature": false,
       "attachment": true,
       "structured_output": true,
       "open_weights": false
@@ -25,20 +25,13 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
       ],
       "output": [
         "text"
       ]
     },
-    "pricing": {
-      "input": 0.95,
-      "output": 4,
-      "cacheRead": 0.15,
-      "currency": "USD",
-      "per": 1000000
-    },
+    "pricing": null,
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
@@ -53,7 +46,7 @@
     "provider": "sakana",
     "providerName": "Sakana AI",
     "displayName": "Fugu Ultra",
-    "family": "fugu",
+    "family": "fugu-ultra",
     "releaseDate": "2026-06-15",
     "lastUpdated": "2026-06-15",
     "knowledgeCutoff": null,
@@ -113,7 +106,7 @@
     "provider": "sakana",
     "providerName": "Sakana AI",
     "displayName": "Fugu Ultra",
-    "family": "fugu",
+    "family": "fugu-ultra",
     "releaseDate": "2026-06-15",
     "lastUpdated": "2026-06-15",
     "knowledgeCutoff": null,
@@ -169,16 +162,16 @@
     ]
   },
   {
-    "id": "fugu",
+    "id": "sakana-namazu",
     "provider": "sakana",
     "providerName": "Sakana AI",
-    "displayName": "Fugu",
-    "family": "fugu",
-    "releaseDate": "2026-06-15",
-    "lastUpdated": "2026-06-15",
+    "displayName": "Sakana Namazu",
+    "family": "sakana-namazu",
+    "releaseDate": "2026-08-03",
+    "lastUpdated": "2026-08-03",
     "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 1000000,
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -186,7 +179,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
       "open_weights": false
@@ -194,13 +187,20 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
       ]
     },
-    "pricing": null,
+    "pricing": {
+      "input": 0.95,
+      "output": 4,
+      "cacheRead": 0.15,
+      "currency": "USD",
+      "per": 1000000
+    },
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,

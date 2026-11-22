@@ -1,5 +1,55 @@
 [
   {
+    "id": "kimi-k3",
+    "provider": "cheapaimodel",
+    "providerName": "cheapaimodel",
+    "displayName": "Kimi K3",
+    "family": "kimi",
+    "releaseDate": "2026-07-16",
+    "lastUpdated": "2026-07-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.100153,
+      "output": 10.500765,
+      "cacheRead": 0.2100153,
+      "cacheWrite": 2.100153,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "glm-5.3",
     "provider": "cheapaimodel",
     "providerName": "cheapaimodel",
@@ -47,16 +97,16 @@
     ]
   },
   {
-    "id": "kimi-k3",
+    "id": "glm-5.3-flash",
     "provider": "cheapaimodel",
     "providerName": "cheapaimodel",
-    "displayName": "Kimi K3",
-    "family": "kimi-k3",
-    "releaseDate": "2026-07-16",
-    "lastUpdated": "2026-07-16",
+    "displayName": "GLM-5.3-Flash",
+    "family": "glm-flash",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
     "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -64,7 +114,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
       "open_weights": true
@@ -73,17 +123,17 @@
       "input": [
         "text",
         "image",
-        "video"
+        "video",
+        "pdf"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 2.100153,
-      "output": 10.500765,
-      "cacheRead": 0.2100153,
-      "cacheWrite": 2.100153,
+      "input": 0.10500765,
+      "output": 0.3500255,
+      "cacheRead": 0.02100153,
       "currency": "USD",
       "per": 1000000
     },
@@ -181,56 +231,6 @@
       "input": 0.10500765,
       "output": 0.4200306,
       "cacheRead": 0.002100153,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm-5.3-flash",
-    "provider": "cheapaimodel",
-    "providerName": "cheapaimodel",
-    "displayName": "GLM-5.3-Flash",
-    "family": "glm-flash",
-    "releaseDate": "2026-08-26",
-    "lastUpdated": "2026-08-26",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.10500765,
-      "output": 0.3500255,
-      "cacheRead": 0.02100153,
       "currency": "USD",
       "per": 1000000
     },

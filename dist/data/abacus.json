@@ -1,60 +1,12 @@
 [
   {
-    "id": "claude-opus-4-1-20250805",
+    "id": "gemini-3-flash-preview",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "Claude Opus 4.1",
-    "family": "claude-opus",
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": "2025-03-31",
-    "contextWindow": 200000,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 15,
-      "output": 75,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-3.5-flash",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Gemini 3.5 Flash",
+    "displayName": "Gemini 3 Flash Preview",
     "family": "gemini-flash",
-    "releaseDate": "2026-05-19",
-    "lastUpdated": "2026-05-19",
+    "releaseDate": "2025-12-17",
+    "lastUpdated": "2025-12-17",
     "knowledgeCutoff": "2025-01",
     "contextWindow": 1048576,
     "maxOutputTokens": 65536,
@@ -81,339 +33,9 @@
       ]
     },
     "pricing": {
-      "input": 1.5,
-      "output": 9,
-      "cacheRead": 0.15,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-2.5-flash-image",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Nano Banana",
-    "family": "gemini-flash",
-    "releaseDate": "2025-08-26",
-    "lastUpdated": "2025-08-26",
-    "knowledgeCutoff": "2024-06",
-    "contextWindow": 32768,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text",
-        "image"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 30,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "o3-mini",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "o3-mini",
-    "family": "o-mini",
-    "releaseDate": "2024-12-20",
-    "lastUpdated": "2025-01-29",
-    "knowledgeCutoff": "2024-05",
-    "contextWindow": 200000,
-    "maxOutputTokens": 100000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.1,
-      "output": 4.4,
-      "cacheRead": 0.55,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "grok-code-fast-1",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Grok Code Fast 1",
-    "family": "grok",
-    "releaseDate": "2025-09-02",
-    "lastUpdated": "2025-09-02",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2,
-      "output": 1.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5.1-chat-latest",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "GPT-5.1 Chat Latest",
-    "family": "gpt",
-    "releaseDate": "2025-11-13",
-    "lastUpdated": "2025-11-13",
-    "knowledgeCutoff": "2024-09-30",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "kimi-k2-turbo-preview",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Kimi K2 Turbo Preview",
-    "family": "kimi-k2",
-    "releaseDate": "2025-07-08",
-    "lastUpdated": "2025-07-08",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.15,
-      "output": 8,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-3.1-flash-image-preview",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Nano Banana 2 Preview",
-    "family": "gemini-flash",
-    "releaseDate": "2026-02-26",
-    "lastUpdated": "2026-02-26",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text",
-        "image"
-      ]
-    },
-    "pricing": {
       "input": 0.5,
       "output": 3,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "grok-4.6",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Grok 4.6",
-    "family": "grok",
-    "releaseDate": "2026-08-12",
-    "lastUpdated": "2026-08-12",
-    "knowledgeCutoff": "2026-02-01",
-    "contextWindow": 500000,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2,
-      "output": 6,
-      "cacheRead": 0.5,
+      "cacheRead": 0.05,
       "currency": "USD",
       "per": 1000000
     },
@@ -427,26 +49,26 @@
     ]
   },
   {
-    "id": "gpt-5.3-codex",
+    "id": "claude-opus-4-5-20251101",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "GPT-5.3 Codex",
-    "family": "gpt-codex",
-    "releaseDate": "2026-02-05",
-    "lastUpdated": "2026-02-05",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
+    "displayName": "Claude Opus 4.5",
+    "family": "claude-opus",
+    "releaseDate": "2025-11-24",
+    "lastUpdated": "2025-11-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 200000,
+    "maxOutputTokens": 64000,
     "capabilities": {
       "tools": true,
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": true,
+      "structured_output": false,
       "open_weights": false
     },
     "modalities": {
@@ -459,9 +81,8 @@
       ]
     },
     "pricing": {
-      "input": 1.75,
-      "output": 14,
-      "cacheRead": 0.175,
+      "input": 5,
+      "output": 25,
       "currency": "USD",
       "per": 1000000
     },
@@ -475,11 +96,11 @@
     ]
   },
   {
-    "id": "o4-mini",
+    "id": "o3",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "o4-mini",
-    "family": "o-mini",
+    "displayName": "o3",
+    "family": "o",
     "releaseDate": "2025-04-16",
     "lastUpdated": "2025-04-16",
     "knowledgeCutoff": "2024-05",
@@ -507,578 +128,9 @@
       ]
     },
     "pricing": {
-      "input": 1.1,
-      "output": 4.4,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-3-7-sonnet-20250219",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Claude Sonnet 3.7",
-    "family": "claude-sonnet",
-    "releaseDate": "2025-02-19",
-    "lastUpdated": "2025-02-19",
-    "knowledgeCutoff": "2024-10-31",
-    "contextWindow": 200000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 3,
-      "output": 15,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-haiku-4-5-20251001",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Claude Haiku 4.5",
-    "family": "claude-haiku",
-    "releaseDate": "2025-10-15",
-    "lastUpdated": "2025-10-15",
-    "knowledgeCutoff": "2025-02-28",
-    "contextWindow": 200000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1,
-      "output": 5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-opus-5",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Claude Opus 5",
-    "family": "claude-opus",
-    "releaseDate": "2026-07-24",
-    "lastUpdated": "2026-07-24",
-    "knowledgeCutoff": "2026-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 5,
-      "output": 25,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-max",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Qwen3 Max",
-    "family": "qwen",
-    "releaseDate": "2025-09-23",
-    "lastUpdated": "2025-09-23",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 131072,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.2,
-      "output": 6,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-3.5-flash-lite",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Gemini 3.5 Flash Lite",
-    "family": "gemini-flash-lite",
-    "releaseDate": "2026-07-21",
-    "lastUpdated": "2026-07-21",
-    "knowledgeCutoff": "2026-03",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 2.5,
-      "cacheRead": 0.03,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-4o-mini",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "GPT-4o mini",
-    "family": "gpt-mini",
-    "releaseDate": "2024-07-18",
-    "lastUpdated": "2024-07-18",
-    "knowledgeCutoff": "2023-09",
-    "contextWindow": 128000,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.15,
-      "output": 0.6,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5.4-mini",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "GPT-5.4 mini",
-    "family": "gpt-mini",
-    "releaseDate": "2026-03-17",
-    "lastUpdated": "2026-03-17",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.75,
-      "output": 4.5,
-      "cacheRead": 0.075,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5-nano",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "GPT-5 Nano",
-    "family": "gpt-nano",
-    "releaseDate": "2025-08-07",
-    "lastUpdated": "2025-08-07",
-    "knowledgeCutoff": "2024-05-30",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.05,
-      "output": 0.4,
-      "cacheRead": 0.005,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "llama-3.3-70b-versatile",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Llama 3.3 70B Versatile",
-    "family": "llama",
-    "releaseDate": "2024-12-06",
-    "lastUpdated": "2024-12-06",
-    "knowledgeCutoff": "2023-12",
-    "contextWindow": 128000,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.59,
-      "output": 0.79,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-opus-4-8",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Claude Opus 4.8",
-    "family": "claude-opus",
-    "releaseDate": "2026-05-28",
-    "lastUpdated": "2026-05-28",
-    "knowledgeCutoff": "2026-01",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 5,
-      "output": 25,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-4.1-nano",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "GPT-4.1 nano",
-    "family": "gpt-nano",
-    "releaseDate": "2025-04-14",
-    "lastUpdated": "2025-04-14",
-    "knowledgeCutoff": "2024-04",
-    "contextWindow": 1047576,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1,
-      "output": 0.4,
-      "cacheRead": 0.025,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-2.5-pro",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Gemini 2.5 Pro",
-    "family": "gemini-pro",
-    "releaseDate": "2025-06-17",
-    "lastUpdated": "2025-06-17",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cacheRead": 0.125,
+      "input": 2,
+      "output": 8,
+      "cacheRead": 0.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -1141,16 +193,112 @@
     ]
   },
   {
-    "id": "muse-spark-1.2",
+    "id": "gpt-4.1-mini",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "Muse Spark 1.2",
-    "family": "muse",
-    "releaseDate": "2026-08-05",
-    "lastUpdated": "2026-08-05",
+    "displayName": "GPT-4.1 mini",
+    "family": "gpt-mini",
+    "releaseDate": "2025-04-14",
+    "lastUpdated": "2025-04-14",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 1047576,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.4,
+      "output": 1.6,
+      "cacheRead": 0.1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5-nano",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "GPT-5 Nano",
+    "family": "gpt-nano",
+    "releaseDate": "2025-08-07",
+    "lastUpdated": "2025-08-07",
+    "knowledgeCutoff": "2024-05-30",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.05,
+      "output": 0.4,
+      "cacheRead": 0.005,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "grok-4.3",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "Grok 4.3",
+    "family": "grok",
+    "releaseDate": "2026-04-17",
+    "lastUpdated": "2026-04-17",
     "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -1166,9 +314,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "audio",
-        "video"
+        "image"
       ],
       "output": [
         "text"
@@ -1176,12 +322,106 @@
     },
     "pricing": {
       "input": 1.25,
-      "output": 4.25,
-      "cacheRead": 0.15,
+      "output": 2.5,
+      "cacheRead": 0.2,
       "currency": "USD",
       "per": 1000000
     },
     "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-opus-4-1-20250805",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "Claude Opus 4.1",
+    "family": "claude-opus",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": "2025-03-31",
+    "contextWindow": 200000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 15,
+      "output": 75,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen-2.5-coder-32b",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "Qwen 2.5 Coder 32B",
+    "family": "qwen-coder",
+    "releaseDate": "2024-11-12",
+    "lastUpdated": "2024-11-12",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.79,
+      "output": 0.79,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1240,15 +480,15 @@
     ]
   },
   {
-    "id": "gpt-5.1-codex-max",
+    "id": "gpt-5.6-terra",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "GPT-5.1 Codex Max",
-    "family": "gpt-codex",
-    "releaseDate": "2025-11-13",
-    "lastUpdated": "2025-11-13",
-    "knowledgeCutoff": "2024-09-30",
-    "contextWindow": 400000,
+    "displayName": "GPT-5.6 Terra",
+    "family": "gpt-terra",
+    "releaseDate": "2026-07-09",
+    "lastUpdated": "2026-07-09",
+    "knowledgeCutoff": "2026-02-16",
+    "contextWindow": 1000000,
     "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
@@ -1257,7 +497,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
       "open_weights": false
@@ -1272,102 +512,9 @@
       ]
     },
     "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5.3-chat-latest",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "GPT-5.3 Chat Latest",
-    "family": "gpt",
-    "releaseDate": "2026-03-03",
-    "lastUpdated": "2026-03-03",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.75,
-      "output": 14,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-opus-4-7",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Claude Opus 4.7",
-    "family": "claude-opus",
-    "releaseDate": "2026-04-16",
-    "lastUpdated": "2026-04-16",
-    "knowledgeCutoff": "2026-01-31",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 5,
-      "output": 25,
+      "input": 2,
+      "output": 12,
+      "cacheRead": 0.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -1381,16 +528,16 @@
     ]
   },
   {
-    "id": "gpt-5-codex",
+    "id": "gemini-3.6-flash",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "GPT-5-Codex",
-    "family": "gpt-codex",
-    "releaseDate": "2025-09-15",
-    "lastUpdated": "2025-09-15",
-    "knowledgeCutoff": "2024-09-30",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
+    "displayName": "Gemini 3.6 Flash",
+    "family": "gemini-flash",
+    "releaseDate": "2026-07-21",
+    "lastUpdated": "2026-07-21",
+    "knowledgeCutoff": "2026-03",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -1398,7 +545,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
       "open_weights": false
@@ -1406,111 +553,17 @@
     "modalities": {
       "input": [
         "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cacheRead": 0.125,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-opus-4-20250514",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Claude Opus 4",
-    "family": "claude-opus",
-    "releaseDate": "2025-05-22",
-    "lastUpdated": "2025-05-22",
-    "knowledgeCutoff": "2025-03-31",
-    "contextWindow": 200000,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
         "image",
-        "pdf"
+        "audio"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 15,
-      "output": 75,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-opus-4-6",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Claude Opus 4.6",
-    "family": "claude-opus",
-    "releaseDate": "2026-02-05",
-    "lastUpdated": "2026-03-13",
-    "knowledgeCutoff": "2025-05-31",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 5,
-      "output": 25,
+      "input": 0.75,
+      "output": 3.75,
+      "cacheRead": 0.075,
       "currency": "USD",
       "per": 1000000
     },
@@ -1574,20 +627,114 @@
     ]
   },
   {
-    "id": "gpt-4.1",
+    "id": "claude-opus-5",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "GPT-4.1",
-    "family": "gpt",
-    "releaseDate": "2025-04-14",
-    "lastUpdated": "2025-04-14",
-    "knowledgeCutoff": "2024-04",
-    "contextWindow": 1047576,
-    "maxOutputTokens": 32768,
+    "displayName": "Claude Opus 5",
+    "family": "claude-opus",
+    "releaseDate": "2026-07-24",
+    "lastUpdated": "2026-07-24",
+    "knowledgeCutoff": "2026-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
       "vision": true,
-      "reasoning": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.1-chat-latest",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "GPT-5.1 Chat Latest",
+    "family": "gpt",
+    "releaseDate": "2025-11-13",
+    "lastUpdated": "2025-11-13",
+    "knowledgeCutoff": "2024-09-30",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 10,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.6-sol",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "GPT-5.6 Sol",
+    "family": "gpt-sol",
+    "releaseDate": "2026-07-09",
+    "lastUpdated": "2026-07-09",
+    "knowledgeCutoff": "2026-02-16",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
@@ -1606,9 +753,151 @@
       ]
     },
     "pricing": {
-      "input": 2,
-      "output": 8,
-      "cacheRead": 0.5,
+      "input": 4,
+      "output": 20,
+      "cacheRead": 0.4,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.2-chat-latest",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "GPT-5.2 Chat Latest",
+    "family": "gpt",
+    "releaseDate": "2025-12-11",
+    "lastUpdated": "2025-12-11",
+    "knowledgeCutoff": "2024-09-30",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.75,
+      "output": 14,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-sonnet-4-5-20250929",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "Claude Sonnet 4.5",
+    "family": "claude-sonnet",
+    "releaseDate": "2025-09-29",
+    "lastUpdated": "2025-09-29",
+    "knowledgeCutoff": "2025-07-31",
+    "contextWindow": 200000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5-mini",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "GPT-5 Mini",
+    "family": "gpt-mini",
+    "releaseDate": "2025-08-07",
+    "lastUpdated": "2025-08-07",
+    "knowledgeCutoff": "2024-05-30",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.25,
+      "output": 2,
+      "cacheRead": 0.025,
       "currency": "USD",
       "per": 1000000
     },
@@ -1626,7 +915,7 @@
     "provider": "abacus",
     "providerName": "Abacus",
     "displayName": "Nano Banana 2",
-    "family": "gemini-flash",
+    "family": "nano-banana",
     "releaseDate": "2026-05-28",
     "lastUpdated": "2026-05-28",
     "knowledgeCutoff": "2025-01",
@@ -1661,6 +950,151 @@
       "per": 1000000
     },
     "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5-codex",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "GPT-5-Codex",
+    "family": "gpt-codex",
+    "releaseDate": "2025-09-15",
+    "lastUpdated": "2025-09-15",
+    "knowledgeCutoff": "2024-09-30",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 10,
+      "cacheRead": 0.125,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.4",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "GPT-5.4",
+    "family": "gpt",
+    "releaseDate": "2026-03-05",
+    "lastUpdated": "2026-03-05",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.5,
+      "output": 15,
+      "cacheRead": 0.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3.5-flash-lite",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "Gemini 3.5 Flash Lite",
+    "family": "gemini-flash-lite",
+    "releaseDate": "2026-07-21",
+    "lastUpdated": "2026-07-21",
+    "knowledgeCutoff": "2026-03",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 2.5,
+      "cacheRead": 0.03,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1718,13 +1152,730 @@
     ]
   },
   {
-    "id": "claude-fable-5",
+    "id": "gpt-5",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "Claude Fable 5",
-    "family": "claude-fable",
-    "releaseDate": "2026-06-09",
-    "lastUpdated": "2026-06-09",
+    "displayName": "GPT-5",
+    "family": "gpt",
+    "releaseDate": "2025-08-07",
+    "lastUpdated": "2025-08-07",
+    "knowledgeCutoff": "2024-09-30",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 10,
+      "cacheRead": 0.125,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.4-mini",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "GPT-5.4 mini",
+    "family": "gpt-mini",
+    "releaseDate": "2026-03-17",
+    "lastUpdated": "2026-03-17",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.75,
+      "output": 4.5,
+      "cacheRead": 0.075,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.3-codex",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "GPT-5.3 Codex",
+    "family": "gpt-codex",
+    "releaseDate": "2026-02-05",
+    "lastUpdated": "2026-02-05",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.75,
+      "output": 14,
+      "cacheRead": 0.175,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "grok-4-1-fast-non-reasoning",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "Grok 4.1 Fast (Non-Reasoning)",
+    "family": "grok",
+    "releaseDate": "2025-11-17",
+    "lastUpdated": "2025-11-17",
+    "knowledgeCutoff": null,
+    "contextWindow": 2000000,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2,
+      "output": 0.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.5",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "GPT-5.5",
+    "family": "gpt",
+    "releaseDate": "2026-04-23",
+    "lastUpdated": "2026-04-23",
+    "knowledgeCutoff": "2025-12-01",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 30,
+      "cacheRead": 0.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-sonnet-4-20250514",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "Claude Sonnet 4",
+    "family": "claude-sonnet",
+    "releaseDate": "2025-05-22",
+    "lastUpdated": "2025-05-22",
+    "knowledgeCutoff": "2025-03-31",
+    "contextWindow": 200000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-sonnet-4-6",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "Claude Sonnet 4.6",
+    "family": "claude-sonnet",
+    "releaseDate": "2026-02-17",
+    "lastUpdated": "2026-03-13",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-3-7-sonnet-20250219",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "Claude Sonnet 3.7",
+    "family": "claude-sonnet",
+    "releaseDate": "2025-02-19",
+    "lastUpdated": "2025-02-19",
+    "knowledgeCutoff": "2024-10-31",
+    "contextWindow": 200000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash-image",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "Nano Banana",
+    "family": "nano-banana",
+    "releaseDate": "2025-08-26",
+    "lastUpdated": "2025-08-26",
+    "knowledgeCutoff": "2024-06",
+    "contextWindow": 32768,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text",
+        "image"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 2.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-haiku-4-5-20251001",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "Claude Haiku 4.5",
+    "family": "claude-haiku",
+    "releaseDate": "2025-10-15",
+    "lastUpdated": "2025-10-15",
+    "knowledgeCutoff": "2025-02-28",
+    "contextWindow": 200000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1,
+      "output": 5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.8-max",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "Qwen3.8 Max",
+    "family": "qwen-max",
+    "releaseDate": "2026-08-03",
+    "lastUpdated": "2026-08-03",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 6,
+      "cacheRead": 0.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3.5-flash",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "Gemini 3.5 Flash",
+    "family": "gemini-flash",
+    "releaseDate": "2026-05-19",
+    "lastUpdated": "2026-05-19",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.5,
+      "output": 9,
+      "cacheRead": 0.15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-4o",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "GPT-4o",
+    "family": "gpt",
+    "releaseDate": "2024-05-13",
+    "lastUpdated": "2024-08-06",
+    "knowledgeCutoff": "2023-09",
+    "contextWindow": 128000,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.5,
+      "output": 10,
+      "cacheRead": 1.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.3-codex-xhigh",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "GPT-5.3 Codex XHigh",
+    "family": "gpt-codex",
+    "releaseDate": "2026-02-05",
+    "lastUpdated": "2026-02-05",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.75,
+      "output": 14,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "grok-code-fast-1",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "Grok Code Fast 1",
+    "family": "grok-code",
+    "releaseDate": "2025-09-02",
+    "lastUpdated": "2025-09-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2,
+      "output": 1.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-opus-4-7",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "Claude Opus 4.7",
+    "family": "claude-opus",
+    "releaseDate": "2026-04-16",
+    "lastUpdated": "2026-04-16",
     "knowledgeCutoff": "2026-01-31",
     "contextWindow": 1000000,
     "maxOutputTokens": 128000,
@@ -1750,12 +1901,444 @@
       ]
     },
     "pricing": {
-      "input": 10,
-      "output": 50,
+      "input": 5,
+      "output": 25,
       "currency": "USD",
       "per": 1000000
     },
     "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-2.5-pro",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "Gemini 2.5 Pro",
+    "family": "gemini-pro",
+    "releaseDate": "2025-06-17",
+    "lastUpdated": "2025-06-17",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 10,
+      "cacheRead": 0.125,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "o3-pro",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "o3-pro",
+    "family": "o-pro",
+    "releaseDate": "2025-06-10",
+    "lastUpdated": "2025-06-10",
+    "knowledgeCutoff": "2024-05",
+    "contextWindow": 200000,
+    "maxOutputTokens": 100000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 20,
+      "output": 80,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3.1-flash-lite-preview",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "Gemini 3.1 Flash Lite Preview",
+    "family": "gemini-flash-lite",
+    "releaseDate": "2026-03-03",
+    "lastUpdated": "2026-03-03",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.25,
+      "output": 1.5,
+      "cacheRead": 0.025,
+      "cacheWrite": 1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-4.1-nano",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "GPT-4.1 nano",
+    "family": "gpt-nano",
+    "releaseDate": "2025-04-14",
+    "lastUpdated": "2025-04-14",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 1047576,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.4,
+      "cacheRead": 0.025,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3-pro-image",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "Nano Banana Pro",
+    "family": "nano-banana-pro",
+    "releaseDate": "2026-05-28",
+    "lastUpdated": "2026-05-28",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 65536,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text",
+        "image"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 12,
+      "cacheRead": 0.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.1-codex-max",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "GPT-5.1 Codex Max",
+    "family": "gpt-codex",
+    "releaseDate": "2025-11-13",
+    "lastUpdated": "2025-11-13",
+    "knowledgeCutoff": "2024-09-30",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 10,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.4-nano",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "GPT-5.4 nano",
+    "family": "gpt-nano",
+    "releaseDate": "2026-03-17",
+    "lastUpdated": "2026-03-17",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2,
+      "output": 1.25,
+      "cacheRead": 0.02,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3-max",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "Qwen3 Max",
+    "family": "qwen-max",
+    "releaseDate": "2025-09-23",
+    "lastUpdated": "2025-09-23",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 131072,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.2,
+      "output": 6,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "llama-3.3-70b-versatile",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "Llama 3.3 70B Versatile",
+    "family": "llama",
+    "releaseDate": "2024-12-06",
+    "lastUpdated": "2024-12-06",
+    "knowledgeCutoff": "2023-12",
+    "contextWindow": 128000,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.59,
+      "output": 0.79,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1859,301 +2442,15 @@
     ]
   },
   {
-    "id": "o3-pro",
+    "id": "kimi-k2-turbo-preview",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "o3-pro",
-    "family": "o-pro",
-    "releaseDate": "2025-06-10",
-    "lastUpdated": "2025-06-10",
-    "knowledgeCutoff": "2024-05",
-    "contextWindow": 200000,
-    "maxOutputTokens": 100000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 20,
-      "output": 80,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "o3",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "o3",
-    "family": "o",
-    "releaseDate": "2025-04-16",
-    "lastUpdated": "2025-04-16",
-    "knowledgeCutoff": "2024-05",
-    "contextWindow": 200000,
-    "maxOutputTokens": 100000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2,
-      "output": 8,
-      "cacheRead": 0.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-4.1-mini",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "GPT-4.1 mini",
-    "family": "gpt-mini",
-    "releaseDate": "2025-04-14",
-    "lastUpdated": "2025-04-14",
-    "knowledgeCutoff": "2024-04",
-    "contextWindow": 1047576,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.4,
-      "output": 1.6,
-      "cacheRead": 0.1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "grok-4-1-fast-non-reasoning",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Grok 4.1 Fast (Non-Reasoning)",
-    "family": "grok",
-    "releaseDate": "2025-11-17",
-    "lastUpdated": "2025-11-17",
+    "displayName": "Kimi K2 Turbo Preview",
+    "family": "kimi",
+    "releaseDate": "2025-07-08",
+    "lastUpdated": "2025-07-08",
     "knowledgeCutoff": null,
-    "contextWindow": 2000000,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2,
-      "output": 0.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5.1-codex",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "GPT-5.1 Codex",
-    "family": "gpt-codex",
-    "releaseDate": "2025-11-13",
-    "lastUpdated": "2025-11-13",
-    "knowledgeCutoff": "2024-09-30",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cacheRead": 0.125,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5.3-codex-xhigh",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "GPT-5.3 Codex XHigh",
-    "family": "gpt-codex",
-    "releaseDate": "2026-02-05",
-    "lastUpdated": "2026-02-05",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.75,
-      "output": 14,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen-2.5-coder-32b",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Qwen 2.5 Coder 32B",
-    "family": "qwen",
-    "releaseDate": "2024-11-12",
-    "lastUpdated": "2024-11-12",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
+    "contextWindow": 256000,
     "maxOutputTokens": 8192,
     "capabilities": {
       "tools": true,
@@ -2165,7 +2462,7 @@
       "temperature": true,
       "attachment": false,
       "structured_output": false,
-      "open_weights": true
+      "open_weights": false
     },
     "modalities": {
       "input": [
@@ -2176,8 +2473,8 @@
       ]
     },
     "pricing": {
-      "input": 0.79,
-      "output": 0.79,
+      "input": 0.15,
+      "output": 8,
       "currency": "USD",
       "per": 1000000
     },
@@ -2191,266 +2488,26 @@
     ]
   },
   {
-    "id": "gpt-5.6-luna",
+    "id": "claude-fable-5",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "GPT-5.6 Luna",
-    "family": "gpt-luna",
-    "releaseDate": "2026-07-09",
-    "lastUpdated": "2026-07-09",
-    "knowledgeCutoff": "2026-02-16",
+    "displayName": "Claude Fable 5",
+    "family": "claude-fable",
+    "releaseDate": "2026-06-09",
+    "lastUpdated": "2026-06-09",
+    "knowledgeCutoff": "2026-01-31",
     "contextWindow": 1000000,
     "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2,
-      "output": 1.2,
-      "cacheRead": 0.02,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5.6-terra",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "GPT-5.6 Terra",
-    "family": "gpt-terra",
-    "releaseDate": "2026-07-09",
-    "lastUpdated": "2026-07-09",
-    "knowledgeCutoff": "2026-02-16",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2,
-      "output": 12,
-      "cacheRead": 0.2,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5.5",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "GPT-5.5",
-    "family": "gpt",
-    "releaseDate": "2026-04-23",
-    "lastUpdated": "2026-04-23",
-    "knowledgeCutoff": "2025-12-01",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 5,
-      "output": 30,
-      "cacheRead": 0.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "mimo-v2-pro",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "MiMo-V2-Pro",
-    "family": "mimo",
-    "releaseDate": "2026-03-18",
-    "lastUpdated": "2026-03-18",
-    "knowledgeCutoff": "2024-12",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1,
-      "output": 3,
-      "cacheRead": 0.2,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-3-pro-image",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Nano Banana Pro",
-    "family": "gemini-pro",
-    "releaseDate": "2026-05-28",
-    "lastUpdated": "2026-05-28",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 65536,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": false,
       "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text",
-        "image"
-      ]
-    },
-    "pricing": {
-      "input": 2,
-      "output": 12,
-      "cacheRead": 0.2,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5-mini",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "GPT-5 Mini",
-    "family": "gpt-mini",
-    "releaseDate": "2025-08-07",
-    "lastUpdated": "2025-08-07",
-    "knowledgeCutoff": "2024-05-30",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
       "system_prompt": true,
       "temperature": false,
       "attachment": true,
-      "structured_output": true,
+      "structured_output": false,
       "open_weights": false
     },
     "modalities": {
@@ -2463,9 +2520,8 @@
       ]
     },
     "pricing": {
-      "input": 0.25,
-      "output": 2,
-      "cacheRead": 0.025,
+      "input": 10,
+      "output": 50,
       "currency": "USD",
       "per": 1000000
     },
@@ -2479,160 +2535,16 @@
     ]
   },
   {
-    "id": "gpt-5.1",
+    "id": "grok-4-0709",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "GPT-5.1",
-    "family": "gpt",
-    "releaseDate": "2025-11-13",
-    "lastUpdated": "2025-11-13",
-    "knowledgeCutoff": "2024-09-30",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cacheRead": 0.125,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "kimi-k2.5",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Kimi K2.5",
-    "family": "kimi-k2",
-    "releaseDate": "2026-01-27",
-    "lastUpdated": "2026-01-27",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.6,
-      "output": 3,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5.6-sol",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "GPT-5.6 Sol",
-    "family": "gpt-sol",
-    "releaseDate": "2026-07-09",
-    "lastUpdated": "2026-07-09",
-    "knowledgeCutoff": "2026-02-16",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 4,
-      "output": 20,
-      "cacheRead": 0.4,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-sonnet-4-20250514",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Claude Sonnet 4",
-    "family": "claude-sonnet",
-    "releaseDate": "2025-05-22",
-    "lastUpdated": "2025-05-22",
-    "knowledgeCutoff": "2025-03-31",
-    "contextWindow": 200000,
-    "maxOutputTokens": 64000,
+    "displayName": "Grok 4",
+    "family": "grok",
+    "releaseDate": "2025-07-09",
+    "lastUpdated": "2025-07-09",
+    "knowledgeCutoff": null,
+    "contextWindow": 256000,
+    "maxOutputTokens": 16384,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -2648,8 +2560,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "pdf"
+        "image"
       ],
       "output": [
         "text"
@@ -2719,26 +2630,26 @@
     ]
   },
   {
-    "id": "route-llm",
+    "id": "gpt-5.1-codex",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "RouteLLM",
-    "family": "gpt",
-    "releaseDate": "2024-01-01",
-    "lastUpdated": "2026-07-10",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 64000,
+    "displayName": "GPT-5.1 Codex",
+    "family": "gpt-codex",
+    "releaseDate": "2025-11-13",
+    "lastUpdated": "2025-11-13",
+    "knowledgeCutoff": "2024-09-30",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
       "vision": true,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
-      "temperature": true,
+      "temperature": false,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -2751,61 +2662,9 @@
       ]
     },
     "pricing": {
-      "input": 2,
+      "input": 1.25,
       "output": 10,
-      "cacheRead": 0.1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-3.1-flash-lite-preview",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Gemini 3.1 Flash Lite Preview",
-    "family": "gemini-flash-lite",
-    "releaseDate": "2026-03-03",
-    "lastUpdated": "2026-03-03",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "audio",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.25,
-      "output": 1.5,
-      "cacheRead": 0.025,
-      "cacheWrite": 1,
+      "cacheRead": 0.125,
       "currency": "USD",
       "per": 1000000
     },
@@ -2819,20 +2678,20 @@
     ]
   },
   {
-    "id": "gpt-5.4-nano",
+    "id": "gpt-4o-mini",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "GPT-5.4 nano",
-    "family": "gpt-nano",
-    "releaseDate": "2026-03-17",
-    "lastUpdated": "2026-03-17",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 400000,
-    "maxOutputTokens": 128000,
+    "displayName": "GPT-4o mini",
+    "family": "gpt-mini",
+    "releaseDate": "2024-07-18",
+    "lastUpdated": "2024-07-18",
+    "knowledgeCutoff": "2023-09",
+    "contextWindow": 128000,
+    "maxOutputTokens": 16384,
     "capabilities": {
       "tools": true,
       "vision": true,
-      "reasoning": true,
+      "reasoning": false,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
@@ -2851,107 +2710,8 @@
       ]
     },
     "pricing": {
-      "input": 0.2,
-      "output": 1.25,
-      "cacheRead": 0.02,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3.8-max",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Qwen3.8 Max",
-    "family": "qwen",
-    "releaseDate": "2026-08-03",
-    "lastUpdated": "2026-08-03",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2,
-      "output": 6,
-      "cacheRead": 0.25,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-3-flash-preview",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Gemini 3 Flash Preview",
-    "family": "gemini-flash",
-    "releaseDate": "2025-12-17",
-    "lastUpdated": "2025-12-17",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.5,
-      "output": 3,
-      "cacheRead": 0.05,
+      "input": 0.15,
+      "output": 0.6,
       "currency": "USD",
       "per": 1000000
     },
@@ -3014,16 +2774,251 @@
     ]
   },
   {
-    "id": "gpt-5.4",
+    "id": "grok-4-fast-non-reasoning",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "GPT-5.4",
-    "family": "gpt",
-    "releaseDate": "2026-03-05",
-    "lastUpdated": "2026-03-05",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 400000,
+    "displayName": "Grok 4 Fast (Non-Reasoning)",
+    "family": "grok",
+    "releaseDate": "2025-12-18",
+    "lastUpdated": "2025-12-18",
+    "knowledgeCutoff": null,
+    "contextWindow": 2000000,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2,
+      "output": 0.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "claude-opus-4-6",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "Claude Opus 4.6",
+    "family": "claude-opus",
+    "releaseDate": "2026-02-05",
+    "lastUpdated": "2026-03-13",
+    "knowledgeCutoff": "2025-05-31",
+    "contextWindow": 1000000,
     "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 5,
+      "output": 25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "o3-mini",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "o3-mini",
+    "family": "o-mini",
+    "releaseDate": "2024-12-20",
+    "lastUpdated": "2025-01-29",
+    "knowledgeCutoff": "2024-05",
+    "contextWindow": 200000,
+    "maxOutputTokens": 100000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.1,
+      "output": 4.4,
+      "cacheRead": 0.55,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "route-llm",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "RouteLLM",
+    "family": "model-router",
+    "releaseDate": "2024-01-01",
+    "lastUpdated": "2026-07-10",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.7-max",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "Qwen3.7 Max",
+    "family": "qwen-max",
+    "releaseDate": "2026-05-21",
+    "lastUpdated": "2026-05-21",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 64000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.5,
+      "output": 7.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "grok-4.6",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "Grok 4.6",
+    "family": "grok",
+    "releaseDate": "2026-08-12",
+    "lastUpdated": "2026-08-12",
+    "knowledgeCutoff": "2026-02-01",
+    "contextWindow": 500000,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -3046,9 +3041,9 @@
       ]
     },
     "pricing": {
-      "input": 2.5,
-      "output": 15,
-      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6,
+      "cacheRead": 0.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -3062,15 +3057,255 @@
     ]
   },
   {
-    "id": "gemini-3-pro-image-preview",
+    "id": "muse-spark-1.2",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "Nano Banana Pro Preview",
-    "family": "gemini-pro",
-    "releaseDate": "2025-11-20",
-    "lastUpdated": "2025-11-20",
+    "displayName": "Muse Spark 1.2",
+    "family": "muse-spark",
+    "releaseDate": "2026-08-05",
+    "lastUpdated": "2026-08-05",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 4.25,
+      "cacheRead": 0.15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "mimo-v2-pro",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "MiMo-V2-Pro",
+    "family": "mimo-pro",
+    "releaseDate": "2026-03-18",
+    "lastUpdated": "2026-03-18",
+    "knowledgeCutoff": "2024-12",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1,
+      "output": 3,
+      "cacheRead": 0.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "o4-mini",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "o4-mini",
+    "family": "o-mini",
+    "releaseDate": "2025-04-16",
+    "lastUpdated": "2025-04-16",
+    "knowledgeCutoff": "2024-05",
+    "contextWindow": 200000,
+    "maxOutputTokens": 100000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.1,
+      "output": 4.4,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "muse-spark-1.1",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "Muse Spark 1.1",
+    "family": "muse-spark",
+    "releaseDate": "2026-04-08",
+    "lastUpdated": "2026-07-09",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.25,
+      "output": 4.25,
+      "cacheRead": 0.15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.3-chat-latest",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "GPT-5.3 Chat Latest",
+    "family": "gpt",
+    "releaseDate": "2026-03-03",
+    "lastUpdated": "2026-03-03",
+    "knowledgeCutoff": "2025-08-31",
+    "contextWindow": 400000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.75,
+      "output": 14,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gemini-3.1-flash-image-preview",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "Nano Banana 2 Preview",
+    "family": "nano-banana",
+    "releaseDate": "2026-02-26",
+    "lastUpdated": "2026-02-26",
     "knowledgeCutoff": "2025-01",
-    "contextWindow": 65536,
+    "contextWindow": 1048576,
     "maxOutputTokens": 32768,
     "capabilities": {
       "tools": false,
@@ -3095,9 +3330,8 @@
       ]
     },
     "pricing": {
-      "input": 2,
-      "output": 12,
-      "cacheRead": 0.2,
+      "input": 0.5,
+      "output": 3,
       "currency": "USD",
       "per": 1000000
     },
@@ -3111,26 +3345,26 @@
     ]
   },
   {
-    "id": "grok-4-0709",
+    "id": "gpt-4.1",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "Grok 4",
-    "family": "grok",
-    "releaseDate": "2025-07-09",
-    "lastUpdated": "2025-07-09",
-    "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 16384,
+    "displayName": "GPT-4.1",
+    "family": "gpt",
+    "releaseDate": "2025-04-14",
+    "lastUpdated": "2025-04-14",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 1047576,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
       "vision": true,
-      "reasoning": true,
+      "reasoning": false,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -3143,12 +3377,109 @@
       ]
     },
     "pricing": {
-      "input": 3,
-      "output": 15,
+      "input": 2,
+      "output": 8,
+      "cacheRead": 0.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k2.5",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "Kimi K2.5",
+    "family": "kimi",
+    "releaseDate": "2026-01-27",
+    "lastUpdated": "2026-01-27",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.6,
+      "output": 3,
       "currency": "USD",
       "per": 1000000
     },
     "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "gpt-5.6-luna",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "GPT-5.6 Luna",
+    "family": "gpt-luna",
+    "releaseDate": "2026-07-09",
+    "lastUpdated": "2026-07-09",
+    "knowledgeCutoff": "2026-02-16",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2,
+      "output": 1.2,
+      "cacheRead": 0.02,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -3206,158 +3537,15 @@
     ]
   },
   {
-    "id": "muse-spark-1.1",
+    "id": "claude-opus-4-8",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "Muse Spark 1.1",
-    "family": "muse",
-    "releaseDate": "2026-04-08",
-    "lastUpdated": "2026-07-09",
-    "knowledgeCutoff": null,
+    "displayName": "Claude Opus 4.8",
+    "family": "claude-opus",
+    "releaseDate": "2026-05-28",
+    "lastUpdated": "2026-05-28",
+    "knowledgeCutoff": "2026-01",
     "contextWindow": 1000000,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.25,
-      "output": 4.25,
-      "cacheRead": 0.15,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-sonnet-4-5-20250929",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Claude Sonnet 4.5",
-    "family": "claude-sonnet",
-    "releaseDate": "2025-09-29",
-    "lastUpdated": "2025-09-29",
-    "knowledgeCutoff": "2025-07-31",
-    "contextWindow": 200000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 3,
-      "output": 15,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-sonnet-4-6",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Claude Sonnet 4.6",
-    "family": "claude-sonnet",
-    "releaseDate": "2026-02-17",
-    "lastUpdated": "2026-03-13",
-    "knowledgeCutoff": "2025-08-31",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 3,
-      "output": 15,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gpt-5.2-chat-latest",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "GPT-5.2 Chat Latest",
-    "family": "gpt",
-    "releaseDate": "2025-12-11",
-    "lastUpdated": "2025-12-11",
-    "knowledgeCutoff": "2024-09-30",
-    "contextWindow": 400000,
     "maxOutputTokens": 128000,
     "capabilities": {
       "tools": true,
@@ -3366,101 +3554,7 @@
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.75,
-      "output": 14,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "grok-4-fast-non-reasoning",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Grok 4 Fast (Non-Reasoning)",
-    "family": "grok",
-    "releaseDate": "2025-12-18",
-    "lastUpdated": "2025-12-18",
-    "knowledgeCutoff": null,
-    "contextWindow": 2000000,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2,
-      "output": 0.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "claude-opus-4-5-20251101",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Claude Opus 4.5",
-    "family": "claude-opus",
-    "releaseDate": "2025-11-24",
-    "lastUpdated": "2025-11-24",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 200000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
+      "temperature": false,
       "attachment": true,
       "structured_output": false,
       "open_weights": false
@@ -3490,188 +3584,46 @@
     ]
   },
   {
-    "id": "gpt-4o",
+    "id": "gemini-3-pro-image-preview",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "GPT-4o",
-    "family": "gpt",
-    "releaseDate": "2024-05-13",
-    "lastUpdated": "2024-08-06",
-    "knowledgeCutoff": "2023-09",
-    "contextWindow": 128000,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2.5,
-      "output": 10,
-      "cacheRead": 1.25,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "grok-4.3",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Grok 4.3",
-    "family": "grok",
-    "releaseDate": "2026-04-17",
-    "lastUpdated": "2026-04-17",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
+    "displayName": "Nano Banana Pro Preview",
+    "family": "nano-banana-pro",
+    "releaseDate": "2025-11-20",
+    "lastUpdated": "2025-11-20",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 65536,
     "maxOutputTokens": 32768,
     "capabilities": {
-      "tools": true,
+      "tools": false,
       "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.25,
-      "output": 2.5,
-      "cacheRead": 0.2,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3.7-max",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Qwen3.7 Max",
-    "family": "qwen",
-    "releaseDate": "2026-05-21",
-    "lastUpdated": "2026-05-21",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 64000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": false,
       "open_weights": false
     },
     "modalities": {
       "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2.5,
-      "output": 7.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "gemini-3.6-flash",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Gemini 3.6 Flash",
-    "family": "gemini-flash",
-    "releaseDate": "2026-07-21",
-    "lastUpdated": "2026-07-21",
-    "knowledgeCutoff": "2026-03",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
         "text",
-        "image",
-        "audio"
+        "image"
       ],
       "output": [
-        "text"
+        "text",
+        "image"
       ]
     },
     "pricing": {
-      "input": 0.75,
-      "output": 3.75,
-      "cacheRead": 0.075,
+      "input": 2,
+      "output": 12,
+      "cacheRead": 0.2,
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -3681,13 +3633,13 @@
     ]
   },
   {
-    "id": "gpt-5",
+    "id": "gpt-5.1",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "GPT-5",
+    "displayName": "GPT-5.1",
     "family": "gpt",
-    "releaseDate": "2025-08-07",
-    "lastUpdated": "2025-08-07",
+    "releaseDate": "2025-11-13",
+    "lastUpdated": "2025-11-13",
     "knowledgeCutoff": "2024-09-30",
     "contextWindow": 400000,
     "maxOutputTokens": 128000,
@@ -3698,7 +3650,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
       "open_weights": false
@@ -3729,232 +3681,41 @@
     ]
   },
   {
-    "id": "moonshotai/Kimi-K2.7-Code",
+    "id": "claude-opus-4-20250514",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "Kimi K2.7 Code",
-    "family": "kimi-k2",
-    "releaseDate": "2026-06-12",
-    "lastUpdated": "2026-06-12",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "displayName": "Claude Opus 4",
+    "family": "claude-opus",
+    "releaseDate": "2025-05-22",
+    "lastUpdated": "2025-05-22",
+    "knowledgeCutoff": "2025-03-31",
+    "contextWindow": 200000,
+    "maxOutputTokens": 32000,
     "capabilities": {
       "tools": true,
       "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.95,
-      "output": 4,
-      "cacheRead": 0.19,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "moonshotai/Kimi-K2.6",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Kimi K2.6",
-    "family": "kimi-k2",
-    "releaseDate": "2026-04-20",
-    "lastUpdated": "2026-04-20",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.95,
-      "output": 4,
-      "cacheRead": 0.16,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "moonshotai/Kimi-K3",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Kimi K3",
-    "family": "kimi-k3",
-    "releaseDate": "2026-07-16",
-    "lastUpdated": "2026-07-16",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 3,
-      "output": 15,
-      "cacheRead": 0.3,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3-32B",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Qwen3 32B",
-    "family": "qwen",
-    "releaseDate": "2025-04-28",
-    "lastUpdated": "2025-04-28",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 131072,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": false,
-      "open_weights": true
+      "open_weights": false
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.08,
-      "output": 0.28,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/QwQ-32B",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "QwQ 32B",
-    "family": "qwen",
-    "releaseDate": "2025-03-05",
-    "lastUpdated": "2025-03-05",
-    "knowledgeCutoff": "2024-04",
-    "contextWindow": 32768,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.4,
-      "output": 0.4,
+      "input": 15,
+      "output": 75,
       "currency": "USD",
       "per": 1000000
     },
@@ -4014,16 +3775,16 @@
     ]
   },
   {
-    "id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+    "id": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "Qwen3 235B A22B Instruct",
-    "family": "qwen",
-    "releaseDate": "2025-07-21",
-    "lastUpdated": "2025-07-21",
-    "knowledgeCutoff": null,
+    "displayName": "Qwen3-Coder 480B-A35B Instruct",
+    "family": "qwen-coder",
+    "releaseDate": "2025-07-22",
+    "lastUpdated": "2025-07-22",
+    "knowledgeCutoff": "2025-04",
     "contextWindow": 262144,
-    "maxOutputTokens": 8192,
+    "maxOutputTokens": 16384,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -4045,12 +3806,12 @@
       ]
     },
     "pricing": {
-      "input": 0.13,
-      "output": 0.6,
+      "input": 0.38,
+      "output": 1.55,
       "currency": "USD",
       "per": 1000000
     },
-    "status": "deprecated",
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -4106,16 +3867,62 @@
     ]
   },
   {
-    "id": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
+    "id": "Qwen/Qwen3-32B",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "Qwen3-Coder 480B-A35B Instruct",
+    "displayName": "Qwen3 32B",
     "family": "qwen",
-    "releaseDate": "2025-07-22",
-    "lastUpdated": "2025-07-22",
+    "releaseDate": "2025-04-28",
+    "lastUpdated": "2025-04-28",
     "knowledgeCutoff": "2025-04",
+    "contextWindow": 131072,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.08,
+      "output": 0.28,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "Qwen3 235B A22B Instruct",
+    "family": "qwen",
+    "releaseDate": "2025-07-21",
+    "lastUpdated": "2025-07-21",
+    "knowledgeCutoff": null,
     "contextWindow": 262144,
-    "maxOutputTokens": 16384,
+    "maxOutputTokens": 8192,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -4137,12 +3944,338 @@
       ]
     },
     "pricing": {
-      "input": 0.38,
-      "output": 1.55,
+      "input": 0.13,
+      "output": 0.6,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Qwen/QwQ-32B",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "QwQ 32B",
+    "family": "qwq",
+    "releaseDate": "2025-03-05",
+    "lastUpdated": "2025-03-05",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 32768,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.4,
+      "output": 0.4,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "thinkingmachines/Inkling",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "Inkling",
+    "family": "inkling",
+    "releaseDate": "2026-07-15",
+    "lastUpdated": "2026-07-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3.74,
+      "output": 9.36,
+      "cacheRead": 0.748,
       "currency": "USD",
       "per": 1000000
     },
     "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V3.2",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "DeepSeek V3.2",
+    "family": "deepseek",
+    "releaseDate": "2025-12-01",
+    "lastUpdated": "2025-12-01",
+    "knowledgeCutoff": "2024-07",
+    "contextWindow": 128000,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.27,
+      "output": 0.4,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-R1",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "DeepSeek R1",
+    "family": "deepseek-r",
+    "releaseDate": "2025-01-20",
+    "lastUpdated": "2025-05-29",
+    "knowledgeCutoff": "2024-07",
+    "contextWindow": 128000,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 7,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V4-Flash",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "DeepSeek V4 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.14,
+      "output": 0.28,
+      "cacheRead": 0.03,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V4-Pro",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "DeepSeek V4 Pro",
+    "family": "deepseek-pro",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.74,
+      "output": 3.48,
+      "cacheRead": 0.15,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V3.1-Terminus",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "DeepSeek V3.1 Terminus",
+    "family": "deepseek",
+    "releaseDate": "2025-06-01",
+    "lastUpdated": "2025-06-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.27,
+      "output": 1,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -4199,26 +4332,26 @@
     ]
   },
   {
-    "id": "deepseek/deepseek-v3.1",
+    "id": "openai/gpt-oss-120b",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "DeepSeek V3.1",
-    "family": "deepseek",
-    "releaseDate": "2025-08-21",
-    "lastUpdated": "2025-08-21",
-    "knowledgeCutoff": null,
+    "displayName": "GPT OSS 120B",
+    "family": "gpt-oss",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": "2024-06",
     "contextWindow": 128000,
-    "maxOutputTokens": 8192,
+    "maxOutputTokens": 16384,
     "capabilities": {
       "tools": true,
       "vision": false,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -4230,58 +4363,12 @@
       ]
     },
     "pricing": {
-      "input": 0.55,
-      "output": 1.66,
+      "input": 0.037,
+      "output": 0.17,
       "currency": "USD",
       "per": 1000000
     },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "meta-llama/Meta-Llama-3.3-70B-Instruct",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Llama-3.3-70B-Instruct",
-    "family": "llama",
-    "releaseDate": "2024-12-06",
-    "lastUpdated": "2024-12-06",
-    "knowledgeCutoff": "2023-12",
-    "contextWindow": 131072,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.59,
-      "output": 0.79,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -4324,52 +4411,6 @@
     "pricing": {
       "input": 0.02,
       "output": 0.05,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "Llama 3.1 405B Instruct Turbo",
-    "family": "llama",
-    "releaseDate": "2024-07-23",
-    "lastUpdated": "2024-07-23",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 3.5,
-      "output": 3.5,
       "currency": "USD",
       "per": 1000000
     },
@@ -4430,26 +4471,26 @@
     ]
   },
   {
-    "id": "openai/gpt-oss-120b",
+    "id": "meta-llama/Meta-Llama-3.3-70B-Instruct",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "GPT OSS 120B",
-    "family": "gpt-oss",
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": "2024-06",
-    "contextWindow": 128000,
-    "maxOutputTokens": 16384,
+    "displayName": "Llama-3.3-70B-Instruct",
+    "family": "llama",
+    "releaseDate": "2024-12-06",
+    "lastUpdated": "2024-12-06",
+    "knowledgeCutoff": "2023-12",
+    "contextWindow": 131072,
+    "maxOutputTokens": 8192,
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": true,
+      "reasoning": false,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
-      "structured_output": true,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
@@ -4461,12 +4502,12 @@
       ]
     },
     "pricing": {
-      "input": 0.037,
-      "output": 0.17,
+      "input": 0.59,
+      "output": 0.79,
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -4476,15 +4517,61 @@
     ]
   },
   {
-    "id": "thinkingmachines/Inkling",
+    "id": "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "Inkling",
-    "family": "ling",
-    "releaseDate": "2026-07-15",
-    "lastUpdated": "2026-07-15",
+    "displayName": "Llama 3.1 405B Instruct Turbo",
+    "family": "llama",
+    "releaseDate": "2024-07-23",
+    "lastUpdated": "2024-07-23",
     "knowledgeCutoff": null,
-    "contextWindow": 262144,
+    "contextWindow": 128000,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3.5,
+      "output": 3.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "MiniMaxAI/MiniMax-M3",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "MiniMax-M3",
+    "family": "minimax-m",
+    "releaseDate": "2026-06-01",
+    "lastUpdated": "2026-06-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
     "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
@@ -4501,16 +4588,16 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "video"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 3.74,
-      "output": 9.36,
-      "cacheRead": 0.748,
+      "input": 0.3,
+      "output": 1.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -4528,7 +4615,7 @@
     "provider": "abacus",
     "providerName": "Abacus",
     "displayName": "MiniMax-M2.7",
-    "family": "minimax",
+    "family": "minimax-m",
     "releaseDate": "2026-03-18",
     "lastUpdated": "2026-03-18",
     "knowledgeCutoff": null,
@@ -4570,41 +4657,131 @@
     ]
   },
   {
-    "id": "MiniMaxAI/MiniMax-M3",
+    "id": "deepseek/deepseek-v3.1",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "MiniMax-M3",
-    "family": "minimax",
-    "releaseDate": "2026-06-01",
-    "lastUpdated": "2026-06-01",
+    "displayName": "DeepSeek V3.1",
+    "family": "deepseek",
+    "releaseDate": "2025-08-21",
+    "lastUpdated": "2025-08-21",
     "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
+    "contextWindow": 128000,
+    "maxOutputTokens": 8192,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "video"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.3,
-      "output": 1.2,
+      "input": 0.55,
+      "output": 1.66,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "zai-org/GLM-4.5",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "GLM-4.5",
+    "family": "glm",
+    "releaseDate": "2025-07-28",
+    "lastUpdated": "2025-07-28",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 131072,
+    "maxOutputTokens": 96000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.6,
+      "output": 2.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "zai-org/GLM-4.6",
+    "provider": "abacus",
+    "providerName": "Abacus",
+    "displayName": "GLM-4.6",
+    "family": "glm",
+    "releaseDate": "2025-09-30",
+    "lastUpdated": "2025-09-30",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 202752,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.55,
+      "output": 2.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -4664,15 +4841,15 @@
     ]
   },
   {
-    "id": "zai-org/GLM-4.6",
+    "id": "zai-org/GLM-5",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "GLM-4.6",
+    "displayName": "GLM-5",
     "family": "glm",
-    "releaseDate": "2025-09-30",
-    "lastUpdated": "2025-09-30",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 202752,
+    "releaseDate": "2026-02-12",
+    "lastUpdated": "2026-02-12",
+    "knowledgeCutoff": null,
+    "contextWindow": 204800,
     "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
@@ -4695,8 +4872,8 @@
       ]
     },
     "pricing": {
-      "input": 0.55,
-      "output": 2.2,
+      "input": 1,
+      "output": 3.2,
       "currency": "USD",
       "per": 1000000
     },
@@ -4757,98 +4934,6 @@
     ]
   },
   {
-    "id": "zai-org/GLM-4.5",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "GLM-4.5",
-    "family": "glm",
-    "releaseDate": "2025-07-28",
-    "lastUpdated": "2025-07-28",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 131072,
-    "maxOutputTokens": 96000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.6,
-      "output": 2.2,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "zai-org/GLM-5",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "GLM-5",
-    "family": "glm",
-    "releaseDate": "2026-02-12",
-    "lastUpdated": "2026-02-12",
-    "knowledgeCutoff": null,
-    "contextWindow": 204800,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1,
-      "output": 3.2,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "zai-org/GLM-5.2",
     "provider": "abacus",
     "providerName": "Abacus",
@@ -4896,77 +4981,33 @@
     ]
   },
   {
-    "id": "deepseek-ai/DeepSeek-V3.1-Terminus",
+    "id": "moonshotai/Kimi-K3",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "DeepSeek V3.1 Terminus",
-    "family": "deepseek",
-    "releaseDate": "2025-06-01",
-    "lastUpdated": "2025-06-01",
+    "displayName": "Kimi K3",
+    "family": "kimi",
+    "releaseDate": "2026-07-16",
+    "lastUpdated": "2026-07-16",
     "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 8192,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.27,
-      "output": 1,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-R1",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "DeepSeek R1",
-    "family": "deepseek-thinking",
-    "releaseDate": "2025-01-20",
-    "lastUpdated": "2025-05-29",
-    "knowledgeCutoff": "2024-07",
-    "contextWindow": 128000,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
+        "text",
+        "image",
+        "video"
       ],
       "output": [
         "text"
@@ -4974,11 +5015,12 @@
     },
     "pricing": {
       "input": 3,
-      "output": 7,
+      "output": 15,
+      "cacheRead": 0.3,
       "currency": "USD",
       "per": 1000000
     },
-    "status": "deprecated",
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -4988,90 +5030,46 @@
     ]
   },
   {
-    "id": "deepseek-ai/DeepSeek-V3.2",
+    "id": "moonshotai/Kimi-K2.6",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "DeepSeek V3.2",
-    "family": "deepseek",
-    "releaseDate": "2025-12-01",
-    "lastUpdated": "2025-12-01",
-    "knowledgeCutoff": "2024-07",
-    "contextWindow": 128000,
-    "maxOutputTokens": 8192,
+    "displayName": "Kimi K2.6",
+    "family": "kimi",
+    "releaseDate": "2026-04-20",
+    "lastUpdated": "2026-04-20",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.27,
-      "output": 0.4,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-V4-Pro",
-    "provider": "abacus",
-    "providerName": "Abacus",
-    "displayName": "DeepSeek V4 Pro",
-    "family": "deepseek-thinking",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "video"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 1.74,
-      "output": 3.48,
-      "cacheRead": 0.15,
+      "input": 0.95,
+      "output": 4,
+      "cacheRead": 0.16,
       "currency": "USD",
       "per": 1000000
     },
-    "status": "deprecated",
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -5081,44 +5079,46 @@
     ]
   },
   {
-    "id": "deepseek-ai/DeepSeek-V4-Flash",
+    "id": "moonshotai/Kimi-K2.7-Code",
     "provider": "abacus",
     "providerName": "Abacus",
-    "displayName": "DeepSeek V4 Flash",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 32768,
+    "displayName": "Kimi K2.7 Code",
+    "family": "kimi-code",
+    "releaseDate": "2026-06-12",
+    "lastUpdated": "2026-06-12",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
+      "temperature": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "video"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.14,
-      "output": 0.28,
-      "cacheRead": 0.03,
+      "input": 0.95,
+      "output": 4,
+      "cacheRead": 0.19,
       "currency": "USD",
       "per": 1000000
     },
-    "status": "deprecated",
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],

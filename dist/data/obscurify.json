@@ -1,5 +1,56 @@
 [
   {
+    "id": "google/gemini-3.8-flash",
+    "provider": "obscurify",
+    "providerName": "Obscurify.ai",
+    "displayName": "Gemini 3.8 Flash",
+    "family": "gemini-flash",
+    "releaseDate": "2026-09-02",
+    "lastUpdated": "2026-09-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.82875,
+      "output": 4.14375,
+      "cacheRead": 0.082875,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "z-ai/glm-5.3",
     "provider": "obscurify",
     "providerName": "Obscurify.ai",
@@ -83,243 +134,6 @@
     "pricing": {
       "input": 0.05187,
       "output": 0.10192,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "moonshotai/kimi-k2-0905",
-    "provider": "obscurify",
-    "providerName": "Obscurify.ai",
-    "displayName": "Kimi K2 Instruct 0905",
-    "family": "kimi-k2",
-    "releaseDate": "2025-09-05",
-    "lastUpdated": "2025-09-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 98304,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.78,
-      "output": 3.25,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "google/gemini-3.8-flash",
-    "provider": "obscurify",
-    "providerName": "Obscurify.ai",
-    "displayName": "Gemini 3.8 Flash",
-    "family": "gemini-flash",
-    "releaseDate": "2026-09-02",
-    "lastUpdated": "2026-09-02",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "audio",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.82875,
-      "output": 4.14375,
-      "cacheRead": 0.082875,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek/deepseek-v4-pro-0813",
-    "provider": "obscurify",
-    "providerName": "Obscurify.ai",
-    "displayName": "DeepSeek V4 Pro 0813",
-    "family": "deepseek-thinking",
-    "releaseDate": "2026-08-13",
-    "lastUpdated": "2026-08-22",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.7293,
-      "output": 2.7625,
-      "cacheRead": 0.0442,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek/deepseek-v4-flash",
-    "provider": "obscurify",
-    "providerName": "Obscurify.ai",
-    "displayName": "DeepSeek V4 Flash",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.117,
-      "output": 0.234,
-      "cacheRead": 0.0234,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "meta-llama/llama-3.3-70b-instruct",
-    "provider": "obscurify",
-    "providerName": "Obscurify.ai",
-    "displayName": "Llama-3.3-70B-Instruct",
-    "family": "llama",
-    "releaseDate": "2024-12-06",
-    "lastUpdated": "2024-12-06",
-    "knowledgeCutoff": "2023-12",
-    "contextWindow": 128000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.05525,
-      "output": 0.25415,
       "currency": "USD",
       "per": 1000000
     },
@@ -432,16 +246,16 @@
     ]
   },
   {
-    "id": "qwen/qwen3-coder",
+    "id": "meta-llama/llama-3.3-70b-instruct",
     "provider": "obscurify",
     "providerName": "Obscurify.ai",
-    "displayName": "Qwen3-Coder 480B-A35B Instruct",
-    "family": "qwen",
-    "releaseDate": "2025-07-22",
-    "lastUpdated": "2025-07-22",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 262000,
-    "maxOutputTokens": 65536,
+    "displayName": "Llama-3.3-70B-Instruct",
+    "family": "llama",
+    "releaseDate": "2024-12-06",
+    "lastUpdated": "2024-12-06",
+    "knowledgeCutoff": "2023-12",
+    "contextWindow": 128000,
+    "maxOutputTokens": 4096,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -463,155 +277,8 @@
       ]
     },
     "pricing": {
-      "input": 0.14365,
-      "output": 0.5525,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen/qwen3.8-27b",
-    "provider": "obscurify",
-    "providerName": "Obscurify.ai",
-    "displayName": "Qwen3.8 27B",
-    "family": "qwen",
-    "releaseDate": "2026-08-14",
-    "lastUpdated": "2026-08-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.16575,
-      "output": 0.7735,
-      "cacheRead": 0.0442,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "minimax/minimax-m3.1-flash",
-    "provider": "obscurify",
-    "providerName": "Obscurify.ai",
-    "displayName": "MiniMax-M3.1-Flash",
-    "family": "minimax",
-    "releaseDate": "2026-10-19",
-    "lastUpdated": "2026-10-19",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 512000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.16575,
-      "output": 0.663,
-      "cacheRead": 0.016575,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "x-ai/grok-4.7",
-    "provider": "obscurify",
-    "providerName": "Obscurify.ai",
-    "displayName": "Grok 4.7",
-    "family": "grok",
-    "releaseDate": "2026-09-21",
-    "lastUpdated": "2026-09-21",
-    "knowledgeCutoff": "2026-05",
-    "contextWindow": 500000,
-    "maxOutputTokens": 500000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2.21,
-      "output": 6.63,
-      "cacheRead": 0.5525,
+      "input": 0.05525,
+      "output": 0.25415,
       "currency": "USD",
       "per": 1000000
     },
@@ -712,6 +379,338 @@
       "output": 0.5525,
       "cacheRead": 0.01105,
       "cacheWrite": 0.138125,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3-coder",
+    "provider": "obscurify",
+    "providerName": "Obscurify.ai",
+    "displayName": "Qwen3-Coder 480B-A35B Instruct",
+    "family": "qwen-coder",
+    "releaseDate": "2025-07-22",
+    "lastUpdated": "2025-07-22",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 262000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3315,
+      "output": 1.105,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen3.8-27b",
+    "provider": "obscurify",
+    "providerName": "Obscurify.ai",
+    "displayName": "Qwen3.8 27B",
+    "family": "qwen",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.16575,
+      "output": 0.7735,
+      "cacheRead": 0.0442,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek/deepseek-v4-flash",
+    "provider": "obscurify",
+    "providerName": "Obscurify.ai",
+    "displayName": "DeepSeek V4 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek/deepseek-v4-pro-0813",
+    "provider": "obscurify",
+    "providerName": "Obscurify.ai",
+    "displayName": "DeepSeek V4 Pro 0813",
+    "family": "deepseek-pro",
+    "releaseDate": "2026-08-13",
+    "lastUpdated": "2026-08-22",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.7293,
+      "output": 2.7625,
+      "cacheRead": 0.0442,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "x-ai/grok-4.7",
+    "provider": "obscurify",
+    "providerName": "Obscurify.ai",
+    "displayName": "Grok 4.7",
+    "family": "grok",
+    "releaseDate": "2026-09-21",
+    "lastUpdated": "2026-09-21",
+    "knowledgeCutoff": "2026-05",
+    "contextWindow": 500000,
+    "maxOutputTokens": 500000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.21,
+      "output": 6.63,
+      "cacheRead": 0.5525,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "moonshotai/kimi-k2-0905",
+    "provider": "obscurify",
+    "providerName": "Obscurify.ai",
+    "displayName": "Kimi K2 Instruct 0905",
+    "family": "kimi",
+    "releaseDate": "2025-09-05",
+    "lastUpdated": "2025-09-05",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 98304,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.78,
+      "output": 3.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimax/minimax-m3.1-flash",
+    "provider": "obscurify",
+    "providerName": "Obscurify.ai",
+    "displayName": "MiniMax-M3.1-Flash",
+    "family": "minimax-m-flash",
+    "releaseDate": "2026-10-19",
+    "lastUpdated": "2026-10-19",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 512000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.16575,
+      "output": 0.663,
+      "cacheRead": 0.016575,
       "currency": "USD",
       "per": 1000000
     },

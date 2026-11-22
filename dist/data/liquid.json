@@ -1,39 +1,89 @@
 [
   {
-    "id": "glm-5.3",
+    "id": "kimi-k3",
     "provider": "liquid",
     "providerName": "Liquid Inference",
-    "displayName": "GLM-5.3",
-    "family": "glm",
-    "releaseDate": "2026-08-14",
-    "lastUpdated": "2026-08-14",
+    "displayName": "Kimi K3",
+    "family": "kimi",
+    "releaseDate": "2026-07-16",
+    "lastUpdated": "2026-07-16",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
-    "maxOutputTokens": 131072,
+    "maxOutputTokens": 1048576,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
+      "temperature": false,
+      "attachment": true,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "video"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.84,
-      "output": 3.1,
-      "cacheRead": 0.195,
+      "input": 1.26,
+      "output": 10.2,
+      "cacheRead": 0.315,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k3.1-pro",
+    "provider": "liquid",
+    "providerName": "Liquid Inference",
+    "displayName": "Kimi K3.1 Pro",
+    "family": "kimi-pro",
+    "releaseDate": "2026-10-23",
+    "lastUpdated": "2026-10-23",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.18,
+      "output": 5.46,
+      "cacheRead": 1.23,
       "currency": "USD",
       "per": 1000000
     },
@@ -91,13 +141,13 @@
     ]
   },
   {
-    "id": "deepseek-v4.1-flash-1017",
+    "id": "deepseek-v4.1-flash",
     "provider": "liquid",
     "providerName": "Liquid Inference",
-    "displayName": "DeepSeek V4.1 Flash 1017",
+    "displayName": "DeepSeek V4.1 Flash",
     "family": "deepseek-flash",
-    "releaseDate": "2026-10-17",
-    "lastUpdated": "2026-10-17",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
     "knowledgeCutoff": "2025-05",
     "contextWindow": 1048576,
     "maxOutputTokens": 384000,
@@ -123,9 +173,9 @@
       ]
     },
     "pricing": {
-      "input": 0.059,
-      "output": 0.206,
-      "cacheRead": 0.0026,
+      "input": 0.0868,
+      "output": 0.21,
+      "cacheRead": 0.007,
       "currency": "USD",
       "per": 1000000
     },
@@ -139,90 +189,40 @@
     ]
   },
   {
-    "id": "kimi-k3",
+    "id": "glm-5.3",
     "provider": "liquid",
     "providerName": "Liquid Inference",
-    "displayName": "Kimi K3",
-    "family": "kimi-k3",
-    "releaseDate": "2026-07-16",
-    "lastUpdated": "2026-07-16",
+    "displayName": "GLM-5.3",
+    "family": "glm",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
     "knowledgeCutoff": null,
     "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
-      "vision": true,
+      "vision": false,
       "reasoning": true,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
+      "temperature": true,
+      "attachment": false,
       "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "video"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 1.26,
-      "output": 10.2,
-      "cacheRead": 0.315,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "kimi-k3.1-pro",
-    "provider": "liquid",
-    "providerName": "Liquid Inference",
-    "displayName": "Kimi K3.1 Pro",
-    "family": "kimi-k3",
-    "releaseDate": "2026-10-23",
-    "lastUpdated": "2026-10-23",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2.18,
-      "output": 5.46,
-      "cacheRead": 1.23,
+      "input": 0.84,
+      "output": 3.1,
+      "cacheRead": 0.195,
       "currency": "USD",
       "per": 1000000
     },
@@ -286,54 +286,6 @@
     ]
   },
   {
-    "id": "deepseek-v4.1-flash",
-    "provider": "liquid",
-    "providerName": "Liquid Inference",
-    "displayName": "DeepSeek V4.1 Flash",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.0868,
-      "output": 0.21,
-      "cacheRead": 0.007,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "qwen3.8-27b",
     "provider": "liquid",
     "providerName": "Liquid Inference",
@@ -370,6 +322,54 @@
       "input": 0.08,
       "output": 0.525,
       "cacheRead": 0.0525,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v4.1-flash-1017",
+    "provider": "liquid",
+    "providerName": "Liquid Inference",
+    "displayName": "DeepSeek V4.1 Flash 1017",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-10-17",
+    "lastUpdated": "2026-10-17",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.059,
+      "output": 0.206,
+      "cacheRead": 0.0026,
       "currency": "USD",
       "per": 1000000
     },

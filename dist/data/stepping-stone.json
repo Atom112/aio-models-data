@@ -1,57 +1,10 @@
 [
   {
-    "id": "NVIDIA/NVIDIA-Nemotron-3-Super-120B-A12B",
-    "provider": "stepping-stone",
-    "providerName": "stepping stone AG",
-    "displayName": "Nemotron 3 Super 120B A12B",
-    "family": "nemotron",
-    "releaseDate": "2026-03-11",
-    "lastUpdated": "2026-03-11",
-    "knowledgeCutoff": "2025-06",
-    "contextWindow": 131072,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2.38,
-      "output": 5.95,
-      "cacheRead": 0.357,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "apertus-ai/Apertus-v1.5-8B",
     "provider": "stepping-stone",
     "providerName": "stepping stone AG",
     "displayName": "Apertus v1.5 8B",
-    "family": null,
+    "family": "apertus",
     "releaseDate": "2026-10-15",
     "lastUpdated": "2026-10-15",
     "knowledgeCutoff": null,
@@ -83,53 +36,6 @@
       "input": 0.0238,
       "output": 0.119,
       "cacheRead": 0.0036,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Qwen/Qwen3-Coder-Next",
-    "provider": "stepping-stone",
-    "providerName": "stepping stone AG",
-    "displayName": "Qwen3 Coder Next",
-    "family": "qwen",
-    "releaseDate": "2026-02-03",
-    "lastUpdated": "2026-02-03",
-    "knowledgeCutoff": "2025-09",
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.4046,
-      "output": 2.023,
-      "cacheRead": 0.0446,
       "currency": "USD",
       "per": 1000000
     },
@@ -241,11 +147,58 @@
     ]
   },
   {
+    "id": "Qwen/Qwen3-Coder-Next",
+    "provider": "stepping-stone",
+    "providerName": "stepping stone AG",
+    "displayName": "Qwen3 Coder Next",
+    "family": "qwen-coder",
+    "releaseDate": "2026-02-03",
+    "lastUpdated": "2026-02-03",
+    "knowledgeCutoff": "2025-09",
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.4046,
+      "output": 2.023,
+      "cacheRead": 0.0446,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "lightonai/LightOnOCR-2-1B",
     "provider": "stepping-stone",
     "providerName": "stepping stone AG",
     "displayName": "LightOnOCR 2 1B",
-    "family": null,
+    "family": "lightonocr",
     "releaseDate": "2026-01-16",
     "lastUpdated": "2026-01-16",
     "knowledgeCutoff": null,
@@ -276,6 +229,53 @@
       "input": 0.0238,
       "output": 0.0714,
       "cacheRead": 0.0036,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V4-Flash-0731",
+    "provider": "stepping-stone",
+    "providerName": "stepping stone AG",
+    "displayName": "DeepSeek V4 Flash 0731",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-07-31",
+    "lastUpdated": "2026-07-31",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 524288,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.5355,
+      "output": 2.142,
+      "cacheRead": 0.0803,
       "currency": "USD",
       "per": 1000000
     },
@@ -337,6 +337,54 @@
     ]
   },
   {
+    "id": "opendatalab/MinerU2.5-2509-1.2B",
+    "provider": "stepping-stone",
+    "providerName": "stepping stone AG",
+    "displayName": "MinerU2.5 2509 1.2B",
+    "family": "mineru",
+    "releaseDate": "2025-09-17",
+    "lastUpdated": "2025-09-17",
+    "knowledgeCutoff": null,
+    "contextWindow": 16384,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.0238,
+      "output": 0.0714,
+      "cacheRead": 0.0036,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "openai/gpt-oss-120b",
     "provider": "stepping-stone",
     "providerName": "stepping stone AG",
@@ -371,99 +419,6 @@
       "input": 0.476,
       "output": 1.904,
       "cacheRead": 0.0714,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "MiniMaxAI/MiniMax-M2.5",
-    "provider": "stepping-stone",
-    "providerName": "stepping stone AG",
-    "displayName": "MiniMax-M2.5",
-    "family": "minimax",
-    "releaseDate": "2026-02-12",
-    "lastUpdated": "2026-02-12",
-    "knowledgeCutoff": null,
-    "contextWindow": 196608,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2.3086,
-      "output": 11.543,
-      "cacheRead": 0.3463,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "BAAI/bge-reranker-v2-m3",
-    "provider": "stepping-stone",
-    "providerName": "stepping stone AG",
-    "displayName": "BGE Reranker V2 M3",
-    "family": "bge",
-    "releaseDate": "2024-03-15",
-    "lastUpdated": "2024-03-15",
-    "knowledgeCutoff": null,
-    "contextWindow": 8192,
-    "maxOutputTokens": 0,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.119,
-      "output": 0,
       "currency": "USD",
       "per": 1000000
     },
@@ -523,11 +478,104 @@
     ]
   },
   {
+    "id": "BAAI/bge-reranker-v2-m3",
+    "provider": "stepping-stone",
+    "providerName": "stepping stone AG",
+    "displayName": "BGE Reranker V2 M3",
+    "family": "bge-reranker",
+    "releaseDate": "2024-03-15",
+    "lastUpdated": "2024-03-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 8192,
+    "maxOutputTokens": 0,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.119,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "NVIDIA/NVIDIA-Nemotron-3-Super-120B-A12B",
+    "provider": "stepping-stone",
+    "providerName": "stepping stone AG",
+    "displayName": "Nemotron 3 Super 120B A12B",
+    "family": "nemotron-super",
+    "releaseDate": "2026-03-11",
+    "lastUpdated": "2026-03-11",
+    "knowledgeCutoff": "2025-06",
+    "contextWindow": 131072,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.38,
+      "output": 5.95,
+      "cacheRead": 0.357,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "allenai/olmOCR-2-7B",
     "provider": "stepping-stone",
     "providerName": "stepping stone AG",
     "displayName": "olmOCR 2 7B",
-    "family": null,
+    "family": "olmocr",
     "releaseDate": "2025-10-22",
     "lastUpdated": "2025-10-22",
     "knowledgeCutoff": null,
@@ -571,41 +619,40 @@
     ]
   },
   {
-    "id": "opendatalab/MinerU2.5-2509-1.2B",
+    "id": "MiniMaxAI/MiniMax-M2.5",
     "provider": "stepping-stone",
     "providerName": "stepping stone AG",
-    "displayName": "MinerU2.5 2509 1.2B",
-    "family": null,
-    "releaseDate": "2025-09-17",
-    "lastUpdated": "2025-09-17",
+    "displayName": "MiniMax-M2.5",
+    "family": "minimax-m",
+    "releaseDate": "2026-02-12",
+    "lastUpdated": "2026-02-12",
     "knowledgeCutoff": null,
-    "contextWindow": 16384,
-    "maxOutputTokens": 16384,
+    "contextWindow": 196608,
+    "maxOutputTokens": 131072,
     "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.0238,
-      "output": 0.0714,
-      "cacheRead": 0.0036,
+      "input": 2.3086,
+      "output": 11.543,
+      "cacheRead": 0.3463,
       "currency": "USD",
       "per": 1000000
     },
@@ -656,53 +703,6 @@
       "input": 0.357,
       "output": 1.785,
       "cacheRead": 0.0536,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-V4-Flash-0731",
-    "provider": "stepping-stone",
-    "providerName": "stepping stone AG",
-    "displayName": "DeepSeek V4 Flash 0731",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-07-31",
-    "lastUpdated": "2026-07-31",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 524288,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.5355,
-      "output": 2.142,
-      "cacheRead": 0.0803,
       "currency": "USD",
       "per": 1000000
     },

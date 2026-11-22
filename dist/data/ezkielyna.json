@@ -1,5 +1,53 @@
 [
   {
+    "id": "deepseek-v4.1-flash",
+    "provider": "ezkielyna",
+    "providerName": "Ezkielyna",
+    "displayName": "DeepSeek V4.1 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.04,
+      "output": 0.16,
+      "cacheRead": 0.0054,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "glm-5.3",
     "provider": "ezkielyna",
     "providerName": "Ezkielyna",
@@ -34,102 +82,6 @@
       "input": 0.2244,
       "output": 0.7013,
       "cacheRead": 0.04208,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "step-5-preview",
-    "provider": "ezkielyna",
-    "providerName": "Ezkielyna",
-    "displayName": "Step 5 Preview",
-    "family": null,
-    "releaseDate": "2026-09-16",
-    "lastUpdated": "2026-09-20",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 1000000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.4579,
-      "output": 1.236,
-      "cacheRead": 0.04579,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "deepseek-v4-pro",
-    "provider": "ezkielyna",
-    "providerName": "Ezkielyna",
-    "displayName": "DeepSeek V4 Pro",
-    "family": "deepseek-thinking",
-    "releaseDate": "2026-04-24",
-    "lastUpdated": "2026-04-24",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.66,
-      "output": 1.976,
-      "cacheRead": 0.02186,
       "currency": "USD",
       "per": 1000000
     },
@@ -193,16 +145,16 @@
     ]
   },
   {
-    "id": "deepseek-v4.1-flash",
+    "id": "step-5-preview",
     "provider": "ezkielyna",
     "providerName": "Ezkielyna",
-    "displayName": "DeepSeek V4.1 Flash",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "knowledgeCutoff": "2025-05",
+    "displayName": "Step 5 Preview",
+    "family": "step",
+    "releaseDate": "2026-09-16",
+    "lastUpdated": "2026-09-20",
+    "knowledgeCutoff": null,
     "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
+    "maxOutputTokens": 1000000,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -218,16 +170,64 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "video"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.04,
-      "output": 0.16,
-      "cacheRead": 0.0054,
+      "input": 0.4579,
+      "output": 1.236,
+      "cacheRead": 0.04579,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "deepseek-v4-pro",
+    "provider": "ezkielyna",
+    "providerName": "Ezkielyna",
+    "displayName": "DeepSeek V4 Pro",
+    "family": "deepseek-pro",
+    "releaseDate": "2026-04-24",
+    "lastUpdated": "2026-04-24",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.66,
+      "output": 1.976,
+      "cacheRead": 0.02186,
       "currency": "USD",
       "per": 1000000
     },

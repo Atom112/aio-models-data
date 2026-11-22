@@ -1,59 +1,10 @@
 [
   {
-    "id": "arc-swift-1.0",
-    "provider": "rayline",
-    "providerName": "Rayline",
-    "displayName": "ARC Swift",
-    "family": "ray",
-    "releaseDate": "2026-10-21",
-    "lastUpdated": "2026-10-21",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 128000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.05,
-      "output": 0.25,
-      "cacheRead": 0.005,
-      "cacheWrite": 0.0625,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "arc-sage-1.0",
     "provider": "rayline",
     "providerName": "Rayline",
     "displayName": "ARC Sage",
-    "family": "ray",
+    "family": "model-router",
     "releaseDate": "2026-10-21",
     "lastUpdated": "2026-10-21",
     "knowledgeCutoff": null,
@@ -85,6 +36,55 @@
       "output": 5,
       "cacheRead": 0.05,
       "cacheWrite": 1.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "arc-swift-1.0",
+    "provider": "rayline",
+    "providerName": "Rayline",
+    "displayName": "ARC Swift",
+    "family": "model-router",
+    "releaseDate": "2026-10-21",
+    "lastUpdated": "2026-10-21",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 128000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.05,
+      "output": 0.25,
+      "cacheRead": 0.005,
+      "cacheWrite": 0.0625,
       "currency": "USD",
       "per": 1000000
     },

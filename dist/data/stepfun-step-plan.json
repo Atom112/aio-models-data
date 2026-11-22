@@ -1,10 +1,133 @@
 [
   {
+    "id": "step-router-v1",
+    "provider": "stepfun-step-plan",
+    "providerName": "StepFun Step Plan (China)",
+    "displayName": "Step Router v1",
+    "family": null,
+    "releaseDate": "2026-05-29",
+    "lastUpdated": "2026-05-29",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "step-3.5-flash",
+    "provider": "stepfun-step-plan",
+    "providerName": "StepFun Step Plan (China)",
+    "displayName": "Step 3.5 Flash",
+    "family": "step-flash",
+    "releaseDate": "2026-01-29",
+    "lastUpdated": "2026-02-13",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "step-3.5-flash-2603",
+    "provider": "stepfun-step-plan",
+    "providerName": "StepFun Step Plan (China)",
+    "displayName": "Step 3.5 Flash 2603",
+    "family": "step-flash",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 256000,
+    "maxOutputTokens": 256000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "step-3.7-flash",
     "provider": "stepfun-step-plan",
     "providerName": "StepFun Step Plan (China)",
     "displayName": "Step 3.7 Flash",
-    "family": null,
+    "family": "step-flash",
     "releaseDate": "2026-05-29",
     "lastUpdated": "2026-05-29",
     "knowledgeCutoff": "2026-03-01",
@@ -43,52 +166,11 @@
     ]
   },
   {
-    "id": "step-3.5-flash",
-    "provider": "stepfun-step-plan",
-    "providerName": "StepFun Step Plan (China)",
-    "displayName": "Step 3.5 Flash",
-    "family": "step",
-    "releaseDate": "2026-01-29",
-    "lastUpdated": "2026-02-13",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 256000,
-    "maxOutputTokens": 256000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "step-5-preview",
     "provider": "stepfun-step-plan",
     "providerName": "StepFun Step Plan (China)",
     "displayName": "Step 5 Preview",
-    "family": null,
+    "family": "step",
     "releaseDate": "2026-09-16",
     "lastUpdated": "2026-09-20",
     "knowledgeCutoff": null,
@@ -111,88 +193,6 @@
         "text",
         "image",
         "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "step-3.5-flash-2603",
-    "provider": "stepfun-step-plan",
-    "providerName": "StepFun Step Plan (China)",
-    "displayName": "Step 3.5 Flash 2603",
-    "family": "step",
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-04-02",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 256000,
-    "maxOutputTokens": 256000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "step-router-v1",
-    "provider": "stepfun-step-plan",
-    "providerName": "StepFun Step Plan (China)",
-    "displayName": "Step Router v1",
-    "family": null,
-    "releaseDate": "2026-05-29",
-    "lastUpdated": "2026-05-29",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 256000,
-    "maxOutputTokens": 256000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
       ],
       "output": [
         "text"

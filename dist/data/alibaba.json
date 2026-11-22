@@ -1,26 +1,26 @@
 [
   {
-    "id": "qwen3-32b",
+    "id": "qwen-plus-character-ja",
     "provider": "alibaba",
     "providerName": "Alibaba",
-    "displayName": "Qwen3 32B",
-    "family": "qwen",
-    "releaseDate": "2025-04",
-    "lastUpdated": "2025-04",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 131072,
-    "maxOutputTokens": 16384,
+    "displayName": "Qwen Plus Character (Japanese)",
+    "family": "qwen-plus",
+    "releaseDate": "2024-01",
+    "lastUpdated": "2024-01",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 8192,
+    "maxOutputTokens": 512,
     "capabilities": {
-      "tools": true,
+      "tools": false,
       "vision": false,
-      "reasoning": true,
+      "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
       "attachment": false,
       "structured_output": false,
-      "open_weights": true
+      "open_weights": false
     },
     "modalities": {
       "input": [
@@ -31,8 +31,150 @@
       ]
     },
     "pricing": {
-      "input": 0.7,
-      "output": 2.8,
+      "input": 0.5,
+      "output": 1.4,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3-vl-30b-a3b",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen3-VL 30B-A3B",
+    "family": "qwen-vl",
+    "releaseDate": "2025-04",
+    "lastUpdated": "2025-04",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 131072,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.2,
+      "output": 0.8,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.6-27b",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen3.6 27B",
+    "family": "qwen",
+    "releaseDate": "2026-04-22",
+    "lastUpdated": "2026-04-22",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.6,
+      "output": 3.6,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qvq-max",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "QVQ Max",
+    "family": "qvq",
+    "releaseDate": "2025-03-25",
+    "lastUpdated": "2025-03-25",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 131072,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.2,
+      "output": 4.8,
       "currency": "USD",
       "per": 1000000
     },
@@ -46,11 +188,260 @@
     ]
   },
   {
+    "id": "qwen-max",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen Max",
+    "family": "qwen-max",
+    "releaseDate": "2024-04-03",
+    "lastUpdated": "2025-01-25",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 32768,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.6,
+      "output": 6.4,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "kimi-k3",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Kimi K3",
+    "family": "kimi",
+    "releaseDate": "2026-07-16",
+    "lastUpdated": "2026-07-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 3,
+      "output": 15,
+      "cacheRead": 0.3,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.5-122b-a10b",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen3.5 122B-A10B",
+    "family": "qwen",
+    "releaseDate": "2026-02-23",
+    "lastUpdated": "2026-02-23",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.4,
+      "output": 3.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen-vl-max",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen-VL Max",
+    "family": "qwen-vl-max",
+    "releaseDate": "2024-04-08",
+    "lastUpdated": "2025-08-13",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 131072,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.8,
+      "output": 3.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.5-plus",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen3.5 Plus",
+    "family": "qwen-plus",
+    "releaseDate": "2026-02-16",
+    "lastUpdated": "2026-02-16",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.4,
+      "output": 2.4,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.5,
+          "output": 3,
+          "contextThreshold": 256000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 0.5,
+        "output": 3,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "qwen3.6-flash",
     "provider": "alibaba",
     "providerName": "Alibaba",
     "displayName": "Qwen3.6 Flash",
-    "family": "qwen3.6",
+    "family": "qwen-flash",
     "releaseDate": "2026-04-27",
     "lastUpdated": "2026-04-27",
     "knowledgeCutoff": null,
@@ -108,40 +499,43 @@
     ]
   },
   {
-    "id": "qwen-vl-ocr",
+    "id": "qwen3.5-flash",
     "provider": "alibaba",
     "providerName": "Alibaba",
-    "displayName": "Qwen-VL OCR",
-    "family": "qwen",
-    "releaseDate": "2024-10-28",
-    "lastUpdated": "2025-04-13",
-    "knowledgeCutoff": "2024-04",
-    "contextWindow": 34096,
-    "maxOutputTokens": 4096,
+    "displayName": "Qwen3.5 Flash",
+    "family": "qwen-flash",
+    "releaseDate": "2026-02-23",
+    "lastUpdated": "2026-02-23",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 65536,
     "capabilities": {
-      "tools": false,
+      "tools": true,
       "vision": true,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "video"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.07,
-      "output": 0.16,
+      "input": 0.1,
+      "output": 0.4,
+      "cacheRead": 0.01,
+      "cacheWrite": 0.125,
       "currency": "USD",
       "per": 1000000
     },
@@ -155,47 +549,45 @@
     ]
   },
   {
-    "id": "qwen-omni-turbo-realtime",
+    "id": "glm-5.2",
     "provider": "alibaba",
     "providerName": "Alibaba",
-    "displayName": "Qwen-Omni Turbo Realtime",
-    "family": "qwen",
-    "releaseDate": "2025-05-08",
-    "lastUpdated": "2025-05-08",
-    "knowledgeCutoff": "2024-04",
-    "contextWindow": 32768,
-    "maxOutputTokens": 2048,
+    "displayName": "GLM-5.2",
+    "family": "glm",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
     "capabilities": {
       "tools": true,
-      "vision": true,
-      "reasoning": false,
+      "vision": false,
+      "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "audio"
+        "text"
       ],
       "output": [
-        "text",
-        "audio"
+        "text"
       ]
     },
     "pricing": {
-      "input": 0.27,
-      "output": 1.07,
-      "inputAudio": 4.44,
+      "input": 1.4,
+      "output": 4.4,
+      "cacheRead": 0.28,
+      "cacheWrite": 0,
       "currency": "USD",
       "per": 1000000
     },
-    "status": "deprecated",
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -205,16 +597,16 @@
     ]
   },
   {
-    "id": "qwen-omni-turbo",
+    "id": "qwen3-omni-flash-realtime",
     "provider": "alibaba",
     "providerName": "Alibaba",
-    "displayName": "Qwen-Omni Turbo",
-    "family": "qwen",
-    "releaseDate": "2025-01-19",
-    "lastUpdated": "2025-03-26",
+    "displayName": "Qwen3-Omni Flash Realtime",
+    "family": "qwen-omni-realtime-flash",
+    "releaseDate": "2025-09-15",
+    "lastUpdated": "2025-09-15",
     "knowledgeCutoff": "2024-04",
-    "contextWindow": 32768,
-    "maxOutputTokens": 2048,
+    "contextWindow": 65536,
+    "maxOutputTokens": 16384,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -240,9 +632,9 @@
       ]
     },
     "pricing": {
-      "input": 0.07,
-      "output": 0.27,
-      "inputAudio": 4.44,
+      "input": 0.52,
+      "output": 1.99,
+      "inputAudio": 4.57,
       "currency": "USD",
       "per": 1000000
     },
@@ -256,11 +648,214 @@
     ]
   },
   {
+    "id": "qwen-mt-turbo",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen-MT Turbo",
+    "family": "qwen-mt-turbo",
+    "releaseDate": "2025-01",
+    "lastUpdated": "2025-01",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 16384,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.16,
+      "output": 0.49,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3-coder-flash",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen3 Coder Flash",
+    "family": "qwen-coder-flash",
+    "releaseDate": "2025-07-28",
+    "lastUpdated": "2025-07-28",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 1.5,
+      "cacheRead": 0.06,
+      "cacheWrite": 0.375,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.5,
+          "output": 2.5,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 0.8,
+          "output": 4,
+          "contextThreshold": 128000
+        },
+        {
+          "input": 1.6,
+          "output": 9.6,
+          "contextThreshold": 256000
+        }
+      ]
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3-omni-flash",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen3-Omni Flash",
+    "family": "qwen-omni-flash",
+    "releaseDate": "2025-09-15",
+    "lastUpdated": "2025-09-15",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 65536,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text",
+        "audio"
+      ]
+    },
+    "pricing": {
+      "input": 0.43,
+      "output": 1.66,
+      "inputAudio": 3.81,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3-asr-flash",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen3-ASR Flash",
+    "family": "qwen-asr-flash",
+    "releaseDate": "2025-09-08",
+    "lastUpdated": "2025-09-08",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 53248,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": null,
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "qwen-plus",
     "provider": "alibaba",
     "providerName": "Alibaba",
     "displayName": "Qwen Plus",
-    "family": "qwen",
+    "family": "qwen-plus",
     "releaseDate": "2024-01-25",
     "lastUpdated": "2025-09-11",
     "knowledgeCutoff": "2024-04",
@@ -316,1085 +911,11 @@
     ]
   },
   {
-    "id": "qwen3-8b",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen3 8B",
-    "family": "qwen",
-    "releaseDate": "2025-04",
-    "lastUpdated": "2025-04",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 131072,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.18,
-      "output": 0.7,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-max",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen3 Max",
-    "family": "qwen",
-    "releaseDate": "2025-09-23",
-    "lastUpdated": "2025-09-23",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.2,
-      "output": 6,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3.6-plus",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen3.6 Plus",
-    "family": "qwen",
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-04-02",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.5,
-      "output": 3,
-      "cacheRead": 0.05,
-      "cacheWrite": 0.625,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 2,
-          "output": 6,
-          "contextThreshold": 256000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 2,
-        "output": 6,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen-max",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen Max",
-    "family": "qwen",
-    "releaseDate": "2024-04-03",
-    "lastUpdated": "2025-01-25",
-    "knowledgeCutoff": "2024-04",
-    "contextWindow": 32768,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.6,
-      "output": 6.4,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-coder-480b-a35b-instruct",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen3-Coder 480B-A35B Instruct",
-    "family": "qwen",
-    "releaseDate": "2025-04",
-    "lastUpdated": "2025-04",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.5,
-      "output": 7.5,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 2.7,
-          "output": 13.5,
-          "contextThreshold": 32000
-        },
-        {
-          "input": 4.5,
-          "output": 22.5,
-          "contextThreshold": 128000
-        }
-      ]
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen-plus-character-ja",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen Plus Character (Japanese)",
-    "family": "qwen",
-    "releaseDate": "2024-01",
-    "lastUpdated": "2024-01",
-    "knowledgeCutoff": "2024-04",
-    "contextWindow": 8192,
-    "maxOutputTokens": 512,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.5,
-      "output": 1.4,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3.8-omni-flash",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen3.8 Omni Flash",
-    "family": "qwen",
-    "releaseDate": "2026-09-17",
-    "lastUpdated": "2026-09-17",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.15,
-      "output": 0.47,
-      "cacheRead": 0.016,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-livetranslate-flash-realtime",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen3-LiveTranslate Flash Realtime",
-    "family": "qwen",
-    "releaseDate": "2025-09-22",
-    "lastUpdated": "2025-09-22",
-    "knowledgeCutoff": "2024-04",
-    "contextWindow": 53248,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video"
-      ],
-      "output": [
-        "text",
-        "audio"
-      ]
-    },
-    "pricing": {
-      "input": 10,
-      "output": 10,
-      "inputAudio": 10,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3.5-flash",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen3.5 Flash",
-    "family": "qwen",
-    "releaseDate": "2026-02-23",
-    "lastUpdated": "2026-02-23",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.1,
-      "output": 0.4,
-      "cacheRead": 0.01,
-      "cacheWrite": 0.125,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3.5-397b-a17b",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen3.5 397B-A17B",
-    "family": "qwen",
-    "releaseDate": "2026-02-15",
-    "lastUpdated": "2026-02-15",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.6,
-      "output": 3.6,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-vl-30b-a3b",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen3-VL 30B-A3B",
-    "family": "qwen",
-    "releaseDate": "2025-04",
-    "lastUpdated": "2025-04",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 131072,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.2,
-      "output": 0.8,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-omni-flash",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen3-Omni Flash",
-    "family": "qwen",
-    "releaseDate": "2025-09-15",
-    "lastUpdated": "2025-09-15",
-    "knowledgeCutoff": "2024-04",
-    "contextWindow": 65536,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video"
-      ],
-      "output": [
-        "text",
-        "audio"
-      ]
-    },
-    "pricing": {
-      "input": 0.43,
-      "output": 1.66,
-      "inputAudio": 3.81,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-235b-a22b",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen3 235B-A22B",
-    "family": "qwen",
-    "releaseDate": "2025-04",
-    "lastUpdated": "2025-04",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 131072,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.7,
-      "output": 2.8,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3.5-27b",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen3.5 27B",
-    "family": "qwen",
-    "releaseDate": "2026-02-23",
-    "lastUpdated": "2026-02-23",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 2.4,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3.6-35b-a3b",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen3.6 35B-A3B",
-    "family": "qwen",
-    "releaseDate": "2026-04-17",
-    "lastUpdated": "2026-04-17",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.375,
-      "output": 2.25,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "kimi-k3",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Kimi K3",
-    "family": "kimi-k3",
-    "releaseDate": "2026-07-16",
-    "lastUpdated": "2026-07-16",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 3,
-      "output": 15,
-      "cacheRead": 0.3,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-omni-flash-realtime",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen3-Omni Flash Realtime",
-    "family": "qwen",
-    "releaseDate": "2025-09-15",
-    "lastUpdated": "2025-09-15",
-    "knowledgeCutoff": "2024-04",
-    "contextWindow": 65536,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video"
-      ],
-      "output": [
-        "text",
-        "audio"
-      ]
-    },
-    "pricing": {
-      "input": 0.52,
-      "output": 1.99,
-      "inputAudio": 4.57,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qvq-max",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "QVQ Max",
-    "family": "qvq",
-    "releaseDate": "2025-03-25",
-    "lastUpdated": "2025-03-25",
-    "knowledgeCutoff": "2024-04",
-    "contextWindow": 131072,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.2,
-      "output": 4.8,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen2-5-omni-7b",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen2.5-Omni 7B",
-    "family": "qwen",
-    "releaseDate": "2024-12",
-    "lastUpdated": "2024-12",
-    "knowledgeCutoff": "2024-04",
-    "contextWindow": 32768,
-    "maxOutputTokens": 2048,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video"
-      ],
-      "output": [
-        "text",
-        "audio"
-      ]
-    },
-    "pricing": {
-      "input": 0.1,
-      "output": 0.4,
-      "inputAudio": 6.76,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-next-80b-a3b-thinking",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen3-Next 80B-A3B (Thinking)",
-    "family": "qwen",
-    "releaseDate": "2025-09",
-    "lastUpdated": "2025-09",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 131072,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.5,
-      "output": 6,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen-vl-max",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen-VL Max",
-    "family": "qwen",
-    "releaseDate": "2024-04-08",
-    "lastUpdated": "2025-08-13",
-    "knowledgeCutoff": "2024-04",
-    "contextWindow": 131072,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.8,
-      "output": 3.2,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-asr-flash",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen3-ASR Flash",
-    "family": "qwen",
-    "releaseDate": "2025-09-08",
-    "lastUpdated": "2025-09-08",
-    "knowledgeCutoff": "2024-04",
-    "contextWindow": 53248,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "audio"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "qwen3.8-flash",
     "provider": "alibaba",
     "providerName": "Alibaba",
     "displayName": "Qwen3.8 Flash",
-    "family": "qwen",
+    "family": "qwen-flash",
     "releaseDate": "2026-08-26",
     "lastUpdated": "2026-08-26",
     "knowledgeCutoff": null,
@@ -1440,16 +961,16 @@
     ]
   },
   {
-    "id": "qwen-turbo",
+    "id": "qwen3-next-80b-a3b-thinking",
     "provider": "alibaba",
     "providerName": "Alibaba",
-    "displayName": "Qwen Turbo",
+    "displayName": "Qwen3-Next 80B-A3B (Thinking)",
     "family": "qwen",
-    "releaseDate": "2024-11-01",
-    "lastUpdated": "2025-04-28",
-    "knowledgeCutoff": "2024-04",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 16384,
+    "releaseDate": "2025-09",
+    "lastUpdated": "2025-09",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 131072,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -1460,66 +981,19 @@
       "temperature": true,
       "attachment": false,
       "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.05,
-      "output": 0.2,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-vl-235b-a22b",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen3-VL 235B-A22B",
-    "family": "qwen",
-    "releaseDate": "2025-04",
-    "lastUpdated": "2025-04",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 131072,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.7,
-      "output": 2.8,
+      "input": 0.5,
+      "output": 6,
       "currency": "USD",
       "per": 1000000
     },
@@ -1581,545 +1055,26 @@
     ]
   },
   {
-    "id": "deepseek-v4-flash-0731",
+    "id": "qwen-vl-plus",
     "provider": "alibaba",
     "providerName": "Alibaba",
-    "displayName": "DeepSeek V4 Flash 0731",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-07-31",
-    "lastUpdated": "2026-07-31",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 384000,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.44,
-      "output": 1.32,
-      "cacheRead": 0.088,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen-mt-turbo",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen-MT Turbo",
-    "family": "qwen",
-    "releaseDate": "2025-01",
-    "lastUpdated": "2025-01",
+    "displayName": "Qwen-VL Plus",
+    "family": "qwen-vl-plus",
+    "releaseDate": "2024-01-25",
+    "lastUpdated": "2025-08-15",
     "knowledgeCutoff": "2024-04",
-    "contextWindow": 16384,
+    "contextWindow": 131072,
     "maxOutputTokens": 8192,
     "capabilities": {
-      "tools": false,
-      "vision": false,
+      "tools": true,
+      "vision": true,
       "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
+      "attachment": true,
       "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.16,
-      "output": 0.49,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3.6-max-preview",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen3.6 Max Preview",
-    "family": "qwen",
-    "releaseDate": "2026-04-20",
-    "lastUpdated": "2026-04-20",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.3,
-      "output": 7.8,
-      "cacheRead": 0.13,
-      "cacheWrite": 1.625,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3.6-27b",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen3.6 27B",
-    "family": "qwen",
-    "releaseDate": "2026-04-22",
-    "lastUpdated": "2026-04-22",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.6,
-      "output": 3.6,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-coder-flash",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen3 Coder Flash",
-    "family": "qwen",
-    "releaseDate": "2025-07-28",
-    "lastUpdated": "2025-07-28",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.3,
-      "output": 1.5,
-      "cacheRead": 0.06,
-      "cacheWrite": 0.375,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.5,
-          "output": 2.5,
-          "contextThreshold": 32000
-        },
-        {
-          "input": 0.8,
-          "output": 4,
-          "contextThreshold": 128000
-        },
-        {
-          "input": 1.6,
-          "output": 9.6,
-          "contextThreshold": 256000
-        }
-      ]
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3.5-plus",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen3.5 Plus",
-    "family": "qwen",
-    "releaseDate": "2026-02-16",
-    "lastUpdated": "2026-02-16",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.4,
-      "output": 2.4,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.5,
-          "output": 3,
-          "contextThreshold": 256000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 0.5,
-        "output": 3,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3.7-flash",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen3.7 Flash",
-    "family": "qwen",
-    "releaseDate": "2026-07-15",
-    "lastUpdated": "2026-07-15",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.03,
-      "output": 0.13,
-      "cacheRead": 0.006,
-      "cacheWrite": 0.0375,
-      "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.1,
-          "output": 0.4,
-          "contextThreshold": 32000
-        },
-        {
-          "input": 0.2,
-          "output": 0.8,
-          "contextThreshold": 256000
-        }
-      ]
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen-mt-plus",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen-MT Plus",
-    "family": "qwen",
-    "releaseDate": "2025-01",
-    "lastUpdated": "2025-01",
-    "knowledgeCutoff": "2024-04",
-    "contextWindow": 16384,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2.46,
-      "output": 7.37,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3.8-max",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen3.8 Max",
-    "family": "qwen",
-    "releaseDate": "2026-08-03",
-    "lastUpdated": "2026-08-03",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2,
-      "output": 6,
-      "cacheRead": 0.25,
-      "cacheWrite": 2.5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-coder-plus",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen3 Coder Plus",
-    "family": "qwen",
-    "releaseDate": "2025-07-23",
-    "lastUpdated": "2025-07-23",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1,
-      "output": 5,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen3-vl-plus",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "Qwen3-VL Plus",
-    "family": "qwen",
-    "releaseDate": "2025-09-23",
-    "lastUpdated": "2025-09-23",
-    "knowledgeCutoff": "2025-04",
-    "contextWindow": 262144,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
       "open_weights": false
     },
     "modalities": {
@@ -2132,26 +1087,12 @@
       ]
     },
     "pricing": {
-      "input": 0.2,
-      "output": 1.6,
-      "cacheRead": 0.04,
-      "cacheWrite": 0.25,
+      "input": 0.21,
+      "output": 0.63,
       "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.3,
-          "output": 2.4,
-          "contextThreshold": 32000
-        },
-        {
-          "input": 0.6,
-          "output": 4.8,
-          "contextThreshold": 128000
-        }
-      ]
+      "per": 1000000
     },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2207,10 +1148,108 @@
     ]
   },
   {
-    "id": "qwen3.5-122b-a10b",
+    "id": "deepseek-v4-flash-0731",
     "provider": "alibaba",
     "providerName": "Alibaba",
-    "displayName": "Qwen3.5 122B-A10B",
+    "displayName": "DeepSeek V4 Flash 0731",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-07-31",
+    "lastUpdated": "2026-07-31",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 384000,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.44,
+      "output": 1.32,
+      "cacheRead": 0.088,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.8-max",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen3.8 Max",
+    "family": "qwen-max",
+    "releaseDate": "2026-08-03",
+    "lastUpdated": "2026-08-03",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2,
+      "output": 6,
+      "cacheRead": 0.25,
+      "cacheWrite": 2.5,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.5-27b",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen3.5 27B",
     "family": "qwen",
     "releaseDate": "2026-02-23",
     "lastUpdated": "2026-02-23",
@@ -2240,8 +1279,8 @@
       ]
     },
     "pricing": {
-      "input": 0.4,
-      "output": 3.2,
+      "input": 0.3,
+      "output": 2.4,
       "currency": "USD",
       "per": 1000000
     },
@@ -2255,15 +1294,15 @@
     ]
   },
   {
-    "id": "qwen3-coder-30b-a3b-instruct",
+    "id": "qwen3-coder-plus",
     "provider": "alibaba",
     "providerName": "Alibaba",
-    "displayName": "Qwen3-Coder 30B-A3B Instruct",
-    "family": "qwen",
-    "releaseDate": "2025-04",
-    "lastUpdated": "2025-04",
+    "displayName": "Qwen3 Coder Plus",
+    "family": "qwen-coder-plus",
+    "releaseDate": "2025-07-23",
+    "lastUpdated": "2025-07-23",
     "knowledgeCutoff": "2025-04",
-    "contextWindow": 262144,
+    "contextWindow": 1048576,
     "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
@@ -2286,24 +1325,62 @@
       ]
     },
     "pricing": {
-      "input": 0.45,
-      "output": 2.25,
+      "input": 1,
+      "output": 5,
       "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.75,
-          "output": 3.75,
-          "contextThreshold": 32000
-        },
-        {
-          "input": 1.2,
-          "output": 6,
-          "contextThreshold": 128000
-        }
-      ]
+      "per": 1000000
     },
     "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.8-omni-flash",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen3.8 Omni Flash",
+    "family": "qwen-omni-flash",
+    "releaseDate": "2026-09-17",
+    "lastUpdated": "2026-09-17",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.47,
+      "cacheRead": 0.016,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2317,7 +1394,7 @@
     "provider": "alibaba",
     "providerName": "Alibaba",
     "displayName": "QwQ Plus",
-    "family": "qwen",
+    "family": "qwq",
     "releaseDate": "2025-03-05",
     "lastUpdated": "2025-03-05",
     "knowledgeCutoff": "2024-04",
@@ -2359,57 +1436,44 @@
     ]
   },
   {
-    "id": "qwen-flash",
+    "id": "qwen3-vl-235b-a22b",
     "provider": "alibaba",
     "providerName": "Alibaba",
-    "displayName": "Qwen Flash",
-    "family": "qwen",
-    "releaseDate": "2025-07-28",
-    "lastUpdated": "2025-07-28",
-    "knowledgeCutoff": "2024-04",
-    "contextWindow": 1000000,
+    "displayName": "Qwen3-VL 235B-A22B",
+    "family": "qwen-vl",
+    "releaseDate": "2025-04",
+    "lastUpdated": "2025-04",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 131072,
     "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": false
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
     },
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.05,
-      "output": 0.4,
-      "cacheRead": 0.01,
-      "cacheWrite": 0.0625,
+      "input": 0.7,
+      "output": 2.8,
       "currency": "USD",
-      "per": 1000000,
-      "tiers": [
-        {
-          "input": 0.25,
-          "output": 2,
-          "contextThreshold": 256000
-        }
-      ],
-      "contextOverThreshold": {
-        "input": 0.25,
-        "output": 2,
-        "contextThreshold": 200000
-      }
+      "per": 1000000
     },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -2419,16 +1483,16 @@
     ]
   },
   {
-    "id": "qwen3.7-plus",
+    "id": "qwen3-vl-plus",
     "provider": "alibaba",
     "providerName": "Alibaba",
-    "displayName": "Qwen3.7 Plus",
-    "family": "qwen",
-    "releaseDate": "2026-06-02",
-    "lastUpdated": "2026-06-04",
+    "displayName": "Qwen3-VL Plus",
+    "family": "qwen-vl-plus",
+    "releaseDate": "2025-09-23",
+    "lastUpdated": "2025-09-23",
     "knowledgeCutoff": "2025-04",
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
+    "contextWindow": 262144,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -2452,73 +1516,25 @@
       ]
     },
     "pricing": {
-      "input": 0.4,
+      "input": 0.2,
       "output": 1.6,
-      "cacheRead": 0.08,
-      "cacheWrite": 0.5,
+      "cacheRead": 0.04,
+      "cacheWrite": 0.25,
       "currency": "USD",
       "per": 1000000,
       "tiers": [
         {
-          "input": 1.2,
+          "input": 0.3,
+          "output": 2.4,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 0.6,
           "output": 4.8,
-          "contextThreshold": 256000
+          "contextThreshold": 128000
         }
-      ],
-      "contextOverThreshold": {
-        "input": 1.2,
-        "output": 4.8,
-        "contextThreshold": 200000
-      }
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "glm-5.2",
-    "provider": "alibaba",
-    "providerName": "Alibaba",
-    "displayName": "GLM-5.2",
-    "family": "glm",
-    "releaseDate": "2026-06-13",
-    "lastUpdated": "2026-06-13",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
       ]
     },
-    "pricing": {
-      "input": 1.4,
-      "output": 4.4,
-      "cacheRead": 0.28,
-      "cacheWrite": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
@@ -2529,16 +1545,16 @@
     ]
   },
   {
-    "id": "qwen-vl-plus",
+    "id": "qwen-omni-turbo-realtime",
     "provider": "alibaba",
     "providerName": "Alibaba",
-    "displayName": "Qwen-VL Plus",
-    "family": "qwen",
-    "releaseDate": "2024-01-25",
-    "lastUpdated": "2025-08-15",
+    "displayName": "Qwen-Omni Turbo Realtime",
+    "family": "qwen-omni-realtime",
+    "releaseDate": "2025-05-08",
+    "lastUpdated": "2025-05-08",
     "knowledgeCutoff": "2024-04",
-    "contextWindow": 131072,
-    "maxOutputTokens": 8192,
+    "contextWindow": 32768,
+    "maxOutputTokens": 2048,
     "capabilities": {
       "tools": true,
       "vision": true,
@@ -2554,15 +1570,112 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "audio"
+      ],
+      "output": [
+        "text",
+        "audio"
+      ]
+    },
+    "pricing": {
+      "input": 0.27,
+      "output": 1.07,
+      "inputAudio": 4.44,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.5-397b-a17b",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen3.5 397B-A17B",
+    "family": "qwen",
+    "releaseDate": "2026-02-15",
+    "lastUpdated": "2026-02-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
       ],
       "output": [
         "text"
       ]
     },
     "pricing": {
-      "input": 0.21,
-      "output": 0.63,
+      "input": 0.6,
+      "output": 3.6,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3-max",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen3 Max",
+    "family": "qwen-max",
+    "releaseDate": "2025-09-23",
+    "lastUpdated": "2025-09-23",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.2,
+      "output": 6,
       "currency": "USD",
       "per": 1000000
     },
@@ -2622,11 +1735,224 @@
     ]
   },
   {
+    "id": "qwen3-livetranslate-flash-realtime",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen3-LiveTranslate Flash Realtime",
+    "family": "qwen-livetranslate",
+    "releaseDate": "2025-09-22",
+    "lastUpdated": "2025-09-22",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 53248,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text",
+        "audio"
+      ]
+    },
+    "pricing": {
+      "input": 10,
+      "output": 10,
+      "inputAudio": 10,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3-coder-480b-a35b-instruct",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen3-Coder 480B-A35B Instruct",
+    "family": "qwen-coder",
+    "releaseDate": "2025-04",
+    "lastUpdated": "2025-04",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.5,
+      "output": 7.5,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 2.7,
+          "output": 13.5,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 4.5,
+          "output": 22.5,
+          "contextThreshold": 128000
+        }
+      ]
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3-coder-30b-a3b-instruct",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen3-Coder 30B-A3B Instruct",
+    "family": "qwen-coder",
+    "releaseDate": "2025-04",
+    "lastUpdated": "2025-04",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.45,
+      "output": 2.25,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.75,
+          "output": 3.75,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 1.2,
+          "output": 6,
+          "contextThreshold": 128000
+        }
+      ]
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3-32b",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen3 32B",
+    "family": "qwen",
+    "releaseDate": "2025-04",
+    "lastUpdated": "2025-04",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 131072,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.7,
+      "output": 2.8,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "qwen3.7-max",
     "provider": "alibaba",
     "providerName": "Alibaba",
     "displayName": "Qwen3.7 Max",
-    "family": "qwen",
+    "family": "qwen-max",
     "releaseDate": "2026-05-21",
     "lastUpdated": "2026-05-21",
     "knowledgeCutoff": null,
@@ -2661,6 +1987,681 @@
       "per": 1000000
     },
     "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.6-35b-a3b",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen3.6 35B-A3B",
+    "family": "qwen",
+    "releaseDate": "2026-04-17",
+    "lastUpdated": "2026-04-17",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.375,
+      "output": 2.25,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen-omni-turbo",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen-Omni Turbo",
+    "family": "qwen-omni",
+    "releaseDate": "2025-01-19",
+    "lastUpdated": "2025-03-26",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 32768,
+    "maxOutputTokens": 2048,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text",
+        "audio"
+      ]
+    },
+    "pricing": {
+      "input": 0.07,
+      "output": 0.27,
+      "inputAudio": 4.44,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen-turbo",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen Turbo",
+    "family": "qwen-turbo",
+    "releaseDate": "2024-11-01",
+    "lastUpdated": "2025-04-28",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.05,
+      "output": 0.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen-vl-ocr",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen-VL OCR",
+    "family": "qwen-vl",
+    "releaseDate": "2024-10-28",
+    "lastUpdated": "2025-04-13",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 34096,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.07,
+      "output": 0.16,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen-flash",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen Flash",
+    "family": "qwen-flash",
+    "releaseDate": "2025-07-28",
+    "lastUpdated": "2025-07-28",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.05,
+      "output": 0.4,
+      "cacheRead": 0.01,
+      "cacheWrite": 0.0625,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.25,
+          "output": 2,
+          "contextThreshold": 256000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 0.25,
+        "output": 2,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3-8b",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen3 8B",
+    "family": "qwen",
+    "releaseDate": "2025-04",
+    "lastUpdated": "2025-04",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 131072,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.18,
+      "output": 0.7,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3-235b-a22b",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen3 235B-A22B",
+    "family": "qwen",
+    "releaseDate": "2025-04",
+    "lastUpdated": "2025-04",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 131072,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.7,
+      "output": 2.8,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.7-flash",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen3.7 Flash",
+    "family": "qwen-flash",
+    "releaseDate": "2026-07-15",
+    "lastUpdated": "2026-07-15",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.03,
+      "output": 0.13,
+      "cacheRead": 0.006,
+      "cacheWrite": 0.0375,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 0.1,
+          "output": 0.4,
+          "contextThreshold": 32000
+        },
+        {
+          "input": 0.2,
+          "output": 0.8,
+          "contextThreshold": 256000
+        }
+      ]
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.7-plus",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen3.7 Plus",
+    "family": "qwen-plus",
+    "releaseDate": "2026-06-02",
+    "lastUpdated": "2026-06-04",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.4,
+      "output": 1.6,
+      "cacheRead": 0.08,
+      "cacheWrite": 0.5,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 1.2,
+          "output": 4.8,
+          "contextThreshold": 256000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 1.2,
+        "output": 4.8,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.6-max-preview",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen3.6 Max Preview",
+    "family": "qwen-max",
+    "releaseDate": "2026-04-20",
+    "lastUpdated": "2026-04-20",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 262144,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.3,
+      "output": 7.8,
+      "cacheRead": 0.13,
+      "cacheWrite": 1.625,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen-mt-plus",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen-MT Plus",
+    "family": "qwen-mt-plus",
+    "releaseDate": "2025-01",
+    "lastUpdated": "2025-01",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 16384,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.46,
+      "output": 7.37,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen3.6-plus",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen3.6 Plus",
+    "family": "qwen-plus",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "knowledgeCutoff": "2025-04",
+    "contextWindow": 1000000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.5,
+      "output": 3,
+      "cacheRead": 0.05,
+      "cacheWrite": 0.625,
+      "currency": "USD",
+      "per": 1000000,
+      "tiers": [
+        {
+          "input": 2,
+          "output": 6,
+          "contextThreshold": 256000
+        }
+      ],
+      "contextOverThreshold": {
+        "input": 2,
+        "output": 6,
+        "contextThreshold": 200000
+      }
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen2-5-omni-7b",
+    "provider": "alibaba",
+    "providerName": "Alibaba",
+    "displayName": "Qwen2.5-Omni 7B",
+    "family": "qwen-omni",
+    "releaseDate": "2024-12",
+    "lastUpdated": "2024-12",
+    "knowledgeCutoff": "2024-04",
+    "contextWindow": 32768,
+    "maxOutputTokens": 2048,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text",
+        "audio"
+      ]
+    },
+    "pricing": {
+      "input": 0.1,
+      "output": 0.4,
+      "inputAudio": 6.76,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],

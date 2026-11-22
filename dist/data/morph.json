@@ -1,51 +1,5 @@
 [
   {
-    "id": "morph-v3-large",
-    "provider": "morph",
-    "providerName": "Morph",
-    "displayName": "Morph V3 Large",
-    "family": "morph",
-    "releaseDate": "2025-07-07",
-    "lastUpdated": "2025-07-07",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.9,
-      "output": 1.9,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "morph-glm52-744b",
     "provider": "morph",
     "providerName": "Morph",
@@ -93,11 +47,153 @@
     ]
   },
   {
+    "id": "morph-v3-fast",
+    "provider": "morph",
+    "providerName": "Morph",
+    "displayName": "Morph V3 Fast",
+    "family": "morph-fast",
+    "releaseDate": "2025-07-07",
+    "lastUpdated": "2025-07-07",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.8,
+      "output": 1.2,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "morph-dsv41flash",
+    "provider": "morph",
+    "providerName": "Morph",
+    "displayName": "DeepSeek V4.1 Flash",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-09-10",
+    "lastUpdated": "2026-09-10",
+    "knowledgeCutoff": "2025-05",
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.12,
+      "output": 0.8,
+      "cacheRead": 0.008,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "morph-kimik31",
+    "provider": "morph",
+    "providerName": "Morph",
+    "displayName": "Kimi K3.1 Pro",
+    "family": "kimi-pro",
+    "releaseDate": "2026-10-23",
+    "lastUpdated": "2026-10-23",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 2.5,
+      "output": 14,
+      "cacheRead": 0.29,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "morph-kimik3-fast",
     "provider": "morph",
     "providerName": "Morph",
     "displayName": "Kimi K3 Fast",
-    "family": "kimi-k3",
+    "family": "kimi",
     "releaseDate": "2026-07-16",
     "lastUpdated": "2026-07-16",
     "knowledgeCutoff": null,
@@ -141,14 +237,106 @@
     ]
   },
   {
-    "id": "morph-kimik3",
+    "id": "morph-v3-large",
     "provider": "morph",
     "providerName": "Morph",
-    "displayName": "Kimi K3",
-    "family": "kimi-k3",
-    "releaseDate": "2026-07-16",
-    "lastUpdated": "2026-07-16",
+    "displayName": "Morph V3 Large",
+    "family": "morph-large",
+    "releaseDate": "2025-07-07",
+    "lastUpdated": "2025-07-07",
     "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.9,
+      "output": 1.9,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "auto",
+    "provider": "morph",
+    "providerName": "Morph",
+    "displayName": "Auto",
+    "family": "auto",
+    "releaseDate": "2024-06-01",
+    "lastUpdated": "2024-06-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 32000,
+    "maxOutputTokens": 32000,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.85,
+      "output": 1.55,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "morph-dsv41flash-1017",
+    "provider": "morph",
+    "providerName": "Morph",
+    "displayName": "DeepSeek V4.1 Flash 1017",
+    "family": "deepseek-flash",
+    "releaseDate": "2026-10-17",
+    "lastUpdated": "2026-10-17",
+    "knowledgeCutoff": "2025-05",
     "contextWindow": 1048576,
     "maxOutputTokens": 1048576,
     "capabilities": {
@@ -158,7 +346,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": true,
       "open_weights": true
@@ -173,9 +361,9 @@
       ]
     },
     "pricing": {
-      "input": 2.5,
-      "output": 14,
-      "cacheRead": 0.29,
+      "input": 0.12,
+      "output": 0.8,
+      "cacheRead": 0.008,
       "currency": "USD",
       "per": 1000000
     },
@@ -285,102 +473,6 @@
     ]
   },
   {
-    "id": "morph-dsv41flash-1017",
-    "provider": "morph",
-    "providerName": "Morph",
-    "displayName": "DeepSeek V4.1 Flash 1017",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-10-17",
-    "lastUpdated": "2026-10-17",
-    "knowledgeCutoff": "2025-05",
-    "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.12,
-      "output": 0.8,
-      "cacheRead": 0.008,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "morph-kimik31",
-    "provider": "morph",
-    "providerName": "Morph",
-    "displayName": "Kimi K3.1 Pro",
-    "family": "kimi-k3",
-    "releaseDate": "2026-10-23",
-    "lastUpdated": "2026-10-23",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 2.5,
-      "output": 14,
-      "cacheRead": 0.29,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "morph-glm53-744b",
     "provider": "morph",
     "providerName": "Morph",
@@ -428,106 +520,14 @@
     ]
   },
   {
-    "id": "auto",
+    "id": "morph-kimik3",
     "provider": "morph",
     "providerName": "Morph",
-    "displayName": "Auto",
-    "family": "auto",
-    "releaseDate": "2024-06-01",
-    "lastUpdated": "2024-06-01",
+    "displayName": "Kimi K3",
+    "family": "kimi",
+    "releaseDate": "2026-07-16",
+    "lastUpdated": "2026-07-16",
     "knowledgeCutoff": null,
-    "contextWindow": 32000,
-    "maxOutputTokens": 32000,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.85,
-      "output": 1.55,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "morph-v3-fast",
-    "provider": "morph",
-    "providerName": "Morph",
-    "displayName": "Morph V3 Fast",
-    "family": "morph",
-    "releaseDate": "2025-07-07",
-    "lastUpdated": "2025-07-07",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.8,
-      "output": 1.2,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "morph-dsv41flash",
-    "provider": "morph",
-    "providerName": "Morph",
-    "displayName": "DeepSeek V4.1 Flash",
-    "family": "deepseek-flash",
-    "releaseDate": "2026-09-10",
-    "lastUpdated": "2026-09-10",
-    "knowledgeCutoff": "2025-05",
     "contextWindow": 1048576,
     "maxOutputTokens": 1048576,
     "capabilities": {
@@ -537,7 +537,7 @@
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
-      "temperature": true,
+      "temperature": false,
       "attachment": true,
       "structured_output": true,
       "open_weights": true
@@ -552,9 +552,9 @@
       ]
     },
     "pricing": {
-      "input": 0.12,
-      "output": 0.8,
-      "cacheRead": 0.008,
+      "input": 2.5,
+      "output": 14,
+      "cacheRead": 0.29,
       "currency": "USD",
       "per": 1000000
     },

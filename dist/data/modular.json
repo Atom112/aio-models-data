@@ -48,6 +48,55 @@
     ]
   },
   {
+    "id": "MiniMaxAI/MiniMax-M3.1-Flash",
+    "provider": "modular",
+    "providerName": "Modular",
+    "displayName": "MiniMax-M3.1-Flash",
+    "family": "minimax-m-flash",
+    "releaseDate": "2026-10-19",
+    "lastUpdated": "2026-10-19",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 512000,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0.15,
+      "output": 0.6,
+      "cacheRead": 0.015,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "deepseek/deepseek-v4.1-flash-1017",
     "provider": "modular",
     "providerName": "Modular",
@@ -100,7 +149,7 @@
     "provider": "modular",
     "providerName": "Modular",
     "displayName": "MiniMax-M3",
-    "family": "minimax",
+    "family": "minimax-m",
     "releaseDate": "2026-06-01",
     "lastUpdated": "2026-06-01",
     "knowledgeCutoff": null,
@@ -132,55 +181,6 @@
       "input": 0.3,
       "output": 1.2,
       "cacheRead": 0.06,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "MiniMaxAI/MiniMax-M3.1-Flash",
-    "provider": "modular",
-    "providerName": "Modular",
-    "displayName": "MiniMax-M3.1-Flash",
-    "family": "minimax",
-    "releaseDate": "2026-10-19",
-    "lastUpdated": "2026-10-19",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 512000,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0.15,
-      "output": 0.6,
-      "cacheRead": 0.015,
       "currency": "USD",
       "per": 1000000
     },

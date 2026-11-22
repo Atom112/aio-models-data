@@ -1,14 +1,14 @@
 [
   {
-    "id": "Ling-3.1-flash",
+    "id": "Ling-3.0-tiny",
     "provider": "bailing",
     "providerName": "Bailing",
-    "displayName": "Ling 3.1 Flash",
-    "family": "ling",
-    "releaseDate": "2026-09-29",
-    "lastUpdated": "2026-09-29",
+    "displayName": "Ling 3.0 Tiny",
+    "family": "ling-tiny",
+    "releaseDate": "2026-08-07",
+    "lastUpdated": "2026-08-07",
     "knowledgeCutoff": null,
-    "contextWindow": 1000000,
+    "contextWindow": 131072,
     "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
@@ -30,13 +30,7 @@
         "text"
       ]
     },
-    "pricing": {
-      "input": 0.3,
-      "output": 0.9,
-      "cacheRead": 0.06,
-      "currency": "USD",
-      "per": 1000000
-    },
+    "pricing": null,
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
@@ -51,7 +45,7 @@
     "provider": "bailing",
     "providerName": "Bailing",
     "displayName": "Ling 3.0 Flash VL",
-    "family": "ling",
+    "family": "ling-flash",
     "releaseDate": "2026-09-10",
     "lastUpdated": "2026-09-10",
     "knowledgeCutoff": null,
@@ -96,15 +90,15 @@
     ]
   },
   {
-    "id": "Ling-3.0-tiny",
+    "id": "Ling-3.1-flash",
     "provider": "bailing",
     "providerName": "Bailing",
-    "displayName": "Ling 3.0 Tiny",
-    "family": "ling",
-    "releaseDate": "2026-08-07",
-    "lastUpdated": "2026-08-07",
+    "displayName": "Ling 3.1 Flash",
+    "family": "ling-flash",
+    "releaseDate": "2026-09-29",
+    "lastUpdated": "2026-09-29",
     "knowledgeCutoff": null,
-    "contextWindow": 131072,
+    "contextWindow": 1000000,
     "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
@@ -126,6 +120,55 @@
         "text"
       ]
     },
+    "pricing": {
+      "input": 0.3,
+      "output": 0.9,
+      "cacheRead": 0.06,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "Ling-3.2-flash",
+    "provider": "bailing",
+    "providerName": "Bailing",
+    "displayName": "Ling 3.2 Flash",
+    "family": "ling-flash",
+    "releaseDate": "2026-11-05",
+    "lastUpdated": "2026-11-05",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
     "pricing": null,
     "status": "active",
     "deprecationDate": null,
@@ -141,7 +184,7 @@
     "provider": "bailing",
     "providerName": "Bailing",
     "displayName": "Ling 3.0 Flash",
-    "family": "ling",
+    "family": "ling-flash",
     "releaseDate": "2026-07-23",
     "lastUpdated": "2026-07-23",
     "knowledgeCutoff": null,
@@ -174,49 +217,6 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "Ling-3.2-flash",
-    "provider": "bailing",
-    "providerName": "Bailing",
-    "displayName": "Ling 3.2 Flash",
-    "family": "ling",
-    "releaseDate": "2026-11-05",
-    "lastUpdated": "2026-11-05",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": null,
     "status": "active",
     "deprecationDate": null,
     "replacedBy": null,

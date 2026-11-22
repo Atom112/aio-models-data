@@ -1,739 +1,30 @@
 [
   {
-    "id": "stepfun-ai/step-5-preview",
+    "id": "mistralai/magistral-small-2506",
     "provider": "nvidia",
     "providerName": "Nvidia",
-    "displayName": "Step 5 Preview",
-    "family": null,
-    "releaseDate": "2026-09-16",
-    "lastUpdated": "2026-09-20",
+    "displayName": "Magistral Small 2506",
+    "family": "magistral-small",
+    "releaseDate": "2025-06-10",
+    "lastUpdated": "2025-06-10",
     "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "z-ai/glm-5.3",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "GLM-5.3",
-    "family": "glm",
-    "releaseDate": "2026-08-14",
-    "lastUpdated": "2026-08-14",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "z-ai/glm-5.3-flash",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "GLM-5.3-Flash",
-    "family": "glm-flash",
-    "releaseDate": "2026-08-26",
-    "lastUpdated": "2026-08-26",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "minimaxai/minimax-m3.1-flash",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "MiniMax-M3.1-Flash",
-    "family": "minimax",
-    "releaseDate": "2026-10-19",
-    "lastUpdated": "2026-10-19",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "meta/llama-3.2-11b-vision-instruct",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "Llama 3.2 11b Vision Instruct",
-    "family": "llama",
-    "releaseDate": "2024-09-25",
-    "lastUpdated": "2024-09-25",
-    "knowledgeCutoff": "2023-12",
-    "contextWindow": 128000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "meta/llama-guard-4-12b",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "Llama Guard 4 12B",
-    "family": "llama",
-    "releaseDate": "2025-04-29",
-    "lastUpdated": "2025-04-29",
-    "knowledgeCutoff": null,
-    "contextWindow": 163840,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "meta/llama-3.2-90b-vision-instruct",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "Llama-3.2-90B-Vision-Instruct",
-    "family": "llama",
-    "releaseDate": "2024-09-25",
-    "lastUpdated": "2024-09-25",
-    "knowledgeCutoff": "2023-12",
-    "contextWindow": 128000,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "meta/muse-glimmer-30b",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "Muse Glimmer 30B",
-    "family": "muse",
-    "releaseDate": "2026-08-10",
-    "lastUpdated": "2026-08-10",
-    "knowledgeCutoff": "2026-01-04",
-    "contextWindow": 131072,
-    "maxOutputTokens": 131072,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "poolside/laguna-xs-2.1",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "Laguna XS 2.1",
-    "family": "laguna",
-    "releaseDate": "2026-07-02",
-    "lastUpdated": "2026-07-02",
-    "knowledgeCutoff": null,
-    "contextWindow": 262144,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "moonshotai/kimi-k2.6",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "Kimi K2.6",
-    "family": "kimi-k2",
-    "releaseDate": "2026-04-20",
-    "lastUpdated": "2026-04-20",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "moonshotai/kimi-k3",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "Kimi K3",
-    "family": "kimi-k3",
-    "releaseDate": "2026-07-16",
-    "lastUpdated": "2026-07-16",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 1048576,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "google/google-paligemma",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "paligemma",
-    "family": null,
-    "releaseDate": "2024-05-14",
-    "lastUpdated": "2024-08-26",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "google/gemma-4-31b-it",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "Gemma-4-31B-IT",
-    "family": "gemma",
-    "releaseDate": "2026-04-02",
-    "lastUpdated": "2026-04-02",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 256000,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "google/gemma-3-4b-it",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "Gemma 3 4B IT",
-    "family": "gemma",
-    "releaseDate": "2025-03-12",
-    "lastUpdated": "2025-03-12",
-    "knowledgeCutoff": "2024-08",
-    "contextWindow": 131072,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "google/diffusiongemma-26b-a4b-it",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "DiffusionGemma 26B A4B IT",
-    "family": "gemma",
-    "releaseDate": "2026-06-09",
-    "lastUpdated": "2026-07-15",
-    "knowledgeCutoff": "2025-01",
-    "contextWindow": 250000,
+    "contextWindow": 32768,
     "maxOutputTokens": 32768,
     "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "google/gemma-3-12b-it",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "Gemma 3 12B IT",
-    "family": "gemma",
-    "releaseDate": "2025-03-12",
-    "lastUpdated": "2025-03-12",
-    "knowledgeCutoff": "2024-08",
-    "contextWindow": 131072,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
+      "tools": false,
+      "vision": false,
       "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": true,
+      "attachment": false,
       "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "output": [
         "text"
@@ -755,66 +46,20 @@
     ]
   },
   {
-    "id": "openai/whisper-large-v3",
+    "id": "mistralai/mistral-7b-instruct-v0.3",
     "provider": "nvidia",
     "providerName": "Nvidia",
-    "displayName": "Whisper Large v3",
-    "family": "whisper",
-    "releaseDate": "2023-11-06",
-    "lastUpdated": "2023-11-06",
-    "knowledgeCutoff": "2023-09",
-    "contextWindow": 448,
-    "maxOutputTokens": 448,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "audio"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "openai/gpt-oss-20b",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "GPT OSS 20B",
-    "family": "gpt-oss",
-    "releaseDate": "2025-08-05",
-    "lastUpdated": "2025-08-05",
-    "knowledgeCutoff": "2024-06",
-    "contextWindow": 131072,
-    "maxOutputTokens": 131072,
+    "displayName": "Mistral-7B-Instruct-v0.3",
+    "family": "mistral",
+    "releaseDate": "2024-05-22",
+    "lastUpdated": "2024-05-22",
+    "knowledgeCutoff": null,
+    "contextWindow": 65536,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
       "vision": false,
-      "reasoning": true,
+      "reasoning": false,
       "streaming": true,
       "json_mode": true,
       "system_prompt": true,
@@ -837,7 +82,7 @@
       "currency": "USD",
       "per": 1000000
     },
-    "status": "active",
+    "status": "deprecated",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -847,62 +92,16 @@
     ]
   },
   {
-    "id": "qwen/qwen-image",
+    "id": "mistralai/mistral-medium-3-instruct",
     "provider": "nvidia",
     "providerName": "Nvidia",
-    "displayName": "Qwen Image",
-    "family": "qwen",
-    "releaseDate": "2025-08-07",
-    "lastUpdated": "2025-08-07",
-    "knowledgeCutoff": null,
-    "contextWindow": 0,
-    "maxOutputTokens": 0,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "image"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "qwen/qwen-image-edit",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "Qwen Image Edit",
-    "family": "qwen",
-    "releaseDate": "2025-08-19",
-    "lastUpdated": "2025-08-19",
-    "knowledgeCutoff": null,
-    "contextWindow": 0,
-    "maxOutputTokens": 0,
+    "displayName": "Mistral Medium 3",
+    "family": "mistral-medium",
+    "releaseDate": "2025-05-07",
+    "lastUpdated": "2025-05-07",
+    "knowledgeCutoff": "2025-03-31",
+    "contextWindow": 131072,
+    "maxOutputTokens": 32768,
     "capabilities": {
       "tools": false,
       "vision": true,
@@ -910,7 +109,7 @@
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
-      "temperature": false,
+      "temperature": true,
       "attachment": true,
       "structured_output": false,
       "open_weights": false
@@ -919,238 +118,6 @@
       "input": [
         "text",
         "image"
-      ],
-      "output": [
-        "image"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "black-forest-labs/flux_2-klein-4b",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "FLUX.2 Klein 4B",
-    "family": "flux",
-    "releaseDate": "2026-01-15",
-    "lastUpdated": "2026-01-15",
-    "knowledgeCutoff": "2025-06",
-    "contextWindow": 0,
-    "maxOutputTokens": 0,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "image"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "black-forest-labs/flux.1-dev",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "FLUX.1-dev",
-    "family": "flux",
-    "releaseDate": "2024-08-01",
-    "lastUpdated": "2024-08-01",
-    "knowledgeCutoff": "2024-08",
-    "contextWindow": 0,
-    "maxOutputTokens": 0,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "image"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "black-forest-labs/flux_1-kontext-dev",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "FLUX.1-Kontext-dev",
-    "family": "flux",
-    "releaseDate": "2025-05-29",
-    "lastUpdated": "2025-05-29",
-    "knowledgeCutoff": null,
-    "contextWindow": 0,
-    "maxOutputTokens": 0,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "image"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "black-forest-labs/flux_1-schnell",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "FLUX.1-schnell",
-    "family": "flux",
-    "releaseDate": "2024-08-01",
-    "lastUpdated": "2024-08-01",
-    "knowledgeCutoff": "2024-07",
-    "contextWindow": 0,
-    "maxOutputTokens": 0,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "image"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "nvidia/usdvalidate",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "usdvalidate",
-    "family": null,
-    "releaseDate": "2024-07-24",
-    "lastUpdated": "2025-01-08",
-    "knowledgeCutoff": null,
-    "contextWindow": 0,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
       ],
       "output": [
         "text"
@@ -1163,6 +130,52 @@
       "per": 1000000
     },
     "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "nvidia/bevformer",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "bevformer",
+    "family": null,
+    "releaseDate": "2025-03-18",
+    "lastUpdated": "2025-07-20",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
     "deprecationDate": null,
     "replacedBy": null,
     "aliases": [],
@@ -1176,7 +189,7 @@
     "provider": "nvidia",
     "providerName": "Nvidia",
     "displayName": "Nemotron 3.5 Content Safety",
-    "family": "nemotron",
+    "family": "nemotron-safety",
     "releaseDate": "2026-06-02",
     "lastUpdated": "2026-06-02",
     "knowledgeCutoff": null,
@@ -1219,59 +232,13 @@
     ]
   },
   {
-    "id": "nvidia/llama-3.1-nemotron-ultra-253b-v1",
+    "id": "nvidia/riva-translate-4b-instruct-v1.1",
     "provider": "nvidia",
     "providerName": "Nvidia",
-    "displayName": "Llama 3.1 Nemotron Ultra 253B",
-    "family": "nemotron",
-    "releaseDate": "2025-04-07",
-    "lastUpdated": "2025-04-07",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 16384,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "nvidia/usdcode",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "usdcode",
+    "displayName": "riva-translate-4b-instruct-v1_1",
     "family": null,
-    "releaseDate": "2026-01-01",
-    "lastUpdated": "2026-01-01",
+    "releaseDate": "2025-12-12",
+    "lastUpdated": "2025-12-12",
     "knowledgeCutoff": null,
     "contextWindow": 128000,
     "maxOutputTokens": 4096,
@@ -1282,10 +249,10 @@
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
-      "temperature": true,
+      "temperature": false,
       "attachment": false,
       "structured_output": false,
-      "open_weights": false
+      "open_weights": true
     },
     "modalities": {
       "input": [
@@ -1311,31 +278,79 @@
     ]
   },
   {
-    "id": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "id": "nvidia/cosmos-reason2-8b",
     "provider": "nvidia",
     "providerName": "Nvidia",
-    "displayName": "Nemotron 3.5 Lightning 30B A3B",
-    "family": "nemotron",
-    "releaseDate": "2026-08-11",
-    "lastUpdated": "2026-08-11",
-    "knowledgeCutoff": "2025-09",
-    "contextWindow": 262144,
-    "maxOutputTokens": 262144,
+    "displayName": "Cosmos Reason2 8B",
+    "family": null,
+    "releaseDate": "2025-12-01",
+    "lastUpdated": "2025-12-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 131072,
+    "maxOutputTokens": 16384,
     "capabilities": {
       "tools": true,
-      "vision": false,
+      "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
       "temperature": true,
-      "attachment": false,
-      "structured_output": true,
+      "attachment": true,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
         "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "nvidia/sparsedrive",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "sparsedrive",
+    "family": null,
+    "releaseDate": "2025-03-18",
+    "lastUpdated": "2025-07-20",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "video"
       ],
       "output": [
         "text"
@@ -1357,34 +372,31 @@
     ]
   },
   {
-    "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+    "id": "nvidia/synthetic-video-detector",
     "provider": "nvidia",
     "providerName": "Nvidia",
-    "displayName": "Nemotron 3 Nano Omni",
-    "family": "nemotron",
-    "releaseDate": "2026-04-28",
-    "lastUpdated": "2026-04-28",
+    "displayName": "synthetic-video-detector",
+    "family": null,
+    "releaseDate": "2026-04-16",
+    "lastUpdated": "2026-04-16",
     "knowledgeCutoff": null,
-    "contextWindow": 256000,
-    "maxOutputTokens": 65536,
+    "contextWindow": 0,
+    "maxOutputTokens": 4096,
     "capabilities": {
-      "tools": true,
+      "tools": false,
       "vision": true,
-      "reasoning": true,
+      "reasoning": false,
       "streaming": true,
-      "json_mode": true,
+      "json_mode": false,
       "system_prompt": true,
-      "temperature": true,
+      "temperature": false,
       "attachment": true,
-      "structured_output": true,
+      "structured_output": false,
       "open_weights": true
     },
     "modalities": {
       "input": [
-        "text",
-        "image",
-        "video",
-        "audio"
+        "video"
       ],
       "output": [
         "text"
@@ -1410,12 +422,58 @@
     "provider": "nvidia",
     "providerName": "Nvidia",
     "displayName": "Nemotron 3 Ultra 550B A55B",
-    "family": "nemotron",
+    "family": "nemotron-ultra",
     "releaseDate": "2026-06-04",
     "lastUpdated": "2026-06-04",
     "knowledgeCutoff": "2025-09",
     "contextWindow": 1000000,
     "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "Nemotron 3.5 Lightning 30B A3B",
+    "family": "nemotron-lightning",
+    "releaseDate": "2026-08-11",
+    "lastUpdated": "2026-08-11",
+    "knowledgeCutoff": "2025-09",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
     "capabilities": {
       "tools": true,
       "vision": false,
@@ -1498,11 +556,152 @@
     ]
   },
   {
+    "id": "nvidia/cosmos-transfer2_5-2b",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "cosmos-transfer2.5-2b",
+    "family": null,
+    "releaseDate": "2026-02-26",
+    "lastUpdated": "2026-02-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 0,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "video"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "nvidia/streampetr",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "streampetr",
+    "family": null,
+    "releaseDate": "2025-11-13",
+    "lastUpdated": "2025-11-13",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "nvidia/nemotron-voicechat",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "nemotron-voicechat",
+    "family": "nemotron-voice",
+    "releaseDate": "2026-03-16",
+    "lastUpdated": "2026-03-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "nvidia/llama-nemotron-embed-vl-1b-v2",
     "provider": "nvidia",
     "providerName": "Nvidia",
     "displayName": "llama-nemotron-embed-vl-1b-v2",
-    "family": "nemotron",
+    "family": "nemotron-embed",
     "releaseDate": "2025-12-18",
     "lastUpdated": "2025-12-18",
     "knowledgeCutoff": null,
@@ -1524,6 +723,52 @@
       "input": [
         "text",
         "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "llama-3.1-nemotron-safety-guard-8b-v3",
+    "family": "nemotron-safety",
+    "releaseDate": "2025-10-28",
+    "lastUpdated": "2025-10-28",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
       ],
       "output": [
         "text"
@@ -1637,6 +882,52 @@
     ]
   },
   {
+    "id": "nvidia/usdcode",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "usdcode",
+    "family": null,
+    "releaseDate": "2026-01-01",
+    "lastUpdated": "2026-01-01",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "nvidia/studiovoice",
     "provider": "nvidia",
     "providerName": "Nvidia",
@@ -1665,100 +956,6 @@
       ],
       "output": [
         "audio"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "nvidia/riva-translate-4b-instruct-v1.1",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "riva-translate-4b-instruct-v1_1",
-    "family": null,
-    "releaseDate": "2025-12-12",
-    "lastUpdated": "2025-12-12",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "nvidia/cosmos-transfer2_5-2b",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "cosmos-transfer2.5-2b",
-    "family": null,
-    "releaseDate": "2026-02-26",
-    "lastUpdated": "2026-02-26",
-    "knowledgeCutoff": null,
-    "contextWindow": 0,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "video"
       ]
     },
     "pricing": {
@@ -1824,104 +1021,11 @@
     ]
   },
   {
-    "id": "nvidia/synthetic-video-detector",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "synthetic-video-detector",
-    "family": null,
-    "releaseDate": "2026-04-16",
-    "lastUpdated": "2026-04-16",
-    "knowledgeCutoff": null,
-    "contextWindow": 0,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "nvidia/llama-nemotron-rerank-vl-1b-v2",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "llama-nemotron-rerank-vl-1b-v2",
-    "family": "nemotron",
-    "releaseDate": "2025-12-18",
-    "lastUpdated": "2025-12-18",
-    "knowledgeCutoff": null,
-    "contextWindow": 10240,
-    "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "nvidia/nemotron-3.5-super-vl-120b-a12b",
     "provider": "nvidia",
     "providerName": "Nvidia",
     "displayName": "Nemotron 3.5 Super VL 120B A12B",
-    "family": "nemotron",
+    "family": "nemotron-super",
     "releaseDate": "2026-10-15",
     "lastUpdated": "2026-10-15",
     "knowledgeCutoff": null,
@@ -1965,62 +1069,16 @@
     ]
   },
   {
-    "id": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
+    "id": "nvidia/llama-nemotron-rerank-vl-1b-v2",
     "provider": "nvidia",
     "providerName": "Nvidia",
-    "displayName": "llama-3.1-nemotron-safety-guard-8b-v3",
-    "family": "nemotron",
-    "releaseDate": "2025-10-28",
-    "lastUpdated": "2025-10-28",
+    "displayName": "llama-nemotron-rerank-vl-1b-v2",
+    "family": "nemotron-rerank",
+    "releaseDate": "2025-12-18",
+    "lastUpdated": "2025-12-18",
     "knowledgeCutoff": null,
-    "contextWindow": 128000,
+    "contextWindow": 10240,
     "maxOutputTokens": 4096,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "nvidia/streampetr",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "streampetr",
-    "family": null,
-    "releaseDate": "2025-11-13",
-    "lastUpdated": "2025-11-13",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 8192,
     "capabilities": {
       "tools": false,
       "vision": true,
@@ -2035,7 +1093,8 @@
     },
     "modalities": {
       "input": [
-        "video"
+        "text",
+        "image"
       ],
       "output": [
         "text"
@@ -2057,125 +1116,33 @@
     ]
   },
   {
-    "id": "nvidia/cosmos-reason2-8b",
+    "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
     "provider": "nvidia",
     "providerName": "Nvidia",
-    "displayName": "Cosmos Reason2 8B",
-    "family": null,
-    "releaseDate": "2025-12-01",
-    "lastUpdated": "2025-12-01",
+    "displayName": "Nemotron 3 Nano Omni",
+    "family": "nemotron-nano",
+    "releaseDate": "2026-04-28",
+    "lastUpdated": "2026-04-28",
     "knowledgeCutoff": null,
-    "contextWindow": 131072,
-    "maxOutputTokens": 16384,
+    "contextWindow": 256000,
+    "maxOutputTokens": 65536,
     "capabilities": {
       "tools": true,
       "vision": true,
       "reasoning": true,
       "streaming": true,
-      "json_mode": false,
+      "json_mode": true,
       "system_prompt": true,
       "temperature": true,
       "attachment": true,
-      "structured_output": false,
+      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
       "input": [
         "text",
         "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "nvidia/bevformer",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "bevformer",
-    "family": null,
-    "releaseDate": "2025-03-18",
-    "lastUpdated": "2025-07-20",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "nvidia/nemotron-voicechat",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "nemotron-voicechat",
-    "family": "nemotron",
-    "releaseDate": "2026-03-16",
-    "lastUpdated": "2026-03-16",
-    "knowledgeCutoff": null,
-    "contextWindow": 128000,
-    "maxOutputTokens": 8192,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text",
+        "video",
         "audio"
       ],
       "output": [
@@ -2198,165 +1165,72 @@
     ]
   },
   {
-    "id": "nvidia/sparsedrive",
+    "id": "nvidia/llama-3.1-nemotron-ultra-253b-v1",
     "provider": "nvidia",
     "providerName": "Nvidia",
-    "displayName": "sparsedrive",
-    "family": null,
-    "releaseDate": "2025-03-18",
-    "lastUpdated": "2025-07-20",
+    "displayName": "Llama 3.1 Nemotron Ultra 253B",
+    "family": "nemotron-ultra",
+    "releaseDate": "2025-04-07",
+    "lastUpdated": "2025-04-07",
     "knowledgeCutoff": null,
     "contextWindow": 128000,
-    "maxOutputTokens": 8192,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "nvidia/usdvalidate",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "usdvalidate",
+    "family": null,
+    "releaseDate": "2024-07-24",
+    "lastUpdated": "2025-01-08",
+    "knowledgeCutoff": null,
+    "contextWindow": 0,
+    "maxOutputTokens": 4096,
     "capabilities": {
       "tools": false,
-      "vision": true,
+      "vision": false,
       "reasoning": false,
       "streaming": true,
       "json_mode": false,
       "system_prompt": true,
       "temperature": false,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "mistralai/mistral-medium-3-instruct",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "Mistral Medium 3",
-    "family": "mistral-medium",
-    "releaseDate": "2025-05-07",
-    "lastUpdated": "2025-05-07",
-    "knowledgeCutoff": "2025-03-31",
-    "contextWindow": 131072,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": false,
-      "vision": true,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": false,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "mistralai/magistral-small-2506",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "Magistral Small 2506",
-    "family": "magistral",
-    "releaseDate": "2025-06-10",
-    "lastUpdated": "2025-06-10",
-    "knowledgeCutoff": null,
-    "contextWindow": 32768,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": false,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
       "attachment": false,
       "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "deprecated",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
-    "id": "mistralai/mistral-7b-instruct-v0.3",
-    "provider": "nvidia",
-    "providerName": "Nvidia",
-    "displayName": "Mistral-7B-Instruct-v0.3",
-    "family": "mistral",
-    "releaseDate": "2024-05-22",
-    "lastUpdated": "2024-05-22",
-    "knowledgeCutoff": null,
-    "contextWindow": 65536,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": false,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": true,
       "open_weights": true
     },
     "modalities": {
@@ -2409,6 +1283,1132 @@
       "input": [
         "text",
         "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "google/gemma-4-31b-it",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "Gemma-4-31B-IT",
+    "family": "gemma",
+    "releaseDate": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 256000,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "google/google-paligemma",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "paligemma",
+    "family": null,
+    "releaseDate": "2024-05-14",
+    "lastUpdated": "2024-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 128000,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "google/diffusiongemma-26b-a4b-it",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "DiffusionGemma 26B A4B IT",
+    "family": "gemma-diffusion",
+    "releaseDate": "2026-06-09",
+    "lastUpdated": "2026-07-15",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 250000,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "google/gemma-3-4b-it",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "Gemma 3 4B IT",
+    "family": "gemma",
+    "releaseDate": "2025-03-12",
+    "lastUpdated": "2025-03-12",
+    "knowledgeCutoff": "2024-08",
+    "contextWindow": 131072,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "google/gemma-3-12b-it",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "Gemma 3 12B IT",
+    "family": "gemma",
+    "releaseDate": "2025-03-12",
+    "lastUpdated": "2025-03-12",
+    "knowledgeCutoff": "2024-08",
+    "contextWindow": 131072,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-5.3",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "GLM-5.3",
+    "family": "glm",
+    "releaseDate": "2026-08-14",
+    "lastUpdated": "2026-08-14",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "z-ai/glm-5.3-flash",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "GLM-5.3-Flash",
+    "family": "glm-flash",
+    "releaseDate": "2026-08-26",
+    "lastUpdated": "2026-08-26",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "openai/gpt-oss-20b",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "GPT OSS 20B",
+    "family": "gpt-oss",
+    "releaseDate": "2025-08-05",
+    "lastUpdated": "2025-08-05",
+    "knowledgeCutoff": "2024-06",
+    "contextWindow": 131072,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "openai/whisper-large-v3",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "Whisper Large v3",
+    "family": "whisper",
+    "releaseDate": "2023-11-06",
+    "lastUpdated": "2023-11-06",
+    "knowledgeCutoff": "2023-09",
+    "contextWindow": 448,
+    "maxOutputTokens": 448,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "meta/muse-glimmer-30b",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "Muse Glimmer 30B",
+    "family": "muse-glimmer",
+    "releaseDate": "2026-08-10",
+    "lastUpdated": "2026-08-10",
+    "knowledgeCutoff": "2026-01-04",
+    "contextWindow": 131072,
+    "maxOutputTokens": 131072,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "meta/llama-3.2-11b-vision-instruct",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "Llama 3.2 11b Vision Instruct",
+    "family": "llama",
+    "releaseDate": "2024-09-25",
+    "lastUpdated": "2024-09-25",
+    "knowledgeCutoff": "2023-12",
+    "contextWindow": 128000,
+    "maxOutputTokens": 4096,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "meta/llama-guard-4-12b",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "Llama Guard 4 12B",
+    "family": "llama-guard",
+    "releaseDate": "2025-04-29",
+    "lastUpdated": "2025-04-29",
+    "knowledgeCutoff": null,
+    "contextWindow": 163840,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "meta/llama-3.2-90b-vision-instruct",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "Llama-3.2-90B-Vision-Instruct",
+    "family": "llama",
+    "releaseDate": "2024-09-25",
+    "lastUpdated": "2024-09-25",
+    "knowledgeCutoff": "2023-12",
+    "contextWindow": 128000,
+    "maxOutputTokens": 8192,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen-image",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "Qwen Image",
+    "family": "qwen-image",
+    "releaseDate": "2025-08-07",
+    "lastUpdated": "2025-08-07",
+    "knowledgeCutoff": null,
+    "contextWindow": 0,
+    "maxOutputTokens": 0,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "image"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "qwen/qwen-image-edit",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "Qwen Image Edit",
+    "family": "qwen-image",
+    "releaseDate": "2025-08-19",
+    "lastUpdated": "2025-08-19",
+    "knowledgeCutoff": null,
+    "contextWindow": 0,
+    "maxOutputTokens": 0,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "image"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "black-forest-labs/flux_2-klein-4b",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "FLUX.2 Klein 4B",
+    "family": "flux-klein",
+    "releaseDate": "2026-01-15",
+    "lastUpdated": "2026-01-15",
+    "knowledgeCutoff": "2025-06",
+    "contextWindow": 0,
+    "maxOutputTokens": 0,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "image"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "black-forest-labs/flux_1-schnell",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "FLUX.1-schnell",
+    "family": "flux-schnell",
+    "releaseDate": "2024-08-01",
+    "lastUpdated": "2024-08-01",
+    "knowledgeCutoff": "2024-07",
+    "contextWindow": 0,
+    "maxOutputTokens": 0,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "image"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "black-forest-labs/flux_1-kontext-dev",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "FLUX.1-Kontext-dev",
+    "family": "flux-kontext-dev",
+    "releaseDate": "2025-05-29",
+    "lastUpdated": "2025-05-29",
+    "knowledgeCutoff": null,
+    "contextWindow": 0,
+    "maxOutputTokens": 0,
+    "capabilities": {
+      "tools": false,
+      "vision": true,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "image"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "black-forest-labs/flux.1-dev",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "FLUX.1-dev",
+    "family": "flux-dev",
+    "releaseDate": "2024-08-01",
+    "lastUpdated": "2024-08-01",
+    "knowledgeCutoff": "2024-08",
+    "contextWindow": 0,
+    "maxOutputTokens": 0,
+    "capabilities": {
+      "tools": false,
+      "vision": false,
+      "reasoning": false,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "image"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "poolside/laguna-xs-2.1",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "Laguna XS 2.1",
+    "family": "laguna-xs",
+    "releaseDate": "2026-07-02",
+    "lastUpdated": "2026-07-02",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 16384,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "stepfun-ai/step-5-preview",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "Step 5 Preview",
+    "family": "step",
+    "releaseDate": "2026-09-16",
+    "lastUpdated": "2026-09-20",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "moonshotai/kimi-k3",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "Kimi K3",
+    "family": "kimi",
+    "releaseDate": "2026-07-16",
+    "lastUpdated": "2026-07-16",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
+    "maxOutputTokens": 1048576,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": false,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "moonshotai/kimi-k2.6",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "Kimi K2.6",
+    "family": "kimi",
+    "releaseDate": "2026-04-20",
+    "lastUpdated": "2026-04-20",
+    "knowledgeCutoff": "2025-01",
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "deprecated",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "minimaxai/minimax-m3.1-flash",
+    "provider": "nvidia",
+    "providerName": "Nvidia",
+    "displayName": "MiniMax-M3.1-Flash",
+    "family": "minimax-m-flash",
+    "releaseDate": "2026-10-19",
+    "lastUpdated": "2026-10-19",
+    "knowledgeCutoff": null,
+    "contextWindow": 262144,
+    "maxOutputTokens": 262144,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
       ],
       "output": [
         "text"

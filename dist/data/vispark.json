@@ -1,60 +1,10 @@
 [
   {
-    "id": "vispark/vision-small",
-    "provider": "vispark",
-    "providerName": "Vispark",
-    "displayName": "Vision Small",
-    "family": null,
-    "releaseDate": "2024-05-15",
-    "lastUpdated": "2026-09",
-    "knowledgeCutoff": null,
-    "contextWindow": 1000000,
-    "maxOutputTokens": 65536,
-    "capabilities": {
-      "tools": true,
-      "vision": true,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": true,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": true,
-      "structured_output": true,
-      "open_weights": false
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 1.05,
-      "output": 3.16,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "vispark/vision-medium",
     "provider": "vispark",
     "providerName": "Vispark",
     "displayName": "Vision Medium",
-    "family": null,
+    "family": "vispark-vision-medium",
     "releaseDate": "2024-05-15",
     "lastUpdated": "2026-09",
     "knowledgeCutoff": null,
@@ -100,11 +50,61 @@
     ]
   },
   {
+    "id": "vispark/vision-small",
+    "provider": "vispark",
+    "providerName": "Vispark",
+    "displayName": "Vision Small",
+    "family": "vispark-vision-small",
+    "releaseDate": "2024-05-15",
+    "lastUpdated": "2026-09",
+    "knowledgeCutoff": null,
+    "contextWindow": 1000000,
+    "maxOutputTokens": 65536,
+    "capabilities": {
+      "tools": true,
+      "vision": true,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": true,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": true,
+      "structured_output": true,
+      "open_weights": false
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 1.05,
+      "output": 3.16,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
     "id": "vispark/vision-large",
     "provider": "vispark",
     "providerName": "Vispark",
     "displayName": "Vision Large",
-    "family": null,
+    "family": "vispark-vision-large",
     "releaseDate": "2024-05-15",
     "lastUpdated": "2026-09",
     "knowledgeCutoff": null,

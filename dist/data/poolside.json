@@ -1,58 +1,10 @@
 [
   {
-    "id": "poolside/laguna-s-2.1",
-    "provider": "poolside",
-    "providerName": "Poolside",
-    "displayName": "Laguna S 2.1",
-    "family": "laguna",
-    "releaseDate": "2026-07-21",
-    "lastUpdated": "2026-07-21",
-    "knowledgeCutoff": null,
-    "contextWindow": 1048576,
-    "maxOutputTokens": 32768,
-    "capabilities": {
-      "tools": true,
-      "vision": false,
-      "reasoning": true,
-      "streaming": true,
-      "json_mode": false,
-      "system_prompt": true,
-      "temperature": true,
-      "attachment": false,
-      "structured_output": false,
-      "open_weights": true
-    },
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "cacheWrite": 0,
-      "currency": "USD",
-      "per": 1000000
-    },
-    "status": "active",
-    "deprecationDate": null,
-    "replacedBy": null,
-    "aliases": [],
-    "isAggregator": true,
-    "sources": [
-      "models.dev"
-    ]
-  },
-  {
     "id": "poolside/laguna-m.1",
     "provider": "poolside",
     "providerName": "Poolside",
     "displayName": "Laguna M.1",
-    "family": "laguna",
+    "family": "laguna-m",
     "releaseDate": "2026-04-28",
     "lastUpdated": "2026-06-13",
     "knowledgeCutoff": null,
@@ -100,11 +52,59 @@
     "provider": "poolside",
     "providerName": "Poolside",
     "displayName": "Laguna XS 2.1",
-    "family": "laguna",
+    "family": "laguna-xs",
     "releaseDate": "2026-07-02",
     "lastUpdated": "2026-07-02",
     "knowledgeCutoff": null,
     "contextWindow": 262144,
+    "maxOutputTokens": 32768,
+    "capabilities": {
+      "tools": true,
+      "vision": false,
+      "reasoning": true,
+      "streaming": true,
+      "json_mode": false,
+      "system_prompt": true,
+      "temperature": true,
+      "attachment": false,
+      "structured_output": false,
+      "open_weights": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "pricing": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "cacheWrite": 0,
+      "currency": "USD",
+      "per": 1000000
+    },
+    "status": "active",
+    "deprecationDate": null,
+    "replacedBy": null,
+    "aliases": [],
+    "isAggregator": true,
+    "sources": [
+      "models.dev"
+    ]
+  },
+  {
+    "id": "poolside/laguna-s-2.1",
+    "provider": "poolside",
+    "providerName": "Poolside",
+    "displayName": "Laguna S 2.1",
+    "family": "laguna-s",
+    "releaseDate": "2026-07-21",
+    "lastUpdated": "2026-07-21",
+    "knowledgeCutoff": null,
+    "contextWindow": 1048576,
     "maxOutputTokens": 32768,
     "capabilities": {
       "tools": true,
